@@ -27,6 +27,14 @@ We are looking for small-ish users from research and education who would like to
 - Run a collaborative project with distributed users
 - Provide online interactive environments for content that you write
 
+## What kinds of guarantees do I have for this pilot?
+
+We know that it is really frustrating to rely on infrastructure that is undependable or often breaks. For this reason, we've designed 2i2c Hubs to be as fault-tolerant as possible. If things break, they should break for only one person rather than for an entire hub. If things must be changed, they should be changeable easily and quickly.
+
+In addition, JupyterHub is designed to give you a degree of administrative control over what's going on inside. For example, you can add your own users and even help them debug their problem by taking over their session. See []
+
+That said, this is a pilot being run with limited resources. You should not expect someone to respond to your questions and problems *immediately*. However, we'll do our best to get back to you quickly.
+
 ## Using a 2i2c Hub
 
 For information about how to use a hub, see [](use.md).
