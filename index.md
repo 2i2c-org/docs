@@ -1,5 +1,7 @@
 # The 2i2c Hubs Pilot
 
+The 2i2c Hubs Pilot is a project to provide JupyterHubs running on cloud infrastructure in a manner that is both accessible and scalable to many hubs and organizations. It is being run by [the international interactive computing collaboration](https://2i2c.org).
+
 Thanks for your interest in the 2i2c Hubs pilot. This documentation should help give you an idea for the goals of this pilot project, as well as information about how you can use and customize the 2i2c Hubs that are deployed.
 
 :::{admonition,warning} The pilot is in an alpha phase!
@@ -27,6 +29,14 @@ We are looking for small-ish users from research and education who would like to
 
 ## Using a 2i2c Hub
 
-If you're using a 2i2c Hub, there are a few ways that you can customize the environment available to your users.
+For information about how to use a hub, see [](use.md).
 
-% TODO: Add in more information here!
+## What's in a 2i2c Hub?
+
+For information about the infrastructure behind a 2i2c Hub, see [](infrastructure.md).
+
+```{toctree}
+:hidden:
+use
+infrastructure
+```
