@@ -31,7 +31,7 @@ We are looking for small-ish users from research and education who would like to
 
 We know that it is really frustrating to rely on infrastructure that is undependable or often breaks. For this reason, we've designed 2i2c Hubs to be as fault-tolerant as possible. If things break, they should break for only one person rather than for an entire hub. If things must be changed, they should be changeable easily and quickly.
 
-In addition, JupyterHub is designed to give you a degree of administrative control over what's going on inside. For example, you can add your own users and even help them debug their problem by taking over their session. See []
+In addition, JupyterHub is designed to give you a degree of administrative control over what's going on inside. For example, you can add your own users and even help them debug their problem by taking over their session. See [](access-server).
 
 That said, this is a pilot being run with limited resources. You should not expect someone to respond to your questions and problems *immediately*. However, we'll do our best to get back to you quickly. Moreover, the 2i2c Hubs are not currently provided with a guarantee around site reliability (though we will informally tell you that they are generally very reliable).
 

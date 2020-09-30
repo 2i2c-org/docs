@@ -85,6 +85,7 @@ To add or remove users for your 2i2c Hub, go to the **Administrator Panel** and 
 
 The types of usernames you add will depend on the kind of authentication you've requested for your hub (e.g., email addresses vs user names).
 
+(access-server)=
 ### Take control of a user's server
 
 If you'd like to debug a user's server, you may take control over their session by clicking the **access server** button. This will show you the latest file that they were working on. This is particularly useful for helping them debug a problem with their session.
