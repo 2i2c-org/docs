@@ -16,6 +16,19 @@ You can use `nbgitpuller` to generate a link to a public repository, or a file i
 
 - **Share this link with your users**. Anybody can click an `nbgitpuller` link. If they have an account on the hub to which it points, then they'll get a copy of the content that you've linked to.
 
+## Customize the hub's environment
+
+Currently, the best way to customize your hub's environment is to [open an issue in this repository](https://github.com/2i2c-org/pilot/issues/new) and ask for the new package to be installed. We are working on ways to let individual hubs customize their environment on their own, and will update these docs when that happens!
+
+The environment for all pilot hubs is defined [in this folder](https://github.com/2i2c-org/low-touch-hubs/tree/master/image). It is a bit technical, but gives an idea of the kinds of libraries that are installed by default. In particular:
+
+- For Python: [see this `environment.yml` file](https://github.com/2i2c-org/low-touch-hubs/blob/master/image/environment.yml) for common Python packages
+- For R: [see this `install.R` file](https://github.com/2i2c-org/low-touch-hubs/blob/master/image/install.R)
+
+### Installing packages from *within* a Jupyter session
+
+Note that you may install packages from within a running JupyterHub session (e.g. by running `pip install mypackage` from the terminal). However, these packages will be removed the next time that you start a JupyterHub session.
+
 ## Write public books that connect to a 2i2c Hub
 
 You can create public content that is designed to have connections with your 2i2c Hub. For example, you can create lectures from Jupyter Notebooks, and allow students to grab their own copy of the notebook to interact with on the 2i2c Hub.
