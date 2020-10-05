@@ -130,3 +130,6 @@ dmypy.json
 
 # Sphinx
 _build/
+
+# Docs data
+hubs-table.txt

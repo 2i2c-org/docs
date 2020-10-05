@@ -38,3 +38,8 @@ The 2i2c Hubs are all deployed according to best-practices as documented in the 
 In addition, we recommend checking out [this GitHub repository][low-touch-hubs], which contains the configuration and deployment scripts for all of the hubs offered under this pilot.
 
 [low-touch-hubs]: https://github.com/2i2c-org/low-touch-hubs
+
+## A list of current hubs
+
+```{include} hubs-table.txt
+```
