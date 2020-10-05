@@ -51,3 +51,29 @@ html_theme_options = {
     "use_repository_button": True,
 }
 html_baseurl = "https://2i2c.org/pilot"
+
+# -- Pull the latest list of hubs---------------------------------------------
+import requests
+from textwrap import dedent
+from yaml import safe_load
+from pathlib import Path
+
+resp = requests.get("https://raw.githubusercontent.com/2i2c-org/low-touch-hubs/master/hubs.yaml")
+hubs = safe_load(resp.text)
+entries = ""
+for hub in hubs["hubs"]:
+    entries += f"""
+    ---
+    {hub["name"]}
+    +++
+    [{hub["domain"]}](https://{hub["domain"]})
+    """
+entries = dedent(entries)
+
+hubs_table = f"""
+```{{panels}}
+:column: text-center col-4
+{entries}
+```
+"""
+Path("hubs-table.txt").write_text(hubs_table)

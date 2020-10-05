@@ -3,3 +3,5 @@ myst-nb
 sphinx-copybutton
 sphinx-book-theme
 sphinx-panels
+requests
+pyyaml
