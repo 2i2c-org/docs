@@ -64,14 +64,18 @@ entries = ""
 for hub in hubs["hubs"]:
     entries += f"""
     ---
-    {hub["name"]}
+    [{hub["org_name"]}]({hub["org_url"]})
+    ^^^
+    [![logo]({hub["org_logo"]})]({hub["org_url"]})
+
     +++
-    [{hub["domain"]}](https://{hub["domain"]})
+    [`{hub["domain"]}`](https://{hub["domain"]})
     """
 entries = dedent(entries)
 
 hubs_table = f"""
 ```{{panels}}
+:container: full-width
 :column: text-center col-4
 {entries}
 ```

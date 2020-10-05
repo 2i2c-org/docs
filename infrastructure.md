@@ -41,5 +41,7 @@ In addition, we recommend checking out [this GitHub repository][low-touch-hubs],
 
 ## A list of current hubs
 
+Below is a relatively up-to-date list of the hubs we are currently deploying as part of this pilot.
+
 ```{include} hubs-table.txt
 ```
