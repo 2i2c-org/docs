@@ -77,6 +77,7 @@ hubs_table = f"""
 ```{{panels}}
 :container: full-width
 :column: text-center col-4
+:body: +d-flex flex-wrap align-items-center
 {entries}
 ```
 """
