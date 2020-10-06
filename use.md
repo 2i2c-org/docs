@@ -39,7 +39,7 @@ You can tell Jupyter Book to place links *directly to your 2i2c Hub* on each pag
 
 ## Storage on the hub
 
-Currently there is **no persistent storage** on the hub. However, we are working to get this implemented soon (hopefully in the next week or two). In the meantime, you should use this hub for demonstrating its functionality and sharing quick sessions with others, but not for long-term work.
+Each user's home directory persists between their sessions.
 
 ## Choose the interface
 
