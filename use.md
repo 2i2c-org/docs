@@ -22,6 +22,7 @@ You can use `nbgitpuller` to generate a link to a public repository, or a file i
 2i2c Hub come with the ability to convert a Jupyter Notebook as a PDF that users may download locally. To do so, use the Jupyter interface of your choice as shown below:
 
 ````{panels}
+:container: full-width
 :column: + text-center
 Classic Notebooks
 ```{figure} images/download-latexpdf-classic.png
