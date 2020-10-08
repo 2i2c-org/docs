@@ -46,7 +46,6 @@ The administrator panel will only be available to user names you have explicitly
 :::
 
 ```{figure} images/admin-panel.png
-:class: full-width
 An example administrator's panel
 ```
 
@@ -97,6 +96,5 @@ Fill in usernames and optionally make them administrators.
 If you'd like to debug a user's server, you may take control over their session by clicking the **access server** button. This will show you the latest file that they were working on. This is particularly useful for helping them debug a problem with their session.
 
 ```{figure} images/access-server.png
-:class: full-width
 Clicking "access server" will allow you to control the user's session.
 ```

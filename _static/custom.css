@@ -1,3 +1,8 @@
 .logos img {
     max-height: 50px;
 }
+
+div.figure img {
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
