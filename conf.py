@@ -82,7 +82,3 @@ hubs_table = f"""
 ```
 """
 Path("hubs-table.txt").write_text(hubs_table)
-
-
-def setup(app):
-    app.add_css_file("custom.css")

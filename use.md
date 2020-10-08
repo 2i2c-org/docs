@@ -1,4 +1,4 @@
-# Use your hub
+# User Guide
 
 This page contains information about using and customizing your 2i2c Hubs.
 
