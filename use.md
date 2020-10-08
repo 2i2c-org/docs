@@ -51,9 +51,8 @@ If you'd like to stop using your 2i2c Hub, or would simply like to move your dat
 1. Navigate to the Jupyter "tree" view by changing your URL path to `/tree`. e.g., `<your-hub>.pilot.2i2c.cloud/user/<your-username>/tree`
 2. Click on **`Download Directory`**.
 
-   ```{figure} images/download-latexpdf-lab.png
+   ```{figure} images/download-directory.png
    :alt: The download directory button
-   :height: 300px
    ```
 
 This will zip up the contents of your user file system and download them to your machine.
