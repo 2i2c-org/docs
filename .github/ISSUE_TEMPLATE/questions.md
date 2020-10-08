@@ -8,7 +8,7 @@ Thanks for asking a question, we'll try to help. 👍
 
 In order to help answer your question, please provide the following information:
 
-✔ What are you trying to accomplish:
-✔ What is your question:
+✔️ What are you trying to accomplish:
+✔️ What is your question:
 
 We'll try to get back to you quickly!
