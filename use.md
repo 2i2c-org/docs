@@ -1,6 +1,32 @@
 # User Guide
 
 This page contains information about using and customizing your 2i2c Hubs.
+If you'd like to connect with the Hubs support team, click one of the buttons below to open an issue.
+
+````{panels}
+:column: col-4
+:card: border-1 text-center
+❓
+^^^
+```{link-button} https://github.com/2i2c-org/pilot/issues/new?labels=question&template=questions.md
+:classes: stretched-link
+:text: Ask a question
+```
+---
+✨
+^^^
+```{link-button} https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md
+:text: Request an improvement
+:classes: stretched-link
+
+---
+🐛
+^^^
+```{link-button} https://github.com/2i2c-org/pilot/issues/new?labels=bug&template=tech-support.md
+:text: Report a technical issue
+:classes: stretched-link
+
+````
 
 (include-content)=
 ## Include content in your hub
