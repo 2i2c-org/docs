@@ -1,5 +1,5 @@
 (about-the-project)=
-## About this Project
+# About this Project
 
 The 2i2c Hubs for All pilot is an attempt at making interactive computing environments more accessible to the research and education community, with a focus on smaller colleges and minority-serving institutions. It is a collaboration between the following three organizations.
 
