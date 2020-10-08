@@ -23,7 +23,7 @@ templates_path = ["_templates"]
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", ".github"]
 
 myst_admonition_enable = True
 myst_deflist_enable = True
@@ -65,19 +65,19 @@ for hub in hubs["hubs"]:
     entries += f"""
     ---
     [{hub["org_name"]}]({hub["org_url"]})
-    ^^^
-    [![logo]({hub["org_logo"]})]({hub["org_url"]})
-
     +++
     [`{hub["domain"]}`](https://{hub["domain"]})
     """
+    # Whenever we get approval, can add this to include logos
+    # ^^^
+    # [![logo]({hub["org_logo"]})]({hub["org_url"]})
 entries = dedent(entries)
 
 hubs_table = f"""
 ```{{panels}}
 :container: full-width
-:column: text-center col-4
-:body: +d-flex flex-wrap align-items-center
+:column: col-4 py-2 text-center
+:body: +d-flex flex-wrap align-items-center text-center
 {entries}
 ```
 """

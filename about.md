@@ -3,22 +3,24 @@
 
 The 2i2c Hubs for All pilot is an attempt at making interactive computing environments more accessible to the research and education community, with a focus on smaller colleges and minority-serving institutions. It is a collaboration between the following three organizations.
 
-```{panels}
+````{panels}
 :column: col-4
-:card: border-0 text-center logos
-![CloudBank Logo](https://www.cloudbank.org/sites/default/files/file_fields/logo.png)
-+++
-[CloudBank](https://www.cloudbank.org/)
----
-
-![DSEP Logo](https://upload.wikimedia.org/wikipedia/commons/8/82/University_of_California%2C_Berkeley_logo.svg)
-+++
-[Berkeley DSEP](https://data.berkeley.edu/dsep)
----
-![2i2c Logo](https://2i2c.org/media/logo-wide.png)
-+++
-[2i2c](https://2i2c.org)
+:card: border-1 text-center logos
+```{link-button} https://www.cloudbank.org/
+:text: CloudBank
+:classes: stretched-link
 ```
+---
+```{link-button} https://data.berkeley.edu/dsep
+:text: Berkeley DSEP
+:classes: stretched-link
+```
+---
+```{link-button} https://2i2c.org
+:text: 2i2c
+:classes: stretched-link
+```
+````
 
 ## What are the technical goals of the Hubs for All pilot?
 
@@ -47,7 +49,3 @@ The cloud technology behind the 2i2c Hubs for All project is designed and develo
 ## Will this infrastructure be free forever?
 
 Probably not. 2i2c is running this pilot in order to better-understand the needs of the research and education community, and to arrive at a sustainable model for providing these services in a sustainable manner in the future. We plan to offer 2i2c Hubs in the future at a price that is sustainable for both research and educational communities, as well as 2i2c.
-
-## What happens if I want to move off of a 2i2c hub?
-
-2i2c Hubs are designed to use entirely open source tools that are vendor- and workflow-agnostic. Our goal is to provide you with interactive computing environments that seamlessly integrate with pre-existing workflows across the research and education community. That means that it should be **extremely easy** to move off of a 2i2c Hub and into a different online environment that uses the Jupyter stack (or simply onto your own computer).

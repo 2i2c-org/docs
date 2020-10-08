@@ -36,6 +36,8 @@ For information about the infrastructure behind a 2i2c Hub, see [](infrastructur
 ```{toctree}
 :hidden:
 use
-about
+customize
+faq
 infrastructure
+about
 ```
