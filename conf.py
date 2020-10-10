@@ -49,6 +49,7 @@ html_theme_options = {
     "repository_url": "https://github.com/2i2c-org/pilot",
     "use_issues_button": True,
     "use_repository_button": True,
+    "navbar_footer_text": "By the <a href='https://2i2c.org'>International Interactive Computing Collaboration</a> (2i2c)"
 }
 html_baseurl = "https://2i2c.org/pilot"
 

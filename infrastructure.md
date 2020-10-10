@@ -8,7 +8,6 @@ This content is meant for those familiar with cloud infrastructure and tools for
 
 ## What technology makes up each hub?
 
-
 🚀 core infrastructure
 : Underneath each 2i2c Hub is a [JupyterHub](https://jupyter.org/hub). These provide interactive computing sessions for each of your users, and connect to the other infrastructure in the cloud. We use [`auth0`](https://auth0.com/) for authenticating users, which can connect to a number of other authentication protocols (such as OAuth2).
 

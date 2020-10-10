@@ -6,3 +6,7 @@ div.figure img {
     border: 1px solid black;
     border-radius: 0.5em;
 }
+
+.interface-logos img {
+    height: 60px;
+}

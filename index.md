@@ -1,12 +1,41 @@
 # The 2i2c Hubs Pilot
 
-The 2i2c Hubs Pilot is a project to provide JupyterHubs running on cloud infrastructure in a manner that is both accessible and scalable to many hubs and organizations. Fore more information, see [](about-the-project).
-
-Thanks for your interest in the 2i2c Hubs pilot. This documentation should help give you an idea for the goals of this pilot project, as well as information about how you can use and customize the 2i2c Hubs that are deployed.
+The 2i2c Hubs Pilot is a project to provide JupyterHubs running on cloud infrastructure that is both accessible and scalable to many hubs and organizations. Fore more information, see [](about-the-project).
 
 :::{admonition,warning} The pilot is in an alpha phase!
 Information that you see here might be out-of-date as our technology stack and information around it are rapidly changing.
 :::
+
+## What is a 2i2c Hub?
+
+A 2i2c Hub is a cloud-based interactive computing environment built entirely on open-source technology and customized for research and education. Each 2i2c Hub is deployed for a specific community, and can be customized for that community.
+It brings together **environments, datasets, computing resources, and content**. Here's a small overview that gives and idea for the major parts of a 2i2c Hub:
+
+```{image} https://2i2c.org/img/2i2c-hub-overview.png
+:height: 300px
+```
+
+## What environment do I get?
+
+2i2c Hubs have a number of packages pre-installed that are particularly useful for research and education. They provide the following user-interfaces by default:
+
+```{panels}
+:container: +interface-logos text-center
+[Jupyter Lab](https://jupyterlab.readthedocs.io/) / [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/)
+^^^
+![Jupyter Logo](https://jupyter.org/assets/nav_logo.svg)
+
+---
+[RStudio](https://rstudio.com/)
+^^^
+![RStudio Logo](https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png)
+```
+
+For more information about each 2i2c Hub, see [](infrastructure.md).
+
+## Who created the 2i2c Hubs?
+
+2i2c Hubs are designed and deployed by the [International Interactive Computing Collaboration](https://2i2c.org) (or 2i2c). They are [a team with many years of experience](https://2i2c.org/about/) running interactive computing infrastructure for research and education.
 
 ## Who is eligible for the 2i2c Hubs pilot?
 
@@ -16,14 +45,6 @@ We are looking for small-ish users from research and education who would like to
 - Run data science infrastructure for your team or lab
 - Run a collaborative project with distributed users
 - Provide online interactive environments for content that you write
-
-## What kinds of guarantees do I have for this pilot?
-
-We know that it is really frustrating to rely on infrastructure that is undependable or often breaks. For this reason, we've designed 2i2c Hubs to be as fault-tolerant as possible. If things break, they should break for only one person rather than for an entire hub. If things must be changed, they should be changeable easily and quickly.
-
-In addition, JupyterHub is designed to give you a degree of administrative control over what's going on inside. For example, you can add your own users and even help them debug their problem by taking over their session. See [](access-server).
-
-That said, this is a pilot being run with limited resources. You should not expect someone to respond to your questions and problems *immediately*. However, we'll do our best to get back to you quickly. Moreover, the 2i2c Hubs are not currently provided with a guarantee around site reliability (though we will informally tell you that they are generally very reliable).
 
 ## Using a 2i2c Hub
 
