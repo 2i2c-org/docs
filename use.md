@@ -6,26 +6,25 @@ If you'd like to connect with the Hubs support team, click one of the buttons be
 ````{panels}
 :column: col-4
 :card: border-1 text-center
-❓
+Request an improvement ✨
+^^^
+```{link-button} https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md
+:text: Update/add packages, infrastructure, etc.
+:classes: stretched-link
+
+---
+Report a technical issue 🐛
+^^^
+```{link-button} https://github.com/2i2c-org/pilot/issues/new?labels=bug&template=tech-support.md
+:text: Crashing sessions, broken webpages, etc.
+:classes: stretched-link
+---
+Ask a question ❓
 ^^^
 ```{link-button} https://github.com/2i2c-org/pilot/issues/new?labels=question&template=questions.md
 :classes: stretched-link
-:text: Ask a question
+:text: Generic questions about the hub.
 ```
----
-✨
-^^^
-```{link-button} https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md
-:text: Request an improvement
-:classes: stretched-link
-
----
-🐛
-^^^
-```{link-button} https://github.com/2i2c-org/pilot/issues/new?labels=bug&template=tech-support.md
-:text: Report a technical issue
-:classes: stretched-link
-
 ````
 
 (include-content)=
@@ -33,7 +32,7 @@ If you'd like to connect with the Hubs support team, click one of the buttons be
 
 To include content in your hub (e.g., scripts, notebooks, etc) we recommend using [`nbgitpuller`](https://jupyterhub.github.io/nbgitpuller).
 
-You can use `nbgitpuller` to generate a link to a public repository, or a file in that repository. When a user clicks that link, then a copy of the link's target will be automatically placed in the user's home directory, and they will be directed to that content in the JupyterHub (if they are logged in).
+You can use `nbgitpuller` to generate a link to a public repository, or a file in that repository. When a user clicks that link, a copy of the link's target will be automatically placed in the user's home directory, and they will be directed to that content in the JupyterHub (if they are logged in).
 
 - **Generate an nbgitpuller link** by going to [`nbgitpuller.link`](http://nbgitpuller.link/). You'll be asked to provide some information about the content you wish to share, and can copy the link when you are done.
   - Use `https://<your-hub>.pilot.2i2c.cloud` as your JupyterHub address
@@ -41,6 +40,14 @@ You can use `nbgitpuller` to generate a link to a public repository, or a file i
   - The link will be in the field just above your form.
 
 - **Share this link with your users**. Anybody can click an `nbgitpuller` link. If they have an account on the hub to which it points, then they'll get a copy of the content that you've linked to.
+
+```{link-button} http://nbgitpuller.link
+:text: Go to nbgitpuller.link
+:classes: btn-outline-primary btn-block
+```
+```{figure} images/nbgitpuller-ui.png
+The [`nbgitpuller.link`](http://nbgitpuller.link) user interface, along with some important fields highlighted.
+```
 
 (download-as-pdf)=
 ## Download your notebooks as PDFs

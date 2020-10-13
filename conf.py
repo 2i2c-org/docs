@@ -28,7 +28,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", ".github"]
 myst_admonition_enable = True
 myst_deflist_enable = True
 myst_url_schemes = ("http", "https", "mailto")
-panels_add_boostrap_css = False  # TODO: change to `bootstrap` when my PR is merged into sphinx-panels
+panels_add_bootstrap_css = False
 
 # -- Options for HTML output -------------------------------------------------
 
