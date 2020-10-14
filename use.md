@@ -1,6 +1,9 @@
 # User Guide
 
 This page contains information about using and customizing your 2i2c Hubs.
+
+**Hub Support**
+
 If you'd like to connect with the Hubs support team, click one of the buttons below to open an issue.
 
 ````{panels}
@@ -27,6 +30,17 @@ Ask a question ❓
 ```
 ````
 
+(note-on-urls)=
+## A note on hub URLs
+
+Each community participating in the 2i2c Hubs Pilot will get their own JupyterHub instance. These instances are running at a URL with the following form:
+
+```
+<community-name>.<project-name>.2i2c.cloud
+```
+
+Each 2i2c Hub has a **community** (denoted by `<community-name>`) and a **project** (denoted by `<project-name>`). Projects are different collections of community hubs, and are generally run by different teams of operators and funded by different organizations.
+
 (include-content)=
 ## Include content in your hub
 
@@ -40,6 +54,11 @@ You can use `nbgitpuller` to generate a link to a public repository, or a file i
   - The link will be in the field just above your form.
 
 - **Share this link with your users**. Anybody can click an `nbgitpuller` link. If they have an account on the hub to which it points, then they'll get a copy of the content that you've linked to.
+
+:::{important,admonition} Double-check your hub URL
+Make sure that the hub URL you insert into the nbgitpuller form is correct! See [](note-on-urls) for more information.
+:::
+
 
 ```{link-button} http://nbgitpuller.link
 :text: Go to nbgitpuller.link

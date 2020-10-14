@@ -66,6 +66,9 @@ for hub in hubs["hubs"]:
     entries += f"""
     ---
     [{hub["org_name"]}]({hub["org_url"]})
+    [Operated by: {hub["operated_by"]['name']}]({hub["operated_by"]['url']})
+    [Funded by: {hub["funded_by"]['name']}]({hub["funded_by"]['url']})
+    [Designed by: {hub["designed_by"]['name']}]({hub["designed_by"]['url']})
     +++
     [`{hub["domain"]}`](https://{hub["domain"]})
     """
