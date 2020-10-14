@@ -12,6 +12,10 @@ div.figure img {
 }
 
 div.current-hubs .card-body p {
+    font-size: 1.2em;
+}
+
+div.current-hubs .card-footer p {
     margin: 0;
 }
 
