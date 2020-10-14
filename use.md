@@ -16,7 +16,7 @@ Request an improvement ✨
 :classes: stretched-link
 
 ---
-Report a technical issue 🐛
+Report an issue 🐛
 ^^^
 ```{link-button} https://github.com/2i2c-org/pilot/issues/new?labels=bug&template=tech-support.md
 :text: Crashing sessions, broken webpages, etc.
