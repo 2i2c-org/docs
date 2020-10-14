@@ -23,6 +23,17 @@ This content is meant for those familiar with cloud infrastructure and tools for
 📦 data
 : The data that is used by your 2i2c Hub is provided by you! 2i2c Hubs can connect with a variety of public data sources. We recommend using standard data structures or specifications via libraries like [Intake](https://intake.readthedocs.io/en/latest/).
 
+(people-behind-hubs)=
+## What people run the hubs?
+
+2i2c Hubs require a variety of expertise to design, deploy, and maintain.
+This roughly breaks down along the following roles:
+
+* **A Hub Operator** keeps the hub running from day to day and supports hub users with technical problems. These individuals are the first point-of-contact 
+* **A Community Champion** is the main connection to the community of users that a hub is meant to serve. They work with the hub architect and operator to ensure the hub meets the needs of each community.
+* **A Hub Architect** designs the infrastructure underlying a community of hubs, and manages initial deployments and customizations. They create the backbone of 2i2c Hub infrastructure.
+* **A Resource Provider** provides the cloud resources to run the hub infrastructure. Sometimes this is a cloud provider providing credits, sometimes a community pays for its cloud resources, other times it is 2i2c.
+
 ## Where are 2i2c Hubs configured?
 
 All of the configuration and deployment scripts for the 2i2c Hubs can be found at [this GitHub repository][low-touch-hubs]. This repository contains both the deployment code as well as documentation that explains how it works. It should be treated as "for advanced users only", and is provided for transparency and as a guide for the community to follow if they wish to manage their own infrastructure similar to 2i2c Hubs.

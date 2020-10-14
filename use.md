@@ -36,10 +36,10 @@ Ask a question ❓
 Each community participating in the 2i2c Hubs Pilot will get their own JupyterHub instance. These instances are running at a URL with the following form:
 
 ```
-<community-name>.<project-name>.2i2c.cloud
+<hub-name>.<community-name>.2i2c.cloud
 ```
 
-Each 2i2c Hub has a **community** (denoted by `<community-name>`) and a **project** (denoted by `<project-name>`). Projects are different collections of community hubs, and are generally run by different teams of operators and funded by different organizations.
+Each 2i2c Hub has **hub name** (denoted by `<hub-name>`) and a **community name** (denoted by `<community-name>`). Communities are collections of hubs around a particular community or collaboration. Each community infrastructure may be run by different teams. For more information, see [](people-behind-hubs).
 
 (include-content)=
 ## Include content in your hub

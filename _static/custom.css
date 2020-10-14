@@ -10,3 +10,11 @@ div.figure img {
 .interface-logos img {
     height: 60px;
 }
+
+div.current-hubs .card-body p {
+    margin: 0;
+}
+
+p.card-text {
+    width: 100%;
+}
