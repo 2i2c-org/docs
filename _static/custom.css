@@ -10,3 +10,15 @@ div.figure img {
 .interface-logos img {
     height: 60px;
 }
+
+div.current-hubs .card-body p {
+    font-size: 1.2em;
+}
+
+div.current-hubs .card-footer p {
+    margin: 0;
+}
+
+p.card-text {
+    width: 100%;
+}

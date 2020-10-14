@@ -61,23 +61,56 @@ from pathlib import Path
 
 resp = requests.get("https://raw.githubusercontent.com/2i2c-org/low-touch-hubs/master/hubs.yaml")
 hubs = safe_load(resp.text)
+# FOR WHEN WE HAVE THIS DATA:
+# [Operated by: {hub["operator"]['name']}]({hub["operated_by"]['url']})
+# [Funded by: {hub["funder"]['name']}]({hub["funded_by"]['url']})
+# [Designed by: {hub["architect"]['name']}]({hub["designed_by"]['url']})
 entries = ""
-for hub in hubs["hubs"]:
-    entries += f"""
-    ---
-    [{hub["org_name"]}]({hub["org_url"]})
-    +++
-    [`{hub["domain"]}`](https://{hub["domain"]})
-    """
-    # Whenever we get approval, can add this to include logos
-    # ^^^
-    # [![logo]({hub["org_logo"]})]({hub["org_url"]})
+for cluster in hubs["clusters"]:
+
+    for hub in cluster["hubs"]:
+        # TEMPORARILY HARD-CODING
+        if cluster["name"] == "2i2c":
+            operator = "2i2c"
+            operator_url = "https://2i2c.org"
+        else:
+            operator = "CloudBank"
+            operator_url = "https://cloudbank.org"
+        hub['operator'] = {
+            'name': operator,
+            'url': operator_url
+        }
+        hub['funder'] = {
+            'name': operator,
+            'url': operator_url
+        }
+        hub['architect'] = {
+            'name': "2i2c",
+            'url': "https://2i2c.org"
+        }
+
+        entries += f"""
+        ---      
+        [{hub["org_name"]}]({hub["org_url"]})
+        
+        [`{hub["domain"]}`](https://{hub["domain"]})
+
+        +++
+        Hub Operator: [{hub["operator"]['name']}]({hub["operator"]['url']})
+
+        Hub Funder: [{hub["funder"]['name']}]({hub["funder"]['url']})
+
+        Hub Architect: [{hub["architect"]['name']}]({hub["architect"]['url']})
+        """
+        # Whenever we get approval, can add this to include logos
+        # ^^^
+        # [![logo]({hub["org_logo"]})]({hub["org_url"]})
 entries = dedent(entries)
 
 hubs_table = f"""
 ```{{panels}}
-:container: full-width
-:column: col-4 py-2 text-center
+:container: full-width current-hubs
+:column: col-6 py-2 text-center
 :body: +d-flex flex-wrap align-items-center text-center
 {entries}
 ```
