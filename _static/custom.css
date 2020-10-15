@@ -11,8 +11,9 @@ div.figure img {
     height: 60px;
 }
 
-div.current-hubs .card-body p {
+div.current-hubs .card-body p:first-child {
     font-size: 1.2em;
+    margin-bottom: 0;
 }
 
 div.current-hubs .card-footer p {
