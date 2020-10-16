@@ -100,7 +100,7 @@ If you'd like to debug a user's server, you may take control over their session 
 Clicking "access server" will allow you to control the user's session.
 ```
 
-## Share data and files across users?
+## Share data and files across users
 
 Hubs have a folder called `shared` that is meant for distributing files, data, etc that **all users have access to**. This can be useful for utilizing a shared resource on the hub so that all students don't have to download it themselves (for example, a dataset that is commonly-used in course material).
 
@@ -121,6 +121,10 @@ To share files across users, follow these steps:
   import pandas as pd
   pd.read_csv("~/shared/myshareddata.csv")
   ```
+
+```{seealso}
+To share *content* that is stored in a public repository, see [](include-content).
+```
 
 (migration-guide)=
 ## 2i2c Hub migration guide
