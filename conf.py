@@ -59,7 +59,7 @@ from textwrap import dedent
 from yaml import safe_load
 from pathlib import Path
 
-resp = requests.get("https://raw.githubusercontent.com/2i2c-org/low-touch-hubs/master/hubs.yaml")
+resp = requests.get("https://raw.githubusercontent.com/2i2c-org/pilot-hubs/master/hubs.yaml")
 hubs = safe_load(resp.text)
 entries = ""
 for cluster in hubs["clusters"]:
