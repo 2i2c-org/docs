@@ -36,7 +36,7 @@ This roughly breaks down along the following roles:
 
 ## Where are 2i2c Hubs configured?
 
-All of the configuration and deployment scripts for the 2i2c Hubs can be found at [this GitHub repository][low-touch-hubs]. This repository contains both the deployment code as well as documentation that explains how it works. It should be treated as "for advanced users only", and is provided for transparency and as a guide for the community to follow if they wish to manage their own infrastructure similar to 2i2c Hubs.
+All of the configuration and deployment scripts for the 2i2c Hubs can be found at [this GitHub repository][pilot-hubs]. This repository contains both the deployment code as well as documentation that explains how it works. It should be treated as "for advanced users only", and is provided for transparency and as a guide for the community to follow if they wish to manage their own infrastructure similar to 2i2c Hubs.
 
 ## How could I deploy my own 2i2c Hub?
 
@@ -45,9 +45,9 @@ The 2i2c Hubs are all deployed according to best-practices as documented in the 
 - For smaller hubs with 5-50 users: [The Littlest JupyterHub Documentation](https://tljh.jupyter.org)
 - For larger hubs with 5-100+ users: [The JupyterHub for Kubernetes Documentation](https://z2jh.jupyter.org)
 
-In addition, we recommend checking out [this GitHub repository][low-touch-hubs], which contains the configuration and deployment scripts for all of the hubs offered under this pilot.
+In addition, we recommend checking out [this GitHub repository][pilot-hubs], which contains the configuration and deployment scripts for all of the hubs offered under this pilot.
 
-[low-touch-hubs]: https://github.com/2i2c-org/low-touch-hubs
+[pilot-hubs]: https://github.com/2i2c-org/pilot-hubs
 
 ## A list of current hubs
 
