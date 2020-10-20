@@ -7,7 +7,7 @@
 By default your 2i2c Hub has several packages installed for Python and R. The environment for all pilot hubs is defined [in this folder](https://github.com/2i2c-org/pilot-hubs/tree/master/images/user). It is a bit technical, but gives an idea of the kinds of libraries that are installed by default. In particular:
 
 - For Python: [see this `environment.yml` file](https://github.com/2i2c-org/pilot-hubs/tree/master/images/user/environment.yml) for common Python packages
-- For R: [see this `install.R` file](https://github.com/2i2c-org/pilot-hubs/tree/master/images/user)
+- For R: [see this `install.R` file](https://github.com/2i2c-org/pilot-hubs/tree/master/images/user/install.R)
 
 ### Customize the hub's environment
 
