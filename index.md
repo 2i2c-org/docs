@@ -11,7 +11,7 @@ Information that you see here might be out-of-date as our technology stack and i
 A 2i2c Hub is a cloud-based interactive computing environment built entirely on open-source technology and customized for research and education. Each 2i2c Hub is deployed for a specific community, and can be customized for that community.
 It brings together **environments, datasets, computing resources, and content**. Here's a small overview that gives and idea for the major parts of a 2i2c Hub:
 
-```{image} https://2i2c.org/img/2i2c-hub-overview.png
+```{image} https://2i2c.org/media/2i2c-hub-overview.png
 :height: 300px
 ```
 

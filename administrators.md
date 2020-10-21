@@ -11,11 +11,17 @@ By default your 2i2c Hub has several packages installed for Python and R. The en
 
 ### Customize the hub's environment
 
-Currently, the best way to customize your hub's environment is to [open an issue in this repository](https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md) and ask for the new package to be installed. We are working on ways to let individual hubs customize their environment on their own, and will update these docs when that happens!
+There are two ways that you can customize your hub's environment:
 
-### Installing packages from *within* a Jupyter session
+- **`pip install`** the packages you wish. These will be installed **for your current session only**, and will be removed if your server stops and re-starts. As such, we recommend putting a collection of `!pip install` commands in the first cell of your notebooks that need extra libraries.
+- **Request and update to the hub environments**. To request a new or updated package, [open an issue in the `2i2c-org/pilot` repository](https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md) and ask for the new package to be installed.
+ 
+We are working on ways to let individual hubs customize their environment on their own, and will update these docs when that happens!
 
-Note that you may install packages from within a running JupyterHub session (e.g. by running `pip install mypackage` from the terminal). However, these packages will be removed the next time that you start a JupyterHub session.
+:::{admonition,note} Try to avoid installing in the user directory
+Each of your users has their own filesystem that persists across sessions, so it is technically possible to use `pip install --user` to install packages to the home directory so they persist across sessions. However, this is discouraged because it often leads to mismatches between user and instructor environments, and may break functionality on the hub if packages are updated in the base environment that clash with a user-installed package.
+:::
+
 
 ## Choose the interface
 
@@ -83,11 +89,11 @@ The types of usernames you add will depend on the kind of authentication you've 
 :container: full-width
 :card: border-1
 ```{figure} images/add-users-button.png
-The add users button.
+The add users button in the Administrator Panel.
 ```
 ---
 ```{figure} images/add-users-form.png
-Fill in usernames and optionally make them administrators.
+Fill in usernames and optionally make them administrators. You can add multiple users at once by putting a username on each line.
 ```
 ````
 
@@ -98,6 +104,10 @@ If you'd like to debug a user's server, you may take control over their session 
 
 ```{figure} images/access-server.png
 Clicking "access server" will allow you to control the user's session.
+```
+
+```{warning}
+When you control a user's server, all of your actions will be run *as if the user ran it themselves*. This can be confusing for some users and is generally not best-practice. We recommend telling users when you are taking over their session, and using this feature mostly to understand what the user was trying to do, rather than to make major changes to their code or notebook outputs.
 ```
 
 ## Share data and files across users
