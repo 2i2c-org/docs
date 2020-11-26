@@ -59,7 +59,6 @@ You can use `nbgitpuller` to generate a link to a public repository, or a file i
 Make sure that the hub URL you insert into the nbgitpuller form is correct! See [](note-on-urls) for more information.
 :::
 
-
 ```{link-button} http://nbgitpuller.link
 :text: Go to nbgitpuller.link
 :classes: btn-outline-primary btn-block
@@ -67,6 +66,42 @@ Make sure that the hub URL you insert into the nbgitpuller form is correct! See 
 ```{figure} images/nbgitpuller-ui.png
 The [`nbgitpuller.link`](http://nbgitpuller.link) user interface, along with some important fields highlighted.
 ```
+
+## Customize the hub's environment
+
+Currently, the best way to customize your hub's environment is to [open an issue in this repository](https://github.com/2i2c-org/pilot/issues/new) and ask for the new package to be installed. We are working on ways to let individual hubs customize their environment on their own, and will update these docs when that happens!
+
+The environment for all pilot hubs is defined [in this folder](https://github.com/2i2c-org/low-touch-hubs/tree/master/image). It is a bit technical, but gives an idea of the kinds of libraries that are installed by default. In particular:
+
+- For Python: [see this `environment.yml` file](https://github.com/2i2c-org/low-touch-hubs/blob/master/image/environment.yml) for common Python packages
+- For R: [see this `install.R` file](https://github.com/2i2c-org/low-touch-hubs/blob/master/image/install.R)
+
+### Installing packages from *within* a Jupyter session
+
+Note that you may install packages from within a running JupyterHub session (e.g. by running `pip install mypackage` from the terminal). However, these packages will be removed the next time that you start a JupyterHub session.
+
+## Write public books that connect to a 2i2c Hub
+
+You can create public content that is designed to have connections with your 2i2c Hub. For example, you can create lectures from Jupyter Notebooks, and allow students to grab their own copy of the notebook to interact with on the 2i2c Hub.
+
+To connect your public content with a 2i2c Hub, we recommend using [Jupyter Book](https://jupyterbook.org). This is an open-source project that allows you to share collections of notebooks and markdown files as an online website and book. Check out the [Jupyter Book getting started guide](https://jupyterbook.org/start/overview.html) for more information about Jupyter Book.
+
+You can tell Jupyter Book to place links *directly to your 2i2c Hub* on each page that is served from a notebook. To do so, follow the [launch buttons for JupyterHubs instructions](https://jupyterbook.org/interactive/launchbuttons.html#jupyterhub-buttons-for-your-pages). Make sure that you configure your `jupyterhub_url` to point to the URL of your 2i2c Hub (e.g., `https://<your-hub>.pilot.2i2c.cloud`).
+
+## Storage on the hub
+
+Each user's home directory persists between their sessions.
+
+## User session duration
+
+After 1h of *inactivity*, the user's session is culled. This stops all running
+notebooks & terminals. They can start them back up again on login - their home
+directories are preserved. Any packages they've temporarily installed with `!pip`
+or `!conda` are also cleared, so they might have to install them again.
+
+There is no total time limit on how long a user's session
+can last.
+
 
 (download-as-pdf)=
 ## Download your notebooks as PDFs
