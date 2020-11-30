@@ -27,12 +27,7 @@ This content is meant for those familiar with cloud infrastructure and tools for
 ## What people run the hubs?
 
 2i2c Hubs require a variety of expertise to design, deploy, and maintain.
-This roughly breaks down along the following roles:
-
-* **A Hub Operator** keeps the hub running from day to day and supports hub users with technical problems. These individuals are the first point-of-contact 
-* **Community Champions** are the main connections to the community of users that a hub serves. They work with the hub architect and operator to ensure the hub meets the needs of each community. They often have elevated abilities on the hub such as administrative and customization permissions.
-* **A Hub Architect** designs the infrastructure underlying a community of hubs, and manages initial deployments and customizations. They create the backbone of 2i2c Hub infrastructure and work with Hub Operators and Community Champions to ensure that it meets the needs of the community.
-* **A Resource Provider** provides the cloud resources to run the hub infrastructure. Sometimes this is a cloud provider providing credits, sometimes a community brings cloud resources it has purchased or been given, and other times it is 2i2c that handles purchasing for the community.
+See {doc}`hb:sre` for more information on what is needed to run the hub.
 
 ## Where are 2i2c Hubs configured?
 
