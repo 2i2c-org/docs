@@ -15,6 +15,7 @@ extensions = [
     "myst_nb",
     "sphinx_copybutton",
     "sphinx_panels",
+    "sphinx.ext.intersphinx",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -53,6 +54,10 @@ html_theme_options = {
 }
 html_baseurl = "https://2i2c.org/pilot"
 
+intersphinx_mapping = {
+    "hb": ('https://2i2c.org/handbook', None)
+}
+
 # -- Pull the latest list of hubs---------------------------------------------
 import requests
 from textwrap import dedent
@@ -76,7 +81,7 @@ for cluster in hubs["clusters"]:
         [`{hub["domain"]}`](https://{hub["domain"]})
 
         +++
-        Hub Operator: [{info["operated_by"]["name"]}]({info["operated_by"]["url"]})
+        Hub Engineer: [{info["operated_by"]["name"]}]({info["operated_by"]["url"]})
 
         Hub Funder: [{info["funded_by"]["name"]}]({info["funded_by"]["url"]})
 
