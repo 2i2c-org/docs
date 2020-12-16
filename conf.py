@@ -70,9 +70,17 @@ entries = ""
 for cluster in hubs["clusters"]:
 
     for hub in cluster["hubs"]:
-        if hub["name"] == "staging":
+        if any(ii in hub["name"] for ii in ["staging", "demo", "ephemeral"]):
             continue
-        info = hub["config"]["jupyterhub"]["homepage"]["templateVars"]
+        # Some hub configs are at the top level, others are under a `base-hub` sub-field
+        if "jupyterhub" in hub["config"]:
+            hub_config = hub["config"]["jupyterhub"]
+        else:
+            for kind in ["base-hub", "ephemeral-hub"]:
+                if kind in hub["config"]:
+                    hub_config = hub["config"][kind]["jupyterhub"]
+                    break
+        info = hub_config["homepage"]["templateVars"]
         org = info["org"]
         entries += f"""
         ---
