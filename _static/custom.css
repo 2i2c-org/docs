@@ -23,3 +23,7 @@ div.current-hubs .card-footer p {
 p.card-text {
     width: 100%;
 }
+
+p.caption {
+    font-size: 1.4em;
+}

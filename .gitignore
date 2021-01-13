@@ -132,5 +132,4 @@ dmypy.json
 _build/
 
 # Docs data
-hubs-table.txt
 environments.txt

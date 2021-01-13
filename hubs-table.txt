@@ -1,0 +1,139 @@
+
+```{panels}
+:container: full-width current-hubs
+:column: col-6 py-2 text-center
+:body: +d-flex flex-wrap align-items-center text-center
+
+---
+[Purdue Fort Wayne](https://www.pfw.edu/)
+
+[`pfw.pilot.2i2c.cloud`](https://pfw.pilot.2i2c.cloud)
+
++++
+Hub Engineer: [2i2c](https://2i2c.org)
+
+Hub Funder: [JROST & IOI](https://investinopen.org/blog/jrost-rapid-response-fund-awardees)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[Wageningen University and Research](https://www.wur.nl/en/wageningen-university.htm)
+
+[`wur.pilot.2i2c.cloud`](https://wur.pilot.2i2c.cloud)
+
++++
+Hub Engineer: [2i2c](https://2i2c.org)
+
+Hub Funder: [JROST & IOI](https://investinopen.org/blog/jrost-rapid-response-fund-awardees)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[Callysto Canada](https://callysto.ca/)
+
+[`callysto.pilot.2i2c.cloud`](https://callysto.pilot.2i2c.cloud)
+
++++
+Hub Engineer: [2i2c](https://2i2c.org)
+
+Hub Funder: [JROST & IOI](https://investinopen.org/blog/jrost-rapid-response-fund-awardees)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[Peddie Academy](http://peddie.org/)
+
+[`peddie.pilot.2i2c.cloud`](https://peddie.pilot.2i2c.cloud)
+
++++
+Hub Engineer: [2i2c](https://2i2c.org)
+
+Hub Funder: [JROST & IOI](https://investinopen.org/blog/jrost-rapid-response-fund-awardees)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[Catalyst Cooperative](https://catalyst.coop/)
+
+[`catalyst-cooperative.pilot.2i2c.cloud`](https://catalyst-cooperative.pilot.2i2c.cloud)
+
++++
+Hub Engineer: [CloudBank](http://cloudbank.org/)
+
+Hub Funder: [CloudBank](http://cloudbank.org/)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[EarthLab](https://www.colorado.edu/earthlab/)
+
+[`earthlab.pilot.2i2c.cloud`](https://earthlab.pilot.2i2c.cloud)
+
++++
+Hub Engineer: [2i2c](https://2i2c.org)
+
+Hub Funder: [JROST & IOI](https://investinopen.org/blog/jrost-rapid-response-fund-awardees)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[Spelman College](https://www.spelman.edu/)
+
+[`spelman.cloudbank.2i2c.cloud`](https://spelman.cloudbank.2i2c.cloud)
+
++++
+Hub Engineer: [CloudBank](http://cloudbank.org/)
+
+Hub Funder: [CloudBank](http://cloudbank.org/)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[City College SF](https://www.ccsf.edu/)
+
+[`ccsf.cloudbank.2i2c.cloud`](https://ccsf.cloudbank.2i2c.cloud)
+
++++
+Hub Engineer: [CloudBank](http://cloudbank.org/)
+
+Hub Funder: [CloudBank](http://cloudbank.org/)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[El Camino College](https://www.elcamino.edu/)
+
+[`elcamino.cloudbank.2i2c.cloud`](https://elcamino.cloudbank.2i2c.cloud)
+
++++
+Hub Engineer: [CloudBank](http://cloudbank.org/)
+
+Hub Funder: [CloudBank](http://cloudbank.org/)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[Howard University](https://home.howard.edu/)
+
+[`howard.cloudbank.2i2c.cloud`](https://howard.cloudbank.2i2c.cloud)
+
++++
+Hub Engineer: [CloudBank](http://cloudbank.org/)
+
+Hub Funder: [CloudBank](http://cloudbank.org/)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+---
+[Skyline College](https://www.skylinecollege.edu/)
+
+[`skyline.cloudbank.2i2c.cloud`](https://skyline.cloudbank.2i2c.cloud)
+
++++
+Hub Engineer: [CloudBank](http://cloudbank.org/)
+
+Hub Funder: [CloudBank](http://cloudbank.org/)
+
+Hub Architect: [2i2c](https://2i2c.org)
+
+```

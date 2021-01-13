@@ -1,7 +1,10 @@
 sphinx
 myst-nb
+myst-parser[linkify]
 sphinx-copybutton
 sphinx-book-theme
 sphinx-panels
 requests
 pyyaml
+sphinxext-rediraffe
+markdown-it-linkify

@@ -1,6 +1,6 @@
 # -- Project information -----------------------------------------------------
 
-project = "2i2c Hubs for All Pilot"
+project = "2i2c Hubs"
 copyright = "2020"
 author = "2i2c"
 
@@ -16,6 +16,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_panels",
     "sphinx.ext.intersphinx",
+    "sphinxext.rediraffe",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -26,8 +27,8 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", ".github"]
 
-myst_admonition_enable = True
-myst_deflist_enable = True
+myst_enable_extensions = ["colon_fence", "deflist", "linkify"]
+
 myst_url_schemes = ("http", "https", "mailto")
 panels_add_bootstrap_css = False
 
@@ -37,7 +38,7 @@ panels_add_bootstrap_css = False
 # a list of builtin themes.
 #
 html_theme = "sphinx_book_theme"
-html_title = "2i2c Hubs for All Pilot"
+html_title = "Hubs Documentation"
 html_copy_source = True
 html_sourcelink_suffix = ""
 
@@ -53,9 +54,13 @@ html_theme_options = {
     "navbar_footer_text": "By the <a href='https://2i2c.org'>International Interactive Computing Collaboration</a> (2i2c)"
 }
 html_baseurl = "https://2i2c.org/pilot"
-
+html_logo = "images/logo.png"
 intersphinx_mapping = {
-    "hb": ('https://2i2c.org/handbook', None)
+    "tc": ('https://2i2c.org/team-compass', None),
+    "ph": ('https://2i2c.org/pilot-hubs', None)
+}
+
+rediraffe_redirects = {
 }
 
 # -- Pull the latest list of hubs---------------------------------------------
@@ -70,6 +75,7 @@ entries = ""
 for cluster in hubs["clusters"]:
 
     for hub in cluster["hubs"]:
+
         if any(ii in hub["name"] for ii in ["staging", "demo", "ephemeral"]):
             continue
         # Some hub configs are at the top level, others are under a `base-hub` sub-field
@@ -80,6 +86,12 @@ for cluster in hubs["clusters"]:
                 if kind in hub["config"]:
                     hub_config = hub["config"][kind]["jupyterhub"]
                     break
+        template_dict = {
+            "daskhub": "[Pangeo](hub-types:pangeo)",
+            "base-hub": "[Educational](hub-types:education)",
+            "ephemeral-hub": "[Ephemeral](hub-types:ephemeral)"
+        }
+        template = template_dict[hub["template"]]
         info = hub_config["homepage"]["templateVars"]
         org = info["org"]
         entries += f"""
@@ -94,6 +106,8 @@ for cluster in hubs["clusters"]:
         Hub Funder: [{info["funded_by"]["name"]}]({info["funded_by"]["url"]})
 
         Hub Architect: [{info["designed_by"]["name"]}]({info["designed_by"]["url"]})
+
+        Hub Type: {template}
         """
         # Whenever we get approval, can add this to include logos
         # ^^^
@@ -108,7 +122,11 @@ hubs_table = f"""
 {entries}
 ```
 """
-Path("hubs-table.txt").write_text(hubs_table)
+path_build = Path("_build")
+if not path_build.is_dir():
+    path_build.mkdir()
+path_build.joinpath("hubs-table.txt").write_text(hubs_table)
+
 
 def setup(app):
     app.add_css_file("custom.css")
