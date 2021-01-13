@@ -7,4 +7,3 @@ sphinx-panels
 requests
 pyyaml
 sphinxext-rediraffe
-markdown-it-linkify
