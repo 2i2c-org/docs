@@ -1,8 +1,14 @@
 # Get support
 
-Hub engineers can provide support and debugging for issues that are related to the 2i2c Hub infrastructure.
-If you think
-If you'd like to connect with the Hubs support team, click one of the buttons below to open an issue.
+Hub engineers can provide support and debugging for issues that are related to the 2i2c Hub infrastructure. There are a few ways to get in touch listed below (in decreasing order of preference!)
+
+(support:issues)=
+## Via GitHub Issues
+
+We handle most support requests via [GitHub issues in the `pilot/` repository](https://github.com/2i2c-org/pilot/issues).
+This ensures that most support (and the resulting fixes) are done in a public place.
+
+To help you open the right issue, here are a few buttons you can click to quickly open a support request in the `pilot/` repository:
 
 ````{panels}
 :container: full-width
@@ -29,6 +35,18 @@ Ask a question ❓
 ```
 ````
 
+:::{note}
+If you have a support question that shouldn't be in public, please [send a support email](support:email).
+:::
+
+(support:slack)=
 ## Connect on Slack
 
 You're also welcome to connect with the 2i2c Hub Engineering team via [the 2i2c Slack](https://2i2c.slack.com) (in particular, check out the `#support` channel). If you don't have access to the Slack already, [open an issue in the pilot repository](https://github.com/2i2c-org/pilot/issues/new) and we're happy to give you access.
+
+
+(support:email)=
+## Send a support email
+
+For support requests that should not be public, you can also [send the 2i2c engineering team an email via `support@2i2c.org`](mailto:support@2i2c.org).
+We prefer to handle support requests via public issue tracking, but understand that this is not always possible!
