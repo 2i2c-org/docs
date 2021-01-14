@@ -35,7 +35,17 @@ They require a variety of expertise to design, deploy, maintain, and use.
 Generally speaking, 2i2c provides **development** and **operation** of a 2i2c hub, as well as **support** for questions and issues that arise with the hub infrastructure.
 It does this in collaboration with leaders from the community for a particular hub (usually, these leaders have "administrative" rights on a hub with more priveleges for user control etc).
 
-See {doc}`tc:sre` for more information on the roles needed to run the hub.
+:::{seealso}
+- **Roles needed to run a hub**: see {doc}`tc:sre`
+- **Support options**: see [](../admin/support.md).
+:::
+
+## Funding open source
+
+Everything that 2i2c deploys is open source and community-driven projects.
+We prioritize using multi-stakeholder projects that are well-supported by a diverse community of contributors.
+The resources that we receive to run 2i2c Hubs thus **also go towards making open-source improvements** in these communities so that others may benefit from them.
+We see this as an opportunity to solve two problems with one stream of funding: support research and education, and [support open source communities](https://2i2c.org/open-source/) in the Jupyter ecosystem and beyond.
 
 ## Moving off of a 2i2c Hub?
 
