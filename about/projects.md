@@ -14,8 +14,7 @@ Please [shoot us an email](mailto:hello@2i2c.org) and let us know that you're in
 
 ### Hubs for Education pilot
 
-The Hubs for Education pilot is an attempt at making interactive computing environments more accessible to the research and education community, with a focus on smaller colleges and minority-serving institutions. It is a collaboration between [CloudBank](https://www.cloudbank.org/), the [Berkeley 
-Computing, Data Science, and Society](https://data.berkeley.edu/dsep), and [2i2c](https://2i2c.org).
+The Hubs for Education pilot is an attempt at making interactive computing environments more accessible to the research and education community, with a focus on smaller colleges and minority-serving institutions. It is a collaboration between [CloudBank](https://www.cloudbank.org/), the [Berkeley Division of Computing, Data Science, and Society](https://data.berkeley.edu/dsep), and [2i2c](https://2i2c.org).
 
 Cloud computing credits for these hubs are provided by [CloudBank](https://www.cloudbank.org/) as part of a collaboration with UC Berkeley.
 
