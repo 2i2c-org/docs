@@ -94,11 +94,12 @@ for cluster in hubs["clusters"]:
         template = template_dict[hub["template"]]
         info = hub_config["homepage"]["templateVars"]
         org = info["org"]
+        website = hub["domain"][0] if isinstance(hub["domain"], list) else hub["domain"]
         entries += f"""
         ---
         [{org["name"]}]({org["url"]})
 
-        [`{hub["domain"]}`](https://{hub["domain"]})
+        [`{website}`](https://{website})
 
         +++
         Hub Engineer: [{info["operated_by"]["name"]}]({info["operated_by"]["url"]})
