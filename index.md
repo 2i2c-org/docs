@@ -16,6 +16,7 @@ See the sections below (or to the left) for more information.
 about/overview
 about/infrastructure
 about/projects
+about/replicate
 ```
 
 ## Hub configuration options
