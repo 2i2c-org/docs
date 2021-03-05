@@ -8,6 +8,12 @@ We prioritize tools with diverse, multi-stakeholder communities, which maximizes
 
 This page is a short guide on how you could replicate your 2i2c Hub infrastructure by migrating off of a 2i2c Hub and setting up your own hub configuration.
 
+% TODO
+% Common issues that arise when operating this infrastructure over time
+% Turn skills needed section below into estimated FTE allotments.
+% What their cloud costs would likely be
+% What their total annual cost might be given assumptions about salaries
+
 ## Understand the basic infrastructure
 
 2i2c Hubs use the official [JupyterHub Helm Chart](https://github.com/jupyterhub/helm-chart) for their configuration and deployment.
