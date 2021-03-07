@@ -25,9 +25,22 @@ admin/support
 admin/environment
 admin/interfaces
 admin/data
-admin/users
 admin/migrate
 admin/content
+```
+
+```{toctree}
+:caption: Administrator configuration guides
+:maxdepth: 1
+admin/configuration/login
+admin/configuration/culling
+```
+
+```{toctree}
+:caption: Administrator how-to guides
+:maxdepth: 1
+admin/howto/manage-users
+admin/howto/access-server
 ```
 
 ```{toctree}
