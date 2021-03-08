@@ -21,9 +21,7 @@ about/projects
 :caption: Administrator Guide
 :maxdepth: 1
 
-admin/support
 admin/environment
-admin/interfaces
 admin/data
 admin/migrate
 admin/content
@@ -39,8 +37,10 @@ admin/configuration/culling
 ```{toctree}
 :caption: Administrator how-to guides
 :maxdepth: 1
+admin/howto/support
 admin/howto/manage-users
-admin/howto/access-server
+admin/howto/control-user-server
+
 ```
 
 ```{toctree}
