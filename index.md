@@ -37,6 +37,7 @@ admin/configuration/culling
 :caption: Administrator how-to guides
 :maxdepth: 1
 admin/howto/support
+admin/howto/nbgitpuller
 admin/howto/manage-users
 admin/howto/control-user-server
 admin/howto/share-datasets
