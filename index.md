@@ -22,7 +22,6 @@ about/projects
 :maxdepth: 1
 
 admin/environment
-admin/data
 admin/migrate
 admin/content
 ```
@@ -40,6 +39,7 @@ admin/configuration/culling
 admin/howto/support
 admin/howto/manage-users
 admin/howto/control-user-server
+admin/howto/share-datasets
 
 ```
 
