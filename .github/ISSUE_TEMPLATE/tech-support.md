@@ -1,7 +1,7 @@
 ---
 name: "🐛 Report a technical issue"
 about: Is something broken? Working unexpectedly? Missing?
-labels: bug
+labels: bug, needs:triage
 ---
 
 Thanks for reporting your issue! Sorry things aren't working as expected.
