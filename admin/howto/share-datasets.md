@@ -11,6 +11,8 @@ memory! So consider teaching with just a subset of data before
 distributing large datasets to your users.
 ```
 
+## The `shared` directory
+
 All users have a directory called `shared` in their home directory.
 This is meant to be used to distribute datasets and other files that
 can be read by all users. This is a *readonly* directory - regular
@@ -21,7 +23,9 @@ their home directory. This is the *same* as the `shared` directory,
 but writeable! So any files admins put here will be immediately
 visible in all users' `shared` directories.
 
-So to share datasets with users, admins should put the dataset in
+## A workflow for sharing datasets
+
+To share datasets with users, admins should put the dataset in
 `~/shared-readwrite`. If they are distributing notebook / content
 that *reads* this dataset, it should refer to files in `~/shared/`
 rather than in `~/shared-readwrite`. This will prevent accidental
@@ -29,5 +33,5 @@ erasures / writes on behalf of admins.
 
 ```{warning}
 This is an experimental feature, and the names of these directories
-and their structure is subject to change.
+and their structure are subject to change.
 ```

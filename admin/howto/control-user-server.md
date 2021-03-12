@@ -1,17 +1,17 @@
 # Controlling a user's server
 
 Hub admins can unilaterally perform actions on user's servers via the
-**Administrator's Panel**. These are primarily used to debug user's session
+**Administrator's Panel**. These are primarily used to debug a user's session
 easily.
 
 You can access the admin panel by clicking the 'Admin' button in the top bar
-in your hub control panel.  Alternatively, you can go to this URL in our
+in your hub control panel.  Alternatively, you can go to this URL in your
 browser: `https://<your-hub-url>/hub/admin`.
 
 
 ## Access a user's server
 
-Accessing a user's server is very useful when trying to debug or reproduce an issue they might have. This facility is available to admins via the admin panel. 
+Accessing a user's server is useful when trying to debug or reproduce an issue they might have. This facility is available to admins via the admin panel. 
 
 1. In the admin panel, you can click `access server` to gain control of a user's
    currently running server. If it isn't running, you can click `start server`
