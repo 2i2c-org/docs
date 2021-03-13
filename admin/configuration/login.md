@@ -13,6 +13,8 @@ Users can prove who they are by logging in via an *authentication provider*. Cur
 
 4. ???. We could probably support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work.
 
+We will ask you what provider you want when we set up the hub. We can change the provider after the fact, but only if absolutely strictly necessary.
+
 ## Authorization
 
 Not everyone who can authenticate is granted access to the hub - that
