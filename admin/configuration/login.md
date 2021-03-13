@@ -17,11 +17,19 @@ We will ask you what provider you want when we set up the hub. We can change the
 
 ## Authorization
 
-Not everyone who can authenticate is granted access to the hub - that
-would mean everyone with a `@gmail.com` account can log in if you use Google as your authentication provider! Instead, we support multiple ways for hub admins to specify which users are *authorized* to be on the hub.
+Not everyone who can authenticate is granted access to the hub - that would mean
+everyone with a `@gmail.com` account can log in if you use Google as your
+authentication provider! Instead, we support multiple ways for hub admins to
+specify which users are *authorized* to be on the hub.
 
-Currently, there are only two supported methods:
+Currently, there are only two supported methods for authorizing regular users:
 
 1. Manually add users via the admin panel in JupyterHub
-2. (Google only) Allow all users who are logged in via aparticular domain - so you can allow access to anyone who is part of your organization or educational institution.
+2. (Google only) Allow all users who are logged in via aparticular domain - so
+   you can allow access to anyone who is part of your organization or
+   educational institution.
 
+Admin users are instead authorized [in YAML config](https://github.com/2i2c-org/pilot-hubs/blob/master/hubs.yaml),
+with support from 2i2c staff.
+
+% TODO: Link to SRE docs on how to do this once we have it
