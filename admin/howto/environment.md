@@ -21,6 +21,7 @@ It is configured with the following:
   - [RStudio](https://rstudio.com/)
 - An Ubuntu 20.04 base image, with common utility packages installed.
 
+(environment/custom)=
 ## Customizing your hub environment
 
 Sometimes, what is in the base user environment is not enough for

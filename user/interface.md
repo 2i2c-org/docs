@@ -12,4 +12,4 @@ You can replace the contents of `<your-interface>` to be one of the following:
 - **Jupyter Notebook**: `/tree`
 - **RStudio**: `/rstudio`
 
-Note that your 2i2c Hub administrator can also configure the **default** interface that users see. In addition, you can configure the interface that **nbgitpuller links** point to, see [](include-content) for information about nbgitpuller links.
+Note that your 2i2c Hub administrator can also configure the **default** interface that users see. In addition, you can configure the interface that **nbgitpuller links** point to, see [](../../admin/howto/nbgitpuller.md) for information about nbgitpuller links.

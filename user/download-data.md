@@ -21,7 +21,7 @@ Hubs managed by 2i2c make this easy.
 This will zip up the contents of your user file system and download them to your machine.
 
 ```{note}
-If your hub is using a [custom user environment](admin/howto/environment), it needs the
+If your hub is using a [custom user environment](environment/custom), it needs the
 [jupyter-tree-download](https://github.com/ryanlovett/jupyter-tree-download) package
 installed to make this feature available.
 ```

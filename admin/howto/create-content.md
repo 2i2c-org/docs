@@ -20,6 +20,5 @@ JupyterHubs
 instructions](https://jupyterbook.org/interactive/launchbuttons.html#jupyterhub-buttons-for-your-pages).
 Make sure that you configure your `jupyterhub_url` to point to the URL of your
 2i2c Hub (e.g., `https://<your-hub>.pilot.2i2c.cloud`).
-This will use automatically [create nbgitpuller links](admin/howto/nbgitpuller)
+This will use automatically [create nbgitpuller links](nbgitpuller.md)
 for you.
-

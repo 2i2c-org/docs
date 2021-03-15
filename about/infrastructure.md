@@ -84,6 +84,7 @@ Each 2i2c Hub has **hub name** (denoted by `<hub-name>`) and a **community name*
 
 It is also possible to provide your own URL that points to a 2i2c Hub.
 
-## How could I deploy my own 2i2c Hub?
-
-Check out [](../admin/migrate.md) for information about migrating off of a 2i2c Hub, including deploying your own hub.
+% TODO: add back in once #54 is merged
+% ## How could I deploy my own 2i2c Hub?
+%
+% Check out [](../admin/migrate.md) for information about migrating off of a 2i2c Hub, including deploying your own hub.
