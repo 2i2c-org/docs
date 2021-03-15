@@ -29,25 +29,3 @@ For more information about creating custom environments for a JupyterHub, we rec
 
 Finally, if you wish to use a different managed cloud service, there are many for you to choose from. These tend to have proprietary components interwoven with open-source ones, which can be a "pro" or a "con" depending on your use-case. 2i2c Hubs are designed to be 100% open source and interoperable with a variety of cloud vendors, however your workflows may be transportable to a proprietary cloud service just the same.
 
-## Download your content and data
-
-(download-as-pdf)=
-### Download your notebooks as PDFs
-
-2i2c Hub come with the ability to convert a Jupyter Notebook as a PDF that users may download locally. To do so, use the Jupyter interface of your choice as shown below:
-
-````{panels}
-:container: full-width
-:column: + text-center
-Classic Notebooks
-```{figure} ../images/download-latexpdf-classic.png
-:height: 300px
-```
----
-JupyterLab
-```{figure} ../images/download-latexpdf-lab.png
-:height: 300px
-```
-````
-
-
