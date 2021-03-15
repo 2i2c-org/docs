@@ -24,7 +24,7 @@ specify which users are *authorized* to be on the hub.
 
 Currently, there are only two supported methods for authorizing regular users:
 
-1. Manually add users via the admin panel in JupyterHub
+1. [Manually add users](admin/howto/manage-users) via the admin panel in JupyterHub
 2. (Google only) Allow all users who are logged in via aparticular domain - so
    you can allow access to anyone who is part of your organization or
    educational institution.
