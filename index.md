@@ -29,7 +29,6 @@ to realize the configuration option.
 :maxdepth: 1
 admin/configuration/login
 admin/configuration/culling
-admin/environment
 admin/migrate
 admin/content
 ```
@@ -43,6 +42,7 @@ tasks on their hubs, mostly without requiring any interaction with
 ```{toctree}
 :maxdepth: 1
 admin/howto/support
+admin/howto/environment
 admin/howto/nbgitpuller
 admin/howto/manage-users
 admin/howto/control-user-server
