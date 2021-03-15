@@ -40,6 +40,4 @@ how to determine their username.
 | ORCID | ORCID id |
 
 
-## To remove users
-
-????
+% TODO: Document how to remove users
