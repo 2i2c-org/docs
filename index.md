@@ -54,6 +54,7 @@ admin/howto/share-datasets
 
 ```{toctree}
 :maxdepth: 1
-users/interface
+user/download-data
+user/interface
 ```
 
