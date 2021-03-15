@@ -8,15 +8,15 @@ Alternatively, you can go to this URL in your browser:
 
 ## To add users
 
-1. Click the `Add Users` button. The `Add Users` dialog box will pop up.
-2. Add one or more users, and hit the `Add Users` button to authorize all the users you just added.
+1. Click the {guilabel}`Add Users` button. The {guilabel}`Add Users` dialog box will pop up.
+2. Add one or more users, and hit the {guilabel}`Add Users` button to authorize all the users you just added.
 
 
 ````{panels}
 :container: full-width
 :card: border-1
 ```{figure} ../../images/add-users-button.png
-The add users button in the Administrator Panel.
+The {guilabel}`Add Users` button in the Administrator Panel.
 ```
 ---
 ```{figure} ../../images/add-users-form.png

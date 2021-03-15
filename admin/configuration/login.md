@@ -1,5 +1,8 @@
 # User authentication & authorization
 
+**Authentication** allows your users to prove who their are.
+**Authorization** gives users certain permissions depending on their identity (such as "access to your hub", or "administrative privileges").
+
 (admin/configuration/authentication)=
 ## Authentication
 
@@ -11,9 +14,9 @@ Users can prove who they are by logging in via an *authentication provider*. Cur
 
 3. [*ORCID*](https://orcid.org/). Everyone who has published a paper has one of these, and anyone else can easily sign up. Almost exclusively used by researchers.
 
-4. ???. We could probably support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work.
+4. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work.
 
-We will ask you what provider you want when we set up the hub. We can change the provider after the fact, but only if absolutely strictly necessary.
+We will ask you what provider you want when we set up the hub. We can change the provider after the fact, but only if absolutely necessary.
 
 ## Authorization
 
@@ -22,14 +25,15 @@ everyone with a `@gmail.com` account can log in if you use Google as your
 authentication provider! Instead, we support multiple ways for hub admins to
 specify which users are *authorized* to be on the hub.
 
-Currently, there are only two supported methods for authorizing regular users:
+Authorizing regular users
+: Currently, there are only two supported methods for authorizing regular users:
 
-1. [Manually add users](../howto/manage-users.md) via the admin panel in JupyterHub
-2. (Google only) Allow all users who are logged in via a particular domain - so
-   you can allow access to anyone who is part of your organization or
-   educational institution.
+  1. [Manually add users](../howto/manage-users.md) via the admin panel in JupyterHub
+  2. (Google only) Allow all users who are logged in via a particular domain - so
+     you can allow access to anyone who is part of your organization or
+     educational institution.
 
-Admin users are instead authorized [in YAML config](https://github.com/2i2c-org/pilot-hubs/blob/master/hubs.yaml),
-with support from 2i2c staff.
+Authorizing admin users
+: Admin users are authorized [in a hub's YAML config](https://github.com/2i2c-org/pilot-hubs/blob/master/hubs.yaml), with support from 2i2c staff.
 
 % TODO: Link to SRE docs on how to do this once we have it

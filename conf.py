@@ -57,7 +57,8 @@ html_baseurl = "https://2i2c.org/pilot"
 html_logo = "images/logo.png"
 intersphinx_mapping = {
     "tc": ('https://2i2c.org/team-compass', None),
-    "ph": ('https://2i2c.org/pilot-hubs', None)
+    "ph": ('https://2i2c.org/pilot-hubs', None),
+    "jb": ('https://jupyterbook.org', None)
 }
 
 rediraffe_redirects = {

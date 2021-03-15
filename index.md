@@ -8,16 +8,15 @@ This guide is for **administrators and community champions** of 2i2c Hubs, or fo
 
 See the sections below (or to the left) for more information.
 
-
-## About 2i2c hubs
+## About the 2i2c hubs
 
 ```{toctree}
 :maxdepth: 1
+:caption: About the 2i2c hubs
 about/overview
 about/infrastructure
 about/projects
 ```
-
 
 ## Hub configuration options
 
@@ -27,6 +26,8 @@ to realize the configuration option.
 
 ```{toctree}
 :maxdepth: 1
+:caption: Hub configuration options
+
 admin/configuration/login
 admin/configuration/culling
 ```
@@ -39,6 +40,7 @@ tasks on their hubs, mostly without requiring any interaction with
 
 ```{toctree}
 :maxdepth: 1
+:caption: Administrator how-to guides
 admin/howto/support
 admin/howto/environment
 admin/howto/nbgitpuller
@@ -53,7 +55,7 @@ admin/howto/share-datasets
 
 ```{toctree}
 :maxdepth: 1
+:caption: User guides
 user/download-data
 user/interface
 ```
-

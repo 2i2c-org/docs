@@ -1,6 +1,6 @@
-# Share large data files with your users
+# Share data files with your users
 
-Sometimes you might need to distribute a set of large files to all
+Sometimes you might need to distribute a set of files to all
 your users, so they don't have to re-download it once per person. 
 This is particularly useful in educational contexts, where you might
 be teaching a course that reads a common dataset.
@@ -13,15 +13,19 @@ distributing large datasets to your users.
 
 ## The `shared` directory
 
-All users have a directory called `shared` in their home directory.
-This is meant to be used to distribute datasets and other files that
-can be read by all users. This is a *readonly* directory - regular
-users can not write to it.
+There are two folders that are used together to allow Administrators to
+share data files with all users.
 
-Admin users will also have a directory called `shared-readwrite` in
-their home directory. This is the *same* as the `shared` directory,
-but writeable! So any files admins put here will be immediately
-visible in all users' `shared` directories.
+`shared`
+: All users have a directory called `shared` in their home directory.
+  This is a *readonly* directory - users and administrators can not write to it.
+  However, anybody can *access* and *read from* the `shared` directory.
+  This is how a user accesses a data file distributed by a hub administrator.
+
+`shared-readwrite`
+: **(administrators only)** Admin users also have a directory called `shared-readwrite` in their home directory.
+  This is the *same folder* as the `shared` directory, but writeable!
+  Any files admins put here will be immediately visible in all users' `shared` directories.
 
 ## A workflow for sharing datasets
 
