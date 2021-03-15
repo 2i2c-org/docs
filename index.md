@@ -9,32 +9,38 @@ This guide is for **administrators and community champions** of 2i2c Hubs, or fo
 See the sections below (or to the left) for more information.
 
 
+## About 2i2c hubs
+
 ```{toctree}
-:caption: About the 2i2c Hubs
 :maxdepth: 1
 about/overview
 about/infrastructure
 about/projects
 ```
 
-```{toctree}
-:caption: Administrator Guide
-:maxdepth: 1
 
+## Hub configuration options
+
+These pages list the different ways hub admins can configure how
+their hub behaves. Most of them require working with a 2i2c engineer
+to realize the configuration option.
+
+```{toctree}
+:maxdepth: 1
+admin/configuration/login
+admin/configuration/culling
 admin/environment
 admin/migrate
 admin/content
 ```
 
-```{toctree}
-:caption: Administrator configuration guides
-:maxdepth: 1
-admin/configuration/login
-admin/configuration/culling
-```
+## Hub administrator how-to guides
+
+These guides have information on how hub admins can perform specific
+tasks on their hubs, mostly without requiring any interaction with
+2i2c engineers.
 
 ```{toctree}
-:caption: Administrator how-to guides
 :maxdepth: 1
 admin/howto/support
 admin/howto/nbgitpuller
@@ -44,8 +50,10 @@ admin/howto/share-datasets
 
 ```
 
+## Hub user guides
+
 ```{toctree}
 :maxdepth: 1
-:caption: User's Guide
 users/interface
 ```
+
