@@ -1,4 +1,4 @@
-# Controlling a user's server
+# Control a user servers
 
 Hub admins can unilaterally perform actions on user's servers via the
 **Administrator's Panel**. These are primarily used to debug a user's session
