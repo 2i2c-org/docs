@@ -30,7 +30,6 @@ to realize the configuration option.
 admin/configuration/login
 admin/configuration/culling
 admin/migrate
-admin/content
 ```
 
 ## Hub administrator how-to guides
@@ -44,6 +43,7 @@ tasks on their hubs, mostly without requiring any interaction with
 admin/howto/support
 admin/howto/environment
 admin/howto/nbgitpuller
+admin/howto/create-content
 admin/howto/manage-users
 admin/howto/control-user-server
 admin/howto/share-datasets
