@@ -37,7 +37,7 @@ It does this in collaboration with leaders from the community for a particular h
 
 :::{seealso}
 - **Roles needed to run a hub**: see {doc}`tc:sre`
-- **Support options**: see [](../admin/support.md).
+- **Support options**: see [](../admin/howto/support.md).
 :::
 
 ## Funding open source
@@ -49,7 +49,10 @@ We see this as an opportunity to solve two problems with one stream of funding: 
 
 ## Moving off of a 2i2c Hub?
 
-2i2c Hubs are designed to use entirely open-source tools that work in other contexts. You can take your workflows elsewhere if you wish, and you can even deploy your own JupyterHub that recreates the same cloud-based experience. For more information, see [](migration-guide).
+2i2c Hubs are designed to use entirely open-source tools that work in other contexts. You can take your workflows elsewhere if you wish, and you can even deploy your own JupyterHub that recreates the same cloud-based experience.
+
+% TODO: add back in once #54 is merged.
+% For more information, see [](migration-guide).
 
 ### Wait, you really want it to be easy for people to _leave_ 2i2c Hubs?
 
