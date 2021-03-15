@@ -16,7 +16,6 @@ See the sections below (or to the left) for more information.
 about/overview
 about/infrastructure
 about/projects
-about/replicate
 ```
 
 ## Hub configuration options
@@ -49,7 +48,7 @@ admin/howto/create-content
 admin/howto/manage-users
 admin/howto/control-user-server
 admin/howto/share-datasets
-
+admin/howto/replicate
 ```
 
 ## Hub user guides

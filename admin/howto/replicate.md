@@ -1,6 +1,6 @@
 # Replicate your own 2i2c Hub
 
-A core tenet of 2i2c is the [Right to Replicate](2i2c.org/right-to-replicate).
+A core tenet of 2i2c is the [Right to Replicate](https://2i2c.org/right-to-replicate).
 This means that we want it to be as easy as possible for our users to deploy their own infrastructure that replicates a 2i2c Hub, without requiring 2i2c to be involved.
 
 2i2c Hubs are built entirely with open source tools that are community-led.
