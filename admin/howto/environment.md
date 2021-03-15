@@ -50,10 +50,14 @@ docker image:
    for full control. Another popular option is to use a `Dockerfile` but
    inherit from a [pangeo base image](https://github.com/pangeo-data/pangeo-docker-images),
    making just the modifications you need.
-   
+  
 2. Use the [repo2docker GitHub Action](https://github.com/jupyterhub/repo2docker-action)
-   to automatically build, name and 
-   [push your image to dockerhub](https://github.com/jupyterhub/repo2docker-action#push-repo2docker-image-to-dockerhub).
+   to automatically build, name and push your image to a docker registry.
+   We recommend [pushing to quay.io](https://github.com/jupyterhub/repo2docker-action#push-image-to-quayio),
+   a registry with more generous rate limits than DockerHub's. You can
+   [use DockerHub](https://github.com/jupyterhub/repo2docker-action#push-repo2docker-image-to-dockerhub),
+   or any other public registry.
+   
 
 3. [Open an issue in the `2i2c-org/pilot` repository](https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md) 
    with a link to your docker image. 2i2c hub engineers can then
