@@ -29,7 +29,6 @@ to realize the configuration option.
 :maxdepth: 1
 admin/configuration/login
 admin/configuration/culling
-admin/migrate
 ```
 
 ## Hub administrator how-to guides
