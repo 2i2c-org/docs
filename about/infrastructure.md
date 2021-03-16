@@ -2,7 +2,7 @@
 
 This page contains information about the infrastructure that is provided by the 2i2c Hubs pilot.
 
-## Infrastructure overview
+## Infrastructure overview of a 2i2c Hub
 
 Here's a small overview that gives and idea for the major parts of a 2i2c Hub. We'll describe the individual pieces a bit more below.
 
@@ -66,9 +66,11 @@ You can find the JupyterHub configuration for 2i2c Education Hubs [at this repos
 https://github.com/2i2c-org/pilot-hubs/tree/master/hub-templates/ephemeral-hub).
 
 
-## Where are hubs configured?
+## How are hubs configured and deployed?
 
-All of the configuration and deployment scripts for the 2i2c Hubs can be found at [this GitHub repository](https://github.com/2i2c-org/pilot-hubs). This repository contains both the deployment code as well as documentation that explains how it works. It should be treated as "for advanced users only", and is provided for transparency and as a guide for the community to follow if they wish to manage their own infrastructure similar to 2i2c Hubs.
+All of the configuration and deployment scripts for the 2i2c Hubs can be found at [the `pilot-hubs/` repository](https://github.com/2i2c-org/pilot-hubs). This repository contains both the deployment code as well as documentation that explains how it works. It should be treated as "for advanced users only", and is provided for transparency and as a guide for the community to follow if they wish to manage their own infrastructure similar to 2i2c Hubs.
+
+To learn about how the `pilot-hubs/` repository works, we recommend checking out the [`pilot-hubs` documentation](ph:index).
 
 
 (note-on-urls)=

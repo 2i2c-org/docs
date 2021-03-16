@@ -48,7 +48,7 @@ admin/howto/create-content
 admin/howto/manage-users
 admin/howto/control-user-server
 admin/howto/share-datasets
-
+admin/howto/replicate
 ```
 
 ## Hub user guides
