@@ -29,7 +29,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", ".github"]
 
 myst_enable_extensions = ["colon_fence", "deflist", "linkify"]
 
-myst_url_schemes = ("http", "https", "mailto")
+myst_url_schemes = ["http", "https", "mailto"]
 panels_add_bootstrap_css = False
 
 # -- Options for HTML output -------------------------------------------------

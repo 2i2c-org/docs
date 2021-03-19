@@ -15,6 +15,17 @@ If you're interested in working with 2i2c to get a hub for your own community, p
 
 :::
 
+## Who is a 2i2c Hub for?
+
+2i2c Hubs are designed for communities in research and education who want the following things:
+
+1. Access to the latest technology in Jupyter and interactive computing for collaborative and scalable data science running in the cloud.
+2. To utilize open source, community-driven tools and standards.
+3. To use infrastructure that they could take control of themselves, and that gives the user the [Right to Replicate](overview/right-to-replicate).
+4. To use infrastructure that is designed by and for individuals in research and education.
+5. To support infrastructure from a non-profit organization that is committed to communities in research, education, and open source.
+
+(overview/right-to-replicate)=
 ## Your Right to replicate
 
 A core principle of 2i2c is to build and manage technology that is controlled by the community that uses it.

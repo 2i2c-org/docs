@@ -1,8 +1,11 @@
 # The 2i2c Hubs Pilot
 
 A 2i2c Hub is a cloud-based interactive computing environment built entirely on open-source technology and customized for research and education.
+It follows best-practices as recommended from open source communities, and is deployed in a manner that is easy for others to replicate on their own.
 Each 2i2c Hub is deployed for a specific community, and can be customized for that community.
 It brings together **environments, datasets, computing resources, and content**.
+
+To learn more about 2i2c Hubs, see [](about-the-project).
 
 This guide is for **administrators and community champions** of 2i2c Hubs, or for those who are interested in learning more about the 2i2c Hubs.
 
