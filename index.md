@@ -52,6 +52,8 @@ admin/howto/manage-users
 admin/howto/control-user-server
 admin/howto/share-datasets
 admin/howto/replicate
+admin/howto/create-billing-account
+
 ```
 
 ## Hub user guides
