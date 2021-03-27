@@ -33,6 +33,7 @@ to realize the configuration option.
 
 admin/configuration/login
 admin/configuration/culling
+admin/configuration/default-interface
 ```
 
 ## Hub administrator how-to guides
