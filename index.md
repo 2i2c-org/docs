@@ -45,6 +45,7 @@ tasks on their hubs, mostly without requiring any interaction with
 :maxdepth: 1
 :caption: Administrator how-to guides
 admin/howto/support
+admin/howto/configurator
 admin/howto/environment
 admin/howto/nbgitpuller
 admin/howto/create-content
