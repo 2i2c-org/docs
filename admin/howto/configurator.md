@@ -12,7 +12,7 @@ it, and a way to see the 'version history' of your config changes is in the
 works.
 ```
 
-## Accessing the Configurator
+## Access the Configurator
 
 The Configurator is only available to admins, and can be accessed from the
 control panel. You can access the Control Panel in the following ways:
@@ -27,7 +27,7 @@ Once you're at the control panel, you can access the configurator under
 configurator so it knows you are an admin. Once done, you will see the
 configurator interface!
 
-## Making changes
+## Make and save changes
 
 This interface should now let you change some settings and save them. They should
 take effect next time you or any of your users start a server. 
