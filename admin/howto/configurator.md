@@ -17,8 +17,8 @@ works.
 The Configurator is only available to admins, and can be accessed from the
 control panel. You can access the Control Panel in the following ways:
 
-1. In classic Jupyter notebook, click the 'Control Panel' button in the top right.
-2. In JupyterLab, select 'File -> Hub control panel' from the menu bar.
+1. In classic Jupyter notebook, click the `Control Panel` button in the top right.
+2. In JupyterLab, select `File -> Hub control panel` from the menu bar.
 3. For other interfaces (like RStudio), you can accses it with the following URL:
    `https://<hub-url>/hub/home`.
    
