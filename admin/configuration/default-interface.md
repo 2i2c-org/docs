@@ -4,8 +4,7 @@ The 2i2c hubs offer the following user interfaces by default:
 
 ## Jupyter Notebook (Classic)
 
-What many people mean when they say 'Jupyter', this familiar interface is used
-by default. Document oriented, no-frills, and well known by a lot of people.
+The original single-document interface for creating Jupyter Notebooks.
 
 ## JupyterLab
 
@@ -24,4 +23,4 @@ research organizations use this.
 :alt: RStudio
 ```
 
-[RStudio](https://rstudio.com) is a popular web-based datascience IDE focused on the R language. 
+[RStudio](https://rstudio.com) is an IDE for R, created by the RStudio company.
