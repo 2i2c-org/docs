@@ -21,11 +21,12 @@ about/infrastructure
 about/projects
 ```
 
-## Hub configuration options
+## Hub configuration reference
 
 These pages list the different ways hub admins can configure how
-their hub behaves. Most of them require working with a 2i2c engineer
-to realize the configuration option.
+their hub behaves. Some of these can be changed directly by the hub administrator
+via the [configurator](admin/howto/configurator.md) interface, while some of
+them require help from a 2i2c engineer.
 
 ```{toctree}
 :maxdepth: 1
@@ -33,6 +34,7 @@ to realize the configuration option.
 
 admin/configuration/login
 admin/configuration/culling
+admin/configuration/default-interface
 ```
 
 ## Hub administrator how-to guides
@@ -45,6 +47,7 @@ tasks on their hubs, mostly without requiring any interaction with
 :maxdepth: 1
 :caption: Administrator how-to guides
 admin/howto/support
+admin/howto/configurator
 admin/howto/environment
 admin/howto/nbgitpuller
 admin/howto/create-content

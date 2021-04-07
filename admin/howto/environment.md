@@ -59,15 +59,19 @@ docker image:
    [use DockerHub](https://github.com/jupyterhub/repo2docker-action#push-repo2docker-image-to-dockerhub),
    or any other public registry.
    
-
-3. [Open an issue in the `2i2c-org/pilot` repository](https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md) 
-   with a link to your docker image. 2i2c hub engineers can then
-   configure your hub to use the new image.
+3. Use the [JupyterHub configurator](configurator.md) to configure the image used
+   by your hub. You **must** include the tag your built image was pushed with,
+   and specify that. So something like `quay.io/my-user/my-image:784f4b3dac34`,
+   not `quay.io/my-user/my-image` or `quay.io/my-user/my-image:latest`. Selecting
+   'Tags' in either dockerhub or quay.io should give you the correct tag. Looking
+   in the output of the GitHub action for your repository also gives you the tag
+   to use.
    
-   ```{note}
-   Currently, you need to open an issue *every time your base environment changes*. This will hopefully be a bit more streamlined
-   in the future.
-   ```
+```{note}
+If the new image you use breaks user server starts, or is broken in some other
+way, you can revert back to the old image by specifying *that*. You can also
+leave the field blank to use the default 2i2c image.
+```
    
 ### Temporarily install packages for a session
 
