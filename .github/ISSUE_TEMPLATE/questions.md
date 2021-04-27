@@ -1,7 +1,7 @@
 ---
 name: "❓ Ask a question about tech and teaching"
 about: Questions about the best way to use 2i2c Hubs for your use-case
-labels: "type: question", support
+labels: "type: user question"
 ---
 
 Thanks for asking a question, we'll try to help. 👍
