@@ -56,78 +56,13 @@ html_theme_options = {
 html_baseurl = "https://2i2c.org/pilot"
 html_logo = "images/logo.png"
 intersphinx_mapping = {
-    "tc": ('https://2i2c.org/team-compass', None),
-    "ph": ('https://2i2c.org/pilot-hubs', None),
+    "tc": ('https://team-compass.2i2c.org/en/latest', None),
+    "ph": ('https://pilot-hubs.2i2c.org/en/latest', None),
     "jb": ('https://jupyterbook.org', None)
 }
 
 rediraffe_redirects = {
 }
-
-# -- Pull the latest list of hubs---------------------------------------------
-import requests
-from textwrap import dedent
-from yaml import safe_load
-from pathlib import Path
-
-resp = requests.get("https://raw.githubusercontent.com/2i2c-org/pilot-hubs/master/hubs.yaml")
-hubs = safe_load(resp.text)
-entries = ""
-for cluster in hubs["clusters"]:
-
-    for hub in cluster["hubs"]:
-
-        if any(ii in hub["name"] for ii in ["staging", "demo", "ephemeral"]):
-            continue
-        # Some hub configs are at the top level, others are under a `base-hub` sub-field
-        if "jupyterhub" in hub["config"]:
-            hub_config = hub["config"]["jupyterhub"]
-        else:
-            for kind in ["base-hub", "ephemeral-hub"]:
-                if kind in hub["config"]:
-                    hub_config = hub["config"][kind]["jupyterhub"]
-                    break
-        template_dict = {
-            "daskhub": "[Pangeo](hub-types:pangeo)",
-            "base-hub": "[Educational](hub-types:education)",
-            "ephemeral-hub": "[Ephemeral](hub-types:ephemeral)"
-        }
-        template = template_dict[hub["template"]]
-        info = hub_config["homepage"]["templateVars"]
-        org = info["org"]
-        website = hub["domain"][0] if isinstance(hub["domain"], list) else hub["domain"]
-        entries += f"""
-        ---
-        [{org["name"]}]({org["url"]})
-
-        [`{website}`](https://{website})
-
-        +++
-        Hub Engineer: [{info["operated_by"]["name"]}]({info["operated_by"]["url"]})
-
-        Hub Funder: [{info["funded_by"]["name"]}]({info["funded_by"]["url"]})
-
-        Hub Architect: [{info["designed_by"]["name"]}]({info["designed_by"]["url"]})
-
-        Hub Type: {template}
-        """
-        # Whenever we get approval, can add this to include logos
-        # ^^^
-        # [![logo]({hub["org_logo"]})]({hub["org_url"]})
-entries = dedent(entries)
-
-hubs_table = f"""
-```{{panels}}
-:container: full-width current-hubs
-:column: col-6 py-2 text-center
-:body: +d-flex flex-wrap align-items-center text-center
-{entries}
-```
-"""
-path_build = Path("_build")
-if not path_build.is_dir():
-    path_build.mkdir()
-path_build.joinpath("hubs-table.txt").write_text(hubs_table)
 
 
 def setup(app):

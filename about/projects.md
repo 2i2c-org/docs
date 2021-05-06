@@ -27,18 +27,6 @@ The Pangeo Hubs pilot is a collaboration with [the Pangeo Project](https://pange
 The Pangeo approach has become a leading approach in cloud-native geospatial analytics, and drives development across many parts of the PyData ecosystem.
 This pilot is an attempt at deploying Pangeo-like hubs with scalable Dask clusters via Kubernetes.
 
-
-### Events Hubs pilot
-
-A common pattern in the research and education community is to run a hub for a time-bound event.
-For example, for a workshop or a hackathon.
-This hub infrastructure is ephemeral, and should be both created and taken down quickly, in order to avoid spending too much on cloud costs.
-This pilot is an experiment in building a fast and flexible deployment infrastructure that is well-suited to these short-term events.
-
-
 ## A list of current hubs
 
-Below is a relatively up-to-date list of the hubs we are currently deploying as part of this pilot.
-
-```{include} ../_build/hubs-table.txt
-```
+The Pilot Hubs documentation has [a list of currently running JupyterHubs](https://pilot-hubs.2i2c.org/en/latest/reference/hubs.html)
