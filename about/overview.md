@@ -47,7 +47,6 @@ Generally speaking, 2i2c provides **development** and **operation** of a 2i2c hu
 It does this in collaboration with leaders from the community for a particular hub (usually, these leaders have "administrative" rights on a hub with more priveleges for user control etc).
 
 :::{seealso}
-- **Roles needed to run a hub**: see {doc}`tc:sre`
 - **Support options**: see [](../admin/howto/support.md).
 :::
 

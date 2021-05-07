@@ -1,7 +1,7 @@
 ---
 name: "✨ Request an improvement to your hub"
 about: Would you like something changed? Upgraded? A package installed?
-labels: "type: hub enhancement", support
+labels: "type: enhancement", support
 ---
 
 Thanks for requesting an improvement to your hub. 👍
