@@ -14,7 +14,12 @@ Users can prove who they are by logging in via an *authentication provider*. Cur
 
 3. [*ORCID*](https://orcid.org/). Everyone who has published a paper has one of these, and anyone else can easily sign up. Almost exclusively used by researchers.
 
-4. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work.
+4. Username / Password via [auth0](https://auth0.com/docs/connections/database).
+   A traditional username / password interface where users can sign up. There are currently [limited
+   options](https://github.com/2i2c-org/pilot-hubs/issues/421) for limiting who
+   can sign up, so this should be only used in limited circumstances.
+
+5. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work.
 
 We will ask you what provider you want when we set up the hub. We can change the provider after the fact, but only if absolutely necessary.
 
