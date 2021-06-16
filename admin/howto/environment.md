@@ -11,8 +11,8 @@ The default environment for all pilot hubs is defined [in this
 folder](https://github.com/2i2c-org/pilot-hubs/tree/master/images/user). 
 It is configured with the following:
 
-- Python packages defined in [this `environment.txt`
-  file](https://github.com/2i2c-org/pilot-hubs/blob/master/images/user/environment.txt). Many common scientific python packages are installed here.
+- Python packages defined in [this `requirements.txt`
+  file](https://github.com/2i2c-org/pilot-hubs/blob/master/images/user/requirements.txt). Many common scientific python packages are installed here.
 - R packages installed from [this `install.R`
   file](https://github.com/2i2c-org/pilot-hubs/blob/master/images/user/install.R).
 - Many popular data science user interfaces installed:
