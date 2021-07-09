@@ -13,7 +13,7 @@ There are a few ways to get in touch listed below (in decreasing order of prefer
 We handle most support requests via [GitHub issues in the `support/` repository](https://github.com/2i2c-org/support/issues).
 This is a **private repository** that is accessible to Community Champions and 2i2c Engineers.
 
-[**Click here to file a support ticket**](https://github.com/2i2c-org/support/issues/new).
+[**Click here to file a support ticket**](https://github.com/2i2c-org/support/issues/new) or go to [support.2i2c.org](http://support.2i2c.org).
 
 :::{note}
 If you have a support question with sensitive or private information involved, please [send a support email](support:email).
