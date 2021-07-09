@@ -1,4 +1,7 @@
 contact_links:
+  - name: "\U0001FA90 Need Support?"
+    url: https://github.com/2i2c-org/support/issues/new
+    about: If you're a hub's community representative, you can open a support ticket in the support repository. Click the link above to do so!
   - name: "\U0001FA90 Questions about 2i2c or 2i2c Hubs?"
     url: https://2i2c.org#contact
     about: If you've got questions about 2i2c or the 2i2c Hubs, or if you're interested in getting your own 2i2c Hub, reach out at this link.
