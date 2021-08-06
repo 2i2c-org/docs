@@ -1,4 +1,4 @@
-# 2i2c Hub infrastructure
+# Infrastructure overview
 
 This page contains information about the infrastructure that is provided by the 2i2c Hubs pilot.
 
@@ -33,7 +33,7 @@ Here's a small overview that gives and idea for the major parts of a 2i2c Hub. W
 There are several flavors of 2i2c Hubs with configuration designed for specific use-cases. They provide a starting point, and can be further customized for a specific community using standard JupyterHub configuration. Here's a short description of each.
 
 (hub-types:pangeo)=
-### Pangeo Hubs
+### Scalable Research Hubs
 
 The [Pangeo Project](https://pangeo.io) is a community platform for Big Data geoscience.
 This platform is one of the cutting-edge workflows in cloud-native data science with large datasets, and drives development of a number of open source tools in this space.
@@ -44,8 +44,16 @@ The **user environment**: Runs the [`pangeo-notebook` Docker image](https://pang
 
 You can find the JupyterHub configuration for 2i2c Pangeo Hubs [at this repository](https://github.com/2i2c-org/pilot-hubs/tree/master/hub-templates/daskhub).
 
+#### Pangeo Hubs pilot
+
+The Pangeo Hubs pilot is a collaboration with [the Pangeo Project](https://pangeo.io/), which is a distributed scientific community for big-data geoscience.
+The Pangeo approach has become a leading approach in cloud-native geospatial analytics, and drives development across many parts of the PyData ecosystem.
+This pilot is an attempt at deploying Pangeo-like hubs with scalable Dask clusters via Kubernetes.
+
+
+
 (hub-types:education)=
-### Education Hubs
+### Collaborative Education Hubs
 
 The 2i2c Educational Hubs provide standard data science environments and infrastructure that is meant for teaching data science. They are inspired by 2i2c's experience with the [DataHubs at UC Berkeley](https://docs.datahub.berkeley.edu/en/latest/).
 
@@ -54,6 +62,14 @@ For example, [`nbgitpuller`](https://jupyterhub.github.io/nbgitpuller/index.html
 These can be used in conjunction with tools like [Jupyter Book](https://jupyterbook.org) to build connections between your course's content and your online learning environment.
 
 You can find the JupyterHub configuration for 2i2c Education Hubs [at this repository](https://github.com/2i2c-org/pilot-hubs/tree/master/hub-templates/base-hub).
+
+#### Hubs for All educational pilot
+
+The Hubs for Education pilot is an attempt at making interactive computing environments more accessible to the research and education community, with a focus on smaller colleges and minority-serving institutions. 
+
+Cloud computing credits for these hubs are provided by [CloudBank](https://www.cloudbank.org/) as part of a collaboration with UC Berkeley.
+
+In addition, hubs that are not covered by CloudBank credits are paid for by a grant from [the JROST Rapid Response Fund](https://investinopen.org/blog/jrost-rapid-response-fund-awardees/).
 
 (hub-types:ephemeral)=
 ### Ephemeral Hubs
