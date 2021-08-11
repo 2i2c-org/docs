@@ -85,7 +85,7 @@ Below are a few major aspects of the service that we believe provide a good chan
 - JupyterHubs should be pre-configured for a use-case, but customizable by the community
 - JupyterHubs will respect the Community's [Right to Replicate](https://2i2c.org/right-to-replicate/)
 - JupyterHubs may be more bespoke than is sustainable provided we can learn from them.
-- JupyterHubs should be able to connect with external datasets and services, as teh community needs.
+- JupyterHubs should be able to connect with external datasets and services, as the community needs.
 - JupyterHubs should be customizable by the communities they serve, ideally without intervention from a 2i2c Engineer.
 
 ## Our Timeframe
