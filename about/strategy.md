@@ -83,7 +83,7 @@ Below are a few major aspects of the service that we believe provide a good chan
 - Deploy independent JupyterHubs from a centralized deployment system
 - Use Terraform to build Kubernetes clusters on cloud providers, and Kubernetes as a base to run the actual JupyterHub infrastructure.
 - JupyterHubs should be pre-configured for a use-case, but customizable by the community
-- JupyterHubs will respect the Community's Right to Replicate
+- JupyterHubs will respect the Community's [Right to Replicate](https://2i2c.org/right-to-replicate/)
 - JupyterHubs may be more bespoke than is sustainable provided we can learn from them.
 - JupyterHubs should be able to connect with external datasets and services, as teh community needs.
 - JupyterHubs should be customizable by the communities they serve, ideally without intervention from a 2i2c Engineer.
