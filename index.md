@@ -15,17 +15,24 @@ For more general information about the Managed JupyterHub Service, see [the Team
 
 See the sections below (or to the left) for more information.
 
-## About the 2i2c hubs
+## About the Managed JupyterHubs Pilot
+
+The Managed JupyterHubs Pilot aims to build an open, scalable, sustainable cloud service for interactive computing environments in research and education.
+These sections contain information about the service, our goals and strategy for the pilot, and a high-level description of the infrastructure.
 
 ```{toctree}
 :maxdepth: 1
-:caption: About the 2i2c hubs
+:caption: About the Pilot
+about/strategy
 about/overview
 about/infrastructure
 about/projects
 ```
 
-## Hub configuration reference
+## Hub Administrator Guide
+
+
+### Configuration reference
 
 These pages list the different ways hub admins can configure how
 their hub behaves. Some of these can be changed directly by the hub administrator
