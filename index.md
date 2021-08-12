@@ -18,7 +18,7 @@ See the sections below (or to the left) for more information.
 ## About the Managed JupyterHubs Pilot
 
 The Managed JupyterHubs Pilot is an experiment at building an open, scalable, sustainable cloud service for interactive computing environments in research and education.
-These sections contain information about the service, our goels and strategy for the pilot, and a high-level description of the infrastructure.
+These sections contain information about the service, our goals and strategy for the pilot, and a high-level description of the infrastructure.
 
 ```{toctree}
 :maxdepth: 1
