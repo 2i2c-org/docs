@@ -2,15 +2,15 @@
 
 A 2i2c Managed JupyterHub is a cloud-based interactive computing environment built entirely on open-source technology and customized for research and education.
 It follows best-practices as recommended from open source communities, and is deployed in a manner that is easy for others to replicate on their own.
-Each 2i2c Hub is deployed for a specific community, and can be customized for that community.
+Each 2i2c JupyterHub is deployed for a specific community, and can be customized for that community.
 It brings together **environments, datasets, computing resources, and content**.
 
-To learn more about 2i2c Hubs, see [](about-the-project).
+To learn more about 2i2c Managed JupyterHubs, see [](about-the-project).
 
-This guide is for **hub administrators and community representatives** of 2i2c Hubs, or for those who are interested in learning more about the 2i2c Hubs.
+This guide is for **hub administrators and community representatives** of 2i2c JupyterHubs, or for those who are interested in learning more about the 2i2c JupyterHubs.
 
 :::{seealso}
-For more general information about the Managed JupyterHub Service, see [the Team Compass documentation for this service](https://team-compass.2i2c.org/en/latest/projects/managed-hubs/roles.html).
+For more general information about the Managed JupyterHub Service, see [the Team Compass documentation for this service](https://team-compass.2i2c.org/en/latest/projects/managed-hubs/index.html).
 :::
 
 See the sections below (or to the left) for more information.
