@@ -1,12 +1,12 @@
-# Replicate your own 2i2c Hub
+# Replicate your own 2i2c JupyterHub
 
 A core tenet of 2i2c is the [Right to Replicate](https://2i2c.org/right-to-replicate).
-This means that we want it to be as easy as possible for our users to deploy their own infrastructure that replicates a 2i2c Hub, without requiring 2i2c to be involved.
+This means that we want it to be as easy as possible for our users to deploy their own infrastructure that replicates a 2i2c JupyterHub, without requiring 2i2c to be involved.
 
-2i2c Hubs are built entirely with open source tools that are community-led.
+2i2c JupyterHubs are built entirely with open source tools that are community-led.
 We prioritize tools with diverse, multi-stakeholder communities, which maximizes the chances that the tools will continue to be broadly useful for a long time to come.
 
-This page is a short guide on how you could replicate your 2i2c Hub infrastructure by migrating off of a 2i2c Hub and setting up your own hub configuration.
+This page is a short guide on how you could replicate your 2i2c JupyterHub infrastructure by migrating off of a 2i2c JupyterHub and setting up your own hub configuration.
 
 % TODO
 % Common issues that arise when operating this infrastructure over time
@@ -16,11 +16,11 @@ This page is a short guide on how you could replicate your 2i2c Hub infrastructu
 
 ## Understand the basic infrastructure
 
-2i2c Hubs use the official [JupyterHub Helm Chart](https://github.com/jupyterhub/helm-chart) for their configuration and deployment.
+2i2c JupyterHubs use the official [JupyterHub Helm Chart](https://github.com/jupyterhub/helm-chart) for their configuration and deployment.
 They run on an open-source platform called [Kubernetes](https://kubernetes.io/), which allows you to deploy infrastructure on a variety of cloud providers.
-We use a tool called [Helm](https://helm.sh/) to manage your Kubernetes cluster in order to provide the JupyterHub service that makes up a 2i2c Hub.
+We use a tool called [Helm](https://helm.sh/) to manage your Kubernetes cluster in order to provide the JupyterHub service that makes up a 2i2c JupyterHub.
 
-All of these tools are covered in the excellent [Zero to JupyterHub for Kubernetes guide](https://z2jh.jupyter.org), which 2i2c Hubs follow quite closely.
+All of these tools are covered in the excellent [Zero to JupyterHub for Kubernetes guide](https://z2jh.jupyter.org), which 2i2c JupyterHubs follow quite closely.
 
 ## Skills that you'll need to accomplish this
 
@@ -56,7 +56,7 @@ You can also find others deploying Jupyter infrastructure via [the Jupyter Commu
 Finally, there are an increasing number of communities in higher education that can provide expertise and advice - search your local community to find others that are trying to solve the same problems.
 :::
 
-## What work is involved in operating a 2i2c Hub?
+## What work is involved in operating a 2i2c JupyterHub?
 
 There are three main steps to operating any cloud infrastructure:
 
@@ -64,17 +64,17 @@ There are three main steps to operating any cloud infrastructure:
 - Ongoing operation and debugging
 - Enhancements and customizations
 
-This guide will primarily cover the first step - how to deploy a cloud service using Zero to JupyterHub that replicates the 2i2c Hub service.
+This guide will primarily cover the first step - how to deploy a cloud service using Zero to JupyterHub that replicates the 2i2c JupyterHub service.
 However, note that operating and debugging cloud infrastructure, as well as customizing and upgrading it, take significant expertise and time.
 
-Below we'll cover how you can deploy your own JupyterHub using your 2i2c Hub configuration as a start.
+Below we'll cover how you can deploy your own JupyterHub using your 2i2c JupyterHub configuration as a start.
 
-### Find your 2i2c Hub configuration
+### Find your 2i2c JupyterHub configuration
 
-2i2c Hubs use the [Zero to JupyterHub](https://z2jh.jupyter.org) guide for their configuration and deployments.
-We recommend familiarizing yourself with it, as it will be invaluable in helping you navigate how to run a JupyterHub that replicates the 2i2c Hub service.
+2i2c JupyterHubs use the [Zero to JupyterHub](https://z2jh.jupyter.org) guide for their configuration and deployments.
+We recommend familiarizing yourself with it, as it will be invaluable in helping you navigate how to run a JupyterHub that replicates the 2i2c JupyterHub service.
 
-All of the configuration for a 2i2c Hub exists at the [`pilot-hubs/` repository](ph:index). This is a "meta" repository that centralizes configuration and deployment of many 2i2c hubs.
+All of the configuration for a 2i2c JupyterHub exists at the [`pilot-hubs/` repository](ph:index). This is a "meta" repository that centralizes configuration and deployment of many 2i2c JupyterHubs.
 
 There are two main things you'll need from this repository to deploy your hub:
 
@@ -98,9 +98,9 @@ When you are asked to create a `values.yaml` file (your Helm Chart configuration
 At the end of this step you should have a basic JupyterHub running on Kubernetes.
 
 
-### Enhance your JupyterHub to use your 2i2c Hub configuration
+### Enhance your JupyterHub to use your 2i2c JupyterHub configuration
 
-Now that you have your own JupyterHub running on Kubernetes, it's time to customize it using your 2i2c Hub configuration.
+Now that you have your own JupyterHub running on Kubernetes, it's time to customize it using your 2i2c JupyterHub configuration.
 Paste in the configuration that you copied above into your JupyterHub's `values.yaml` file. Make sure to avoid duplicating any keys, if you have duplicate keys, update one with the values of the other.
 
-At the end of this step, you should have a JupyterHub running on Kubernetes that contains the configuration used to deploy your 2i2c Hub.
+At the end of this step, you should have a JupyterHub running on Kubernetes that contains the configuration used to deploy your 2i2c JupyterHub.

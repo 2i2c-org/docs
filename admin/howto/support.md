@@ -1,9 +1,7 @@
+(support:email)=
 # Get support
 
-Hub engineers can provide support and debugging for issues that are related to the 2i2c Hub infrastructure. There are a few ways to get in touch listed below (in decreasing order of preference!)
-
-(support:email)=
-## How do I ask for support?
+Hub engineers can provide support and debugging for issues that are related to the 2i2c JupyterHub infrastructure.
 
 Send all support requests as an email to [**`support@2i2c.org`**](mailto:support@2i2c.org).
 This is email will be routed to the 2i2c support team, and we will get back to you shortly!
