@@ -15,7 +15,7 @@ Below are some major goals that we have:
 - Gain experience in running infrastructure for many different research and education organizations.
 - Understand the diversity of organizations we may wish to serve, and the best way to reach each of them.
     - For example, large vs. small organizations, research vs. education.
-- Build deployment infrastructure that allows us to serve a small number of institutions, with a pathway
+- Build deployment infrastructure that allows us to serve a small number of institutions, with a pathway to scaling to more institutions more quickly.
 
 ## Communities we'll focus on
 
@@ -57,7 +57,7 @@ We'll focus on the following cloud providers:
 ### Why Jupyter and JupyterHub?
 
 - The Jupyter ecosystem is a collection of building blocks that are highly customizable and composable. They are popular and useful for many use-cases, but still require expertise to customize for a particular need. This is well-suited for 2i2c's skillset and the kind of service it wishes to provide.
-- Jupyter is a community-led and multi-stakeholder ecosystem that aligns well with 2i2c's commitment to vendor-agnosticity and the Right to Replicate
+- Jupyter is a community-led and multi-stakeholder ecosystem that aligns well with 2i2c's commitment to vendor-agnosticity and the [Right to Replicate](https://2i2c.org/right-to-replicate/).
 - JupyterHub allows you to access centralized infrastructure for a community, but in a way that gives that community a lot of control over the details. It is a good balance between "SaaS" and "Fully bespoke community infrastructure". JupyterHub can be deployed via a single repository, but is also deployable by individual people or communities, providing them a clear off-ramp.
 
 
@@ -65,8 +65,8 @@ We'll focus on the following cloud providers:
 
 Below are the major questions we'd like to answer with this pilot.
 
-- How much work does it take to manage a single JupyterHub?
-- What are the major opportunities to improve technology or process to reduce this number?
+- How much work does it take to manage a community of JupyterHubs? What scaling efficiencies can we achieve? 
+- What are the major opportunities to improve technology or process to scale more efficiently?
 - What is the balance of work between development, operations, administration, and sales?
 - What are the major use-cases that can be met with repeatable JupyterHub distributions?
 - What kind of support model is sustainable for our team?
@@ -90,7 +90,7 @@ Below are a few major aspects of the service that we believe provide a good chan
 
 ## Our Timeframe
 - Begin serving hub infrastructure immediately, as long as we do not over-extend our team
-- Finish one iteration in 6-months
+- Finish one iteration by Q1 2022.
 - major questions should have research and answers by then.
 - model for scaling the hub service should be developed by then
 
