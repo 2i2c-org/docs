@@ -22,7 +22,7 @@ Users can prove who they are by logging in via an *authentication provider*. Cur
    options](https://github.com/2i2c-org/pilot-hubs/issues/421) for limiting who
    can sign up, so this should be only used in limited circumstances.
 
-5. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work.
+5. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work for your use-case.
 
 We will ask you what provider you want when we set up the hub. We can change the provider after the fact, but only if absolutely necessary.
 
