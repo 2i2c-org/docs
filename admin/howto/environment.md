@@ -51,7 +51,7 @@ research organizations use this.
 
 ## Choose the user interface
 
-There are a three main interfaces available on the 2i2c JupyterHubs. You may choose from each of these by altering the URL of your session. For example, here is the general structure of a URL for your personal 2i2c JupyterHub session:
+There are three main interfaces available on the 2i2c JupyterHubs. You may choose from each of these by altering the URL of your session. For example, here is the general structure of a URL for your personal 2i2c JupyterHub session:
 
 ```
 https://<your-hub>.pilot.2i2c.cloud/user/<your-username>/<your-interface>
