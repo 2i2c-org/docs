@@ -1,4 +1,4 @@
-# Configure the hub as an admin with the Configurator
+# Configure the hub with the Configurator
 
 The [JupyterHub configurator](https://github.com/yuvipanda/jupyterhub-configurator)
 allows admins to change a subset of hub settings without requiring involvement
@@ -21,7 +21,7 @@ control panel. You can access the Control Panel in the following ways:
 2. In JupyterLab, select `File -> Hub control panel` from the menu bar.
 3. For other interfaces (like RStudio), you can accses it with the following URL:
    `https://<hub-url>/hub/home`.
-   
+
 Once you're at the control panel, you can access the configurator under
 `Services` in the top navigation bar. It will ask you to authenticate to the
 configurator so it knows you are an admin. Once done, you will see the
@@ -30,7 +30,7 @@ configurator interface!
 ## Make and save changes
 
 This interface should now let you change some settings and save them. They should
-take effect next time you or any of your users start a server. 
+take effect next time you or any of your users start a server.
 
 ```{warning}
 You **must** click the submit button at the bottom of the form for your changes
@@ -54,9 +54,10 @@ libraries and interfaces accessible to the user. You can leave it blank to use t
 default image maintained by 2i2c. We also have [more information](environment) on
 how to manage your user environment.
 
+(configurator:interface)=
 ### Default interface
 
-Sets the [default interface](../configuration/default-interface.md) your users
+Sets the [default interface](environment:default-interface) your users
 will see when they log in.
 
 ```{note}

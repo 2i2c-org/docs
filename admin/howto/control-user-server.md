@@ -1,4 +1,6 @@
-# Controlling a user's server
+# User server management
+
+## Take control of a user's server
 
 Hub admins can unilaterally perform actions on a user's server via the
 **Administrator's Panel**. These are primarily used to debug a user's session
@@ -9,7 +11,7 @@ in your hub control panel.  Alternatively, you can go to this URL in your
 browser: `https://<your-hub-url>/hub/admin`.
 
 
-## Access a user's server
+### Access a user's server
 
 Accessing a user's server is useful when trying to debug or reproduce an issue they might have. This facility is available to admins via the admin panel.
 
@@ -39,7 +41,7 @@ Accessing a user's server is useful when trying to debug or reproduce an issue t
    :::
 
 (user-server/stopping)=
-## Stop or start a user's server
+### Stop or start a user's server
 
 Sometimes, you need to just turn a user's server on and off. You can
 also do this from the admin interface, by hitting the {guilabel}`Stop server`
@@ -56,3 +58,17 @@ However, any packages temporarily installed via `!pip` or `!conda` are cleared, 
 possible.
 Active notebooks have their kernel killed as well.
 :::
+
+## Stop user servers after inactivity
+
+To ensure efficient resource usage, user servers without interactive usage for a
+period of time (default `1h`) are automatically stopped (via
+[jupyterhub-idle-culler](https://github.com/jupyterhub/jupyterhub-idle-culler)).
+This means your notebook server might be stopped for inactivity even if you have
+a long running process in the notebook. This timeout can be configured.
+
+% TODO: Add link to SRE guide on how to configure this, once it exists
+
+Culling has the same effect as [stopping a user's server](user-server/stopping).
+
+There is currently no maximum time limit for a user's notebook.

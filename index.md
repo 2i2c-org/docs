@@ -26,29 +26,24 @@ These sections contain information about the service, our goals and strategy for
 about/strategy
 about/overview
 about/infrastructure
-about/projects
 ```
 
 ## Hub Administrator Guide
 
+The following sections cover major topics and how-tos to administer the hub.
 
-### Configuration reference
+### Getting started
 
-These pages list the different ways hub admins can configure how
-their hub behaves. Some of these can be changed directly by the hub administrator
-via the [configurator](admin/howto/configurator.md) interface, while some of
-them require help from a 2i2c engineer.
+These are some first steps you should follow when starting with a new JupyterHub.
 
 ```{toctree}
-:maxdepth: 1
-:caption: Hub configuration options
-
-admin/configuration/login
-admin/configuration/culling
-admin/configuration/default-interface
+:caption: Get started
+admin/howto/new-hub.md
+admin/howto/configurator
+admin/howto/support
 ```
 
-## Hub administrator how-to guides
+### Hub administrator how-to guides
 
 These guides have information on how hub admins can perform specific
 tasks on their hubs, mostly without requiring any interaction with
@@ -56,25 +51,14 @@ tasks on their hubs, mostly without requiring any interaction with
 
 ```{toctree}
 :maxdepth: 1
-:caption: Administrator how-to guides
-admin/howto/support
-admin/howto/configurator
+:caption: Topic Guides
+
 admin/howto/environment
-admin/howto/nbgitpuller
-admin/howto/create-content
+admin/howto/content
 admin/howto/manage-users
 admin/howto/control-user-server
-admin/howto/share-datasets
+admin/howto/data
 admin/howto/replicate
 admin/howto/create-billing-account
 
-```
-
-## Hub user guides
-
-```{toctree}
-:maxdepth: 1
-:caption: User guides
-user/download-data
-user/interface
 ```
