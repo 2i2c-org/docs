@@ -49,22 +49,6 @@ research organizations use this.
 
 [RStudio](https://rstudio.com) is an IDE for R, created by the RStudio company.
 
-## Choose the user interface
-
-There are three main interfaces available on the 2i2c JupyterHubs. You may choose from each of these by altering the URL of your session. For example, here is the general structure of a URL for your personal 2i2c JupyterHub session:
-
-```
-https://<your-hub>.pilot.2i2c.cloud/user/<your-username>/<your-interface>
-```
-
-You can replace the contents of `<your-interface>` to be one of the following:
-
-- **JupyterLab**: `/lab`
-- **Jupyter Notebook**: `/tree`
-- **RStudio**: `/rstudio`
-
-Note that a Hub Administrator can also configure the **default** interface that users see. In addition, you can configure the interface that **nbgitpuller links** point to, see [](content:nbgitpuller) for information about nbgitpuller links.
-
 
 (environment/custom)=
 ## Customize your hub environment
@@ -138,3 +122,32 @@ packages. This makes the base environment different for different users,
 causing hard to debug issues. This could also render your user server
 unable to start, due to conflicting packages.
 ```
+
+## Switch between user interfaces
+
+There are three main interfaces available on the 2i2c JupyterHubs.
+There are a few different ways that you may encourage users to switch between them.
+
+### by changing your URL
+
+You may switch between user interfaces interactively by altering the URL of your session.
+For example, here is the general structure of a URL for your personal 2i2c JupyterHub session:
+
+```
+https://<your-hub>.pilot.2i2c.cloud/user/<your-username>/<your-interface>
+```
+
+You can replace the contents of `<your-interface>` to be one of the following:
+
+- **JupyterLab**: `/lab`
+- **Jupyter Notebook**: `/tree`
+- **RStudio**: `/rstudio`
+
+### by changing the hub defaults
+
+A Hub Administrator can also configure the **default** interface that users see.
+To do so, see [the configurator interface guide](configurator:interface).
+
+### by using `nbgitpuller` links
+
+In addition, you can configure the interface that **nbgitpuller links** point to, see [](content:nbgitpuller) for information about nbgitpuller links.

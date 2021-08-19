@@ -54,6 +54,7 @@ libraries and interfaces accessible to the user. You can leave it blank to use t
 default image maintained by 2i2c. We also have [more information](environment) on
 how to manage your user environment.
 
+(configurator:interface)=
 ### Default interface
 
 Sets the [default interface](environment:default-interface) your users
