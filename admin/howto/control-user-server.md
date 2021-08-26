@@ -72,3 +72,10 @@ a long running process in the notebook. This timeout can be configured.
 Culling has the same effect as [stopping a user's server](user-server/stopping).
 
 There is currently no maximum time limit for a user's notebook.
+
+There is also a running process of culling at a kernel level. Every `5 minutes`,
+the kernels running are checked to see if they are still active. All kernels found
+to be idle are stopped by the [jupyterhub-idle-culler](https://github.com/jupyterhub/jupyterhub-idle-culler)).
+The default timeout after kernels are culled is set to `1h`.
+
+% TODO: Add link to SRE guide on how to configure this, once it exists
