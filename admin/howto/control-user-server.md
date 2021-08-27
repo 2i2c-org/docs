@@ -73,9 +73,15 @@ Culling has the same effect as [stopping a user's server](user-server/stopping).
 
 There is currently no maximum time limit for a user's notebook.
 
-There is also a running process of culling at a kernel level. Every `5 minutes`,
-the kernels running are checked to see if they are still active. All kernels found
-to be idle are stopped by the [jupyterhub-idle-culler](https://github.com/jupyterhub/jupyterhub-idle-culler).
-The default timeout after kernels are culled is set to `1h`.
+## Stop user kernels after inactivity
+
+In addition to the user _server_, there may also be culling at the _kernel_ level.
+The kernel is the thing that actually "runs code", and a kernel without any activity for some time means that somebody has not executed code in that time.
+
+By default, kernels will be checked for activity **every `5 minutes`**.
+All kernels that haven't shown activity in **in the last hour** will be stopped by the [jupyterhub-idle-culler](https://github.com/jupyterhub/jupyterhub-idle-culler).
+
+This window can be configured if you'd like to change the window of inactivity needed before user kernels will be stopped.
+See the [Hub Engineer's guide](ph:configure:culling) for some documentation on this.
 
 % TODO: Add link to SRE guide on how to configure this, once it exists
