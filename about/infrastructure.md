@@ -50,8 +50,6 @@ The Pangeo Hubs pilot is a collaboration with [the Pangeo Project](https://pange
 The Pangeo approach has become a leading approach in cloud-native geospatial analytics, and drives development across many parts of the PyData ecosystem.
 This pilot is an attempt at deploying Pangeo-like hubs with scalable Dask clusters via Kubernetes.
 
-
-
 (hub-types:education)=
 ### Collaborative Education Hubs
 
@@ -61,7 +59,7 @@ The Education Hubs come pre-configured with several interfaces and extensions pr
 For example, [`nbgitpuller`](https://jupyterhub.github.io/nbgitpuller/index.html) allows instructors to create "interactive links" that let students quickly grab a copy of a file (e.g., a notebook) and use it in their own Jupyter session.
 These can be used in conjunction with tools like [Jupyter Book](https://jupyterbook.org) to build connections between your course's content and your online learning environment.
 
-You can find the JupyterHub configuration for 2i2c Education Hubs [at this repository](https://github.com/2i2c-org/pilot-hubs/tree/master/hub-templates/base-hub).
+You can find the JupyterHub configuration for 2i2c Education Hubs [at this repository](https://github.com/2i2c-org/pilot-hubs/tree/master/hub-templates/basehub).
 
 #### Hubs for All educational pilot
 
@@ -70,17 +68,6 @@ The Hubs for Education pilot is an attempt at making interactive computing envir
 Cloud computing credits for these hubs are provided by [CloudBank](https://www.cloudbank.org/) as part of a collaboration with UC Berkeley.
 
 In addition, hubs that are not covered by CloudBank credits are paid for by a grant from [the JROST Rapid Response Fund](https://investinopen.org/blog/jrost-rapid-response-fund-awardees/).
-
-(hub-types:ephemeral)=
-### Ephemeral Hubs
-
-Ephemeral Hubs are designed to quickly provide online computing sessions on a short-term basis (for example, as a part of a bootcamp demonstration). They are inspired by 2i2c's experience running online services like [`mybinder.org`](https://mybinder.org).
-
-Ephemeral Hubs contain the same environment as educational hubs, however they **do not require authentication**, and **do not persist user files**. They're designed for quick interactions with minimal infrastructure complexity and cost.
-
-You can find the JupyterHub configuration for 2i2c Education Hubs [at this repository](
-https://github.com/2i2c-org/pilot-hubs/tree/master/hub-templates/ephemeral-hub).
-
 
 ## How are hubs configured and deployed?
 

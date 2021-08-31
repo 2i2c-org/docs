@@ -7,7 +7,7 @@ These sections describe some common actions that need to be taken on cloud provi
 ## Provision a paid cloud provider account for 2i2c
 
 For 2i2c to build & manage your JupyterHub, it needs *full* access to a
-cloud provider account on [Google Cloud Platform](https://cloudn.google.com),
+cloud provider account on [Google Cloud Platform](https://cloud.google.com),
 [Amazon Web Services][https://aws.amazon.com], or [Azure](https://azure.microsoft.com).
 This page will provide guidance on how to do that.
 
