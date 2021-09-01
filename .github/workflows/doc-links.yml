@@ -1,0 +1,21 @@
+name: Test documentation for broken links
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install docs requirements
+        run: pip install -r requirements.txt
+      
+      - name: make linkcheck
+        run: |
+          make linkcheck SPHINXOPTS='--color -W --keep-going'

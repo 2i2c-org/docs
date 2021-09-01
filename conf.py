@@ -64,6 +64,8 @@ intersphinx_mapping = {
 rediraffe_redirects = {
 }
 
+# Disable linkcheck for anchors because it throws false errors for any JS anchors
+linkcheck_anchors = False
 
 def setup(app):
     app.add_css_file("custom.css")

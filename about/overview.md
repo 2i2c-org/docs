@@ -55,7 +55,7 @@ It does this in collaboration with leaders from the community for a particular h
 Everything that 2i2c deploys is open source and community-driven projects.
 We prioritize using multi-stakeholder projects that are well-supported by a diverse community of contributors.
 The resources that we receive to run 2i2c JupyterHubs thus **also go towards making open-source improvements** in these communities so that others may benefit from them.
-We see this as an opportunity to solve two problems with one stream of funding: support research and education, and [support open source communities](https://2i2c.org/open-source/) in the Jupyter ecosystem and beyond.
+We see this as an opportunity to solve two problems with one stream of funding: support research and education, and [support open source communities](https://2i2c.org/values/) in the Jupyter ecosystem and beyond.
 
 ## Moving off of a 2i2c JupyterHub?
 
