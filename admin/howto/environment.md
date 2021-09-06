@@ -70,31 +70,9 @@ Our hubs use [docker images](https://www.docker.com/) to provide the
 user environment. You can build and bring your own docker image,
 which gives you *full control* over your environment.
 
-We recommend the following setup for building & maintaining your
-docker image:
-
-1. Create a GitHub repository that will contain just your *environment* files,
-   not content. You could use just files that help [create your environment on
-   mybinder.org](https://repo2docker.readthedocs.io/en/latest/config_files.html) - like `environment.yml` or `requirements.txt` for python,
-   `install.R` for R, etc. You can also instead have a `Dockerfile`
-   for full control. Another popular option is to use a `Dockerfile` but
-   inherit from a [pangeo base image](https://github.com/pangeo-data/pangeo-docker-images),
-   making just the modifications you need.
-
-2. Use the [repo2docker GitHub Action](https://github.com/jupyterhub/repo2docker-action)
-   to automatically build, name and push your image to a docker registry.
-   We recommend [pushing to quay.io](https://github.com/jupyterhub/repo2docker-action#push-image-to-quayio),
-   a registry with more generous rate limits than DockerHub's. You can
-   [use DockerHub](https://github.com/jupyterhub/repo2docker-action#push-repo2docker-image-to-dockerhub),
-   or any other public registry.
-
-3. Use the [JupyterHub configurator](configurator.md) to configure the image used
-   by your hub. You **must** include the tag your built image was pushed with,
-   and specify that. So something like `quay.io/my-user/my-image:784f4b3dac34`,
-   not `quay.io/my-user/my-image` or `quay.io/my-user/my-image:latest`. Selecting
-   'Tags' in either dockerhub or quay.io should give you the correct tag. Looking
-   in the output of the GitHub action for your repository also gives you the tag
-   to use.
+We recommend following the setup described in this GitHub respository
+[README](https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md)
+for how to build and maintain your own docker image.
 
 ```{note}
 If the new image you use breaks user server starts, or is broken in some other
