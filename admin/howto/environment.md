@@ -72,7 +72,7 @@ which gives you *full control* over your environment.
 
 We recommend following the setup described in this GitHub respository
 [README](https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md)
-for how to build & maintain your own docker image.
+for how to build and maintain your own docker image.
 
 ```{note}
 If the new image you use breaks user server starts, or is broken in some other
