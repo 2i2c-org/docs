@@ -14,7 +14,7 @@ master_doc = "index"
 extensions = [
     "myst_nb",
     "sphinx_copybutton",
-    "sphinx_panels",
+    "sphinx_design",
     "sphinx.ext.intersphinx",
     "sphinxext.rediraffe",
 ]

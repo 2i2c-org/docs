@@ -13,9 +13,9 @@ See [the pilot hubs documentation](tc:roles:community-representative) for more d
 We use a GitHub issue template to ask a few questions about your hub deployment that will help us deploy it.
 Click the button below to go to the form:
 
-```{link-button} https://github.com/2i2c-org/pilot-hubs/issues/new?assignees=&labels=type%3A+hub&template=new-hub.yml&title=New+Hub%3A+%3CHub+name%3E
-:text: Go to new Hub Form
-:classes: btn-outline-primary
+```{button-link} https://github.com/2i2c-org/pilot-hubs/issues/new?assignees=&labels=type%3A+hub&template=new-hub.yml&title=New+Hub%3A+%3CHub+name%3E
+:color: primary
+Go to new Hub Form
 ```
 
 Feel free to communicate with the team members in that issue to help clarify how the infrastructure should be set up.

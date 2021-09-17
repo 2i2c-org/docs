@@ -59,18 +59,27 @@ Alternatively, you can go to this URL in your browser:
 1. Click the {guilabel}`Add Users` button. The {guilabel}`Add Users` dialog box will pop up.
 2. Add one or more users, and hit the {guilabel}`Add Users` button to authorize all the users you just added.
 
+`````{grid}
+:class-container: full-width
+:padding: 0 0 0 5
 
-````{panels}
-:container: full-width
-:card: border-1
+````{grid-item-card} 
+:class-item: border-1
 ```{figure} ../../images/add-users-button.png
 The {guilabel}`Add Users` button in the Administrator Panel.
 ```
----
+````
+
+````{grid-item-card} 
+:class-item: border-1
+
 ```{figure} ../../images/add-users-form.png
 Fill in usernames and optionally make them administrators. You can add multiple users at once by putting a username on each line.
 ```
+
 ````
+`````
+
 
 ### Finding usernames
 

@@ -23,8 +23,9 @@ These sections contain information about the service, our goals and strategy for
 ```{toctree}
 :maxdepth: 1
 :caption: About the Pilot
-about/strategy
 about/overview
+about/strategy
+about/roadmap
 about/infrastructure
 ```
 
