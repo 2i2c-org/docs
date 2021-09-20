@@ -64,6 +64,7 @@ If you only need one / two extra packages, the easiest way is to
 and ask for the new package to be installed. This is often the simplest
 way forward.
 
+(environment:image)=
 ### Bring your own docker image
 
 Our hubs use [docker images](https://www.docker.com/) to provide the

@@ -1,7 +1,7 @@
 (about-the-project)=
 # Overview
 
-2i2c JupyterHubs offer data science environments to multiple users via a JupyterHub that runs in the cloud.
+2i2c JupyterHubs offer interactive computing environments designed to serve multiple users via a JupyterHub that runs in the cloud.
 They are designed and deployed by the [International Interactive Computing Collaboration](https://2i2c.org) (or 2i2c). They are [a team with many years of experience](https://2i2c.org/about/) running interactive computing infrastructure for research and education.
 
 ## Who is a 2i2c JupyterHub for?

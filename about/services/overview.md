@@ -12,7 +12,7 @@ See [our strategy page](../strategy.md) for an overview of what we're hoping to 
 ## What technology makes up each hub?
 
 🚀 core infrastructure
-: Underneath each 2i2c JupyterHub is a [JupyterHub](https://jupyter.org/hub). These provide interactive computing sessions for each of your users, and connect to the other infrastructure in the cloud. We use [`auth0`](https://auth0.com/) for authenticating users, which can connect to a number of other authentication protocols (such as OAuth2).
+: Underneath each 2i2c JupyterHub is a [JupyterHub](https://jupyter.org/hub). These provide interactive computing sessions for each of your users, and connect to the other infrastructure in the cloud. We use [`auth0`](https://auth0.com/) and [CILogon](https://www.cilogon.org/) for authenticating users, which can connect to a number of other authentication protocols (such as OAuth2).
 
 💻 interfaces
 : Each 2i2c JupyterHub has two main interactive interfaces: Jupyter interfaces (Notebook and Lab), and RStudio. Each of them is accessible from your session via `/tree`, `/lab`, and `/rstudio` endpoints in your URL.
