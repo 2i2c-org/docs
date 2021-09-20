@@ -1,9 +1,12 @@
-sphinx
 myst-nb
 myst-parser[linkify]
+pandas
+pyyaml
+requests
+sphinx
+sphinx-autobuild
 sphinx-copybutton
 sphinx-book-theme
 sphinx-design
-requests
-pyyaml
 sphinxext-rediraffe
+tabulate

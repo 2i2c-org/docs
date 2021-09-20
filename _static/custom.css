@@ -1,3 +1,11 @@
+:root {
+    --pst-font-size-base: none;
+    --pst-color-primary: 78, 78, 78;
+    --pst-color-navbar-link-active: 70, 70, 255;
+    --pst-color-sidebar-link-active: 70, 70, 255;
+    --pst-color-link: 0, 123, 255;
+}
+
 .logos img {
     max-height: 50px;
 }
@@ -26,4 +34,32 @@ p.card-text {
 
 p.caption {
     font-size: 1.4em;
+}
+
+/* Logo font style */
+a.navbar-brand p.title {
+    font-family: "Fira Sans";
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #4e4e4e;
+}
+
+/* Previous / next buttons */
+.prev-next-bottom > a {
+    border: none !important;
+}
+
+.prev-next-bottom > a::after, .prev-next-bottom > a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0 .2em;
+}
+
+.prev-next-bottom > a.left-prev::before {
+    content: "\f104";
+}
+
+.prev-next-bottom > a.right-next::after {
+    content: "\f105";
 }
