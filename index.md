@@ -1,26 +1,20 @@
-# The 2i2c Managed JupyterHubs Service
+# 2i2c Documentation
 
-A 2i2c Managed JupyterHub is a cloud-based interactive computing environment built entirely on open-source technology and customized for research and education.
-It follows best-practices as recommended from open source communities, and is deployed in a manner that is easy for others to replicate on their own.
+2i2c has several major sources of documentation to help you learn more about our services, our technology, and our organization.
+Check out the sections below to get pointed in the right direction.
 
-Each 2i2c JupyterHub is deployed for a specific community, and can be customized for that community.
-It brings together **environments, datasets, computing resources, and content**.
+## About our cloud service
 
-:::{note}
-The service is currently in an **alpha phase**, and may evolve as we learn more about how to best serve our target communities.
-:::
+A high-level description of the 2i2c Managed JupyterHubs service, some major features that come with each hub, and a description of the usecase-specific hubs that we offer.
 
-```{figure} https://drive.google.com/uc?export=download&id=1vL8ekAtUQ4TEik4-oWIn36VAOITdlmpR
-:width: 80%
-
-A high-level overview of a 2i2c JupyterHub Distribution.
+```{toctree}
+:maxdepth: 3
+about/index
 ```
-
-This documentation is split into two major sections:
 
 ## The Hub Administrator's Guide
 
-This is a guide for current administrators of 2i2c Managed JupyterHubs.
+A guide for current administrators of 2i2c Managed JupyterHubs.
 It provides information about how you can customize and manage your hub for your community.
 
 ```{toctree}
@@ -28,11 +22,21 @@ It provides information about how you can customize and manage your hub for your
 admin/index
 ```
 
-## About our hub services
+## Our DevOps Guide
 
-This is a high-level description of the 2i2c Managed JupyterHubs service, some major features that come with each hub, and a description of the usecase-specific hubs that we offer.
+The 2i2c Team DevOps guide is what we use to document how to develop and operate the cloud infrastructure that is run by 2i2c.
+It contains all the details about how our infrastructure is deployed, how we make changes to it, and team processes around ensuring site reliability.
 
 ```{toctree}
-:maxdepth: 3
-about/index
+Our DevOps Guide <https://pilot-hubs.2i2c.org>
+```
+
+## Our Team Compass
+
+Transparency and collaboration is at the heart of 2i2c's mission.
+We host a public "Team Compass" that provides all of the organization-level policies, practices, and strategy for our team and community.
+If you'd like to answer any question about 2i2c as an organization, this is the place to look.
+
+```{toctree}
+Our Team Compass <https://team-compass.2i2c.org>
 ```

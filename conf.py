@@ -50,7 +50,7 @@ html_static_path = ["_static"]
 html_theme_options = {
     "github_url": "https://github.com/2i2c-org/pilot",
     "twitter_url": "https://twitter.com/2i2c_org",
-    "navbar_start": ["navbar-logo.html"],
+    "navbar_start": ["2i2c-logo.html"],
     "navbar_align": "left",
     "navbar_end": ["navbar-icon-links.html", "search-field.html"],
     "footer_items": ["2i2c-footer.html"],

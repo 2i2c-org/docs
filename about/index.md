@@ -1,4 +1,4 @@
-# Hub Services
+# Managed Hub Service
 
 The Managed JupyterHubs Service is an open, scalable, sustainable cloud service for interactive computing environments in research and education.
 It follows a "DevOps as a Service" model where communities in research and education can pay for managed cloud infrastructure that runs on an entirely open source stack, and give you [the right to replicate your infrastructure](https://2i2c.org/right-to-replicate).
@@ -19,6 +19,10 @@ If you're interested in working with 2i2c to get a hub for your own community, p
 
 A high-level overview of a 2i2c JupyterHub Distribution.
 ```
+
+:::{note}
+The service is currently in an **alpha phase**, and may evolve as we learn more about how to best serve our target communities.
+:::
 
 ## Features of hub services
 

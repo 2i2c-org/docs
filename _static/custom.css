@@ -37,11 +37,29 @@ p.caption {
 }
 
 /* Logo font style */
-a.navbar-brand p.title {
+a.navbar-brand {
+    margin-left: 1em;
+    padding: 0;
+}
+
+a.navbar-brand span {
     font-family: "Fira Sans";
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 600;
     color: #4e4e4e;
+}
+
+a.navbar-brand span.logo-subtitle {
+    color: #3597ff;
+}
+
+a.reference.external.nav-link:after {
+    content: "\f35d";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 0.7em;
+    color: #949494;
+    vertical-align: top;
 }
 
 /* Previous / next buttons */
