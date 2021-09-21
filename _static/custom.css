@@ -53,13 +53,17 @@ a.navbar-brand span.logo-subtitle {
     color: #3597ff;
 }
 
-a.reference.external.nav-link:after {
+a.reference.external:after {
     content: "\f35d";
     font-family: 'Font Awesome 5 Free';
     font-weight: 600;
     font-size: 0.7em;
-    color: #949494;
+    color: #b9b9b9e4;
     vertical-align: top;
+}
+
+a.reference.external:not(.nav-link):after {
+    padding-left: .3em;
 }
 
 /* Previous / next buttons */
@@ -81,3 +85,24 @@ a.reference.external.nav-link:after {
 .prev-next-bottom > a.right-next::after {
     content: "\f105";
 }
+
+/* Table of Contents */
+
+div.toctree-wrapper > ul {
+    padding-left: 0;
+}
+
+div.toctree-wrapper li.toctree-l1 {
+    list-style: none;
+}
+
+div.toctree-wrapper li.toctree-l1 > ul {
+    padding-top: .5em;
+    padding-left: 0;
+    list-style: none;
+}
+
+div.toctree-wrapper li.toctree-l1 > a {
+    font-size: 1.3em;
+}
+
