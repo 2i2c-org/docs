@@ -1,9 +1,11 @@
 :root {
     --pst-font-size-base: none;
     --pst-color-primary: 78, 78, 78;
-    --pst-color-navbar-link-active: 70, 70, 255;
-    --pst-color-sidebar-link-active: 70, 70, 255;
-    --pst-color-link: 0, 123, 255;
+    --pst-color-secondary: 126, 173, 224;
+    --pst-color-info: var(--pst-color-secondary);
+    --pst-color-navbar-link-active: var(--pst-color-secondary);
+    --pst-color-sidebar-link-active: var(--pst-color-secondary);
+    --pst-color-link: 22, 118, 221;
 }
 
 .logos img {
@@ -45,12 +47,16 @@ a.navbar-brand {
 a.navbar-brand span {
     font-family: "Fira Sans";
     font-size: 1.7em;
-    font-weight: 600;
     color: #4e4e4e;
+}
+
+a.navbar-brand span.logo {
+    font-weight: 700;
 }
 
 a.navbar-brand span.logo-subtitle {
     color: #7eade0;
+    font-weight: 400;
 }
 
 a.reference.external:after {
@@ -58,12 +64,13 @@ a.reference.external:after {
     font-family: 'Font Awesome 5 Free';
     font-weight: 600;
     font-size: 0.7em;
-    color: #b9b9b9e4;
+    color: #c4c4c4e4;
     vertical-align: top;
 }
 
 a.reference.external:not(.nav-link):after {
     padding-left: .3em;
+    font-size: 0.6em;
 }
 
 /* Previous / next buttons */
@@ -93,6 +100,7 @@ div.toctree-wrapper > ul {
 }
 
 div.toctree-wrapper li.toctree-l1 {
+    margin-top: 1em;
     list-style: none;
 }
 
