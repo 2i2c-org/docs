@@ -59,18 +59,13 @@ a.navbar-brand span.logo-subtitle {
     font-weight: 400;
 }
 
-a.reference.external:after {
+a.reference.nav-link.external:after {
     content: "\f35d";
     font-family: 'Font Awesome 5 Free';
     font-weight: 600;
     font-size: 0.7em;
     color: #c4c4c4e4;
     vertical-align: top;
-}
-
-a.reference.external:not(.nav-link):after {
-    padding-left: .3em;
-    font-size: 0.6em;
 }
 
 /* Previous / next buttons */
