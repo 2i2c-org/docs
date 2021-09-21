@@ -41,7 +41,7 @@ Cloud infrastructure
 Below is a common workflow that communities use with this type of hub:
 
 - **Use Jupyter Book for course textbooks**. This allows you to keep all of your source material in markdown files and Jupyter Notebooks, and hosted online as a book for your course.
-- **Use `nbgitpuller` links to distribute content to your students**. To distribute worksheets, labs, etc to students, use [nbgitpuller.link](https://nbgitpuller.link) to create nbgitpuller links for your content. Clicking these links will give a student their own version of the content that they may modify and save.
+- **Use `nbgitpuller` links to distribute content to your students**. To distribute worksheets, labs, etc to students, use [nbgitpuller.link](https://jupyterhub.github.io/nbgitpuller/link) to create nbgitpuller links for your content. Clicking these links will give a student their own version of the content that they may modify and save.
 - **Use "launch buttons" to connect your book to your hub**. Jupyter Book allows you to [connect your book with a JupyterHub](https://jupyterbook.org/interactive/launchbuttons.html), which students may use to launch directly into your hub from the textbook.
 
 ## Inspiration for this hub

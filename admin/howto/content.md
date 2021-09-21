@@ -25,7 +25,7 @@ git directly*.
 
 ### Generate an nbgitpuller link
 
-Generate an [nbgitpuller link](http://nbgitpuller.link). This generates a
+Generate an [nbgitpuller link](https://jupyterhub.github.io/nbgitpuller/link). This generates a
 *clickable link* that contains within it the following pieces of information:
 
 1. The URL to your hub. Upon clicking the link, users will be redirected to
@@ -41,7 +41,7 @@ Generate an [nbgitpuller link](http://nbgitpuller.link). This generates a
    listing with the content of the repository will be shown.
 
 ```{figure} ../../images/nbgitpuller-ui.png
-The [`nbgitpuller.link`](http://nbgitpuller.link) user interface, along with
+The [`nbgitpuller.link`](https://jupyterhub.github.io/nbgitpuller/link) user interface, along with
 some important fields highlighted.
 ```
 
