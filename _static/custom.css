@@ -1,11 +1,11 @@
 :root {
     --pst-font-size-base: none;
     --pst-color-primary: 78, 78, 78;
-    --pst-color-secondary: 126, 173, 224;
+    --pst-color-secondary: 87, 154, 202;  /* Binder blue */
     --pst-color-info: var(--pst-color-secondary);
     --pst-color-navbar-link-active: var(--pst-color-secondary);
     --pst-color-sidebar-link-active: var(--pst-color-secondary);
-    --pst-color-link: 22, 118, 221;
+    --pst-color-link: var(--pst-color-secondary);
 }
 
 .logos img {
@@ -55,7 +55,7 @@ a.navbar-brand span.logo {
 }
 
 a.navbar-brand span.logo-subtitle {
-    color: #7eade0;
+    color: rgb(var(--pst-color-secondary));
     font-weight: 400;
 }
 
@@ -68,24 +68,10 @@ a.reference.nav-link.external:after {
     vertical-align: top;
 }
 
-/* Previous / next buttons */
-.prev-next-bottom > a {
-    border: none !important;
-}
+/* In-page text */
 
-.prev-next-bottom > a::after, .prev-next-bottom > a::before {
-    font-family: "Font Awesome 5 Free";
+main a {
     font-weight: 600;
-    font-size: 1.2em;
-    padding: 0 .2em;
-}
-
-.prev-next-bottom > a.left-prev::before {
-    content: "\f104";
-}
-
-.prev-next-bottom > a.right-next::after {
-    content: "\f105";
 }
 
 /* Table of Contents */
@@ -107,5 +93,26 @@ div.toctree-wrapper li.toctree-l1 > ul {
 
 div.toctree-wrapper li.toctree-l1 > a {
     font-size: 1.3em;
+}
+
+
+/* Previous / next buttons */
+.prev-next-bottom > a {
+    border: none !important;
+}
+
+.prev-next-bottom > a::after, .prev-next-bottom > a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0 .2em;
+}
+
+.prev-next-bottom > a.left-prev::before {
+    content: "\f104";
+}
+
+.prev-next-bottom > a.right-next::after {
+    content: "\f105";
 }
 
