@@ -1,19 +1,8 @@
 (about-the-project)=
-# About the Managed JupyterHub Service
+# Overview
 
-2i2c JupyterHubs offer data science environments to multiple users via a JupyterHub that runs in the cloud.
+2i2c JupyterHubs offer interactive computing environments designed to serve multiple users via a JupyterHub that runs in the cloud.
 They are designed and deployed by the [International Interactive Computing Collaboration](https://2i2c.org) (or 2i2c). They are [a team with many years of experience](https://2i2c.org/about/) running interactive computing infrastructure for research and education.
-
-There are several flavors of hubs to choose from, each designed for a different use-case in research and education.
-Hubs are tailored for the community that uses them - their environments and infrastructure can be customized, and all of the deployment and configuration of a hub is fully transparent and re-usable.
-
-See [](infrastructure.md) for more information about the infrastructure and technology behind 2i2c JupyterHubs.
-
-:::{admonition} Get a hub for your community
-
-If you're interested in working with 2i2c to get a hub for your own community, please [send us an email](mailto:hello@2i2c.org) and we'd be happy to discuss options with you.
-
-:::
 
 ## Who is a 2i2c JupyterHub for?
 
@@ -57,13 +46,10 @@ We prioritize using multi-stakeholder projects that are well-supported by a dive
 The resources that we receive to run 2i2c JupyterHubs thus **also go towards making open-source improvements** in these communities so that others may benefit from them.
 We see this as an opportunity to solve two problems with one stream of funding: support research and education, and [support open source communities](https://2i2c.org/values/) in the Jupyter ecosystem and beyond.
 
-## Moving off of a 2i2c JupyterHub?
+## Replicate a 2i2c Hub
 
-2i2c JupyterHubs are designed to use entirely open-source tools that work in other contexts. You can take your workflows elsewhere if you wish, and you can even deploy your own JupyterHub that recreates the same cloud-based experience.
+2i2c JupyterHubs are designed to use entirely open-source tools that work in other contexts.
+We are a non-profit organization that believes that using tools that are interoperable, open-source, and owned by the community will empower research and education and make it more equitable and inclusive.
+For this reason we are committed to deploying open source infrastructure that you can take elsewhere and deploy on your own.
 
-% TODO: add back in once #54 is merged.
-% For more information, see [](migration-guide).
-
-### Wait, you really want it to be easy for people to _leave_ 2i2c JupyterHubs?
-
-Yes! We are a non-profit organization with a mission to make open infrastructure for interactive computing more accessible for the research and education community. We believe that using tools that are interoperable, open-source, and owned by the community will most-benefit research and education and make it more equitable and inclusive. For this reason we are committed to deploying open source infrastructure that you can both take elsewhere or even deploy on your own.
+Check out [](../admin/howto/replicate.md) for information about replicating a 2i2c JupyterHub.

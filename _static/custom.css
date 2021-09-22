@@ -1,3 +1,13 @@
+:root {
+    --pst-font-size-base: none;
+    --pst-color-primary: 78, 78, 78;
+    --pst-color-secondary: 87, 154, 202;  /* Binder blue */
+    --pst-color-info: var(--pst-color-secondary);
+    --pst-color-navbar-link-active: var(--pst-color-secondary);
+    --pst-color-sidebar-link-active: var(--pst-color-secondary);
+    --pst-color-link: var(--pst-color-secondary);
+}
+
 .logos img {
     max-height: 50px;
 }
@@ -27,3 +37,82 @@ p.card-text {
 p.caption {
     font-size: 1.4em;
 }
+
+/* Logo font style */
+a.navbar-brand {
+    margin-left: 1em;
+    padding: 0;
+}
+
+a.navbar-brand span {
+    font-family: "Fira Sans";
+    font-size: 1.7em;
+    color: #4e4e4e;
+}
+
+a.navbar-brand span.logo {
+    font-weight: 700;
+}
+
+a.navbar-brand span.logo-subtitle {
+    color: rgb(var(--pst-color-secondary));
+    font-weight: 400;
+}
+
+a.reference.nav-link.external:after {
+    content: "\f35d";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 0.7em;
+    color: #c4c4c4e4;
+    vertical-align: top;
+}
+
+/* In-page text */
+
+main a {
+    font-weight: 600;
+}
+
+/* Table of Contents */
+
+div.toctree-wrapper > ul {
+    padding-left: 0;
+}
+
+div.toctree-wrapper li.toctree-l1 {
+    margin-top: 1em;
+    list-style: none;
+}
+
+div.toctree-wrapper li.toctree-l1 > ul {
+    padding-top: .5em;
+    padding-left: 0;
+    list-style: none;
+}
+
+div.toctree-wrapper li.toctree-l1 > a {
+    font-size: 1.3em;
+}
+
+
+/* Previous / next buttons */
+.prev-next-bottom > a {
+    border: none !important;
+}
+
+.prev-next-bottom > a::after, .prev-next-bottom > a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0 .2em;
+}
+
+.prev-next-bottom > a.left-prev::before {
+    content: "\f104";
+}
+
+.prev-next-bottom > a.right-next::after {
+    content: "\f105";
+}
+
