@@ -1,9 +1,9 @@
 # -- Project information -----------------------------------------------------
 
 project = "2i2c Hub Service"
-copyright = "2020"
+copyright = "2021"
 author = "2i2c"
-
+version = "0.1alpha"
 master_doc = "index"
 
 # -- General configuration ---------------------------------------------------
