@@ -32,7 +32,18 @@ We'll fill in more details in this section as we understand them better, but in 
 
 This is difficult to estimate ahead of time, because it is **heavily** dependent on the primary use-case and size of your community, and because cloud vendors change the cost of their machines often (though they don't change by much).
 
+We recommend checking out [the Zero to JupyterHub cost projection documentation](z2jh:cost), which has a lot of useful background information to understand this.
+
+For one example to help you estimate, see the section below.
+
+#### An example with Google Cloud Platform
+
 To get a rough estimate of your cloud costs, here is a rough guide that is based on **Memory (RAM)**. It is a reasonable rule of thumb as long as you don't any particularly complex needs like extremely large datasets or scalable computing/GPUs.
+
+:::{admonition} Other cloud vendors may differ
+This example focuses on Google Cloud Platform.
+There are similar machine types (and generally similar prices) across all of the vendors. You can perform a similar calculation with [AWS](https://calculator.s3.amazonaws.com/index.html) or [Azure](https://azure.microsoft.com/en-us/pricing/calculator/) by following the same steps using a machine that has a similar amount of RAM and CPU as a `e2-highmem4`)
+:::
 
 1. **Read [the Zero to JupyterHub cost projection documentation](z2jh:cost)**. This is a nice high-level overview of the factors that drive the cost of JupyterHub deployments on commercial cloud.
 2. **Estimate memory available to each user**. The amount of RAM needed for each user is often the biggest driver of cloud cost. Decide the "maximum" amount of RAM that a user will generally need, and multiply that by 1.5x.
