@@ -4,6 +4,15 @@ The fee for the 2i2c Hub Service is paid monthly. This covers the services provi
 The cost of the hub service is highly dependent on the use-case, complexity of the environment, and cloud resources that are needed.
 In the alpha phase, 2i2c’s goal is to offer hubs at a bespoke price that is sustainable for both us and the communities we serve.
 
+:::{warning} These are all rough estimates!
+:class: warning
+
+This page is here for informational purposes to help communities understand the potential costs of using infrastructure with 2i2c.
+Our infrastructure and service is in an "alpha" phase, so these numbers will likely change and will be highly variable, and the estimates will be intentionally vague and may be missing some information.
+We will update this information as we learn more about how to best-shape the 2i2c Managed JupyterHubs service.
+
+:::
+
 :::{admonition} If you’d like a quote
 If you'd like a quote for estimated cloud costs and the management fee for your hub service, please fill out [this Google form to understand your use-case](https://docs.google.com/forms/d/e/1FAIpQLSepevnAiyN7ECZqTvTd5W7H6AePv7t5APnqTZ3r2D8gp1Nepw/viewform?usp=sf_link).
 :::
