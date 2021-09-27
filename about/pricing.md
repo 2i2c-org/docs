@@ -32,41 +32,48 @@ We'll fill in more details in this section as we understand them better, but in 
 
 This is difficult to estimate ahead of time, because it is **heavily** dependent on the primary use-case and size of your community, and because cloud vendors change the cost of their machines often (though they don't change by much).
 
-We recommend checking out [the Zero to JupyterHub cost projection documentation](z2jh:cost), which has a lot of useful background information to understand this.
+We recommend checking out the following resources to learn more about cloud costs.
+None of these are guarantees about costs, but should give you a general idea.
 
-For one example to help you estimate, see the section below.
+- For general information and explanation, see [the Zero to JupyterHub cost projection documentation](z2jh:cost).
+- For educational or "lightweight resources" hubs, see [this rough cost analysis notebook from the UC Berkeley DataHub](https://nbviewer.jupyter.org/github/berkeley-dsep-infra/datahub-usage-analysis/blob/master/notebooks/03-visualize-cost-and-usage.ipynb).
+- For data- and compute-intensive hubs, see the Pangeo two-part series on their Kubernetes costs. ([part 1 link](https://medium.com/pangeo/pangeo-cloud-costs-part1-f89842da411d), [part 2 link](https://medium.com/pangeo/pangeo-cloud-cluster-design-9d58a1bf1ad3))
 
-#### An example with Google Cloud Platform
-
-To get a rough estimate of your cloud costs, here is a rough guide that is based on **Memory (RAM)**. It is a reasonable rule of thumb as long as you don't any particularly complex needs like extremely large datasets or scalable computing/GPUs.
-
-:::{admonition} Other cloud vendors may differ
-This example focuses on Google Cloud Platform.
-There are similar machine types (and generally similar prices) across all of the vendors. You can perform a similar calculation with [AWS](https://calculator.s3.amazonaws.com/index.html) or [Azure](https://azure.microsoft.com/en-us/pricing/calculator/) by following the same steps using a machine that has a similar amount of RAM and CPU as a `e2-highmem4`)
-:::
-
-1. **Read [the Zero to JupyterHub cost projection documentation](z2jh:cost)**. This is a nice high-level overview of the factors that drive the cost of JupyterHub deployments on commercial cloud.
-2. **Estimate memory available to each user**. The amount of RAM needed for each user is often the biggest driver of cloud cost. Decide the "maximum" amount of RAM that a user will generally need, and multiply that by 1.5x.
-3. **Determine how many average simultaneous users you'd like a hub to support**. This isn't necessarily the total size of your community, but how many people you think will be using the hub *at the same time*.
-4. **Look up the monthly price of an `e2-highmem4` machine**. This is a basic machine that is suitable for many use-cases. [Go to the Google Cloud pricing page](https://cloud.google.com/compute/vm-instance-pricing) and go to the `E2 high-memory machine types` section. In that section, look for the `e2-highmem-4` monthly price.
-
-Now calculate a rough estimate of your monthly cloud cost with the following formula:
-
-```
-(n_avg_simultaneous_users * memory_per_user) / 16GB * monthly_price
-```
-
-So for example, if you have a community of **100 total users** but expect an average of only 20 of them to be active at the same time, and each user requires **4GB** of RAM, then with a monthly `e2-highmem4` price of $97.83 (as of {sub-ref}`today`), then your monthly cost will be around:
-
-```
-(20 * 4) / 16 * 97.83 = $489.15 / month or $5,869.80 / year
-```
-
-Or, around **$4.80 per user per month** in cloud costs. If you required **2GB RAM** instead of **4GB RAM**, cloud costs would likely drop to around **$2.40 per user per month**.
-
-:::{warning}
-This is just a rough estimate! As mentioned above, the actual costs will vary from this, but this amount should be correct within an order of magnitude.
-:::
+% TODO: Un-comment this when we think the estimates are acceptable.
+%For one example to help you estimate, see the section below.
+%
+% #### An example with Google Cloud Platform
+% 
+% To get a rough estimate of your cloud costs, here is a rough guide that is based on **Memory (RAM)**. It is a reasonable rule of thumb as long as you don't any particularly % complex needs like extremely large datasets or scalable computing/GPUs.
+% 
+% :::{admonition} Other cloud vendors may differ
+% This example focuses on Google Cloud Platform.
+% There are similar machine types (and generally similar prices) across all of the vendors. You can perform a similar calculation with [AWS](https://calculator.s3.amazonaws.com/% index.html) or [Azure](https://azure.microsoft.com/en-us/pricing/calculator/) by following the same steps using a machine that has a similar amount of RAM and CPU as a % `e2-highmem4`)
+% :::
+% 
+% 1. **Read [the Zero to JupyterHub cost projection documentation](z2jh:cost)**. This is a nice high-level overview of the factors that drive the cost of JupyterHub deployments % on commercial cloud.
+% 2. **Estimate memory available to each user**. The amount of RAM needed for each user is often the biggest driver of cloud cost. Decide the "maximum" amount of RAM that a user % will generally need, and multiply that by 1.5x.
+% 3. **Determine how many average simultaneous users you'd like a hub to support**. This isn't necessarily the total size of your community, but how many people you think will be % using the hub *at the same time*.
+% 4. **Look up the monthly price of an `e2-highmem4` machine**. This is a basic machine that is suitable for many use-cases. [Go to the Google Cloud pricing page](https://cloud.% google.com/compute/vm-instance-pricing) and go to the `E2 high-memory machine types` section. In that section, look for the `e2-highmem-4` monthly price.
+% 
+% Now calculate a rough estimate of your monthly cloud cost with the following formula:
+% 
+% ```
+% (n_avg_simultaneous_users * memory_per_user) / 16GB * monthly_price
+% ```
+% 
+% So for example, if you have a community of **100 total users** but expect an average of only 20 of them to be active at the same time, and each user requires **4GB** of RAM, % then with a monthly `e2-highmem4` price of $97.83 (as of {sub-ref}`today`), then your monthly cost will be around:
+% 
+% ```
+% (20 * 4) / 16 * 97.83 = $489.15 / month or $5,869.80 / year
+% ```
+% 
+% Or, around **$4.80 per user per month** in cloud costs. If you required **2GB RAM** instead of **4GB RAM**, cloud costs would likely drop to around **$2.40 per user per month**.
+% 
+% :::{warning}
+% This is just a rough estimate! As mentioned above, the actual costs will vary from this, but this amount should be correct within an order of magnitude.
+% :::
+% 
 
 ### Who pays for cloud costs?
 
