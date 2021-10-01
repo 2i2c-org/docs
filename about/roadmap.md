@@ -1,6 +1,6 @@
 # Roadmap
 
-{octicon}`clock` Updated **{sub-ref}`today`**
+{octicon}`clock` Updated **2021-09-16**
 
 This roadmap describes our major development priorities for the Managed JupyterHub Service.
 It is meant to give an idea of where we hope to focus our efforts in the next several months.

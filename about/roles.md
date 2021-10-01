@@ -29,10 +29,6 @@ The job of hub administrators is to support users and to perform common administ
 [Community Representatives](roles:community-representative) are the first Hub Administrators, and they may add new Hub Administrators via the JupyterHub interface.
 They are able to add users, start/stop servers, and generally have more control over operations on the hub.
 
-:::{seealso}
-See the [Hub Administrator's guide](/admin/index) for helpful information for Hub Administrators.
-:::
-
 :::{warning}
 Only give this role to people you trust, as they can perform disruptive actions for other users.
 :::

@@ -1,6 +1,6 @@
 # -- Project information -----------------------------------------------------
 
-project = "2i2c Hub Service"
+project = "Hub Service Guide"
 copyright = "2021"
 author = "2i2c"
 version = "0.1alpha"
@@ -29,16 +29,13 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", ".github", 
 
 myst_enable_extensions = ["colon_fence", "deflist", "linkify"]
 
-myst_url_schemes = ["http", "https", "mailto"]
-panels_add_bootstrap_css = False
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "pydata_sphinx_theme"
-html_favicon = "_static/favicon.png"
+html_theme = "sphinx_2i2c_theme"
+html_title = "Hub Service Guide"
 html_copy_source = True
 html_sourcelink_suffix = ""
 
@@ -48,20 +45,13 @@ html_sourcelink_suffix = ""
 html_static_path = ["_static"]
 
 html_theme_options = {
-    "github_url": "https://github.com/2i2c-org/pilot",
-    "twitter_url": "https://twitter.com/2i2c_org",
-    "navbar_start": ["2i2c-logo.html"],
-    "navbar_align": "left",
-    "navbar_end": ["navbar-icon-links.html", "search-field.html"],
-    "footer_items": ["2i2c-footer.html"],
+    "repository_url": "https://github.com/2i2c-org/pilot",
+    "repository_branch": "main",
+    "use_repository_button": True,
+    "use_edit_page_button": True,
+    "extra_navbar": "",
 }
 
-html_sidebars = {
-    "index": [],
-    "**": ["sidebar-nav-bs.html"],
-}
-
-html_baseurl = "https://2i2c.org/pilot"
 intersphinx_mapping = {
     "tc": ('https://team-compass.2i2c.org/en/latest', None),
     "ph": ('https://pilot-hubs.2i2c.org/en/latest', None),
@@ -75,9 +65,9 @@ rediraffe_redirects = {
 # Disable linkcheck for anchors because it throws false errors for any JS anchors
 linkcheck_anchors = False
 
+
 def setup(app):
     app.add_css_file("custom.css")
-    app.add_css_file("https://code.cdn.mozilla.net/fonts/fira.css")
 
 
 # Scripts to run

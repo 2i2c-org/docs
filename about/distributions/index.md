@@ -1,4 +1,4 @@
-# Overview of hub services
+# Hub distributions and features
 
 2i2c builds and operates **distributions of JupyterHubs** that are tailored for particular use-cases.
 These services share many of the same infrastructure components, but have customizations and optimizations that are more domain- or community-specific.
@@ -8,6 +8,16 @@ Our services are in an "alpha" state - we are still learning a lot about the bes
 The infrastructure and service may change over the coming months!
 See [our strategy page](../strategy.md) for an overview of what we're hoping to do and where we're headed next.
 :::
+
+For more information about specific hub distributions, see the links below.
+Otherwise, read onward for high-level information about all of our Managed JupyterHubs.
+
+```{toctree}
+:maxdepth: 1
+:caption: Types of hub services
+education
+research
+```
 
 ## What technology makes up each hub?
 
@@ -67,10 +77,6 @@ By default all 2i2c JupyterHub get their own URL with the following form:
 Each 2i2c JupyterHub has **hub name** (denoted by `<hub-name>`) and a **community name** (denoted by `<community-name>`). Communities are collections of hubs around a particular community or collaboration. Each community infrastructure may be run by different teams. For more information, see [](people-behind-hubs).
 
 It is also possible to provide your own URL that points to a 2i2c JupyterHub.
-
-## Will 2i2c keep information about a hub's users?
-
-2i2c will not collect user data for any purpose. 2i2c will have access to all of the information that is inside a hub (which it requires in order to debug problems and and assist with upgrades), however we will not retain any of this data or move it *outside* of the hub, and will not retain it once the hub is shut down (except in order to transfer data to you at your request).
 
 ## Data outside of the hub
 

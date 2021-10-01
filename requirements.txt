@@ -6,7 +6,7 @@ requests
 sphinx
 sphinx-autobuild
 sphinx-copybutton
-sphinx-book-theme
+git+https://github.com/2i2c-org/sphinx-2i2c-theme
 sphinx-design
 sphinxext-rediraffe
 tabulate
