@@ -50,6 +50,7 @@ html_theme_options = {
     "use_repository_button": True,
     "use_edit_page_button": True,
     "extra_navbar": "",
+    "show_toc_level": 2,
 }
 
 intersphinx_mapping = {
