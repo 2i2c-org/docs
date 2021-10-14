@@ -57,28 +57,28 @@ Sometimes, what is in the base user environment is not enough for
 your use case. You might need new packages installed, a different
 language version, etc. Here are a few ways to customize yours.
 
-### Ask for changes to the base image
-
-If you only need one / two extra packages, the easiest way is to
-[open an issue in the `2i2c-org/pilot` repository](https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md)
-and ask for the new package to be installed. This is often the simplest
-way forward.
-
 (environment:image)=
 ### Bring your own docker image
 
 Our hubs use [docker images](https://www.docker.com/) to provide the
-user environment. You can build and bring your own docker image,
-which gives you *full control* over your environment.
+user environment.
+You can build and bring your own docker image, which gives you *full control* over your user environment.
 
-We recommend following the setup described in this GitHub respository
-[README](https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md)
-for how to build and maintain your own docker image.
+There are many ways to generate Docker images for your users, but we recommend using the [repo2docker environment specification](https://repo2docker.readthedocs.io/) to define and build your user environment.
+This is the tool used by [the Binder project](https://mybinder.org), and is a good standard to follow for clearly and reproducibly defining computational environments.
 
-```{note}
-If the new image you use breaks user server starts, or is broken in some other
-way, you can revert back to the old image by specifying *that*. You can also
-leave the field blank to use the default 2i2c image.
+To use repo2docker to build user environments for your hub, you'll need to:
+
+1. Create a repository that hosts your environment configuration
+2. Set up a GitHub Action to automatically build a Docker image using repo2docker, and push it to a registry.
+3. Configure your hub to use the image that you build for your user environments.
+
+To help you get started, we've created a small template repository that has most of this set up already.
+Go to the repository by clicking the button below, and follow the instructions in the README for next steps.
+
+```{button-link} https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md
+:color: primary
+Go to user environment template
 ```
 
 ### Temporarily install packages for a session
@@ -101,6 +101,12 @@ packages. This makes the base environment different for different users,
 causing hard to debug issues. This could also render your user server
 unable to start, due to conflicting packages.
 ```
+
+### Ask for changes to the base image
+
+If you don't wish to maintain your own user image, and only need one / two extra packages, please [open an issue in the `2i2c-org/pilot` repository](https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md) and ask for the new package to be installed.
+Depending on the complexity of the package, and how common it is across the use-case for communities we serve, we may be able to add it to the default image.
+
 
 ## Switch between user interfaces
 
