@@ -1,3 +1,4 @@
+(about/roles-for-service)=
 # Roles for the service
 
 There are a few major roles that we define for the Managed JupyterHub Service.

@@ -7,7 +7,7 @@ without having to install packages themselves.
 
 ## Default user environment
 
-The default environment for all pilot hubs is defined [in this
+The default environment for all community hubs is defined [in this
 folder](https://github.com/2i2c-org/pilot-hubs/tree/master/images/user).
 It is configured with the following:
 
