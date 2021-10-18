@@ -6,7 +6,7 @@ Follow the sections below to do so.
 ## Confirm with a 2i2c team member
 
 2i2c runs JupyterHubs as a service in exchange for a managed service fee.
-Before getting a hube for your community, speak with a 2i2c representative to agree on the details of your service as well as the managed service fee.
+Before getting a hub for your community, speak with a 2i2c representative to agree on the details of your service as well as the managed service fee.
 
 You can [learn more about the 2i2c Managed JupyterHub Service here](about/overview.md).
 
