@@ -17,7 +17,7 @@ Users can prove who they are by logging in via an *authentication provider*. Cur
 
 3. Username / Password via [auth0](https://auth0.com/docs/connections/database).
    A traditional username / password interface where users can sign up. There are currently [limited
-   options](https://github.com/2i2c-org/pilot-hubs/issues/421) for limiting who
+   options](https://github.com/2i2c-org/infrastructure/issues/421) for limiting who
    can sign up, so this should be only used in limited circumstances.
 
 4. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work for your use-case.
@@ -40,7 +40,7 @@ Authorizing regular users
      educational institution.
 
 Authorizing admin users
-: Admin users are authorized [in a hub's YAML config](https://github.com/2i2c-org/pilot-hubs/blob/c1d06be1eed2d748a4d39e4cba76436cffe89fb2/config/hubs/2i2c.cluster.yaml#L50-L55), with support from 2i2c staff.
+: Admin users are authorized [in a hub's YAML config](https://github.com/2i2c-org/infrastructure/blob/c1d06be1eed2d748a4d39e4cba76436cffe89fb2/config/hubs/2i2c.cluster.yaml#L50-L55), with support from 2i2c staff.
 
 % TODO: Link to SRE docs on how to do this once we have it
 

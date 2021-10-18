@@ -57,7 +57,7 @@ admin/howto/create-billing-account
 The 2i2c Team DevOps guide is what we use to document how to develop and operate the cloud infrastructure that is run by 2i2c.
 It contains all the details about how our infrastructure is deployed, how we make changes to it, and team processes around ensuring site reliability.
 
-[**Our DevOps Guide**](https://pilot-hubs.2i2c.org)
+[**Our DevOps Guide**](https://infrastructure.2i2c.org)
 
 
 ## Our Team Compass
