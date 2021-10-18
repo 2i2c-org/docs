@@ -12,10 +12,10 @@ Below we describe major initiatives that are currently active in the Managed Hub
 ## Hub infrastructure launch
 
 The Managed Hubs Service relies heavily on infrastructure that centralizes the configuration and deployment of many JupyterHub instances.
-Our first major project is to use [our Pilot JupyterHubs](https://pilot-hubs.2i2c.org/en/latest/reference/hubs.html) to drive development on this infrastructure stack.
+Our first major project is to use [our Pilot JupyterHubs](https://infrastructure.2i2c.org/en/latest/reference/hubs.html) to drive development on this infrastructure stack.
 
 :::{note}
-We are also [using an issue](https://github.com/2i2c-org/pilot-hubs/issues/610) to track long-term infrastructure needs for this service across all cloud providers.
+We are also [using an issue](https://github.com/2i2c-org/infrastructure/issues/610) to track long-term infrastructure needs for this service across all cloud providers.
 That is more comprehensive and bigger in scope than any one initiative.
 :::
 

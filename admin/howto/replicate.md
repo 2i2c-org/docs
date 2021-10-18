@@ -105,15 +105,15 @@ Below we'll cover how you can deploy your own JupyterHub using your 2i2c Jupyter
 2i2c JupyterHubs use the [Zero to JupyterHub](https://z2jh.jupyter.org) guide for their configuration and deployments.
 We recommend familiarizing yourself with it, as it will be invaluable in helping you navigate how to run a JupyterHub that replicates the 2i2c JupyterHub service.
 
-All of the configuration for a 2i2c JupyterHub exists at the [`pilot-hubs/` repository](ph:index). This is a "meta" repository that centralizes configuration and deployment of many 2i2c JupyterHubs.
+All of the configuration for a 2i2c JupyterHub exists at the [`infrastructure/` repository](infra:index). This is a "meta" repository that centralizes configuration and deployment of many 2i2c JupyterHubs.
 
 There are two main things you'll need from this repository to deploy your hub:
 
-1. **Your hub-specific configuration**. `pilot-hubs/` contains [configurations for each JupyterHub in YAML files](https://github.com/2i2c-org/pilot-hubs/tree/master/config/hubs) (one YAML file per cluster).
+1. **Your hub-specific configuration**. `infrastructure/` contains [configurations for each JupyterHub in YAML files](https://github.com/2i2c-org/infrastructure/tree/master/config/hubs) (one YAML file per cluster).
    This file has an entry for each hub, with contains a **Zero to JupyterHub configuration** for your hub. You should find this configuration under `config/jupyterhub:`.
 2. **Your hub template configuration**. In addition to your hub-specific configuration, your hub also has a "template configuration" that defines the basic setup of your hub infrastructure.
    Each template has a name (e.g., `dask-hub`) and maps onto a Helm configuration.
-   You can [find each template in this folder](https://github.com/2i2c-org/pilot-hubs/tree/master/hub-templates).
+   You can [find each template in this folder](https://github.com/2i2c-org/infrastructure/tree/master/hub-templates).
    Look for the `values.yaml` file, as this contains the actual template configuration that you'll use with your Zero to JupyterHub configuration.
 
 You should merge these two configuration files into a single one, for use later.
