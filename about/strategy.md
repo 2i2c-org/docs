@@ -56,7 +56,7 @@ We'll focus on the following cloud providers:
 
 In the short term, we favor deploying hubs on Google Cloud Platform.
 This is because GCP has the most stable Kubernetes offering of all of the cloud providers.
-We follow [team guidelines for when to deploy new Kubernetes clusters](ph:cluster:when-to-deploy).
+We follow [team guidelines for when to deploy new Kubernetes clusters](infra:cluster:when-to-deploy).
 For new hubs that don't require their own Kubernetes cluster, we plan to run them on Google Cloud until our team has capacity to run more infrastructure across Azure and AWS.
 
 ### Why Jupyter and JupyterHub?

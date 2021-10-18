@@ -105,7 +105,7 @@ Below we'll cover how you can deploy your own JupyterHub using your 2i2c Jupyter
 2i2c JupyterHubs use the [Zero to JupyterHub](https://z2jh.jupyter.org) guide for their configuration and deployments.
 We recommend familiarizing yourself with it, as it will be invaluable in helping you navigate how to run a JupyterHub that replicates the 2i2c JupyterHub service.
 
-All of the configuration for a 2i2c JupyterHub exists at the [`infrastructure/` repository](ph:index). This is a "meta" repository that centralizes configuration and deployment of many 2i2c JupyterHubs.
+All of the configuration for a 2i2c JupyterHub exists at the [`infrastructure/` repository](infra:index). This is a "meta" repository that centralizes configuration and deployment of many 2i2c JupyterHubs.
 
 There are two main things you'll need from this repository to deploy your hub:
 
