@@ -12,7 +12,7 @@ You can [learn more about the 2i2c Managed JupyterHub Service here](about/overvi
 
 If you're interested in getting a hub for your community, click the button below.
 
-```{button-link} about/overview.html
+```{button-ref} about/overview
 :color: primary
 :class: float-left mr-3
 Learn more about the service
