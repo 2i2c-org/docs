@@ -10,29 +10,13 @@ These sections describe the hub service at an organizational level.
 
 ```{toctree}
 :maxdepth: 1
-:caption: About the Service
 about/overview
-about/distributions/index
-about/pricing
-about/roles
-about/strategy
-about/roadmap
-about/2i2c
-about/terminology
+new-hub
+support
 ```
 
-## Get started as a hub administrator
 
-These are some first steps you should follow when starting with a new JupyterHub.
-
-```{toctree}
-:caption: New hub administrators
-admin/howto/new-hub.md
-admin/howto/configurator
-admin/howto/support
-```
-
-## How-to guides
+## Hub Administration topics
 
 These guides have information on how hub admins can perform specific
 tasks on their hubs, mostly without requiring any interaction with
@@ -42,6 +26,7 @@ tasks on their hubs, mostly without requiring any interaction with
 :maxdepth: 1
 :caption: Hub Administration topics
 
+admin/howto/configurator
 admin/howto/environment
 admin/howto/content
 admin/howto/manage-users
@@ -54,10 +39,10 @@ admin/howto/create-billing-account
 
 ## Our Infrastructure Guide
 
-The 2i2c Team DevOps guide is what we use to document how to develop and operate the cloud infrastructure that is run by 2i2c.
+The 2i2c Team Infrastructure guide is what we use to document how to develop and operate the cloud infrastructure that is run by 2i2c.
 It contains all the details about how our infrastructure is deployed, how we make changes to it, and team processes around ensuring site reliability.
 
-[**Our DevOps Guide**](https://infrastructure.2i2c.org)
+[**Our infrastructure Guide**](https://infrastructure.2i2c.org)
 
 
 ## Our Team Compass

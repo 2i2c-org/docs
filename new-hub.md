@@ -1,12 +1,33 @@
-# Set up a new JupyterHub
+# Get a new JupyterHub
 
-In order to set up a new JupyterHub with 2i2c, there are a few steps that you should take.
+These instructions describe how to set up a new hub for your community.
+Follow the sections below to do so.
+
+## Confirm with a 2i2c team member
+
+2i2c runs JupyterHubs as a service in exchange for a managed service fee.
+Before getting a hub for your community, speak with a 2i2c representative to agree on the details of your service as well as the managed service fee.
+
+You can [learn more about the 2i2c Managed JupyterHub Service here](about/overview.md).
+
+If you're interested in getting a hub for your community, click the button below.
+
+```{button-ref} about/overview
+:color: primary
+:class: float-left mr-3
+Learn more about the service
+```
+
+```{button-link} mailto:2i2c.org?subject=Interested in Managed JupyterHub
+:color: primary
+Send us an email
+```
 
 ## Identify a Community Representative
 
 The Community Representative is the main point of contact between the community and the 2i2c Engineering Team.
 There can be up to two Community Representatives per hub.
-See [the infrastructure documentation](tc:roles:community-representative) for more details on this role.
+See [](about/roles-for-service) for more details on this role.
 
 ## Fill in the "New Hub" GitHub template
 
