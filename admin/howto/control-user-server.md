@@ -82,6 +82,6 @@ By default, kernels will be checked for activity **every `5 minutes`**.
 All kernels that haven't shown activity in **in the last hour** will be stopped by the [jupyterhub-idle-culler](https://github.com/jupyterhub/jupyterhub-idle-culler).
 
 This window can be configured if you'd like to change the window of inactivity needed before user kernels will be stopped.
-See the [Hub Engineer's guide](ph:configure:culling) for some documentation on this.
+See the [Hub Engineer's guide](infra:configure:culling) for some documentation on this.
 
 % TODO: Add link to SRE guide on how to configure this, once it exists

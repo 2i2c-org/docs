@@ -56,7 +56,7 @@ We'll focus on the following cloud providers:
 
 In the short term, we favor deploying hubs on Google Cloud Platform.
 This is because GCP has the most stable Kubernetes offering of all of the cloud providers.
-We follow [team guidelines for when to deploy new Kubernetes clusters](ph:cluster:when-to-deploy).
+We follow [team guidelines for when to deploy new Kubernetes clusters](infra:cluster:when-to-deploy).
 For new hubs that don't require their own Kubernetes cluster, we plan to run them on Google Cloud until our team has capacity to run more infrastructure across Azure and AWS.
 
 ### Why Jupyter and JupyterHub?
@@ -104,4 +104,4 @@ Below are a few major aspects of the service that we believe provide a good chan
 All of the work done in this pilot should be open and public by default, leveraging workflows that are common to open source communnities.
 We will need to create some private channels for communication for conversations with sensitive or private information, but will strive to do everything that we can in public.
 
-Currently, all of our deployment infrastructure and development can be found at [the `pilot-hubs/` repository](https://pilot-hubs.2i2c.org).
+Currently, all of our deployment infrastructure and development can be found at [the `infrastructure/` repository](https://infrastructure.2i2c.org).

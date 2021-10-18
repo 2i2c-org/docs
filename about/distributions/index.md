@@ -84,8 +84,8 @@ If you wish to access data that exists outside of your 2i2c Hub, it is your resp
 
 ## Where are hubs configured and deployed?
 
-All of the configuration and deployment scripts for the 2i2c JupyterHub can be found at [the `pilot-hubs/` repository](https://github.com/2i2c-org/pilot-hubs). This repository contains both the deployment code as well as documentation that explains how it works. It should be treated as "for advanced users only", and is provided for transparency and as a guide for the community to follow if they wish to manage their own infrastructure similar to 2i2c JupyterHub.
+All of the configuration and deployment scripts for the 2i2c JupyterHub can be found at [the `infrastructure/` repository](https://github.com/2i2c-org/infrastructure). This repository contains both the deployment code as well as documentation that explains how it works. It should be treated as "for advanced users only", and is provided for transparency and as a guide for the community to follow if they wish to manage their own infrastructure similar to 2i2c JupyterHub.
 
-To learn about how the `pilot-hubs/` repository works, we recommend checking out the [`pilot-hubs` documentation](ph:index).
+To learn about how the `infrastructure/` repository works, we recommend checking out the [`infrastructure` documentation](infra:index).
 
 See the next sections for more information about each hub distribution.
