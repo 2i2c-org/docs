@@ -12,7 +12,7 @@ When you make a support request, please include as much information as possible 
 
 ## What kind of support does 2i2c provide?
 
-2i2c Engineers proivde support for major infrastructure issues or enhancements.
+2i2c Engineers provide support for major infrastructure issues or enhancements.
 They are not needed for doing things like regular administrative tasks on a JupyterHub (see the other sections in this guide for how a Hub Administrator can accomplish these tasks instead).
 
 ## Who can ask for support?
@@ -25,10 +25,10 @@ Before reaching out to 2i2c for support, this person should work with others in 
 When you send us a support email, we'll try and resolve your issue via the following process:
 
 - The email to `support@2i2c.org` will open up a ticket in [the 2i2c FreshDesk account](https://2i2c.freshdesk.com).
-  This is a private space where 2i2c engineers can communicate with you and one another aronud the issue.
+  This is a private space where 2i2c engineers can communicate with you and one another around the issue.
 - We will investigate to understand what kind of issue is at hand.
   2i2c provides support for major infrastructure problems, outages, or upgrades.
   It doesn't provide support for daily workflow questions like debugging tracebacks in Python libraries.
 - If needed, we'll open an issue in [our `infrastructure` repository](https://github.com/2i2c-org/infrastructure) in order to track the steps needed to resolve this issue.
-- Throughout this process, we'll communicate with you via the `support@2i2c.org` address. You arealso  welcome to follow along and discuss in any issues that we createif you prefer.
+- Throughout this process, we'll communicate with you via the `support@2i2c.org` address. You are also  welcome to follow along and discuss in any issues that we may create if you prefer.
 - When the issue is resolved, we'll send you a confirmation via `support@2i2c.org`, and we'll close the support issue.
