@@ -13,6 +13,7 @@ These sections describe the hub service at an organizational level.
 about/overview
 new-hub
 support
+network
 ```
 
 
