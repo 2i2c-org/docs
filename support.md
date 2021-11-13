@@ -1,3 +1,6 @@
+---
+orphan: true
+---
 (support:email)=
 # Get support
 
