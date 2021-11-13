@@ -11,9 +11,13 @@ or use as a starting point for their own work. This content is often constantly
 updated as time goes on, and needs to not overwrite your student's work if you
 make an adjustment to content that has already been touched by the student.
 
-
 [nbgitpuller](https://jupyterhub.github.io/nbgitpuller) is the tool
 we recommend for this. The workflow goes something like this:
+
+### Ensure that `nbgitpuller` is installed in your user environment
+
+The default environment for 2i2c JupyterHubs has `nbgitpuller` pre-installed.
+However, if you [define a custom environment for your hub's users](environment:image), you'll need to ensure that `nbgitpuller` is installed in order for users to use it!
 
 ### Put your content in a public GitHub repository
 
