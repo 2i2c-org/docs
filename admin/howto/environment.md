@@ -9,7 +9,7 @@ without having to install packages themselves.
 (environment/custom)=
 ## Customize your user environment
 
-Whie all hubs [come with a default environment](environment/default), it is possible to create a custom user environment for the hub.
+While all hubs [come with a default environment](environment/default), it is possible to create a custom user environment for the hub.
 Here are a few ways that you can do this.
 
 (environment:image)=
@@ -62,7 +62,7 @@ Go to user environment template
 You can temporarily install packages in your environment that will
 just last the duration of your user session. They will get wiped out
 when your user server is stopped, to ensure that you always start from
-a 'clean slate' environment.
+the 'default' environment.
 
 The recommended way is to put `%pip install <list-of-packages>` or
 `%conda install <list-of-packages>` in the first cell of any notebook
@@ -74,7 +74,7 @@ you can use `install.packages("package-name")` as you normally would.
 While tempting, do not use `!pip install --user <packages>` to install
 packages. This makes the base environment different for different users,
 causing hard-to debug-issues. This could also render your user server
-unable to start, due to conflicting packages.
+unable to start, due to conflicting packages. [See this blog post on using pip in Jupyter](http://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/) for some helpful explanation.
 ```
 
 ## Create multiple environments for users to select
