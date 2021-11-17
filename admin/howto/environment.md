@@ -136,7 +136,7 @@ research organizations use this.
 
 ### Ask for changes to the default environmen
 
-If you are using the default environment, and think that one or two packages should be installed by default on it, please [send a support request](../support.md) and request an update to the default environment.
+If you are using the default environment, and think that one or two packages should be installed by default on it, please [send a support request](../../support.md) and request an update to the default environment.
 
 ## Accessing user interfaces
 
