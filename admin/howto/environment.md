@@ -5,7 +5,92 @@ configured environment with base libraries, user interfaces and
 languages installed. This allows them to start working immediately,
 without having to install packages themselves.
 
-## Default user environment
+
+(environment/custom)=
+## Customize your user environment
+
+While all hubs [come with a default environment](environment/default), it is possible to create a custom user environment for the hub.
+Here are a few ways that you can do this.
+
+(environment:image)=
+### Create your own docker image
+
+Our hubs use [docker images](https://www.docker.com/) to provide the
+user environment.
+You can build and bring your own docker image, which gives you *full control* over your user environment.
+
+In order to do this, we need to define an environment in a repository, generate a Docker image from that environment, push the Docker image to an image registry, and tell your JupyterHub to pull from that registry.
+See the sections below for more detail.
+
+#### A quick overview
+
+We recommend using the [repo2docker tool](https://repo2docker.readthedocs.io/) to define and build your user environment.
+This is the tool used by [the Binder project](https://mybinder.org), and is a good standard to follow for defining clear and reproducible computational environments.
+
+To use repo2docker to build user environments for your hub, you'll need to:
+
+1. **Create a repository** that hosts the files that will define your environment.
+2. **Add files in the repository** that define your user environment.
+   Here are a few good resources for defining these files:
+
+   - The Binder Project has [documentation about what files are supported](https://mybinder.readthedocs.io/en/latest/using/config_files.html).
+   - The Turing Way has an excellent a collection of tutorials for getting started with Binder, and covers [Python](https://github.com/alan-turing-institute/the-turing-way/blob/main/workshops/boost-research-reproducibility-binder/workshop-presentations/zero-to-binder-python.md), [Julia](https://github.com/alan-turing-institute/the-turing-way/blob/main/workshops/boost-research-reproducibility-binder/workshop-presentations/zero-to-binder-julia.md), and [the R language](https://github.com/alan-turing-institute/the-turing-way/blob/main/workshops/boost-research-reproducibility-binder/workshop-presentations/zero-to-binder-r.md).
+3. **Create a Docker image registry account**. This will be the place where you store user images once they are built, so that the hub can access them.
+   :::{tip}
+   We recommend using [the quay.io image registry](https://quay.io/) for your Docker images.
+   This is a public registry service run by [Red Hat](https://www.redhat.com/en), and is reliable to use.
+   :::
+4. **Set up a GitHub Action** to automatically build a Docker image using [the repo2docker action](https://github.com/jupyterhub/repo2docker-action), and push it to a registry.
+5. **Configure your hub** to pull the user image from the registry above, either via [the configurator](configurator.md) (to do it yourself) or by [opening a support ticket](../../support.md) (to request that a 2i2c engineer do this for you).
+
+:::{tip}
+By following these steps, you have also created a [Binder-ready repository](https://mybinder.org), and we recommend trying to build your reposity on mybinder.org in order to test things out.
+:::
+
+#### An in-depth guide
+
+To help you get started, we've created an [environment generation guide](https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md) and a small template repository that will guide you through the process.
+Go to the repository by clicking the button below, and follow the instructions in the README for next steps.
+
+```{button-link} https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md
+:color: primary
+Go to user environment template
+```
+
+### Temporarily install packages for a session
+
+You can temporarily install packages in your environment that will
+just last the duration of your user session. They will get wiped out
+when your user server is stopped, to ensure that you always start from
+the 'default' environment.
+
+The recommended way is to put `%pip install <list-of-packages>` or
+`%conda install <list-of-packages>` in the first cell of any notebook
+you distribute, so when run it'll install necessary packages. For R,
+you can use `install.packages("package-name")` as you normally would.
+
+```{warning}
+
+While tempting, do not use `!pip install --user <packages>` to install
+packages. This makes the base environment different for different users,
+causing hard-to debug-issues. This could also render your user server
+unable to start, due to conflicting packages. [See this blog post on using pip in Jupyter](http://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/) for some helpful explanation.
+```
+
+## Create multiple environments for users to select
+
+If your hub's community has workflows that differ significantly, it can be useful to create multiple user environments for your hub.
+This uses [Jupyter Hub User Profiles](z2jh:multiple-profiles) to create a menu of environment options when a user launches a new session.
+
+To add multiple environments for your hub, take these steps:
+
+1. Follow the steps in [](environment:image) for each environment you wish to offer your hub's users.
+   You should have one repository per environment, and each one should push to a Docker image registry via the repo2docker action.
+2. [Open a support request](../../support.md) requesting that your hub be set up to serve multiple user environments.
+   A 2i2c engineer will assist you in configuring the hub to set up multiple environments.
+
+(environment/default)=
+## The default user environment
 
 The default environment for all community hubs is defined [in this
 folder](https://github.com/2i2c-org/infrastructure/tree/master/images/user).
@@ -28,7 +113,7 @@ The 2i2c hubs offer the following user interfaces by default:
 
 #### Jupyter Notebook (Classic)
 
-The original single-document interface for creating Jupyter Notebooks.
+The [original single-document interface](https://jupyter-notebook.readthedocs.io/en/latest/) for creating Jupyter Notebooks.
 
 #### JupyterLab
 
@@ -49,66 +134,11 @@ research organizations use this.
 
 [RStudio](https://rstudio.com) is an IDE for R, created by the RStudio company.
 
+### Ask for changes to the default environmen
 
-(environment/custom)=
-## Customize your hub environment
+If you are using the default environment, and think that one or two packages should be installed by default on it, please [send a support request](../../support.md) and request an update to the default environment.
 
-Sometimes, what is in the base user environment is not enough for
-your use case. You might need new packages installed, a different
-language version, etc. Here are a few ways to customize yours.
-
-(environment:image)=
-### Bring your own docker image
-
-Our hubs use [docker images](https://www.docker.com/) to provide the
-user environment.
-You can build and bring your own docker image, which gives you *full control* over your user environment.
-
-There are many ways to generate Docker images for your users, but we recommend using the [repo2docker environment specification](https://repo2docker.readthedocs.io/) to define and build your user environment.
-This is the tool used by [the Binder project](https://mybinder.org), and is a good standard to follow for clearly and reproducibly defining computational environments.
-
-To use repo2docker to build user environments for your hub, you'll need to:
-
-1. Create a repository that hosts your environment configuration
-2. Set up a GitHub Action to automatically build a Docker image using repo2docker, and push it to a registry.
-3. Configure your hub to use the image that you build for your user environments.
-
-To help you get started, we've created a small template repository that has most of this set up already.
-Go to the repository by clicking the button below, and follow the instructions in the README for next steps.
-
-```{button-link} https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md
-:color: primary
-Go to user environment template
-```
-
-### Temporarily install packages for a session
-
-
-You can temporarily install packages in your environment that will
-just last the duration of your user session. They will get wiped out
-when your user server is stopped, to ensure that you always start from
-a 'clean slate' environment.
-
-The recommended way is to put `%pip install <list-of-packages>` or
-`%conda install <list-of-packages>` in the first cell of any notebook
-you distribute, so when run it'll install necessary packages. For R,
-you can use `install.packages("package-name")` as you normally would.
-
-```{warning}
-
-While tempting, do not use `!pip install --user <packages>` to install
-packages. This makes the base environment different for different users,
-causing hard to debug issues. This could also render your user server
-unable to start, due to conflicting packages.
-```
-
-### Ask for changes to the base image
-
-If you don't wish to maintain your own user image, and only need one / two extra packages, please [open an issue in the `2i2c-org/pilot` repository](https://github.com/2i2c-org/pilot/issues/new?labels=enhancement&template=tech-request.md) and ask for the new package to be installed.
-Depending on the complexity of the package, and how common it is across the use-case for communities we serve, we may be able to add it to the default image.
-
-
-## Switch between user interfaces
+## Accessing user interfaces
 
 There are three main interfaces available on the 2i2c JupyterHubs.
 There are a few different ways that you may encourage users to switch between them.

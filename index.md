@@ -9,13 +9,22 @@ Check out the links above in order to navigate across various 2i2c documentation
 These sections describe the hub service at an organizational level.
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 about/overview
-new-hub
-support
-network
 ```
 
+If you'd like a hub for your community, click one of the buttons below!
+
+```{button-ref} about/overview
+:color: primary
+:class: float-left mr-2
+About the JupyterHub Service
+```
+
+```{button-ref} new-hub
+:color: primary
+Get a hub
+```
 
 ## Hub Administration topics
 
@@ -35,6 +44,18 @@ admin/howto/control-user-server
 admin/howto/data
 admin/howto/replicate
 admin/howto/create-billing-account
+admin/topics/network
+```
+
+## Use-case guides
+
+These are guides that cover particular use-cases with JupyterHubs managed by 2i2c.
+
+```{toctree}
+:maxdepth: 1
+:caption: Use-case guides
+
+usecase/events
 ```
 
 
