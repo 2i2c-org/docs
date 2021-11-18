@@ -1,3 +1,4 @@
+(howto:migrate)=
 # Migrate off of a JupyterHub
 
 A core tenet of 2i2c is the [Right to Replicate](https://2i2c.org/right-to-replicate).

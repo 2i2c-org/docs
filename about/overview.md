@@ -115,6 +115,7 @@ Check out [](../admin/howto/replicate.md) for information about replicating a 2i
 distributions/index
 ../new-hub
 pricing
+ending
 roles
 strategy
 roadmap
