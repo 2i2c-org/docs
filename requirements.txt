@@ -1,3 +1,4 @@
+matplotlib
 myst-nb
 myst-parser[linkify]
 pandas
