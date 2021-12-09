@@ -8,8 +8,10 @@ We design our infrastructure, and consistently hone our practices, to meet these
 They evolve over time as we get feedback from communities we serve, and learn more about how to best deliver impact via our services.
 
 :::{note}
-2i2c does not have a **Service Level Agreement** (SLAs), as this is generally a legally-binding document that involves calculation of risk via revenue lost during service outages.
+2i2c does not currently have a **Service Level Agreement** (SLAs), as this is generally a legally-binding document that involves calculation of risk via revenue lost during service outages.
 We currently do not have the capacity to design and litigate strict SLAs, and believe that we will have the most impact by instead committing to service **objectives** that are transparent and follow best practices.[^zenodo]
+
+We may revisit this in the future depending on the feedback we get from other communities!
 :::
 
 ## High availability
