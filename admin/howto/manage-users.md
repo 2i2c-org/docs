@@ -79,16 +79,17 @@ Fill in usernames and optionally make them administrators. You can add multiple 
 `````
 
 
-### To remove users
+### Remove users from a hub
 
-You can revoke a user's access to the JupyterHub by removing them from the admin panel.
+You can revoke a user's access to the JupyterHub by removing them from the allowed users list, using the admin panel.
 
 1. Find the name of the user in your admin panel. If they have a running server,
    click the {guilabel}`Stop server` button to stop their running server.
 2. Click the {guilabel}`Delete user` button for this user. Confirm the deletion in
    the dialog box that pops up.
 
-After this, the user would not be able to log in.
+After this, the user would not be able to log in. However, their files will not be deleted -
+if you add them later, their files will still be present.
 
 ### Finding usernames
 
