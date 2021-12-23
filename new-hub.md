@@ -34,7 +34,7 @@ See [](about/roles-for-service) for more details on this role.
 We use a GitHub issue template to ask a few questions about your hub deployment that will help us deploy it.
 Click the button below to go to the form:
 
-```{button-link} https://github.com/2i2c-org/infrastructure/issues/new?assignees=&labels=type%3A+hub&template=new-hub.yml&title=New+Hub%3A+%3CHub+name%3E
+```{button-link} https://github.com/2i2c-org/infrastructure/issues/new?assignees=&labels=type%3A+hub&template=2_new-hub.yml&title=New+Hub%3A+%3CHub+name%3E
 :color: primary
 Go to new Hub Form
 ```
