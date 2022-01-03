@@ -1,6 +1,6 @@
 # Service Level Objectives and Principles
 
-This page describes the **Service Level Objectives** of 2i2c's infrastructure services[^slos].
+This page describes the **Service Level Objectives** (SLOs) of 2i2c's infrastructure services[^slos].
 These describe our goals in running infrastructure for the communities that we serve.
 They indicate what our users can expect when using the infrastructure we support.
 
