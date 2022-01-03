@@ -85,3 +85,29 @@ This window can be configured if you'd like to change the window of inactivity n
 See the [Hub Engineer's guide](infra:configure:culling) for some documentation on this.
 
 % TODO: Add link to SRE guide on how to configure this, once it exists
+
+## Disable hub access for all users
+
+In some cases, you may want to temporarily disable hub access for all users.
+For example, if you are concerned that users on your hub are taking inappropriate actions, and you wish to stop all activity before investigating.
+
+**To prevent all user sessions from starting**, you can use [the configurator UI](configurator.md) to choose a user image that does not start.
+
+1. Go to your hub's configurator menu (at `{{ your hub URL }}/services/configurator`).
+2. Under {guilabel}`User Docker Image`, paste the following text:
+
+   ```
+   busybox:latest
+   ```
+
+   This specifies a user image that is not compatible with JupyterHub, and will prevent user sessions from starting.
+   You can revert this change by deleting the text and hitting {guilabel}`Submit` again (or changing it back to its previous value).
+
+3. Hit {guilabel}`Submit`
+4. **Stop all user sessions** from you Administrator panel.
+   
+   Go to `{{ your hub URL }}/hub/admin` and click {guilabel}`Stop All`.
+
+   This will stop all user sessions, and they will no longer be able to log in after doing so.
+
+If you do this, you should [notify the 2i2c support team](https://docs.2i2c.org/en/latest/support.html) as they may need to follow up with some changes to your infrastructure.
