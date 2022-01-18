@@ -41,6 +41,7 @@ The service is currently in an **alpha phase**, and may evolve as we learn more 
 2i2c will operate and manage a 2i2c JupyterHub deployment for use by you and your community, accessible via a web URL. 2i2c will handle the design, configuration, development, and ongoing operation of the hub infrastructure.
 
 The following sections describe several common activities that the 2i2c team will perform as a part of your managed JupyterHub.
+In addition, see our [Service Level Objectives](service-objectives.md) for an explanation of what we aim to accomplish in terms of uptime, reliability, and support for these services.
 
 ### JupyterHub Setup
 
@@ -116,6 +117,7 @@ distributions/index
 ../new-hub
 pricing
 roles
+service-objectives
 strategy
 roadmap
 2i2c
