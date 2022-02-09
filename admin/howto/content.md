@@ -90,6 +90,50 @@ As long as the hub url, content repository url and the branch name are the
 same, users will be not be duplicating content.
 :::
 
+## Serve static web content with your hub
+
+2i2c hubs can serve static web content as a [JupyterHub service](https://jupyterhub.readthedocs.io/en/stable/reference/services.html).
+This is useful for hosting documentation for your hub's community.
+
+The content of your static site should live in a `.git` repository as a collection of static HTML files, and the website for these files will be available at a URL like:
+
+```
+https://<hub-address>/services/docs
+```
+
+Follow these steps to set up documentation for your hub.
+
+### Create your static HTML files
+
+There are many ways to create your own static HTML files, and this guide doesn't cover a specific method.
+Here are a few services you should try out:
+
+- [Jupyter Book](https://jupyterbook.org/) is a tool for building rich computational narrative sites from the Jupyter community.
+- [Sphinx](https://www.sphinx-doc.org/) is a popular documentation engine in Python
+- [Hugo](https://gohugo.io/) is a popular static website generator that is flexible and fast.
+
+Put the generated HTML into a `github` repository in a dedicated branch (so the branch should **only** contain the HTML files).
+**Ensure that the HTML files contain relative links**, not absolute links.
+
+:::{tip}
+We highly recommend storing your source files in one branch, and automatically generating the HTML for your site via [GitHub Actions](https://docs.github.com/en/actions).
+This way, your HTML files will automatically be updated when you update your site content.
+:::
+
+### Ask a 2i2c engineer to enable the documentation service for your hub
+
+Your hub will need to be configured by a 2i2c engineer to enable the docs service (following {doc}`these instructions <infra:howto/customize/docs-service>`).
+
+- Find the **GitHub repository** and the **branch** where your HTML files are stored.
+- [Send a support request](../../support.md) asking them to enable this, and provide the repository/branch you found above.
+
+Once this is deployed, your hub's documentation should be accessible at
+
+```
+https://<hub-address>/services/docs
+```
+
+
 ## Write public books that connect to a 2i2c JupyterHub
 
 You can create public content that is designed to connect with your
