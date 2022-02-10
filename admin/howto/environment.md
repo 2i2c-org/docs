@@ -93,14 +93,15 @@ To add multiple environments for your hub, take these steps:
 ## The default user environment
 
 The default environment for all community hubs is defined [in this
-folder](https://github.com/2i2c-org/infrastructure/tree/master/images/user).
+repository](https://github.com/2i2c-org/2i2c-hubs-image).
+
 It is configured with the following:
 
-- Python packages defined in [this `requirements.txt`
-  file](https://github.com/2i2c-org/infrastructure/blob/master/images/user/requirements.txt). Many common scientific python packages are installed here.
-- R packages installed from [this `install.R`
-  file](https://github.com/2i2c-org/infrastructure/blob/master/images/user/install.R).
-- Many popular data science user interfaces installed:
+- **Python packages**: defined in [this `requirements.txt`
+  file](https://github.com/2i2c-org/2i2c-hubs-image/blob/main/requirements.txt). Many common scientific python packages are installed here.
+- **R packages**: installed from [this `install.R`
+  file](https://github.com/2i2c-org/2i2c-hubs-image/blob/main/install.R).
+- **Data science interfaces**: many popular data science user interfaces are installed:
   - [Classic Jupyter Notebook](https://github.com/jupyter/notebook/)
   - [JupyterLab](https://github.com/jupyterlab/jupyterlab/)
   - [RStudio](https://rstudio.com/)
