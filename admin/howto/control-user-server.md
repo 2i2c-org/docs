@@ -39,6 +39,10 @@ Accessing a user's server is useful when trying to debug or reproduce an issue t
    you are taking over their session, and using this feature mostly to understand what the user was trying to do, rather than to make major
    changes to their code or notebook outputs.
    :::
+   
+### Access user logs
+
+The logs for jupyterhub are located at `~/.jupyter-server-log.txt`
 
 (user-server/stopping)=
 ### Stop or start a user's server
