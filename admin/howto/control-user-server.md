@@ -42,7 +42,7 @@ Accessing a user's server is useful when trying to debug or reproduce an issue t
    
 ### Access user logs
 
-For user images that are [built with repo2docker](environment:image), the logs of each user's Jupyter server are located in their home directory, at `~/.jupyter-server-log.txt`.
+For user images that are [built with repo2docker](environment:image) and that do not define a custom `Dockerfile`, the logs of each user's Jupyter server are located in their home directory, at `~/.jupyter-server-log.txt`.
 These contain information about every event that occurred as a part of a user's session, and are useful for debugging unexpected errors and problems.
 
 For example, to print the contents of your own user server log:
