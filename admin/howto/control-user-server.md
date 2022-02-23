@@ -10,7 +10,7 @@ You can access the admin panel by clicking the {guilabel}`Admin` button in the t
 in your hub control panel.  Alternatively, you can go to this URL in your
 browser: `https://<your-hub-url>/hub/admin`.
 
-
+(user-server:access)=
 ### Access a user's server
 
 Accessing a user's server is useful when trying to debug or reproduce an issue they might have. This facility is available to admins via the admin panel.
@@ -39,6 +39,22 @@ Accessing a user's server is useful when trying to debug or reproduce an issue t
    you are taking over their session, and using this feature mostly to understand what the user was trying to do, rather than to make major
    changes to their code or notebook outputs.
    :::
+   
+### Access user logs
+
+For user images that are [built with repo2docker](environment:image) and that do not define a custom `Dockerfile`, the logs of each user's Jupyter server are located in their home directory, at `~/.jupyter-server-log.txt`.
+These contain information about every event that occurred as a part of a user's session, and are useful for debugging unexpected errors and problems.
+
+For example, to print the contents of your own user server log:
+
+1. Open a terminal (e.g., choosing {guilabel}`Terminal` from Launcher in JupyterLab)
+2. Run the command:
+
+   ```console
+   $ cat ~/.jupyter-server-log.txt
+   ```
+
+To access a **different user's** server logs, you can [access their server](user-server:access) and run the same command above to print their logs.
 
 (user-server/stopping)=
 ### Stop or start a user's server
