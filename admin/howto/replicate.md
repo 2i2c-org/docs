@@ -110,7 +110,7 @@ All of the configuration for a 2i2c JupyterHub exists at the [`infrastructure/` 
 There are two main things you'll need from this repository to deploy your hub:
 
 1. **Your hub-specific configuration**. `infrastructure/` contains [configurations for each JupyterHub in YAML files](https://github.com/2i2c-org/infrastructure/tree/master/config/clusters).
-   - Each `yaml` file is a Kubernetes cluster with a collection of hubs on it. The [`2i2c.cluster.yaml` configuration](https://github.com/2i2c-org/infrastructure/blob/master/config/clusters/2i2c.cluster.yaml) contains most 2i2c hubs that do not have their own dedicated cluster.
+   - Each `yaml` file is a Kubernetes cluster with a collection of hubs on it. The [`2i2c.cluster.yaml` configuration](https://github.com/2i2c-org/infrastructure/blob/master/config/clusters/2i2c/cluster.yaml) contains most 2i2c hubs that do not have their own dedicated cluster.
    - These files have an entry for each hub, which contains a **Zero to JupyterHub configuration** for your hub. You should find this configuration under `config/jupyterhub:`.
 2. **Your helm chart template**. In addition to your hub-specific configuration, your hub also has a "template configuration" that defines the basic setup of your hub infrastructure.
    Each template has a name (e.g., `dask-hub`) and maps onto a Helm configuration.
