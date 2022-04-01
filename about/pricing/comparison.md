@@ -2,6 +2,10 @@
 
 This page is a guide to 2i2c's services, our pricing, and how this compares with similar kinds of offerings.
 
+:::{tip}
+The content on this page can be re-used as a part of "price reasonableness and comparisons" forms when completing contracting for communities.
+:::
+
 ## How to think about 2i2c's service and pricing
 
 As a non-profit, we choose our prices as a function of our estimated costs.
