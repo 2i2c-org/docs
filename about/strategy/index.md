@@ -7,6 +7,11 @@ We aim to run this pilot for several months, gaining experience and sharpening o
 2i2c values transparency and inclusion, and aims to run this pilot in an open manner.
 This page describes the major strategy of the 2i2c Managed JupyterHubs pilot.
 
+```{toctree}
+service-objectives.md
+roadmap.md
+```
+
 ## Goals of the pilot
 
 The primary aim for this pilot is **understanding how the managed JupyterHub service can be most impactful**.
