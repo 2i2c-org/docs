@@ -4,6 +4,7 @@ This page is a short description of the basic costs that go into the fees that o
 
 There are two major factors that go into the cost of 2i2c's services: **human costs** and **cloud costs**. We consider these costs separately below.
 
+(costs:human)=
 ## Human costs
 
 Our biggest cost is paying salaries for team members that carry out the services we provide.
@@ -27,7 +28,7 @@ The fees for each hub are thus determined by dividing this annual cost by the es
 
 ## Cloud costs
 
-We try to pass through cloud costs directly to our communities in a transparent manner.
+We pass through cloud costs directly to our communities in a transparent manner.
 This encourages us to continually reduce the cloud costs for our communities, and helps them understand how their decisions affect their cloud bill.
 
 ### What components make up my cloud bill
@@ -44,7 +45,7 @@ There are some other components that go into your cloud bill (e.g., "networking 
 
 ### User actions that impact cloud costs
 
-Cloud depend on a few key factors that you and your community has control over.
+Cloud costs depend on a few key factors that you and your community has control over.
 Here we list some major considerations (in decreasing order of importance):
 
 - **Base user resources needed**: The power and complexity of the user environment is the biggest driver of "base cost per user". This is largely driven by the amount of memory (RAM) each user needs. See below for a more in-depth explanation.

@@ -1,14 +1,17 @@
-# Comparing pricing to similar services
+# Comparison to similar services
 
 This page is a guide to 2i2c's services, our pricing, and how this compares with similar kinds of offerings.
 
 :::{tip}
 The content on this page can be re-used as a part of "price reasonableness and comparisons" forms when completing contracting for communities.
+
+In each section below, we'll list a few similar companies and services that can be compared with 2i2c.
+Their presence and ordering do not constitute an "endorsement" and are not exhaustive - we are merely trying to be transparent and helpful about the other organizations in this space.
 :::
 
 ## How to think about 2i2c's service and pricing
 
-As a non-profit, we choose our prices as a function of our estimated costs.
+As a non-profit, we choose our prices to move forward on a sustainable path to achieve our mission according to [our cost model](costs:human) as well as [our growth model](strategy:growth).
 Our service entails developing and managing entirely open-source, vendor-agnostic, and community-driven infrastructure that is customized for research and education.
 
 Our aim with 2i2c's service model is to strike a balance between **scalability** and **flexibility**, with the constraints that we operate **transparently** and **collaboratively** with our communities, by runing **open-source** and **community-driven** infrastructure.
@@ -26,13 +29,22 @@ The most common way for organizations to achieve similar services is to staff th
 2i2c encourages this, as it is aligned with our commitment to open source, vendor-agnostic tools, and the [Right to Replicate your infrastructure](https://2i2c.org/right-to-replicate).
 
 However, hiring and retaining modern cloud engineers is difficult and costly.
-If we assume that an engineer makes `$140,000` in salary, with `30%` benefits, that comes to an annual cost of `$182,000` a year, discounting any other personnel, hiring, and cloud costs.
+In 2022, [the median compensation of a Site Reliability Engineer](https://www.levels.fyi/Salaries/Software-Engineer/Site-Reliability/) is roughly `$180,000` a year.
 
-This under-estimates the true cost, as centralizing your organization’s cloud engineering on a single person creates risk associated with having a single point of failure.
-Their efficiency will depend heavily on their previous expertise, and they will likely not incorporate enhancement and security fixes as quickly as a distributed team of experts.
+This under-estimates the true cost, as there are a few other risk factors associated with paying a single engineer to manage your cloud infrastructure:
+
+- Attracting and hiring people for this very in-demand position requires a significant amount of time and energy.
+- Centralizing your organization’s cloud engineering on a single person creates risk associated with having a single point of failure.
+- The efficiency of this role will depend heavily on their previous expertise with cloud infrastructure and Jupyter, and their capacity to make improvements to the open source tooling will be difficult unless they have previous experience in this ecosystem.
+- As a sole contributor, they will likely not be as responsive to outages, make improvements, or incorporate enhancement and security fixes as quickly as a distributed team of experts.
 
 If your organization has significant pre-existing expertise in open source, Jupyter, and cloud infrastructure, then it may be more cost effective for you to run your own JupyterHub services.
-If you need to build this expertise internally, it is likely much more cost-effective to partner with a non-profit such as 2i2c.
+If you need to build this expertise internally, it is likely much more cost-effective to partner with 2i2c.
+
+:::{note}
+2i2c primarily aims to be a more cost-effective alternative to this model of service delivery.
+We constantly adjust our own prices and team compensation to be responsive to the ecosystem of Cloud and Site Reliability Engineering, and we'll update this information as the field evolves.
+:::
 
 ## Consulting companies
 
@@ -63,5 +75,5 @@ Enterprise-level contracts for these platforms can be significantly more expensi
 ## Bottom line
 
 There is a large ecosystem of vendors and services available for interactive data science.
-We are heavily biased towards organizations that use non-proprietary tools, and that commit to services that are vendor-agnostic and respect your [Right to Replicate your infrastructure](https://2i2c.org/right-to-replicate).
+2i2c believes that interactive computing is emerging as the vital medium for communications in research and education communities. As a result, we suggest that universities and research communities should build atop non-proprietary tools and commit to services that are vendor-agnostic and respect your [Right to Replicate your infrastructure](https://2i2c.org/right-to-replicate).
 You should think about the constraints and principles that you'd like your infrastructure to follow, and choose the right approach for your organization.
