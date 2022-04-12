@@ -11,7 +11,7 @@ Create a new repository for your user image from the [`hub-user-image-template`]
 1. Go to the [`hub-user-image-template`](https://github.com/2i2c-org/hub-user-image-template) repository.
 2. Click the {guilabel}`Use this template` button located at the top of this repository's GitHub page.
 
-   ```{figure} ../../images/use-template.png
+   ```{figure} ../../../images/use-template.png
    :alt: Use this template
    ```
 3. This will generate a **copy** of the repository that you can modify as you wish.
@@ -32,7 +32,7 @@ When you have completed these steps, you should have:
   - **`QUAY_USERNAME`**: the user name of the `quay.io` robot account
   - **`QUAY_PASSWORD`**: the password of the `quay.io` robot account
 
-  ```{figure} ../../images/secrets.png
+  ```{figure} ../../../images/secrets.png
   :alt: Secrets
   ```
 
@@ -53,19 +53,19 @@ To enable pushing to the appropriate quay.io repository, edit line 35 of [build.
 2. Replace `<quay-username>/<repository-name>` with the info of the `quay.io` repository created at step 2
 3. Commit the changes you've made to `build.yaml`
 
-```{figure} ../../images/image-name-in-build-workflow.png
+```{figure} ../../../images/image-name-in-build-workflow.png
 :alt: IMAGE_NAME
 ```
 
 You can checkout the logs of this GitHub Workflow via the Github Actions tab on your image repository.
 
-```{figure} ../../images/build-workflow.png
+```{figure} ../../../images/build-workflow.png
 :alt: Build workflow
 ```
 
 If you are triggering this action by merging a PR or directly pushing to the main branch, you should look at the Github Actions tab and this will show a `pushing quay.io/...` message, followed by the image name and tag like in the image below.
 
-```{figure} ../../images/pushing-to-registry-job-step.png
+```{figure} ../../../images/pushing-to-registry-job-step.png
 :alt: Build logs
 ```
 
@@ -80,7 +80,7 @@ To enable pushing to the appropriate quay.io repository, edit lines 31 of [test.
 2. Replace `<quay-username>/<repository-name>` with the info of the `quay.io` repository created at step 2
 3. Commit the changes you've made to `build.yaml`
 
-```{figure} ../../images/image-name-in-test-workflow.png
+```{figure} ../../../images/image-name-in-test-workflow.png
 :alt: IMAGE_NAME
 ```
 
@@ -93,7 +93,7 @@ The [Optional Inputs](https://github.com/jupyterhub/repo2docker-action#optional-
 
 Checkout the logs of this GitHub Workflow via the Github Actions tab on your image repository.
 
-```{figure} ../../images/test-workflow.png
+```{figure} ../../../images/test-workflow.png
 :alt: Test workflow
 ```
 
@@ -124,13 +124,13 @@ Checkout an example of a [quay.io respository](https://quay.io/repository/2i2c/c
    This is usually **under the latest tag**.
    Use this to construct your image name - `quay.io/<quay-username>/<repository-name>:<tag>`.
 
-   ```{figure} ../../images/coessing-image-quay.png
+   ```{figure} ../../../images/coessing-image-quay.png
    :alt: Tags list example
    ```
 2. Open the [Configurator](https://pilot.2i2c.org/en/latest/admin/howto/configurator.html) for the hub (you need to be logged in as an admin).
    You can access it from the hub control panel, under Services in the top bar or by going to `https://<hub-address>/services/configurator/`
  
-   ```{figure} ../../images/configurator.png
+   ```{figure} ../../../images/configurator.png
    :alt: Configurator
    ```
 3. Make a note of the current image name there.

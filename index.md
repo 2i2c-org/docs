@@ -58,14 +58,12 @@ These are guides that cover particular use-cases with JupyterHubs managed by 2i2
 usecase/events
 ```
 
-
 ## Our Infrastructure Guide
 
 The 2i2c Team Infrastructure guide is what we use to document how to develop and operate the cloud infrastructure that is run by 2i2c.
 It contains all the details about how our infrastructure is deployed, how we make changes to it, and team processes around ensuring site reliability.
 
 [**Our infrastructure Guide**](https://infrastructure.2i2c.org)
-
 
 ## Our Team Compass
 
