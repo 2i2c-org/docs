@@ -8,7 +8,7 @@ The high-level summary of recommendations is:
 - Consider whether your project would benefit from other cloud-native data storage
   solutions such as a database, data warehouse, or data lake
 
-:::{attribution}
+:::{admonition} Attribution
 The following material was adapted from the
 [Pangeo Cloud User Guide](https://pangeo.io/cloud.html)
 :::
