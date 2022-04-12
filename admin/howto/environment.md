@@ -49,8 +49,8 @@ By following these steps, you have also created a [Binder-ready repository](http
 
 #### An in-depth guide
 
-To help you get started, we've created an [environment generation guide](https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md) and a small template repository that will guide you through the process.
-Go to the repository by clicking the button below, and follow the instructions in the README for next steps.
+To help you get started, we've created an [environment generation guide](hub-user-image-template-guide/how-to) and a small [template repository](https://github.com/2i2c-org/hub-user-image-template) that will guide you through the process.
+You can go to the repository by clicking the button below.
 
 ```{button-link} https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md
 :color: primary
