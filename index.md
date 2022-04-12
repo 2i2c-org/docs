@@ -26,6 +26,17 @@ About the JupyterHub Service
 Get a hub
 ```
 
+## Hub User Guide
+
+This user guide explains how users should interact with their hub environment.
+
+```{toctree}
+:maxdepth: 1
+:caption: Hub User Guide
+
+user/storage
+```
+
 ## Hub Administration topics
 
 These guides have information on how hub admins can perform specific
