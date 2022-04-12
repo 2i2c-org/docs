@@ -1,7 +1,7 @@
 (hub-user-image-template-guide/how-to)=
 # How to create and use a custom user image for your hub :gear:
 
-## 1. Use this template
+## 1. Use the template repository
 
 Create a new repository from [`hub-user-image-template`](https://github.com/2i2c-org/hub-user-image-template) repository, by clicking the *Use this template* button located at the top of this project's GitHub page.
 
@@ -52,13 +52,13 @@ If you are triggering this action by merging a PR or directly pushing to the mai
 :alt: Build logs
 ```
 
-### Enable quay.io image push for [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/MAIN/.github/workflows/test.yaml)
+### Enable quay.io image push for [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/test.yaml)
 
-The [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/MAIN/.github/workflows/test.yaml) workflow builds the container image on pull requests. It can also push it to quay.io **if** credentials, image name are correctly set and [`NO_PUSH`](https://github.com/jupyterhub/repo2docker-action#optional-inputs) option is removed.
+The [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/test.yaml) workflow builds the container image on pull requests. It can also push it to quay.io **if** credentials, image name are correctly set and [`NO_PUSH`](https://github.com/jupyterhub/repo2docker-action#optional-inputs) option is removed.
 
 To enable pushing to the appropriate quay.io repository:
 
-* edit lines 31 of [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/MAIN/.github/workflows/test.yaml#L30-L31) and:
+* edit lines 31 of [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/test.yaml#L30-L31) and:
   * uncomment the `IMAGE_NAME` option
   * replace `<quay-username>/<repository-name>` with the info of the `quay.io` repository created at step 2
   * commit the changes you've made to `build.yaml`

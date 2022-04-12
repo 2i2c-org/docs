@@ -38,6 +38,7 @@ tasks on their hubs, mostly without requiring any interaction with
 
 admin/howto/configurator
 admin/howto/environment
+admin/howto/hub-user-image-template-guide
 admin/howto/content
 admin/howto/manage-users
 admin/howto/control-user-server
