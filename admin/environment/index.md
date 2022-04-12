@@ -57,6 +57,12 @@ You can go to the repository by clicking the button below.
 Go to user environment template
 ```
 
+And find the sections of the guide below:
+
+```{toctree}
+hub-user-image-template-guide
+```
+
 ### Temporarily install packages for a session
 
 You can temporarily install packages in your environment that will

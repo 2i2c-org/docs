@@ -37,8 +37,7 @@ tasks on their hubs, mostly without requiring any interaction with
 :caption: Hub Administration topics
 
 admin/howto/configurator
-admin/howto/environment
-admin/howto/hub-user-image-template-guide
+admin/howto/environment/index
 admin/howto/content
 admin/howto/manage-users
 admin/howto/control-user-server
