@@ -5,7 +5,7 @@
 
 Create a new repository from [`hub-user-image-template`](https://github.com/2i2c-org/hub-user-image-template) repository, by clicking the *Use this template* button located at the top of this project's GitHub page.
 
-```{figure} ../../images/use-this-template.png
+```{figure} ../../images/use-template.png
 :alt: Use this template
 ```
 
