@@ -65,7 +65,9 @@ rediraffe_redirects = {
 
 # Disable linkcheck for anchors because it throws false errors for any JS anchors
 linkcheck_anchors = False
-
+linkcheck_ignore = [
+    "https://docs.github.com*",  # Because docs.github.com returns 403 Forbidden errors
+]
 
 def setup(app):
     app.add_css_file("custom.css")

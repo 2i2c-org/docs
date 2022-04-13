@@ -41,7 +41,7 @@ To use repo2docker to build user environments for your hub, you'll need to:
    This is a public registry service run by [Red Hat](https://www.redhat.com/en), and is reliable to use.
    :::
 4. **Set up a GitHub Action** to automatically build a Docker image using [the repo2docker action](https://github.com/jupyterhub/repo2docker-action), and push it to a registry.
-5. **Configure your hub** to pull the user image from the registry above, either via [the configurator](configurator.md) (to do it yourself) or by [opening a support ticket](../../support.md) (to request that a 2i2c engineer do this for you).
+5. **Configure your hub** to pull the user image from the registry above, either via [the configurator](../configurator.md) (to do it yourself) or by [opening a support ticket](../../../support.md) (to request that a 2i2c engineer do this for you).
 
 :::{tip}
 By following these steps, you have also created a [Binder-ready repository](https://mybinder.org), and we recommend trying to build your reposity on mybinder.org in order to test things out.
@@ -49,12 +49,18 @@ By following these steps, you have also created a [Binder-ready repository](http
 
 #### An in-depth guide
 
-To help you get started, we've created an [environment generation guide](https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md) and a small template repository that will guide you through the process.
-Go to the repository by clicking the button below, and follow the instructions in the README for next steps.
+To help you get started, we've created an [environment generation guide](hub-user-image-template-guide/how-to) and a small [template repository](https://github.com/2i2c-org/hub-user-image-template) that will guide you through the process.
+You can go to the repository by clicking the button below.
 
 ```{button-link} https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md
 :color: primary
 Go to user environment template
+```
+
+And find the sections of the guide below:
+
+```{toctree}
+hub-user-image-template-guide
 ```
 
 ### Temporarily install packages for a session
@@ -86,7 +92,7 @@ To add multiple environments for your hub, take these steps:
 
 1. Follow the steps in [](environment:image) for each environment you wish to offer your hub's users.
    You should have one repository per environment, and each one should push to a Docker image registry via the repo2docker action.
-2. [Open a support request](../../support.md) requesting that your hub be set up to serve multiple user environments.
+2. [Open a support request](../../../support.md) requesting that your hub be set up to serve multiple user environments.
    A 2i2c engineer will assist you in configuring the hub to set up multiple environments.
 
 (environment/default)=
@@ -119,7 +125,7 @@ The [original single-document interface](https://jupyter-notebook.readthedocs.io
 #### JupyterLab
 
 
-```{figure} ../../images/jupyterlab.png
+```{figure} ../../../images/jupyterlab.png
 :alt: JupyterLab layout
 ```
 
@@ -129,7 +135,7 @@ research organizations use this.
 
 #### RStudio
 
-```{figure} ../../images/rstudio.png
+```{figure} ../../../images/rstudio.png
 :alt: RStudio
 ```
 
@@ -137,7 +143,7 @@ research organizations use this.
 
 ### Ask for changes to the default environmen
 
-If you are using the default environment, and think that one or two packages should be installed by default on it, please [send a support request](../../support.md) and request an update to the default environment.
+If you are using the default environment, and think that one or two packages should be installed by default on it, please [send a support request](../../../support.md) and request an update to the default environment.
 
 ## Accessing user interfaces
 
