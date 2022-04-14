@@ -36,7 +36,7 @@ This encourages us to continually reduce the cloud costs for our communities, an
 There are a few kinds of infrastructure that make up your cloud bill.
 Here is a short summary:
 
-- **Nodes for user sessions**: A "node" is kind-of like a virtual machine or a dedicated computer. It is reserved cloud infrastructure that you can use as you wish. Nodes have resources allocated to them (e.g., `100GB` of RAM). JupyterHub uses dedicated nodes for user sessions, so more users == more nodes. You generally pay cloud providers by the minute for each node used.
+- **Nodes for user sessions**: A "node" is kind-of like a virtual machine or a dedicated computer. It is reserved cloud infrastructure that you can use as you wish. Nodes have resources allocated to them (e.g., `100GB` of RAM). JupyterHub uses dedicated nodes for user sessions, so more users == more nodes. You generally pay cloud providers by the minute for each node used. 
 - **Storage costs**: In order for users to persist their work over time, we must pay for filesystem storage. This is used to store user notebooks and content, data, etc. You generally pay cloud providers by the `GB` over time.
 - **Nodes for hub infrastructure**: In addition to the cloud nodes for user sessions, there are also nodes to run the JupyterHub and supporting infrastructure to manage user log-ins, do monitoring and reporting of activity, etc.
 - **Nodes for specialized computing**: For hubs that have scalable computing resources like a Dask Gateway, these generally request special nodes _on the fly_. When a scalable computation is executed, the cloud quickly requests many new nodes to complete the computation, and then removes them when it is done. You pay for the time used for each node during this computation.
@@ -50,6 +50,7 @@ Here we list some major considerations (in decreasing order of importance):
 
 - **Base user resources needed**: The power and complexity of the user environment is the biggest driver of "base cost per user". This is largely driven by the amount of memory (RAM) each user needs. See below for a more in-depth explanation.
 - **Community usage over time**: Resources are requested from the cloud "on-demand", meaning that your cloud costs will scale up and down with number of active users at any given moment.
+- **User storage over time**: User storage is different from on-demand resources, because it's "always being used" even when you're not logged-in. We recommend storing large datasets and such in cloud object storage, which is much cheaper.
 - **Dedicated vs. shared infrastructure**: If your community requires their own dedicated cloud infrastructure (for example, a dedicated Kubernetes cluster) then this will boost your cloud costs because you will not be sharing this cost with other communities.
 - **Cloud optimizations**: There are many ways to make cloud infrastructure more efficient and scalable, and the 2i2c engineering team is constantly experimenting with ways to lower costs for communities. For many non-2i2c hubs, inefficiency is a large source of cloud cost, though the 2i2c hubs are already well-optimized.
 
@@ -80,6 +81,7 @@ In practice, the cost per node depends heavily on the cloud provider, and is con
    3. Look at the hourly price for `n1-highmem-4`.
    4. Divide this amount by `n_simultaneous_users_per_hour * GB_per_user`.
    5. This is your estimated extra cost per hour per user.
+4. **Estimate storage costs**. Estimate your storage costs based on the expected storage each user will take up. 2i2c's hubs use a standard NFS File Storage for most hubs, which has very fast latency for interactive computing. [Here are Google's file storage prices](https://cloud.google.com/storage/pricing#price-tables), for example. You can estimate these costs based on the expected storage used across all of your users.  
 
 :::{seealso}
 We recommend checking out the following resources to learn more about cloud costs.
