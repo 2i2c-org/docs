@@ -41,37 +41,22 @@ The `shared` directory is not intended as a way for hub users to share data with
 The recommended way to move code in and out of the hub is via git / GitHub.
 You should clone your project repo from the terminal and use git pull / git push to update and push changes.
 In order to push data to GitHub from the hub, you will need to set up GitHub authentication.
-This is a very quick guide to getting your GitHub authentication set up,
-adopted from the [Carpentries GitHub Remotes lesson](https://swcarpentry.github.io/git-novice/07-github/index.html#ssh-background-and-setup).
+[gh-scoped-creds](https://github.com/yuvipanda/gh-scoped-creds/) should be already setup
+on your 2i2c managed JupyterHub, and we shall use that to authenticate to GitHub for
+push / pull access.
 
-1. Open a terminal in JupyterHub
-1. Type the command
-   ```
-   ssh-keygen -t ed25519 -C "YOUR EMAIL ADDRESS GOES HERE"`
-   ```
-   (Don't just copy this text; you have to put in tour actual email address in between the quotes.) This command will create an ssh public / private key pair.
-1. Enter a password for your new SSH key and record it in a safe place.
-   This password is used to "lock" the SSH key. It can't be used without the password.
-1. Type the command
-   ```
-   cat ~/.ssh/id_ed25519.pub
-   ```
-   and copy the result. It should look something like `ssh-ed25519 {long random string} {your email address}`.
-1. Go to <https://github.com/settings/keys>. Click the green  button that says "New SSH Key".
-   Give your key the title "JupyterHub SSH Key for Research Computing" and paste the
-   public key from the previous step into the "Key" box.
-1. Verify that your key works by typing
-   ```
-   ssh -T git@github.com
-   ```
-   on the command like of the Hub. (Note you will have to enter your SSH key password from step 3.)
-   This will return a message of the following form
-   ```
-   Hi {username}! You've successfully authenticated, but GitHub does not provide shell access.
-   ```
-   If you see that, it works! 🚀
+Open a terminal in JupyterHub, run `gh-scoped-creds` and follow the prompts.
 
-You should now be able to push to GitHub from the hub.
+Alternatively, in a notebook, run the following code and follow the prompts:
+
+```
+import gh_scoped_creds
+%ghscopedcreds
+```
+
+You should now be able to push to GitHub from the hub! These credentials will expire after
+8 hours (or whenever your JupyterHub server stops), and you'll have to repeat these steps
+to fetch a fresh set of credentials.
 
 ## Cloud Object Storage
 
