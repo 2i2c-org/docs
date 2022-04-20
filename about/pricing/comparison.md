@@ -29,7 +29,7 @@ The most common way for organizations to achieve similar services is to staff th
 2i2c encourages this, as it is aligned with our commitment to open source, vendor-agnostic tools, and the [Right to Replicate your infrastructure](https://2i2c.org/right-to-replicate).
 
 However, hiring and retaining modern cloud engineers is difficult and costly.
-In 2022, [the median compensation of a Site Reliability Engineer](https://www.levels.fyi/Salaries/Software-Engineer/Site-Reliability/) is roughly `$180,000` a year.
+In 2022, [the median compensation of a Site Reliability Engineer](https://www.levels.fyi/Salaries/Software-Engineer/Site-Reliability/) is roughly `$180,000` a year, excluding indirect costs.
 
 This under-estimates the true cost, as there are a few other risk factors associated with paying a single engineer to manage your cloud infrastructure:
 
