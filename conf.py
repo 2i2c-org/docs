@@ -66,7 +66,7 @@ rediraffe_redirects = {
 # Disable linkcheck for anchors because it throws false errors for any JS anchors
 linkcheck_anchors = False
 linkcheck_ignore = [
-    "*openstoragenetwork.org*",  # It incorrectly fails with `Max retries exceeded with url`
+    "https://openstoragenetwork.org*",  # It incorrectly fails with `Max retries exceeded with url`
     "https://docs.github.com*",  # Because docs.github.com returns 403 Forbidden errors
 ]
 
