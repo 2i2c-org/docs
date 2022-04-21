@@ -67,7 +67,7 @@ organizations if you want to push to repos in that organization.
 ## Cloud Object Storage
 
 Your hub lives in the cloud.
-The preferred way to store data in the cloud is using cloud object storage, such as Amazon S3 or Google Cloud Storage.
+The preferred way to store data in the cloud is using [cloud object storage](https://aws.amazon.com/what-is-cloud-object-storage/), such as Amazon S3 or Google Cloud Storage.
 Cloud object storage is essentially a key/value storage system.
 They keys are strings, and the values are bytes of data.
 Data is read and written using HTTP calls.
@@ -100,7 +100,7 @@ It is recommended to use cloud-native formats when working with big data in clou
 
 From a user perspective, the main challenge of working with object storage is the need
 to use more specialized tools, rather than just simple files / filenames, to manage data.
-Fortunately, excellent tools exists to make working with object storage easy and familiar.
+Fortunately, excellent tools exist to make working with object storage easy and familiar.
 
 For python users, the main tool is [filesystem spec](https://filesystem-spec.readthedocs.io/en/latest/)
 (fsspec), a set of packages which enable us to work with many different types of storage.
@@ -121,7 +121,7 @@ consult the documentation links above for more details.
 #### Reading Data
 
 When reading data from cloud object storage, you have two general options:
-- Download the data to the local filesystem; this is fine for small data, but not suitable
+- Download the data to the local filesystem; this is fine for small data, but not suitable for
   large data or cloud-optimized datasets. Downloads can be managed with
   [Pooch](https://www.fatiando.org/pooch/latest/) or fsspec.
 - Open the data with an application that understands how to stream data data
@@ -141,7 +141,14 @@ ds = xr.open_dataset("s3://mur-sst/zarr/", engine="zarr", storage_options={"anon
 
 Writing data (and reading private data) requires credentials for authentication.
 2i2c does not provide credentials to individual users.
-Instead you 2i2c customers should manage their own cloud storage directly.
+Instead, 2i2c customers should manage their own cloud storage directly.
+See [the Amazon S3](https://aws.amazon.com/s3/getting-started/), [Google Cloud Storage](https://cloud.google.com/storage), and [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/) instructions for information on getting started.
+
+:::{note}
+This section refers to "S3 Storage" in a generic sense.
+Amazon S3 is the most well-known form of S3 storage, but something like it exists across each major cloud provider as well.
+:::
+
 
 On S3-type storage, you will have a client key and client secret associated with you account.
 The following code creates a writeable filesystem:
@@ -157,8 +164,8 @@ to `S3FileSystem`.
 
 For Google Cloud Storage, the best practice is to create a
 [service account](https://cloud.google.com/iam/docs/service-accounts) with
-appropriate permissions to read / write your private bucket.
-You upload your service account key (a .json file) to your hub
+appropriate permissions to read / write to your private bucket.
+You upload your service account key (a `.json` file) to your hub
 home directory and then use it as follows:
 
 ```python
@@ -174,32 +181,33 @@ You can then read / write private files with the ``gcs`` object.
 ### Scratch Bucket
 
 Some 2i2c environments are configured with a "scratch bucket," which
-allows you to temporarily store data. Credentials to write to the scratch
-bucket are pre-loaded into your Pangeo Cloud environment.
+allows you to temporarily store data (for example, when you need to store intermediate files during data transformations).
+Credentials to write to the scratch
+bucket are pre-loaded into your Hub's user environment.
 
 :::{warning}
 Any data in scratch buckets will be deleted once it is 7 days old.
 Do not use scratch buckets to store data permanently.
 :::
 
-The location of your scratch bucket is contained in the environment variable ``PANGEO_SCRATCH``.
+The location of your scratch bucket is contained in the environment variable ``SCRATCH_BUCKET ``.
 
-And an example, here is how you would write Xarray data to the scratch bucket
+For example, here is how you would write Xarray data to the scratch bucket
 in Zarr format.
 
 
 ```python
 import os
 import xarray as xr
-PANGEO_SCRATCH = os.environ['PANGEO_SCRATCH']  # -> gs://pangeo-scratch/<username>
+SCRATCH_BUCKET = os.environ['SCRATCH_BUCKET'] 
 ds = xr.tutorial.open_dataset("rasm")  # load example data
-ds.to_zarr(f'{PANGEO_SCRATCH}/rasm.zarr')  # write data
+ds.to_zarr(f'{SCRATCH_BUCKET}/rasm.zarr')  # write data
 ```
 
 :::{warning}
 A common set of credentials is currently used for accessing scratch buckets.
 This means users can read, and potentially remove / overwrite, each others'
-data. You can avoid this problem by always using ``PANGEO_SCRATCH`` as a prefix.
+data. You can avoid this problem by always using ``SCRATCH_BUCKET`` as a prefix.
 Still, you should not store any sensitive or mission-critical data in
 the scratch bucket.
 :::
