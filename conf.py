@@ -67,8 +67,8 @@ rediraffe_redirects = {
 linkcheck_anchors = False
 linkcheck_ignore = [
     "*openstoragenetwork.org*",  # It incorrectly fails with `Max retries exceeded with url`
+    "https://docs.github.com*",  # Because docs.github.com returns 403 Forbidden errors
 ]
-
 
 def setup(app):
     app.add_css_file("custom.css")

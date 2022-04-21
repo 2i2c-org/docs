@@ -51,8 +51,8 @@ interface, so if you have specific ideas on what should be added here, please
 
 The docker image that will be launched for each user. This controls the languages,
 libraries and interfaces accessible to the user. You can leave it blank to use the
-default image maintained by 2i2c. We also have [more information](environment) on
-how to manage your user environment.
+default image maintained by 2i2c. We also have [more information on
+how to manage your user environment](environment/index).
 
 (configurator:interface)=
 ### Default interface
