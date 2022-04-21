@@ -108,7 +108,7 @@ Separate fsspec packages exist for each type of object storage:
 
 - **[s3fs](https://s3fs.readthedocs.io/en/latest/)** - for working with AWS S3
   (Simple Storage Service) and compatible APIs. Most third-party object storage
-  services (e.g. [Wasabi](https://wasabi.com/) and [Open Storage Newtork](https://www.openstoragenetwork.org/))
+  services (e.g. [Wasabi](https://wasabi.com/) and [Open Storage Newtork](https://openstoragenetwork.org/))
   are compatible with S3.
 - **[gcsfs](https://gcsfs.readthedocs.io/en/latest/)** - for working with Google
   Cloud Storage.
