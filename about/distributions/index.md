@@ -6,7 +6,7 @@ These services share many of the same infrastructure components, but have custom
 :::{note}
 Our services are in an "alpha" state - we are still learning a lot about the best way that these hubs can serve communities in research and education.
 The infrastructure and service may change over the coming months!
-See [our strategy page](../strategy.md) for an overview of what we're hoping to do and where we're headed next.
+See [our strategy page](../strategy/index.md) for an overview of what we're hoping to do and where we're headed next.
 :::
 
 For more information about specific hub distributions, see the links below.

@@ -1,5 +1,5 @@
 (about-the-project)=
-# About the JupyterHub Service
+# Overview of the service
 
 The Managed JupyterHubs Service is an open, scalable, sustainable cloud service for interactive computing environments in research and education.
 It follows a "DevOps as a Service" model where communities in research and education can pay for managed cloud infrastructure that runs on an entirely open source stack, and give you [the right to replicate your infrastructure](https://2i2c.org/right-to-replicate).
@@ -41,7 +41,7 @@ The service is currently in an **alpha phase**, and may evolve as we learn more 
 2i2c will operate and manage a 2i2c JupyterHub deployment for use by you and your community, accessible via a web URL. 2i2c will handle the design, configuration, development, and ongoing operation of the hub infrastructure.
 
 The following sections describe several common activities that the 2i2c team will perform as a part of your managed JupyterHub.
-In addition, see our [Service Level Objectives](service-objectives.md) for an explanation of what we aim to accomplish in terms of uptime, reliability, and support for these services.
+In addition, see our [Service Level Objectives](strategy/service-objectives.md) for an explanation of what we aim to accomplish in terms of uptime, reliability, and support for these services.
 
 ### JupyterHub Setup
 
@@ -115,11 +115,6 @@ Check out [](../admin/howto/replicate.md) for information about replicating a 2i
 :hidden:
 distributions/index
 ../new-hub
-pricing
 roles
-service-objectives
-strategy
-roadmap
 2i2c
-terminology
 ```

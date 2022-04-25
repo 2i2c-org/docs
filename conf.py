@@ -45,7 +45,7 @@ html_sourcelink_suffix = ""
 html_static_path = ["_static"]
 
 html_theme_options = {
-    "repository_url": "https://github.com/2i2c-org/pilot",
+    "repository_url": "https://github.com/2i2c-org/docs",
     "repository_branch": "main",
     "use_repository_button": True,
     "use_edit_page_button": True,

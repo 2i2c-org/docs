@@ -7,6 +7,11 @@ We aim to run this pilot for several months, gaining experience and sharpening o
 2i2c values transparency and inclusion, and aims to run this pilot in an open manner.
 This page describes the major strategy of the 2i2c Managed JupyterHubs pilot.
 
+```{toctree}
+service-objectives.md
+roadmap.md
+```
+
 ## Goals of the pilot
 
 The primary aim for this pilot is **understanding how the managed JupyterHub service can be most impactful**.
@@ -36,6 +41,28 @@ In the pilot, we will focus on a subset of use-cases that we believe are impactf
 - **Collaborative learning environments** - Communities of Practice that are focused around teaching and learning, and benefit from shared infrastructure to facilitate communicating and sharing with one another. Similar to our experience with Data 8, Syzygy, and Callysto.
 - **Scalable research environments** - Communities of Practice that use cloud infrastructure to scale their workflows - either by accessing large datasets or leveraging scalable computing infrastructure from an interactive session. Similar to our experience with the Pangeo project.
 - **Community event hubs** - Communities of Practice that have a time-bound event (e.g., a workshop or hackathon) that would benefit from a shared space to do their work and collaborate with one another. Similar to our experience with the NeuroHackademy and Pangeo workshops.
+
+## Our pricing strategy 
+
+See [](../pricing/index.md) for information about our pricing and cost strategy.
+
+(strategy:growth)=
+## Our growth model
+
+Growing this service will require balancing two aspects of our team:
+
+- Our **capacity** to serve a given number of communities at a certain complexity of use-case.
+- Our **commitments** to serve a specific set of communities.
+
+Because we are in a growth phase, we want our commitments to be near (or slightly above) our capacity.
+We can increase our capacity by making infrastructure and process improvements, or by growing our team.
+In the early phases of this pilot, we will focus on the former, and as our infrastructure and process is refined, we will consider the latter.
+In either case, we should choose a pricing model that gives us enough buffer to be able to hire new team members when the right time comes.
+
+To carry this out, we'll take on new communities in "batches" and define pricing models for each that at least cover [our estimated costs](../pricing/costs.md).
+When we take on a new batch of communities, we should feel some tension as it challenges our process, support, and infrastructure in new ways.
+As we make process and infrastructure improvements, will self-assess whether our capacity has grown.
+If it has grown enough, we'll decide to bring on more communities.
 
 ## Infrastructure strategy for the pilot
 

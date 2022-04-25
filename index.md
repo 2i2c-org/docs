@@ -10,7 +10,10 @@ These sections describe the hub service at an organizational level.
 
 ```{toctree}
 :maxdepth: 2
+:caption: About the service
 about/overview
+about/pricing/index
+about/strategy/index
 ```
 
 If you'd like a hub for your community, click one of the buttons below!
@@ -45,6 +48,7 @@ admin/howto/data
 admin/howto/replicate
 admin/howto/create-billing-account
 admin/topics/network
+about/terminology
 ```
 
 ## Use-case guides
