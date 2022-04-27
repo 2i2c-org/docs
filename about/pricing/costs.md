@@ -54,7 +54,7 @@ Here we list some major considerations (in decreasing order of importance):
 - **Dedicated vs. shared infrastructure**: If your community requires their own dedicated cloud infrastructure (for example, a dedicated Kubernetes cluster) then this will boost your cloud costs because you will not be sharing this cost with other communities.
 - **Cloud optimizations**: There are many ways to make cloud infrastructure more efficient and scalable, and the 2i2c engineering team is constantly experimenting with ways to lower costs for communities. For many non-2i2c hubs, inefficiency is a large source of cloud cost, though the 2i2c hubs are already well-optimized.
 
-### Estimate my clost costs
+### Estimate my cloud costs
 
 The following is a very rough guideline to follow in order to understand and estimate what your cloud costs might be.
 These are similar whether you're using 2i2c to manage your hub, or running it yourself.
