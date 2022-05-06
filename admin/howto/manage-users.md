@@ -107,3 +107,11 @@ how to determine their username.
 
 
 % TODO: Document how to remove users
+
+## Debug authentication issues
+
+If users are running into strange errors when they log in (for example Auth0 error pages that say "Looks like something went wrong!"), ask them to try these steps in debugging:
+
+1. Try logging in with an `incognito` window. This will help determine if their issue is due to some cookie / cache that is stored on their machine.
+2. Ask them to clear their cookies / cache for all Auth0 websites. For example, [here are the Google Chrome instructions to clear cookies](https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop).
+3. If using `CILogon`, double-check that they've signed in with the correct account, and [ask them to switch accounts if needed](https://infrastructure.2i2c.org/en/latest/howto/configure/auth-management.html#switch-identity-providers-or-user-accounts).
