@@ -20,7 +20,7 @@ The sections below describe the strategy around our sustainability and pricing m
 It is a living document, and we will continue to update it as we learn more.
 
 ```{toctree}
-costs
 strategy
+costs
 comparison
 ```

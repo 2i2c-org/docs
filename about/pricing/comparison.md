@@ -9,6 +9,90 @@ In each section below, we'll list a few similar companies and services that can 
 Their presence and ordering do not constitute an "endorsement" and are not exhaustive - we are merely trying to be transparent and helpful about the other organizations in this space.
 :::
 
+There are a few major categories to consider, and we'll provide a brief description of each below.
+
+- **Cloud cost**: How much does the infrastructure itself cost?
+- **Person cost**: How much time does it take to maintain, and how much does that time cost?
+- **Right to replicate**: Does the infrastructure run in a way that you could replicate the end-service nearly identically on your own?
+- **OSS Support**: Does this service reliably drive resources and support to open source communities that underlie the service?
+- **Scalable**: How complex is it to scale this option to many users, high-performance infrastructure, or big data?
+- **Customizable**: How much control do you have over the experience that your users have? Can you control the environment, interface, etc?
+- **Resilient**: Is this option vulnerable to bottlenecks in individual skills and capacity, or is it fault-tolerant and sustained by a group?
+
+Below is a short table summarizing the information below along a few major dimensions.
+It makes some simplifications and assumptions, and is meant to be a quick and "glanceable" way to compare the options below:
+
+::::{grid} 3
+:margin: 1
+
+:::{grid-item}
+✅ = yes / easy
+:::
+:::{grid-item}
+🟧 = sometimes / possible
+:::
+:::{grid-item}
+❌ = rarely / difficult
+:::
+::::
+
+:::{list-table}
+:widths: 15 10 10 5 5 5 5 5
+:class: align-middle
+:stub-columns: 1
+:header-rows: 1
+
+- - Service
+  - Cloud Cost
+  - Person Cost
+  - Right to Replicate
+  - OSS Support
+  - Scalable
+  - Customizable
+  - Resilient
+- - [2i2c](compare:2i2c)
+  - 💲💲
+  - 💲💲
+  - ✅
+  - ✅
+  - ✅
+  - ✅
+  - ✅
+- - [Internal Staffing](compare:internal)
+  - 💲💲💲
+  - 💲💲💲💲
+  - 🟧
+  - 🟧
+  - ❌
+  - ✅
+  - ❌
+- - [National infrastructure](compare:public-infra)
+  - 💲💲
+  - 💲💲💲
+  - 🟧
+  - 🟧
+  - 🟧
+  - 🟧
+  - 🟧
+- - [Consultancy](compare:consulting)
+  - 💲💲
+  - 💲💲💲
+  - 🟧
+  - 🟧
+  - ❌
+  - ✅
+  - 🟧
+- - [SaaS Products](compare:saas)
+  - 💲💲💲
+  - 💲
+  - ❌
+  - 🟧
+  - ✅
+  - ❌
+  - ✅
+:::
+
+(compare:2i2c)=
 ## How to think about 2i2c's service and pricing
 
 As a non-profit, we choose our prices to move forward on a sustainable path to achieve our mission according to [our cost model](costs:human) as well as [our growth model](strategy:growth).
@@ -20,9 +104,10 @@ We curate and integrate this infrastructure, customize it for use-cases in resea
 We use shared configuration and deployment infrastructure so that we can achieve economies of scale in serving many communities, but with an entirely open-source stack that can be customized for their unique needs.
 
 We do not know of any other organizations that offer managed cloud services in this way.
-However, below are three similar kinds of service and product models.
+However, below are a few similar kinds of service and product models.
 They are roughly ordered from "most similar" to "least similar" to 2i2c.
 
+(compare:internal)=
 ## Internal staffing
 
 The most common way for organizations to achieve similar services is to staff their own internal teams.
@@ -46,6 +131,19 @@ If you need to build this expertise internally, it is likely much more cost-effe
 We constantly adjust our own prices and team compensation to be responsive to the ecosystem of Cloud and Site Reliability Engineering, and we'll update this information as the field evolves.
 :::
 
+(compare:public-infra)=
+## Large-scale public infrastructure
+
+Depending on the state or country that you live in, there may also be options available to get access to large-scale shared infrastructure that is run by government agencies.
+For example, the [XSEDE](https://www.xsede.org/) program in the United States provides shared infrastructure that you can access with an application.
+
+The biggest challenges to using these larger infrastructure services tend to be inflexibility and friction associated with gaining access, sharing access, and customizing to your needs. Large-scale infrastructure efforts often come with significant complexity in bureaucratic process and steps that must be followed before you can get access.
+This is particularly difficult if you wish to collaborate across institutions, or want to easily provide access to newcomers.
+Moreover, the infrastructure tends to evolve more slowly, and is less dynamic in user interactions, than modern cloud-based infrastructure.
+Often you will need to adapt your workflow to the infrastructure setup, rather than the other way around.
+However, if you can find large-scale public infrastructure that accomplishes what you want, it may be a good option!
+
+(compare:consulting)=
 ## Consulting companies
 
 Many companies specialize in technical consulting that is flexible and tailored to an organization's needs.
@@ -58,6 +156,7 @@ It is difficult to assess the total number of hours needed to develop and operat
 If we assume 10 hours a month, this comes to between $1500 and $4000 a month.
 A more conservative estimate for a team that does not specialize in JupyterHub and Kubernetes infrastructure might be 30 hours a month, or between $4,500 and $12,000 a month.
 
+(compare:saas)=
 ## Software as a Service Products
 
 There are many companies offering services and platforms via a subscription fee.

@@ -4,9 +4,20 @@ This page describes the rationale and strategy behind our pricing.
 
 We invite comments and feedback about the attractiveness and sustainability of these services, and expect to update this model with feedback from the community as we learn more.
 
+```{list-table}
+:widths: auto
+:stub-columns: 1
+
+- - Last Updated
+  - 2022-05-06
+- - Next checkpoint
+  - 2022-08
+```
+
 ## Guiding principles of our prices
 
 The following principles guide our decision-making around pricing our services.
+We believe that following these principles allows us to deliver the best services for our communities in a way that aligns with our mission and values.
 Our prices should:
 
 - Sustain and grow 2i2c's services and allow it to thrive as an organization.
@@ -14,6 +25,7 @@ Our prices should:
 - Reflect a holistic understanding of open source support, not just code.
 - Be competitive with other "Data Science environment as a service" offerings (see below for how we consider ourselves relative to similar offerings).
 - Be sustainable for the communities we serve, with mechanisms to accommodate institutions with fewer resources.
+
 
 ## Base fees for three service types
 
@@ -35,7 +47,7 @@ Below is a table which summarizes these major points
 
 ### Markup for running on dedicated clusters
 
-In general we want our fees to scale with the amount of complexity that we have to manage. If we run JupyterHubs on community-specific cloud infrastructure, we have more responsibility and moving parts to keep track of. For example, we’ll need to manage credentials for their cloud accounts, set up infrastructure that connects with those accounts, and manage a dedicated kubernetes cluster for them. We’ll also need to provide billing reports per-cluster for cloud costs. All of this is extra complexity we must deal with, and so a 50% markup is a conservative estimate to cover this labor.
+In general we want our fees to scale with the amount of complexity that we have to manage. If we run JupyterHubs on community-specific cloud infrastructure, we have more responsibility and moving parts to keep track of. For example, we’ll need to manage credentials for cloud accounts, set up infrastructure that connects with those accounts, and manage a dedicated kubernetes cluster for the community. We’ll also need to provide billing reports per-cluster for cloud costs. All of this is extra complexity we must deal with, and so a 50% markup is a conservative estimate to cover this labor.
 
 ## What we are missing
 
@@ -47,5 +59,5 @@ Below are a few things that we know we are missing:
 - **Lightweight hubs**. For many individuals or communities, these offerings might involve more complexity than what they need. We’d like to offer a much more scalable and lightweight hub service that people could quickly spin up. We hope to prototype and experiment with ideas after the initial roll-out of the alpha service.
 - **Communities that need multiple hubs**. For organizations with many sub-communities and complexity, a single hub is likely not enough to meet their needs. These communities may be better-served by their own dedicated federation of hubs, with a different pricing / growth model than the offerings described here. For now we’ll treat these as partnership opportunities, but may wish to standardize this in a service offering in the future.
 - **Significant differences in community size**. Our pricing model assumes that most communities have a relatively similar degree of complexity and size between them. However, when communities grow to a certain size (say, two orders of magnitude), it generates additional work in supporting users and hub operations. We hope to better-understand the costs associated with serving these larger communities, and identify ways to recover them via our pricing.
-- **Billing as a service**. In some cases we are managing the billing infrastructure and payments for communities. However, we do not currently charge explicitly for performing this service. We should estimate how much work and liability is entailed in this, and work with our fiscal sponsor to understand if and how much we should charge to cover these costs.
-- **Liability for cloud billing**. For communities where we manage their cloud billing, we hold some liability because we’ll need to pay the cloud provider for their usage before they pay us. We should work with our fiscal sponsor to understand our risk here (for example, what if a community charges $50,000 in cloud costs and then refuses to pay their invoice). We should also explore potential ways to mitigate this risk (for example, pre-billing communities for *estimated* cloud usage to create a buffer, or asking for a deposit.
+- **Cloud payments as a service**. In some cases we manage the billing infrastructure and payments for communities (as opposed to them paying cloud providers directly). We do not currently charge explicitly for performing this service. In this case we take on extra work and complexity in tracking and paying cloud bills. We should estimate how much work and risk/liability is entailed in this, and work with our fiscal sponsor to understand how to cover these costs.
+- **Liability for cloud payments**. For communities where we manage their cloud billing, we hold some liability because we’ll need to pay the cloud provider for their usage before they pay us. We should work with our fiscal sponsor to understand our risk here (for example, what if a community charges $50,000 in cloud costs and then refuses to pay their invoice). We should also explore potential ways to mitigate this risk (for example, pre-billing communities for *estimated* cloud usage to create a buffer, or asking for a deposit.
