@@ -2,8 +2,7 @@
 
 We believe that the research and education community is best-served by open, community-driven infrastructure and services.
 However, there are many things to consider when choosing services to support and use.
-This section describes a few major categories to think about - we'll discuss each in the sections below as well.
-This page is a guide to 2i2c's services, pricing, and principles, and how this compares with similar kinds of offerings.
+This section describes a few major categories to think about as well as the major kinds of services available to you - we'll discuss each in the sections below as well.
 They are roughly ordered from "most similar" to "least similar" to 2i2c.
 
 For some excellent comprehensive guides, we also recommend reading these two resources:
@@ -23,8 +22,9 @@ Their presence and ordering do not constitute an "endorsement" and are not exhau
 There are a few major categories to consider, and we'll provide a brief description of each below.
 
 - **Usage cost**: How much does the infrastructure itself cost to use (either in monthly fees or in cloud costs)?
-- **Person cost**: How much time does it take to maintain, and how much does that time cost?
+- **Person cost**: How much time does it take to maintain and manage the service, and how much does that time cost?
 - **Right to replicate**: Does the infrastructure run in a way that you could replicate the end-service nearly identically on your own?
+- **User portability**: Could the user port their workflows to a different service or local setup with minimal disruption?
 - **OSS Support**: Does this service reliably drive resources and support to open source communities that underlie the service?
 - **Scalable**: How complex is it to scale this option to many users, high-performance infrastructure, or big data?
 - **Customizable**: How much control do you have over the experience that your users have? Can you control the environment, interface, etc?
@@ -50,7 +50,7 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
 ::::
 
 :::{list-table}
-:widths: 15 10 10 5 5 5 5 5 5 5
+:widths: 15 10 10 5 5 5 5 5 5 5 5
 :class: align-middle
 :stub-columns: 1
 :header-rows: 1
@@ -59,6 +59,7 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - Usage cost
   - Person Cost
   - Right to Replicate
+  - User portability
   - OSS Support
   - Scalable
   - Customizable
@@ -66,8 +67,9 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - Accessible
   - Updates
 - - [2i2c](compare:2i2c)
-  - 💲
   - 💲💲
+  - 💲
+  - ✅
   - ✅
   - ✅
   - ✅
@@ -76,9 +78,10 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - ✅
   - ✅
 - - [Internal Staffing](compare:internal)
-  - 💲💲💲
+  - 💲💲
   - 💲💲💲💲
   - 🟧
+  - ✅
   - 🟧
   - ❌
   - ✅
@@ -86,9 +89,10 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - ✅
   - 🟧
 - - [National infrastructure](compare:public-infra)
+  - 💲
   - 💲💲
-  - 💲💲💲
   - 🟧
+  - ✅
   - 🟧
   - 🟧
   - 🟧
@@ -99,6 +103,7 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - 💲💲
   - 💲💲💲
   - 🟧
+  - ✅
   - 🟧
   - ❌
   - ✅
@@ -108,6 +113,7 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
 - - [SaaS Products](compare:saas)
   - 💲💲💲
   - 💲
+  - ❌
   - ❌
   - 🟧
   - ✅
@@ -137,6 +143,9 @@ Person Cost
 Right to Replicate
 : All of 2i2c's infrastructure is entirely open-source and community-driven.
   We design our service with [the Right to Replicate](https://2i2c.org/right-to-replicate/) in mind from start to finish.
+
+User portability
+: 2i2c's managed hubs are designed to run on community standards in tools and workflows. We believe that the user's experience should mirror the best-practice in the open source community, and have as little 2i2c-specific workflows as possible.
 
 OSS Support
 : As a mission-driven organization, 2i2c has an obligation to support open source communities that it utilizes in its infrastructure. We design our workflow to do most of our improvements by making upstream contributions in open source projects.
@@ -176,7 +185,10 @@ Person Cost
   Moreover, the efficiency of this role will depend heavily on the expertise of the person doing this work.
 
 Right to Replicate
-: Excellent. Having an internal team run your infrastructure means that you are "already" replicating your own infrastructure, so this is not a concern.
+: Having an internal team run your infrastructure means that you are "already" replicating your own infrastructure, so this is not a concern.
+
+User portability
+: Having an internal team run your infrastructure means that you can design the user-workflows to be as portable as you wish.
 
 OSS Support
 : Depends on the organization.
@@ -224,6 +236,9 @@ Person Cost
 Right to Replicate
 : This depends heavily on the type of infrastructure you are using. Most public infrastructure is better than SaaS providers at using technology that is re-usable and community-driven, though the cloud infrastructure itself is often not designed with replication and community-ownership in mind.
 
+User portability
+: Most large-scale public infrastructure does not deviate much from the open source standards that others use.
+
 OSS Support
 : Highly-dependent on the organization.
   In practice, very few devops teams spend significant time contributing back to open source communities.
@@ -269,6 +284,9 @@ A more conservative estimate for a team that does not specialize in JupyterHub a
 Right to Replicate
 : You can generally direct these companies to deploy infrastructure in whatever manner you wish, and so may request that they provide infrastructure that gives you the right to replicate it.
 
+User portability
+: As long as you request that they only deploy standard infastructure and workflows for you, this is not a concern (though, it may cost extra if the company also offers their own company-specific service).
+
 OSS Support
 : Depends on the consultancy. Some organizations do a good job of providing upstream contributions to open source communities, and we recommend asking what kind of open source contribution process each follows.
 
@@ -306,6 +324,9 @@ Person Cost
 
 Right to Replicate
 : These platforms generally run on proprietary infrastructure or platforms, and do not give users the [Right to Replicate](https://2i2c.org/right-to-replicate) their infrastructure on their own.
+
+User portability
+: Most SaaS platforms use proprietary and service-specific interfaces and infrastructure. This means that users tend to learn service-specific skills and their workflows are not as portable to other services and tools.
 
 OSS Support
 : These platforms generally do not commit significant amounts of their resources to supporting collaborative open source communities. However, many of these services run on open source platforms that are controlled by the company offering the service.
