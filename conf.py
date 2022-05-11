@@ -56,7 +56,7 @@ html_theme_options = {
 intersphinx_mapping = {
     "tc": ('https://team-compass.2i2c.org/en/latest', None),
     "infra": ('https://infrastructure.2i2c.org/en/latest', None),
-    "jb": ('https://jupyterbook.org', None),
+    "jb": ('https://jupyterbook.org/en/stable/', None),
     "z2jh": ('https://z2jh.jupyter.org/en/latest', None),
 }
 

@@ -1,6 +1,15 @@
 # Comparison to similar services
 
-This page is a guide to 2i2c's services, our pricing, and how this compares with similar kinds of offerings.
+We believe that the research and education community is best-served by open, community-driven infrastructure and services.
+However, there are many things to consider when choosing services to support and use.
+This section describes a few major categories to think about - we'll discuss each in the sections below as well.
+This page is a guide to 2i2c's services, pricing, and principles, and how this compares with similar kinds of offerings.
+They are roughly ordered from "most similar" to "least similar" to 2i2c.
+
+For some excellent comprehensive guides, we also recommend reading these two resources:
+
+- [The Principles of Open Scholarly Infrastructure](https://openscholarlyinfrastructure.org/) describes how infrastructure and services can align themselves with the mission and values of the scholarly community. We recommend that you use services that align closely with these principles.
+- [The Values and Principles Framework and Assessment Checklist](https://commonplace.knowledgefutures.org/pub/5se1i1qy/release/4) is an assessment checklist to help those in the scholarly community choose services that are aligned with the mission and values of the scholarly community.
 
 :::{tip}
 The content on this page can be re-used as a part of "price reasonableness and comparisons" forms when completing contracting for communities.
@@ -9,15 +18,19 @@ In each section below, we'll list a few similar companies and services that can 
 Their presence and ordering do not constitute an "endorsement" and are not exhaustive - we are merely trying to be transparent and helpful about the other organizations in this space.
 :::
 
+## Major factors to consider
+
 There are a few major categories to consider, and we'll provide a brief description of each below.
 
-- **Cloud cost**: How much does the infrastructure itself cost?
+- **Usage cost**: How much does the infrastructure itself cost to use (either in monthly fees or in cloud costs)?
 - **Person cost**: How much time does it take to maintain, and how much does that time cost?
 - **Right to replicate**: Does the infrastructure run in a way that you could replicate the end-service nearly identically on your own?
 - **OSS Support**: Does this service reliably drive resources and support to open source communities that underlie the service?
 - **Scalable**: How complex is it to scale this option to many users, high-performance infrastructure, or big data?
 - **Customizable**: How much control do you have over the experience that your users have? Can you control the environment, interface, etc?
 - **Resilient**: Is this option vulnerable to bottlenecks in individual skills and capacity, or is it fault-tolerant and sustained by a group?
+- **Openness**: How easy is it to use this infrastructure to facilitate collaboration and access for community members within and between institutions.
+- **Cutting edge**: How closely does this infrastructure track the latest developments in data science, interactive computing, and cloud technology?
 
 Below is a short table summarizing the information below along a few major dimensions.
 It makes some simplifications and assumptions, and is meant to be a quick and "glanceable" way to compare the options below:
@@ -29,7 +42,7 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
 ✅ = yes / easy
 :::
 :::{grid-item}
-🟧 = sometimes / possible
+🟧 = sometimes / depends
 :::
 :::{grid-item}
 ❌ = rarely / difficult
@@ -37,22 +50,26 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
 ::::
 
 :::{list-table}
-:widths: 15 10 10 5 5 5 5 5
+:widths: 15 10 10 5 5 5 5 5 5 5
 :class: align-middle
 :stub-columns: 1
 :header-rows: 1
 
 - - Service
-  - Cloud Cost
+  - Usage cost
   - Person Cost
   - Right to Replicate
   - OSS Support
   - Scalable
   - Customizable
   - Resilient
+  - Accessible
+  - Updates
 - - [2i2c](compare:2i2c)
+  - 💲
   - 💲💲
-  - 💲💲
+  - ✅
+  - ✅
   - ✅
   - ✅
   - ✅
@@ -66,6 +83,8 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - ❌
   - ✅
   - ❌
+  - ✅
+  - 🟧
 - - [National infrastructure](compare:public-infra)
   - 💲💲
   - 💲💲💲
@@ -74,6 +93,8 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - 🟧
   - 🟧
   - 🟧
+  - ❌
+  - ❌
 - - [Consultancy](compare:consulting)
   - 💲💲
   - 💲💲💲
@@ -82,6 +103,8 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - ❌
   - ✅
   - 🟧
+  - ✅
+  - ✅
 - - [SaaS Products](compare:saas)
   - 💲💲💲
   - 💲
@@ -90,22 +113,49 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - ✅
   - ❌
   - ✅
+  - ❌
+  - 🟧
 :::
 
 (compare:2i2c)=
-## How to think about 2i2c's service and pricing
+## 2i2c's managed cloud service
 
 As a non-profit, we choose our prices to move forward on a sustainable path to achieve our mission according to [our cost model](costs:human) as well as [our growth model](strategy:growth).
 Our service entails developing and managing entirely open-source, vendor-agnostic, and community-driven infrastructure that is customized for research and education.
 
-Our aim with 2i2c's service model is to strike a balance between **scalability** and **flexibility**, with the constraints that we operate **transparently** and **collaboratively** with our communities, by runing **open-source** and **community-driven** infrastructure.
-
 We curate and integrate this infrastructure, customize it for use-cases in research and education, and contribute back to the open source communities that underlie the tools we use.
 We use shared configuration and deployment infrastructure so that we can achieve economies of scale in serving many communities, but with an entirely open-source stack that can be customized for their unique needs.
 
-We do not know of any other organizations that offer managed cloud services in this way.
-However, below are a few similar kinds of service and product models.
-They are roughly ordered from "most similar" to "least similar" to 2i2c.
+Usage Cost
+:  2i2c passes cloud costs directly to the communities that we serve, and takes care to minimize this cost as much as possible.
+  Because 2i2c's team has many years of experience running cloud infrastructure, we perform many optimizations that minimize the cloud expenses that you incur.
+  Moreover, because we can run infrastructure that communities control as well, it is possible to use 2i2c hubs with cloud credits at your institution.
+
+Person Cost
+: 2i2c reduces its personell costs by standardizing the configuration and deployment infrastructure across hubs for many communities. We aim to be significantly cheaper than hiring an in-house person or team to run infrastructure, but are slightly more expensive than a "fully-hosted Software as a Service" platform.
+
+Right to Replicate
+: All of 2i2c's infrastructure is entirely open-source and community-driven.
+  We design our service with [the Right to Replicate](https://2i2c.org/right-to-replicate/) in mind from start to finish.
+
+OSS Support
+: As a mission-driven organization, 2i2c has an obligation to support open source communities that it utilizes in its infrastructure. We design our workflow to do most of our improvements by making upstream contributions in open source projects.
+
+Scalable
+: 2i2c's infrastructure runs on JupyterHub, which can be scaled from 10s to 1000s of users. Moreover, we have experience running JupyterHub for high-performance data workflows via projects like Pangeo.
+
+Customizable
+: 2i2c's JupyterHubs give communities control over the user environments, interfaces, and general user workflows on our hubs. We aim for them to be as customizable as possible using technology in the Jupyter ecosystem.
+
+Resilient
+: 2i2c's JupyterHubs have a team of cloud experts operating, developing, and improving the infrastructure behind each hub. We also have a team with years of experience in research and education workflows to design these services in a sustainable and reliable manner.
+
+Accessible
+: 2i2c's JupyterHubs are run in partnership with the communities that use them, and commercial cloud infrastructure has very little restrictions on who can use it.
+  Your infrastructure can be as open and accessible as you wish it to be.
+
+Updates
+: 2i2c's team follows the latest developments in Jupyter and cloud infrastructure, and continuously incorporates them into our managed hubs.
 
 (compare:internal)=
 ## Internal staffing
@@ -113,18 +163,41 @@ They are roughly ordered from "most similar" to "least similar" to 2i2c.
 The most common way for organizations to achieve similar services is to staff their own internal teams.
 2i2c encourages this, as it is aligned with our commitment to open source, vendor-agnostic tools, and the [Right to Replicate your infrastructure](https://2i2c.org/right-to-replicate).
 
-However, hiring and retaining modern cloud engineers is difficult and costly.
-In 2022, [the median compensation of a Site Reliability Engineer](https://www.levels.fyi/Salaries/Software-Engineer/Site-Reliability/) is roughly `$180,000` a year, excluding indirect costs.
-
-This under-estimates the true cost, as there are a few other risk factors associated with paying a single engineer to manage your cloud infrastructure:
-
-- Attracting and hiring people for this very in-demand position requires a significant amount of time and energy.
-- Centralizing your organization’s cloud engineering on a single person creates risk associated with having a single point of failure.
-- The efficiency of this role will depend heavily on their previous expertise with cloud infrastructure and Jupyter, and their capacity to make improvements to the open source tooling will be difficult unless they have previous experience in this ecosystem.
-- As a sole contributor, they will likely not be as responsive to outages, make improvements, or incorporate enhancement and security fixes as quickly as a distributed team of experts.
-
 If your organization has significant pre-existing expertise in open source, Jupyter, and cloud infrastructure, then it may be more cost effective for you to run your own JupyterHub services.
 If you need to build this expertise internally, it is likely much more cost-effective to partner with 2i2c.
+
+Cloud Cost
+:  Potentially optimal. Cloud costs depend heavily on the amount of optimization done to keep costs down. If you have an exceptional dev-ops team on-hand, then you may be able to reduce cloud costs, or use cloud credits, in a similar manner as 2i2c's services.
+  Generally speaking, costs will be slightly higher without expertise in these areas.
+
+Person Cost
+: Very expensive. Hiring and retaining modern cloud engineers is difficult and costly.
+  In 2022, [the median compensation of a Site Reliability Engineer](https://www.levels.fyi/Salaries/Software-Engineer/Site-Reliability/) is roughly `$180,000` a year, excluding indirect costs, training costs, recruiting costs, etc.
+  Moreover, the efficiency of this role will depend heavily on the expertise of the person doing this work.
+
+Right to Replicate
+: Excellent. Having an internal team run your infrastructure means that you are "already" replicating your own infrastructure, so this is not a concern.
+
+OSS Support
+: Depends on the organization.
+  In practice, very few devops teams spend significant time contributing back to open source communities.
+
+Scalable
+: Depends on the experience of your internal team member, they may be able to scale your infrastructure to suit your community's needs.
+  However, this requires a deeper understanding of the Jupyter and Dask ecosystem and how it interacts with cloud infrastructure.
+
+Customizable
+: Depends on the experience of your internal team member. They may be able to scale your infrastructure to suit your community's needs, though this requires a deeper understanding of the Jupyter ecosystem and how it interacts with cloud infrastructure.
+
+Resilient
+: Centralizing your organization’s cloud engineering on a single person creates risk associated with having a single point of failure.
+  If a team of people is available, this is better, but comes with a significant increase in personnel costs.
+
+Accessible
+: With your own engineer, your infrastructure can be as accessible as you wish to be.
+
+Updates
+: 2i2c's team follows the latest developments in Jupyter and cloud infrastructure, and continuously incorporates them into our managed hubs.
 
 :::{note}
 2i2c primarily aims to be a more cost-effective alternative to this model of service delivery.
@@ -134,14 +207,44 @@ We constantly adjust our own prices and team compensation to be responsive to th
 (compare:public-infra)=
 ## Large-scale public infrastructure
 
-Depending on the state or country that you live in, there may also be options available to get access to large-scale shared infrastructure that is run by government agencies.
+Depending on the state or country that you live in, you may be able to access large-scale shared infrastructure that is run by government agencies.
 For example, the [XSEDE](https://www.xsede.org/) program in the United States provides shared infrastructure that you can access with an application.
 
-The biggest challenges to using these larger infrastructure services tend to be inflexibility and friction associated with gaining access, sharing access, and customizing to your needs. Large-scale infrastructure efforts often come with significant complexity in bureaucratic process and steps that must be followed before you can get access.
-This is particularly difficult if you wish to collaborate across institutions, or want to easily provide access to newcomers.
-Moreover, the infrastructure tends to evolve more slowly, and is less dynamic in user interactions, than modern cloud-based infrastructure.
 Often you will need to adapt your workflow to the infrastructure setup, rather than the other way around.
 However, if you can find large-scale public infrastructure that accomplishes what you want, it may be a good option!
+
+Cloud Cost
+:  Your cloud costs will likely be quite low, as this infrastructure tends to be subsidized be government funds.
+  However, it is also common for these services to charge cloud infrastructure directly to grants, in which case it is likely no different from managing your own cloud services or using 2i2c.
+
+Person Cost
+: Large-scale infrastructure efforts often come with significant complexity in bureaucratic process and steps that must be followed before you can get access.
+  This complexity may come with significant personnel costs in interfacing with this centralized service, and building your own workflows around it.
+
+Right to Replicate
+: This depends heavily on the type of infrastructure you are using. Most public infrastructure is better than SaaS providers at using technology that is re-usable and community-driven, though the cloud infrastructure itself is often not designed with replication and community-ownership in mind.
+
+OSS Support
+: Highly-dependent on the organization.
+  In practice, very few devops teams spend significant time contributing back to open source communities.
+
+Scalable
+: Depending on the experience of your internal team member, they may be able to scale your infrastructure to suit your community's needs.
+  However, this requires a deeper understanding of the Jupyter and Dask ecosystem and how it interacts with cloud infrastructure.
+
+Customizable
+: Depending on the experience of your internal team member, they may be able to scale your infrastructure to suit your community's needs.
+  However, this requires a deeper understanding of the Jupyter ecosystem and how it interacts with cloud infrastructure.
+
+Resilient
+: Centralizing your organization’s cloud engineering on a single person creates risk associated with having a single point of failure.
+  If a team of people is available, this is better, but comes with a significant increase in personnel costs.
+
+Accessible
+: Using large-scale infrastructure like this often requires an application or vetting process before access can be provided, and is often restricted to only users that are within the same institution or country as the hub.
+
+Updates
+: There are more complex processes, bureaucracy, and constraints that manage the maintenance of large-scale infrastructure, and this means it tends to evolve and improve more slowly.
 
 (compare:consulting)=
 ## Consulting companies
@@ -149,27 +252,79 @@ However, if you can find large-scale public infrastructure that accomplishes wha
 Many companies specialize in technical consulting that is flexible and tailored to an organization's needs.
 They can build bespoke infrastructure using an open source stack that is similar to the one that 2i2c offers.
 We also encourage this, as we believe in having a diverse ecosystem of vendors that can offer a similar vendor-neutral stack, as this may also encourage the [Right to Replicate your infrastructure](https://2i2c.org/right-to-replicate).
-Examples of companies that do software consultancy in this space are [Anaconda](https://www.anaconda.com/), [QuanSight](https://www.quansight.com/), and [QuantStack](https://quantstack.net/).
+Examples of companies that do software consultancy in this space are [Anaconda](https://www.anaconda.com/), [KitWare](https://www.kitware.com/), [QuanSight](https://www.quansight.com/), and [QuantStack](https://quantstack.net/).
 
-These companies generally bill by the hour for their work, and have rates that vary between `$150/hr` and `$400/hr`.
+Usage cost
+: Non-existent, assuming you are paying by the developer hour, rather than by the user.
+
+Cloud Cost
+: Dependent on the consultancy. If the consulting group has strong expertise in cloud infrastructure, jupyter infrastructure, and data workflows, then they may be able to optimize your cloud costs well. However this tends to come with higher hourly rates.
+
+Person Cost
+: These companies generally bill by the hour for their work, and have rates that vary between `$150/hr` and `$400/hr`.
 It is difficult to assess the total number of hours needed to develop and operate a hub like the ones in this service, as it depends on the expertise of the organization.
 If we assume 10 hours a month, this comes to between $1500 and $4000 a month.
 A more conservative estimate for a team that does not specialize in JupyterHub and Kubernetes infrastructure might be 30 hours a month, or between $4,500 and $12,000 a month.
+
+Right to Replicate
+: You can generally direct these companies to deploy infrastructure in whatever manner you wish, and so may request that they provide infrastructure that gives you the right to replicate it.
+
+OSS Support
+: Depends on the consultancy. Some organizations do a good job of providing upstream contributions to open source communities, and we recommend asking what kind of open source contribution process each follows.
+
+Scalable
+: Depends on the consultancy, and their expertise in cloud infrastructure.
+
+Customizable
+: Depends on the consultancy, and their expertise in cloud infrastructure.
+
+Resilient
+: Because consultancies generally charge by the hour, you can request more people to run the infrastructure in order to boost its resilience. However this generally comes with a significantly increased cost.
+
+Accessible
+: Depends on the consultancy, and their expertise in cloud infrastructure.
+
+Updates
+: Depends on the consultancy, and their expertise in cloud infrastructure.
 
 (compare:saas)=
 ## Software as a Service Products
 
 There are many companies offering services and platforms via a subscription fee.
-These platforms generally run on proprietary infrastructure or platforms, and do not give users the [Right to Replicate](https://2i2c.org/right-to-replicate) their infrastructure on their own.
 The experience from a user's perspective may be similar and they may offer some open source tools as part of their services.
 Examples of these products are [CoCalc](https://cocalc.com/), [Deepnote](https://deepnote.com/), [engageLively](https://engagelively.com/), [Colaboratory (Google)](https://colab.research.google.com/), [Noteable](https://noteable.io/), [ObserveableHQ](https://observablehq.com/), [rstudio.cloud](https://rstudio.cloud/), [Sagemaker (AWS)](https://aws.amazon.com/sagemaker/), and [Saturn Cloud](https://saturncloud.io/).
 
-These models are generally priced in one of two ways:
+Usage cost
+: Generally charge betwee $7 and $50 per user, per month, depending on the complexity of the resources needed and the service. Many SaaS offerings include enterprise services as well, but their prices are generally not advertised publicly and are often significantly more expensive.
 
-- **By the user**. Introductory levels of SaaS services tend to charge by the user, at a rate that scales with the complexity and power of the service being used. This might range between $12 and $100 per user per month for basic data science environments. It can be in the hundreds or thousands per user per month for particularly complex enterprise environments.
-- **As a markup on cloud usage**. Another approach is to charge a percentage markup on cloud costs. For example, a 75% surcharge is added to each monthly cloud bill. This amount depends heavily on your total cloud bill, and is particularly affected if you run lots of scalable or long-running computations.
+Cloud cost
+: Cloud costs are generally wrapped up in usage-costs, though you will generally start paying extra costs if your usage reaches a certain limit.
+  SaaS providers often bundle the cost of cloud in with a flat monthly price, and convert unused compute into extra revenue.
 
-Enterprise-level contracts for these platforms can be significantly more expensive than this, but prices are generally not displayed publicly and vary by the organization.
+Person Cost
+: Depends on the complexity of the service's interface and user experience, but generally this is significantly less-complex than running your own infrastructure (at the cost of openness, customizability, and the right to replicate).
+
+Right to Replicate
+: These platforms generally run on proprietary infrastructure or platforms, and do not give users the [Right to Replicate](https://2i2c.org/right-to-replicate) their infrastructure on their own.
+
+OSS Support
+: These platforms generally do not commit significant amounts of their resources to supporting collaborative open source communities. However, many of these services run on open source platforms that are controlled by the company offering the service.
+
+Scalable
+: Dependent on the platform, and whether scalability is built into their core offering. Often, scalable data workflows will come with a significant increase in usage cost.
+
+Customizable
+: Dependent on the platform, but generally more constrained than running on community-driven infrastructure, as SaaS providers tend to have more opinionated and proprietary interfaces and workflows.
+
+Resilient
+: Most SaaS providers are highly resilient, as they have teams of engineers managing a single shared service.
+
+Accessible
+: Not accessible. Most SaaS providers require each user to create their own account, or pay on their own, in order to have access.
+
+Updates
+: Dependent on the platform. Most SaaS providers do a reasonable job of staying up to date with modern data and cloud workflows, though they tend to include new features in the form of custom or proprietary workflows.
+
 
 ## Bottom line
 
