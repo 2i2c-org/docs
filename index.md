@@ -13,6 +13,7 @@ These sections describe the hub service at an organizational level.
 :caption: About the service
 about/overview
 about/pricing/index
+about/service-objectives
 about/strategy/index
 ```
 
