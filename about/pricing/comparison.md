@@ -21,66 +21,126 @@ Their presence and ordering do not constitute an "endorsement" and are not exhau
 
 There are a few major categories to consider, and we'll provide a brief description of each below.
 
-### Usage cost
+::::{grid} 1 1 2 2
+:gutter: 3
+:class-row: full-width
+
+:::{grid-item-card}
+:class-header: bg-light
+
+Usage cost
+^^^
 
 How much does the infrastructure itself cost to use (either in monthly fees or in cloud costs)?
 
 **Why it matters**: The amount of cloud cost you incur is heavily dependent on how you optimize and configure your infrastructure. The same group of users can use orders of magnitude more in cloud costs if the proper safeguards and put on their infrastructure.
+:::
 
+:::{grid-item-card}
+:class-header: bg-light
 
-### Person cost
+Person cost
+^^^
 
 How much time does it take to maintain and manage the service, and how much does that time cost?
 
 **Why it matters**: The more time you must spend configuring, debugging, improving, and supporting infrastructure, the less time you have for focusing on your other goals. Cloud infrastructure can be a significant time-sink if you are not already skilled in running it.
+:::
 
-### Right to replicate
+:::{grid-item-card}
+:class-header: bg-light
+
+Right to replicate
+^^^
 
 Does the infrastructure run in a way that you could replicate the end-service nearly identically on your own?
 
 **Why it matters**: Using infrastructure that is community-owned and portable prevents you from becoming too-dependent on a single vendor or service. Vendor lock-in is very common in the scholarly community, and eventually creates major problems in cost and usability.
+:::
 
-### User portability
+:::{grid-item-card}
+:class-header: bg-light
+
+User portability
+^^^
 
 Could the user port their workflows to a different service or local setup with minimal disruption?
 
 **Why it matters**: Users are continuously moving between communities in their training and in doing their work. Using tools, interfaces, and workflows that are community standards ensures that they will have minimal friction in using your infratsructure, and in taking their skills elsewhere.
 
-### OSS Support
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+
+OSS Support
+^^^
 
 Does this service reliably drive resources and support to open source communities that underlie the service?
 
 **Why it matters**: Open source communities are in desperate need of financial and personnel support to keep their infrastructure healthy and dynamic. Organizations that commit to re-investing significant resources into open source communities ensure that the tools we all rely on are well-supported and thriving.
 
-### Scalable
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+
+Scalable
+^^^
 
 How complex is it to scale this option to many users, high-performance infrastructure, or big data?
 
 **Why it matters**: Scaling up (e.g., one user with 10x more RAM) or scaling out (e.g., 10 users becoming 1000 users) both come with significant increases in cloud complexity. If a service is not designed with scalability from the start, it will be difficult to scale your infrastructure if needed.
 
-### Customizable
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+
+Customizable
+^^^
 
 How much control do you have over the experience that your users have? Can you control the environment, interface, etc?
 
 **Why it matters**: While much of our infrastructure can be re-used across workflows and use-cases, most communities still require customization that is unique to their needs. For example, installing custom packages, modifying interfaces, or adding extensions. Customizability allow you to take more ownership over your infrastructure and the workflows it enables.
 
-### Resilient
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+
+Resilient
+^^^
 
 Is this option vulnerable to bottlenecks in individual skills and capacity, or is it fault-tolerant and sustained by a group?
 
 **Why it matters**: Cloud infrastructure is dynamic and requires constant upkeep and care from experts. If there is insufficient maintenance capacity, or the infrastructure is not designed properly, then small problems can balloon into large issues that impact your users.
 
-### Openness
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+
+Openness
+^^^
 
 How easy is it to use this infrastructure to facilitate collaboration and access for community members within and between institutions.
 
 **Why it matters**: Many communities exist across institutional boundaries (for example, a cross-university collaboration). However, many services put up barriers to access that allows them to track your information, pay for service, or prevent certain kinds of people from getting in. This may have a negative impact on your community's ability to collaborate and grow.
 
-### Cutting edge
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+
+Cutting edge
+^^^
 
 How closely does this infrastructure track the latest developments in data science, interactive computing, and cloud technology?
 
 **Why it matters**: The world of data science and open source tools is constantly improving and evolving. The same is true for cloud infrastructure. Keeping up to date with these developments is a lot of work, but results in a much better experience for your community's users.
+:::
+::::
 
 ## Overview of services
 
