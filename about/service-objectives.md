@@ -3,7 +3,7 @@
 This page describes the **Service Level Objectives** (SLOs) of 2i2c's infrastructure services[^slos].
 These are our goals in running infrastructure for the communities that we serve.
 They indicate what our users can expect when using the infrastructure we support.
-They will evolve over time as we get feedback from communities we serve, and learn more about how to best deliver impact via our services.
+They will evolve over time as we get feedback and learn how to best deliver impact via our services.
 
 :::{note}
 2i2c does not currently have a **Service Level Agreement** (SLAs), and the SLOs here are not legally-binding.
@@ -31,7 +31,7 @@ In the future, we plan to run an audit of our infrastructure and practices, and 
 ### Intentional downtime
 
 In some cases there may be intentional downtime for the infrastructure that we run.
-For example, if we need to undergo major maintenance of infrastructure transitions, it may necessitate bringing down the infrastructure for a few hours.
+For example, if we need to undergo major maintenance of infrastructure transitions.
 
 - We will communicate with communities before any intentional downtime.
 - We will aim for downtime windows that happen outside of heavy usage.
@@ -42,7 +42,7 @@ For example, if we need to undergo major maintenance of infrastructure transitio
 
 There are some periods of time when we have **expected reduced capacity**.
 These are periods of time when we are less strict about adhering to the service objectives on this page.
-This ensures that our work practices are sustainable for our team and avoid burnout.
+This ensures that our work practices are sustainable and fair for our team.
 
 Here are periods of expected reduced capacity:
 
@@ -61,8 +61,7 @@ For this reason, we commit to developing a support process that is efficient in 
 
 - We have a dedicated communications channel for support (see [](../support.md)).
 - At least one team member is always tasked with monitoring this channel.
-- We will acknowledge receipt of this ticket within 24 working hours.
-- We will triage support requests within 24 working hours.
+- We will triage support requests and respond to them within 24 working hours.
 - Support requests related to degraded user experience will be prioritized over changes and enhancement requests.
 - For major or complex outages, we will re-direct capacity on our engineering team to resolve them.
 
