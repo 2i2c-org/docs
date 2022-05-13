@@ -19,6 +19,7 @@ We invest in continous development to improve the resiliency and efficiency of t
 
 - Communities should feel comfortable relying on 2i2c's services for critical educational and research needs.
 - There should not be prolonged periods of service disruption for any community.
+- When outages do occur, we will prioritize these over other work that our team is doing.
 
 :::{admonition} To be refined...
 It is a known anti-pattern to define an ambiguous SLO like "24/7".
