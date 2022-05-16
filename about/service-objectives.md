@@ -82,7 +82,7 @@ See [](tc:support:process) for our team's support process.
 Our goal is to be more rapid in responding, communicating, and resolving support requests during incidents.
 Our ability to meet these objectives will depend on the times they are reported relative to the working hours of our support team.
 
-- We will triage and respond to Incidents within 6 working hours.
+- We will triage and respond to Incidents within 8 working hours.
 - We will prioritize resolving Inicdents over any other Change requests.
 - For major or complex outages, we will re-direct capacity on our engineering team to resolve them.
 
