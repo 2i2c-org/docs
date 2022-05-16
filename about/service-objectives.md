@@ -19,6 +19,7 @@ We invest in continous development to improve the resiliency and efficiency of t
 
 - Communities should feel comfortable relying on 2i2c's services for critical educational and research needs.
 - There should not be prolonged periods of service disruption for any community.
+- We will invest in monitoring and reporting infrastructure to detect outages quickly and before they impact end-users.
 - When outages do occur, we will prioritize these over other work that our team is doing.
 
 :::{admonition} To be refined...
@@ -39,7 +40,7 @@ For example, if we need to undergo major maintenance of infrastructure transitio
 - We will communicate with communities when the expected downtime is over.
 
 (objectives:reduced-capacity)=
-### Reduced capacity
+### Reduced team capacity
 
 There are some periods of time when we have **expected reduced capacity**.
 These are periods of time when we are less strict about adhering to the service objectives on this page.
@@ -54,6 +55,11 @@ Here are periods of expected reduced capacity:
 If this is disruptive to your community's activies, please reach out and we can discuss.
 However, we encourage you to avoid planning mission-critical events or actions during periods of expected reduced capacity.
 
+:::{admonition} A note on timezones
+Remember that 2i2c's team is distributed globally, and our working time zone may be different from yours.
+We aim to have team members in time zones that are working at the same time as the communities we serve, but there may occasionally be mis-matches in working hours.
+:::
+
 (objectives:support)=
 ## Support responsiveness
 
@@ -67,8 +73,8 @@ We define two types of support with 2i2c:
 Below are our objectives broken down by the type of support they relate to.
 
 :::{seealso}
-See [](../support.md) for more information about contacting support.
-See [](tc:support:process) for our team's support process.
+- See [](../support.md) for more information about contacting support.
+- See [](tc:support:process) for our team's support process.
 :::
 
 ### General support objectives
