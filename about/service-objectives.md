@@ -59,18 +59,37 @@ However, we encourage you to avoid planning mission-critical events or actions d
 
 Support is one of the most important services that 2i2c provides, especially when there are problems or outages.
 For this reason, we commit to developing a support process that is efficient in responding to issues that communities bring to us.
+We define two types of support with 2i2c:
 
-- We have a dedicated communications channel for support (see [](../support.md)).
-- At least one team member is always tasked with monitoring this channel.
-- We will triage support requests and respond to them within 24 working hours.
-- Support requests related to degraded user experience will be prioritized over changes and enhancement requests.
-- For major or complex outages, we will re-direct capacity on our engineering team to resolve them.
+- **Change Requests** are general requests for changes or improvements to a community's hub. For example, updating the environment or improving an open source tool.
+- **Incidents** are requests connected with significant degraded service for one or more communities. For example, a system-wide outage or inability of users to log-in.
+
+Below are our objectives broken down by the type of support they relate to.
 
 :::{seealso}
 See [](../support.md) for more information about contacting support.
 See [](tc:support:process) for our team's support process.
 :::
 
+### General support objectives
+
+- We have a dedicated communications channel for support (see [](../support.md)).
+- At least one team member is always tasked with monitoring this channel.
+- Our support team is communicative, helpful, and [abides by our Code of Conduct](tc:code-of-conduct).
+
+### Incident support objectives
+
+Our goal is to be more rapid in responding, communicating, and resolving support requests during incidents.
+Our ability to meet these objectives will depend on the times they are reported relative to the working hours of our support team.
+
+- We will triage and respond to Incidents within 6 working hours.
+- We will prioritize resolving Inicdents over any other Change requests.
+- For major or complex outages, we will re-direct capacity on our engineering team to resolve them.
+
+### Change Request support objectives
+
+- We will triage support requests and respond to them within 24 working hours.
+- We will prioritize resolving Change Requests by balancing them against our other development priorities as described in {doc}`our Support Team Process documentation <tc:projects/managed-hubs/support>`)
 
 (objectives:cost)=
 ## Costs and cloud flexibility
