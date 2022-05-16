@@ -67,8 +67,9 @@ Support is one of the most important services that 2i2c provides, especially whe
 For this reason, we commit to developing a support process that is efficient in responding to issues that communities bring to us.
 We define two types of support with 2i2c:
 
-- **Change Requests** are general requests for changes or improvements to a community's hub. For example, updating the environment or improving an open source tool.
 - **Incidents** are requests connected with significant degraded service for one or more communities. For example, a system-wide outage or inability of users to log-in.
+- **Change Requests** are general requests for changes or improvements to a community's hub. For example, updating the environment or improving an open source tool.
+- **Guidance Requests** are questions or requests for conversations to discuss infrastructure decisions, provide guidance, etc.
 
 Below are our objectives broken down by the type of support they relate to.
 
@@ -92,10 +93,10 @@ Our ability to meet these objectives will depend on the times they are reported 
 - We will prioritize resolving Inicdents over any other Change requests.
 - For major or complex outages, we will re-direct capacity on our engineering team to resolve them.
 
-### Change Request support objectives
+### Change and Guidance Request support objectives
 
-- We will triage support requests and respond to them within 24 working hours.
-- We will prioritize resolving Change Requests by balancing them against our other development priorities as described in {doc}`our Support Team Process documentation <tc:projects/managed-hubs/support>`.
+- We will triage Change and Guidance requests and respond to them within 24 working hours.
+- We will prioritize resolving Change and Guidance Requests by balancing them against our other development priorities as described in {doc}`our Support Team Process documentation <tc:projects/managed-hubs/support>`.
 
 (objectives:cost)=
 ## Costs and cloud flexibility
