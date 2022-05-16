@@ -95,7 +95,7 @@ Our ability to meet these objectives will depend on the times they are reported 
 ### Change Request support objectives
 
 - We will triage support requests and respond to them within 24 working hours.
-- We will prioritize resolving Change Requests by balancing them against our other development priorities as described in {doc}`our Support Team Process documentation <tc:projects/managed-hubs/support>`)
+- We will prioritize resolving Change Requests by balancing them against our other development priorities as described in {doc}`our Support Team Process documentation <tc:projects/managed-hubs/support>`.
 
 (objectives:cost)=
 ## Costs and cloud flexibility
@@ -106,8 +106,7 @@ They also rely on us to provide infrastructure that is dynamic and meets the nee
 There is an inherent tension between doing things quickly (which generally requires using extra resources to encourage speed) and cost efficiency (because you pay for those extra resources).
 This is particularly relevant during sharp increases in hub usage.
 
-- Communities should feel comfortable that moderate increases in usage will not result in instability.
-- Communities should feel comfortable that this flexibility does not result in unexpected cloud costs.
+- Communities should feel comfortable that moderate increases in usage will not result in instability, and that this flexibility does not result in unexpectedly high cloud costs.
 - We should provide this flexibility in a way that is sustainable for our team.
 - If infrastructure requires steady, but semi-random usage, we should prioritize cost efficiency.
 - If infrastructure will have known spikes of activity, we may temporarily favor speed over cost by asking for extra resources from the cloud provider.
