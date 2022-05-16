@@ -65,7 +65,7 @@ We aim to have team members in time zones that are working at the same time as t
 
 Support is one of the most important services that 2i2c provides, especially when there are problems or outages.
 For this reason, we commit to developing a support process that is efficient in responding to issues that communities bring to us.
-We define two types of support with 2i2c:
+We define three types of support with 2i2c:
 
 - **Incidents** are requests connected with significant degraded service for one or more communities. For example, a system-wide outage or inability of users to log-in.
 - **Change Requests** are general requests for changes or improvements to a community's hub. For example, updating the environment or improving an open source tool.
