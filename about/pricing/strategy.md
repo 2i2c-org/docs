@@ -33,7 +33,7 @@ These are based on major use-cases in the communities we have served.
 
 - **Educational communities** need basic hubs that are reliable, secure, and that serve a community of users. They tend to charge course fees and can recoup some costs this way. Assume 22 educational hubs per engineer.
 - **Research communities** need a bit more power and complexity, and potentially access to more cloud infrastructure and data. They tend to have grant funding for fixed periods of time that is enough to cover an internal FTE. Assume 13 research hubs per engineer.
-- **Partnerships** happen with more advanced / well-resourced communities that want more bespoke infrastructure and new development, and we want a service option that allows for this flexibility. This pricing is bespoke, but we should assume around 5 partnerships per engineer for these engagements.
+- **Partnerships** happen with more advanced / well-resourced communities that want more bespoke infrastructure and new development, and we want a service option that allows for this flexibility. It takes significant extra effort to define and carry out these more complex relationships, and we should only engage in them if they cover a larger percentage of our costs. We'll use a lower-bound of at least 5 partnerships per engineer for these engagements.
 
 Below is a table which summarizes these major points
 
@@ -43,7 +43,7 @@ Below is a table which summarizes these major points
 |:---------------:|:----------------------:|:---------------------:|:---------------------------:|:----------------------------:|
 |    Education    |       $250,000.00      |           22          |          $12,000.00         |           $1,000.00          |
 |     Research    |       $250,000.00      |           14          |          $18,000.00         |           $1,500.00          |
-|   Partnership   |       $250,000.00      |           5           |          $50,000.00         |           $4,166.67          |
+|   Partnership   |       $250,000.00      |           5           |          >=$50,000.00        |           $4,166.67          |
 
 ### Markup for running on dedicated clusters
 
