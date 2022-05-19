@@ -57,7 +57,7 @@ These are based on major use-cases in the communities we have served.
 
 - **Educational communities** need basic hubs that are reliable, secure, and that serve a community of users. They tend to charge course fees and can recoup some costs this way. Assume 22 educational hubs per engineer.
 - **Research communities** need a bit more power and complexity, and potentially access to more cloud infrastructure and data. They tend to have grant funding for fixed periods of time that is enough to cover an internal FTE. Assume 13 research hubs per engineer.
-- **Partnerships** happen with more advanced / well-resourced communities that want more bespoke infrastructure and new development, and we want a service option that allows for this flexibility. It takes significant extra effort to define and carry out these more complex relationships, and we should only engage in them if they cover a larger percentage of our costs. We'll use a lower-bound of at least 5 partnerships per engineer for these engagements.
+- **Partnerships** happen with more advanced / well-resourced communities that want more bespoke infrastructure and new development, and we want a service option that allows for this flexibility. It takes significant extra effort to define and carry out these more complex relationships, and we should only engage in them if they cover a larger percentage of our costs. We'll use a lower-bound of 20% FTE per engineer for these engagements (ie, at-most 5 partnership-level engagements per engineer), though we suspect most will require more FTE time than this.
 
 Below is a table which summarizes these major points
 
