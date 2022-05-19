@@ -22,11 +22,16 @@
 # %%
 # Download feature matrix
 from pathlib import Path
-
+import sys
 import pandas as pd
 
 
 URL_FEATURE_MATRIX = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5p52Wu166vKpcjTu9jf5J2yNG6c_C2-pHRkNLGQwKN2gJ_1UoGlalaglsgtBfQ7W0-aTP11phpgSA/pub?gid=1864974850&single=true&output=csv"
+
+path_csv = Path("../build_assets/feature-matrix.csv")
+if path_csv.exists():
+    print("Feature table exists, skipping update. Delete to re-generate it.")
+    sys.exit(0)
 
 print("Updating feature table...")
 features = pd.read_csv(URL_FEATURE_MATRIX)
@@ -71,5 +76,5 @@ df = pd.concat(df)
 # Saving for re-use in Sphinx
 
 # %%
-df.to_csv("../build_assets/feature-matrix.csv", index=None)
+df.to_csv(path_csv, index=None)
 print("Finished updating feature table...")
