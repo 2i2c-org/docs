@@ -63,11 +63,11 @@ Below is a table which summarizes these major points
 
 % Generated with https://www.tablesgenerator.com/markdown_tables
 
-| Type of service | Annual cost / engineer | N hubs max / engineer | Avg Annual Cost per service | Avg Monthly Cost per service |
-|:---------------:|:----------------------:|:---------------------:|:---------------------------:|:----------------------------:|
-|    Education    |       $250,000.00      |           22          |          $12,000.00         |           $1,000.00          |
-|     Research    |       $250,000.00      |           14          |          $18,000.00         |           $1,500.00          |
-|   Partnership   |       $250,000.00      |           5           |          >=$50,000.00        |           $4,166.67          |
+| Type of service | Annual cost / engineer | % Eng. FTE | N Hubs / Eng. | Monthly fee | Annual fee total |
+|:---------------:|:----------------------:|:----------:|:-------------:|:-----------:|:----------------:|
+|    Education    |       $250,000.00      |    4-5%    |       22      |  $1,000.00  |    $12,000.00    |
+|     Research    |       $250,000.00      |    7-8%    |       14      |  $1,500.00  |    $18,000.00    |
+|   Partnership   |       $250,000.00      |    >=20%   |      <=5      |  $4,166.67  |   >=$50,000.00   |
 
 ### Markup for running on dedicated clusters
 
