@@ -114,7 +114,8 @@ Check out [](../admin/howto/replicate.md) for information about replicating a 2i
 ```{toctree}
 :hidden:
 distributions/index
-../new-hub
+shared-responsibility
 roles
+../new-hub
 2i2c
 ```
