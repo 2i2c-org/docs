@@ -16,7 +16,7 @@ The following material was adapted from the
 ## The JupyterHub Filesystem
 
 Your notebook server is a linux "virtual machine" with its own filesystem.
-Your are not on a shared server; you are on your own private server.
+You are not on a shared server; you are on your own private server.
 
 The easiest way to move files in and out of your home directory is via the JupyterLab web interface.
 Drag a file into the file browser to upload, and right-click to download back out.
@@ -26,7 +26,7 @@ However, you can’t ssh in!
 ### Your Home Directory
 
 Your username is ``jovyan``, and your home directory is ``/home/jovyan``.
-This is the same for all users, but no one else can see or access the files *your* home directory.
+This is the same for all users, but no one else can see or access the files in *your* home directory.
 
 ``/home/jovyan`` is a persistant network-attached drive. Any files you put there will be there when you
 log out and log back into the JupyterHub. 
