@@ -3,7 +3,7 @@
 Many things must be done to successfully run a hub for a community.
 Some of them are content-focused, some are community-focused, others are infrastructure-focused.
 
-2i2c's aim is to **share responsiblity for each hub** with the communities we serve. We do this by defining the responsibilities that are a good fit for the skills and goals of each organization.
+2i2c's aim is to **share responsibility for each hub** with the communities we serve. We do this by defining the responsibilities that are a good fit for the skills and goals of each organization.
 This "Shared Responsibility Model" is a useful way to understand what actions communities are still expected to perform under a service agreement with 2i2c.[^1]
 
 [^1]: This is inspired by the [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) from Amazon Web Services.
