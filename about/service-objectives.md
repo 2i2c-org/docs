@@ -90,7 +90,7 @@ Our goal is to be more rapid in responding, communicating, and resolving support
 Our ability to meet these objectives will depend on the times they are reported relative to the working hours of our support team.
 
 - We will triage and respond to Incidents within 8 working hours **at most**. We will on average respond to Incidents within **2 working hours**.
-- We will prioritize resolving Inicdents over any other Change requests.
+- We will prioritize resolving Incidents over any other Change requests.
 - For major or complex outages, we will re-direct capacity on our engineering team to resolve them.
 
 ### Change and Guidance Request support objectives
