@@ -45,18 +45,18 @@ However, for some communities we may take on more or less responsibility and adj
 :columns: 10
 
 1. Advocating for the DataHub's usage to the Berkeley community.
-1. Guiding, teaching, and sharing skills on the DataHub with others
-1. Providing requests and feedback for changes to the DataHub infrastructure
-1. Providing user support for questions related to their use-case
-1. Performing straightforward environment changes
-1. Doing basic administrative tasks on the hub (adding users, joining user sessions, etc)
-1. Identifying when there is an outage, and escalating to the proper team to resolve them.
-1. Performing more complex environment changes
-1. Overseeing changes to the Kubernetes configuration of the hub
-1. Adding or removing hubs and doing the corresponding clean-up
-1. Performing development of the open source tools in JupyterHub/Jupyter/related tools
-1. Performing upgrades and improvements to the hub's cloud infrastructure
-1. Responding to and resolving incidents related to Kubernetes and cloud infrastructure
+2. Guiding, teaching, and sharing skills on the DataHub with others
+3. Providing requests and feedback for changes to the DataHub infrastructure
+4. Providing user support for questions related to their use-case
+5. Performing straightforward environment changes
+6. Doing basic administrative tasks on the hub (adding users, joining user sessions, etc)
+7. Identifying when there is an outage, and escalating to the proper team to resolve them.
+8. Performing more complex environment changes
+9. Overseeing changes to the Kubernetes configuration of the hub
+10. Adding or removing hubs and doing the corresponding clean-up
+11. Performing development of the open source tools in JupyterHub/Jupyter/related tools
+12. Performing upgrades and improvements to the hub's cloud infrastructure
+13. Responding to and resolving incidents related to Kubernetes and cloud infrastructure
 
 :::
 
