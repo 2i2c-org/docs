@@ -11,7 +11,9 @@ This "Shared Responsibility Model" is a useful way to understand what actions co
 ## Why follow this model
 
 We use a Shared Responsibility model because we believe that it leads to the best service for the communities that we serve.
-Our main goal is to ensure that each hub service is maximally impactful for the community it serves, and that it achieves this impact in the most efficient way possible.
+Our main goal is to ensure that each hub service is maximally impactful for the community it serves, and that it achieves this impact in the most efficient way possible.[^ironies-automation]
+
+[^ironies-automation]: Even when collaborating with engineering expertise in other organizations, we describe our service model in terms of areas of responsibility, rather than "tiers" of service that provide "burst capacity" or support only on an as-needed basis. This is because service "tiers" often leads to anti-patterns where support is needed from a person that is not empowered to be efforted in their duties (e.g., if they have been away from infrastructure for many months, and only after a series of escalations are needed to debug something). For more information on this, see [the Ironies of Automation](https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf) as well as [this post](https://blog.acolyer.org/2020/01/08/ironies-of-automation/) and [this post](https://www.thinkautomation.com/automation-advice/the-ironies-of-automation-explored/) explaining its relevance to technology and service delivery.
 
 To do that, we want to do two things:
 
@@ -20,7 +22,9 @@ To do that, we want to do two things:
 
 Our challenge is to figure out which responsibiltiies should lie with the community, and which should lie with the 2i2c team, to strike this balance of impact and efficiency.
 
-The other reason we follow this model is that it helps us follow the [Community Right to Replicate](https://2i2c.org/right-to-replicate) their infrastructure. We think of our community hubs as being a collaboration between 2i2c and the communities that use it, and this framing helps us be explicit about where we fit into the picture.
+We also follow this model because it helps us ensure the [Community Right to Replicate](https://2i2c.org/right-to-replicate) their infrastructure.
+We think of our community hubs as being a collaboration between 2i2c and the communities that use it, and this framing helps us be explicit about where we fit into the picture.
+By defining the roles and responsibilities that we take on via our services, this provides a natural place for other communities to take on some responsibility if they have the capacity to do so.
 
 ## Example responsibilities
 
