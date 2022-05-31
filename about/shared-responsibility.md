@@ -22,7 +22,7 @@ To do that, we want to do two things:
 
 Our challenge is to figure out which responsibiltiies should lie with the community, and which should lie with the 2i2c team, to strike this balance of impact and efficiency.
 
-We also follow this model because it helps us ensure the [Community Right to Replicate](https://2i2c.org/right-to-replicate) their infrastructure.
+We also follow this model because it helps us ensure that the community has the [Right to Replicate](https://2i2c.org/right-to-replicate) their infrastructure.
 We think of our community hubs as being a collaboration between 2i2c and the communities that use it, and this framing helps us be explicit about where we fit into the picture.
 By defining the roles and responsibilities that we take on via our services, this provides a natural place for other communities to take on some responsibility if they have the capacity to do so.
 
