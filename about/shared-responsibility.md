@@ -48,9 +48,9 @@ However, for some communities we may take on more or less responsibility and adj
 :::{grid-item}
 :columns: 10
 
-1. Advocating for the DataHub's usage to the Berkeley community.
-2. Guiding, teaching, and sharing skills on the DataHub with others
-3. Providing requests and feedback for changes to the DataHub infrastructure
+1. Advocating for the JupyterHub's usage to its user community.
+2. Guiding, teaching, and sharing skills on the JupyterHub with others
+3. Providing requests and feedback for changes to the JupyterHub infrastructure
 4. Providing user support for questions related to their use-case
 5. Performing straightforward environment changes
 6. Doing basic administrative tasks on the hub (adding users, joining user sessions, etc)
