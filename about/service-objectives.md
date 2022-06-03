@@ -38,6 +38,10 @@ For example, if we need to undergo major maintenance of infrastructure transitio
 - We will communicate with communities before any intentional downtime.
 - We will aim for downtime windows that happen outside of heavy usage.
 - We will communicate with communities when the expected downtime is over.
+:::{admonition} This may change
+We are still exploring how to effectively communicate and schedule work around intentional downtime, and our processes may change.
+[See this issue for example](https://github.com/2i2c-org/team-compass/issues/423).
+:::
 
 (objectives:reduced-capacity)=
 ### Reduced team capacity
@@ -89,13 +93,15 @@ Below are our objectives broken down by the type of support they relate to.
 Our goal is to be more rapid in responding, communicating, and resolving support requests during incidents.
 Our ability to meet these objectives will depend on the times they are reported relative to the working hours of our support team.
 
-- We will triage and respond to Incidents within 8 working hours **at most**. We will on average respond to Incidents within **2 working hours**.
+- We will triage and respond to Incidents within **at most one working day**[^working-day]. We will **on average** respond to Incidents significantly faster than this, but do not commit to a specific timeline until we gain more experience.
 - We will prioritize resolving Incidents over any other Change requests.
 - For major or complex outages, we will re-direct capacity on our engineering team to resolve them.
 
+[^working-day]: We define a "working day" as a continuous 24 hour period between Monday and Friday. Our team and communities we serve are split across many time zones, and thus we use this more general definition of a working day rather than something timezone-specific.
+
 ### Change and Guidance Request support objectives
 
-- We will triage Change and Guidance requests and respond to them within 24 working hours.
+- We will triage Change and Guidance requests and respond to them within one working day.
 - We will prioritize resolving Change and Guidance Requests by balancing them against our other development priorities as described in {doc}`our Support Team Process documentation <tc:projects/managed-hubs/support>`.
 
 (objectives:cost)=
