@@ -61,6 +61,7 @@ intersphinx_mapping = {
 }
 
 rediraffe_redirects = {
+    "about/strategy/service-objectives.md": "about/service-objectives.md",
 }
 
 # Disable linkcheck for anchors because it throws false errors for any JS anchors

@@ -8,7 +8,6 @@ We aim to run this pilot for several months, gaining experience and sharpening o
 This page describes the major strategy of the 2i2c Managed JupyterHubs pilot.
 
 ```{toctree}
-service-objectives.md
 roadmap.md
 ```
 
