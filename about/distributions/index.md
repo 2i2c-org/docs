@@ -74,7 +74,7 @@ By default all 2i2c JupyterHub get their own URL with the following form:
 <hub-name>.<community-name>.2i2c.cloud
 ```
 
-Each 2i2c JupyterHub has **hub name** (denoted by `<hub-name>`) and a **community name** (denoted by `<community-name>`). Communities are collections of hubs around a particular community or collaboration. Each community infrastructure may be run by different teams. For more information, see [](people-behind-hubs).
+Each 2i2c JupyterHub has a **hub name** (denoted by `<hub-name>`) and a **community name** (denoted by `<community-name>`). Communities are collections of hubs around a particular community or collaboration. Each community infrastructure may be run by different teams. For more information, see [](../service/team.md).
 
 It is also possible to provide your own URL that points to a 2i2c JupyterHub.
 

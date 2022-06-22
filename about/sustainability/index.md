@@ -1,4 +1,4 @@
-# Pricing and costs
+# Sustainability and pricing
 
 2i2c pools resources from communities in order to sustain and grow our team.
 We do this by charging fees for our services, and supplementing these fees with grants and donations.

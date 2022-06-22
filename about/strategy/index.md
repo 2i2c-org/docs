@@ -1,4 +1,4 @@
-# Strategy and goals
+# Objectives and strategy
 
 2i2c aims to make interactive computing infrastructure more accessible through a sustainable and scalable service model.
 The 2i2c Managed JupyterHubs Pilot is an attempt at building infrastructure, process, and a sustainability model for this service.
@@ -8,6 +8,7 @@ We aim to run this pilot for several months, gaining experience and sharpening o
 This page describes the major strategy of the 2i2c Managed JupyterHubs pilot.
 
 ```{toctree}
+service-objectives.md
 roadmap.md
 ```
 
@@ -43,7 +44,7 @@ In the pilot, we will focus on a subset of use-cases that we believe are impactf
 
 ## Our pricing strategy 
 
-See [](../pricing/index.md) for information about our pricing and cost strategy.
+See [](../sustainability/index.md) for information about our pricing and cost strategy.
 
 (strategy:growth)=
 ## Our growth model
@@ -58,7 +59,7 @@ We can increase our capacity by making infrastructure and process improvements, 
 In the early phases of this pilot, we will focus on the former, and as our infrastructure and process is refined, we will consider the latter.
 In either case, we should choose a pricing model that gives us enough buffer to be able to hire new team members when the right time comes.
 
-To carry this out, we'll take on new communities in "batches" and define pricing models for each that at least cover [our estimated costs](../pricing/costs/people.md).
+To carry this out, we'll take on new communities in "batches" and define pricing models for each that at least cover [our estimated costs](../sustainability/costs/people.md).
 When we take on a new batch of communities, we should feel some tension as it challenges our process, support, and infrastructure in new ways.
 As we make process and infrastructure improvements, will self-assess whether our capacity has grown.
 If it has grown enough, we'll decide to bring on more communities.
