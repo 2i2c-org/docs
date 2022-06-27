@@ -1,6 +1,6 @@
 # User and community support
 
-As a part of the {term}`Collaborative JupyterHub Service`, we define two different kinds of user-support.
+As a part of the {term}`Managed JupyterHub Service`, we define two different kinds of user-support.
 Documentation about each can be found at the links below.
 
 - **Change requests and incidents** are discussions around making changes to infrastructure in order to improve the hub service for users or to resolve outages.
