@@ -1,7 +1,7 @@
 (about-the-project)=
 # Overview of the service
 
-This section describes a high-level overview of our {term}`Collaborative JupyterHub Service` and the major teams, processes, and expectations around this service for both 2i2c and the partner community we work with.
+This section describes a high-level overview of our {term}`Managed JupyterHub Service` and the major teams, processes, and expectations around this service for both 2i2c and the partner community we work with.
 This page provides some high-level information to help you get started, and the sections below go into more detail on our service model and structure.
 
 ```{toctree}
@@ -21,7 +21,7 @@ Send us an email.
 ## What is the hub service?
 
 ```{glossary}
-Collaborative JupyterHub Service
+Managed JupyterHub Service
   An open, scalable, sustainable cloud service for interactive computing environments in research and education.
   It follows a "DevOps as a Service" model where communities in research and education can pay for managed cloud infrastructure that runs on an entirely open source stack, and give you [the right to replicate your infrastructure](https://2i2c.org/right-to-replicate).
 
@@ -32,7 +32,7 @@ Collaborative JupyterHub Service
 
 ## Who is this service for?
 
-2i2c's Collaborative JupyterHub Service is designed for communities in research and education who want the following things:
+2i2c's Managed JupyterHub Service is designed for communities in research and education who want the following things:
 
 1. Access to the latest technology in Jupyter and interactive computing for collaborative and scalable data science running in the cloud.
 2. To utilize open source, community-driven tools and standards.

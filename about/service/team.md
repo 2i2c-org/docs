@@ -1,12 +1,12 @@
 (about/roles-for-service)=
 # Team structure and roles
 
-The Collaborative JupyterHub Service is a **collaborative cloud service** run in partnership with the communities that we serve.
+The Managed JupyterHub Service is a **collaborative cloud service** run in partnership with the communities that we serve.
 This page describes the major teams and roles that are involved in running this service.
 
 ## Teams and key stakeholders
 
-The Collaborative JupyterHub Service is composed of a {term}`Service Team` along with three sub-teams.
+The Managed JupyterHub Service is composed of a {term}`Service Team` along with three sub-teams.
 
 ```{figure} https://drive.google.com/uc?export=download&id=16r5xE7SguunLfMh5LhSynSUfjb7IXs_n
 An overview of the major teams that collaborate around the cloud service in order to serve a community of users. There are three main teams, and this diagram shows the major traits of each team, as well as a few ways in which they interact with one another.
@@ -15,7 +15,7 @@ An overview of the major teams that collaborate around the cloud service in orde
 ### Service team structure
 
 ```{glossary}
-Collaborative JupyterHub Service Team
+Managed JupyterHub Service Team
 Service Team
   The group of people that collaborate together to run a collaborative cloud service. It is comprised of three major sub-teams:
 
