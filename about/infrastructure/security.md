@@ -10,6 +10,15 @@ This project follows the principle of "secure by default", and has a number of c
 
 As members of the JupyterHub team, we are constantly looking for ways to improve [the security of Zero to JupyterHub](https://zero-to-jupyterhub.readthedocs.io/en/latest/administrator/security.html), and use our experience running these hubs to further improve JupyterHub's security.
 
+
+## Data privacy
+
+2i2c will not collect user data for any purpose beyond what is required in order to run a JupyterHub.
+Depending on the choices of your community the hub might contain identifiable information (e.g., e-mail addresses used as usernames for authentication), but this will remain within your hub's configuration and is not shared publicly.
+
+Our {term}`Cloud Engineering Team` will have access to all of the information that is inside a hub (which it requires in order to debug problems and and assist with upgrades), however we will not retain any of this data or move it *outside* of the hub, and will not retain it once the hub is shut down (except in order to transfer data to you at your request).
+
+
 ## Cryptocurrency mining
 
 Cryptocurrency mining abuse occurs when users take advantage of cloud CPU in order to make money by mining cryptocurrency.

@@ -78,13 +78,13 @@ We define three types of support with 2i2c:
 Below are our objectives broken down by the type of support they relate to.
 
 :::{seealso}
-- See [](../support.md) for more information about contacting support.
+- See [](../../support.md) for more information about contacting support.
 - See [](tc:support:process) for our team's support process.
 :::
 
 ### General support objectives
 
-- We have a dedicated communications channel for support (see [](../support.md)).
+- We have a dedicated communications channel for support (see [](../../support.md)).
 - At least one team member is always tasked with monitoring this channel.
 - Our support team is communicative, helpful, and [abides by our Code of Conduct](tc:code-of-conduct).
 
@@ -120,7 +120,7 @@ This is particularly relevant during sharp increases in hub usage.
 - If spikes in activity will come just after a holiday or weekend, we may make these changes a few days early to avoid working off-hours.
 
 :::{seealso}
-See [](pricing/index.md) for more information about costs.
+See [](../sustainability/index.md) for more information about costs.
 :::
 
 

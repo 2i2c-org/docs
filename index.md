@@ -1,8 +1,17 @@
-# 2i2c Documentation
+# Service Guide
 
-2i2c has several major sources of documentation to help you learn more about our services, our technology, and our organization.
+This is the primary documentation for 2i2c's Collaborative JupyterHub Service.
+It is the primary source of information about the service, though some service documentation can be found on other sites.
 
 Check out the links above in order to navigate across various 2i2c documentation resources, and see the links below for some explanations and pointers.
+
+## Service documentation locations
+
+Documentation about this service is split in three primary locations:
+
+- [`docs.2i2c.org`](https://docs.2i2c.org): An overview of the Collaborative JupyterHub Service, as well as documentation that is relevant to {term}`Service Team` members that are outside of 2i2c (such as JupyterHub Administration, User Guides, Pricing, etc). This is most service documentation.
+- [`team-compass.2i2c.org/managed-hubs/index`](https://team-compass.2i2c.org/managed-hubs/index): Documentation about {term}`Service Team` processes that are primarily relevant to 2i2c team members. We put this documentation here to prevent [`docs.2i2c.org`](https://docs.2i2c.org) from getting too cluttered.
+- [`infrastructure.2i2c.org`](https://infrastructure.2i2c.org): Our {term}`Cloud Engineering Team` and cloud infrastructure documentation.
 
 ## About the service
 
@@ -11,37 +20,14 @@ These sections describe the hub service at an organizational level.
 ```{toctree}
 :maxdepth: 2
 :caption: About the service
-about/overview
-about/pricing/index
-about/service-objectives
+about/service/index
+about/infrastructure/index
+about/support/index
+about/sustainability/index
 about/strategy/index
 ```
 
-If you'd like a hub for your community, click one of the buttons below!
-
-```{button-ref} about/overview
-:color: primary
-:class: float-left mr-2
-About the JupyterHub Service
-```
-
-```{button-ref} new-hub
-:color: primary
-Get a hub
-```
-
-## Hub User Guide
-
-This user guide explains how users should interact with their hub environment.
-
-```{toctree}
-:maxdepth: 1
-:caption: Hub User Guide
-
-user/storage
-```
-
-## Hub Administration topics
+## Hub Administrator Guide
 
 These guides have information on how hub admins can perform specific
 tasks on their hubs, mostly without requiring any interaction with
@@ -51,6 +37,7 @@ tasks on their hubs, mostly without requiring any interaction with
 :maxdepth: 1
 :caption: Hub Administration topics
 
+admin/howto/new-hub
 admin/howto/configurator
 admin/howto/environment/index
 admin/howto/content
@@ -65,26 +52,12 @@ about/terminology
 
 ## Use-case guides
 
-These are guides that cover particular use-cases with JupyterHubs managed by 2i2c.
+These guides cover particular use-cases, workflows, and actions that user communities often wish to take with a hub.
 
 ```{toctree}
 :maxdepth: 1
-:caption: Use-case guides
+:caption: Hub User Guide
 
+user/storage
 usecase/events
 ```
-
-## Our Infrastructure Guide
-
-The 2i2c Team Infrastructure guide is what we use to document how to develop and operate the cloud infrastructure that is run by 2i2c.
-It contains all the details about how our infrastructure is deployed, how we make changes to it, and team processes around ensuring site reliability.
-
-[**Our infrastructure Guide**](https://infrastructure.2i2c.org)
-
-## Our Team Compass
-
-Transparency and collaboration is at the heart of 2i2c's mission.
-We host a public "Team Compass" that provides all of the organization-level policies, practices, and strategy for our team and community.
-If you'd like to answer any question about 2i2c as an organization, this is the place to look.
-
-[**Our Team Compass**](https://team-compass.2i2c.org)

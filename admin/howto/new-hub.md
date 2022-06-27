@@ -1,4 +1,4 @@
-# Get a new JupyterHub
+# Start a new hub service
 
 These instructions describe how to set up a new hub for your community.
 Follow the sections below to do so.
@@ -8,13 +8,14 @@ Follow the sections below to do so.
 2i2c runs JupyterHubs as a service in exchange for a managed service fee.
 Before getting a hub for your community, speak with a 2i2c representative to agree on the details of your service as well as the managed service fee.
 
-You can [learn more about the 2i2c Managed JupyterHub Service here](about/overview.md).
+You can [learn more about the 2i2c Managed JupyterHub Service here](../../about/service/index.md).
 
 If you're interested in getting a hub for your community, click the button below.
 
-```{button-ref} about/overview
+```{button-ref} ../../about/service/index
 :color: primary
 :class: float-left mr-3
+:ref-type: doc
 Learn more about the service
 ```
 
@@ -44,4 +45,4 @@ Feel free to communicate with the team members in that issue to help clarify how
 ## Get support
 
 Once the hub is up and running, you should use the 2i2c support channels to get support in modifying your hub.
-See [](support.md) for instructions on how to do this.
+See [](../../support.md) for instructions on how to do this.

@@ -1,10 +1,10 @@
 # -- Project information -----------------------------------------------------
 
-project = "Hub Service Guide"
-copyright = "2021"
+project = "Service Guide"
+copyright = "2022"
 author = "2i2c"
 version = "0.1alpha"
-master_doc = "index"
+main_doc = "index"
 
 # -- General configuration ---------------------------------------------------
 
@@ -61,7 +61,9 @@ intersphinx_mapping = {
 }
 
 rediraffe_redirects = {
-    "about/strategy/service-objectives.md": "about/service-objectives.md",
+    "about/overview.md": "about/service/index.md",
+    "about/service/roles.md": "about/service/team.md",
+    "about/pricing/index.md": "about/sustainability/index.md",
 }
 
 # Disable linkcheck for anchors because it throws false errors for any JS anchors
