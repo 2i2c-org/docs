@@ -10,7 +10,7 @@ Check out the links above in order to navigate across various 2i2c documentation
 Documentation about this service is split in three primary locations:
 
 - [`docs.2i2c.org`](https://docs.2i2c.org): An overview of the Managed JupyterHub Service, as well as documentation that is relevant to {term}`Service Team` members that are outside of 2i2c (such as JupyterHub Administration, User Guides, Pricing, etc). This is most service documentation.
-- [`team-compass.2i2c.org/managed-hubs/index`](https://team-compass.2i2c.org/managed-hubs/index): Documentation about {term}`Service Team` processes that are primarily relevant to 2i2c team members. We put this documentation here to prevent [`docs.2i2c.org`](https://docs.2i2c.org) from getting too cluttered.
+- [`team-compass.2i2c.org/managed-hubs/index`](https://team-compass.2i2c.org/en/latest/projects/managed-hubs/index.html): Documentation about {term}`Service Team` processes that are primarily relevant to 2i2c team members. We put this documentation here to prevent [`docs.2i2c.org`](https://docs.2i2c.org) from getting too cluttered.
 - [`infrastructure.2i2c.org`](https://infrastructure.2i2c.org): Our {term}`Cloud Engineering Team` and cloud infrastructure documentation.
 
 ## About the service
