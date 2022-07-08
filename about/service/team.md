@@ -27,7 +27,7 @@ Service Team
 Cloud Engineering Team
 Engineering Team
   A team of engineers with expertise in cloud infrastructure and open source tools that we use as part of our services. This group of people oversees the cloud infrastructure that a community uses. They perform new development and upgrades, make changes per the request of {term}`Community Representatives`, and coordinate with the {term}`Community Support Team` during incidents and outages.
-  This is roughly equivalent to a {term}`tc:Cloud Engineering Team`.
+  This is roughly equivalent to a [Site Reliability Engineering Team](https://en.wikipedia.org/wiki/Site_reliability_engineering).
 
   See [our Infrastructure documentation](https://infrastructure.2i2c.org/en/latest/) for more information.
 
