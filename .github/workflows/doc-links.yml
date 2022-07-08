@@ -1,21 +1,15 @@
-name: Test documentation for broken links
+name: Build documentation and check links
+
 on:
-  pull_request:
   workflow_dispatch:
+  schedule:
+  # Runs at 1am each day.
+  - cron: '0 1 * * *'
 
 jobs:
+  # ref: https://github.com/2i2c-org/.github/blob/main/.github/workflows/documentation-link-check.yaml
   linkcheck:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-      - name: Install docs requirements
-        run: pip install -r requirements.txt
-      
-      - name: make linkcheck
-        run: |
-          make linkcheck SPHINXOPTS='--color -W --keep-going'
+    uses: 2i2c-org/.github/.github/workflows/documentation-link-check.yaml@main
+    with:
+      docs_path: .
+      requirements_path: requirements.txt
