@@ -1,6 +1,4 @@
-# Data management
-
-## Share data files with your users
+# Share data files with your users
 
 Sometimes you might need to distribute a set of files to all
 your users, so they don't have to re-download it once per person.
