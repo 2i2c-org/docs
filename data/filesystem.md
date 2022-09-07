@@ -1,4 +1,4 @@
-# User directories
+# Filesystem and user directory
 
 Your notebook server is a linux "virtual machine" with its own filesystem.
 You are not on a shared server; you are on your own private server.
@@ -19,6 +19,16 @@ log out and log back into the JupyterHub.
 The ``/home/jovyan`` space is typically limited to 10 GB. Consequently, your home directory is intended 
 only for notebooks, analysis scripts, and small datasets (< 1 GB). It is not an appropriate place to store 
 large datasets.
+
+### Modify your bash profile
+
+You may edit your bash profile at `~/.bash_profile`.
+However, **be careful** because some edits may have unanticipated consequences.
+For example, if you change your shell such that it can no longer launch a Jupyter Server, then your session will fail to start.
+This may happen if you **change your default shell** to something like [zsh](https://ohmyz.sh/).
+
+If you change your `~/.bash_profile` and something suddenly breaks, try reverting the change to this file.
+If your session can no longer start, [email support](support:email) as this file may need to be manually edited or deleted.
 
 ## The `shared` Directory
 

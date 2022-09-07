@@ -15,7 +15,7 @@ Some quick recommendations for how to handle data:
 For more information, see the sections below.
 
 ```{toctree}
-hub-filesystem
+filesystem
 git
 sharing
 cloud
