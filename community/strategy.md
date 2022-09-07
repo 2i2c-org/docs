@@ -19,7 +19,18 @@ Below are a few that 2i2c has interacted with in the past (in alphabetical order
 Communities may wish to develop a code of conduct to define the expectations and guidelines for how others can behave within a community.
 This is an important and complex part of building healthy community culture.
 
+A Code of Conduct should not be adopted lightly, as it will define the cultural norms and policies that guide the behavior of your community.
+Make sure that you adopt a CoC that works for your community and its values.
+
 Below are several pointers to help you get started.
+
+:::{admonition} Think about enforcement
+:class: tip
+
+Make sure that you commit to **enforcing** your Code of Conduct and providing support and training for the people tasked with doing so.
+See [this blog post](https://vsoch.github.io/2022/code-of-conduct/) and [this blog post](https://www.fast.ai/2020/10/28/code-of-conduct/) for two examples of what happens when an enforcement policy is not carried out properly.
+Many of the resources below have excellent suggestions for how to set up a system for enforcement.
+:::
 
 ### Example CoCs
 
