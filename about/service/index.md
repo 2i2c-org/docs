@@ -1,5 +1,5 @@
 (about-the-project)=
-# Overview of the service
+# Service model
 
 This section describes a high-level overview of our {term}`Managed JupyterHub Service` and the major teams, processes, and expectations around this service for both 2i2c and the partner community we work with.
 This page provides some high-level information to help you get started, and the sections below go into more detail on our service model and structure.

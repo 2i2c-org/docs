@@ -1,4 +1,4 @@
-# The JupyterHub Filesystem
+# User directories
 
 Your notebook server is a linux "virtual machine" with its own filesystem.
 You are not on a shared server; you are on your own private server.

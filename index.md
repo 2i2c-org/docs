@@ -27,44 +27,45 @@ about/sustainability/index
 about/strategy/index
 ```
 
-## Users
+## Use the hub
 
 Covers end-user workflows that are common for cloud-native workflows with interactive computing.
 
 ```{toctree}
 :maxdepth: 2
-:caption: Users
+:caption: Use the hub
 
-io/index.md
-community/events.md
+data/index.md
 ```
 
-## Community leaders
 
-Covers topics relevant to those that are leading others in a community.
-
-```{toctree}
-:caption: Community leaders
-:maxdepth: 2
-
-community/content.md
-community/strategy.md
-```
-
-## Hub administrators
+## Administer the hub
 
 Information for those with the **hub administrator** role on a JupyterHub.
 These cover many things that you can do to manage and configure your hub and its infrastructure.
 
 ```{toctree}
 :maxdepth: 2
-:caption: Hub Administrators
+:caption: Administer the hub
 
 admin/howto/configurator
 admin/howto/environment/index
 admin/howto/manage-users
 admin/howto/control-user-server
 admin/topics/network
+```
+
+## Community leadership
+
+Covers topics relevant to those that are leading others in a community.
+
+```{toctree}
+:caption: Community leadership
+:maxdepth: 2
+
+community/events.md
+community/content.md
+community/strategy.md
 ```
 
 ## Community representatives

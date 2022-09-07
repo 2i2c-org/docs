@@ -7,7 +7,7 @@ They keys are strings, and the values are bytes of data.
 Data is read and written using HTTP calls.
 
 The performance of object storage is very different from file storage.
-On one hand, each individual read / write to object storage has a high overhead (10-100 ms), since it has to go over the network.
+On one hand, each individual `read / write` to object storage has a high overhead (10-100 ms), since it has to go over the network.
 On the other hand, object storage “scales out” nearly infinitely, meaning that we can make hundreds, thousands, or millions of concurrent reads / writes.
 This makes object storage well suited for distributed data analytics.
 However, data analysis software must be adapted to take advantage of these properties.

@@ -1,4 +1,4 @@
-# Hub distributions and features
+# Overview of hub features
 
 2i2c builds and operates **distributions of JupyterHubs** that are tailored for particular use-cases.
 These services share many of the same infrastructure components, but have customizations and optimizations that are more domain- or community-specific.
@@ -11,13 +11,6 @@ See [our strategy page](../strategy/index.md) for an overview of what we're hopi
 
 For more information about specific hub distributions, see the links below.
 Otherwise, read onward for high-level information about all of our Managed JupyterHubs.
-
-```{toctree}
-:maxdepth: 1
-:caption: Types of hub services
-education
-research
-```
 
 ## What technology makes up each hub?
 
