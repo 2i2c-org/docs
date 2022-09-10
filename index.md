@@ -44,6 +44,7 @@ admin/howto/content
 admin/howto/manage-users
 admin/howto/control-user-server
 admin/howto/data
+admin/howto/encrypted-support
 admin/howto/replicate
 admin/howto/create-billing-account
 admin/topics/network
