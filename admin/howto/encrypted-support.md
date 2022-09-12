@@ -3,7 +3,7 @@
 Sometimes community representatives need to send us *encrypted* information -
 usually credentials for cloud access or an authentication system. We use
 [age](https://age-encryption.org/) (pronounced *aghe*) to allow such information to
-be encrypted and then sent to use in a way that *anyone* on the team can decrypt,
+be encrypted and then sent to us in a way that *anyone* on the team can decrypt,
 rather than the information be tied to a single engineer. You'll be directed to this
 page by 2i2c support if we require something encrypted from you.
 
