@@ -22,6 +22,7 @@ These sections describe the hub service at an organizational level.
 :caption: About the service
 about/service/index
 about/infrastructure/index
+policy/index
 about/support/index
 about/sustainability/index
 about/strategy/index
