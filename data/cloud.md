@@ -1,96 +1,4 @@
-# Files and Data in the Cloud
-
-This page describes how files and data storage are handled in 2i2c Hubs.
-The high-level summary of recommendations is:
-- Use your home directory to store code, notebooks, and small data files (<1 GB)
-  for personal use
-- Use cloud object storage to store larger datasets and to share data across your team
-- Consider whether your project would benefit from other cloud-native data storage
-  solutions such as a database, data warehouse, or data lake
-
-:::{admonition} Attribution
-The following material was adapted from the
-[Pangeo Cloud User Guide](https://pangeo.io/cloud.html)
-:::
-
-## The JupyterHub Filesystem
-
-Your notebook server is a linux "virtual machine" with its own filesystem.
-You are not on a shared server; you are on your own private server.
-
-The easiest way to move files in and out of your home directory is via the JupyterLab web interface.
-Drag a file into the file browser to upload, and right-click to download back out.
-You can also open a terminal via the JupyterLab launcher and use this to ssh / scp / ftp to remote systems.
-However, you can’t ssh in!
-
-### Your Home Directory
-
-Your username is ``jovyan``, and your home directory is ``/home/jovyan``.
-This is the same for all users, but no one else can see or access the files in *your* home directory.
-
-``/home/jovyan`` is a persistant network-attached drive. Any files you put there will be there when you
-log out and log back into the JupyterHub. 
-
-The ``/home/jovyan`` space is typically limited to 10 GB. Consequently, your home directory is intended 
-only for notebooks, analysis scripts, and small datasets (< 1 GB). It is not an appropriate place to store 
-large datasets.
-
-#### Changing your bash profile
-
-You may edit your bash profile at `~/.bash_profile`.
-However, **be careful** because some edits may have unanticipated consequences.
-For example, if you change your shell such that it can no longer launch a Jupyter Server, then your session will fail to start.
-This may happen if you **change your default shell** to something like [zsh](https://ohmyz.sh/).
-
-If you change your `~/.bash_profile` and something suddenly breaks, try reverting the change to this file.
-If your session can no longer start, [email support](support:email) as this file may need to be manually edited or deleted.
-
-### The `shared` Directory
-
-All users have a directory called `shared` in their home directory.
-This is a *readonly* directory - anybody on the hub can *access* and *read from* the `shared` directory.
-The hub administrator may choose to distribute shared materials via this directory.
-The `shared` directory is not intended as a way for hub users to share data with each other.
-
-### The `/tmp` Directory
-
-Any directory outside of ``/home/jovyan`` is emphemeral on Cloud-hosted JupyterHubs. This means if you 
-add data or scripts under a writeable directory like `/tmp/myfile.txt` *it will not be there when you
-log out and log back in*. 
-
-Nevertheless, `/tmp` is a convenient location for storing data temporarily 
-because it is a fast SSD drive. The space available depends on your server but will generally be much 
-larger than ``/home/jovyan`` (50-100s of GB).
-
-## Using Git / GitHub
-
-The recommended way to move code in and out of the hub is via git / GitHub.
-You should clone your project repo from the terminal and use git pull / git push to update and push changes.
-In order to push data to GitHub from the hub, you will need to set up GitHub authentication.
-[gh-scoped-creds](https://github.com/yuvipanda/gh-scoped-creds/) should be already setup
-on your 2i2c managed JupyterHub, and we shall use that to authenticate to GitHub for
-push / pull access.
-
-Open a terminal in JupyterHub, run `gh-scoped-creds` and follow the prompts.
-
-Alternatively, in a notebook, run the following code and follow the prompts:
-
-```
-import gh_scoped_creds
-%ghscopedcreds
-```
-
-You should now be able to push to GitHub from the hub! These credentials will expire after
-8 hours (or whenever your JupyterHub server stops), and you'll have to repeat these steps
-to fetch a fresh set of credentials. Once you authenticate, you'll be provided with a link
-to a [GitHub App](https://docs.github.com/en/developers/apps/getting-started-with-apps/about-apps)
-that you have to [install](https://docs.github.com/en/developers/apps/managing-github-apps/installing-github-apps)
-on the repositories you want to be able to push to from this particular JupyterHub. You only
-need to do this once per JupyterHub, and can revoke access any time. You can always provide
-access to your own personal repositories, but might need approval from admins of GitHub
-organizations if you want to push to repos in that organization.
-
-## Cloud Object Storage
+# Cloud Object Storage
 
 Your hub lives in the cloud.
 The preferred way to store data in the cloud is using [cloud object storage](https://aws.amazon.com/what-is-cloud-object-storage/), such as Amazon S3 or Google Cloud Storage.
@@ -99,12 +7,12 @@ They keys are strings, and the values are bytes of data.
 Data is read and written using HTTP calls.
 
 The performance of object storage is very different from file storage.
-On one hand, each individual read / write to object storage has a high overhead (10-100 ms), since it has to go over the network.
+On one hand, each individual `read / write` to object storage has a high overhead (10-100 ms), since it has to go over the network.
 On the other hand, object storage “scales out” nearly infinitely, meaning that we can make hundreds, thousands, or millions of concurrent reads / writes.
 This makes object storage well suited for distributed data analytics.
 However, data analysis software must be adapted to take advantage of these properties.
 
-### Cloud-Native Formats
+## Cloud-Native Formats
 
 Cloud-native file formats are formats that are designed from the beginning to
 work well with cloud object storage.
@@ -122,7 +30,7 @@ There are other more specialized cloud-optimized formats for specific scientific
 
 It is recommended to use cloud-native formats when working with big data in cloud object storage.
 
-### Working with Object Storage
+## Working with Object Storage
 
 From a user perspective, the main challenge of working with object storage is the need
 to use more specialized tools, rather than just simple files / filenames, to manage data.
@@ -144,7 +52,7 @@ Separate fsspec packages exist for each type of object storage:
 Each system has its own unique mechanisms for authentication and authorization;
 consult the documentation links above for more details.
 
-#### Reading Data
+### Reading Data
 
 When reading data from cloud object storage, you have two general options:
 - Download the data to the local filesystem; this is fine for small data, but not suitable for
@@ -163,7 +71,7 @@ import xarray as xr
 ds = xr.open_dataset("s3://mur-sst/zarr/", engine="zarr", storage_options={"anon": True})
 ```
 
-#### Writing Data
+### Writing Data
 
 Writing data (and reading private data) requires credentials for authentication.
 2i2c does not provide credentials to individual users.
@@ -204,7 +112,7 @@ home directory and then use it as follows:
 
 You can then read / write private files with the ``gcs`` object.
 
-### Scratch Bucket
+## Scratch Bucket
 
 Some 2i2c environments are configured with a "scratch bucket," which
 allows you to temporarily store data (for example, when you need to store intermediate files during data transformations).
@@ -238,7 +146,7 @@ Still, you should not store any sensitive or mission-critical data in
 the scratch bucket.
 :::
 
-### Data Catalogs
+## Data Catalogs
 
 To make it easier to discover share data in your project, it is recommended to use
 data catalogs.

@@ -6,6 +6,8 @@ They describe the major technologies that are used, what kinds of use-cases and 
 ```{toctree}
 :maxdepth: 2
 ../distributions/index.md
+../distributions/education
+../distributions/research
 security.md
 ```
 

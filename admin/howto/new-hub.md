@@ -1,4 +1,4 @@
-# Start a new hub service
+# Begin a new hub service
 
 These instructions describe how to set up a new hub for your community.
 Follow the sections below to do so.
