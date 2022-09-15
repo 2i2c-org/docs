@@ -23,6 +23,7 @@ They are meant for individuals who wish to learn about the service for their own
 :caption: About the service
 about/service/index
 about/infrastructure/index
+policy/index
 about/sustainability/index
 about/strategy/index
 ```
@@ -38,7 +39,6 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 data/index.md
 ```
 
-
 ## Administer the hub
 
 Information for those with the **hub administrator** role on a JupyterHub.
@@ -52,6 +52,7 @@ admin/howto/configurator
 admin/howto/environment/index
 admin/howto/manage-users
 admin/howto/control-user-server
+admin/howto/encrypted-support
 admin/topics/network
 ```
 
