@@ -34,7 +34,7 @@ and this files must only be visible to the users that they're addressed to.
 For example, uploading graded notebook assignements in each user's home directory.
 
 If such a workflow is needed, then an additional `allusers` directory can be enabled for **administrators only**,
-where all the hub users' directory are aceessible to read and modify. Please reach out to us if you'd like this
+where all the hub users' directories are accessible to read and modify. Please reach out to us if you'd like this
 feature enabled.
 
 ```{warning}
