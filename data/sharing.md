@@ -27,6 +27,22 @@ share data files with all users.
   This is the *same folder* as the `shared` directory, but writeable!
   Any files admins put here will be immediately visible in all users' `shared` directories.
 
+## The `allusers` directory - available upon request
+
+Sometimes, hub Administrators might need to share data files with the users,
+and this files must only be visible to the users that they're addressed to.
+For example, uploading graded notebook assignements in each user's home directory.
+
+If such a workflow is needed, then an additional `allusers` directory can be enabled for **administrators only**,
+where all the hub users' directories are accessible to read and modify. Please reach out to us if you'd like this
+feature enabled.
+
+```{warning}
+Please keep in mind that enabling this feature, means that any admin user could access all users' home directories,
+and possibly delete them by accident, if not careful.
+So, this feature should be used with extra caution!
+```
+
 ## A workflow for sharing datasets
 
 To share datasets with users, admins should put the dataset in
