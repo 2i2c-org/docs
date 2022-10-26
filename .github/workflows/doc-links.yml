@@ -9,6 +9,9 @@ on:
 jobs:
   # ref: https://github.com/2i2c-org/.github/blob/main/.github/workflows/documentation-link-check.yaml
   linkcheck:
+    # don't run cron job on forks
+    # ref: https://github.com/orgs/community/discussions/26684
+    if: github.repository == '2i2c-org/docs'
     uses: 2i2c-org/.github/.github/workflows/documentation-link-check.yaml@main
     with:
       docs_path: .
