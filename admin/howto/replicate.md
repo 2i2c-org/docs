@@ -29,7 +29,9 @@ This will zip up the contents of your user file system and download them to your
 :::{note}
 If your hub is using a [custom user environment](environment/custom), it needs the
 [jupyter-tree-download](https://github.com/ryanlovett/jupyter-tree-download) package
-installed to make this feature available.
+installed to make this feature available. As it is a Jupyter Notebook extension, you
+*must* install this in your image - manually installing with `!pip` inside your notebook
+will *not* work.
 :::
 
 ## Replicate your own 2i2c JupyterHub
