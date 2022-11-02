@@ -94,7 +94,7 @@ if you add them later, their files will still be present.
 ### Finding usernames
 
 Access is granted or revoked based on `usernames`, and these depend on the kind
-of (authentication provider)[admin/configuration/authentication] your hub is
+of [authentication provider](admin/configuration/authentication) your hub is
 using. In general, it matches whatever the visible 'username' in your
 authentication provider is. The table below lists the available providers, and
 how to determine their username.
