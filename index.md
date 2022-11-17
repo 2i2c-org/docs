@@ -21,11 +21,9 @@ They are meant for individuals who wish to learn about the service for their own
 ```{toctree}
 :maxdepth: 2
 :caption: About the service
+about/service/options
 about/service/index
 about/infrastructure/index
-policy/index
-about/sustainability/index
-about/strategy/index
 ```
 
 ## Use the hub
@@ -36,6 +34,7 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 :maxdepth: 2
 :caption: Use the hub
 
+policy/index
 data/index.md
 ```
 
@@ -48,11 +47,11 @@ These cover many things that you can do to manage and configure your hub and its
 :maxdepth: 2
 :caption: Administer the hub
 
+support
 admin/howto/configurator
 admin/howto/environment/index
 admin/howto/manage-users
 admin/howto/control-user-server
-admin/howto/encrypted-support
 admin/topics/network
 ```
 
@@ -79,7 +78,6 @@ These tend to cover technical, administrative, and collaborative processes for i
 :maxdepth: 2
 
 admin/howto/new-hub
-about/support/index
 admin/howto/replicate
 admin/howto/create-billing-account
 ```

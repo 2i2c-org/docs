@@ -63,7 +63,7 @@ intersphinx_mapping = {
 rediraffe_redirects = {
     "about/overview.md": "about/service/index.md",
     "about/service/roles.md": "about/service/team.md",
-    "about/pricing/index.md": "about/sustainability/index.md",
+    "about/pricing/index.md": "about/service/options.md",
 }
 
 # Disable linkcheck for anchors because it throws false errors for any JS anchors

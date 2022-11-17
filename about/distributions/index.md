@@ -4,10 +4,17 @@
 These services share many of the same infrastructure components, but have customizations and optimizations that are more domain- or community-specific.
 
 :::{note}
-Our services are in an "alpha" state - we are still learning a lot about the best way that these hubs can serve communities in research and education.
-The infrastructure and service may change over the coming months!
-See [our strategy page](../strategy/index.md) for an overview of what we're hoping to do and where we're headed next.
+Our services are in an "alpha" state, and the service may change over the coming months!
+See {external:tc:doc}`2i2c's strategy page in the Team Compass <organization/strategy>` for an overview of what we're hoping to do and where we're headed next.
 :::
+
+
+```{figure} https://drive.google.com/uc?export=download&id=1vL8ekAtUQ4TEik4-oWIn36VAOITdlmpR
+:width: 80%
+
+A high-level technical overview of an Interactive Computing Service collaboratively run by 2i2c and a community of practice. Each hub is a JupyterHub Distribution with a collection of community-led open source projects that are customized for a particular use-case.
+```
+
 
 For more information about specific hub distributions, see the links below.
 Otherwise, read onward for high-level information about all of our Managed JupyterHubs.

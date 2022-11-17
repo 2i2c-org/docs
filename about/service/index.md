@@ -8,7 +8,8 @@ This page provides some high-level information to help you get started, and the 
 :maxdepth: 1
 team
 shared-responsibility
-2i2c
+service-objectives.md
+comparison
 ```
 
 If you're interested in setting up a service for your community, click the button below to send us an email.

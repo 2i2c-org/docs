@@ -1,10 +1,9 @@
 # User authentication and access
 
-
 ## Authentication vs. Authorization
 
-**Authentication** allows your users to prove who their are.
-**Authorization** gives users certain permissions depending on their identity (such as "access to your hub", or "administrative privileges").
+- **Authentication** allows your users to prove who their are.
+- **Authorization** gives users certain permissions depending on their identity (such as "access to your hub", or "administrative privileges").
 
 (admin/configuration/authentication)=
 ### Authentication
@@ -13,7 +12,7 @@ Users can prove who they are by logging in via an *authentication provider*. Cur
 
 1. *Google*. This includes public `@gmail.com` accounts, as well as [Google Workspace](https://workspace.google.com/) accounts set up for your workspace or university. If you use the GMail interface to access your work / university email, it can be used here.
 
-2. [*GitHub*](https://github.com/). Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub ddmin panel]((admin/management/admin-panel)), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
+2. [*GitHub*](https://github.com/). Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub admin panel](admin/management/admin-panel), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
 
 3. Username / Password via [auth0](https://auth0.com/docs/connections/database).
    A traditional username / password interface where users can sign up. There are currently [limited

@@ -83,7 +83,7 @@ Community Representatives
 
 Hub Administrator
 Hub Administrators
-  Trusted community members that perform common administrative operations on a hub that do not require intervention from a {term}`tc:Hub Engineer`.
+  Trusted community members that perform common administrative operations on a hub that do not require intervention from a Hub Engineer.
   {term}`Community Representatives` are the first Hub Administrators, and they may add new Hub Administrators via the JupyterHub interface.
   They are able to add users, start/stop servers, and generally have more control over operations on the hub.
 
