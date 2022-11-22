@@ -17,6 +17,14 @@ This page describes how you can encrypt information and send it to us!
 2. Run `age -e -r age1mmx8hfzalmn3tmpryrfvcud5vyfakxdfqe683r40qkr6pjd2ag6s72cat5 -a` on
    your terminal, and paste the contents of the message you want to encrypt. Press enter,
    then `Ctrl-D`. Make sure to copy this exactly!
+   
+   ```{note}
+   The parameter passed to `-r` (ag1mmx....) is the public key used to *encrypt* the message,
+   which we can decrypt with our private key. Providing it as part of the command makes it
+   easier to distribute the public key, as otherwise users would have to download and manage
+   a public key file.
+   ```
+
 3. `age` will print the encrypted version of your message on your terminal, and it'll look
    something like this:
 
