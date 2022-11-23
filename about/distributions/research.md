@@ -10,6 +10,7 @@ This hub deployment is designed for researchers and teams that wish to do their 
 
 Below is a diagram that showcases some of the major components of this hub:
 
+% automatically downloaded in conf.py
 ```{figure} /images/scalable_research_hub.png
 
 A high level overview of major components in a scalable computing hub.
