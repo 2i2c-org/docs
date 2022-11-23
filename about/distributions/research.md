@@ -1,5 +1,5 @@
 (hub-types:scalable-research)=
-# Scalable computing hub
+# Research and collaboration
 
 Scalable computing hubs are designed to let researchers and data scientists leverage cloud infrastructure to facilitate collaboration and interactive computation.
 They are heavily inspired by [the Pangeo Community infrastructure](https://pangeo.io).
@@ -10,7 +10,7 @@ This hub deployment is designed for researchers and teams that wish to do their 
 
 Below is a diagram that showcases some of the major components of this hub:
 
-```{figure} https://drive.google.com/uc?export=download&id=1gWAIQVKcB-uxuJsBHqlDlRTq88oki1zn
+```{figure} /images/scalable_research_hub.png
 
 A high level overview of major components in a scalable computing hub.
 ```

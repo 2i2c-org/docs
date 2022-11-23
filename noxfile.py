@@ -11,6 +11,7 @@ def docs(session):
         AUTOBUILD_IGNORE = [
             "_build",
             "build_assets",
+            "images/shared_responsibility_diagram.png",
         ]
         cmd = ["sphinx-autobuild"]
         for folder in AUTOBUILD_IGNORE:

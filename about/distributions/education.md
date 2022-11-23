@@ -1,5 +1,5 @@
 (hub-types:education)=
-# Collaborative learning hub
+# Education and teaching
 
 The 2i2c Educational Hubs provide learning environments and infrastructure that is meant for teaching data science.
 These hubs are inspired by 2i2c's experience with the [DataHubs at UC Berkeley](https://docs.datahub.berkeley.edu/en/latest/) and the [Syzygy service](https://syzygy.ca/) for Canada.
@@ -11,7 +11,8 @@ This hub deployment is designed for distributed learning for students with a var
 
 Below is a diagram that showcases some of the major components of this hub:
 
-```{figure} https://drive.google.com/uc?export=download&id=1Mr51-s3D_KHPsAuTXbczaQ7mlPZUs9gm
+% automatically downloaded in conf.py
+```{figure} /images/collaborative_learning_hub.png
 
 A high level overview of major components in a collaborative learning hub.
 ```

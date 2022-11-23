@@ -10,13 +10,6 @@ For some excellent comprehensive guides, we also recommend reading these two res
 - [The Principles of Open Scholarly Infrastructure](https://openscholarlyinfrastructure.org/) describes how infrastructure and services can align themselves with the mission and values of the scholarly community. We recommend that you use services that align closely with these principles.
 - [The Values and Principles Framework and Assessment Checklist](https://commonplace.knowledgefutures.org/pub/5se1i1qy/release/4) is an assessment checklist to help those in the scholarly community choose services that are aligned with the mission and values of the scholarly community.
 
-:::{tip}
-The content on this page can be re-used as a part of "price reasonableness and comparisons" forms when completing contracting for communities.
-
-In each section below, we'll list a few similar companies and services that can be compared with 2i2c.
-Their presence and ordering do not constitute an "endorsement" and are not exhaustive - we are merely trying to be transparent and helpful about the other organizations in this space.
-:::
-
 ## 2i2c's qualifications
 
 ```{epigraph}
@@ -33,7 +26,7 @@ This page describes why we believe that 2i2c and its service model is uniquely s
 The content on this page can be re-used as a part of "uniqueness and sole source justification" forms when completing contracting for communities.
 :::
 
-### 2i2c has expertise in managed cloud infrastructure in research and education
+### Expertise in managed cloud infrastructure in research and education
 
 Our team has developed and managed cloud infrastructure for over 5 years - first at our previous institutions and now as a part of 2i2c.
 We follow modern practices for Site Reliability Engineering with cloud infrastructure like Kubernetes and JupyterHub.
@@ -47,14 +40,14 @@ Here are a few of the major projects our team memebers have been involved in ove
 - [The Syzygy Project](https://syzygy.ca/) - A network of federated JupyterHubs for more than 15 Canadian Universities running on national infrastructure.
 - [The Jupyter Book](https://jupyterbook.org) and [MyST Markdown](https://myst.jupyterbook.org/) projects - A collection of tools and standards for improving scientific and technical communication and authoring with interactive computing.
 
-### 2i2c has expertise in open source workflows and Jupyter
+### Expertise in open source workflows and Jupyter
 
 2i2c's team is comprised of several "[Distinguished Contributors](https://jupyter.org/about)" in the Jupyter ecosystem, which is a crucial technical component of this service.
 We are [core team members of JupyterHub and Binder](https://jupyterhub-team-compass.readthedocs.io/en/latest/team/index.html), and make regular contributions across the Jupyter ecosystem.
 Moreover, our team has many years of experience with all aspects of the Jupyter stack and we are comfortable interacting with open source communities everywhere.
 This makes 2i2c uniquely capable of both utilizing and improving this technology through upstream contributions.
 
-### 2i2c has expertise with research and education workflows
+### Expertise with research and education workflows
 
 2i2c has years of experience managing cloud resources specifically for research and education communities.
 We have led and contributed to projects like [the Binder Project](https://docs.mybinder.org/), [the Pangeo Project](https://pangeo.io/), [the Syzygy Project](https://syzygy.ca/), [the UC Berkeley DataHubs](https://docs.datahub.berkeley.edu/en/latest/), and [the Jupyter Book project](https://jupyterbook.org) to serve thousands of users in the research and education community.
@@ -62,16 +55,12 @@ As a non-profit, we have defined our mission in order to serve research and educ
 We strive to build an understanding of their needs, to represent their interests in the Jupyter and open source ecosystem, and to collaborate with them in our operations and development.
 2i2c is uniquely positioned to serve as a collaborator for research and education via these efforts.
 
-### 2i2c is a transparent, collaborative non-profit
+### A transparent, collaborative non-profit
 
 2i2c is a mission-driven non-profit organization that has a commitment to doing its work openly, transparently, and inclusively.
 Our mission is to provide researchers and educators with the infrastructure they need to do their work, and to support open source communities that underlie this infrastructure.
 2i2c is governed by a [Steering Council](tc:structure:steerco) made of members from the research and education community.
 2i2c manages all of our work in public spaces, including [all of our infrastructure](http://github.com/2i2c-org/infrastructure) as well as [all of our organizational strategy and practices](http://team-compass.2i2c.org/).
-
-### The bottom line
-
-In short, there is no other organization in existence with a focus on open source workflows with Jupyter, extensive expertise in cloud infrastructure and JupyterHub, a commitment to managing non-proprietary and vendor-agnostic tools, a core practice of making upstream contributions to community-run infrastructure, and a non-profit and mission-driven structure.
 
 
 ## Major factors to consider
@@ -202,7 +191,7 @@ How closely does this infrastructure track the latest developments in data scien
 ## Overview of services
 
 Below is a short table summarizing the kinds of services discussed below, and how they (roughly) perform for each of the factors discussed above.
-It makes some simplifications and assumptions, and is meant to be a quick and "glanceable" way to compare options:
+It makes some simplifications and assumptions, and is meant to be a quick and "glanceable" way to compare options.
 
 ::::{grid} 3
 :margin: 1
@@ -292,8 +281,15 @@ It makes some simplifications and assumptions, and is meant to be a quick and "g
   - 🟧
 :::
 
+In addition, jump to a quick explanation of each type of service below:
+
+:::{contents} Jump to service description
+:depth: 1
+:local:
+:::
+
 (compare:2i2c)=
-## 2i2c's managed cloud service
+### 2i2c's managed cloud service
 
 As a non-profit, we choose our prices to move forward on a sustainable path to achieve our mission according to {external:tc:ref}`our cost model <costs:human>` as well as {external:tc:ref}`our growth model <strategy:growth>`.
 Our service entails developing and managing entirely open-source, vendor-agnostic, and community-driven infrastructure that is customized for research and education.
@@ -336,7 +332,7 @@ Updates
 : 2i2c's team follows the latest developments in Jupyter and cloud infrastructure, and continuously incorporates them into our managed hubs.
 
 (compare:internal)=
-## Internal staffing
+### Internal staffing
 
 The most common way for organizations to achieve similar services is to staff their own internal teams.
 2i2c encourages this, as it is aligned with our commitment to open source, vendor-agnostic tools, and the [Right to Replicate your infrastructure](https://2i2c.org/right-to-replicate).
@@ -386,7 +382,7 @@ We constantly adjust our own prices and team compensation to be responsive to th
 :::
 
 (compare:public-infra)=
-## Large-scale public infrastructure
+### Large-scale public infrastructure
 
 Depending on the state or country that you live in, you may be able to access large-scale shared infrastructure that is run by government agencies.
 For example, the [XSEDE](https://www.xsede.org/) program in the United States provides shared infrastructure that you can access with an application.
@@ -431,7 +427,7 @@ Updates
 : There are more complex processes, bureaucracy, and constraints that manage the maintenance of large-scale infrastructure, and this means it tends to evolve and improve more slowly.
 
 (compare:consulting)=
-## Consulting companies
+### Consulting companies
 
 Many companies specialize in technical consulting that is flexible and tailored to an organization's needs.
 They can build bespoke infrastructure using an open source stack that is similar to the one that 2i2c offers.
@@ -475,7 +471,7 @@ Updates
 : Depends on the consultancy, and their expertise in cloud infrastructure.
 
 (compare:saas)=
-## Software as a Service Products
+### Software as a Service Products
 
 There are many companies offering services and platforms via a subscription fee.
 The experience from a user's perspective may be similar and they may offer some open source tools as part of their services.
@@ -514,10 +510,3 @@ Accessible
 
 Updates
 : Dependent on the platform. Most SaaS providers do a reasonable job of staying up to date with modern data and cloud workflows, though they tend to include new features in the form of custom or proprietary workflows.
-
-
-## Bottom line
-
-There is a large ecosystem of vendors and services available for interactive data science.
-2i2c believes that interactive computing is emerging as the vital medium for communications in research and education communities. As a result, we suggest that universities and research communities should build atop non-proprietary tools and commit to services that are vendor-agnostic and respect your [Right to Replicate your infrastructure](https://2i2c.org/right-to-replicate).
-You should think about the constraints and principles that you'd like your infrastructure to follow, and choose the right approach for your organization.
