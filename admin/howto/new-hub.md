@@ -28,7 +28,7 @@ Send us an email
 
 The Community Representative is the main point of contact between the community and the 2i2c Engineering Team.
 There can be up to two Community Representatives per hub.
-See [](about/roles-for-service) for more details on this role.
+See [](../../about/service/shared-responsibility.md) for more details on this role.
 
 ## Fill in the "New Hub" GitHub template
 
