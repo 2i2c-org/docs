@@ -61,9 +61,13 @@ intersphinx_mapping = {
 }
 
 rediraffe_redirects = {
+    # Added around 2022-09
     "about/overview.md": "about/service/index.md",
-    "about/service/roles.md": "about/service/team.md",
     "about/pricing/index.md": "about/service/options.md",
+
+    # Added 2022-11-29
+    "about/service/roles.md": "about/service/shared-responsibility.md",
+    "about/service/team.md": "about/service/shared-responsibility.md",
 }
 
 # Disable linkcheck for anchors because it throws false errors for any JS anchors
