@@ -6,8 +6,8 @@ It is divided into a number of **roles and personas** with relevant topics for e
 :::{seealso}
 Here are a few other locations with relevant information about 2i2c's services.
 
-- [`team-compass.2i2c.org/managed-hubs/index`](https://team-compass.2i2c.org/en/latest/projects/managed-hubs/index.html): Documentation about {term}`Service Team` processes that are primarily relevant to 2i2c team members. We put this documentation here to prevent [`docs.2i2c.org`](https://docs.2i2c.org) from getting too cluttered.
-- [`infrastructure.2i2c.org`](https://infrastructure.2i2c.org): Our {term}`Cloud Engineering Team` and cloud infrastructure documentation.
+- [`team-compass.2i2c.org/managed-hubs/index`](https://team-compass.2i2c.org/en/latest/projects/managed-hubs/index.html): Documentation about {team}`Service Team` processes that are primarily relevant to 2i2c team members. We put this documentation here to prevent [`docs.2i2c.org`](https://docs.2i2c.org) from getting too cluttered.
+- [`infrastructure.2i2c.org`](https://infrastructure.2i2c.org): Our {team}`Cloud Engineering Team` and cloud infrastructure documentation.
 :::
 
 This documentation is structured into sections that are meant for various **roles and personas**.
@@ -21,11 +21,8 @@ They are meant for individuals who wish to learn about the service for their own
 ```{toctree}
 :maxdepth: 2
 :caption: About the service
+about/service/options
 about/service/index
-about/infrastructure/index
-policy/index
-about/sustainability/index
-about/strategy/index
 ```
 
 ## Use the hub
@@ -36,6 +33,7 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 :maxdepth: 2
 :caption: Use the hub
 
+policy/index
 data/index.md
 ```
 
@@ -48,11 +46,11 @@ These cover many things that you can do to manage and configure your hub and its
 :maxdepth: 2
 :caption: Administer the hub
 
+support
 admin/howto/configurator
 admin/howto/environment/index
 admin/howto/manage-users
 admin/howto/control-user-server
-admin/howto/encrypted-support
 admin/topics/network
 ```
 
@@ -72,16 +70,16 @@ community/strategy.md
 ## Community representatives
 
 Documentation for those serving as _Community Representatives_.
-These tend to cover technical, administrative, and collaborative processes for interacting with 2i2c's team on behalf of your community.
+These tend to cover technical, administrative, invoicing, and collaborative processes for interacting with 2i2c's team on behalf of your community.
 
 ```{toctree}
 :caption: Community representatives
 :maxdepth: 2
 
 admin/howto/new-hub
-about/support/index
 admin/howto/replicate
 admin/howto/create-billing-account
+topic/cloud-costs
 ```
 
 ## Reference material

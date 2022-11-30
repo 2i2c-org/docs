@@ -1,45 +1,28 @@
 (about-the-project)=
-# Service model
+# Our collaborative service model
 
-This section describes a high-level overview of our {term}`Managed JupyterHub Service` and the major teams, processes, and expectations around this service for both 2i2c and the partner community we work with.
-This page provides some high-level information to help you get started, and the sections below go into more detail on our service model and structure.
+Here we provide a high-level overview of our Managed JupyterHub Service and the major teams, processes, and expectations for both 2i2c and the partner communities we work with.
 
-```{toctree}
-:maxdepth: 1
-team
-shared-responsibility
-2i2c
-```
-
+:::{admonition} Want to partner with us?
 If you're interested in setting up a service for your community, click the button below to send us an email.
 
 ```{button-link} mailto:hello@2i2c.org
 :color: primary
 Send us an email.
 ```
+:::
 
-## What is the hub service?
 
-```{glossary}
-Managed JupyterHub Service
-  An open, scalable, sustainable cloud service for interactive computing environments in research and education.
-  It follows a "DevOps as a Service" model where communities in research and education can pay for managed cloud infrastructure that runs on an entirely open source stack, and give you [the right to replicate your infrastructure](https://2i2c.org/right-to-replicate).
+## Our shared responsibility model
 
-  It is run by [2i2c](https://2i2c.org), a non-profit organization that develops and operates interactive computing infrastructure for research and education.
-  2i2c values transparency and community driven infrastructure.
-  The sections below describe the Managed JupyterHub Service, its strategy and goals, as well as information about its major features and pricing.
+Our hub service is a collaboration between 2i2c and one or more communities.
+We break down the responsibilities that must be carried out in order to successfully run a service.
+We can then assign or share these responsibilities with partner communities according to their needs and interests.
+
+```{toctree}
+:maxdepth: 2
+shared-responsibility
 ```
-
-## Who is this service for?
-
-2i2c's Managed JupyterHub Service is designed for communities in research and education who want the following things:
-
-1. Access to the latest technology in Jupyter and interactive computing for collaborative and scalable data science running in the cloud.
-2. To utilize open source, community-driven tools and standards.
-3. To partner with a mission-aligned organization that transparently and collaboratively runs infrastructure as a team.
-4. To use infrastructure that they could take control of themselves, and that gives the user the [Right to Replicate](overview/right-to-replicate).
-5. To use infrastructure that is designed by and for individuals in research and education.
-6. To support infrastructure from a non-profit organization that is committed to communities in research, education, and open source.
 
 (overview/right-to-replicate)=
 ## Your Right to Replicate your infrastructure
@@ -51,15 +34,36 @@ One way in which we adhere to this principle is by respecting the [Community Rig
 The Right to Replicate gives communities the right to replicate their infrastructure in its entirety elsewhere, with or without 2i2c.
 ```
 
-We believe that following this principle will lead to a more equitable and more productive ecosystem for research and education in the cloud. It also helps avoid many of the potential downsides of relying on a cloud vendor for infrastructure. Read the [Right to Replicate](https://2i2c.org/right-to-replicate/) documentation for more information about what this means.
+Following this principle leads to a more equitable and more productive ecosystem for research and education in the cloud, and helps avoid many of the potential downsides of relying on a cloud vendor for infrastructure.
+Read the [Right to Replicate](https://2i2c.org/right-to-replicate/) documentation for more information about what this means.
 
-:::{seealso}
-Check out [](../../admin/howto/replicate.md) for information about replicating a 2i2c JupyterHub.
-:::
+## Service Level Objectives
 
-## Sustaining open source
+Our Service Level Objectives define our **goals in running the service** for each partner community.
+This includes goals like service uptime and support responsiveness.
 
-Everything that 2i2c deploys is open source and community-driven projects.
-We prioritize using multi-stakeholder projects that are well-supported by a diverse community of contributors.
-The resources that we receive to run 2i2c JupyterHubs thus **also go towards making open-source improvements** in these communities so that others may benefit from them.
-We see this as an opportunity to solve two problems with one stream of funding: support research and education, and [support open source communities](https://2i2c.org/about#values) in the Jupyter ecosystem and beyond.
+```{toctree}
+:maxdepth: 2
+service-objectives.md
+```
+
+## Cost model
+
+There are two types of costs associated with our service.
+We treat each of these separately in order to be transparent about where community costs are coming from.
+They will be covered as either two separate invoices, or two different line items on the same invoice.
+
+**Staff costs** cover all of the human time that goes into managing, supporting, developing, and improving our hub service.
+See [](service-offerings) for details, and {external:tc:ref}`the Cost Model section in our Team Compass <costs:human>` for our staffing cost model.
+
+**Cloud costs** cover the cost we pay a cloud provider for the infrastructure that powers your service.
+This is either on a dedicated cloud cluster, or on cluster that you share with other communities.
+  See [](costs:cloud) for a guide on how to estimate your community's cloud costs.
+
+## Comparison to similar services
+
+A comparison with similar kinds of services, to help you understand your options and the considerations you may want to take.
+
+```{toctree}
+comparison
+```

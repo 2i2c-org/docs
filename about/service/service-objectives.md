@@ -104,6 +104,7 @@ Our ability to meet these objectives will depend on the times they are reported 
 - We will triage Change and Guidance requests and respond to them within one working day.
 - We will prioritize resolving Change and Guidance Requests by balancing them against our other development priorities as described in {doc}`our Support Team Process documentation <tc:projects/managed-hubs/support>`.
 
+
 (objectives:cost)=
 ## Costs and cloud flexibility
 
@@ -118,11 +119,6 @@ This is particularly relevant during sharp increases in hub usage.
 - If infrastructure requires steady, but semi-random usage, we should prioritize cost efficiency.
 - If infrastructure will have known spikes of activity, we may temporarily favor speed over cost by asking for extra resources from the cloud provider.
 - If spikes in activity will come just after a holiday or weekend, we may make these changes a few days early to avoid working off-hours.
-
-:::{seealso}
-See [](../sustainability/index.md) for more information about costs.
-:::
-
 
 (objectives:updates)=
 ## Upgrades and maintenance
