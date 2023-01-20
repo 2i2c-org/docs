@@ -1,12 +1,19 @@
 (support:email)=
 # Get support
 
-Send all support requests as an email to [**`support@2i2c.org`**](mailto:support@2i2c.org).
-This will be routed to the 2i2c support team, and we will get back to you shortly!
+Send all support requests using the contact form widget on the bottom left of this page.
+Click the "Help" button to expand it.
+Requests submitted via this form will be routed to the 2i2c support team, and we will get back to you shortly!
 When you make a support request, please include as much information as possible in order to provide context needed to resolve your issue!
 
-% hard-coding this because sphinx-design buttons don't work with mailto
-<a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference external" href="mailto:support@2i2c.org"><span>Send a support email</span></a>
+% Embed a contact form Freshdesk widget to collect support tickets with
+<script>
+   window.fwSettings={
+      'widget_id':80000009162
+   };
+   !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
+</script>
+<script type='text/javascript' src='https://euc-widget.freshworks.com/widgets/80000009162.js' async defer></script>
 
 ## Who can ask for support?
 
@@ -19,14 +26,15 @@ You can find our {external:tc:ref}`full support process in our Team Compass <sup
 
 When you send us a support email, we'll try and resolve your issue via the following process:
 
-- The email to `support@2i2c.org` will open up a ticket in [the 2i2c FreshDesk account](https://2i2c.freshdesk.com).
+- Submitting a request via the contact form will open up a ticket in [the 2i2c FreshDesk account](https://2i2c.freshdesk.com).
   This is a private space where 2i2c engineers can communicate with you and one another around the issue.
 - We will investigate to understand what kind of issue is at hand.
   2i2c provides support for major infrastructure problems, outages, or upgrades.
   It doesn't provide support for daily workflow questions like debugging tracebacks in Python libraries.
 - If needed, we'll open an issue in [our `infrastructure` repository](https://github.com/2i2c-org/infrastructure) in order to track the steps needed to resolve this issue.
-- Throughout this process, we'll communicate with you via the `support@2i2c.org` address. You are also  welcome to follow along and discuss in any issues that we may create if you prefer.
-- When the issue is resolved, we'll send you a confirmation via `support@2i2c.org`, and we'll close the support issue.
+- Throughout this process, we'll communicate with you via the `support@2i2c.org` address.
+  You are also welcome to follow along and discuss in any issues that we may create if you prefer.
+- When the issue is resolved, we'll send you a confirmation via `support@2i2c.org`, and we'll close the support ticket.
 
 ## Send us encrypted content
 
