@@ -7,6 +7,7 @@ Requests submitted via this form will be routed to the 2i2c support team, and we
 When you make a support request, please include as much information as possible in order to provide context needed to resolve your issue!
 
 % Embed a contact form Freshdesk widget to collect support tickets with
+
 <script>
    window.fwSettings={
       'widget_id':80000009162
