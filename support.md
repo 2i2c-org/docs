@@ -1,7 +1,7 @@
 (support:email)=
 # Get support
 
-Send all support requests using the **support widget on the bottom right of this page**.
+Send all support requests using the **support widget on the bottom right of the page**.
 Click the "Help" button to expand it.
 
 Requests submitted via this form will be routed to the 2i2c support team, and we will get back to you shortly!
@@ -12,6 +12,11 @@ When you make a support request, please include as much information as possible 
 <button class="sd-btn sd-btn-primary" onclick="openWidget()" type="button">
    Click here to open a support ticket
 </button>
+
+```{caution}
+If you cannot see the "Help" widget in the bottom right corner of the screen, or clicking the button above does not open a pop-up contact form, please check your browser's privacy settings.
+Privacy extensions can block the pop-up contact form.
+```
 
 ## Who can ask for support?
 
