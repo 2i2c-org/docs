@@ -6,9 +6,19 @@ Click the "Help" button to expand it.
 Requests submitted via this form will be routed to the 2i2c support team, and we will get back to you shortly!
 When you make a support request, please include as much information as possible in order to provide context needed to resolve your issue!
 
-% Embed a contact form Freshdesk widget to collect support tickets with
+% Copy the style classes of sphinx-design buttons
+<button class="sd-btn sd-btn-primary" onclick="openWidget()" type="button">
+   Click here to open a support ticket
+</button>
 
+% Embed a contact form Freshdesk widget to collect support tickets with
 <script>
+   // This is the function to open the widget code
+   function openWidget() {
+      FreshworksWidget('open');
+   }
+
+   // FreshWorks widget loading code
    window.fwSettings={
       'widget_id':80000009162
    };
