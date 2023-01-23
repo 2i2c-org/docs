@@ -1,30 +1,17 @@
 (support:email)=
 # Get support
 
-Send all support requests using the contact form widget on the bottom left of this page.
+Send all support requests using the **support widget on the bottom right of this page**.
 Click the "Help" button to expand it.
+
 Requests submitted via this form will be routed to the 2i2c support team, and we will get back to you shortly!
 When you make a support request, please include as much information as possible in order to provide context needed to resolve your issue!
 
 % Copy the style classes of sphinx-design buttons
+% The JavaScript that this calls is defined in conf.py
 <button class="sd-btn sd-btn-primary" onclick="openWidget()" type="button">
    Click here to open a support ticket
 </button>
-
-% Embed a contact form Freshdesk widget to collect support tickets with
-<script>
-   // This is the function to open the widget code
-   function openWidget() {
-      FreshworksWidget('open');
-   }
-
-   // FreshWorks widget loading code
-   window.fwSettings={
-      'widget_id':80000009162
-   };
-   !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
-</script>
-<script type='text/javascript' src='https://euc-widget.freshworks.com/widgets/80000009162.js' async defer></script>
 
 ## Who can ask for support?
 

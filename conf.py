@@ -77,10 +77,30 @@ linkcheck_ignore = [
     "https://docs.github.com*",  # Because docs.github.com returns 403 Forbidden errors
 ]
 
+# Embed a contact form Freshdesk widget to collect support tickets with
+widget_embed_code = """
+// This is the function to open the widget code
+function openWidget() {
+    FreshworksWidget('open');
+}
+
+// FreshWorks widget loading code
+window.fwSettings={
+    'widget_id':80000009162
+};
+!function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
+"""
+
 def setup(app):
     app.add_css_file("custom.css")
     app.add_crossref_type("team", "team")
     app.add_crossref_type("role", "role")
+
+    # Add the JS code for our FreshDesk support widget
+    # ref: https://support.freshdesk.com/en/support/solutions/articles/239273-setting-up-your-help-widget
+    # ref: https://support.freshdesk.com/en/support/solutions/articles/50000001015-launching-the-widget-when-a-button-is-clicked
+    app.add_js_file(None, body=widget_embed_code)
+    app.add_js_file("https://euc-widget.freshworks.com/widgets/80000009162.js", **{"async": "", "defer": ""})
 
 # -- Custom scripts -------------------------------------------------
 
