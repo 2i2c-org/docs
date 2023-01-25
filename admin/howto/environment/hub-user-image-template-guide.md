@@ -120,6 +120,8 @@ Checkout an example of a [quay.io respository](https://quay.io/repository/2i2c/c
 
 ## 6. Connect the hub with this user image
 
+In order to be able to pull the image you need to make sure that your repository is public on your registry. For `quay.io` you can set this under `'Repository Settings'>'Repository Visibility'`
+
 1. Go to the list of image tags on `quay.io`, and find the tag of the last push.
    This is usually **under the latest tag**.
    Use this to construct your image name - `quay.io/<quay-username>/<repository-name>:<tag>`.
