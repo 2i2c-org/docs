@@ -136,7 +136,7 @@ In order to be able to pull the image you need to make sure that your repository
    :alt: Configurator
    ```
 3. Make a note of the current image name there.
-4. Put the image tag you constructed in a previous step into the User docker image text box.
+4. Put the image tag you constructed in a previous step into the User docker image text box. Note quay web urls look like `quay.io/repository/2i2c/coessing-image`, but the docker image name in configurator **should not** include the repository part of the URL e.g. `quay.io/2i2c/coessing-image:55adca9b2caa`.
 5. Click Submit! *this is alpha level software, so there is no 'has it saved' indicator yet :)*
 
 See [the Configurator docs](https://pilot.2i2c.org/en/latest/admin/howto/configurator.html) for more information.
