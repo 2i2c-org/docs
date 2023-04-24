@@ -12,6 +12,7 @@ build:
 
 sphinx:
   configuration: conf.py
+  builder: dirhtml
 
 # Explicitly opt out of trying to build additional formats such as PDF and ePub
 formats: []
