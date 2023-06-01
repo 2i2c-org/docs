@@ -53,7 +53,9 @@ Our JupyterHubs can run on Google Cloud, Amazon AWS, or Microsoft Azure.
 
 ## Authentication
 
-We use [`auth0`](https://auth0.com/) and [CILogon](https://www.cilogon.org/) for authenticating users, which can connect to a number of other authentication protocols (such as OAuth2).
+We use [CILogon](https://www.cilogon.org/) for authenticating users, which can connect to a number of other authentication protocols (such as OAuth2). We also
+directly support connecting to GitHub, for working with Teams and Organization
+based Authentication.
 
 ## User interfaces
 
