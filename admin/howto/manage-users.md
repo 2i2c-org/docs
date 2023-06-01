@@ -14,12 +14,7 @@ Users can prove who they are by logging in via an *authentication provider*. Cur
 
 2. [*GitHub*](https://github.com/). Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub admin panel](admin/management/admin-panel), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
 
-3. Username / Password via [auth0](https://auth0.com/docs/connections/database).
-   A traditional username / password interface where users can sign up. There are currently [limited
-   options](https://github.com/2i2c-org/infrastructure/issues/421) for limiting who
-   can sign up, so this should be only used in limited circumstances.
-
-4. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work for your use-case.
+3. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of these 3 work for your use-case.
 
 We will ask you what provider you want when we set up the hub. We can change the provider after the fact, but only if absolutely necessary.
 
@@ -123,8 +118,8 @@ how to determine their username.
 
 ## Debug user authentication issues
 
-If users are running into strange errors when they log in (for example Auth0 error pages that say "Looks like something went wrong!"), ask them to try these steps in debugging:
+If users are running into strange errors when they log in (for example CILogon error pages that say "Looks like something went wrong!"), ask them to try these steps in debugging:
 
 1. Try logging in with an `incognito` window. This will help determine if their issue is due to some cookie / cache that is stored on their machine.
-2. Ask them to clear their cookies / cache for all Auth0 websites. For example, [here are the Google Chrome instructions to clear cookies](https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop).
+2. Ask them to clear their cookies / cache for all CILogon websites. For example, [here are the Google Chrome instructions to clear cookies](https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop).
 3. If using `CILogon`, double-check that they've signed in with the correct account, and [ask them to switch accounts if needed](https://infrastructure.2i2c.org/en/latest/howto/configure/auth-management.html#switch-identity-providers-or-user-accounts).
