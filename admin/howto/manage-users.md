@@ -10,11 +10,11 @@
 
 Users can prove who they are by logging in via an *authentication provider*. Currently, the following providers are supported:
 
-1. *Google*. This includes public `@gmail.com` accounts, as well as [Google Workspace](https://workspace.google.com/) accounts set up for your workspace or university. If you use the GMail interface to access your work / university email, it can be used here.
+1. [*CILogon*](https://www.cilogon.org/), an extremely popular provider for various institutional logins, Google accounts (including @gmail.com accounts), Microsoft accounts, etc. This is our **primary** authentication provider. It can support allowing users from multiple institutions to login as well, which is very helpful. 
 
 2. [*GitHub*](https://github.com/). Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub admin panel](admin/management/admin-panel), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
 
-3. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. Please reach out to us if none of those above work for your use-case.
+3. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. However, this should be used as a last resort and will come with an increase in management cost, to offset the extra engineering complexity. Please reach out to us if none of those above work for your use-case.
 
 We will ask you what provider you want when we set up the hub. We can change the provider after the fact, but only if absolutely necessary.
 
