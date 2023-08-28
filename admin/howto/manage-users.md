@@ -10,11 +10,33 @@
 
 Users can prove who they are by logging in via an *authentication provider*. Currently, the following providers are supported:
 
-1. [*CILogon*](https://www.cilogon.org/), an extremely popular provider for various institutional logins, Google accounts (including @gmail.com accounts), Microsoft accounts, etc. This is our **primary** authentication provider. It can support allowing users from multiple institutions to login as well, which is very helpful. 
+#### [CILogon](https://www.cilogon.org/)
 
-2. [*GitHub*](https://github.com/). Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub admin panel](admin/management/admin-panel), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
+An extremely popular provider for various institutional logins, Google accounts (including @gmail.com accounts), Microsoft accounts, etc. This is our **primary** authentication provider.
+It can support allowing users from multiple institutions to login as well, which is very helpful.
+2i2c can manage CILogon using the JupyterHub CILogonOAuthenticator.
 
-3. `<a different provider>`. We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. However, this should be used as a last resort and will come with an increase in management cost, to offset the extra engineering complexity. Please reach out to us if none of those above work for your use-case.
+Some key terms about CILogon authentication worth mentioning:
+
+`Identity Provider`
+: The authentication service available through the CILogon connection.
+
+  When a user logs in via CILogon, they are first presented with a list of various institutions and organizations that they may choose from (`Australia National University`, `UC Berkeley`, etc.).
+
+  The available identity providers are members of [InCommon](https://www.incommon.org/federation/), a federation of universities and other organizations that provide single sign-on access to various resources.
+
+  ```{note}
+  Check if a community's login provider is available on CILogon, by going to https://cilogon.org/idplist and filter after its name.
+  ```
+
+`User account`
+: Within an institution, each user is expected to have their own user account (e.g. `myname@berkeley.edu`). This is the account that is used to give somebody an ID on their JupyterHub. This is entered on an Identity Provider's login screen.
+
+#### [GitHub](https://github.com/)
+Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub admin panel](admin/management/admin-panel), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
+
+#### `<a different provider>`
+We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. However, this should be used as a last resort and will come with an increase in management cost, to offset the extra engineering complexity. Please reach out to us if none of those above work for your use-case.
 
 We will ask you what provider you want when we set up the hub. We can change the provider after the fact, but only if absolutely necessary.
 
