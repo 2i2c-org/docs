@@ -17,7 +17,7 @@ import gh_scoped_creds
 ```
 
 You should now be able to push to GitHub from the hub! 
-> Make sure to use the HTTPS url to repos, not the SSH one.
+> Make sure to use the HTTPS url to clone from and push to repos, not the SSH one!
 
 These credentials will expire after
 8 hours (or whenever your JupyterHub server stops), and you'll have to repeat these steps
