@@ -33,8 +33,8 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 :maxdepth: 2
 :caption: Use the hub
 
-policy/index
-data/index.md
+user/policy/index
+user/data/index.md
 ```
 
 ## Administer the hub
