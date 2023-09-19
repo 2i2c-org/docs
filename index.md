@@ -33,8 +33,9 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 :maxdepth: 2
 :caption: Use the hub
 
-policy/index
-data/index.md
+user/topics/policy/index
+user/topics/data/index.md
+user/howto/specify-unlisted-image.md
 ```
 
 ## Administer the hub
