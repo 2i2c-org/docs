@@ -23,6 +23,7 @@ They are meant for individuals who wish to learn about the service for their own
 :caption: About the service
 about/service/options
 about/service/index
+See a table of our running hubs! <https://infrastructure.2i2c.org/reference/hubs/>
 ```
 
 ## Use the hub
