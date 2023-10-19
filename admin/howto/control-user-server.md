@@ -79,15 +79,28 @@ Active notebooks have their kernel killed as well.
 
 To ensure efficient resource usage, user servers without interactive usage for a
 period of time (default `1h`) are automatically stopped (via
-[jupyterhub-idle-culler](https://github.com/jupyterhub/jupyterhub-idle-culler)).
-This means your notebook server might be stopped for inactivity even if you have
+[jupyterhub-idle-culler]).
+This means your user server might be stopped for inactivity even if you have
 a long running process in the notebook. This timeout can be configured.
 
 % TODO: Add link to SRE guide on how to configure this, once it exists
 
-Culling has the same effect as [stopping a user's server](user-server/stopping).
+"Culling a user server" has the same effect as [stopping a user
+server](user-server/stopping), but should be distinguished from "culling a
+kernel" inside a user server. [jupyterhub-idle-culler] is only involved in
+culling user servers, not culling kernels.
 
-There is currently no maximum time limit for a user's notebook.
+```{note}
+A crude way to [ensure that a server isn't stopped for inactivity](https://github.com/jupyterhub/jupyterhub-idle-culler/issues/55#issuecomment-1413510651) can be implemented.
+```
+
+## Stop user servers after maximum age
+
+As a failsafe [jupyterhub-idle-culler] is by 2i2c's defaults configured to stop
+user servers that has been running for more than 7 days. This max age can be
+re-configured.
+
+[jupyterhub-idle-culler]: https://github.com/jupyterhub/jupyterhub-idle-culler
 
 ## Stop user kernels after inactivity
 
