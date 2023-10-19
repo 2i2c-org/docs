@@ -91,8 +91,7 @@ kernel" inside a user server. [jupyterhub-idle-culler] is only involved in
 culling user servers, not culling kernels.
 
 ```{note}
-A crude way to ensure that a server isn't stopped for inactivity is can be read
-about [here](https://github.com/jupyterhub/jupyterhub-idle-culler/issues/55#issuecomment-1413510651).
+A crude way to [ensure that a server isn't stopped for inactivity](https://github.com/jupyterhub/jupyterhub-idle-culler/issues/55#issuecomment-1413510651) can be implemented.
 ```
 
 ## Stop user servers after maximum age
