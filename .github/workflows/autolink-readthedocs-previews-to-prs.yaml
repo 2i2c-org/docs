@@ -7,11 +7,12 @@ on:
     branches:
       - main
 
+permissions:
+  pull-requests: write
+
 jobs:
   autolink-rtd-previews:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
     steps:
       - uses: readthedocs/actions/preview@v1
         with:
