@@ -32,7 +32,7 @@ Our team has developed and managed cloud infrastructure for over 5 years - first
 We follow modern practices for Site Reliability Engineering with cloud infrastructure like Kubernetes and JupyterHub.
 This makes 2i2c uniquely capable of managing scalable and reliable cloud infrastructure for interactive computing.
 
-Here are a few of the major projects our team memebers have been involved in over the past few years.
+Here are a few of the major projects our team members have been involved in over the past few years.
 
 - [The Pangeo project](https://pangeo.io/) - A community platform for Big Data geoscience connecting researchers across the world to large-scale computing and data infrastructure.
 - [The UC Berkeley DataHubs](https://docs.datahub.berkeley.edu/en/latest/) - A collection of university-wide JupyterHubs for education serving many thousands of students.
