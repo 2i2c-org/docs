@@ -2,9 +2,6 @@ name: Add readthedocs preview link to pull requests
 
 on:
   pull_request_target:
-    types:
-      - opened
-      - reopened
 
 permissions:
   pull-requests: write
