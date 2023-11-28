@@ -3,12 +3,11 @@ name: Add readthedocs preview link to pull requests
 on:
   pull_request_target:
 
-permissions:
-  pull-requests: write
-
 jobs:
   autolink-rtd-previews:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - uses: readthedocs/actions/preview@v1
         with:
