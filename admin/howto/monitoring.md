@@ -8,7 +8,7 @@ To discover the URL to you Grafana dashboard, use the [List of Running Hubs](htt
 
 During the hub deployment process, 2i2c engineering will send the hub champions an email with an invitation link to Grafana to allow them to create an account. This invite link only lasts for seven days; if a new invite link is required please email support@2i2c.org to request a new invite link.
 
-This Grafana account is separate from the account used to log in to your JupyterHub. This new account has administrative priviledges and will allow hub champions to invite others to have access to Grafana as appropropriate for your community.
+This Grafana account is separate from the account used to log into JupyterHub. This new account has administrative priviledges and will allow hub champions to invite others to have access to Grafana as appropropriate for the community.
 
 ## Using Grafana for your JupyterHub
 
