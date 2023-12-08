@@ -2,7 +2,7 @@
 
 *Note: Grafana dashboards are only available to communities on **dedicated** clusters.  If a community is on a shared cluster and would like to discuss transitioning, please contact partnerships@2i2c.org.
 
-To discover the URL to you Grafana dashboard, use the [List of Running Hubs](https://infrastructure.2i2c.org/reference/hubs/) table. This table also shows which cluster each hub is running on. 
+To discover the URL to the Grafana dashboard, use the [List of Running Hubs](https://infrastructure.2i2c.org/reference/hubs/) table. This table also shows which cluster each hub is running on. 
 
 ## Getting a Grafana account
 
