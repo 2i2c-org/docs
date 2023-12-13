@@ -39,15 +39,16 @@ When you have completed these steps, you should have:
 ## 3. Enable image pushes to quay.io
 
 Step 2 should have provided the appropriate credentials to push the image to quay.io via GitHub Actions.
-This template repository provides two GitHub workflows that are configured to use these credentials to build and push the image to quay.io, but they need additional configuration. 
-Below are the steps to configure each of them.
+This template repository provides a GitHub Actions workflow that is configured to use these credentials to build and push the image to quay.io, but it needs additional configuration. 
+Below are the steps to configure each option.
 
 ### Enable quay.io image push for [build.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/build.yaml)
 
 The [build.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/build.yaml) workflow builds the container image and pushes it to quay.io **if** credentials and image name are properly set.
 This happens on every pushed commit on the main branch of the repo (including when a PR is merged).
+The image is also built for every commit pushed to a Pull Request, but **is not pushed to quay.io by default**.
 
-To enable pushing to the appropriate quay.io repository, edit line 35 of [build.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/build.yaml#L34-L35) and:
+To enable pushing to the appropriate quay.io repository, edit line 47 of [build.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/build.yaml#L46-L47) and:
 
 1. Uncomment the `IMAGE_NAME` option
 2. Replace `<quay-username>/<repository-name>` with the info of the `quay.io` repository created at step 2
@@ -69,36 +70,18 @@ If you are triggering this action by merging a PR or directly pushing to the mai
 :alt: Build logs
 ```
 
-### Enable quay.io image push for [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/test.yaml)
+### Enable quay.io image **push** during Pull Requests
 
-The [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/test.yaml) workflow builds the container image on pull requests.
-It can also push it to quay.io **if** credentials and the image name are correctly set, and the [`NO_PUSH`](https://github.com/jupyterhub/repo2docker-action#optional-inputs) option is removed.
+The [build.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/build.yaml) workflow builds the container image on pull requests.
+It can also push it to quay.io **if** the [`NO_PUSH`](https://github.com/jupyterhub/repo2docker-action#optional-inputs) input is removed.
 
-To enable pushing to the appropriate quay.io repository, edit lines 31 of [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/test.yaml#L30-L31) and:
-
-1. Uncomment the `IMAGE_NAME` option
-2. Replace `<quay-username>/<repository-name>` with the info of the `quay.io` repository created at step 2
-3. Commit the changes you've made to `build.yaml`
-
-```{figure} ../../../images/image-name-in-test-workflow.png
-:alt: IMAGE_NAME
-```
+To enable pushing to the appropriate quay.io repository, edit line 33 of [build.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/build.yaml#L32-L33) and comment out or remove the `NO_PUSH` input.
 
 :::{tip}
-**IF** you want to also push the image on Pull Request commits, then edit lines 27 of [test.yaml](https://github.com/2i2c-org/hub-user-image-template/blob/main/.github/workflows/test.yaml#L27) and remove the `NO_PUSH: "true"` line.
-This will disable verbose mode and push the image to the registry instead.
-
 The [Optional Inputs](https://github.com/jupyterhub/repo2docker-action#optional-inputs) section in the [jupyterhub/repo2docker-action](https://github.com/jupyterhub/repo2docker-action) docs provides more details about the `NO_PUSH` option, alongside additional inputs that can also be passed to the repo2docker-action.
 :::
 
-Checkout the logs of this GitHub Workflow via the Github Actions tab on your image repository.
-
-```{figure} ../../../images/test-workflow.png
-:alt: Test workflow
-```
-
-This workflow is triggered by pull requests.
-By default, if the `NO_PUSH` flag is not explicitly disabled, then the image won't be pushed to the registry, so no `pushing quay.io/...` message will be shown in the logs.
+If configured correctly, you will see a `pushing quay.io/...` message in the GitHub Actions logs when you have committed directly to main/merged a PR **and** pushed a commit to a PR.
 
 ## 4. Customize the image
 
