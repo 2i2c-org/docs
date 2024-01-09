@@ -39,6 +39,7 @@ When you send us a support email, we'll try and resolve your issue via the follo
   You are also welcome to follow along and discuss in any issues that we may create if you prefer.
 - When the issue is resolved, we'll send you a confirmation via `support@2i2c.org`, and we'll close the support ticket.
 
+(support:encrypt)=
 ## Send us encrypted content
 
 Sometimes community representatives need to send us *encrypted* information -
