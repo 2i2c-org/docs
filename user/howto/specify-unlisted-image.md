@@ -1,3 +1,4 @@
+(unlisted-image)=
 # Starting and customizing the software environment of a user server
 
 To start a server on the Hub, you need to go to the hub's home page, then click on the `Start My server button`.

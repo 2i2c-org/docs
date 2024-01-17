@@ -4,6 +4,12 @@ The [JupyterHub configurator](https://github.com/yuvipanda/jupyterhub-configurat
 allows admins to change a subset of hub settings without requiring involvement
 from 2i2c engineers.
 
+```{attention}
+If the hub has profile lists enabled that override the same hub settings as the configurator, then any change done with the configurator will have no effect, because of the complexity of having more than one profile option.
+
+See [](unlisted-image) instead in this case.
+```
+
 ```{warning}
 Be careful while changing these settings! We don't expose anything that can
 make the hub inaccessible to *admins*, but you can still change things that
