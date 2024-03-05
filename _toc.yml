@@ -1,0 +1,20 @@
+root: index
+entries:
+- file: support
+- file: about/terminology
+  entries:
+  - file: about/distributions/index
+    entries:
+    - file: about/distributions/education
+    - file: about/distributions/research
+  - file: about/service/index
+    entries:
+    - file: about/service/comparison
+    - file: about/service/options
+    - file: about/service/service-objectives
+    - file: about/service/shared-responsibility
+- file: community/content
+  entries:
+  - file: community/events
+  - file: community/strategy
+- file: topic/cloud-costs

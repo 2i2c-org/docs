@@ -1,4 +1,4 @@
-# Service Guide
+# Hub Service Guide
 
 This is the community and user documentation for 2i2c's Managed JupyterHub Service.
 It is divided into a number of **roles and personas** with relevant topics for each.
