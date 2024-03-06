@@ -125,14 +125,13 @@ This way, your HTML files will automatically be updated when you update your sit
 Your hub will need to be configured by a 2i2c engineer to enable the docs service (following {doc}`these instructions <infra:howto/features/static-sites>`).
 
 - Find the **GitHub repository** and the **branch** where your HTML files are stored.
-- [Send a support request](../../support.md) asking them to enable this, and provide the repository/branch you found above.
+- Send a [Support Request](../support.md) asking them to enable this, and provide the repository/branch you found above.
 
 Once this is deployed, your hub's documentation should be accessible at
 
 ```
 https://<hub-address>/services/docs
 ```
-
 
 ## Write public books that connect to a 2i2c JupyterHub
 
@@ -144,8 +143,8 @@ Hub.
 To connect your public content with a 2i2c JupyterHub, we recommend using [Jupyter
 Book](https://jupyterbook.org). This is an open-source project that allows you
 to share collections of notebooks and markdown files as an online website and
-book. Check out the [Jupyter Book getting started
-guide](jb:start/overview) for more information about
+book. Check out the {doc}`Jupyter Book Getting Started
+Guide <jb:start/your-first-book>` for more information about
 Jupyter Book.
 
 You can tell Jupyter Book to place links *directly to your 2i2c JupyterHub* on each

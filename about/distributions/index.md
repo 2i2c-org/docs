@@ -69,7 +69,7 @@ Your 2i2c JupyterHub has an environment that has been created for your particula
 
 All of the configuration and deployment scripts for the 2i2c JupyterHub can be found at [the `infrastructure/` repository](https://github.com/2i2c-org/infrastructure). This repository contains both the deployment code as well as documentation that explains how it works. It should be treated as "for advanced users only", and is provided for transparency and as a guide for the community to follow if they wish to manage their own infrastructure similar to 2i2c JupyterHub.
 
-To learn about how the `infrastructure/` repository works, we recommend checking out the [`infrastructure` documentation](infra:index).
+To learn about how the `infrastructure/` repository works, we recommend checking out the {doc}`Infrastructure documentation <infra:index>`.
 
 See the next sections for more information about each hub distribution.
 
@@ -86,7 +86,7 @@ As members of the JupyterHub team, we are constantly looking for ways to improve
 2i2c will not collect user data for any purpose beyond what is required in order to run a JupyterHub.
 Depending on the choices of your community the hub might contain identifiable information (e.g., e-mail addresses used as usernames for authentication), but this will remain within your hub's configuration and is not shared publicly.
 
-Our {role}`Site Reliability Engineer`s will have access to all of the information that is inside a hub (which it requires in order to debug problems and and assist with upgrades), however we will not retain any of this data or move it *outside* of the hub, and will not retain it once the hub is shut down (except in order to transfer data to you at your request).
+Our {ref}`Site Reliability Engineer<role:site-reliability-engineer>`s will have access to all of the information that is inside a hub (which it requires in order to debug problems and and assist with upgrades), however we will not retain any of this data or move it *outside* of the hub, and will not retain it once the hub is shut down (except in order to transfer data to you at your request).
 
 ## Monitored for abuse and unexpected costs
 

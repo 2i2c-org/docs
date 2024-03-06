@@ -25,7 +25,7 @@ When other policies are more restrictive than this policy, the more restrictive 
 - You should make a reasonable effort to protect your passwords and to secure resources against unauthorized use or access.
   Where applicable you must configure access to other cloud services or data in a way that reasonably prevents unauthorized users from accessing them.
 - You must not attempt to access restricted portions of the network or any 2i2c Managed Infrastructure without appropriate authorization by a 2i2c engineer.
-- You must not attempt to use 2i2c Managed Infrastructure for the purposes of [mining cryptocurrencies](https://en.wikipedia.org/wiki/Cryptocurrency#Mining) unless explicitly given permission by a {term}`Community Representative` for research purposes.
+- You must not attempt to use 2i2c Managed Infrastructure for the purposes of [mining cryptocurrencies](https://en.wikipedia.org/wiki/Cryptocurrency#Mining) unless explicitly given permission by a {ref}`Community Representative<role:community-representative>` for research purposes.
 - You must not use 2i2c Managed Infrastructure and/or network resources in conjunction with the execution of programs, software, processes, or automated transaction-based commands that are intended to disrupt (or that could reasonably be expected to disrupt) other computer or network users, or damage or degrade performance, software or hardware components of a system.
 - Do not use the 2i2c Managed Infrastructure to distribute or facilitate the sending of unsolicited or unlawful (i) email or other messages, or (ii) promotions of any kind;
 - Do not use the 2i2c Managed Infrastructure to engage in or promote any other fraudulent, deceptive or illegal activities.
