@@ -9,7 +9,7 @@ title                       : Hub Service Guide  # The title of the book. Will b
 author                      : 2i2c  # The author of the book
 copyright                   : "2024"  # Copyright year to be placed in the footer
 version                     : "0.1"
-logo                        : "images/logo.png"  # A path to the book logo
+logo                        : ""  # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, README.md, .github, .nox, CONTRIBUTING.md, "**.ipynb_checkpoints"]
 # Auto-exclude files not in the toc
@@ -42,12 +42,8 @@ html:
   use_issues_button         : false  # Whether to add an "open an issue" button
   use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
   extra_footer              : ""  # Will be displayed underneath the footer.
-  extra_navbar: |
-      <div>
-          your html
-      </div>
   google_analytics_id       : ""  # A GA id that can be used to track book views.
-  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+  home_page_in_navbar       : false  # Whether to include your home page in the left Navigation Bar
   baseurl                   : "https://docs.2i2c.org/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   analytics:
 
@@ -88,6 +84,7 @@ sphinx:
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
   recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
   config                    :   # key-value pairs to directly over-ride the Sphinx configuration
+    html_theme              : sphinx_2i2c_theme
     intersphinx_mapping     :
       tc:
         - 'https://team-compass.2i2c.org/en/latest'
