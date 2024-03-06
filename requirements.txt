@@ -3,6 +3,7 @@ myst-parser[linkify]
 pandas
 pyyaml
 requests
+jupyter-book
 sphinx
 sphinx-autobuild
 sphinx-copybutton
