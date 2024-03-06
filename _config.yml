@@ -98,13 +98,14 @@ sphinx:
       z2jh:
         - 'https://z2jh.jupyter.org/en/latest'
         - null
+    rediraffe_branch       : main
     rediraffe_redirects    :
       # Added around 2022-09
-      - "about/overview.md": "about/service/index.md"
-      - "about/pricing/index.md": "about/service/options.md"
+      about/overview.md: about/service/index.md
+      about/pricing/index.md: about/service/options.md
       # Added 2022-11-29
-      - "about/service/roles.md": "about/service/shared-responsibility.md"
-      - "about/service/team.md": "about/service/shared-responsibility.md"
+      about/service/roles.md: about/service/shared-responsibility.md
+      about/service/team.md: about/service/shared-responsibility.md
     linkcheck_ignore       :
       - "https://openstoragenetwork.org*"  # It incorrectly fails with `Max retries exceeded with url`
       - "https://docs.github.com*"  # Because docs.github.com returns 403 Forbidden errors
