@@ -2,7 +2,7 @@ import nox
 
 nox.options.reuse_existing_virtualenvs = True
 
-build_command = ["-b", "html", ".", "_build/html"]
+build_command = ["--builder", "dirhtml", ".", "--path-output" ,"_build/html"]
 
 @nox.session(python=">=3.9")
 def docs(session):
@@ -19,4 +19,4 @@ def docs(session):
         cmd.extend(build_command)
         session.run(*cmd)
     else:
-        session.run("sphinx-build", *build_command)
+        session.run("jupyter-book", "build", *build_command)
