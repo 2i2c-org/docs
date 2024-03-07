@@ -3,7 +3,7 @@ import nox
 nox.options.reuse_existing_virtualenvs = True
 
 build_command = ["--builder", "dirhtml", "."]
-sphinx_build_command = ["-b", "html", ".","_build/html"]
+sphinx_build_command = ["-b", "dirhtml", ".","_build/html"]
 
 @nox.session(venv_backend="conda")
 def docs(session):
