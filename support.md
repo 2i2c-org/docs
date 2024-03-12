@@ -10,7 +10,7 @@ When you make a support request, please include as much information as possible 
 % Copy the style classes of sphinx-design buttons
 % The JavaScript that this calls is defined in conf.py
 <button class="sd-btn sd-btn-primary" onclick="openWidget()" type="button">
-   Click here to open a support ticket
+   Open a support ticket
 </button>
 
 ```{caution}
