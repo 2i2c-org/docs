@@ -87,10 +87,10 @@ sphinx:
     html_theme              : sphinx_2i2c_theme
     intersphinx_mapping     :
       tc:
-        - 'https://team-compass.2i2c.org/en/latest'
+        - 'https://team-compass.2i2c.org'
         - null
       infra:
-        - 'https://infrastructure.2i2c.org/en/latest'
+        - 'https://infrastructure.2i2c.org'
         - null
       jb:
         - 'https://jupyterbook.org/en/stable'
