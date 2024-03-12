@@ -3,7 +3,7 @@
 2i2c builds and operates **distributions of JupyterHubs** that are tailored for particular use-cases.
 These services share many of the same infrastructure components, but have customizations and optimizations that are more domain- or community-specific.
 
-```{figure} https://drive.google.com/uc?export=download&id=1vL8ekAtUQ4TEik4-oWIn36VAOITdlmpR
+```{figure} ../../images/hub-overview.png
 :width: 80%
 
 A high-level technical overview of an Interactive Computing Service collaboratively run by 2i2c and a community of practice. Each hub is a JupyterHub Distribution with a collection of community-led open source projects that are customized for a particular use-case.
