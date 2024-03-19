@@ -81,7 +81,7 @@ Once complete, under the section *Repository secrets* you should now see two row
     If your image user interface is RStudio, then switch to the JupyterLab interface by altering the URL to the form `https://<hub_name>.2i2c.cloud/user/<username>/lab`.
    ```
 
-1. Click on the ![Git icon](media/git.svg) on the left sidebar to open the JupyterLab Git extension.
+1. Click the ![Git icon](media/git.svg) Git icon in the left sidebar to open the JupyterLab Git extension.
 
 1. Clone the forked repository from [Set up the GitHub repository and connect it to quay.io](#set-up-the-github-repository-and-connect-it-to-quay-io) into the hub by the clicking *Clone a Repository* button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
 
