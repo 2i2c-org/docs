@@ -81,7 +81,7 @@ Once complete, under the section *Repository secrets* you should now see two row
     If your image user interface is RStudio, then switch to the JupyterLab interface by altering the URL to the form `https://<hub_name>.2i2c.cloud/user/<username>/lab`.
    ```
 
-1. Click on the ![Git icon](media/git.svg) to open the JupyterLab Git extension.
+1. Click on the ![Git icon](media/git.svg) on the left sidebar to open the JupyterLab Git extension.
 
 1. Clone the forked repository from [Set up the GitHub repository and connect it to quay.io](#set-up-the-github-repository-and-connect-it-to-quay-io) into the hub by the clicking *Clone a Repository* button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
 
@@ -90,8 +90,8 @@ Once complete, under the section *Repository secrets* you should now see two row
 ### Build base image
 
 1. Update the GitHub workflow files with your quay.io repository
-   - Open *.github/workflows/build.yaml* and update `IMAGE_NAME` with e.g. `<username>/jupyter-scipy-xarray`
-   - Open *.github/workflows/test.yaml* and update `IMAGE_NAME` with e.g. `<username>/jupyter-scipy-xarray`   
+   - Open *.github/workflows/build.yaml* and update `IMAGE_NAME` with `<username>/jupyter-scipy-xarray`
+   - Open *.github/workflows/test.yaml* and update `IMAGE_NAME` with `<username>/jupyter-scipy-xarray`   
 
    ```{image} media/edit-github-workflow.png
    :alt: Screenshot of updating the IMAGE_NAME in the GitHub workflow test.yaml file.
@@ -115,9 +115,9 @@ Once complete, under the section *Repository secrets* you should now see two row
    then we recommend you press *Cancel* and securely authenicate using `gh-scoped-creds`. See the [2i2c Docs](https://2i2c.org/community-showcase/user/topics/data/git.html) for more information.
    ````
 
-1. This triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build the base image and push this to the quay.io repository. The build process can take a few minutes. You can view the status of the build by visiting the {octicon}`plus;1em;sd-text-info` *Actions* tab at `https://github.com/<username>/example-inherit-from-community-image`.
+1. This triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build the base image and push this to the quay.io repository. The build process can take a few minutes. You can view the status of the build by visiting the {octicon}`play;1em;sd-text-info` *Actions* tab at `https://github.com/<username>/example-inherit-from-community-image`.
     
-1. When the build has finished, you can check your image hosted on quay.io by navigating to a URL of the form *https://quay.io/repository/\<username\>/\<quay-repo-name\>*, e.g. *https://quay.io/repository/jnywong/jupyter-scipy-xarray*.
+1. When the build has finished, you can check your image hosted on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. *https://quay.io/repository/jnywong/jupyter-scipy-xarray*.
     
 ### Update the base image
     
@@ -131,7 +131,7 @@ Once complete, under the section *Repository secrets* you should now see two row
     
 1. Edit the *Dockerfile*
    - Update the `FROM` instruction with the base image you require, e.g. `quay.io/jupyter/scipy-notebook:python-3.11`
-   - Remove the tests for the sake of simplicity by deleting the `COPY` instruction and deleting the `image-tests` folder in the file explorer.
+   - For now, remove the tests by deleting the `COPY` instruction and deleting the `image-tests` folder in the file explorer.
 
    ```{image} media/edit-dockerfile.png
    :alt: Screenshot of updating the DockerFile.
@@ -156,8 +156,12 @@ Once complete, under the section *Repository secrets* you should now see two row
 1. Visit your GitHub repository at `https://github.com/<username>/example-inherit-from-community-image` and click the *Compare & pull request* button.
     
 1. Open a pull request and double-check that the target branch is *\<username\>:main* (this usually defaults to the upstream repo).
+
+   ```{image} media/check-target-branch.png
+   :alt: Screenshot of the target branch option when opening a GitHub pull request.
+   ```
     
-1. Click *Create pull request* to confirm, which will trigger the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build a preview of your custom image using Binder. 
+1. Click *Create pull request* to confirm, which triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build a preview of your custom image using Binder. 
     
 1. When the Binder is ready, a pull request comment from the *github-actions* bot will appear with a link. Click the *launch binder* button. The build process can take a few minutes.
 
@@ -175,7 +179,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    The `git-commit-hash` is useful for matching the image to the changes associated with the corresponding commit in your GitHub repository's history.
    ```
 
-1. You can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<>username/<repo_name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the <i class="fa fa-tags sd-text-info"></i> Tags sub-menu to view a list of image versions. The full image tag is of the form
+1. You can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the <i class="fa fa-tags sd-text-info"></i> Tags sub-menu to view a list of image versions. The full image tag is of the form
 
    ```
    <registry>/<username>/<repo_name>:<git-commit-hash>
