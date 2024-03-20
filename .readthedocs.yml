@@ -13,6 +13,7 @@ build:
     - cd scripts; python feature-table.py  # Generate the feature table in about/distributions/index.md
     - cd scripts; python download-figures.py  # Download figures not in the GH repo
     - jupyter-book build --builder dirhtml .
+    - mkdir -p $READTHEDOCS_OUTPUT/html/
     - cp -r _build/dirhtml/* $READTHEDOCS_OUTPUT/html/
 
 # Explicitly opt out of trying to build additional formats such as PDF and ePub
