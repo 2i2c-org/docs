@@ -1,9 +1,9 @@
 # -- Project information -----------------------------------------------------
 
-project = "Service Guide"
-copyright = "2022"
+project = "Hub Service Guide"
+copyright = "2024"
 author = "2i2c"
-version = "0.1alpha"
+version = "0.1"
 main_doc = "index"
 
 # -- General configuration ---------------------------------------------------
@@ -54,8 +54,8 @@ html_theme_options = {
 }
 
 intersphinx_mapping = {
-    "tc": ('https://team-compass.2i2c.org/en/latest', None),
-    "infra": ('https://infrastructure.2i2c.org/en/latest', None),
+    "tc": ('https://team-compass.2i2c.org', None),
+    "infra": ('https://infrastructure.2i2c.org', None),
     "jb": ('https://jupyterbook.org/en/stable/', None),
     "z2jh": ('https://z2jh.jupyter.org/en/latest', None),
 }
@@ -93,8 +93,6 @@ window.fwSettings={
 
 def setup(app):
     app.add_css_file("custom.css")
-    app.add_crossref_type("team", "team")
-    app.add_crossref_type("role", "role")
 
     # Add the JS code for our FreshDesk support widget
     # ref: https://support.freshdesk.com/en/support/solutions/articles/239273-setting-up-your-help-widget
