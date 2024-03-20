@@ -2,7 +2,7 @@
 
 ## Authentication vs. Authorization
 
-- **Authentication** allows your users to prove who their are.
+- **Authentication** allows your users to prove who they are.
 - **Authorization** gives users certain permissions depending on their identity (such as "access to your hub", or "administrative privileges").
 
 (admin/configuration/authentication)=
@@ -144,4 +144,4 @@ If users are running into strange errors when they log in (for example CILogon e
 
 1. Try logging in with an `incognito` window. This will help determine if their issue is due to some cookie / cache that is stored on their machine.
 2. Ask them to clear their cookies / cache for all CILogon websites. For example, [here are the Google Chrome instructions to clear cookies](https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop).
-3. If using `CILogon`, double-check that they've signed in with the correct account, and [ask them to switch accounts if needed](https://infrastructure.2i2c.org/en/latest/howto/configure/auth-management.html#switch-identity-providers-or-user-accounts).
+3. If using `CILogon`, double-check that they've signed in with the correct account, and [ask them to switch accounts if needed](https://infrastructure.2i2c.org/howto/troubleshoot/cilogon-user-accounts/).
