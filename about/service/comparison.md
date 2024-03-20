@@ -475,7 +475,7 @@ Updates
 
 There are many companies offering services and platforms via a subscription fee.
 The experience from a user's perspective may be similar and they may offer some open source tools as part of their services.
-Examples of these products are [CoCalc](https://cocalc.com/), [Deepnote](https://deepnote.com/), [engageLively](https://engagelively.com/), [Colaboratory (Google)](https://colab.research.google.com/), [Noteable](https://noteable.io/), [ObserveableHQ](https://observablehq.com/), [rstudio.cloud](https://rstudio.cloud/), [Sagemaker (AWS)](https://aws.amazon.com/sagemaker/), and [Saturn Cloud](https://saturncloud.io/).
+Examples of these products are [CoCalc](https://cocalc.com/), [Deepnote](https://deepnote.com/), [engageLively](https://galyleo.engagelively.com/), [Colaboratory (Google)](https://colab.research.google.com/), [ObserveableHQ](https://observablehq.com/), [rstudio.cloud](https://rstudio.cloud/), [Sagemaker (AWS)](https://aws.amazon.com/sagemaker/), and [Saturn Cloud](https://saturncloud.io/).
 
 Usage cost
 : Generally charge betwee $7 and $50 per user, per month, depending on the complexity of the resources needed and the service. Many SaaS offerings include enterprise services as well, but their prices are generally not advertised publicly and are often significantly more expensive.
