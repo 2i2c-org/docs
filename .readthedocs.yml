@@ -11,7 +11,9 @@ build:
   jobs:
     pre_build:
       # Generate the feature table in about/distributions/index.md.
-      - "cd scripts; python feature-table.py"
+      - cd scripts
+      - python feature-table.py
+      - python download-figures.py
 
 sphinx:
   configuration: conf.py
