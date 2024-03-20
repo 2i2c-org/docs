@@ -99,21 +99,3 @@ def setup(app):
     # ref: https://support.freshdesk.com/en/support/solutions/articles/50000001015-launching-the-widget-when-a-button-is-clicked
     app.add_js_file(None, body=widget_embed_code)
     app.add_js_file("https://euc-widget.freshworks.com/widgets/80000009162.js", **{"async": "", "defer": ""})
-
-# -- Custom scripts -------------------------------------------------
-
-# Download figures we keep in Google Drive
-from requests import get
-figures = {
-    "https://drive.google.com/uc?export=download&id=1Mr51-s3D_KHPsAuTXbczaQ7mlPZUs9gm": "collaborative_learning_hub.png",
-    "https://drive.google.com/uc?export=download&id=16r5xE7SguunLfMh5LhSynSUfjb7IXs_n": "shared_responsibility_diagram.png",
-    "https://drive.google.com/uc?export=download&id=1gWAIQVKcB-uxuJsBHqlDlRTq88oki1zn": "scalable_research_hub.png",
-}
-for url, filename in figures.items():
-    path_image = Path(__file__).parent / "images" / filename
-    if not path_image.exists():
-        print(f"Downloading {filename}...")
-        resp = get(url)
-        path_image.write_bytes(resp.content)
-    else:
-        print(f"Diagram image exists, delete this file to re-download: {path_image}")
