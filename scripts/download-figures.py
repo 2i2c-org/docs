@@ -1,4 +1,4 @@
-# Download figures we keep in Google Drive
+# Download figures we keep in Google Drive. These figures are not version-controlled in the GH repo.
 
 from pathlib import Path
 from requests import get
