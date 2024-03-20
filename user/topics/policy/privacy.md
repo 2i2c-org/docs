@@ -17,7 +17,7 @@ We require _access_ to the information our infrastructure while it is running, b
   - We do not retain or share this information for any purpose.
 - 2i2c may have access to personally-identifiable information that is used for _authenticating_ users (e.g. e-mail log-ins).
   - We do not retain or share this information for any purpose.
-- We do not change or delete any user data on a hub without the consent of the hub's {term}`Community Representative`.
+- We do not change or delete any user data on a hub without the consent of the hub's {ref}`Community Representative<role:community-representative>`.
 - We collect aggregate statistics about general _usage_ of the infrastructure for monitoring and alerting purposes (e.g., number of active users each hour).
 
 ## After we stop working with a community

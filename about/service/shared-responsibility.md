@@ -1,5 +1,3 @@
-```{team} Service Team
-```
 # Shared responsibility model
 
 2i2c **shares responsibility for each hub** with the communities we serve.[^similar-models]
@@ -39,11 +37,9 @@ Below we describe these areas in more detail, and define the roles that 2i2c and
 4. **Enhance and develop cloud infrastructure**. Continuously develop and deploy software improvements with the goal of boosting service reliability and scalability.
 5. **Operate a Kubernetes cluster**. This is the cloud platform that manages all of a community's infrastructure, and may be shared between many communities.
 
-```{role} Site Reliability Engineer
-```
-
+(role:site-reliability-engineer)=
 ```{admonition} Role: Site Reliability Engineer
-A team of engineers with expertise in cloud infrastructure and open source tools that we use as part of our services. This group of people oversees the cloud infrastructure that a community uses. They perform new development and upgrades, make changes per the request of {team}`Community Representatives`, and coordinate with the {team}`Community Support Team` during incidents and outages.
+A team of engineers with expertise in cloud infrastructure and open source tools that we use as part of our services. This group of people oversees the cloud infrastructure that a community uses. They perform new development and upgrades, make changes per the request of {ref}`Community Representative<role:community-representative>`s, and coordinate with the [Support Process](../../support.md) during incidents and outages.
 This is roughly equivalent to a [Site Reliability Engineering Team](https://en.wikipedia.org/wiki/Site_reliability_engineering).
 
 See [our Infrastructure documentation](https://infrastructure.2i2c.org/en/latest/) for more information.
@@ -67,12 +63,11 @@ Usually, 2i2c assumes responsibility for all of the above, though we are experim
 4. **Create and manage data in the cloud**. If your communities requires access to a cloud-native dataset, format it properly and put it in a place that the hub can connect to.
 5. **Run workshops and training**. Training workshops are geared towards community leaders, with the goal of helping them share knowledge with others in their community.
 
-```{role} Community Guide
-```
+(role:community-guide)=
 ```{admonition} Role: Community Guide
 
 An expert practitioner with familiarity in user workflows as well as the technical use-cases that 2i2c's cloud services enable.
-Acts as a bridge between the communities we work with and our {role}`Site Reliability Engineer`s. Facilitates information transfer, signal-boosts community needs and requests, and guides communities in utilizing the infrastructure more effectively.
+Acts as a bridge between the communities we work with and our {ref}`Site Reliability Engineer<role:site-reliability-engineer>`s. Facilitates information transfer, signal-boosts community needs and requests, and guides communities in utilizing the infrastructure more effectively.
 
 See the {ref}`Support Team Documentation <tc:support:guide>` for more information.
 
@@ -91,30 +86,28 @@ However, our base service model does not allow us to spend extensive time managi
 
 ### Responsibilities
 
-A team of leaders *within the community that we work with* who act as {team}`Community Representatives` on behalf of their community. This team coordinates more closely with our {team}`Community Support Team`, facilitates the transfer of knowledge between 2i2c teams and communities of users, and helps manage the structure and dynamics of these communities. They also define the strategic mission and goals of each user community, and help us define the definition of "success" for the hub service.
+A team of leaders *within the community that we work with* who act as {ref}`Community Representatives<role:community-representative>` on behalf of their community. This team coordinates more closely with our [Support Process](../../support.md), facilitates the transfer of knowledge between 2i2c teams and communities of users, and helps manage the structure and dynamics of these communities. They also define the strategic mission and goals of each user community, and help us define the definition of "success" for the hub service.
 
 1. **Define success for the hub's community**. Community leaders understand the goals of a community's users, and define whether the hub is meeting their needs.
 2. **Oversee user access policy**. Decide who has access to the hub, and what permissions they have. Generally done via the JupterHub admin panel.
 3. **Manage and cultivate a community around the hub.** Define the community events, processes, structure, and communication channels that are best for a hub's community.
-4. **Represent community in decisions and feedback**. Serve as a point of contact for {role}`Site Reliability Engineer`s, make requests for changes to the hub, and surface incidents or problems if they arise.
+4. **Represent community in decisions and feedback**. Serve as a point of contact for {ref}`Site Reliability Engineer<role:site-reliability-engineer>`s, make requests for changes to the hub, and surface incidents or problems if they arise.
 5. **Make financial decisions about the hub**. Have decision authority for changes that have a financial impact on the infrastructure, and serve as a point of contact for billing matters.
 
-```{role} Hub Administrator
-```
+(role:hub-administrator)=
 ```{admonition} Role: Hub Administrator
 
 Trusted community members that perform common administrative operations on a hub that do not require intervention from a Hub Engineer.
-{team}`Community Representatives` are the first Hub Administrators, and they may add new Hub Administrators via the JupyterHub interface.
+{ref}`Community Representatives<role:community-representative>` are the first Hub Administrators, and they may add new Hub Administrators via the JupyterHub interface.
 They are able to add users, start/stop servers, and generally have more control over operations on the hub.
 
 **Filled by a community member**.
 ```
 
-```{role} Community Representative
-```
+(role:community-representative)=
 ```{admonition} Role: Community Representative
 
-Acts as the primary point of contact for a community, and ensures that the interests of the {team}`Hub Community` are represented in the infrastructure, and that the hub serves their needs.
+Acts as the primary point of contact for a community, and ensures that the interests of the Hub Community are represented in the infrastructure, and that the hub serves their needs.
 
 They have the authority to speak on behalf of the community, and make decisions about the infrastructure that the community uses.
 

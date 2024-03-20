@@ -10,7 +10,7 @@ When you make a support request, please include as much information as possible 
 % Copy the style classes of sphinx-design buttons
 % The JavaScript that this calls is defined in conf.py
 <button class="sd-btn sd-btn-primary" onclick="openWidget()" type="button">
-   Click here to open a support ticket
+   Open a support ticket
 </button>
 
 ```{caution}
@@ -20,7 +20,7 @@ Privacy extensions can block the pop-up contact form.
 
 ## Who can ask for support?
 
-A {role}`Community Representative` of a hub should be the one that surfaces support requests to the 2i2c {role}`Site Reliability Engineer`ing team.
+A {ref}`Community Representative<role:community-representative>` of a hub should be the one that surfaces support requests to the 2i2c {ref}`Site Reliability Engineering<role:site-reliability-engineer>` team.
 Before reaching out to 2i2c for support, this person should work with others in their community to understand the problem and to ensure that it is something that requires intervention from a 2i2c Engineer.
 
 ## The support process

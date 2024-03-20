@@ -2,7 +2,8 @@ import nox
 
 nox.options.reuse_existing_virtualenvs = True
 
-build_command = ["-b", "dirhtml", ".", "_build/dirhtml"]
+build_command = ["--builder", "dirhtml", "."]
+sphinx_build_command = ["-b", "dirhtml", ".","_build/html"]
 
 @nox.session(python=">=3.9")
 def docs(session):
@@ -16,7 +17,7 @@ def docs(session):
         cmd = ["sphinx-autobuild"]
         for folder in AUTOBUILD_IGNORE:
             cmd.extend(["--ignore", f"*/{folder}/*"])
-        cmd.extend(build_command)
+        cmd.extend(sphinx_build_command)
         session.run(*cmd)
     else:
-        session.run("sphinx-build", *build_command)
+        session.run("jupyter-book", "build", *build_command)

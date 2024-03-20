@@ -1,8 +1,10 @@
 myst-nb
 myst-parser[linkify]
 pandas
+matplotlib
 pyyaml
 requests
+jupyter-book
 sphinx
 sphinx-autobuild
 sphinx-copybutton

@@ -59,7 +59,7 @@ We strive to build an understanding of their needs, to represent their interests
 
 2i2c is a mission-driven non-profit organization that has a commitment to doing its work openly, transparently, and inclusively.
 Our mission is to provide researchers and educators with the infrastructure they need to do their work, and to support open source communities that underlie this infrastructure.
-2i2c is governed by a [Steering Council](tc:structure:steerco) made of members from the research and education community.
+2i2c is governed by a {doc}`Steering Council <tc:organization/steering-council>` made of members from the research and education community.
 2i2c manages all of our work in public spaces, including [all of our infrastructure](http://github.com/2i2c-org/infrastructure) as well as [all of our organizational strategy and practices](http://team-compass.2i2c.org/).
 
 
@@ -475,7 +475,7 @@ Updates
 
 There are many companies offering services and platforms via a subscription fee.
 The experience from a user's perspective may be similar and they may offer some open source tools as part of their services.
-Examples of these products are [CoCalc](https://cocalc.com/), [Deepnote](https://deepnote.com/), [engageLively](https://engagelively.com/), [Colaboratory (Google)](https://colab.research.google.com/), [Noteable](https://noteable.io/), [ObserveableHQ](https://observablehq.com/), [rstudio.cloud](https://rstudio.cloud/), [Sagemaker (AWS)](https://aws.amazon.com/sagemaker/), and [Saturn Cloud](https://saturncloud.io/).
+Examples of these products are [CoCalc](https://cocalc.com/), [Deepnote](https://deepnote.com/), [engageLively](https://galyleo.engagelively.com/), [Colaboratory (Google)](https://colab.research.google.com/), [ObserveableHQ](https://observablehq.com/), [rstudio.cloud](https://rstudio.cloud/), [Sagemaker (AWS)](https://aws.amazon.com/sagemaker/), and [Saturn Cloud](https://saturncloud.io/).
 
 Usage cost
 : Generally charge betwee $7 and $50 per user, per month, depending on the complexity of the resources needed and the service. Many SaaS offerings include enterprise services as well, but their prices are generally not advertised publicly and are often significantly more expensive.

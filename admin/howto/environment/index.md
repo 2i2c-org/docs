@@ -86,7 +86,7 @@ unable to start, due to conflicting packages. [See this blog post on using pip i
 ## Create multiple environments for users to select
 
 If your hub's community has workflows that differ significantly, it can be useful to create multiple user environments for your hub.
-This uses [Jupyter Hub User Profiles](z2jh:multiple-profiles) to create a menu of environment options when a user launches a new session.
+This uses to create a menu of environment options when a user launches a new session (see the [Zero to JupyterHub documentation](https://z2jh.jupyter.org/en/latest/jupyterhub/customizing/user-environment.html#using-multiple-profiles-to-let-users-select-their-environment)).
 
 To add multiple environments for your hub, take these steps:
 

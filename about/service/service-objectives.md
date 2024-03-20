@@ -79,14 +79,14 @@ Below are our objectives broken down by the type of support they relate to.
 
 :::{seealso}
 - See [](../../support.md) for more information about contacting support.
-- See [](tc:support:process) for our team's support process.
+- See {doc}`our Team Support Process<tc:projects/managed-hubs/support>` for our team's support process.
 :::
 
 ### General support objectives
 
 - We have a dedicated communications channel for support (see [](../../support.md)).
 - At least one team member is always tasked with monitoring this channel.
-- Our support team is communicative, helpful, and [abides by our Code of Conduct](tc:code-of-conduct).
+- Our support team is communicative, helpful, and abides by our {ref}`Code of Conduct<tc:code-of-conduct>`.
 
 ### Incident support objectives
 

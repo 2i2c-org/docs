@@ -1,9 +1,9 @@
 # -- Project information -----------------------------------------------------
 
-project = "Service Guide"
-copyright = "2022"
+project = "Hub Service Guide"
+copyright = "2024"
 author = "2i2c"
-version = "0.1alpha"
+version = "0.1"
 main_doc = "index"
 
 # -- General configuration ---------------------------------------------------
@@ -54,8 +54,8 @@ html_theme_options = {
 }
 
 intersphinx_mapping = {
-    "tc": ('https://team-compass.2i2c.org/en/latest', None),
-    "infra": ('https://infrastructure.2i2c.org/en/latest', None),
+    "tc": ('https://team-compass.2i2c.org', None),
+    "infra": ('https://infrastructure.2i2c.org', None),
     "jb": ('https://jupyterbook.org/en/stable/', None),
     "z2jh": ('https://z2jh.jupyter.org/en/latest', None),
 }
@@ -93,36 +93,9 @@ window.fwSettings={
 
 def setup(app):
     app.add_css_file("custom.css")
-    app.add_crossref_type("team", "team")
-    app.add_crossref_type("role", "role")
 
     # Add the JS code for our FreshDesk support widget
     # ref: https://support.freshdesk.com/en/support/solutions/articles/239273-setting-up-your-help-widget
     # ref: https://support.freshdesk.com/en/support/solutions/articles/50000001015-launching-the-widget-when-a-button-is-clicked
     app.add_js_file(None, body=widget_embed_code)
     app.add_js_file("https://euc-widget.freshworks.com/widgets/80000009162.js", **{"async": "", "defer": ""})
-
-# -- Custom scripts -------------------------------------------------
-
-# Generate the feature table
-import subprocess
-from pathlib import Path
-build_assets = Path("build_assets")
-build_assets.mkdir(exist_ok=True)
-subprocess.run(["python", "feature-table.py"], cwd="scripts")
-
-# Download figures we keep in Google Drive
-from requests import get
-figures = {
-    "https://drive.google.com/uc?export=download&id=1Mr51-s3D_KHPsAuTXbczaQ7mlPZUs9gm": "collaborative_learning_hub.png",
-    "https://drive.google.com/uc?export=download&id=16r5xE7SguunLfMh5LhSynSUfjb7IXs_n": "shared_responsibility_diagram.png",
-    "https://drive.google.com/uc?export=download&id=1gWAIQVKcB-uxuJsBHqlDlRTq88oki1zn": "scalable_research_hub.png",
-}
-for url, filename in figures.items():
-    path_image = Path(__file__).parent / "images" / filename
-    if not path_image.exists():
-        print(f"Downloading {filename}...")
-        resp = get(url)
-        path_image.write_bytes(resp.content)
-    else:
-        print(f"Diagram image exists, delete this file to re-download: {path_image}")
