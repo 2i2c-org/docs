@@ -3,7 +3,7 @@
 This instructional guide shows you how to add packages to a community-maintained upstream image. In this example, we add the [Python package `xarray`](https://docs.xarray.dev/en/stable/) to the [`jupyter/scipy-notebook` image](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) maintained by the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) community.
 
 ```{contents}
-:maxdepth: 2
+:depth: 2
 :local:
 ```
 
@@ -35,7 +35,7 @@ The following summarizes [Section 3.2. Allowing robot access to a user repositor
    You can also edit permissions later by clicking {octicon}`gear;1em;sd-text-info` *Options* next to the Robot Account name and selecting <i class="fa-regular fa-hard-drive sd-text-info"></i> *Set Repository Permissions*.
    ```
 
-1. Name your robot, e.g. `<hub_name>_image_builder` and then check the box next to the repository name that you created in [Set up GitHub repository and connect it to quay.io](#set-up-github-repository-and-connect-it-to-quay-io), e.g. `jupyter-scipy-xarray`. From the dropdown, select the *Write* permission and then confirm by clicking *Add permissions*.
+1. Name your robot, e.g. `<hub_name>_image_builder` and then check the box next to the repository name that you created in {ref}`Set up GitHub repository and connect it to quay.io<add-packages:set-up-github>`, e.g. `jupyter-scipy-xarray`. From the dropdown, select the *Write* permission and then confirm by clicking *Add permissions*.
    
 1. Click the Robot Account name to view its credentials, e.g.
    - *Username:* \<username\>+_<hub_name>_image_builder
@@ -83,10 +83,11 @@ Once complete, under the section *Repository secrets* you should now see two row
 
 1. Click the ![Git icon](media/git.svg) Git icon in the left sidebar to open the JupyterLab Git extension.
 
-1. Clone the forked repository from [Set up the GitHub repository and connect it to quay.io](#set-up-the-github-repository-and-connect-it-to-quay-io) into the hub by the clicking *Clone a Repository* button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
+1. Clone the forked repository from {ref}`Set up GitHub repository and connect it to quay.io<add-packages:set-up-github>` into the hub by the clicking *Clone a Repository* button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
 
 1. Change the working directory by double-clicking *example-inherit-from-community-image* in the file explorer on the left side of the screen.
 
+(add-packages:build-base-image)=
 ### Build base image
 
 1. Update the GitHub workflow files with your quay.io repository
@@ -151,7 +152,7 @@ Once complete, under the section *Repository secrets* you should now see two row
     
 ### Trigger build and check the custom image on Binder
     
-1. Stage, commit and push your changes by following the similar steps in Section [Build base image](build-base-image).
+1. Stage, commit and push your changes by following the similar steps in Section {ref}`Build base image<add-packages:build-base-image>`.
 
 1. Visit your GitHub repository at `https://github.com/<username>/example-inherit-from-community-image` and click the *Compare & pull request* button.
     
@@ -185,8 +186,9 @@ Once complete, under the section *Repository secrets* you should now see two row
    <registry>/<username>/<repo_name>:<git-commit-hash>
    ```
 
-e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`, which you need to provide in the Section [Link custom image to your hub](#link-custom-image-to-your-hub).
-    
+e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`, which you need to provide in the Section {ref}`Link custom image to your hub<add-packages:link-custom-image>`.
+
+(add-packages:link-custom-image)=
 ## Link custom image to your hub
     
 1. Open a [2i2c support ticket](https://docs.2i2c.org/support/) to request an update to your hub with the new custom image.
