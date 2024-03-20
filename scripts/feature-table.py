@@ -27,7 +27,7 @@ import pandas as pd
 
 URL_FEATURE_MATRIX = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5p52Wu166vKpcjTu9jf5J2yNG6c_C2-pHRkNLGQwKN2gJ_1UoGlalaglsgtBfQ7W0-aTP11phpgSA/pub?gid=1864974850&single=true&output=csv"
 
-Path("build_assets").mkdir(exist_ok=True)
+Path("../build_assets").mkdir(exist_ok=True)
 path_csv = Path("../build_assets/feature-matrix.csv")
 if path_csv.exists():
     print("Feature table exists, skipping update. Delete to re-generate it.")
