@@ -102,13 +102,6 @@ def setup(app):
 
 # -- Custom scripts -------------------------------------------------
 
-# Generate the feature table
-import subprocess
-from pathlib import Path
-build_assets = Path("build_assets")
-build_assets.mkdir(exist_ok=True)
-subprocess.run(["python", "feature-table.py"], cwd="scripts")
-
 # Download figures we keep in Google Drive
 from requests import get
 figures = {
