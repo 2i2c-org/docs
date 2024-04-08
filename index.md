@@ -93,6 +93,7 @@ Instructional how-to guides for common workflows for hub administration with a f
 :maxdepth: 2
 
 how-to-guides/add-packages-to-image
+how-to-guides/upload-files-to-cloud-storage
 
 ```
 
