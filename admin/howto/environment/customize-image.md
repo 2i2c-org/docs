@@ -1,9 +1,9 @@
-# Add packages to a community-maintained upstream image
+# Customize a community-maintained upstream image
 
 This instructional guide shows you how to add packages to a community-maintained upstream image. In this example, we add the [Python package `xarray`](https://docs.xarray.dev/en/stable/) to the [`jupyter/scipy-notebook` image](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) maintained by the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) community.
 
 ```{contents}
-:maxdepth: 2
+:depth: 2
 :local:
 ```
 
@@ -20,7 +20,6 @@ This instructional guide shows you how to add packages to a community-maintained
 
 1. On quay.io, click {octicon}`plus;1em;sd-text-info` *Create a new repository* and name your repository, e.g. `jupyter-scipy-xarray`. Set the repository to *Public* and leave it as an <i class="fa-regular fa-hard-drive sd-text-info"></i> *(Empty repository)*.
 
-
 ### Allow robot access to your quay.io repository
 
 The following summarizes [Section 3.2. Allowing robot access to a user repository](https://access.redhat.com/documentation/en-us/red_hat_quay/3.3/html/use_red_hat_quay/use-quay-manage-repo#allow-robot-access-user-repo) of the quay.io documentation.
@@ -35,7 +34,7 @@ The following summarizes [Section 3.2. Allowing robot access to a user repositor
    You can also edit permissions later by clicking {octicon}`gear;1em;sd-text-info` *Options* next to the Robot Account name and selecting <i class="fa-regular fa-hard-drive sd-text-info"></i> *Set Repository Permissions*.
    ```
 
-1. Name your robot, e.g. `<hub_name>_image_builder` and then check the box next to the repository name that you created in [Set up GitHub repository and connect it to quay.io](#set-up-github-repository-and-connect-it-to-quay-io), e.g. `jupyter-scipy-xarray`. From the dropdown, select the *Write* permission and then confirm by clicking *Add permissions*.
+1. Name your robot, e.g. `<hub_name>_image_builder` and then check the box next to the repository name that you created in {ref}`Set up GitHub repository and connect it to quay.io<add-packages:set-up-github>`, e.g. `jupyter-scipy-xarray`. From the dropdown, select the *Write* permission and then confirm by clicking *Add permissions*.
    
 1. Click the Robot Account name to view its credentials, e.g.
    - *Username:* \<username\>+_<hub_name>_image_builder
@@ -83,10 +82,11 @@ Once complete, under the section *Repository secrets* you should now see two row
 
 1. Click the ![Git icon](media/git.svg) Git icon in the left sidebar to open the JupyterLab Git extension.
 
-1. Clone the forked repository from [Set up the GitHub repository and connect it to quay.io](#set-up-the-github-repository-and-connect-it-to-quay-io) into the hub by the clicking *Clone a Repository* button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
+1. Clone the forked repository from {ref}`Set up the GitHub repository and connect it to quay.io<add-packages:set-up-github>` into the hub by the clicking *Clone a Repository* button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
 
 1. Change the working directory by double-clicking *example-inherit-from-community-image* in the file explorer on the left side of the screen.
 
+(add-packages:build-base-image)=
 ### Build base image
 
 1. Update the GitHub workflow files with your quay.io repository
@@ -103,7 +103,8 @@ Once complete, under the section *Repository secrets* you should now see two row
     
 1. Push your changes to the remote repository by clicking the <svg width="16" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" data-icon="git:push"><path xmlns="http://www.w3.org/2000/svg" class="jp-icon3" d="M14.5125 7.53C14.0025 4.9425 11.73 3 9 3C6.8325 3 4.95 4.23 4.0125 6.03C1.755 6.27 0 8.1825 0 10.5C0 12.9825 2.0175 15 4.5 15H14.25C16.32 15 18 13.32 18 11.25C18 9.27 16.4625 7.665 14.5125 7.53ZM14.25 13.5H4.5C2.8425 13.5 1.5 12.1575 1.5 10.5C1.5 8.9625 2.6475 7.68 4.17 7.5225L4.9725 7.44L5.3475 6.7275C6.06 5.355 7.455 4.5 9 4.5C10.965 4.5 12.66 5.895 13.0425 7.8225L13.2675 8.9475L14.415 9.03C15.585 9.105 16.5 10.0875 16.5 11.25C16.5 12.4875 15.4875 13.5 14.25 13.5ZM6 9.75H7.9125V12H10.0875V9.75H12L9 6.75L6 9.75Z" fill="#4F4F4F"></path></svg> Git push icon at the top of the panel.
 
-   ````{Note}
+   ````{dropdown} Move code in and out of the hub with GitHub
+   
    If you see the following dialog box,
     
    ```{image} https://github.com/czi-catalystproject/hub-champion-training/blob/main/media/episodes/transfer_data/gh-credentials.png?raw=true
@@ -112,7 +113,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    :align: center
    ```
 
-   then we recommend you press *Cancel* and securely authenicate using `gh-scoped-creds`. See the [2i2c Docs](https://2i2c.org/community-showcase/user/topics/data/git.html) for more information.
+   then we recommend you press *Cancel* and securely authenicate using `gh-scoped-creds`. See the [2i2c Docs – Move code in and out of the hub with GitHub](https://2i2c.org/community-showcase/user/topics/data/git.html) for more information.
    ````
 
 1. This triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build the base image and push this to the quay.io repository. The build process can take a few minutes. You can view the status of the build by visiting the {octicon}`play;1em;sd-text-info` *Actions* tab at `https://github.com/<username>/example-inherit-from-community-image`.
@@ -151,7 +152,7 @@ Once complete, under the section *Repository secrets* you should now see two row
     
 ### Trigger build and check the custom image on Binder
     
-1. Stage, commit and push your changes by following the similar steps in Section [Build base image](build-base-image).
+1. Stage, commit and push your changes by following the similar steps in Section {ref}`Build base image<add-packages:build-base-image>`.
 
 1. Visit your GitHub repository at `https://github.com/<username>/example-inherit-from-community-image` and click the *Compare & pull request* button.
     
@@ -185,8 +186,9 @@ Once complete, under the section *Repository secrets* you should now see two row
    <registry>/<username>/<repo_name>:<git-commit-hash>
    ```
 
-e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`, which you need to provide in the Section [Link custom image to your hub](#link-custom-image-to-your-hub).
-    
+e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`, which you need to provide in the Section {ref}`Link custom image to your hub<add-packages:link-custom-image>`.
+
+(add-packages:link-custom-image)=
 ## Link custom image to your hub
     
 1. Open a [2i2c support ticket](https://docs.2i2c.org/support/) to request an update to your hub with the new custom image.

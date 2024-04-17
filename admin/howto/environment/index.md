@@ -49,11 +49,17 @@ By following these steps, you have also created a [Binder-ready repository](http
 
 #### An in-depth guide
 
-To help you get started, we've created an in-depth how to [Add packages to a community-maintained upstream image](add-packages-to-image) guide and a [template repository](https://github.com/2i2c-org/example-inherit-from-commuity-image) to guide you through the process. You can go to the template repository by clicking the button below.
+To help you get started, we've created an in-depth how to [Customize a community-maintained upstream image](customize-image) guide and a [template repository](https://github.com/2i2c-org/example-inherit-from-commuity-image) to guide you through the process. You can go to the template repository by clicking the button below.
 
 ```{button-link} https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md
 :color: primary
-Go to user environment template
+Go to template repository
+```
+
+```{toctree}
+:hidden:
+
+customize-image
 ```
 
 ### Temporarily install packages for a session
@@ -79,7 +85,7 @@ unable to start, due to conflicting packages. [See this blog post on using pip i
 ## Create multiple environments for users to select
 
 If your hub's community has workflows that differ significantly, it can be useful to create multiple user environments for your hub.
-This uses [Jupyter Hub User Profiles](z2jh:multiple-profiles) to create a menu of environment options when a user launches a new session.
+This uses {ref}`Jupyter Hub User Profiles<z2jh:multiple-profiles>` to create a menu of environment options when a user launches a new session.
 
 To add multiple environments for your hub, take these steps:
 
