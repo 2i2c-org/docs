@@ -209,13 +209,13 @@ Once complete, under the section *Repository secrets* you should now see two row
    <registry>/<username>/<repo_name>:<git-commit-hash>
    ```
 
-e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`.
+   e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`.
     
 1. Open a [2i2c support ticket](https://docs.2i2c.org/support/) to request an update to your hub with the new custom image.
 
-```{image} media/open-support-ticket.png
-:alt: Screenshot of 2i2c support ticket.
-```
+   ```{image} media/open-support-ticket.png
+   :alt: Screenshot of 2i2c support ticket.
+   ```
 
 1. In the *Topic of Request* option, select the *Image Change Request* option and in the *Description* provide a link to the full image tag.
     
