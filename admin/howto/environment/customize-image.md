@@ -77,7 +77,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 1. Log into your hub to start a small server with the image you wish to update.
 
    ```{margin}
-    If your image user interface is RStudio, then switch to the JupyterLab interface by altering the URL to the form `https://<hub_name>.2i2c.cloud/user/<username>/lab`.
+    If your image user interface is RStudio, then you can switch to the JupyterLab interface by altering the URL to the form `https://<hub_name>.2i2c.cloud/user/<username>/lab`.
    ```
 
 1. Click the ![Git icon](media/git.svg) Git icon in the left sidebar to open the JupyterLab Git extension.
