@@ -10,7 +10,7 @@ This instructional guide shows you how to add packages to a community-maintained
 (customize-image:set-up-github)=
 ## Set up the GitHub repository and connect it to quay.io
 
-1. Fork {octicon}`repo-forked;1em;sd-text-info` the GitHub repository [example-inherit-from-community-image](https://github.com/yuvipanda/example-inherit-from-community-image) into your GitHub account.
+1. Fork {octicon}`repo-forked;1em;sd-text-info` the GitHub repository [example-inherit-from-community-image](https://github.com/2i2c-org/example-inherit-from-community-image) into your GitHub account.
 
    ```{margin}
    If you do not have a quay.io account, then can register for one at [https://sso.redhat.com](https://sso.redhat.com). Note that if you need to join your organization's account then you should register using an invitation from the organization's admin.
