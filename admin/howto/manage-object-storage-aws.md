@@ -58,7 +58,7 @@ It is the responsibility of the hub admin and hub users to delete objects in `$P
 
 By default there are no permission controls to prevent hub users from accessing each others' objects stored in scratch or persistent bucket storage.
 
-It is possible to configure read-only access for objects stored in cloud storage on your hub. Please consult [2i2c support](https://docs.2i2c.org/support/) to enable this feature.
+It is possible to configure read-only access for objects stored in cloud storage on your hub. Please consult {doc}`2i2c support<../../../support>` to enable this feature.
 
 ## Basic AWS CLI commands in the Terminal
 
@@ -161,15 +161,15 @@ Consult the [AWS Docs – Use high-level (s3) commands with the AWS CLI](https:/
   An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: Not authorized to perform sts:AssumeRoleWithWebIdentity.
   ```
 
-  Please open a {doc}`2i2c support<support>` ticket with us to resolve this issue.
+  Please open a {doc}`2i2c support<../../../support>` ticket with us to resolve this issue.
 
 - *If S3 bucket are not set up but we want them for our community what should the hub champion do?*
 
-  This feature is not enabled by default since there are extra cloud costs associated with providing S3 object storage. Please open a {doc}`2i2c support<support>` ticket with us to request this feature for your hub.
+  This feature is not enabled by default since there are extra cloud costs associated with providing S3 object storage. Please open a {doc}`2i2c support<../../../support>` ticket with us to request this feature for your hub.
 
 - *Is our S3 bucket accessible outside of the hub so I can upload files from elsewhere?*
 
-  Yes, this requires configuring AWS credentials from your machine, however we currently do no have documentation for this.  Please contact {doc}`2i2c support<support>` for guidance.
+  Yes, this requires configuring AWS credentials from your machine, however we currently do no have documentation for this.  Please contact {doc}`2i2c support<../../../support>` for guidance.
 
 - *Is our S3 bucket accessible outside of the hub so users can download files to elsewhere?*
 
@@ -177,8 +177,8 @@ Consult the [AWS Docs – Use high-level (s3) commands with the AWS CLI](https:/
 
 - *Will 2i2c create additional, new S3 buckets for our community?*
 
-  Please contact {doc}`2i2c support<support>` to discuss this option.
+  Please contact {doc}`2i2c support<../../../support>` to discuss this option.
 
 - *If a community hub is running on GCP or Azure and we have object storage, what are our options?*
 
-  Check out our {doc}`Cloud Object Storage<../user/topics/data/cloud>` topic guide in the first instance.
+  Check out our {doc}`Cloud Object Storage<../../user/topics/data/cloud>` user topic guide in the first instance.
