@@ -84,19 +84,6 @@ admin/howto/create-billing-account
 topic/cloud-costs
 ```
 
-## How-to guides
-
-Instructional how-to guides for common workflows for hub administration with a focus on achieving a practical goal.
-
-```{toctree}
-:caption: How-to guides
-:maxdepth: 2
-
-how-to-guides/add-packages-to-image
-how-to-guides/upload-files-to-cloud-storage
-
-```
-
 ## Reference material
 
 Lists and programmatically-generated content to serve as a quick reference.
