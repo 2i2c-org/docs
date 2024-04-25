@@ -140,7 +140,7 @@ research organizations use this.
 
 [RStudio](https://rstudio.com) is an IDE for R, created by the RStudio company.
 
-### Ask for changes to the default environmen
+### Ask for changes to the default environment
 
 If you are using the default environment, and think that one or two packages should be installed by default on it, please [send a support request](../../../support.md) and request an update to the default environment.
 
