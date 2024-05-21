@@ -123,7 +123,7 @@ client = cluster.get_client()
 client
 ```
 
-Make a note of the dashboard address of the form `service/...` to connect to the Dask dashboard.
+Note the dashboard address of the form `/services/...` to connect to the Dask dashboard.
 
 ### Connect Dask dashboard to Dask JupyterLab extension
 
