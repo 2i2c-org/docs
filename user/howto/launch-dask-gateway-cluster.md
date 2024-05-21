@@ -198,7 +198,7 @@ cluster.close()
 
 - *What are the best practices for using Dask to scale computations?*
 
-  Take a look at the [Dask - Besk Practices](https://docs.dask.org/en/latest/best-practices.html) documentation for a guide to using Dask efficiently.
+  Take a look at the [Dask - Best Practices](https://docs.dask.org/en/latest/best-practices.html) documentation for a guide to using Dask efficiently.
 
 - *Why can't I choose the instance type for my cluster?*
 
