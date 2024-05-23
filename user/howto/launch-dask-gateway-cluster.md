@@ -11,7 +11,7 @@ This guide shows you how to launch a Dask gateway cluster for parallel and distr
 
 Dask Gateway allows users to launch clusters for scaling computations efficiently with more CPU and memory on cloud resources, without requiring direct access to the underlying Kubernetes backend of the 2i2c hub. Configuration, such as efficient cluster resourcing, authentication and security settings, is automatically handled for users to provide a consistent user experience across the hub.
 
-:::{admonition} What's the difference between Dask and Dask Gateway
+:::{admonition} What's the difference between Dask and Dask Gateway?
 :class: note
 When using Dask on a local machine, you will often instantiate a cluster using
 ```python
@@ -40,7 +40,7 @@ gateway = Gateway()  # Uses values configured for the 2i2c Dask hub (recommended
 ```
 
 :::{note}
-Leave the argument of the `Gateway()` constructor empty to use the default configuration for your 2i2c Dask hub (parameters such as `address`, `proxy_address`, `auth`, etc. will be automatically supplied to the `Gateway()` object via environment variables)
+Leave the argument of the `Gateway()` constructor empty to use the default configuration for your 2i2c Dask hub (parameters such as `address`, `proxy_address`, `auth`, etc. will be automatically supplied to the `Gateway()` object via environment variables).
 :::
 
 ### Configure cluster options
@@ -66,7 +66,7 @@ Resources per worker container
 : Select 1/2/4/8/16 CPUs and corresponding memory requests from a dropdown menu.
 
 Image
-: User image on the client side is automatically defined to match the Dask gateway version on the server side.
+: This defaults to the user image deployed on the Dask hub.
 
 Environment variables (YAML)
 : Set environment variables for both the workers and schedulers using YAML, e.g. `ENV_VAR: my_environment_variable`.
@@ -123,7 +123,7 @@ client = cluster.get_client()
 client
 ```
 
-Note the dashboard address of the form `/services/...` to connect to the Dask dashboard.
+Note the dashboard address of the form `/services/dask-gateway/clusters/...` to connect to the Dask dashboard later.
 
 ### Connect Dask dashboard to Dask JupyterLab extension
 
@@ -226,4 +226,4 @@ cluster.close()
   
 - *How do I install software packages to my Dask hub environment?*
 
-   During code development, use the [Dask distributed built-in scheduler plugin](https://distributed.dask.org/en/latest/plugins.html?highlight=pipinstall#built-in-scheduler-plugins) `PipInstall` to pip install a set of packages on all Dask workers (see the [Pangeo docs](https://pangeo.io/cloud.html#dask-software-environment) for an example). However, this increases the time to start up each worker. During production, for best performance we advise adding the required software packages to the [Pangeo Docker image](https://pangeo-docker-images.readthedocs.io/en/latest/), ensuring that the key packages `dask-gateway` and `dask-labextension` for the Dask dashboard are included. See [Customize a community-maintained upstream image](../../admin/howto/environment/customize-image) and contact your hub admin to [Configure the hub with the configurator](../../admin/howto/configurator) or use [The "Other" choice](./specify-unlisted-image.md/#the-other-choice) in the image selection dropdown if available.
+   During code development, use the [Dask distributed built-in scheduler plugin](https://distributed.dask.org/en/latest/plugins.html?highlight=pipinstall#built-in-scheduler-plugins) `PipInstall` to pip install a set of packages on all Dask workers (see the [Pangeo docs](https://pangeo.io/cloud.html#dask-software-environment) for an example). However, this increases the time to start up each worker. During production, for best performance we advise adding the required software packages to the [Pangeo Docker image](https://pangeo-docker-images.readthedocs.io/en/latest/), ensuring that the key package `dask-gateway` is included (and `dask-labextension` if you require the Dask dashboard). See [Customize a community-maintained upstream image](../../admin/howto/environment/customize-image) and deploy to the hub by contacting your hub admin to [Configure the hub with the Configurator](../../admin/howto/configurator) or use [The "Other" choice](./specify-unlisted-image.md/#the-other-choice) in the image selection dropdown if available.
