@@ -36,7 +36,7 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 
 user/topics/policy/index
 user/topics/data/index.md
-user/howto/specify-unlisted-image.md
+user/howto/index.md
 ```
 
 ## Administer the hub

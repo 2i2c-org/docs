@@ -37,6 +37,7 @@ This is a *readonly* directory - anybody on the hub can *access* and *read from*
 The hub administrator may choose to distribute shared materials via this directory.
 The `shared` directory is not intended as a way for hub users to share data with each other.
 
+(filesystem:tmp)=
 ## The `/tmp` Directory
 
 Any directory outside of ``/home/jovyan`` is emphemeral on Cloud-hosted JupyterHubs. This means if you 
