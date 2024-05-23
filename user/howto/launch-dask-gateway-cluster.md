@@ -36,11 +36,11 @@ Create a gateway client to communicate with the dask-gateway server.
 
 ```python
 from dask_gateway import Gateway
-gateway = Gateway()  # Use values stored in your local configuration (recommended)
+gateway = Gateway()  # Uses values configured for the 2i2c Dask hub (recommended)
 ```
 
 :::{note}
-Leave the argument of the `Gateway()` constructor empty to use the default configuration for your 2i2c Dask hub which automatically supplies parameters such as `address`, `proxy_address`, `auth`, etc.
+Leave the argument of the `Gateway()` constructor empty to use the default configuration for your 2i2c Dask hub (parameters such as `address`, `proxy_address`, `auth`, etc. will be automatically supplied to the `Gateway()` object via environment variables)
 :::
 
 ### Configure cluster options
@@ -60,7 +60,7 @@ options
 #### Cluster options
 
 Instance type running worker containers
-: This defaults to the machine type `n2-high-mem16` for Google Cloud and `r5.4xlarge` for AWS, with a maximum of 16 CPUs available.
+: This defaults to the machine type `n2-highmem-16` for Google Cloud and `r5.4xlarge` for AWS, with a maximum of 16 CPUs available.
 
 Resources per worker container
 : Select 1/2/4/8/16 CPUs and corresponding memory requests from a dropdown menu.
@@ -188,7 +188,7 @@ ax.scatter(X[::10000, 0], X[::10000, 1], marker='.', c=km.labels_[::10000],
 
 ### Shut down the cluster
 
-Shut down the cluster when in not in use to minimize the waste of computational resources and costs.
+Shut down the cluster when not in use to minimize the waste of computational resources and costs.
 
 ```python
 cluster.close()
@@ -202,7 +202,7 @@ cluster.close()
 
 - *Why can't I choose the instance type for my cluster?*
 
-  The default is `n2-high-mem16` for Google Cloud and `r5.4xlarge` for AWS, with a maximum of 16 CPUs available on each machine. These instance types are chosen so that there is a consistent node pool across all 2i2c Dask hubs and more efficient cluster resourcing.
+  The default is `n2-highmem-16` for Google Cloud and `r5.4xlarge` for AWS, with a maximum of 16 CPUs available on each machine. These instance types are chosen so that there is a consistent node pool across all 2i2c Dask hubs and more efficient cluster resourcing.
 
 - *Should I use manual or adaptive scaling?*
 
