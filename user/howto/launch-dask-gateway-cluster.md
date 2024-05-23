@@ -123,7 +123,7 @@ client = cluster.get_client()
 client
 ```
 
-Make a note of the dashboard address of the form `service/...` to connect to the Dask dashboard.
+Note the dashboard address of the form `/services/...` to connect to the Dask dashboard.
 
 ### Connect Dask dashboard to Dask JupyterLab extension
 
@@ -210,7 +210,7 @@ cluster.close()
 
 - *How do I choose the number of workers/resources per worker?*
 
-  Like any other scaling problem, the answer to this question is specific to the application code. As suggested in the [Dask - Besk Practices](https://docs.dask.org/en/latest/best-practices.html), start with a small subset of your data and evaluate performance using the Dask dashboard before scaling resources to the full dataset.
+  Like any other scaling problem, the answer to this question is specific to the application code. As suggested in the [Dask - Best Practices](https://docs.dask.org/en/latest/best-practices.html), start with a small subset of your data and evaluate performance using the Dask dashboard before scaling resources to the full dataset.
 
 - *Why are there limited options for CPU and memory resources per worker?*
 
