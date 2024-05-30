@@ -16,9 +16,8 @@ This is the same for all users, but no one else can see or access the files in *
 ``/home/jovyan`` is a persistant network-attached drive. Any files you put there will be there when you
 log out and log back into the JupyterHub. 
 
-The ``/home/jovyan`` space is typically limited to 10 GB. Consequently, your home directory is intended 
-only for notebooks, analysis scripts, and small datasets (< 1 GB). It is not an appropriate place to store 
-large datasets.
+The ``/home/jovyan`` space is intended only for notebooks and code. It's not an appropriate place to store
+datasets, as it can get really expensive (and slow) when used that way.
 
 ### Modify your bash profile
 
