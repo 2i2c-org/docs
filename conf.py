@@ -68,6 +68,9 @@ rediraffe_redirects = {
     # Added 2022-11-29
     "about/service/roles.md": "about/service/shared-responsibility.md",
     "about/service/team.md": "about/service/shared-responsibility.md",
+
+    # Added 2024-06-11
+    "admin/howto/environment/hub-user-image-template-guide.md": "admin/howto/environment/customize-image.md"
 }
 
 # Disable linkcheck for anchors because it throws false errors for any JS anchors
