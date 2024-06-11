@@ -37,6 +37,9 @@ Authorisation to pull and push to GitHub is handled with [`gh-scoped-creds`](htt
    ```
    Copy the code from the prompt and paste into [https://github.com/login/device](https://github.com/login/device) as instructed.
 1. Authorise the hub to access GitHub by clicking the green button with the label *Authorize <name of hub>*.
+   ```{margin}
+   You only need to do this once per JupyterHub, and can revoke access any time. You can always provide access to your own personal repositories, but might need approval from admins of GitHub organizations if you want to push to repos in that organization.
+     ```     
 1. [Install the hub's GitHub App](https://docs.github.com/en/developers/apps/managing-github-apps/installing-github-apps) to allow `gh-scoped-creds` for all or specific repositories you would like to push to that are owned by your GitHub account/organisation, and check that `Read and write access to code` option is enabled.
 1. You should now be able to pull and push to GitHub from the hub without entering your credentials.
 
