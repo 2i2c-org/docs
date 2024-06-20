@@ -1,5 +1,14 @@
 # Cloud Object Storage
 
+This section gives an overview of storing data in the cloud, as well as how-to guides for using specific tools to manage your cloud data.
+
+```{toctree}
+:maxdepth: 1
+manage-object-storage-aws
+```
+
+## Overview
+
 Your hub lives in the cloud.
 The preferred way to store data in the cloud is using [cloud object storage](https://aws.amazon.com/what-is-cloud-object-storage/), such as Amazon S3 or Google Cloud Storage.
 Cloud object storage is essentially a key/value storage system.
