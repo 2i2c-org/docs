@@ -1,7 +1,7 @@
 (object-storage-aws)=
 # How-to manage S3 cloud object storage with AWS CLI
 
-This instructional guide shows you how to upload files to AWS S3 cloud object storage for your hub. In this example, we cover some basic AWS CLI commands for managing S3 objects within cloud object storage for your hub.
+This instructional guide shows you how to upload files from your hub to AWS S3 cloud object storage. In this example, we cover some basic AWS CLI commands for managing S3 objects within cloud object storage for your hub.
 
 ```{admonition} Who is this guide for?
 :class: note
