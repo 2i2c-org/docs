@@ -1,11 +1,12 @@
 # Cloud Object Storage
 
-This section gives an overview of storing data in the cloud, as well as how-to guides for using specific tools to manage your cloud data:
+This section gives an overview of storing data in the cloud, as well as links to how-to guides for using specific tools to manage your cloud data:
 
 ```{toctree}
 :maxdepth: 1
 working-with-object-storage
 manage-object-storage-aws
+manage-object-storage-gcp
 ```
 
 ## Overview
