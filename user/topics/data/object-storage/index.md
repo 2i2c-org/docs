@@ -21,6 +21,52 @@ On the other hand, object storage “scales out” nearly infinitely, meaning th
 This makes object storage well suited for distributed data analytics.
 However, data analysis software must be adapted to take advantage of these properties.
 
+## Scratch versus persistent buckets on a 2i2c hub
+
+Bucket
+: A *bucket* is a container for objects.
+
+Object
+: An *object* is a file and any metadata that describes that file.
+
+(object-storage:env-var-scratch)=
+### Scratch buckets
+
+[Scratch buckets](https://infrastructure.2i2c.org/topic/features/#scratch-buckets-on-object-storage) are designed for storage of *temporary* files, e.g. intermediate results. Objects stored in a scratch bucket are purged after 7 days.
+
+Check the name of your scratch bucket by opening a Terminal in your hub and running the command
+
+```bash
+$ echo $SCRATCH_BUCKET
+s3://2i2c-aws-us-scratch-showcase/<username>
+```
+
+(object-storage:env-var-persistent)=
+### Persistent buckets
+
+[Persistent buckets](https://infrastructure.2i2c.org/topic/features/#persistent-buckets-on-object-storage) are designed for storing data that is consistently used throughout the lifetime of a project and the data is not purged after a set number of days.
+
+Check the name of your persistent bucket by opening a Terminal in your hub and running the command
+
+```bash
+$ echo $PERSISTENT_BUCKET
+s3://2i2c-aws-us-persistent-showcase/<username>
+```
+
+## Storage costs
+
+See [2i2c Infrastructure Guide – What exactly do cloud providers charge us for?](https://infrastructure.2i2c.org/topic/billing/chargeable-resources/#object-storage) for a detailed overview of cloud object storage costs. 
+
+:::{warning}
+It is the responsibility of the hub admin and hub users to delete objects in `$PERSISTENT_BUCKET` when no longer needed to minimize cloud billing costs. 2i2c takes no responsibility for managing storage costs and objects stored in `$PERSISTENT_BUCKET`.
+:::
+
+## File permissions
+
+By default there are no permission controls to prevent hub users from accessing each others' objects stored in scratch or persistent bucket storage.
+
+It is possible to configure read-only access for objects stored in cloud storage on your hub. Please consult {doc}`2i2c support<../../../support>` to enable this feature.
+
 ## Cloud-Native Formats
 
 Cloud-native file formats are formats that are designed from the beginning to

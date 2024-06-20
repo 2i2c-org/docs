@@ -1,64 +1,19 @@
 (object-storage-aws)=
 # How-to manage S3 cloud object storage with AWS CLI
 
-This instructional guide shows you how to upload files to AWS S3 cloud object storage for your hub. In this example, we cover the difference between scratch versus persistent buckets and some basic AWS CLI commands for managing S3 objects within cloud object storage for your hub.
+This instructional guide shows you how to upload files to AWS S3 cloud object storage for your hub. In this example, we cover some basic AWS CLI commands for managing S3 objects within cloud object storage for your hub.
 
 ```{admonition} Who is this guide for?
 :class: note
 
-Some community hubs running on AWS infrastructure have scratch and/or persistent S3 storage buckets already configured. This documentation is intended for hub champions that run a hub with this feature enabled.
+Some community hubs running on AWS infrastructure have scratch and/or persistent S3 storage buckets already configured. This documentation is intended for users with a hub that has this feature enabled.
+
 ```
 
 ```{contents}
 :depth: 2
 :local:
 ```
-
-## Scratch versus persistent buckets on a 2i2c hub
-
-Bucket
-: A *bucket* is a container for objects.
-
-Object
-: An *object* is a file and any metadata that describes that file.
-
-(object-storage-aws:env-var-scratch)=
-### Scratch buckets
-
-[Scratch buckets](https://infrastructure.2i2c.org/topic/features/#scratch-buckets-on-object-storage) are designed for storage of *temporary* files, e.g. intermediate results. Objects stored in a scratch bucket are purged after 7 days.
-
-Check the name of your scratch bucket by opening a Terminal in your hub and running the command
-
-```bash
-$ echo $SCRATCH_BUCKET
-s3://2i2c-aws-us-scratch-showcase/<username>
-```
-
-(object-storage-aws:env-var-persistent)=
-### Persistent buckets
-
-[Persistent buckets](https://infrastructure.2i2c.org/topic/features/#persistent-buckets-on-object-storage) are designed for storing data that is consistently used throughout the lifetime of a project and the data is not purged after a set number of days.
-
-Check the name of your persistent bucket by opening a Terminal in your hub and running the command
-
-```bash
-$ echo $PERSISTENT_BUCKET
-s3://2i2c-aws-us-persistent-showcase/<username>
-```
-
-## Storage costs
-
-See [2i2c Infrastructure Guide – What exactly do cloud providers charge us for?](https://infrastructure.2i2c.org/topic/billing/chargeable-resources/#object-storage) for a detailed overview of cloud object storage costs. 
-
-:::{warning}
-It is the responsibility of the hub admin and hub users to delete objects in `$PERSISTENT_BUCKET` when no longer needed to minimize cloud billing costs. 2i2c takes no responsibility for managing storage costs and objects stored in `$PERSISTENT_BUCKET`.
-:::
-
-## File permissions
-
-By default there are no permission controls to prevent hub users from accessing each others' objects stored in scratch or persistent bucket storage.
-
-It is possible to configure read-only access for objects stored in cloud storage on your hub. Please consult {doc}`2i2c support<../../../support>` to enable this feature.
 
 ## Basic AWS CLI commands in the Terminal
 
@@ -145,15 +100,15 @@ Consult the [AWS Docs – Use high-level (s3) commands with the AWS CLI](https:/
 
 ## FAQs
 
-- *How does a hub champion determine if our hub is running on AWS or not?*
+- *How do I know if our hub is running on AWS or not?*
 
   Check out our [list of running hubs](https://infrastructure.2i2c.org/reference/hubs/) to see which cloud provider your hub is running on.
 
-- *How does a hub champion determine if a scratch and/or persistent bucket is already available?*
+- *How do I determine if a scratch and/or persistent bucket is already available?*
 
-  Check whether the environment variables for each bucket are set. See {ref}`<object-storage-aws:env-var-scratch>` and {ref}`<object-storage-aws:env-var-persistent>`
+  Check whether the environment variables for each bucket are set. See {ref}`Scratch buckets<object-storage:env-var-scratch>` and {ref}`Persistent buckets<object-storage:env-var-persistent>`
 
-- *If S3 buckets are supposed to be available but the environment variables for AWS credentials are not defined, what should the hub champion do?*
+- *If S3 buckets are supposed to be available but the environment variables for AWS credentials are not defined, what should I do?*
 
   If environment variables for the relevant AWS credentials for your hub are not defined, then you may encounter the following error
 
@@ -161,15 +116,15 @@ Consult the [AWS Docs – Use high-level (s3) commands with the AWS CLI](https:/
   An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: Not authorized to perform sts:AssumeRoleWithWebIdentity.
   ```
 
-  Please open a {doc}`2i2c support<../../../support>` ticket with us to resolve this issue.
+  Please contact your hub champion so that they can open a {doc}`2i2c support<../../../../support>` ticket with us to resolve this issue on your behalf.
 
-- *If S3 bucket are not set up but we want them for our community what should the hub champion do?*
+- *If S3 buckets are not set up but I want them for my community what should the I do?*
 
-  This feature is not enabled by default since there are extra cloud costs associated with providing S3 object storage. Please open a {doc}`2i2c support<../../../support>` ticket with us to request this feature for your hub.
+  This feature is not enabled by default since there are extra cloud costs associated with providing S3 object storage. Please speak to your hub champion, who can then open a {doc}`2i2c support<../../../../support>` ticket with us to request this feature for your hub.
 
 - *Is our S3 bucket accessible outside of the hub so I can upload files from elsewhere?*
 
-  Yes, this requires configuring AWS credentials from your machine, however we currently do no have documentation for this.  Please contact {doc}`2i2c support<../../../support>` for guidance.
+  Yes, this requires configuring AWS credentials from your machine, however we currently do no have documentation for this.  Please contact {doc}`2i2c support<../../../../support>` for guidance.
 
 - *Is our S3 bucket accessible outside of the hub so users can download files to elsewhere?*
 
@@ -177,8 +132,8 @@ Consult the [AWS Docs – Use high-level (s3) commands with the AWS CLI](https:/
 
 - *Will 2i2c create additional, new S3 buckets for our community?*
 
-  Please contact {doc}`2i2c support<../../../support>` to discuss this option.
+  Please contact contact your hub champion to liaise with {doc}`2i2c support<../../../../support>` to discuss this option.
 
-- *If a community hub is running on GCP or Azure and we have object storage, what are our options?*
+- *If a our hub is running on GCP or Azure and we have object storage, what are our options?*
 
-  Check out our {doc}`Cloud Object Storage<../../user/topics/data/cloud>` user topic guide in the first instance.
+  Check out our resources listed in the {doc}`Cloud Object Storage<index>` user topic guide.
