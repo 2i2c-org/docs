@@ -40,9 +40,9 @@ The following examples are for managing objects in a scratch bucket using the `$
 ### List prefixes within an S3 bucket
 
 Prefix
-: There is no concept of "folders" in flat cloud object storage and every object is instead indexed with a key-value pair. Prefixes are a string of characters at the beginning of the object key name used to organize objects in a similar way to folders. 
+: There is no concept of "folders" in flat cloud object storage and every object is instead indexed with a key-value pair. Prefixes are a string of characters at the beginning of the object key name used to organize objects in a similar way to folders.
 
-Storage buckets on a 2i2c hub are organized into prefixes named after a hub user's username. To list the prefixes of users that have stored files in cloud object storage, use the command 
+Storage buckets on a 2i2c hub are organized into prefixes named after a hub user's username. To list the prefixes of users that have stored files in cloud object storage, use the command
 
 ```bash
 $ aws s3 ls $SCRATCH_BUCKET
@@ -69,16 +69,16 @@ aws s3 ls $SCRATCH_BUCKET/
 Note the trailing slash `/` after `$SCRATCH_BUCKET` compared to the command specified in {ref}`List prefixes within an S3 bucket<object-storage:list-prefixes>`.
 :::
 
-### Upload and download files to and from a bucket
+### Copy files on the hub to and from a bucket
 
-Upload a file to your prefix in the scratch bucket with the command
+Copy a file on the hub to your prefix in the scratch bucket with the command
 
 ```bash
 $ aws s3 cp <filepath> $SCRATCH_BUCKET/
 upload: ./<filepath> to s3://2i2c-aws-us-scratch-showcase/<username>/<filepath>
 ```
 
-and download a file from your prefix in the scratch bucket with the command
+and copy a file from your prefix in the scratch bucket with the command
 
 ```bash
 $ aws s3 cp $SCRATCH_BUCKET/<source_filepath> <target_filepath>
