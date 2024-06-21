@@ -109,8 +109,8 @@ See [Google Cloud Docs – Delete objects](https://cloud.google.com/storage/docs
 
 We outline workflows for two scenarios:
 
-- [Small datasets from your local machine](#small-datasets-from-your-local-machine) is suitable for data transfer from your PC or laptop
-- [Large datasets from a remote server](#large-datasets-from-a-remote-server) is suitable for data transfer from places like a supercomputer
+- [Small datasets from your local machine](#small-datasets-from-your-local-machine) is suitable for data transfer from a private resource such as your PC or laptop
+- [Large datasets from a remote server](#large-datasets-from-a-remote-server) is suitable for data transfer from a shared resource such as a supercomputer
 
 ```{tip}
 The following workflows assume you are operating a Unix-like operating system from outside the hub.
@@ -118,7 +118,7 @@ The following workflows assume you are operating a Unix-like operating system fr
 
 ### Small datasets from your local machine
 
-For small datasets that can be uploaded from your local machine, e.g. laptop or PC, you can generate a temporary access token on the hub to upload data to the GCP bucket.
+For small datasets that can be uploaded from your local machine, e.g. laptop or PC, you can generate a temporary access token on the hub to upload data to the GCP bucket. Keep this token safe and do not expose it publicly on a shared system.
 
 1. Set up a new software environment on your *local* machine
 
@@ -184,6 +184,74 @@ For small datasets that can be uploaded from your local machine, e.g. laptop or 
    ```
 
 ### Large datasets from a remote server
+
+For large datasets to be uploaded from a remote server, e.g. a supercomputer, you are authorized via membership of a Google Group. Do not store any access tokens, such as in the method above, publicly on a shared system.
+
+1. Request membership of the Google Group for access to bucket storage from your Hub Champion.
+
+1. From the *remote server*, ensure that the `google-cloud-sdk` is available in your software environment (if you need help, seek guidance from the administrator of the remote server).
+
+1. Set the Google account that is used to authorize access through the Google Group membership
+
+   ```bash
+   gcloud config set account <user@gmail.com>
+   ```
+
+1. Obtain user access credentials via a web flow with no browser
+
+   ```bash
+   gcloud auth application-default login --scopes=https://www.googleapis.com/auth/devstorage.read_write,https://www.googleapis.com/auth/iam.test --no-browser
+   ```
+
+   ```{warning}
+   It is important to include the `--scopes=` flag for security reasons. Do not run this command without it!
+   ```
+
+1. Follow the instructions from the output. This will look like
+
+   ```bash
+   You are authorizing client libraries without access to a web browser.
+   Please run the following command on a machine with a web browser and copy its
+   output back here. Make sure the installed gcloud version is 372.0.0 or newer.
+
+   gcloud auth application-default login --remote-bootstrap="https://accounts.
+   google.com/o/oauth2uth2/auth?response_type=code&
+   client_id=XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXX.apps.
+   leusgoogleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.
+   com%2Fauth%2Fdevstorage.read_writ3A%2e+https%3A%2F%2Fwww.googleapis.
+   com%2Fauth%2Fiam.test&state=XXXXXXXXXXXXXXXXXXXXX&
+   offlaccess_type=offline&
+   code_challenge=XXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXX&
+   code_challetokenge_method=S256&token_usage=remote"
+
+   Enter the output of the above command:
+   ```
+
+1. After you have run the above command on a *different* machine with a web browser, you will be asked to authenticate yourself with a Google account with the web flow. Once you have completed this, return the terminal to see an output such
+
+   ```bash
+   Copy the following line back to the gcloud CLI waiting to continue the login
+   flow. WARNING: The following line enables access to your Google Cloud
+   resources. Only copy it to the trusted machine that you ran the `gcloud auth
+   application-default login --no-browser` command on earlier.
+
+   https://localhost:8085/?state=HorR9abyg9sZCV0IcHYEjLAdicIJYJ&code=4/
+   0ATx3LY5PQ3OAy45H1T2pEesNGiOBK7FL9n5cwLQ8J2ltju8pCtW6-EFTStYjSAI_xuXcvQ&
+   scope=https://www.googleapis.com/auth/devstorage.read_write%20https://www.
+   googleapis.com/auth/iam.test
+   ```
+
+1. Copy the URL from the output of the above command and paste this into the `Enter the output of the above command:` that remains displayed on the *remote server*. This will give an output like
+
+   ```bash
+   Credentials saved to file: [/<remote-server-path>/.config/gcloud/
+   application_default_credentials.json]
+
+   These credentials will be used by any library that requests Application 
+   Default Credentials (ADC).
+   ```
+
+1. If successful, you should be able to use the commands from [Basic Google Cloud SDK commands in the Terminal](#basic-google-cloud-sdk-commands-in-the-terminal) to manage files between the remote server and the storage bucket.
 
 ## FAQs
 
