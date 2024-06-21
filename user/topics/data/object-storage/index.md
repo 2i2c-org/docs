@@ -57,20 +57,22 @@ s3://2i2c-aws-us-persistent-showcase/<username>
 
 ## Storage costs
 
-See [2i2c Infrastructure Guide – What exactly do cloud providers charge us for?](https://infrastructure.2i2c.org/topic/billing/chargeable-resources/#object-storage) for a detailed overview of cloud object storage costs. 
+See [2i2c Infrastructure Guide – What exactly do cloud providers charge us for?](https://infrastructure.2i2c.org/topic/billing/chargeable-resources/#object-storage) for a detailed overview of cloud object storage costs.
 
-:::{tip}
-It is the responsibility of the hub admin and hub users to delete objects in `$PERSISTENT_BUCKET` when no longer needed to minimize cloud billing costs. 2i2c takes no responsibility for managing storage costs and objects stored in `$PERSISTENT_BUCKET`.
-:::
+```{tip}
+It is the responsibility of the hub admin and hub users to delete objects in `$PERSISTENT_BUCKET` when no longer needed to minimize cloud billing costs. Hub champions are responsible for managing storage costs and objects stored in `$PERSISTENT_BUCKET`.
+```
 
-## File permissions
+```{tip}
+Every file you download from the hub to another machine incurs a **heavy data egress cost**. Consider carefully whether you need to download large datasets from the hub, or alternatively post-process and compress files if possible. Hub champions are responsible for costs incurred from data egress.
+```
 
-A common set of credentials is used for accessing storage buckets. 
+## Access permissions
+
+A common set of credentials is used for accessing storage buckets.
 
 ```{tip}
 Hub users can access each others' objects stored in scratch or persistent bucket storage and accidentally modify or delete them.
 ```
 
 It is possible to configure read-only access for objects stored in cloud storage on your hub, though this is not a standard feature of our hubs. Please consult {doc}`2i2c support<../../../../support>` to discuss enabling this feature.
-
-
