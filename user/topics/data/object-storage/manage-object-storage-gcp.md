@@ -204,7 +204,7 @@ For large datasets to be uploaded from a remote server, e.g. a supercomputer, yo
    ```
 
    ```{warning}
-   It is important to include the `--scopes=` flag for security reasons. Do not run this command without it!
+   It is important to include the `--scopes=` flag for security reasons. Do not run this command without it! See [Google Cloud Docs - gcloud auth application-default login](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/login) for further information.
    ```
 
 1. Follow the instructions from the output. This will look like
@@ -251,9 +251,21 @@ For large datasets to be uploaded from a remote server, e.g. a supercomputer, yo
    Default Credentials (ADC).
    ```
 
-1. If successful, you should be able to use the commands from [Basic Google Cloud SDK commands in the Terminal](#basic-google-cloud-sdk-commands-in-the-terminal) to manage files between the remote server and the storage bucket.
+1. You should now be able to use the commands from [Basic Google Cloud SDK commands in the Terminal](#basic-google-cloud-sdk-commands-in-the-terminal) to manage files between the remote server and the storage bucket.
 
 ## FAQs
+
+- *Why should I use GCP cloud object storage versus to traditional network storage?*
+
+  Take a look at this overview from [Google Cloud](https://cloud.google.com/blog/topics/developers-practitioners/map-storage-options-google-cloud) for a comparison between these storage options and their ideal use cases.
+
+- *How much does storing data in cloud object storage cost?*
+
+  Each community's use case is different, so we cannot offer a blanket estimate on storage costs. Please see [](/topic/cloud-costs.md) for further guidance.
+
+  ```{tip}
+  Every file you download from the hub to another machine incurs a **heavy data egress cost**. Consider carefully whether you need to download large datasets from the hub, or alternatively post-process and compress files if possible. Hub champions are responsible for costs incurred from data egress.
+  ```
 
 - *How do I know if our hub is running on GCP or not?*
 
