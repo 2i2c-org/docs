@@ -78,7 +78,7 @@ Copying file://<filepath> to gs://<bucket_name>/<username>/<filepath>
   Completed files 1/1 | 14.0B/14.0B
 ```
 
-and copy a file from your prefix in the scratch bucket with the command
+and copy a file from your prefix in the scratch bucket to the hub filestore with the command
 
 ```bash
 $ gcloud storage cp $SCRATCH_BUCKET/<source_filepath> <target_filepath>
@@ -105,6 +105,10 @@ Removing gs://<bucket_name>/<username>/<filepath>
 See [Google Cloud Docs – Delete objects](https://cloud.google.com/storage/docs/deleting-objects) for more information.
 ```
 
+```{note}
+As mentioned above, anyone can access each other's files on the hub. Be careful about which objects you are deleting.
+```
+
 ## Upload files to a GCP bucket from outside the hub
 
 We outline workflows for two scenarios:
@@ -120,7 +124,7 @@ The following workflows assume you are operating a Unix-like operating system fr
 
 For small datasets that can be uploaded from your local machine, e.g. laptop or PC, you can generate a temporary access token on the hub to upload data to the GCP bucket. Keep this token safe and do not expose it publicly on a shared system.
 
-1. Set up a new software environment on your *local* machine
+1. Set up a new software environment on your *local machine*
 
    ```bash
    mamba env create --name gcp_transfer google-cloud-sdk
@@ -142,7 +146,7 @@ For small datasets that can be uploaded from your local machine, e.g. laptop or 
    This access token is valid for 60 minutes by default. This can be extended by up to 12 hours, but we recommend setting this to the minimum time needed to transfer your data for security reasons. Please see [Google Cloud Docs – gcloud auth application-default print-access-token](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/print-access-token) for further information.
    ```
 
-1. Copy and paste the output of the above command to your *local* machine and save this to a `token.txt` file
+1. Copy and paste the output of the above command to your *local machine* and save this to a `token.txt` file
 
 1. Authorize the Google Cloud CLI
 
@@ -150,13 +154,13 @@ For small datasets that can be uploaded from your local machine, e.g. laptop or 
    gcloud config set auth/access_token_file token.txt
    ```
 
-1. Define the `$SCRATCH_BUCKET` environment variable on your *local* machine
+1. Define the `$SCRATCH_BUCKET` environment variable on your *local machine*
 
    ```bash
    SCRATCH_BUCKET=gs://<bucket_name>/<username> 
    ```
 
-1. Compress the data.
+1. Compress the data
 
    ```bash
    tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
@@ -185,7 +189,7 @@ For small datasets that can be uploaded from your local machine, e.g. laptop or 
 
 ### Large datasets from a remote server
 
-For large datasets to be uploaded from a remote server, e.g. a supercomputer, you are authorized via membership of a Google Group. Do not store any access tokens, such as in the method above, publicly on a shared system.
+For large datasets uploaded from a remote server, e.g. a supercomputer, you are authorized via membership of a Google Group controlled by your Hub Champion. Do not store any access tokens, such as in the method above, publicly on a shared system.
 
 1. Request membership of the Google Group for access to bucket storage from your Hub Champion.
 
@@ -203,7 +207,7 @@ For large datasets to be uploaded from a remote server, e.g. a supercomputer, yo
    gcloud auth application-default login --scopes=https://www.googleapis.com/auth/devstorage.read_write,https://www.googleapis.com/auth/iam.test --no-browser
    ```
 
-   ```{warning}
+   ```{note}
    It is important to include the `--scopes=` flag for security reasons. Do not run this command without it! See [Google Cloud Docs - gcloud auth application-default login](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/login) for further information.
    ```
 
@@ -227,7 +231,7 @@ For large datasets to be uploaded from a remote server, e.g. a supercomputer, yo
    Enter the output of the above command:
    ```
 
-1. After you have run the above command on a *different* machine with a web browser, you will be asked to authenticate yourself with a Google account with the web flow. Once you have completed this, return the terminal to see an output such
+1. After you have run the above command on a *different machine* with a web browser (e.g. your laptop or PC), you will be asked to authenticate yourself with a Google account with the web flow. Once you have completed this, return the terminal to see an output such as
 
    ```bash
    Copy the following line back to the gcloud CLI waiting to continue the login
@@ -235,13 +239,13 @@ For large datasets to be uploaded from a remote server, e.g. a supercomputer, yo
    resources. Only copy it to the trusted machine that you ran the `gcloud auth
    application-default login --no-browser` command on earlier.
 
-   https://localhost:8085/?state=HorR9abyg9sZCV0IcHYEjLAdicIJYJ&code=4/
-   0ATx3LY5PQ3OAy45H1T2pEesNGiOBK7FL9n5cwLQ8J2ltju8pCtW6-EFTStYjSAI_xuXcvQ&
+   https://localhost:8085/?state=XXXXXXXXXXXXXXXXXXXXXXXXXXX&code=4/
+   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&
    scope=https://www.googleapis.com/auth/devstorage.read_write%20https://www.
    googleapis.com/auth/iam.test
    ```
 
-1. Copy the URL from the output of the above command and paste this into the `Enter the output of the above command:` that remains displayed on the *remote server*. This will give an output like
+1. Copy the URL from the output of the above command (starting `https://...`) and paste this into the `Enter the output of the above command:` that remains displayed on the *remote server*. This will give an output like
 
    ```bash
    Credentials saved to file: [/<remote-server-path>/.config/gcloud/
@@ -255,7 +259,7 @@ For large datasets to be uploaded from a remote server, e.g. a supercomputer, yo
 
 ## FAQs
 
-- *Why should I use GCP cloud object storage versus to traditional network storage?*
+- *Why should I use GCP cloud object storage versus traditional network storage?*
 
   Take a look at this overview from [Google Cloud](https://cloud.google.com/blog/topics/developers-practitioners/map-storage-options-google-cloud) for a comparison between these storage options and their ideal use cases.
 
@@ -275,13 +279,13 @@ For large datasets to be uploaded from a remote server, e.g. a supercomputer, yo
 
   Check whether the environment variables for each bucket are set. See {ref}`Scratch buckets<object-storage:env-var-scratch>` and {ref}`Persistent buckets<object-storage:env-var-persistent>`
 
-- *If storage buckets are not set up but I want them for my community what should the I do?*
+- *If storage buckets are not set up but I want them for my community what should I do?*
 
-  This feature is not enabled by default since there are extra cloud costs associated with providing object storage. Please speak to your hub champion, who can then open a {doc}`2i2c support<../../../../support>` ticket with us to request this feature for your hub.
+  This feature is not enabled by default since there are extra cloud costs associated with providing object storage. Please speak to your Hub Champion, who can then open a {doc}`2i2c support<../../../../support>` ticket with us to request this feature for your hub.
 
 - *Will 2i2c create additional, new storage buckets for our community?*
 
-  Please contact contact your hub champion to liaise with {doc}`2i2c support<../../../../support>` to discuss this option.
+  Please contact contact your Hub Champion to liaise with {doc}`2i2c support<../../../../support>` to discuss this option.
 
 - *If a our hub is running on AWS or Azure and we have object storage, what are our options?*
 
@@ -289,4 +293,4 @@ For large datasets to be uploaded from a remote server, e.g. a supercomputer, yo
 
 ## Acknowledgements
 
-Thank you to the [LEAP-Pangeo community](https://leap-stc.github.io/intro.html) for authoring the original content that inspired this section.
+Thank you to the [LEAP-Pangeo community](https://leap-stc.github.io/intro.html) for authoring the original content that inspired this section (in particular, [Hub Guides – Data](https://leap-stc.github.io/guides/hub_guides.html#data)).
