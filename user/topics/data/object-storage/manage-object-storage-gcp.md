@@ -6,8 +6,12 @@ This instructional guide shows you how to manage files in Google Cloud storage u
 ```{admonition} Who is this guide for?
 :class: note
 
-Some community hubs running on GCP infrastructure have scratch and/or persistent S3 storage buckets already configured. This documentation is intended for users with a hub that has this feature enabled.
+Some community hubs running on GCP infrastructure have scratch and/or persistent storage buckets already configured. This documentation is intended for users with a hub that has this feature enabled.
 
+```
+
+```{warning}
+Transferring large amounts of data to the cloud can incur expensive storage costs. Please think carefully about your data requirements and use this feature responsibly. See [](/topic/cloud-costs.md) for further guidance.
 ```
 
 ```{contents}
@@ -189,16 +193,28 @@ For small datasets that can be uploaded from your local machine, e.g. laptop or 
 
 ### Large datasets from a remote server
 
+```{note}
+The following feature is only available on a case-by-case basis. This workflow is documented here for the sake of completeness.
+```
+
 For large datasets uploaded from a remote server, e.g. a supercomputer, you are authorized via membership of a Google Group controlled by your Hub Champion. Do not store any access tokens, such as in the method above, publicly on a shared system.
 
 1. Request membership of the Google Group for access to bucket storage from your Hub Champion.
 
 1. From the *remote server*, ensure that the `google-cloud-sdk` is available in your software environment (if you need help, seek guidance from the administrator of the remote server).
 
-1. Set the Google account that is used to authorize access through the Google Group membership
+1. Set the Google account and the Google Cloud project ID that is used to authorize access
 
    ```bash
    gcloud config set account <user@gmail.com>
+   ```
+
+   ```bash
+   gcloud config set project <project-id>
+   ```   
+
+   ```{note}
+   See [Google Cloud Docs - gcloud config set](https://cloud.google.com/sdk/gcloud/reference/config/set) for further information.
    ```
 
 1. Obtain user access credentials via a web flow with no browser
@@ -293,4 +309,4 @@ For large datasets uploaded from a remote server, e.g. a supercomputer, you are 
 
 ## Acknowledgements
 
-Thank you to the [LEAP-Pangeo community](https://leap-stc.github.io/intro.html) for authoring the original content that inspired this section (in particular, [Hub Guides – Data](https://leap-stc.github.io/guides/hub_guides.html#data)).
+Thank you to the [LEAP-Pangeo community](https://leap-stc.github.io/intro.html) for authoring the original content that inspired this section (in particular, their documentation on [Hub Guides – Data](https://leap-stc.github.io/guides/hub_guides.html#data)).
