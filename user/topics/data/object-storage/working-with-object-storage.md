@@ -1,24 +1,8 @@
-# Cloud Object Storage
-
-Your hub lives in the cloud.
-The preferred way to store data in the cloud is using [cloud object storage](https://aws.amazon.com/what-is-cloud-object-storage/), such as Amazon S3 or Google Cloud Storage.
-Cloud object storage is essentially a key/value storage system.
-They keys are strings, and the values are bytes of data.
-Data is read and written using HTTP calls.
-
-The performance of object storage is very different from file storage.
-On one hand, each individual `read / write` to object storage has a high overhead (10-100 ms), since it has to go over the network.
-On the other hand, object storage “scales out” nearly infinitely, meaning that we can make hundreds, thousands, or millions of concurrent reads / writes.
-This makes object storage well suited for distributed data analytics.
-However, data analysis software must be adapted to take advantage of these properties.
+# How-to work with object storage in Python
 
 ## Cloud-Native Formats
 
-Cloud-native file formats are formats that are designed from the beginning to
-work well with cloud object storage.
-These formats permit exploration of data and metadata without downloading of the
-entire file / dataset and work well with distributed parallel computing.
-Here we enumerate some popular cloud-native formats and their use cases:
+Cloud-native file formats are designed to work well with cloud object storage. These formats permit exploration of data and metadata without downloading the entire file / dataset and work well with distributed parallel computing. Here are some popular cloud-native formats and their use cases:
 
 | Format | Use Case | Python Libraries |
 |--|--|--|
@@ -30,7 +14,7 @@ There are other more specialized cloud-optimized formats for specific scientific
 
 It is recommended to use cloud-native formats when working with big data in cloud object storage.
 
-## Working with Object Storage
+## Tools
 
 From a user perspective, the main challenge of working with object storage is the need
 to use more specialized tools, rather than just simple files / filenames, to manage data.
@@ -83,7 +67,6 @@ This section refers to "S3 Storage" in a generic sense.
 Amazon S3 is the most well-known form of S3 storage, but something like it exists across each major cloud provider as well.
 :::
 
-
 On S3-type storage, you will have a client key and client secret associated with you account.
 The following code creates a writeable filesystem:
 
@@ -112,23 +95,9 @@ home directory and then use it as follows:
 
 You can then read / write private files with the ``gcs`` object.
 
-## Scratch Bucket
+## Writing to a Scratch Bucket
 
-Some 2i2c environments are configured with a "scratch bucket," which
-allows you to temporarily store data (for example, when you need to store intermediate files during data transformations).
-Credentials to write to the scratch
-bucket are pre-loaded into your Hub's user environment.
-
-:::{warning}
-Any data in scratch buckets will be deleted once it is 7 days old.
-Do not use scratch buckets to store data permanently.
-:::
-
-The location of your scratch bucket is contained in the environment variable ``SCRATCH_BUCKET ``.
-
-For example, here is how you would write Xarray data to the scratch bucket
-in Zarr format.
-
+Here is how you would write Xarray data to the scratch bucket in Zarr format.
 
 ```python
 import os
@@ -138,24 +107,14 @@ ds = xr.tutorial.open_dataset("rasm")  # load example data
 ds.to_zarr(f'{SCRATCH_BUCKET}/rasm.zarr')  # write data
 ```
 
-:::{warning}
-A common set of credentials is currently used for accessing scratch buckets.
-This means users can read, and potentially remove / overwrite, each others'
-data. You can avoid this problem by always using ``SCRATCH_BUCKET`` as a prefix.
-Still, you should not store any sensitive or mission-critical data in
-the scratch bucket.
-:::
-
 ## Data Catalogs
 
 To make it easier to discover share data in your project, it is recommended to use
-data catalogs.
-[Intake](https://intake.readthedocs.io/en/latest/) is a popular tool for making
+data catalogs. [Intake](https://intake.readthedocs.io/en/latest/) is a popular tool for making
 data catalogs in python.
 
 Below is an example of an intake data catalog for loading Zarr data in Xarray from
-OpenStorageNetwork.
-(This example is borrowed from the [Ocean Eddy CPT project](https://github.com/ocean-eddy-cpt/cpt-data/blob/master/catalog.yaml).)
+OpenStorageNetwork. (This example is borrowed from the [Ocean Eddy CPT project](https://github.com/ocean-eddy-cpt/cpt-data/blob/master/catalog.yaml).)
 
 ```yaml
 plugins:

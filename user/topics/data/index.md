@@ -19,7 +19,7 @@ For more information, see the sections below.
 filesystem
 git
 sharing
-cloud
+object-storage/index
 ```
 
 ## References and attribution
