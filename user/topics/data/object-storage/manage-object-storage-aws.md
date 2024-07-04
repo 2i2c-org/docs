@@ -7,7 +7,10 @@ This instructional guide shows you how to upload files from your hub to AWS S3 c
 :class: note
 
 Some community hubs running on AWS infrastructure have scratch and/or persistent S3 storage buckets already configured. This documentation is intended for users with a hub that has this feature enabled.
+```
 
+```{warning}
+Transferring large amounts of data to the cloud can incur expensive storage costs. Please think carefully about your data requirements and use this feature responsibly. See [](/topic/cloud-costs.md) for further guidance.
 ```
 
 ```{contents}
@@ -18,6 +21,10 @@ Some community hubs running on AWS infrastructure have scratch and/or persistent
 ## Basic AWS CLI commands in the Terminal
 
 In the Terminal, check that the AWS CLI commands are available in your image with
+
+```{margin}
+We recommend using the Pangeo notebook image, which has the AWS CLI package already installed. 
+```
 
 ```bash
 $ which aws
@@ -32,7 +39,7 @@ unzip $HOME/.local/awscliv2.zip
 export PATH=$HOME/.local/aws/dist:$PATH
 ```
 
-:::{tip}
+:::{note}
 The following examples are for managing objects in a scratch bucket using the `$SCRATCH_BUCKET` environment variable. For persistent buckets, this can be replaced with the `$PERSISTENT_BUCKET` environment variable.
 :::
 
@@ -94,15 +101,110 @@ $ aws s3 rm $SCRATCH_BUCKET/<filepath>
 delete: s3://2i2c-aws-us-scratch-researchdelight/<username>/<filepath>
 ```
 
-:::{tip}
+```{tip}
 Consult the [AWS Docs – Use high-level (s3) commands with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-buckets-references) for a more detailed guide of AWS commands for managing S3 objects.
-:::
+```
+
+```{note}
+As mentioned in [Access permissions](index.md#access-permissions), anyone can access each other's files in object storage on the hub. Be careful about which objects you are deleting.
+```
+
+## Upload files to an S3 bucket from outside the hub
+
+We outline a workflow for how to transfer datasets to the AWS bucket from outside the hub, such as your local machine or a remote server. This is done by generating a temporary access token that is valid for up to 1 hour.
+
+```{tip}
+The following workflow assumes you have a Unix-like operating system from outside the hub.
+```
+
+1. Set up a new software environment on your *local machine*
+
+   ```bash
+   mamba create --name aws_transfer aws-cli
+   ```
+
+1. Activate the environment
+
+   ```bash
+   mamba activate aws_transfer
+
+1. Generate a temporary access token from your *2i2c hub*
+
+   ```{margin}
+   We recommend using the Pangeo notebook image, which has the AWS CLI package already installed. 
+   ```
+
+   ```bash
+   aws sts assume-role-with-web-identity --role-arn $AWS_ROLE_ARN --role-session-name $JUPYTERHUB_CLIENT_ID --web-identity-token "$(cat $AWS_WEB_IDENTITY_TOKEN_FILE)" --duration-seconds 1000 
+   ```
+
+   ```{tip}
+   This access token is valid for 1000 seconds by setting the `--duration-seconds` flag. The maximum value is 3600 seconds (1 hour), but we recommend setting this to the minimum time needed to transfer your data for security reasons. Please see [AWS Docs – aws sts assume-role-with-web-identity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/assume-role-with-web-identity.html) for further information.
+   ```
+
+1. Note the key-values returned for `AccessKeyId`, `SecretAccessKey` and `SessionToken`
+
+1. Configure the `~/.aws/credentials` file on your *local machine* with a new profile using the following commands
+
+   ```bash
+   aws configure set aws_access_key_id <AccessKeyId> --profile <profile_name>
+   aws configure set aws_secret_access_key <SecretAccessKey> --profile <profile_name>
+   aws configure set aws_session_token <SessionToken> --profile <profile_name>
+   ```
+
+   ```{tip}
+   See the [AWS Docs – aws configure set](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/configure/set.html) for more information.
+   ```
+
+1. Set the `region` in your `~/.aws/config` file on your *local machine* using the following command
+
+   ```bash
+   aws configure set region <data_center_location>
+   ```
+
+   ```{tip}
+   See the [FAQs](#faqs) below for how to find the data center location of your hub.
+   ```
+
+1. Define the `$SCRATCH_BUCKET` environment variable on your *local machine*
+
+   ```bash
+   SCRATCH_BUCKET=s3://<bucket_name>/<username> 
+   ```
+
+1. Compress the data to prepare for transfer
+
+   ```bash
+   tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
+   ```
+
+1. Upload the data to the storage bucket
+
+   ```bash
+   $ aws s3 cp name-of-archive.tar.gz $SCRATCH_BUCKET
+   upload: ./name-of-archive.tar.gz to s3://<bucket_name>/<username>/name-of-archive.tar.gz
+   ```
+
+1. Check the contents of your prefix
+
+   ```bash
+   $ aws s3 ls $SCRATCH_BUCKET/
+   2024-07-04 17:01:54          4 name-of-archive.tar.gz
+   ```
+
+   ```{tip}
+   Note the trailing slash `/` after `$SCRATCH_BUCKET`.
+   ```
 
 ## FAQs
 
 - *How do I know if our hub is running on AWS or not?*
 
-  Check out our [list of running hubs](https://infrastructure.2i2c.org/reference/hubs/) to see which cloud provider your hub is running on.
+  Check out our [list of running hubs](https://infrastructure.2i2c.org/reference/hubs/) under the column *provider* to see which cloud provider your hub is running on.
+
+- *Where is the location of the data center our hub is running on?*
+
+  Check out our [list of running hubs](https://infrastructure.2i2c.org/reference/hubs/) under the column *data center location*.
 
 - *How do I determine if a scratch and/or persistent bucket is already available?*
 
@@ -121,14 +223,6 @@ Consult the [AWS Docs – Use high-level (s3) commands with the AWS CLI](https:/
 - *If S3 buckets are not set up but I want them for my community what should the I do?*
 
   This feature is not enabled by default since there are extra cloud costs associated with providing S3 object storage. Please speak to your hub champion, who can then open a {doc}`2i2c support<../../../../support>` ticket with us to request this feature for your hub.
-
-- *Is our S3 bucket accessible outside of the hub so I can upload files from elsewhere?*
-
-  Yes, this requires configuring AWS credentials from your machine, however we currently do no have documentation for this.  Please contact {doc}`2i2c support<../../../../support>` for guidance.
-
-- *Is our S3 bucket accessible outside of the hub so users can download files to elsewhere?*
-
-  The same answer to the question above applies in this instance.
 
 - *Will 2i2c create additional, new S3 buckets for our community?*
 
