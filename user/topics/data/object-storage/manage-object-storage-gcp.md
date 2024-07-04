@@ -39,7 +39,7 @@ If installing the package kills your server, then try using a server with a more
 ```
 
 ```{note}
-The following examples are for managing objects in a scratch bucket using the `$SCRATCH_BUCKET` environment variable. For persistent buckets, this can be replaced with the `$PERSISTENT_BUCKET` environment variable.
+The following examples are for managing objects in a scratch bucket using the `$SCRATCH_BUCKET` environment variable. For persistent buckets, this can be replaced with the `$PERSISTENT_BUCKET` environment variable. See [Scratch versus Persistent Buckets](index.md/#scratch-versus-persistent-buckets-on-a-2i2c-hub).
 ```
 
 ### List prefixes within a GCP bucket
