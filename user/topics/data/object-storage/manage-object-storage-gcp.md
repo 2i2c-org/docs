@@ -121,7 +121,7 @@ We outline workflows for two scenarios:
 - [Large datasets from a remote server](#large-datasets-from-a-remote-server) is suitable for data transfer from a shared resource such as a supercomputer
 
 ```{tip}
-The following workflows assume you are operating a Unix-like operating system from outside the hub.
+The following workflows assume you have a Unix-like operating system from outside the hub.
 ```
 
 ### Small datasets from your local machine
@@ -131,7 +131,7 @@ For small datasets that can be uploaded from your local machine, e.g. laptop or 
 1. Set up a new software environment on your *local machine*
 
    ```bash
-   mamba env create --name gcp_transfer google-cloud-sdk
+   mamba create --name gcp_transfer google-cloud-sdk
    ```
 
 1. Activate the environment
