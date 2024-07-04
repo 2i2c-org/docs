@@ -7,7 +7,10 @@ This instructional guide shows you how to upload files from your hub to AWS S3 c
 :class: note
 
 Some community hubs running on AWS infrastructure have scratch and/or persistent S3 storage buckets already configured. This documentation is intended for users with a hub that has this feature enabled.
+```
 
+```{warning}
+Transferring large amounts of data to the cloud can incur expensive storage costs. Please think carefully about your data requirements and use this feature responsibly. See [](/topic/cloud-costs.md) for further guidance.
 ```
 
 ```{contents}
@@ -18,6 +21,10 @@ Some community hubs running on AWS infrastructure have scratch and/or persistent
 ## Basic AWS CLI commands in the Terminal
 
 In the Terminal, check that the AWS CLI commands are available in your image with
+
+```{margin}
+We recommend using the Pangeo notebook image, which has the AWS CLI package already installed. 
+```
 
 ```bash
 $ which aws
@@ -32,7 +39,7 @@ unzip $HOME/.local/awscliv2.zip
 export PATH=$HOME/.local/aws/dist:$PATH
 ```
 
-:::{tip}
+:::{note}
 The following examples are for managing objects in a scratch bucket using the `$SCRATCH_BUCKET` environment variable. For persistent buckets, this can be replaced with the `$PERSISTENT_BUCKET` environment variable.
 :::
 
@@ -94,15 +101,23 @@ $ aws s3 rm $SCRATCH_BUCKET/<filepath>
 delete: s3://2i2c-aws-us-scratch-researchdelight/<username>/<filepath>
 ```
 
-:::{tip}
+```{tip}
 Consult the [AWS Docs – Use high-level (s3) commands with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-buckets-references) for a more detailed guide of AWS commands for managing S3 objects.
-:::
+```
+
+```{note}
+As mentioned in [Access permissions](index.md#access-permissions), anyone can access each other's files in object storage on the hub. Be careful about which objects you are deleting.
+```
 
 ## FAQs
 
 - *How do I know if our hub is running on AWS or not?*
 
-  Check out our [list of running hubs](https://infrastructure.2i2c.org/reference/hubs/) to see which cloud provider your hub is running on.
+  Check out our [list of running hubs](https://infrastructure.2i2c.org/reference/hubs/) under the column *provider* to see which cloud provider your hub is running on.
+
+-*Where is the location of the data center our hub is running on?*
+
+  Check out our [list of running hubs](https://infrastructure.2i2c.org/reference/hubs/) under the column *data center location*.
 
 - *How do I determine if a scratch and/or persistent bucket is already available?*
 

@@ -110,7 +110,7 @@ See [Google Cloud Docs – Delete objects](https://cloud.google.com/storage/docs
 ```
 
 ```{note}
-As mentioned above, anyone can access each other's files on the hub. Be careful about which objects you are deleting.
+As mentioned in [Access permissions](index.md#access-permissions), anyone can access each other's files in object storage on the hub. Be careful about which objects you are deleting.
 ```
 
 ## Upload files to a GCP bucket from outside the hub
