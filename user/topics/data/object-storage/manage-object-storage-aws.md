@@ -40,7 +40,7 @@ export PATH=$HOME/.local/aws/dist:$PATH
 ```
 
 :::{note}
-The following examples are for managing objects in a scratch bucket using the `$SCRATCH_BUCKET` environment variable. For persistent buckets, this can be replaced with the `$PERSISTENT_BUCKET` environment variable.
+The following examples are for managing objects in a scratch bucket using the `$SCRATCH_BUCKET` environment variable. For persistent buckets, this can be replaced with the `$PERSISTENT_BUCKET` environment variable. See [Scratch versus Persistent Buckets](index.md/#scratch-versus-persistent-buckets-on-a-2i2c-hub).
 :::
 
 (object-storage:list-prefixes)=
@@ -166,7 +166,13 @@ The following workflow assumes you have a Unix-like operating system from outsid
    See the [FAQs](#faqs) below for how to find the data center location of your hub.
    ```
 
-1. Define the `$SCRATCH_BUCKET` environment variable on your *local machine*
+1. Define the `AWS_PROFILE` environment variable on your *local machine*
+
+   ```bash
+   AWS_PROFILE=<profile_name>
+   ```
+
+1. Define the `$SCRATCH_BUCKET` environment variable 
 
    ```bash
    SCRATCH_BUCKET=s3://<bucket_name>/<username> 
