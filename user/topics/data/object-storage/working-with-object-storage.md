@@ -139,6 +139,10 @@ ds = xr.tutorial.open_dataset("rasm")  # load example data
 ds.to_zarr(f'{SCRATCH_BUCKET}/rasm.zarr')  # write data
 ```
 
+:::{tip}
+For more example workflows, checkout the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/how-tos/using-s3-storage.html).
+:::
+
 ## Data Catalogs
 
 To make it easier to discover share data in your project, it is recommended to use
