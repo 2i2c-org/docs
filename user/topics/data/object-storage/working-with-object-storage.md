@@ -99,7 +99,7 @@ The following code snippets show how to write data to a storage bucket with Pyth
 ::::{tab-set}
 :::{tab-item} AWS
 :sync: AWS
-Generate a temporary access token following the instructions in [](manage-object-storage-aws/#upload-files-to-an-s3-bucket-from-outside-the-hub) and make a note of the profile name.
+Generate a temporary access token following the instructions in [Upload files to an S3 bucket from outside the hub](manage-object-storage-aws.md/#upload-files-to-an-s3-bucket-from-outside-the-hub) and make a note of the profile name.
 
 ```python
 import s3fs
@@ -114,7 +114,7 @@ to `S3FileSystem`.
 :::
 :::{tab-item} GCP
 :sync: GCP
-Generate Application Default Credentials (ADC) following the instructions in [](manage-object-storage-gcp/#large-datasets-from-a-remote-server) and make a note of where the `application_default_credentials.json` file is located.
+Generate Application Default Credentials (ADC) following the instructions in [Upload files to a GCP bucket from outside the hub](manage-object-storage-gcp.md/#large-datasets-from-a-remote-server) and make a note of where the `application_default_credentials.json` file is located.
 
 ```python
 import json
