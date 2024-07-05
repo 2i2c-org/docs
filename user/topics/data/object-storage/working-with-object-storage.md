@@ -1,5 +1,9 @@
 # How-to work with object storage in Python
 
+```{warning}
+Transferring large amounts of data to the cloud can incur expensive storage costs. Please think carefully about your data requirements and use this feature responsibly. See [](/topic/cloud-costs.md) for further guidance.
+```
+
 ## Cloud-Native Formats
 
 Cloud-native file formats are designed to work well with cloud object storage. These formats permit exploration of data and metadata without downloading the entire file / dataset and work well with distributed parallel computing. Here are some popular cloud-native formats and their use cases:
@@ -21,27 +25,43 @@ to use more specialized tools, rather than just simple files / filenames, to man
 Fortunately, excellent tools exist to make working with object storage easy and familiar.
 
 For python users, the main tool is [filesystem spec](https://filesystem-spec.readthedocs.io/en/latest/)
-(fsspec), a set of packages which enable us to work with many different types of storage.
-Separate fsspec packages exist for each type of object storage:
+(`fsspec`), a set of packages which enable us to work with many different types of storage.
+Separate `fsspec` packages exist for each type of object storage:
 
-- **[s3fs](https://s3fs.readthedocs.io/en/latest/)** - for working with AWS S3
-  (Simple Storage Service) and compatible APIs. Most third-party object storage
-  services (e.g. [Wasabi](https://wasabi.com/) and [Open Storage Newtork](https://openstoragenetwork.org/))
-  are compatible with S3.
-- **[gcsfs](https://gcsfs.readthedocs.io/en/latest/)** - for working with Google
-  Cloud Storage.
-- **[adlfs](https://github.com/fsspec/adlfs)** - for working with Azure Data Lake
-  and Azure BLOB Storage.
+::::{tab-set}
+:::{tab-item} AWS
+:sync: AWS
+**[s3fs](https://s3fs.readthedocs.io/en/latest/)** - for working with AWS S3 (Simple Storage Service) and compatible APIs. Most third-party object storage services (e.g. [Wasabi](https://wasabi.com/) and [Open Storage Newtork](https://openstoragenetwork.org/)) are compatible with S3.
+:::
+:::{tab-item} GCP
+:sync: GCP
+**[gcsfs](https://gcsfs.readthedocs.io/en/latest/)** - for working with Google Cloud Storage.
+:::
+:::{tab-item} Azure
+:sync: Azure
+**[adlfs](https://github.com/fsspec/adlfs)** - for working with Azure Data Lake and Azure BLOB Storage.
+:::
+::::
 
-Each system has its own unique mechanisms for authentication and authorization;
-consult the documentation links above for more details.
+Each system has its own unique mechanisms for authentication and authorization; see the links below for more details:
+
+::::{tab-set}
+:::{tab-item} AWS
+:sync: AWS
+[](manage-object-storage-aws.md)
+:::
+:::{tab-item} GCP
+:sync: GCP
+[](manage-object-storage-gcp.md)
+:::
+::::
 
 ### Reading Data
 
 When reading data from cloud object storage, you have two general options:
 - Download the data to the local filesystem; this is fine for small data, but not suitable for
   large data or cloud-optimized datasets. Downloads can be managed with
-  [Pooch](https://www.fatiando.org/pooch/latest/) or fsspec.
+  [Pooch](https://www.fatiando.org/pooch/latest/) or `fsspec`.
 - Open the data with an application that understands how to stream data data
   over HTTP directly from object storage. This is suitable for large data and
   cloud-native formats.
@@ -57,45 +77,57 @@ ds = xr.open_dataset("s3://mur-sst/zarr/", engine="zarr", storage_options={"anon
 
 ### Writing Data
 
-Writing data (and reading private data) requires credentials for authentication.
-2i2c does not provide credentials to individual users.
-Instead, 2i2c customers should manage their own cloud storage directly.
-See [the Amazon S3](https://aws.amazon.com/s3/getting-started/), [Google Cloud Storage](https://cloud.google.com/storage), and [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/) instructions for information on getting started.
+Writing data (and reading private data) requires credentials for authentication from outside the hub. 2i2c does not provide credentials to individual users. For information on getting started, see
 
-:::{note}
-This section refers to "S3 Storage" in a generic sense.
-Amazon S3 is the most well-known form of S3 storage, but something like it exists across each major cloud provider as well.
+::::{tab-set}
+:::{tab-item} AWS
+:sync: AWS
+[AWS Docs – Getting Started](https://aws.amazon.com/s3/getting-started/)
 :::
+:::{tab-item} GCP
+:sync: GCP
+[Google Cloud Docs – Storage](https://cloud.google.com/storage)
+:::
+:::{tab-item} Azure
+:sync: Azure
+[Azure Docs – Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/)
+:::
+::::
 
-On S3-type storage, you will have a client key and client secret associated with you account.
-The following code creates a writeable filesystem:
+The following code snippets show how to write data to a storage bucket with Python
+
+::::{tab-set}
+:::{tab-item} AWS
+:sync: AWS
+Generate a temporary access token following the instructions in [Upload files to an S3 bucket from outside the hub](manage-object-storage-aws.md/#upload-files-to-an-s3-bucket-from-outside-the-hub) and make a note of the profile name.
 
 ```python
 import s3fs
-fs = s3fs.S3FileSystem(key='<YOUR_CLIENT_KEY>', secret='<YOUR_CLIENT_SECRET')
+fs = s3fs.S3FileSystem(profile=<profile_name>)
 ```
-
+You can then manage files with the `fs` object.
+:::
+:::{tab-item} Non-AWS S3
 Non-AWS S3 services (e.g. Wasabi Cloud) can be configured by passing an argument
 such as `client_kwargs={'endpoint_url': 'https://s3.us-east-2.wasabisys.com'}`
 to `S3FileSystem`.
-
-For Google Cloud Storage, the best practice is to create a
-[service account](https://cloud.google.com/iam/docs/service-accounts) with
-appropriate permissions to read / write to your private bucket.
-You upload your service account key (a `.json` file) to your hub
-home directory and then use it as follows:
+:::
+:::{tab-item} GCP
+:sync: GCP
+Generate Application Default Credentials (ADC) following the instructions in [Upload files to a GCP bucket from outside the hub](manage-object-storage-gcp.md/#large-datasets-from-a-remote-server) and make a note of where the `application_default_credentials.json` file is located.
 
 ```python
- import json
- import gcsfs
- with open('<your_token_file>.json') as token_file:
-     token = json.load(token_file)
- gcs = gcsfs.GCSFileSystem(token=token)
+import json
+import gcsfs
+with open('<path>/application_default_credentials.json') as token_file:
+ token = json.load(token_file)
+fs = gcsfs.GCSFileSystem(token=token)
 ```
+You can then manage files with the `fs` object.
+:::
+::::
 
-You can then read / write private files with the ``gcs`` object.
-
-## Writing to a Scratch Bucket
+#### Example – Writing to a Scratch Bucket
 
 Here is how you would write Xarray data to the scratch bucket in Zarr format.
 

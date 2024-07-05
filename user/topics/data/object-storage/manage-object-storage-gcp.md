@@ -117,7 +117,7 @@ As mentioned in [Access permissions](index.md#access-permissions), anyone can ac
 
 We outline workflows for two scenarios:
 
-- [Small datasets from your local machine](#small-datasets-from-your-local-machine) is suitable for data transfer from a private resource such as your PC or laptop
+- [Small datasets from your local machine](#small-datasets-from-your-local-machine) is suitable for data transfer from outside the hub that takes less than an hour
 - [Large datasets from a remote server](#large-datasets-from-a-remote-server) is suitable for data transfer from a shared resource such as a supercomputer
 
 ```{tip}
@@ -271,7 +271,15 @@ For large datasets uploaded from a remote server, e.g. a supercomputer, you are 
    Default Credentials (ADC).
    ```
 
-1. You should now be able to use the commands from [Basic Google Cloud SDK commands in the Terminal](#basic-google-cloud-sdk-commands-in-the-terminal) to manage files between the remote server and the storage bucket.
+1. You should now be able to use the commands from [](working-with-object-storage.md) to manage files between the remote server and the storage bucket.
+
+````note
+When you are done, revoke your credentials with the command
+
+```bash
+gcloud auth application-default revoke
+```
+````
 
 ## FAQs
 
