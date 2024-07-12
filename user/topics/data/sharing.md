@@ -37,18 +37,28 @@ To share datasets with users, Hub Admins should place the dataset in the `~/shar
 It is the responsibility of the Hub Admins delete files in the `shared-readwrite` directory when no longer needed to minimize cloud billing costs. Hub Admins are responsible for managing storage costs and files stored in `shared-readwrite`.
 :::
 
-## The `allusers` directory - available upon request
+## The `shared-public` directory
+
+:::{note}
+Available upon request
+:::
+
+The `shared-public` directory is available with read/write access to *all* Hub Users. Any user can create, read, update and delete files in this folder. Hub Admins should caution their users to take greater care not to overwrite or delete other people's work.
+
+## The `allusers` directory
+
+:::{note}
+Available upon request
+:::
 
 Sometimes, Hub Administrators might need to share data files with the users,
 and this files must only be visible to the users that they're addressed to.
 For example, uploading graded notebook assignments in each user's home directory.
 
-If such a workflow is needed, then an additional `allusers` directory can be enabled for **administrators only**,
-where all the Hub users' directories are accessible to read and modify. Please reach out to us if you'd like this
-feature enabled.
+If such a workflow is needed, then an additional `allusers` directory can be enabled for **administrators only**, where all the Hub users' directories are accessible to read and modify. Please reach out to us if you'd like this feature enabled.
 
-```{warning}
-Please keep in mind that enabling this feature, means that any admin user could access all users' home directories,
-and possibly delete them by accident, if not careful.
-So, this feature should be used with extra caution!
+```{caution}
+This feature should be used with extra caution! Please keep in mind that this feature enables admins to access all users' home directories.
+
+Performing administrative actions as a Hub Admin should be done with great care. Respect the privacy of others and think before you act. 
 ```
