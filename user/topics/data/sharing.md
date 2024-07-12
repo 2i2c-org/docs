@@ -15,19 +15,16 @@ share data files with all users.
 
 `shared`
 : All users have a directory called `shared` in their home directory.
-  This is a *readonly* directory - users and administrators can not write to it.
-  However, anybody can *access* and *read from* the `shared` directory.
-  This is how a user accesses a data file distributed by a Hub administrator.
+  This is a **read-only** directory - users and administrators can not write to it. However, anybody can *read* from the `shared` directory.
 
-::::{margin} 
+::::{margin}
 :::{image} media/shared-readwrite.png
 :::
 The `shared-readwrite` folder appears for Hub Admins only.
 ::::
 
 `shared-readwrite`
-: **(administrators only)** Admins also have a directory called `shared-readwrite` in their home directory. This is the *same folder* as the `shared` directory, but writeable!
-  Any files admins put here will be immediately visible in all users' `shared` directories.
+: **(administrators only)** Admins also have a directory called `shared-readwrite` in their home directory. This is the *same folder* as the `shared` directory, but writeable! Any file admins write here will be immediately visible in all users' `shared` directories.
 
 ### Example workflow
 
@@ -44,6 +41,10 @@ Available upon request
 :::
 
 The `shared-public` directory is available with read/write access to *all* Hub Users. Any user can create, read, update and delete files in this folder. Hub Admins should caution their users to take greater care not to overwrite or delete other people's work.
+
+:::{tip}
+It is the responsibility of the Hub Admins delete files in the `shared-public` directory when no longer needed to minimize cloud billing costs. Hub Admins are responsible for managing storage costs and files stored in `shared-public`.
+:::
 
 ## The `allusers` directory
 
