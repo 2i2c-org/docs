@@ -82,6 +82,7 @@ admin/howto/new-hub
 admin/howto/replicate
 admin/howto/create-billing-account
 topic/cloud-costs
+topic/budget-alerts
 ```
 
 ## Reference material
