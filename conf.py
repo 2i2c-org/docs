@@ -129,3 +129,16 @@ for url, filename in figures.items():
         path_image.write_bytes(resp.content)
     else:
         print(f"Diagram image exists, delete this file to re-download: {path_image}")
+
+# -- Set canonical custom domain via html_baseurl -----------
+# -- See https://github.com/2i2c-org/infrastructure/issues/4629
+import os
+
+html_context = {}
+
+# Set canonical URL from the Read the Docs Domain
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
+
+# Tell Jinja2 templates the build is running on Read the Docs
+if os.environ.get("READTHEDOCS", "") == "True":
+    html_context["READTHEDOCS"] = True
