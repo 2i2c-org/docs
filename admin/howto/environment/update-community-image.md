@@ -1,4 +1,4 @@
-# Customize a community-maintained upstream image
+# Update a community-maintained upstream image (recommended)
 
 This instructional guide shows you how to add packages to a community-maintained upstream image. In this example, we add the [Python package `xarray`](https://docs.xarray.dev/en/stable/) to the [`jupyter/scipy-notebook` image](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) maintained by the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) community.
 
