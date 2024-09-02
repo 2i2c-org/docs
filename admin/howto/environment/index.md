@@ -5,61 +5,27 @@ configured environment with base libraries, user interfaces and
 languages installed. This allows them to start working immediately,
 without having to install packages themselves.
 
-
 (environment/custom)=
 ## Customize your user environment
 
-While all hubs [come with a default environment](environment/default), it is possible to create a custom user environment for the hub.
-Here are a few ways that you can do this.
+While all hubs [come with a default environment](environment/default), it is possible to create a custom user environment for the hub. Here are a few ways that you can do this.
 
 (environment:image)=
-### Create your own docker image
+### Create your own image
 
-Our hubs use [docker images](https://www.docker.com/) to enable a reproducible 
-software environment for all users on the hub.
-You can build and bring your own docker image to the hub, which allows you *full control* over your software environment.
+Our hubs use [software containers](https://www.docker.com/resources/what-container/) to enable a reproducible 
+software environment for all users on the hub. You can build and bring your own image to the hub, which allows you *full control* over your software environment.
 
-In order to do this, we need to define an environment in a repository, generate a Docker image from that environment, push the Docker image to an image registry, and tell your JupyterHub to pull from that registry.
-See the sections below for more detail.
+There are two ways that you can do this:
 
-#### A quick overview
-
-We recommend using the [repo2docker tool](https://repo2docker.readthedocs.io/) to define and build your user environment following best practices for version control.
-This is the tool used by [the Binder project](https://mybinder.org) and is a good standard to follow for defining clear and reproducible computational environments.
-
-To use repo2docker to build user environments for your hub, you'll need to:
-
-1. **Create a repository** that hosts the files that will define your environment.
-2. **Add files in the repository** that define your user environment.
-   Here are a few good resources for defining these files:
-
-   - The Binder Project has [documentation about what files are supported](https://mybinder.readthedocs.io/en/latest/using/config_files.html).
-   - The Turing Way has an excellent a collection of tutorials for getting started with Binder, and covers [Python](https://github.com/alan-turing-institute/the-turing-way/blob/main/workshops/boost-research-reproducibility-binder/workshop-presentations/zero-to-binder-python.md), [Julia](https://github.com/alan-turing-institute/the-turing-way/blob/main/workshops/boost-research-reproducibility-binder/workshop-presentations/zero-to-binder-julia.md), and [the R language](https://github.com/alan-turing-institute/the-turing-way/blob/main/workshops/boost-research-reproducibility-binder/workshop-presentations/zero-to-binder-r.md).
-3. **Create a an image registry account**. This will be the place where you store user images once they are built, so that the hub can access them.
-   :::{tip}
-   We recommend using [the quay.io image registry](https://quay.io/) to host your images.
-   This is a public registry service run by [Red Hat](https://www.redhat.com/en) and is reliable to use.
-   :::
-4. **Set up a GitHub Action** to automatically build a docker image using [the repo2docker action](https://github.com/jupyterhub/repo2docker-action), and push it to a registry.
-5. **Configure your hub** to pull the user image from the registry, either via [the configurator](../configurator.md) (available to hubs configured with a single image only) or by [opening a support ticket](../../../support.md) to request that a 2i2c changes the hub configuration for you.
-
-:::{tip}
-By following these steps, you have also created a [Binder-ready repository](https://mybinder.org). We recommend trying to build your reposity using the [*Other...* server profile option](https://docs.2i2c.org/user/howto/specify-unlisted-image/#specify-your-own-image-for-the-software-environment) (if available), or on `mybinder.org` in order to test the environment before updating your default hub configuration.
-:::
-
-#### An in-depth guide
-
-To help you get started, we've created an in-depth how to [Customize a community-maintained upstream image](customize-image) guide and a [template repository](https://github.com/2i2c-org/example-inherit-from-commuity-image) to guide you through the process. You can go to the template repository by clicking the button below.
-
-```{button-link} https://github.com/2i2c-org/hub-user-image-template/blob/main/README.md
-:color: primary
-Go to template repository
-```
+1. [Update a community-maintained upstream image](./update-community-image.md) – add required software packages to an existing community-maintained upstream image. This is the recommended approach for most use cases since this reduces the maintenance burden of keeping the image up to date.
+1. [Build your own custom image from scratch](./hub-user-image-template-guide.md) – build a new image from scratch that contains all the required software packages. This is an advanced approach if you want full control beyond what is available through community-maintained images.
 
 ```{toctree}
 :hidden:
 
-customize-image
+update-community-image
+hub-user-image-template-guide
 ```
 
 ### Temporarily install packages for a session
