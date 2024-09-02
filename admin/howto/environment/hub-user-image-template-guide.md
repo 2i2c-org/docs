@@ -1,5 +1,5 @@
 (hub-user-image-template-guide/how-to)=
-# Create a custom user image for your hub (ADVANCED)
+# Create a custom user image for your hub (advanced)
 
 This advanced guide describes how you can create a custom user image for your community's hub. We recommend [updating a community-maintained upstream image](./update-community-image.md) in the first instance, since this reduces the overall maintenance burden over time. This guide is for advanced users who want complete control over a hub's user image from scratch. It uses [this `hub-user-image-template` repository](https://github.com/2i2c-org/hub-user-image-template) to help you get started.
 
