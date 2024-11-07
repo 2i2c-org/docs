@@ -1,57 +1,65 @@
 # Share data files with your users
 
-Sometimes you might need to distribute a set of files to all
-your users, so they don't have to re-download it once per person.
-This is particularly useful in educational contexts, where you might
-be teaching a course that reads a common dataset.
+Sometimes Hub Admins might need to distribute a set of files to all users, rather than each user re-downloading the same dataset. This is particularly useful for educational use cases, where you might be teaching a course that reads a common dataset.
 
-```{warning}
+:::{tip}
 If you are teaching with large datasets, you might run out of
 memory! So consider teaching with just a subset of data before
 distributing large datasets to your users.
-```
+:::
 
 ## The `shared` directory
 
-There are two folders that are used together to allow Administrators to
+There are two folders that are used together to allow administrators to
 share data files with all users.
 
 `shared`
 : All users have a directory called `shared` in their home directory.
-  This is a *readonly* directory - users and administrators can not write to it.
-  However, anybody can *access* and *read from* the `shared` directory.
-  This is how a user accesses a data file distributed by a hub administrator.
+  This is a **read-only** directory - users and administrators can not write to it. However, anybody can *read* from the `shared` directory.
+
+::::{margin}
+:::{image} media/shared-readwrite.png
+:::
+The `shared-readwrite` folder appears for Hub Admins only.
+::::
 
 `shared-readwrite`
-: **(administrators only)** Admin users also have a directory called `shared-readwrite` in their home directory.
-  This is the *same folder* as the `shared` directory, but writeable!
-  Any files admins put here will be immediately visible in all users' `shared` directories.
+: **(administrators only)** Admins also have a directory called `shared-readwrite` in their home directory. This is the *same folder* as the `shared` directory, but writeable! Any file admins write here will be immediately visible in all users' `shared` directories.
 
-## The `allusers` directory - available upon request
+### Example workflow
 
-Sometimes, hub Administrators might need to share data files with the users,
+To share datasets with users, Hub Admins should place the dataset in the `~/shared-readwrite` directory. If they are distributing notebook / content that *reads* this dataset, it should refer to files in the `~/shared/` that is readable by all Hub Users and *not* `~/shared-readwrite`. This will prevent accidental deletion or overwriting between Hub Admins.
+
+:::{tip}
+It is the responsibility of the Hub Admins delete files in the `shared-readwrite` directory when no longer needed to minimize cloud billing costs. Hub Admins are responsible for managing storage costs and files stored in `shared-readwrite`.
+:::
+
+## The `shared-public` directory
+
+:::{note}
+Available upon request
+:::
+
+The `shared-public` directory is available with read/write access to *all* Hub Users. Any user can create, read, update and delete files in this folder. Hub Admins should caution their users to take greater care not to overwrite or delete other people's work.
+
+:::{tip}
+It is the responsibility of the Hub Admins delete files in the `shared-public` directory when no longer needed to minimize cloud billing costs. Hub Admins are responsible for managing storage costs and files stored in `shared-public`.
+:::
+
+## The `allusers` directory
+
+:::{note}
+Available upon request
+:::
+
+Sometimes, Hub Administrators might need to share data files with the users,
 and this files must only be visible to the users that they're addressed to.
-For example, uploading graded notebook assignements in each user's home directory.
+For example, uploading graded notebook assignments in each user's home directory.
 
-If such a workflow is needed, then an additional `allusers` directory can be enabled for **administrators only**,
-where all the hub users' directories are accessible to read and modify. Please reach out to us if you'd like this
-feature enabled.
+If such a workflow is needed, then an additional `allusers` directory can be enabled for **administrators only**, where all the Hub users' directories are accessible to read and modify. Please reach out to us if you'd like this feature enabled.
 
-```{warning}
-Please keep in mind that enabling this feature, means that any admin user could access all users' home directories,
-and possibly delete them by accident, if not careful.
-So, this feature should be used with extra caution!
-```
+```{caution}
+This feature should be used with extra caution! Please keep in mind that this feature enables admins to access all users' home directories.
 
-## A workflow for sharing datasets
-
-To share datasets with users, admins should put the dataset in
-`~/shared-readwrite`. If they are distributing notebook / content
-that *reads* this dataset, it should refer to files in `~/shared/`
-rather than in `~/shared-readwrite`. This will prevent accidental
-erasures / writes on behalf of admins.
-
-```{warning}
-This is an experimental feature, and the names of these directories
-and their structure are subject to change.
+Performing administrative actions as a Hub Admin should be done with great care. Respect the privacy of others and think before you act. 
 ```

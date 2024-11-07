@@ -1,3 +1,4 @@
+(unlisted-image)=
 # Starting and customizing the software environment of a user server
 
 To start a server on the Hub, you need to go to the hub's home page, then click on the `Start My server button`.
@@ -39,8 +40,8 @@ If it was enabled, in the dropdown list of pre-configured choices of an option, 
 
 Selecting this choice, will allow you to input a free-form text value for that particular option, other than the pre-configured choices.
 
-
-## Specify your own image for the software environment
+(unlisted-image:specify-custom-image)=
+## Specify your own custom image for the software environment
 
 ```{important}
 Some important takeaways from previous section, that are relevant for the software environment customization.

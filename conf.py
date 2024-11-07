@@ -54,8 +54,8 @@ html_theme_options = {
 }
 
 intersphinx_mapping = {
-    "tc": ('https://team-compass.2i2c.org/en/latest', None),
-    "infra": ('https://infrastructure.2i2c.org/en/latest', None),
+    "tc": ('https://team-compass.2i2c.org', None),
+    "infra": ('https://infrastructure.2i2c.org', None),
     "jb": ('https://jupyterbook.org/en/stable/', None),
     "z2jh": ('https://z2jh.jupyter.org/en/latest', None),
 }
@@ -68,6 +68,7 @@ rediraffe_redirects = {
     # Added 2022-11-29
     "about/service/roles.md": "about/service/shared-responsibility.md",
     "about/service/team.md": "about/service/shared-responsibility.md",
+
 }
 
 # Disable linkcheck for anchors because it throws false errors for any JS anchors
@@ -126,3 +127,16 @@ for url, filename in figures.items():
         path_image.write_bytes(resp.content)
     else:
         print(f"Diagram image exists, delete this file to re-download: {path_image}")
+
+# -- Set canonical custom domain via html_baseurl -----------
+# -- See https://github.com/2i2c-org/infrastructure/issues/4629
+import os
+
+html_context = {}
+
+# Set canonical URL from the Read the Docs Domain
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
+
+# Tell Jinja2 templates the build is running on Read the Docs
+if os.environ.get("READTHEDOCS", "") == "True":
+    html_context["READTHEDOCS"] = True

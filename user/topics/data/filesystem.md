@@ -16,9 +16,8 @@ This is the same for all users, but no one else can see or access the files in *
 ``/home/jovyan`` is a persistant network-attached drive. Any files you put there will be there when you
 log out and log back into the JupyterHub. 
 
-The ``/home/jovyan`` space is typically limited to 10 GB. Consequently, your home directory is intended 
-only for notebooks, analysis scripts, and small datasets (< 1 GB). It is not an appropriate place to store 
-large datasets.
+The ``/home/jovyan`` space is intended only for notebooks and code. It's not an appropriate place to store
+datasets, as it can get really expensive (and slow) when used that way.
 
 ### Modify your bash profile
 
@@ -37,6 +36,7 @@ This is a *readonly* directory - anybody on the hub can *access* and *read from*
 The hub administrator may choose to distribute shared materials via this directory.
 The `shared` directory is not intended as a way for hub users to share data with each other.
 
+(filesystem:tmp)=
 ## The `/tmp` Directory
 
 Any directory outside of ``/home/jovyan`` is emphemeral on Cloud-hosted JupyterHubs. This means if you 
