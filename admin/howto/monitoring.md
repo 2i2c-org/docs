@@ -19,10 +19,15 @@ This Grafana account is separate from the account used to log into JupyterHub. T
 
 ## Using Grafana for your JupyterHub
 
-There is documentation available about what each dashboard or panel represents in the upstream [JupyterHub Grafana](https://jupyterhub-grafana.readthedocs.io/en/latest/) project.
+:::{figure} ../../images/grafana-dashboard.png
+:alt: Screenshot of JupyterHub Grafana dashboard
+The "Activity" Grafana dashboard.
+:::
+
+There is documentation available about what each dashboard or panel represents in the upstream [JupyterHub Grafana](https://jupyterhub-grafana.readthedocs.io/en/latest/) project. You can also hover over the {octicon}`info` icon in the top-right corner of each panel for more information.
 
 ## Making changes to Grafana dashboards
 
 Changes to the `JupyterHub dashboard` directory will not persist. If changes are required, we encourage you to contribute to the upstream [jupyterhub/grafana-dashboards](https://github.com/jupyterhub/grafana-dashboards) project.
 
-Hub champions are welcome to create their own custom dashboards and panel in a separate directory, but the configuration will not be backed up.
+Hub Champions are welcome to create their own custom dashboards and panel in a separate directory, but the configuration will not be backed up.
