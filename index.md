@@ -35,8 +35,8 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 :caption: Use the hub
 
 user/topics/policy/index
-user/topics/data/index.md
-user/howto/index.md
+user/topics/data/index
+user/howto/index
 ```
 
 ## Administer the hub
@@ -53,8 +53,9 @@ admin/howto/configurator
 admin/howto/environment/index
 admin/howto/manage-users
 admin/howto/control-user-server
-admin/howto/monitoring
+admin/howto/monitoring/index
 admin/topics/network
+admin/topics/managing-secrets
 ```
 
 ## Community leadership
@@ -65,9 +66,9 @@ Covers topics relevant to those that are leading others in a community.
 :caption: Community leadership
 :maxdepth: 2
 
-community/events.md
-community/content.md
-community/strategy.md
+community/events
+community/content
+community/strategy
 ```
 
 ## Community representatives
