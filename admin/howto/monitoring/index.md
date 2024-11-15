@@ -10,8 +10,8 @@ To discover the URL to the Grafana dashboard, use the [List of Running Hubs](htt
 
 During the hub deployment process, 2i2c engineering will send the Hub Champions an email with an invitation link to Grafana to allow them to create an account. **This invite link only lasts for seven days;** and is unique to the recipient's email address. If a new invite link is required please contact [support](support:email) to request a new invite link.
 
-:::{figure} ../../images/grafana-invite.png
-:alt: Grafana website after clicking invitation link
+:::{figure} images/grafana-invite.png
+:alt: Screenshot of a form containing fields for email, name, username and password.
 The Grafana website after clicking invitation link.
 :::
 
@@ -19,15 +19,19 @@ This Grafana account is separate from the account used to log into JupyterHub. T
 
 ## Using Grafana for your JupyterHub
 
-:::{figure} ../../images/grafana-dashboard.png
+:::{figure} images/grafana-dashboard.png
 :alt: Screenshot of JupyterHub Grafana dashboard
 The "Activity" Grafana dashboard.
 :::
 
-There is documentation available about what each dashboard or panel represents in the upstream [JupyterHub Grafana](https://jupyterhub-grafana.readthedocs.io/en/latest/) project. You can also hover over the {octicon}`info` icon in the top-right corner of each panel for more information.
+There is work-in-progress documentation available about what each dashboard or panel represents in the upstream [JupyterHub Grafana](https://jupyterhub-grafana.readthedocs.io/en/latest/) project. You can also hover over the {octicon}`info` icon in the top-right corner of each panel for more information.
 
 ## Making changes to Grafana dashboards
 
-Changes to the `JupyterHub dashboard` directory will not persist. If changes are required, we encourage you to contribute to the upstream [jupyterhub/grafana-dashboards](https://github.com/jupyterhub/grafana-dashboards) project.
+Changes to the `JupyterHub dashboard` directory will not persist. If changes are required on a persistent basis, we encourage you to contribute to the upstream [jupyterhub/grafana-dashboards](https://github.com/jupyterhub/grafana-dashboards) project.
 
 Hub Champions are welcome to create their own custom dashboards and panel in a separate directory, but the configuration will not be backed up.
+
+## Programmatically accessing Prometheus data
+
+See our separate guide to [Programmatically accessing Prometheus data](prometheus-access).

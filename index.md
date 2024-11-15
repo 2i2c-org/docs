@@ -53,8 +53,9 @@ admin/howto/configurator
 admin/howto/environment/index
 admin/howto/manage-users
 admin/howto/control-user-server
-admin/howto/monitoring
+admin/howto/monitoring/index
 admin/topics/network
+admin/topics/managing-secrets
 ```
 
 ## Community leadership
