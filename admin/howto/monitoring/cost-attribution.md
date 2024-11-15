@@ -25,7 +25,6 @@ The dashboard is made of several panels:
 
 :::{figure} images/cost-attribution-daily.png
 :alt: A line graph showing daily cloud costs over a 1 month period.
-The Daily Costs panel.
 :::
 
 "Cost account" refers to the associated AWS account's total costs, and "Cost attributable" refers to the costs that has successfully been attributed to 2i2c managed cloud infrastructure.
@@ -40,6 +39,10 @@ Note:
 - All costs are pure usage costs, and doesn't consider credits etc.
 
 ### Daily costs per hub (opt-in only)
+
+:::{figure} images/cost-attribution-daily-per-hub.png
+:alt: A line graph showing daily cloud costs per hub over a 1 month period.
+:::
 
 Costs can sometimes be attributed to a specific hub, and that can then be seen here.
 
@@ -57,6 +60,10 @@ Note:
 
 ### Total daily costs per component
 
+:::{figure} images/cost-attribution-component.png
+:alt: A line graph showing daily cloud costs per component over a 1 month period.
+:::
+
 Components are human friendly groupings of AWS services, defined as:
 
 - backup: AWS Backup
@@ -72,6 +79,10 @@ Note:
 - All costs are pure usage costs, and doesn't consider credits etc.
 
 ### Daily costs per component per hub (opt-in only)
+
+:::{figure} images/cost-attribution-component-per-hub.png
+:alt: A line graph showing daily cloud costs per component per hub over a 1 month period.
+:::
 
 The same as above but broken down for each specific hub.
 
