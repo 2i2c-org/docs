@@ -12,14 +12,12 @@ From the main menu of Grafana, navigate to *Dashboards > Cloud cost dashboards >
 
 ## Understanding the cloud cost dashboard
 
-A typical 2i2c-managed deployment comprises of a staging hub and a production hub, although some other communities may have extra hubs such as a workshop hub. By default, costs are not broken down on a per hub basis unless the community has opted in to this feature, since this requires some engineering effort and adds a small extra cost to the cloud bill.
-
 The dashboard is made of several panels:
 
 - Daily costs
-- Daily costs per hub (opt-in only)
+- Daily costs per hub
 - Total daily costs per component
-- Daily costs per component per hub (opt-in only).
+- Daily costs per component per hub.
 
 ### Daily costs
 
@@ -38,19 +36,17 @@ Note:
 - All costs are [unblended costs](https://aws.amazon.com/blogs/aws-cloud-financial-management/understanding-your-aws-cost-datasets-a-cheat-sheet/)
 - All costs are pure usage costs, and doesn't consider credits etc.
 
-### Daily costs per hub (opt-in only)
+### Daily costs per hub
 
 :::{figure} images/cost-attribution-daily-per-hub.png
 :alt: A line graph showing daily cloud costs per hub over a 1 month period.
 :::
 
-Costs can sometimes be attributed to a specific hub, and that can then be seen here.
+Costs can sometimes be attributed to a specific hub, and that can then be seen here. A typical 2i2c-managed deployment comprises of a staging hub and a production hub, although some other communities may have extra hubs such as a workshop hub.
 
 "Cost shared" reflect all 2i2c cloud infrastructure attributable costs that aren't attributable to a specific hub.
 
 For hub specific cost attribution, the underlying cloud infrastructure needs to setup to be hub specific. Currently compute, home storage, and object storage can be setup for specific hubs, but isn't unless explicitly requested.
-
-To provide hub specific cloud infrastructure for is opt-in because it is a trade off. Documentation about this trade off isn't yet available but tracked in this github issue.
 
 Note:
 
@@ -78,7 +74,7 @@ Note:
 - All costs are [unblended costs](https://aws.amazon.com/blogs/aws-cloud-financial-management/understanding-your-aws-cost-datasets-a-cheat-sheet/)
 - All costs are pure usage costs, and doesn't consider credits etc.
 
-### Daily costs per component per hub (opt-in only)
+### Daily costs per component per hub
 
 :::{figure} images/cost-attribution-component-per-hub.png
 :alt: A line graph showing daily cloud costs per component per hub over a 1 month period.
