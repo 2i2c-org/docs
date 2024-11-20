@@ -3,66 +3,49 @@
 
 To start a server on the Hub, you need to go to the hub's home page, then click on the `Start My server button`.
 
-Depending on how your hub was set up, after clicking the button, you will be:
+Depending on how your hub was set up, after clicking the button, you will be either:
 
-1. either redirected to _"the spawn page"_, where a bunch of logs and a progress bar will indicate that a server will be created. This server will use a software environment, i.e. a docker image, that was pre-configured by the hub admins.
+1. directed to _"the spawn page"_, where logs and a progress bar will indicate that a server will be created. This server will pull a software environment, i.e. a docker image, that was pre-configured by the hub admins.
 
-2. or presented first with a list of _"Server Options"_ that will allow you to configure this server before it will be spawned for you.
+2. presented first with a list of _"Server Options"_ that will allow you to configure this server before it will be spawned for you.
 
-The first case is straightforward, so let's dive into the one that needs you to choose your server options.
+The first case is straightforward requires no further user input. The rest of this page describes the second case in more detail.
 
 ## The Server Options
 
-The `Server Options` is a page that will allow you to configure the server that will be created and started for you.
+The `Server Options` page that will allow you to configure the server that will be created and started for you.
 
 ### Profiles and Options
 
 You can choose from different pre-configured _"profiles"_ and for each profile you can choose from different pre-configured _"options"_.
 
-```{figure} ../../images/server-options.png
+```{figure} ../../images/server-options.jpeg
 :alt: Server Options page example
 ```
 
 The image above represents a `Server Options` page example, where you can choose:
-- either a `"CPU only"` or a `"GPU"` **profile**
-- and for each profile, you can select from a list of pre-configured **options**.
-  The options are:
-   - the docker `Image`, where you can choose from a list of pre-configured choices which image to use for the software environment
-   - the `Node share` which represents the hardware resources available on the server. 
 
-### The "Other" choice
+- an image **profile** that defined the software environment and is curated by your hub administrator, with options such as _Python_, _R_, or even _Bring your own image_
+- for each profile, you can select from a list of pre-configured **options** for the `Node share`, which represents the hardware resources such as CPU and RAM available on the server.
 
-If it was enabled, in the dropdown list of pre-configured choices of an option, there might be an entry called `Other`.
+### The "Bring your own image" option
 
-```{figure} ../../images/other-choice.png
-:alt: The "Other" choice
+If this feature is enabled for your hub, then the user can freely specify any image hosted on a public container registry.
+
+```{figure} ../../images/bring-your-own-image.png
+:alt: The "Bring your own image" option
 ```
 
-Selecting this choice, will allow you to input a free-form text value for that particular option, other than the pre-configured choices.
+The general format for specifying an image is
 
-(unlisted-image:specify-custom-image)=
-## Specify your own custom image for the software environment
-
-```{important}
-Some important takeaways from previous section, that are relevant for the software environment customization.
-
-1. The software environment that runs on a user server is defined by a docker image. By using a docker image, your are enabled to reproduce your work on other machines more easily.
-
-2. The docker image of a user server can be:
-
-- pre-defined by hub admins
-- a list of choices that you can select from
-- a special `Other` choice that enables you to input your own custom option choice
+```shell
+OWNER/IMAGE_NAME:TAG
 ```
 
-The special `Other` choice of the `Image` option allows you to specify your own image for the software environment, in the form of `docker_registry/organization/image_name:image_version`.
+For example, if a user wanted to pull the [Jupyter PyTorch notebook](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-pytorch-notebook) container, then they would enter `quay.io/jupyter/pytorch-notebook:x86_64-pytorch-2.2.0` into the *Custom image* field.
 
-As an example, we can get the 2023.09.11 version of the pangeo notebook (that's not in the list of pre-configred choices) to run on a server with ~16GB of memory and ~2CPU (that's not the default node share) by:
-1. selecting the `CPU only` profile
-2. selecting the `Other` choice of the `Image` option (because 2023.09.11 version of the pangeo notebook is not available in the pre-configured list)
-3. pasting `quay.io/pangeo/pangeo-notebook:2023.09.11` in the input field that appeared
-4. selecting the pre-configured choice of `~16GB, ~2CPU` of the `Node Share` option
-5. clicking the `Start` button
+We recommend always explicitly specifying a version number in the `TAG` field rather than using the generic `latest` tag. Providing the version number in the tag is useful for producing informative server logs for debugging purposes and allows you to check whether the correct version of the image is loaded into the hub by running the following command in a terminal in your hub
 
-```{image} ../../images/new-server-custom-image.gif
+```shell
+jovyan@user:~$ echo $JUPYTER_IMAGE
 ```
