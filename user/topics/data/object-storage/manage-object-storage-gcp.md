@@ -273,7 +273,7 @@ For large datasets uploaded from a remote server, e.g. a supercomputer, you are 
 
 1. You should now be able to use the commands from [](working-with-object-storage.md) to manage files between the remote server and the storage bucket.
 
-````note
+````{note}
 When you are done, revoke your credentials with the command
 
 ```bash

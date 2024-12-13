@@ -90,7 +90,7 @@ As long as the hub url, content repository url and the branch name are the
 same, users will be not be duplicating content.
 :::
 
-## Serve static web content with your hub
+<!-- ## Serve static web content with your hub
 
 2i2c hubs can serve static web content as a [JupyterHub service](https://jupyterhub.readthedocs.io/en/stable/reference/services.html).
 This is useful for hosting documentation for your hub's community.
@@ -125,14 +125,13 @@ This way, your HTML files will automatically be updated when you update your sit
 Your hub will need to be configured by a 2i2c engineer to enable the docs service (following {doc}`these instructions <infra:howto/features/static-sites>`).
 
 - Find the **GitHub repository** and the **branch** where your HTML files are stored.
-- [Send a support request](../../support.md) asking them to enable this, and provide the repository/branch you found above.
+- [Send a support request](/support.md) asking them to enable this, and provide the repository/branch you found above.
 
 Once this is deployed, your hub's documentation should be accessible at
 
 ```
 https://<hub-address>/services/docs
-```
-
+``` -->
 
 ## Write public books that connect to a 2i2c JupyterHub
 
@@ -144,8 +143,8 @@ Hub.
 To connect your public content with a 2i2c JupyterHub, we recommend using [Jupyter
 Book](https://jupyterbook.org). This is an open-source project that allows you
 to share collections of notebooks and markdown files as an online website and
-book. Check out the [Jupyter Book getting started
-guide](jb:start/overview) for more information about
+book. Check out the {doc}`Jupyter Book getting started
+guide<jb:start/overview>` for more information about
 Jupyter Book.
 
 You can tell Jupyter Book to place links *directly to your 2i2c JupyterHub* on each
@@ -153,6 +152,6 @@ page that is served from a notebook. To do so, follow the [launch buttons for
 JupyterHubs
 instructions](https://jupyterbook.org/interactive/launchbuttons.html#jupyterhub-buttons-for-your-pages).
 Make sure that you configure your `jupyterhub_url` to point to the URL of your
-2i2c JupyterHub (e.g., `https://<your-hub>.pilot.2i2c.cloud`).
+2i2c JupyterHub (e.g., `https://<your-hub>.2i2c.cloud`).
 This will use automatically [create nbgitpuller links](content:nbgitpuller)
 for you.
