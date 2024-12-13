@@ -6,6 +6,8 @@ Grafana dashboards are only available to communities on **dedicated** clusters. 
 
 To discover the URL to the Grafana dashboard, use the [List of Running Hubs](https://infrastructure.2i2c.org/reference/hubs/) table. This table also shows which cluster each hub is running on.
 
+Note that data is retained for up to 3 years on 2i2c hubs.
+
 ## Getting a Grafana account
 
 During the hub deployment process, 2i2c engineering will send the Hub Champions an email with an invitation link to Grafana to allow them to create an account. **This invite link only lasts for seven days;** and is unique to the recipient's email address. If a new invite link is required please contact [support](support:email) to request a new invite link.
@@ -31,4 +33,3 @@ There is work-in-progress documentation available about what each dashboard or p
 Changes to the `JupyterHub dashboard` directory will not persist. If changes are required on a persistent basis, we encourage you to contribute to the upstream [jupyterhub/grafana-dashboards](https://github.com/jupyterhub/grafana-dashboards) project.
 
 Hub Champions are welcome to create their own custom dashboards and panel in a separate directory, but the configuration will not be backed up.
-
