@@ -54,11 +54,11 @@ We treat each of these separately in order to be transparent about where communi
 They will be covered as either two separate invoices, or two different line items on the same invoice.
 
 **Staff costs** cover all of the human time that goes into managing, supporting, developing, and improving our hub service.
-See [](service-offerings) for details, and {external:tc:ref}`the Cost Model section in our Team Compass <costs:human>` for our staffing cost model.
+See [](service-offerings) for details, and {doc}`the Compensation and Benefits section in our Team Compass <tc:people/compensation>` for our staffing cost model.
 
 **Cloud costs** cover the cost we pay a cloud provider for the infrastructure that powers your service.
 This is either on a dedicated cloud cluster, or on cluster that you share with other communities.
-  See [](costs:cloud) for a guide on how to estimate your community's cloud costs.
+  See [](/topic/cloud-costs.md) for a guide on how to estimate your community's cloud costs.
 
 ## Comparison to similar services
 

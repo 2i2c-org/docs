@@ -25,7 +25,7 @@ Before reaching out to 2i2c for support, this person should work with others in 
 
 ## The support process
 
-You can find our {external:tc:ref}`full support process in our Team Compass <support:guide>`. Below is a brief overview.
+You can find our {ref}`full support process in our Team Compass <tc:support:process>`. Below is a brief overview.
 
 When you send us a support email, we'll try and resolve your issue via the following process:
 

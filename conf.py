@@ -3,7 +3,7 @@
 project = "Service Guide"
 copyright = "2022"
 author = "2i2c"
-version = "0.1alpha"
+version = "0.1"
 main_doc = "index"
 
 # -- General configuration ---------------------------------------------------
@@ -28,6 +28,7 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", ".github", ".nox", "CONTRIBUTING.md"]
 
 myst_enable_extensions = ["colon_fence", "deflist", "linkify"]
+myst_heading_anchors = 3
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -49,7 +50,6 @@ html_theme_options = {
     "repository_branch": "main",
     "use_repository_button": True,
     "use_edit_page_button": True,
-    "extra_navbar": "",
     "show_toc_level": 2,
 }
 

@@ -59,11 +59,11 @@ Usually, 2i2c assumes responsibility for all of the above, though we are experim
 
 **Key goal**: Ensure that communities have the skills and understanding needed to use the cloud infrastructure to have an impact.
 
-### Responsibilities
+### Responsibilities]
 
 1. **Create documentation and training material**. Write and improve content that helps users learn cloud-native workflows and use the infrastructure effectively.
-2. **Provide support to community leaders**. Follow our service {external:tc:ref}`support:guide` for community leaders.
-3. **Assist with user environment creation**. Provide domain expertise about how to configure and set up the proper environment using [Binder-style repositories](../../admin/howto/environment/index.md).
+2. **Provide support to community leaders**. Follow our service {ref}`support prcoess<tc:support:process>` for community leaders.
+3. **Assist with user environment creation**. Provide domain expertise about how to configure and set up the proper environment using [Binder-style repositories](/admin/howto/environment/index.md).
 4. **Create and manage data in the cloud**. If your communities requires access to a cloud-native dataset, format it properly and put it in a place that the hub can connect to.
 5. **Run workshops and training**. Training workshops are geared towards community leaders, with the goal of helping them share knowledge with others in their community.
 
@@ -74,7 +74,7 @@ Usually, 2i2c assumes responsibility for all of the above, though we are experim
 An expert practitioner with familiarity in user workflows as well as the technical use-cases that 2i2c's cloud services enable.
 Acts as a bridge between the communities we work with and our {role}`Site Reliability Engineer`s. Facilitates information transfer, signal-boosts community needs and requests, and guides communities in utilizing the infrastructure more effectively.
 
-See the {ref}`Support Team Documentation <tc:support:guide>` for more information.
+See the {ref}`Support Team Documentation <tc:support:process>` for more information.
 
 **Usually filled by 2i2c team members.** Though communities with "Power Users" or those with exceptional engineering and computational skills may serve in this role as well.
 ```

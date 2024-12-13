@@ -59,7 +59,7 @@ We strive to build an understanding of their needs, to represent their interests
 
 2i2c is a mission-driven non-profit organization that has a commitment to doing its work openly, transparently, and inclusively.
 Our mission is to provide researchers and educators with the infrastructure they need to do their work, and to support open source communities that underlie this infrastructure.
-2i2c is governed by a [Steering Council](tc:structure:steerco) made of members from the research and education community.
+2i2c is governed by a {doc}`Steering Council <tc:organization/steering-council>` made of members from the research and education community.
 2i2c manages all of our work in public spaces, including [all of our infrastructure](http://github.com/2i2c-org/infrastructure) as well as [all of our organizational strategy and practices](http://team-compass.2i2c.org/).
 
 
@@ -291,7 +291,7 @@ In addition, jump to a quick explanation of each type of service below:
 (compare:2i2c)=
 ### 2i2c's managed cloud service
 
-As a non-profit, we choose our prices to move forward on a sustainable path to achieve our mission according to {external:tc:ref}`our cost model <costs:human>` as well as {external:tc:ref}`our growth model <strategy:growth>`.
+As a non-profit, we choose our prices to move forward on a sustainable path to achieve our mission according to our {doc}`fundraising strategy <tc:partnerships/fundraising>`.
 Our service entails developing and managing entirely open-source, vendor-agnostic, and community-driven infrastructure that is customized for research and education.
 
 We curate and integrate this infrastructure, customize it for use-cases in research and education, and contribute back to the open source communities that underlie the tools we use.
@@ -303,7 +303,7 @@ Usage Cost
   Moreover, because we can run infrastructure that communities control as well, it is possible to use 2i2c hubs with cloud credits at your institution.
 
 Person Cost
-: 2i2c reduces its personell costs by standardizing the configuration and deployment infrastructure across hubs for many communities. We aim to be significantly cheaper than hiring an in-house person or team to run infrastructure, but are slightly more expensive than a "fully-hosted Software as a Service" platform.
+: 2i2c reduces its personnel costs by standardizing the configuration and deployment infrastructure across hubs for many communities. We aim to be significantly cheaper than hiring an in-house person or team to run infrastructure, but are slightly more expensive than a "fully-hosted Software as a Service" platform.
 
 Right to Replicate
 : All of 2i2c's infrastructure is entirely open-source and community-driven.
