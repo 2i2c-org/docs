@@ -30,17 +30,15 @@ The Community Representative is the main point of contact between the community 
 There can be up to two Community Representatives per hub.
 See [](../../about/service/shared-responsibility.md) for more details on this role.
 
-## Fill in the "New Hub" GitHub template
+## Hub Deployment
 
-We use a GitHub issue template to ask a few questions about your hub deployment that will help us deploy it.
-Click the button below to go to the form:
+We use a GitHub issue templates to track work to deploy your hub.
+Click the button below to go to view an example template form:
 
-```{button-link} https://github.com/2i2c-org/infrastructure/issues/new?assignees=&labels=type%3A+hub&template=2_new-hub.yml&title=New+Hub%3A+%3CHub+name%3E
+```{button-link} https://github.com/2i2c-org/infrastructure/issues/new?template=05_new-hub_phase-3.yaml
 :color: primary
-Go to new Hub Form
+Go to new Hub Setup Form
 ```
-
-Feel free to communicate with the team members in that issue to help clarify how the infrastructure should be set up.
 
 ## Get support
 

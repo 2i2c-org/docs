@@ -124,6 +124,30 @@ if you add them later, their files will still be present.
 
 Hub admins can control access to their hub by adding users to their GitHub Organization and Team. Hub admins require *Owner* permissions for their GitHub Organization in order to {ref}`invite non-members<manage-users:github-org>` to it (team maintainers or regular members do not have the power to invite non-members to GitHub Organizations). Inviting a user to the organization does not automatically grant the user access to a hub. A member of a GitHub Organization must be added to a {ref}`GitHub Team<manage-users:github-team>` associated with the hub in order to log into the hub with their GitHub credentials.
 
+##### First time setup
+
+When we setup authentication to use [GitHub orgs or teams](auth:github-orgs), we create an OAuth app in the 2i2c org and ask hub admins to install this app upon first login to the hub.
+
+```{seealso}
+See our [Infrastructure Guide](https://infrastructure.2i2c.org/hub-deployment-guide/configure-auth/github-orgs/#how-to-setup-github-auth) on how 2i2c sets up GitHub OAuth apps.
+```
+
+You will be presented with a list of all the GitHub orgs related to your account.
+Some will already be authorised and have a green tick next to them, others where you are a member will have a "Request" button next to them.
+Orgs where you are an admin will have a "Grant" button next to them. Click the "Grant" button next to the _target_ org associated with your hub before clicking the green "Authorize" button.
+
+For example, see the below screenshot where we wish to grant the `nasa-cryo-staging` OAuth app access to the `binderhub-test-org` org.
+
+```{figure} /images/granting-org-access-to-oauth-app.jpg
+How to grant org access to an OAuth app on GitHub
+```
+
+```{warning}
+If this is not done correctly, all users will report a `403 Forbidden` error when they try to login. If this happens, please contact [support](/support.md) and we can revoke all user tokens of the auth app to restart the process.
+```
+
+The OAuth app will now have the correct permissions to read the org info and hence users should be able to successfully log into their hub.
+
 (manage-users:github-org)=
 ##### Manage your GitHub Organization
 
@@ -222,6 +246,8 @@ how to determine their username.
 % TODO: Document how to remove users
 
 ## Debug user authentication issues
+
+### CILogon
 
 If users are running into strange errors when they log in (for example CILogon error pages that say "Looks like something went wrong!"), ask them to try these steps in debugging:
 
