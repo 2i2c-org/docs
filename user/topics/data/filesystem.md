@@ -13,11 +13,28 @@ However, you can’t ssh in!
 Your username is ``jovyan``, and your home directory is ``/home/jovyan``.
 This is the same for all users, but no one else can see or access the files in *your* home directory.
 
-``/home/jovyan`` is a persistant network-attached drive. Any files you put there will be there when you
-log out and log back into the JupyterHub. 
+``/home/jovyan`` is a persistent network-attached drive. Any files you put there will be there when you
+log out and log back into the JupyterHub.
 
-The ``/home/jovyan`` space is intended only for notebooks and code. It's not an appropriate place to store
+The ``/home/jovyan`` space is intended only for notebooks and code. It's **not** an appropriate place to store
 datasets, as it can get really expensive (and slow) when used that way.
+
+### Per-User Storage Quotas
+
+All of our hubs have a 10GB storage quota per-user by default, although this may vary depending on the hub.
+
+You can check how much storage you are using by running the `du` command in a terminal:
+
+```bash
+$ du -skh ~
+196M    /home/jovyan
+```
+
+If you go over the quota limit, then you may experience degraded performance on your server. Contact your hub administrator if you run into any problems.
+
+For temporarily storing large datasets, take a look at the {ref}`/tmp directory<filesystem:tmp>` section below.
+
+For storing data in cloud object storage, see the section [Cloud Object Storage](./object-storage/index.md).
 
 ### Modify your bash profile
 
@@ -39,9 +56,9 @@ The `shared` directory is not intended as a way for hub users to share data with
 (filesystem:tmp)=
 ## The `/tmp` Directory
 
-Any directory outside of ``/home/jovyan`` is emphemeral on Cloud-hosted JupyterHubs. This means if you 
+Any directory outside of ``/home/jovyan`` is ephemeral on cloud-hosted JupyterHubs. This means if you 
 add data or scripts under a writeable directory like `/tmp/myfile.txt` *it will not be there when you
-log out and log back in*. 
+log out and log back in*.
 
 Nevertheless, `/tmp` is a convenient location for storing data temporarily 
 because it is a fast SSD drive. The space available depends on your server but will generally be much 
