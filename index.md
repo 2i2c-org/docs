@@ -34,6 +34,7 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 :maxdepth: 2
 :caption: Use the hub
 
+user/topics/getting-started
 user/topics/policy/index
 user/topics/data/index
 user/howto/index
