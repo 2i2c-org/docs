@@ -64,6 +64,25 @@ The [original single-document interface](https://jupyter-notebook.readthedocs.io
 
 [RStudio](https://rstudio.com) is an IDE for R, created by the RStudio company.
 
+### Software environment
+
+You can temporarily install packages in your environment that will
+last the duration of your user session. They will get wiped out
+when your user server is stopped, to ensure that you always start from
+the 'default' environment provided by your hub administrator.
+
+You can add `%pip install <list-of-packages>` or
+`%conda install <list-of-packages>` in the first cell of any notebook
+you distribute if you need to install any necessary extra packages. For R,
+you can use `install.packages("package-name")` as you normally would.
+
+```{warning}
+While tempting, do not use `!pip install --user <packages>` to install
+packages. This makes the base environment different for different users,
+causing hard to debug issues. This could also render your user server
+unable to start, due to conflicting packages. [See this blog post on using pip in Jupyter](http://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/) for some helpful explanation.
+```
+
 ## Shutting down your server
 
 When you are finished with your work, it is important to shut down your server to save resources and reduce costs.
