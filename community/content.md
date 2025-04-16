@@ -3,9 +3,10 @@
 These sections describe ways that you can create content for your JupyterHub and share them with your users.
 
 (content:nbgitpuller)=
+
 ## Distribute content with nbgitpuller
 
-You'll often want to distribute *content* (such as notebooks, scripts, sample
+You'll often want to distribute _content_ (such as notebooks, scripts, sample
 data, etc) to your users so they can do exercises, follow along with a lecture,
 or use as a starting point for their own work. This content is often constantly
 updated as time goes on, and needs to not overwrite your student's work if you
@@ -22,15 +23,15 @@ However, if you [define a custom environment for your hub's users](environment:i
 ### Put your content in a public GitHub repository
 
 Create a repository on [GitHub](https://github.com) and start putting your
-content there. This is the *source* of the content that will be distributed
+content there. This is the _source_ of the content that will be distributed
 to your users. You can update it as often as you wish. While instructors will
-need to know how github works, *your users will never have to interact with
-git directly*.
+need to know how github works, _your users will never have to interact with
+git directly_.
 
 ### Generate an nbgitpuller link
 
 Generate an [nbgitpuller link](https://jupyterhub.github.io/nbgitpuller/link). This generates a
-*clickable link* that contains within it the following pieces of information:
+_clickable link_ that contains within it the following pieces of information:
 
 1. The URL to your hub. Upon clicking the link, users will be redirected to
    this hub, and content will be pulled into their home directory there.
@@ -147,7 +148,7 @@ book. Check out the {doc}`Jupyter Book getting started
 guide<jb:start/overview>` for more information about
 Jupyter Book.
 
-You can tell Jupyter Book to place links *directly to your 2i2c JupyterHub* on each
+You can tell Jupyter Book to place links _directly to your 2i2c JupyterHub_ on each
 page that is served from a notebook. To do so, follow the [launch buttons for
 JupyterHubs
 instructions](https://jupyterbook.org/interactive/launchbuttons.html#jupyterhub-buttons-for-your-pages).
@@ -155,3 +156,34 @@ Make sure that you configure your `jupyterhub_url` to point to the URL of your
 2i2c JupyterHub (e.g., `https://<your-hub>.2i2c.cloud`).
 This will use automatically [create nbgitpuller links](content:nbgitpuller)
 for you.
+
+## Deploy documentation with Jupyter Book
+
+2i2c can share "community documentation" alongside your hub under a special `docs.<COMMUNITY>.2i2c.cloud`. This feature can be used to establish a home for the best practice, useful resources, and rich visualisations built by your community.
+
+:::{caution} Community Documentation is Experimental
+This feature is an experimental addition by 2i2c. It may change as we learn more about how communities are using it, and develop new features.
+:::
+
+Using a [2i2c-authored template][2i2c-org/community-docs-template], you can quickly get started by customising an existing bare-bones Jupyter Book. This template includes examples of:
+
+- A [landing page][guide-landing].
+- Authoring content that uses [a Python Jupyter kernel][guide-kernel].
+- Using rich [cross-referencing] features to create a knowledge base.
+
+### Deploy your site with Jupyter Book
+
+The current iteration of this feature requires you to deploy a Jupyter Book 2 static site from a GitHub repository using GitHub Pages. The community representative should use the [2i2c-org/community-docs-template] template to create their own repository, and provide the 2i2c team with _temporary_ owner access. We will then ensure that various configuration such as the custom domain and GitHub Actions are set up correctly.
+
+### Learn about authoring with Jupyter Book and MyST Markdown
+
+The [Jupyter Book documentation] and the [MyST Markdown Guide] are useful resources for learning about the MyST Engine. To understand how Jupyter Book 2 and the MyST engine relate to one another, see [this documentation page][jb-toolchain].
+A brief overview of the MyST Markdown Syntax can be found at the [MyST-MD typography guide](https://mystmd.org/guide/typography).
+
+[MyST Markdown Guide]: https://mystmd.org/guide/quickstart
+[Jupyter Book documentation]: https://next.jupyterbook.org/start
+[2i2c-org/community-docs-template]: https://github.com/2i2c-org/community-docs-template
+[guide-landing]: https://mystmd.org/guide/website-landing-pages
+[guide-kernel]: https://mystmd.org/guide/execute-notebooks
+[cross-referencing]: https://mystmd.org/guide/cross-references
+[jb-toolchain]: https://next.jupyterbook.org/about/toolchain
