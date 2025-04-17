@@ -178,10 +178,12 @@ Why not start by [adding your own glossary][guide-glossary], or [adding your own
 The current iteration of this feature requires you to deploy a Jupyter Book 2 static site from a GitHub repository using GitHub Pages. The community representative should use the [2i2c-org/community-docs-template] template to [create their own repository][use-template], and provide the 2i2c team with _temporary_ owner access. We will then ensure that various configuration such as the custom domain and GitHub Actions are set up correctly.
 
 (learn-authoring)=
+
 ### Learn about authoring with Jupyter Book and MyST Markdown
 
-The [Jupyter Book documentation] and the [MyST Markdown Guide] are useful resources for learning about the MyST Engine. To understand how Jupyter Book 2 and the MyST engine relate to one another, see [this documentation page][jb-toolchain].
-A brief overview of the MyST Markdown Syntax can be found at the [MyST-MD typography guide](https://mystmd.org/guide/typography).
+The [Jupyter Book documentation] and the [MyST Markdown Guide] are useful resources for learning about Jupyter Book 2 and the MyST Engine that powers it. To understand how Jupyter Book 2 and the MyST engine relate to one another, see [this documentation page][jb-toolchain]. A brief overview of the MyST Markdown Syntax can be found at the [MyST Engine Typography Guide](https://mystmd.org/guide/typography).
+
+The MyST Engine implements powerful sharing and reusing features. One of the most exciting of these is the ability to preview and [embed content from external MyST sites][guide-embed]. This can be used to richly reference and include figures, glossary terms, and even entire documents from useful resources! Amongst communities that share a set of best praactices and understanding, this feature may be particular useful for building upon the work of others.
 
 [MyST Markdown Guide]: https://mystmd.org/guide/quickstart
 [Jupyter Book documentation]: https://next.jupyterbook.org/start
@@ -190,6 +192,7 @@ A brief overview of the MyST Markdown Syntax can be found at the [MyST-MD typogr
 [guide-glossary]: https://mystmd.org/guide/glossaries-and-terms
 [guide-landing]: https://mystmd.org/guide/website-landing-pages
 [guide-kernel]: https://mystmd.org/guide/execute-notebooks
+[guide-embed]: https://mystmd.org/guide/embed#embed-from-external-myst-projects
 [cross-referencing]: https://mystmd.org/guide/cross-references
 [jb-toolchain]: https://next.jupyterbook.org/about/toolchain
 [use-template]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
