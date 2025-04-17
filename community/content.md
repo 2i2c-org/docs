@@ -171,10 +171,13 @@ Using a [2i2c-authored template][2i2c-org/community-docs-template], you can quic
 - Authoring content that uses [a Python Jupyter kernel][guide-kernel].
 - Using rich [cross-referencing] features to create a knowledge base.
 
+Why not start by [adding your own glossary][guide-glossary], or [adding your own logo][guide-logo]? See [](#learn-authoring) for more tips about authoring content with Jupyter Book 2 and the MyST Engine.
+
 ### Deploy your site with Jupyter Book
 
 The current iteration of this feature requires you to deploy a Jupyter Book 2 static site from a GitHub repository using GitHub Pages. The community representative should use the [2i2c-org/community-docs-template] template to [create their own repository][use-template], and provide the 2i2c team with _temporary_ owner access. We will then ensure that various configuration such as the custom domain and GitHub Actions are set up correctly.
 
+(learn-authoring)=
 ### Learn about authoring with Jupyter Book and MyST Markdown
 
 The [Jupyter Book documentation] and the [MyST Markdown Guide] are useful resources for learning about the MyST Engine. To understand how Jupyter Book 2 and the MyST engine relate to one another, see [this documentation page][jb-toolchain].
@@ -183,6 +186,8 @@ A brief overview of the MyST Markdown Syntax can be found at the [MyST-MD typogr
 [MyST Markdown Guide]: https://mystmd.org/guide/quickstart
 [Jupyter Book documentation]: https://next.jupyterbook.org/start
 [2i2c-org/community-docs-template]: https://github.com/2i2c-org/community-docs-template
+[guide-logo]: https://mystmd.org/guide/website-templates#site-options
+[guide-glossary]: https://mystmd.org/guide/glossaries-and-terms
 [guide-landing]: https://mystmd.org/guide/website-landing-pages
 [guide-kernel]: https://mystmd.org/guide/execute-notebooks
 [cross-referencing]: https://mystmd.org/guide/cross-references
