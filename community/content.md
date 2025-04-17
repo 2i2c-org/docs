@@ -162,7 +162,7 @@ for you.
 2i2c can share "community documentation" alongside your hub under a special `docs.<COMMUNITY>.2i2c.cloud` subdomain. This feature can be used to establish a home for the best practice, useful resources, and rich visualisations built by your community.
 
 :::{caution} Community Documentation is Experimental
-This feature is an experimental addition by 2i2c. It may change as we learn more about how communities are using it, and develop new features.
+This feature is an experimental addition by 2i2c. It may change as we learn more about how communities are using it.
 :::
 
 Using a [2i2c-authored template][2i2c-org/community-docs-template], you can quickly get started by customising an existing bare-bones Jupyter Book. This template includes examples of:
@@ -183,7 +183,7 @@ The current iteration of this feature requires you to deploy a Jupyter Book 2 st
 
 The [Jupyter Book documentation] and the [MyST Markdown Guide] are useful resources for learning about Jupyter Book 2 and the MyST Engine that powers it. To understand how Jupyter Book 2 and the MyST engine relate to one another, see [this documentation page][jb-toolchain]. A brief overview of the MyST Markdown Syntax can be found at the [MyST Engine Typography Guide](https://mystmd.org/guide/typography).
 
-The MyST Engine implements powerful sharing and reusing features. One of the most exciting of these is the ability to preview and [embed content from external MyST sites][guide-embed]. This can be used to richly reference and include figures, glossary terms, and even entire documents from useful resources! Amongst communities that share a set of best praactices and understanding, this feature may be particular useful for building upon the work of others.
+The MyST Engine implements powerful sharing and reusing features. One of the most exciting of these is the ability to preview and [embed content from external MyST sites][guide-embed]. This can be used to richly reference and include figures, glossary terms, and even entire documents from useful resources! Amongst communities that share a set of best practices and understanding, this feature may be particular useful for building upon the work of others.
 
 [MyST Markdown Guide]: https://mystmd.org/guide/quickstart
 [Jupyter Book documentation]: https://next.jupyterbook.org/start
