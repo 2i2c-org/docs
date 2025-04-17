@@ -159,7 +159,7 @@ for you.
 
 ## Deploy documentation with Jupyter Book
 
-2i2c can share "community documentation" alongside your hub under a special `docs.<COMMUNITY>.2i2c.cloud`. This feature can be used to establish a home for the best practice, useful resources, and rich visualisations built by your community.
+2i2c can share "community documentation" alongside your hub under a special `docs.<COMMUNITY>.2i2c.cloud` subdomain. This feature can be used to establish a home for the best practice, useful resources, and rich visualisations built by your community.
 
 :::{caution} Community Documentation is Experimental
 This feature is an experimental addition by 2i2c. It may change as we learn more about how communities are using it, and develop new features.
@@ -173,7 +173,7 @@ Using a [2i2c-authored template][2i2c-org/community-docs-template], you can quic
 
 ### Deploy your site with Jupyter Book
 
-The current iteration of this feature requires you to deploy a Jupyter Book 2 static site from a GitHub repository using GitHub Pages. The community representative should use the [2i2c-org/community-docs-template] template to create their own repository, and provide the 2i2c team with _temporary_ owner access. We will then ensure that various configuration such as the custom domain and GitHub Actions are set up correctly.
+The current iteration of this feature requires you to deploy a Jupyter Book 2 static site from a GitHub repository using GitHub Pages. The community representative should use the [2i2c-org/community-docs-template] template to [create their own repository][use-template], and provide the 2i2c team with _temporary_ owner access. We will then ensure that various configuration such as the custom domain and GitHub Actions are set up correctly.
 
 ### Learn about authoring with Jupyter Book and MyST Markdown
 
@@ -187,3 +187,4 @@ A brief overview of the MyST Markdown Syntax can be found at the [MyST-MD typogr
 [guide-kernel]: https://mystmd.org/guide/execute-notebooks
 [cross-referencing]: https://mystmd.org/guide/cross-references
 [jb-toolchain]: https://next.jupyterbook.org/about/toolchain
+[use-template]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
