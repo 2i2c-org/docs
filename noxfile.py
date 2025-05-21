@@ -4,7 +4,7 @@ nox.options.reuse_existing_virtualenvs = True
 
 build_command = ["-b", "dirhtml", ".", "_build/dirhtml"]
 
-@nox.session(python=">=3.9")
+@nox.session()
 def docs(session):
     session.install("-r", "requirements.txt")
     if "live" in session.posargs:

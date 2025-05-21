@@ -23,6 +23,7 @@ They are meant for individuals who wish to learn about the service for their own
 :caption: About the service
 about/service/options
 about/service/index
+user/topics/policy/index
 See a table of our running hubs! <https://infrastructure.2i2c.org/reference/hubs/>
 ```
 
@@ -32,12 +33,13 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 
 ```{toctree}
 :maxdepth: 2
-:caption: Use the hub
+:caption: Community workflows
 
 user/topics/getting-started
-user/topics/policy/index
 user/topics/data/index
-user/howto/index
+community/content
+user/howto/specify-unlisted-image
+user/howto/launch-dask-gateway-cluster
 ```
 
 ## Administer the hub
@@ -68,7 +70,6 @@ Covers topics relevant to those that are leading others in a community.
 :maxdepth: 2
 
 community/events
-community/content
 community/strategy
 ```
 
