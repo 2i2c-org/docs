@@ -41,9 +41,8 @@ If you have requested that 2i2c archive all the home directories of the hub user
 1. Make sure the user has an AWS account created for them and they can successfully authenticate from the command line.
    See the [AWS guide](https://docs.aws.amazon.com/cli/v1/userguide/cli-authentication-short-term.html) for more details.
 
-2. Assign the user the `AssumeHomedirsArchiveAccess` policy, which allows them to access the S3 bucket where the home directories are archived.
-   You can do this by attaching the policy to their user account in AWS IAM.
-   Replace `<username>` with the user's name and `<account-number>` with your AWS account number.
+2. Assign the `AssumeHomedirsArchiveAccess` policy to their AWS IAM user, which allows them to access the S3 bucket where the home directories are archived.
+   Replace `<username>` with the user's name and `<account-number>` with the AWS account number.
 
     ```bash
     aws iam attach-user-policy \
