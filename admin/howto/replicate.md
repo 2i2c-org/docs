@@ -34,6 +34,32 @@ installed to make this feature available. As it is a Jupyter Notebook extension,
 will *not* work.
 :::
 
+### Download the archive of your home directory from an S3 bucket
+
+If you have requested that 2i2c archive all the home directories of the hub users and store them to an S3 bucket, you can follow the instructions below to download them.
+
+1. Make sure the user has an AWS account created for them and they can successfully authenticate from the command line.
+   See the [AWS guide](https://docs.aws.amazon.com/cli/v1/userguide/cli-authentication-short-term.html) for more details.
+
+2. Assign the user the `AssumeHomedirsArchiveAccess` policy, which allows them to access the S3 bucket where the home directories are archived.
+   You can do this by attaching the policy to their user account in AWS IAM.
+   Replace `<username>` with the user's name and `<account-number>` with your AWS account number.
+
+    ```bash
+    aws iam attach-user-policy \
+      --user-name "<username>" \
+      --policy-arn "arn:aws:iam::<account-number>:policy/AssumeHomedirsArchiveAccess"
+    ```
+3. Run an `aws s3 ls` to make sure you can see the S3 bucket where the home directories are archived.
+    ```bash
+    aws s3 ls s3://<cluster-name>-<hub-name>-homedirs-archive/<username>/
+    ```
+
+4. Download the archive of your home directory from the S3 bucket.
+   ```bash
+   aws s3 cp s3://<cluster-name>-<hub-name>-homedirs-archive/<username>/archive-<some-date>.tar.gz /path/to/download/
+   ```
+
 ## Replicate your own 2i2c JupyterHub
 
 2i2c JupyterHubs are built entirely with open source tools that are community-led.
