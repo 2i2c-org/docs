@@ -33,12 +33,13 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 
 ```{toctree}
 :maxdepth: 2
-:caption: Community workflows
+:caption: Use the hub
 
 user/topics/getting-started
 user/topics/data/index
 community/content
 user/howto/specify-unlisted-image
+user/topics/dynamic-imagebuilding/index
 user/howto/launch-dask-gateway-cluster
 ```
 
