@@ -1,5 +1,5 @@
 (service-offerings)=
-# Use cases and prices
+# Usecases
 
 Our Hub Service is an open, scalable, sustainable cloud service for interactive computing environments.
 We offer cloud infrastructure hubs that are designed for use-cases in research and education, and flexible enough to be tailored to the needs of each community.
