@@ -3,41 +3,6 @@
 2i2c builds and operates **distributions of JupyterHubs** that are tailored for particular use-cases.
 These services share many of the same infrastructure components, but have customizations and optimizations that are more domain- or community-specific.
 
-```{figure} https://drive.google.com/uc?export=download&id=1vL8ekAtUQ4TEik4-oWIn36VAOITdlmpR
-:width: 80%
-
-A high-level technical overview of an Interactive Computing Service collaboratively run by 2i2c and a community of practice. Each hub is a JupyterHub Distribution with a collection of community-led open source projects that are customized for a particular use-case.
-```
-
-
-Here is a brief overview of the major features that are present in each.
-
-```{csv-table}
-:header-rows: 1
-:widths: auto
-:file: ../../build_assets/feature-matrix.csv
-```
-
-<script>
-    headers = document.querySelectorAll(".feature-header");
-    headers.forEach((header) => {
-        td = header.parentElement
-        td.setAttribute("colspan", "100")
-        td.classList.add("feature-header")
-        tr = td.parentElement
-        tr.querySelectorAll("td:not(.feature-header)").forEach((td) => {
-            td.remove()
-        })
-    })
-</script>
-<style>
-    td.feature-header {
-        font-weight: 500;
-        background-color: #f8f9fa;
-    }
-</style>
-
-
 ## JupyterHub in the cloud
 
 At the core of a community service is one or more [JupyterHubs](https://jupyter.org/hub) that provide an access point for interactive computing and cloud infrastructure for your community members.
@@ -49,7 +14,6 @@ You may access your community JupyterHub at a URL with the following form (thoug
 ```
 
 JupyterHub provides interactive computing sessions for each of your users, and connect to the other infrastructure in the cloud.
-Our JupyterHubs can run on Google Cloud, Amazon AWS, or Microsoft Azure.
 
 ## Authentication
 
@@ -102,3 +66,26 @@ There are many different cryptocurrencies out there, but the most common by-far 
 
 We deploy an open-source tool called [`cryptnono`](https://github.com/yuvipanda/cryptnono) to each of the clusters we manage.
 This tool monitors any process that runs on the 2i2c hubs, and automatically kills any that are associated with Monero.
+
+## Cloud providers that we support
+
+Below are the cloud providers on which we can run community hubs.
+
+### Commercial cloud providers
+
+We support most major intenational commercial cloud providers, and can deploy a hub into most datacenters (or "regions") for each. Here's a list of the commercial cloud providers we currently support:
+
+- [Amazon Web Services](https://aws.amazon.com/) (AWS)
+- [Google Cloud](https://cloud.google.com/)
+- [Microsoft Azure](https://azure.microsoft.com/en-us/) (this may incur an additional cost due to the extra complexity of Azure)
+
+### Public and governmental cloud providers
+
+These cloud providers are managed by federal teams and resources.
+Access to them may be dependent on the community or specific grants or awards.
+
+#### JetStream2
+
+JetStream2 adds cloud-based, on-demand computing and data analysis resources to the national cyberinfrastructure. It is managed by the [Pervasive Technology Institute at Purdue University](https://pti.iu.edu/).
+
+To see if your community is eligible for JetStream2 hub, see [the JetStream 2 getting started guide](https://jetstream-cloud.org/get-started/index.html).
