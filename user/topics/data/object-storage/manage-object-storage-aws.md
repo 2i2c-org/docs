@@ -172,30 +172,24 @@ The following workflow assumes you have a Unix-like operating system from outsid
    AWS_PROFILE=<profile_name>
    ```
 
-1. Define the `$SCRATCH_BUCKET` environment variable 
+1. Define the `$SCRATCH_BUCKET` environment variable
 
    ```bash
    SCRATCH_BUCKET=s3://<bucket_name>/<username> 
    ```
 
-1. Compress the data to prepare for transfer
-
-   ```bash
-   tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
-   ```
-
 1. Upload the data to the storage bucket
 
    ```bash
-   $ aws s3 cp name-of-archive.tar.gz $SCRATCH_BUCKET
-   upload: ./name-of-archive.tar.gz to s3://<bucket_name>/<username>/name-of-archive.tar.gz
+   $ aws s3 cp <your-data> $SCRATCH_BUCKET
+   upload: ./<your-data> to s3://<bucket_name>/<username>/<your-data>
    ```
 
 1. Check the contents of your prefix
 
    ```bash
    $ aws s3 ls $SCRATCH_BUCKET/
-   2024-07-04 17:01:54          4 name-of-archive.tar.gz
+   2024-07-04 17:01:54          4 <your-data>
    ```
 
    ```{tip}
