@@ -164,17 +164,11 @@ For small datasets that can be uploaded from your local machine, e.g. laptop or 
    SCRATCH_BUCKET=gs://<bucket_name>/<username> 
    ```
 
-1. Compress the data
-
-   ```bash
-   tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
-   ```
-
 1. Upload the data to the storage bucket
 
    ```bash
-   $ gcloud storage cp name-of-archive.tar.gz $SCRATCH_BUCKET
-   Copying file://name-of-archive.tar.gz to gs://<bucket_name>/<username>/name-of-archive.tar.gz
+   $ gcloud storage cp <your-data> $SCRATCH_BUCKET
+   Copying file://<your-data> to gs://<bucket_name>/<username>/<your-data>
      Completed files 1/1 | 23.3MiB/23.3MiB                                                     
 
      Average throughput: 8.9MiB/s
@@ -184,7 +178,7 @@ For small datasets that can be uploaded from your local machine, e.g. laptop or 
 
    ```bash
    $ gcloud storage ls $SCRATCH_BUCKET/
-   gs://<bucket_name>/<username>/name-of-archive.tar.gz
+   gs://<bucket_name>/<username>/<your-data>
    ```
 
    ```{tip}
@@ -292,7 +286,7 @@ gcloud auth application-default revoke
   Each community's use case is different, so we cannot offer a blanket estimate on storage costs. Please see [](/topic/cloud-costs.md) for further guidance.
 
   ```{tip}
-  Every file you download from the hub to another machine incurs a **heavy data egress cost**. Consider carefully whether you need to download large datasets from the hub, or alternatively post-process and compress files if possible. Hub champions are responsible for costs incurred from data egress.
+  Every file you download from the hub to another machine incurs a **heavy data egress cost**. Consider carefully whether you need to download large datasets from the hub, or alternatively post-process files where possible. Hub champions are responsible for costs incurred from data egress.
   ```
 
 - *How do I know if our hub is running on GCP or not?*
