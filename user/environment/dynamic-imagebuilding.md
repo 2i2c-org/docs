@@ -49,7 +49,11 @@ This is a quick guide to getting started with dynamic image building.
    * `postBuild` (executable) – script to run after installation.
    * `start` (executable) – script to run each time the container starts.
 
-   If you include a `Dockerfile`, then `repo2docker` uses this definition and ignores the above files and a regular Docker build is performed. See [](#image-building:learn-more) for links to resources to learn more.
+   `repo2docker` dynamically generates a `Dockerfile` for you, based upon which of these files you include in your repo, so you don't have to deal with the intricacies of writing your own `Dockerfile`. For further information about these files, see the [repo2docker configuration file guide](https://repo2docker.readthedocs.io/en/latest/configuration/).
+
+   Alternatively, if your repo includes a `Dockerfile`, then `repo2docker` uses it directly (ignoring any of the files above) and performs a regular Docker build.
+   
+   See [](#image-building:learn-more) for links to additional resources.
 
 ### Step 2: Configure the JupyterHub “Build your own image” Option
 
