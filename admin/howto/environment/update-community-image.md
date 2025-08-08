@@ -175,9 +175,9 @@ Once complete, under the section *Repository secrets* you should now see two row
    <registry>/<username>/<repo_name>:<git-commit-hash>
    ```
 
-   e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`, which you need to provide in the [](/user/howto/specify-unlisted-image.md#the-bring-your-own-image-option).
+   e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`, which you need to provide in the [](#environment:bring-your-own-image).
 
-1. Navigate to your 2i2c hub and paste the image tag into the *Image > Custom Image > Other...* field (see [](/user/howto/specify-unlisted-image.md#the-bring-your-own-image-option)).
+1. Navigate to your 2i2c hub and paste the image tag into the *Image > Custom Image > Other...* field (see [](#environment:bring-your-own-image)).
 
 1. Click start to launch the server and test your custom environment. You can continue editing the *DockerFile* and *environment.yml*, then push changes to the pull request as required. 
 
