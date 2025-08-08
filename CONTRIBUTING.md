@@ -75,3 +75,7 @@ The example below populates a few extra fields:
 - **Note curly brackets!** You need to give the `key:val` pairs inside curly brackets!
 - **Type must exactly match a dropdown option**. If you get the case, spacing, etc wrong, then no option will be selected.
 :::
+
+## Review and merging guidelines
+
+See the [2i2c team guidelines for reviewing and merging](https://infrastructure.2i2c.org/contributing/code-review/#review-and-merge-guidelines-for-2i2c-engineers). Use your best judgment!
