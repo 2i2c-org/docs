@@ -37,9 +37,8 @@ Covers end-user workflows that are common for cloud-native workflows with intera
 
 user/topics/getting-started
 user/topics/data/index
+user/environment/index
 community/content
-user/howto/specify-unlisted-image
-user/topics/dynamic-imagebuilding/index
 user/howto/launch-dask-gateway-cluster
 ```
 
@@ -99,4 +98,5 @@ Lists and programmatically-generated content to serve as a quick reference.
 :maxdepth: 2
 
 about/terminology
+contribute/index
 ```

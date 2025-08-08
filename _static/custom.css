@@ -2,3 +2,18 @@
 table.align-middle td {
   vertical-align: middle !important;
 }
+
+/* Default button style so we don't have to add classes each time */
+button {
+  border-radius: .5em;
+  padding: 1em;
+  background: var(--pst-color-primary);
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+/* This just makes the widget background a little bit nicer on dark mode */
+#launcher-frame {
+  border-radius: .5em;
+}
