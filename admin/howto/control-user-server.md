@@ -29,7 +29,7 @@ Accessing a user's server is useful when trying to debug or reproduce an issue t
    If you both work on the same notebook at the same time, you will just
    overwrite each other's code! The state of the notebook will be that of
    whoever saved the notebook last. There is no Google Docs' style
-   real-time collaboration yet, although [it is coming](https://github.com/jupyterlab/jupyter-collaboration)
+   real-time collaboration yet, although [Jupyter is working on a real-time collaboration tool](https://github.com/jupyterlab/jupyter-collaboration)
    :::
 
    :::{warning}
