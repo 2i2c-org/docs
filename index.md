@@ -98,4 +98,5 @@ Lists and programmatically-generated content to serve as a quick reference.
 :maxdepth: 2
 
 about/terminology
+contribute/index
 ```

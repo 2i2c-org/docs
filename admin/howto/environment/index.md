@@ -115,6 +115,10 @@ If you are using the default environment, and think that one or two packages sho
 
 Hubs can be configured to allow users to [dynamically build environment images from the JupyterHub](#user:environment-building). This provides a lightweight UI allowing users to point the hub to a GitHub repository containing the definition of the environment they wish to build.
 
+<button onclick="openWidget({subject:'Request dynamic image building for hub', type:'Feature Request'})">
+   Click here to request dynamic image building
+</button>
+
 :::{admonition} Ask a 2i2c staff member to enable dynamic image building
 This feature requires a bit of set-up to enable for a community's hub, so it isn't enabled by default. If you'd like this functionality on your hub, reach out to a 2i2c team member.
 :::

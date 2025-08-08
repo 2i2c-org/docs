@@ -81,7 +81,28 @@ linkcheck_ignore = [
 # Embed a contact form Freshdesk widget to collect support tickets with
 widget_embed_code = """
 // This is the function to open the widget code
-function openWidget() {
+function openWidget({
+    name = '',
+    email = '',
+    subject = '',
+    description = '',
+    hub_url = '',
+    type = ''
+} = {}) {
+    // Build prefill data with provided values
+    const prefillData = {
+      name: name,
+      email: email, 
+      subject: subject,
+      description: description,
+      type: type,
+      cf_hub_url: hub_url,
+    };
+    console.log(prefillData)
+    // Only prefill if any values were provided
+    if (name || email || subject || description || hub_url || type) {
+        FreshworksWidget('prefill', 'ticketForm', prefillData);
+    }
     FreshworksWidget('open');
 }
 

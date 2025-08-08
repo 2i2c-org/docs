@@ -76,6 +76,11 @@ This is a quick guide to getting started with dynamic image building.
 
 See [Get started with repo2docker](https://repo2docker.readthedocs.io/en/latest/start/) for a simple tutorial explaining how to set up your environment repository from scratch.
 
+### Do my commands run as `root` when I build the image?
+
+No! Commands that you can control run as a user called `jovyan` and do not have root priveleges.
+See [the repo2docker docs](https://repo2docker.readthedocs.io/en/latest/use/actions-and-scripts/) for more information.
+
 ### What configuration files can I use to configure my environment?
 
 The [repo2docker configuration file guide](https://repo2docker.readthedocs.io/en/latest/configuration/) has a complete list of all configuration files you can use.
