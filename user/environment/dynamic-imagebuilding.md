@@ -39,7 +39,7 @@ This is a quick guide to getting started with dynamic image building.
 ### Step 1: Prepare a GitHub Repository
 
 1. Create a **public GitHub repository**.
-2. Add the following optional files (choose what you need):
+2. Add one or more of the following optional files, based upon your needs:
 
    * `environment.yml` – for `conda` packages (and/or `pip` Python packages).
    * `requirements.txt` – for `pip` Python packages.
