@@ -17,11 +17,10 @@ share data files with all users.
 : All users have a directory called `shared` in their home directory.
   This is a **read-only** directory - users and administrators can not write to it. However, anybody can *read* from the `shared` directory.
 
-::::{margin}
-:::{image} media/shared-readwrite.png
-:::
+```{note}
+![shared-readwrite folder](media/shared-readwrite.png)
 The `shared-readwrite` folder appears for Hub Admins only.
-::::
+```
 
 `shared-readwrite`
 : **(administrators only)** Admins also have a directory called `shared-readwrite` in their home directory. This is the *same folder* as the `shared` directory, but writeable! Any file admins write here will be immediately visible in all users' `shared` directories.
