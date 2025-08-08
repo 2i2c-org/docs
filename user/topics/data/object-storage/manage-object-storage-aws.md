@@ -22,7 +22,7 @@ Transferring large amounts of data to the cloud can incur expensive storage cost
 
 In the Terminal, check that the AWS CLI commands are available in your image with
 
-```{margin}
+```{note}
 We recommend using the Pangeo notebook image, which has the AWS CLI package already installed. 
 ```
 
@@ -130,7 +130,7 @@ The following workflow assumes you have a Unix-like operating system from outsid
 
 1. Generate a temporary access token from your *2i2c hub*
 
-   ```{margin}
+   ```{note}
    We recommend using the Pangeo notebook image, which has the AWS CLI package already installed. 
    ```
 

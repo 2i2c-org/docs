@@ -2,7 +2,7 @@
 # Education and teaching
 
 The 2i2c Educational Hubs provide learning environments and infrastructure that is meant for teaching data science.
-These hubs are inspired by 2i2c's experience with the [DataHubs at UC Berkeley](https://docs.datahub.berkeley.edu/en/latest/) and the [Syzygy service](https://syzygy.ca/) for Canada.
+These hubs are inspired by 2i2c's experience with the [DataHubs at UC Berkeley](https://docs.datahub.berkeley.edu/) and the [Syzygy service](https://syzygy.ca/) for Canada.
 See the sections below for a description of these hubs and how they are used.
 
 ## A brief overview of learning hubs
@@ -47,6 +47,6 @@ Below is a common workflow that communities use with this type of hub:
 
 ## Inspiration for this hub
 
-Collaborative learning hubs are inspired by 2i2c's experience running the [DataHubs at UC Berkeley](https://docs.datahub.berkeley.edu/en/latest/), which provide interactive environments for thousands of students across campus.
+Collaborative learning hubs are inspired by 2i2c's experience running the [DataHubs at UC Berkeley](https://docs.datahub.berkeley.edu/), which provide interactive environments for thousands of students across campus.
 You can find the [online textbook for the course here](https://inferentialthinking.com).
 They are also inspired by our experience with the [Syzygy service](https://syzygy.ca/) for Canada, which runs JupyterHubs for institutions across Canada.

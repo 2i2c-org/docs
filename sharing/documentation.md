@@ -4,7 +4,7 @@
 Community documentation is a great way to spread learning and knowledge across your user base. You can share workflows, tutorials, examples meant for re-use, and topics to help others understand the key ideas in your community.
 
 :::{admonition} Where to find examples of community books
-Check out [Project Pythia](https://projectpythia-mystmd.github.io/) and the [CryoCloud](https://book.cryointhecloud.com/intro.html) for real-world examples of community books.
+Check out [Project Pythia](https://projectpythia-mystmd.github.io/) and the [CryoCloud](https://book.cryointhecloud.com/) for real-world examples of community books.
 :::
 
 2i2c recommends communities use [Jupyter Book 2](https://next.jupyterbook.org), which uses the [MyST Document Engine](https://mystmd.org/guide), a next-generation engine for technical documentation and computational narratives. Both are developed by the [`Jupyter Book` subproject of Jupyter](https://compass.jupyterbook.org). See [the MyST Ecosystem Overview](https://mystmd.org/guide/overview) for more information about MyST and Jupyter Book.
@@ -87,5 +87,5 @@ The MyST Engine implements powerful sharing and reusing features. One of the mos
 [guide-kernel]: https://mystmd.org/guide/execute-notebooks
 [guide-embed]: https://mystmd.org/guide/embed#embed-from-external-myst-projects
 [cross-referencing]: https://mystmd.org/guide/cross-references
-[jb-toolchain]: https://next.jupyterbook.org/about/toolchain
+[jb-toolchain]: https://jupyterbook.org/en/stable/explain/components.html
 [use-template]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template

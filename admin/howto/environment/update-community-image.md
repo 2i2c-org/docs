@@ -12,7 +12,7 @@ This instructional guide shows you how to add packages to a community-maintained
 
 1. Fork {octicon}`repo-forked;1em;sd-text-info` the GitHub repository [example-inherit-from-community-image](https://github.com/2i2c-org/example-inherit-from-community-image) into your GitHub account.
 
-   ```{margin}
+   ```{note}
    If you do not have a quay.io account, then can register for one at [https://sso.redhat.com](https://sso.redhat.com). Note that if you need to join your organization's account then you should register using an invitation from the organization's admin.
    ```
    
@@ -30,7 +30,7 @@ The following summarizes [Section 3.2. Allowing robot access to a user repositor
 
 1. Click the {octicon}`plus;1em;sd-text-info` *Create Robot Account* button.
 
-   ```{margin}
+   ```{note}
    You can also edit permissions later by clicking {octicon}`gear;1em;sd-text-info` *Options* next to the Robot Account name and selecting <i class="fa-regular fa-hard-drive sd-text-info"></i> *Set Repository Permissions*.
    ```
 
@@ -76,7 +76,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 
 1. Log into your hub to start a small server with the image you wish to update.
 
-   ```{margin}
+   ```{note}
     If your image user interface is RStudio, then you can switch to the JupyterLab interface by altering the URL to the form `https://<hub_name>.2i2c.cloud/user/<username>/lab`.
    ```
 
@@ -199,7 +199,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 
 1. When you are ready to push the repository to quay.io, merge the pull request to *main* on GitHub by clicking *Confirm merge*. The build process can take a few minutes.
 
-   ```{margin}
+   ```{note}
    The `git-commit-hash` is useful for matching the image to the changes associated with the corresponding commit in your GitHub repository's history.
    ```
 

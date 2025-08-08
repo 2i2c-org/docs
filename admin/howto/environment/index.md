@@ -119,10 +119,6 @@ Hubs can be configured to allow users to [dynamically build environment images f
    Click here to request dynamic image building
 </button>
 
-:::{admonition} Ask a 2i2c staff member to enable dynamic image building
-This feature requires a bit of set-up to enable for a community's hub, so it isn't enabled by default. If you'd like this functionality on your hub, reach out to a 2i2c team member.
-:::
-
 ## Accessing user interfaces
 
 There are three main interfaces available on the 2i2c JupyterHubs.
