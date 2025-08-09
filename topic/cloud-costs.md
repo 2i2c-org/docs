@@ -62,7 +62,7 @@ We recommend checking out the following resources to learn more about cloud cost
 None of these are guarantees about costs, but should give you a general idea.
 
 - For general information and explanation, see {doc}`the Zero to JupyterHub cost projection documentation<z2jh:administrator/cost>`.
-- For educational or "lightweight resources" hubs, see [this rough cost analysis notebook from the UC Berkeley DataHub](https://nbviewer.jupyter.org/github/berkeley-dsep-infra/datahub-usage-analysis/blob/master/notebooks/03-visualize-cost-and-usage.ipynb).
+- For educational or "lightweight resources" hubs, see [this rough cost analysis notebook from the UC Berkeley DataHub](https://nbviewer.jupyter.org/github/berkeley-dsep-infra/datahub-usage-analysis/blob/main/notebooks/03-visualize-cost-and-usage.ipynb).
 - For data- and compute-intensive hubs, see the Pangeo two-part series on their Kubernetes costs. ([part 1 link](https://medium.com/pangeo/pangeo-cloud-costs-part1-f89842da411d), [part 2 link](https://medium.com/pangeo/pangeo-cloud-cluster-design-9d58a1bf1ad3))
 :::
 

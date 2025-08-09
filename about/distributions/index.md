@@ -86,6 +86,6 @@ Access to them may be dependent on the community or specific grants or awards.
 
 #### JetStream2
 
-JetStream2 adds cloud-based, on-demand computing and data analysis resources to the national cyberinfrastructure. It is managed by the [Pervasive Technology Institute at Purdue University](https://pti.iu.edu/).
+JetStream2 adds cloud-based, on-demand computing and data analysis resources to the national cyberinfrastructure. It is managed by the [Pervasive Technology Institute at Indiana University](https://uits.iu.edu/about/org-structure/research-technologies/pervasive-technology-institute/).
 
 To see if your community is eligible for JetStream2 hub, see [the JetStream 2 getting started guide](https://jetstream-cloud.org/get-started/index.html).

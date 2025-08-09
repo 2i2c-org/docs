@@ -24,4 +24,4 @@ object-storage/index
 
 ## References and attribution
 
-Much of this material was adapted from the [Pangeo Cloud User Guide](https://pangeo.io/cloud.html).
+Much of this material was adapted from the [Pangeo documentation](https://pangeo.io/).

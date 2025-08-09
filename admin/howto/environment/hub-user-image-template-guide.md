@@ -86,7 +86,7 @@ If configured correctly, you will see a `pushing quay.io/...` message in the Git
 
 Modify [the environment.yml](https://github.com/2i2c-org/hub-user-image-template/blob/main/environment.yml) file and add all the packages you want installed in the conda environment.
 Note that repo2docker already installs [this list](https://github.com/jupyterhub/repo2docker/blob/HEAD/repo2docker/buildpacks/conda/environment.yml) of packages.
-More about what you can do with `environment.yml`, can be found in the [repo2docker docs](https://repo2docker.readthedocs.io/en/latest/config_files.html#environment-yml-install-a-conda-environment).
+More about what you can do with `environment.yml`, can be found in the [repo2docker docs](https://repo2docker.readthedocs.io/en/latest/configuration/research/).
 
 1. Commit the changes made to `environment.yml`.
 2. Create a Pull Request with this commit, or push it directly to the `main` branch.

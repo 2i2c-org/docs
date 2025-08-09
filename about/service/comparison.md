@@ -35,7 +35,7 @@ This makes 2i2c uniquely capable of managing scalable and reliable cloud infrast
 Here are a few of the major projects our team members have been involved in over the past few years.
 
 - [The Pangeo project](https://pangeo.io/) - A community platform for Big Data geoscience connecting researchers across the world to large-scale computing and data infrastructure.
-- [The UC Berkeley DataHubs](https://docs.datahub.berkeley.edu/en/latest/) - A collection of university-wide JupyterHubs for education serving many thousands of students.
+- [The UC Berkeley DataHubs](https://docs.datahub.berkeley.edu/) - A collection of university-wide JupyterHubs for education serving many thousands of students.
 - [The Binder Project](https://docs.mybinder.org/) - a large public cloud service for reproducible computing environments using JupyterHub, serving nearly 150,000 sessions each week.
 - [The Syzygy Project](https://syzygy.ca/) - A network of federated JupyterHubs for more than 15 Canadian Universities running on national infrastructure.
 - [The Jupyter Book](https://jupyterbook.org) and [MyST Markdown](https://myst.jupyterbook.org/) projects - A collection of tools and standards for improving scientific and technical communication and authoring with interactive computing.
@@ -346,7 +346,7 @@ Cloud Cost
 
 Person Cost
 : Very expensive. Hiring and retaining modern cloud engineers is difficult and costly.
-  In 2022, [the median compensation of a Site Reliability Engineer](https://www.levels.fyi/Salaries/Software-Engineer/Site-Reliability/) is roughly `$180,000` a year, excluding indirect costs, training costs, recruiting costs, etc.
+  In 2022, [the median compensation of a Site Reliability Engineer](https://www.levels.fyi/t/software-engineer/title/site-reliability-engineer) is roughly `$180,000` a year, excluding indirect costs, training costs, recruiting costs, etc.
   Moreover, the efficiency of this role will depend heavily on the expertise of the person doing this work.
 
 Right to Replicate
@@ -475,7 +475,7 @@ Updates
 
 There are many companies offering services and platforms via a subscription fee.
 The experience from a user's perspective may be similar and they may offer some open source tools as part of their services.
-Examples of these products are [CoCalc](https://cocalc.com/), [Deepnote](https://deepnote.com/), [engageLively](https://engagelively.com/), [Colaboratory (Google)](https://colab.research.google.com/), [Noteable](https://noteable.io/), [ObserveableHQ](https://observablehq.com/), [rstudio.cloud](https://rstudio.cloud/), [Sagemaker (AWS)](https://aws.amazon.com/sagemaker/), and [Saturn Cloud](https://saturncloud.io/).
+Examples of these products are [CoCalc](https://cocalc.com/), [Deepnote](https://deepnote.com/), [engageLively](https://engagelively.com/), [Colaboratory (Google)](https://colab.research.google.com/), [ObserveableHQ](https://observablehq.com/), [rstudio.cloud](https://rstudio.cloud/), [Sagemaker (AWS)](https://aws.amazon.com/sagemaker/), and [Saturn Cloud](https://saturncloud.io/).
 
 Usage cost
 : Generally charge betwee $7 and $50 per user, per month, depending on the complexity of the resources needed and the service. Many SaaS offerings include enterprise services as well, but their prices are generally not advertised publicly and are often significantly more expensive.
