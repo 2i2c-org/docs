@@ -51,9 +51,11 @@ It is the responsibility of the Hub Admins delete files in the `shared-public` d
 Available upon request
 :::
 
-Sometimes, Hub Administrators might need to share data files with the users,
+Hub Administrators might need to share data files with the users,
 and this files must only be visible to the users that they're addressed to.
 For example, uploading graded notebook assignments in each user's home directory.
+
+They may also need to access all users' home directories to perform administrative tasks, such as cleaning up files or managing user data.
 
 If such a workflow is needed, then an additional `allusers` directory can be enabled for **administrators only**, where all the Hub users' directories are accessible to read and modify. Please reach out to us if you'd like this feature enabled.
 
