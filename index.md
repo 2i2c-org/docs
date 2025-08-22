@@ -24,16 +24,16 @@ They are meant for individuals who wish to learn about the service for their own
 about/service/options
 about/service/index
 user/topics/policy/index
-See a table of our running hubs! <https://infrastructure.2i2c.org/reference/hubs/>
+☁️ Table of running hubs <https://infrastructure.2i2c.org/reference/hubs/>
 ```
 
-## Use the hub
+## Hub users
 
 Covers end-user workflows that are common for cloud-native workflows with interactive computing.
 
 ```{toctree}
 :maxdepth: 2
-:caption: Use the hub
+:caption: Hub users
 
 user/topics/getting-started
 user/topics/data/index
@@ -42,14 +42,14 @@ community/content
 user/howto/launch-dask-gateway-cluster
 ```
 
-## Administer the hub
+## Hub administrators
 
 Information for those with the **hub administrator** role on a JupyterHub.
 These cover many things that you can do to manage and configure your hub and its infrastructure.
 
 ```{toctree}
 :maxdepth: 2
-:caption: Administer the hub
+:caption: Hub administrators
 
 support
 admin/howto/configurator
@@ -61,32 +61,19 @@ admin/topics/network
 admin/topics/managing-secrets
 ```
 
-## Community leadership
+## Community leaders
 
 Covers topics relevant to those that are leading others in a community.
 
 ```{toctree}
-:caption: Community leadership
-:maxdepth: 2
-
-community/events
-community/strategy
-```
-
-## Community representatives
-
-Documentation for those serving as _Community Representatives_.
-These tend to cover technical, administrative, invoicing, and collaborative processes for interacting with 2i2c's team on behalf of your community.
-
-```{toctree}
-:caption: Community representatives
+:caption: Community leaders
 :maxdepth: 2
 
 admin/howto/new-hub
+admin/billing/index
+community/events
+community/strategy
 admin/howto/replicate
-admin/howto/create-billing-account
-topic/cloud-costs
-topic/budget-alerts
 ```
 
 ## Reference material
