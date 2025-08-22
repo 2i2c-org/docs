@@ -1,5 +1,6 @@
 import nox
 
+nox.options.default_venv_backend = "uv"
 nox.options.reuse_existing_virtualenvs = True
 
 build_command = ["-b", "dirhtml", ".", "_build/dirhtml"]

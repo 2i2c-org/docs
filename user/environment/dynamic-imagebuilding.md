@@ -93,6 +93,16 @@ Environment images are cached automatically, so if you give another hub user the
 
 Just update any of the files in your environment repository, and your environment will be re-built the next time you launch a session from it.
 
+### Why don't I see the files in my repository when I launch an environment?
+
+Dynamic environment image generation is **only for the software environment**, it does not include any content files in the environment that is created.
+
+:::{seealso}
+See [](#content:nbgitpuller) for ways to share content along with repositories.
+:::
+
+This is an important difference from [mybinder.org](https://mybinder.org). While Binder is designed for reproducibility, dynamic image generation is designed for users to quickly define software environments for their hubs. For this reason, Binder packages as much as it can in a single link (software, content, etc), while dynamic image building only includes the software environment.
+
 ### Can I use another community's pre-existing environment?
 
 Yes! That's often the simplest choice. See [this repo2docker guide on choosing an environment](https://repo2docker.readthedocs.io/en/latest/use/pathways/) for guidance.
