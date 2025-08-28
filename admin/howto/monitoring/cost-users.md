@@ -1,4 +1,4 @@
-# Explore the *Cloud costs per user* Dashboard
+# Cloud costs per user
 
 ![Grafana dashboard with multiple panels showing stacked bar charts of user cloud costs over time.](https://raw.githubusercontent.com/2i2c-org/jupyterhub-cost-monitoring/refs/heads/main/images/dashboard.png)
 
