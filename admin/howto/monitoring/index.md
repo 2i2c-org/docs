@@ -7,4 +7,5 @@ This section describes how to monitor the usage of your hub. Note that not all f
 grafana-dashboards
 prometheus-access
 cost-attribution
+cost-users
 ```
