@@ -59,6 +59,7 @@ admin/howto/control-user-server
 admin/howto/monitoring/index
 admin/topics/network
 admin/topics/managing-secrets
+admin/topics/outages
 ```
 
 ## Community leaders
