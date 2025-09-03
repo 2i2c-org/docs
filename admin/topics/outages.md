@@ -4,7 +4,7 @@ An outage is a period of time when a hub critical service is unavailable or not 
 We strive to minimize outages and their impact on users, but they can still happen for various reasons.
 
 This page documents the categories of outages and what the users are experiencing during those outages.
-If you or your users are experiencing any of these outages, please [reach out to support](support:email) as soon as possible.
+If you or your users are experiencing any of these outages, please [reach out to support](support:email) as soon as possible. It's helpful if you're able to share with us which specific users are experiencing an outage and what they're seeing. 
 
 ## 1. Hub URL is unavailable
 When accessing the hub URL, users are presented with a “Service Unavailable" error or the domain doesn't resolve.
