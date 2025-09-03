@@ -123,6 +123,10 @@ def setup(app):
     # ref: https://support.freshdesk.com/en/support/solutions/articles/50000001015-launching-the-widget-when-a-button-is-clicked
     app.add_js_file(None, body=widget_embed_code)
     app.add_js_file("https://euc-widget.freshworks.com/widgets/80000009162.js", **{"async": "", "defer": ""})
+    # Plausible.io tracking
+    app.add_js_file("https://plausible.io/js/script.file-downloads.hash.outbound-links.js", **{"data-comain": "docs.2i2c.org", "defer": ""})
+    app.add_js_file(filename=None, body="window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }")
+
 
 # -- Custom scripts -------------------------------------------------
 
