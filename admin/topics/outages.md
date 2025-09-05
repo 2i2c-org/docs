@@ -1,3 +1,4 @@
+(outages)=
 # Outages
 
 An outage is a period of time when a hub critical service is unavailable or not functioning as expected and impacting the hub users' activity.
