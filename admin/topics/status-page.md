@@ -24,5 +24,5 @@ Read more about outages at [](outages).
 
 You can subscribe to the status page so that you are automatically informed about any outages that happen across _all_ hubs that 2i2c manages and all maintenance work we are planning so that you can plan your work accordingly.
 
-```{figure} /images/subscribe-to0status-page.png
+```{figure} /images/subscribe-to-status-page.png
 ```
