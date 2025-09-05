@@ -60,6 +60,7 @@ admin/howto/monitoring/index
 admin/topics/network
 admin/topics/managing-secrets
 admin/topics/outages
+admin/topics/status-page
 ```
 
 ## Community leaders
