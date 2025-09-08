@@ -1,7 +1,7 @@
 # The 2i2c status page
 
 ```{warning}
-Both the status page and the information in this section is a work in progress and subject to change.
+Both the status page and the information in this section is a work in progress and subject to change. We love your feedback and questions - email them to `support@2i2c.org`.
 ```
 
 2i2c has a status page provided by [Pagerduty](https://www.pagerduty.com/), the platform we use to track our automatic alerts.
