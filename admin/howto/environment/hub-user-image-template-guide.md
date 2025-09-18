@@ -106,7 +106,7 @@ In order to be able to pull the image you need to make sure that your repository
 
 1. Go to the list of image tags on `quay.io`, and find the tag of the last push.
    This is usually **under the latest tag**.
-   Use this to construct your image name - `quay.io/<quay-username>/<repository-name>:<tag>`.
+   Use this to find your image name - `quay.io/<quay-username>/<repository-name>:<tag>`.
 
    ```{figure} ../../../images/coessing-image-quay.png
    :alt: Tags list example
