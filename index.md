@@ -3,79 +3,57 @@
 This is the community and user documentation for 2i2c's Managed JupyterHub Service.
 It is divided into a number of **roles and personas** with relevant topics for each.
 
-:::{seealso}
-Here are a few other locations with relevant information about 2i2c's services.
-
-- [`team-compass.2i2c.org/managed-hubs/index`](https://team-compass.2i2c.org/en/latest/projects/managed-hubs/index.html): Documentation about {team}`Service Team` processes that are primarily relevant to 2i2c team members. We put this documentation here to prevent [`docs.2i2c.org`](https://docs.2i2c.org) from getting too cluttered.
-- [`infrastructure.2i2c.org`](https://infrastructure.2i2c.org): Our {team}`Cloud Engineering Team` and cloud infrastructure documentation.
-:::
-
 This documentation is structured into sections that are meant for various **roles and personas**.
 We describe each below.
 
-## About the service
-
-These sections describe the hub service at an organizational level.
-They are meant for individuals who wish to learn about the service for their own purposes or to advocate for its use to others.
-
-```{toctree}
-:maxdepth: 2
-:caption: About the service
-about/service/options
-about/service/index
-user/topics/policy/index
-☁️ Table of running hubs <https://infrastructure.2i2c.org/reference/hubs/>
-```
-
 ## Hub users
 
-Covers end-user workflows that are common for cloud-native workflows with interactive computing.
+For end-users that use a community hub. These are typically most individuals in our member communities - researchers, post-docs, students, etc.
 
 ```{toctree}
 :maxdepth: 2
 :caption: Hub users
 
+user/topics/policy/index
 user/topics/getting-started
 user/topics/data/index
 user/environment/index
 community/content
-user/howto/launch-dask-gateway-cluster
+user/scalable-computing/index.md
 ```
 
 ## Hub administrators
 
-Information for those with the **hub administrator** role on a JupyterHub.
-These cover many things that you can do to manage and configure your hub and its infrastructure.
+For hub administrators that control a JupyterHub's functionality, approve and onboard users, etc.
 
 ```{toctree}
 :maxdepth: 2
 :caption: Hub administrators
 
 support
-admin/howto/configurator
 admin/howto/environment/index
-admin/howto/manage-users
-admin/howto/control-user-server
+admin/user-management/index
 admin/howto/monitoring/index
+admin/reliability/index
 admin/topics/network
 admin/topics/managing-secrets
-admin/topics/outages
-admin/topics/status-page
 ```
 
-## Community leaders
+## Community administrators and leaders
 
-Covers topics relevant to those that are leading others in a community.
+For those administering and leading one or more communities.
+They care about the overall collaboration and cost structure of 2i2c's service, and make decisions about triggering services from 2i2c.
 
 ```{toctree}
-:caption: Community leaders
+:caption: Community administrators and leaders
 :maxdepth: 2
 
+about/service/index
 admin/howto/new-hub
 admin/billing/index
-community/events
-community/strategy
 admin/howto/replicate
+community/events
+community/management
 ```
 
 ## Reference material

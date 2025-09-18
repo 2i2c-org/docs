@@ -1,5 +1,5 @@
 (hub-user-image-template-guide/how-to)=
-# Create a custom user image for your hub (advanced)
+# Create an environment image for your hub (advanced)
 
 This advanced guide describes how you can create a custom user image for your community's hub. We recommend [updating a community-maintained upstream image](./update-community-image.md) in the first instance, since this reduces the overall maintenance burden over time. This guide is for advanced users who want complete control over a hub's user image from scratch. It uses [this `hub-user-image-template` repository](https://github.com/2i2c-org/hub-user-image-template) to help you get started.
 
@@ -111,17 +111,8 @@ In order to be able to pull the image you need to make sure that your repository
    ```{figure} ../../../images/coessing-image-quay.png
    :alt: Tags list example
    ```
-2. Open the [Configurator](https://pilot.2i2c.org/en/latest/admin/howto/configurator.html) for the hub (you need to be logged in as an admin).
-   You can access it from the hub control panel, under Services in the top bar or by going to `https://<hub-address>/services/configurator/`
- 
-   ```{figure} ../../../images/configurator.png
-   :alt: Configurator
-   ```
-3. Make a note of the current image name there.
-4. Put the image tag you constructed in a previous step into the User docker image text box. Note quay web urls look like `quay.io/repository/2i2c/coessing-image`, but the docker image name in configurator **should not** include the repository part of the URL e.g. `quay.io/2i2c/coessing-image:55adca9b2caa`.
-5. Click Submit! *this is alpha level software, so there is no 'has it saved' indicator yet :)*
+2. Modify your hub's configuration to use the updated image Put the image tag you constructed in a previous step into the User docker image text box. Note quay web urls look like `quay.io/repository/2i2c/coessing-image`, but the docker image name in configurator **should not** include the repository part of the URL e.g. `quay.io/2i2c/coessing-image:55adca9b2caa`.
 
-See [the Configurator docs](https://pilot.2i2c.org/en/latest/admin/howto/configurator.html) for more information.
 
 ## 7. Test the new image
 
