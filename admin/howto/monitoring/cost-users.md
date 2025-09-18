@@ -2,6 +2,10 @@
 
 ![Grafana dashboard with multiple panels showing stacked bar charts of user cloud costs over time.](https://raw.githubusercontent.com/2i2c-org/jupyterhub-cost-monitoring/refs/heads/main/images/dashboard.png)
 
+:::{note}
+Available for dedicated AWS clusters only. Other deployments on GCP will be supported in the future.
+:::
+
 ## Navigate to the *Cloud costs per user* dashboard
 
 From the Grafana homepage, navigate to *Home > Dashboards > Cloud cost dashboards* and then click on *Cloud costs per user*.
@@ -31,14 +35,6 @@ You can interact with the dashboard in several ways:
 Some interactions may re-trigger additional queries to fetch data, so there may be a slight delay while the graph is updated.
 :::
 
-## Export data
+## Sharing and reporting Grafana dashboards
 
-You can export the data from any panel by clicking on the panel menu in the top right corner, then selecting *Inspect > Data*. From there, you can view the raw data and export it in various formats, such as CSV or JSON.
-
-## Resources
-
-Grafana is a powerful open source data visualization tool with many features. For more information on how to use Grafana, refer to the [Grafana documentation](https://grafana.com/docs/grafana/latest/).
-
-## Feedback and support
-
-If you have any feedback or suggestions on what works well or how you would like to improve the dashboard design, [let us know](https://github.com/2i2c-org/jupyterhub-cost-monitoring/issues/new)!
+See [Sharing and reporting Grafana dashboards](reporting) for how to share and generate reports from Grafana dashboards.

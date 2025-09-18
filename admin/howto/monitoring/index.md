@@ -5,7 +5,12 @@ This section describes how to monitor the usage of your hub. Note that not all f
 ```{toctree}
 :maxdepth: 1
 grafana-dashboards
-prometheus-access
 cost-attribution
 cost-users
+reporting
+prometheus-access
 ```
+
+## Feedback and support
+
+If you have any feedback or suggestions on what works well or how you would like to improve the dashboards, feel free to [open a GitHub issue](https://github.com/2i2c-org/jupyterhub-cost-monitoring/issues/new) or contact [support](/support)!
