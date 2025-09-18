@@ -1,6 +1,6 @@
 # -- Project information -----------------------------------------------------
 
-project = "Service Guide"
+project = "Community Hub Guide"
 copyright = "2022"
 author = "2i2c"
 version = "0.1"
