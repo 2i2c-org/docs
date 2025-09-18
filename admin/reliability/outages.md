@@ -1,5 +1,5 @@
 (outages)=
-# Outages
+# Types of outages
 
 An outage is a period of time when a hub critical service is unavailable or not functioning as expected and impacting the hub users' activity.
 We strive to minimize outages and their impact on users, but they can still happen for various reasons.

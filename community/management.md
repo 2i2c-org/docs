@@ -1,9 +1,9 @@
-# Community strategy and organizing
+# Community management
 
 This is a guide to help communities that we serve think about ways that they can improve the dynamics and strucure of their communities.
 It is not comprehensive, and instead points to resources from experts on community design, as well as examples for inspiration.
 
-## Other experts in community organizing
+## Other experts in community management
 
 There are several organizations and communities that focus their expertise and interests on building healthy, open communities.
 Many of them are open communities and welcome participation from others.

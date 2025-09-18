@@ -1,4 +1,4 @@
-# Launch a dask-gateway cluster for scalable computing
+# Launch a dask-gateway cluster
 
 This guide shows you how to launch a Dask gateway cluster for parallel and distributed computing.
 

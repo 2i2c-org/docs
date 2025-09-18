@@ -1,4 +1,4 @@
-# Update a community-maintained upstream image (recommended)
+# Re-use and modify a community-maintained image for your hub (recommended)
 
 This instructional guide shows you how to add packages to a community-maintained upstream image. In this example, we add the [Python package `xarray`](https://docs.xarray.dev/en/stable/) to the [`jupyter/scipy-notebook` image](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) maintained by the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) community.
 
@@ -194,8 +194,7 @@ Once complete, under the section *Repository secrets* you should now see two row
     
    Test the preview of your custom environment. You can continue editing the *DockerFile* and *environment.yml*, then push changes to the pull request as required.
 
-(customize-image:link-custom-image)=
-## Link custom image to your hub
+## Publish your new image
 
 1. When you are ready to push the repository to quay.io, merge the pull request to *main* on GitHub by clicking *Confirm merge*. The build process can take a few minutes.
 
@@ -210,13 +209,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    ```
 
    e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`.
-    
-1. Open a [2i2c support ticket](https://docs.2i2c.org/support/) to request an update to your hub with the new custom image.
 
-   ```{image} media/open-support-ticket.png
-   :alt: Screenshot of 2i2c support ticket.
-   ```
+## Link custom image to your hub
 
-1. In the *Topic of Request* option, select the *Image Change Request* option and in the *Description* provide a link to the full image tag.
-    
-1. Click the *Send button* to confirm the support ticket request.
+Now that your image is published, follow these instructions: [](./custom-image.md).

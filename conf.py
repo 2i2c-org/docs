@@ -1,6 +1,6 @@
 # -- Project information -----------------------------------------------------
 
-project = "Service Guide"
+project = "Community Hub Guide"
 copyright = "2022"
 author = "2i2c"
 version = "0.1"
@@ -36,7 +36,7 @@ myst_heading_anchors = 3
 # a list of builtin themes.
 #
 html_theme = "sphinx_2i2c_theme"
-html_title = "Hub Service Guide"
+html_title = "Community Hub Guide"
 html_copy_source = True
 html_sourcelink_suffix = ""
 
@@ -60,16 +60,8 @@ intersphinx_mapping = {
     "z2jh": ('https://z2jh.jupyter.org/en/latest', None),
 }
 
-rediraffe_redirects = {
-    # Added around 2022-09
-    "about/overview.md": "about/service/index.md",
-    "about/pricing/index.md": "about/service/options.md",
-
-    # Added 2022-11-29
-    "about/service/roles.md": "about/service/shared-responsibility.md",
-    "about/service/team.md": "about/service/shared-responsibility.md",
-
-}
+# Removed old redirects but leaving this empty and here in case we want them later
+rediraffe_redirects = {}
 
 # Disable linkcheck for anchors because it throws false errors for any JS anchors
 linkcheck_anchors = False
