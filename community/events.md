@@ -48,7 +48,7 @@ Once a JupyterHub is set up for the community, try the following:
 
 ## During the event
 
-- **Use `nbgitpuller` to distribute content to attendees**. The [nbgitpuller tool](content:nbgitpuller) to generate links that your hub's users can click, and automatically pull in content into their user session. Go to [nbgitpuller.readthedocs.io/en/latest/link.html](hthttps://nbgitpuller.readthedocs.io/en/latest/link.html) to generate your own links.
+- **Use `nbgitpuller` to distribute content to attendees**. The [nbgitpuller tool](content:nbgitpuller) to generate links that your hub's users can click, and automatically pull in content into their user session. Go to [nbgitpuller.readthedocs.io/en/latest/link.html](https://nbgitpuller.readthedocs.io/en/latest/link.html) to generate your own links.
 - **Ask your users to log-in at the start of the day**. It can take a few moments for the JupyterHub to scale up when many users log in at once. For this reason, we recommend asking users to log into the hub **before they need to start running code**, in case it takes some time for the hub to begin.
 
 ## After the event
