@@ -37,4 +37,4 @@ Some interactions may re-trigger additional queries to fetch data, so there may 
 
 ## Sharing and reporting Grafana dashboards
 
-See [Sharing and reporting Grafana dashboards](reporting) for how to share and generate reports from Grafana dashboards.
+See [Sharing and reporting Grafana dashboards](./reporting.md) for how to share and generate reports from Grafana dashboards.
