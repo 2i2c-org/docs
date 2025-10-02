@@ -6,7 +6,7 @@
 Available for dedicated AWS clusters only (and excluding CloudBank managed accounts). Other deployments on GCP will be supported in the future.
 :::
 
-## Navigate to the *Cloud costs per user* dashboard
+## Navigate to the user cloud costs dashboard
 
 From the Grafana homepage, navigate to *Home > Dashboards > Cloud cost dashboards* and then click on *User cloud costs*.
 

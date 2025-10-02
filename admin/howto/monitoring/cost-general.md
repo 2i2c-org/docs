@@ -4,7 +4,7 @@
 Available for dedicated AWS clusters only (and excluding CloudBank managed accounts). Other deployments on GCP will be supported in the future.
 :::
 
-## Accessing the cloud cost dashboard
+## Accessing the general cloud costs dashboard
 
 Community Champions can view the cloud cost dashboards from their Grafana instance (please see [Grafana Dashboards](grafana-dashboards.md) for how to gain access).
 
