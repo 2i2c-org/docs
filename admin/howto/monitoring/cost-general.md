@@ -1,14 +1,14 @@
-# Cost attribution
+# General cloud costs
 
 :::{note}
-Available for dedicated AWS clusters only. Other deployments on GCP will be supported in the future.
+Available for dedicated AWS clusters only (and excluding CloudBank managed accounts). Other deployments on GCP will be supported in the future.
 :::
 
 ## Accessing the cloud cost dashboard
 
-Community Champions can view the Cloud Cost dashboard from their Grafana instance (please see [Grafana Dashboards](grafana-dashboards) for how to gain access).
+Community Champions can view the cloud cost dashboards from their Grafana instance (please see [Grafana Dashboards](grafana-dashboards.md) for how to gain access).
 
-From the main menu of Grafana, navigate to *Dashboards > Cloud cost dashboards > Cloud cost attribution* to view the dashboard.
+From the main menu of Grafana, navigate to *Dashboards > Cloud cost dashboards > General cloud costs* to view the dashboard.
 
 ## Understanding the cloud cost dashboard
 
@@ -73,4 +73,4 @@ This panel shows the same information as above, but broken down for each specifi
 
 ## Sharing and reporting Grafana dashboards
 
-See [Sharing and reporting Grafana dashboards](reporting) for how to share and generate reports from Grafana dashboards.
+See [Sharing and reporting Grafana dashboards](reporting.md) for how to share and generate reports from Grafana dashboards.

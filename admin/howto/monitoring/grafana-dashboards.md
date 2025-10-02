@@ -1,12 +1,12 @@
 # Grafana dashboards
 
 :::{note}
-Grafana dashboards are only available to communities on **dedicated** clusters. If a community is on a shared cluster and would like to discuss transitioning, please contact [partnerships@2i2c.org](mailto:partnerships@2i2c.org).
+Grafana dashboards are only available to communities on **dedicated** AWS clusters (and excludes CloudBank-managed accounts). If a community is on a shared cluster and would like to discuss transitioning, please contact [partnerships@2i2c.org](mailto:partnerships@2i2c.org).
 :::
 
 To find the URL to the Grafana dashboard for your community, use the [List of Running Hubs](https://infrastructure.2i2c.org/reference/hubs/) table.
 
-Note that data is retained for up to 3 years on 2i2c hubs.
+Note that monitoring data is retained for up to 3 years on 2i2c hubs.
 
 ## Getting a Grafana account
 
@@ -32,7 +32,10 @@ There is work-in-progress documentation available about what each dashboard or p
 
 If you make any changes to the pre-configured dashboards in the *JupyterHub Default Dashboards* and *Cloud Cost Dashboards* folders, then they will not be saved.
 
-We encourage you to create new dashboards outside of these folders (however the configurations will not be backed up), or even contribute to the upstream [https://github.com/jupyterhub/grafana-dashboards](https://github.com/jupyterhub/grafana-dashboards) project.
+We encourage you to create new dashboards outside of these folders (however the configurations will not be backed up), or even contribute to:
+
+- the upstream [https://github.com/jupyterhub/grafana-dashboards](https://github.com/jupyterhub/grafana-dashboards) project for *JupyterHub Default Dashboards*
+- the [https://github.com/2i2c-org/jupyterhub-cost-monitoring](https://github.com/2i2c-org/jupyterhub-cost-monitoring) project for *Cloud Cost Dashboards*
 
 ## Resources
 

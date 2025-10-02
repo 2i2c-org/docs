@@ -4,7 +4,7 @@ Grafana dashboards can be shared with other community members and stakeholders s
 
 - export data to a CSV file
 - generate a snapshot of the Grafana dashboard and share a public link
-- or even [Programmatically access Prometheus data](prometheus-access) themselves.
+- or even [Programmatically access Prometheus data](prometheus-access.md) themselves.
 
 ## Generate a CSV file
 
