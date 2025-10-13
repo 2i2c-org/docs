@@ -1,6 +1,6 @@
 
 (costs:cloud)=
-# Estimate cloud costs
+# Overview of cloud costs and how to influence them
 
 We pass through cloud costs directly to our communities in a transparent manner.
 This encourages us to continually reduce the cloud costs for our communities, and helps them understand how their decisions affect their cloud bill.
