@@ -8,11 +8,11 @@ Follow the sections below to do so.
 2i2c runs JupyterHubs as a service in exchange for a managed service fee.
 Before getting a hub for your community, speak with a 2i2c representative to agree on the details of your service as well as the managed service fee.
 
-You can [learn more about the 2i2c Managed JupyterHub Service here](../../about/service/index.md).
+You can [learn more about the 2i2c Managed JupyterHub Service here](../community-lead/about/index.md).
 
 If you're interested in getting a hub for your community, click the button below.
 
-```{button-ref} ../../about/service/index
+```{button-ref} ../community-lead/about/index
 :color: primary
 :class: float-left mr-3
 :ref-type: doc
@@ -28,7 +28,7 @@ Send us an email
 
 The Community Representative is the main point of contact between the community and the 2i2c Engineering Team.
 There can be up to two Community Representatives per hub.
-See [](../../about/service/shared-responsibility.md) for more details on this role.
+See [](../community-lead/about/shared-responsibility.md) for more details on this role.
 
 ## Hub Deployment
 

@@ -1,4 +1,4 @@
-# Terminology reference
+# Terminology and common words
 
 :::{glossary}
 

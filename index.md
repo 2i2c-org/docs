@@ -6,7 +6,16 @@ It is divided into a number of **roles and personas** with relevant topics for e
 This documentation is structured into sections that are meant for various **roles and personas**.
 We describe each below.
 
-## Hub users
+## Get started and service overview
+
+Understand our service and take your first actions.
+
+```{toctree}
+get-started/new-hub
+get-started/terminology
+```
+
+## Hub user guide
 
 For end-users that use a community hub. These are typically most individuals in our member communities - researchers, post-docs, students, etc.
 
@@ -15,10 +24,8 @@ For end-users that use a community hub. These are typically most individuals in 
 :caption: Hub users
 
 user/topics/policy/index
-user/topics/getting-started
 user/topics/data/index
 user/environment/index
-community/content
 user/scalable-computing/index.md
 ```
 
@@ -39,31 +46,26 @@ admin/topics/network
 admin/topics/managing-secrets
 ```
 
-## Community administrators and leaders
+## Community leaders and administrators
 
 For those administering and leading one or more communities.
 They care about the overall collaboration and cost structure of 2i2c's service, and make decisions about triggering services from 2i2c.
 
 ```{toctree}
-:caption: Community administrators and leaders
+:caption: Community leaders and administrators
 :maxdepth: 2
 
-about/service/index
-admin/howto/new-hub
+community-lead/about/index
 admin/billing/index
 admin/howto/replicate
-community/events
-community/management
 ```
 
-## Reference material
+## Contributing guide
 
-Lists and programmatically-generated content to serve as a quick reference.
+Guides to help you contribute to our documentation. These sections cover the overall documentation structure and strategy, technical set-up, and style guides.
 
 ```{toctree}
-:caption: Reference
-:maxdepth: 2
-
-about/terminology
-contribute/index
+./contribute/overview.md
+./contribute/get-started.md
+./contribute/style.md
 ```

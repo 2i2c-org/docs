@@ -1,5 +1,5 @@
 (about-the-project)=
-# Our collaborative service model
+# Overview of our service model
 
 Here we provide a high-level overview of our Managed JupyterHub Service and the major teams, processes, and expectations for both 2i2c and the partner communities we work with.
 
@@ -46,16 +46,3 @@ This includes goals like service uptime and support responsiveness.
 :maxdepth: 2
 service-objectives.md
 ```
-
-## Cost model
-
-There are two types of costs associated with our service.
-We treat each of these separately in order to be transparent about where community costs are coming from.
-They will be covered as either two separate invoices, or two different line items on the same invoice.
-
-**Staff costs** cover all of the human time that goes into managing, supporting, developing, and improving our hub service.
-See {doc}`the Compensation and Benefits section in our Team Compass <tc:people/compensation>` for our staffing cost model.
-
-**Cloud costs** cover the cost we pay a cloud provider for the infrastructure that powers your service.
-This is either on a dedicated cloud cluster, or on cluster that you share with other communities.
-  See [](/topic/cloud-costs.md) for a guide on how to estimate your community's cloud costs.
