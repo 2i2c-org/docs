@@ -2,6 +2,7 @@
 
 ```{toctree}
 service-model
+cloud-providers
 service-objectives
 shared-responsibility
 ```

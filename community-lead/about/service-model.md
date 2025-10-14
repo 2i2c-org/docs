@@ -37,6 +37,22 @@ The Right to Replicate gives communities the right to replicate their infrastruc
 Following this principle leads to a more equitable and more productive ecosystem for research and education in the cloud, and helps avoid many of the potential downsides of relying on a cloud vendor for infrastructure.
 Read the [Right to Replicate](https://2i2c.org/right-to-replicate/) documentation for more information about what this means.
 
+## Transparent infrastructure and operations
+
+All configuration and deployment code for 2i2c JupyterHubs is publicly available in the [2i2c `infrastructure/` repository](https://github.com/2i2c-org/infrastructure).
+This repository contains both deployment scripts and documentation explaining how the infrastructure works.
+
+This transparency serves several purposes:
+
+- It follows our commitment to [Open Practices](https://2i2c.org/open-practices/) and [Open Technology](https://2i2c.org/open-technology/)
+- It supports the [Right to Replicate](https://2i2c.org/right-to-replicate/), giving communities full visibility into how their infrastructure is configured
+- It allows communities to understand exactly how their hub is deployed and managed
+- It provides a reference for communities that may wish to manage similar infrastructure themselves
+
+The infrastructure repository is intended for advanced users and is provided for transparency. For day-to-day hub management, use the guides in this documentation rather than modifying infrastructure code directly.
+
+To learn more about how the infrastructure works, see the [infrastructure documentation](https://infrastructure.2i2c.org/).
+
 ## Service Level Objectives
 
 Our Service Level Objectives define our **goals in running the service** for each partner community.

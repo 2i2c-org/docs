@@ -3,7 +3,6 @@
 ## Purpose
 
 This documentation provides information for key archetypes of [2i2c's managed interactive computing service](https://2i2c.org/).
-It is also a way for us to share expertise and helpful information about managed open infrastructure workflows with the outside world.
 
 ## Overview
 

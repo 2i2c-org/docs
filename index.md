@@ -2,6 +2,7 @@
 
 This is the community and user documentation for 2i2c's Managed JupyterHub Service.
 It is divided into a number of **roles and personas** with relevant topics for each.
+It is the **source of truth for expected behavior and value for 2i2c's service**. If something is documented here, then users and 2i2c team members should plan around it.
 
 See [2i2c's platform description](https://2i2c.org/platform) for an overview of the service.
 
