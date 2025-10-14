@@ -59,11 +59,11 @@ Usually, 2i2c assumes responsibility for all of the above, though we are experim
 
 **Key goal**: Ensure that communities have the skills and understanding needed to use the cloud infrastructure to have an impact.
 
-### Responsibilities]
+### Responsibilities
 
 1. **Create documentation and training material**. Write and improve content that helps users learn cloud-native workflows and use the infrastructure effectively.
 2. **Provide support to community leaders**. Follow our service {ref}`support prcoess<tc:support:process>` for community leaders.
-3. **Assist with user environment creation**. Provide domain expertise about how to configure and set up the proper environment using [Binder-style repositories](/admin/howto/environment/index.md).
+3. **Assist with user environment creation**. Provide domain expertise about how to configure and set up the proper environment using [Binder-style repositories](/admin/environment/index.md).
 4. **Create and manage data in the cloud**. If your communities requires access to a cloud-native dataset, format it properly and put it in a place that the hub can connect to.
 5. **Run workshops and training**. Training workshops are geared towards community leaders, with the goal of helping them share knowledge with others in their community.
 

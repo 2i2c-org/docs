@@ -120,23 +120,10 @@ See the {ref}`Infrastructure guide<infra:configure:culling>` for some documentat
 In some cases, you may want to temporarily disable hub access for all users.
 For example, if you are concerned that users on your hub are taking inappropriate actions, and you wish to stop all activity before investigating.
 
-**To prevent all user sessions from starting**, you can use [the configurator UI](configurator.md) to choose a user image that does not start.
+**To prevent all user sessions from starting**, [contact 2i2c support](../../support.md) to request that your hub be configured with a user image that does not start.
 
-1. Go to your hub's configurator menu (at `{{ your hub URL }}/services/configurator`).
-2. Under {guilabel}`User Docker Image`, paste the following text:
+In the meantime, you can **stop all user sessions** from your Administrator panel:
 
-   ```
-   busybox:latest
-   ```
+1. Go to `{{ your hub URL }}/hub/admin` and click {guilabel}`Stop All`.
 
-   This specifies a user image that is not compatible with JupyterHub, and will prevent user sessions from starting.
-   You can revert this change by deleting the text and hitting {guilabel}`Submit` again (or changing it back to its previous value).
-
-3. Hit {guilabel}`Submit`
-4. **Stop all user sessions** from you Administrator panel.
-   
-   Go to `{{ your hub URL }}/hub/admin` and click {guilabel}`Stop All`.
-
-   This will stop all user sessions, and they will no longer be able to log in after doing so.
-
-If you do this, you should [notify the 2i2c support team](https://docs.2i2c.org/en/latest/support.html) as they may need to follow up with some changes to your infrastructure.
+   This will stop all currently running user sessions.

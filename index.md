@@ -3,30 +3,22 @@
 This is the community and user documentation for 2i2c's Managed JupyterHub Service.
 It is divided into a number of **roles and personas** with relevant topics for each.
 
-This documentation is structured into sections that are meant for various **roles and personas**.
-We describe each below.
-
-## Get started and service overview
-
-Understand our service and take your first actions.
-
-```{toctree}
-get-started/new-hub
-get-started/terminology
-```
+See [2i2c's platform description](https://2i2c.org/platform) for an overview of the service.
 
 ## Hub user guide
 
 For end-users that use a community hub. These are typically most individuals in our member communities - researchers, post-docs, students, etc.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 :caption: Hub users
 
-user/topics/policy/index
-user/topics/data/index
+user/get-started
+user/data/index
 user/environment/index
+user/sharing/index
 user/scalable-computing/index.md
+user/service-lifecycle/index
 ```
 
 ## Hub administrators
@@ -34,16 +26,17 @@ user/scalable-computing/index.md
 For hub administrators that control a JupyterHub's functionality, approve and onboard users, etc.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 :caption: Hub administrators
 
+admin/get-started
 support
-admin/howto/environment/index
+admin/environment/index
 admin/user-management/index
-admin/howto/monitoring/index
+admin/monitoring/index
 admin/reliability/index
-admin/topics/network
-admin/topics/managing-secrets
+admin/security/index
+admin/service-lifecycle/index
 ```
 
 ## Community leaders and administrators
@@ -53,11 +46,15 @@ They care about the overall collaboration and cost structure of 2i2c's service, 
 
 ```{toctree}
 :caption: Community leaders and administrators
-:maxdepth: 2
+:maxdepth: 1
 
+community-lead/get-started
 community-lead/about/index
-admin/billing/index
-admin/howto/replicate
+community-lead/billing/index
+community-lead/community/events
+community-lead/community/management
+community-lead/user-policy/index
+community-lead/service-lifecycle/index
 ```
 
 ## Contributing guide
@@ -65,7 +62,9 @@ admin/howto/replicate
 Guides to help you contribute to our documentation. These sections cover the overall documentation structure and strategy, technical set-up, and style guides.
 
 ```{toctree}
+:caption: Contributing guide
 ./contribute/overview.md
 ./contribute/get-started.md
 ./contribute/style.md
+./contribute/terminology.md
 ```
