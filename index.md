@@ -1,71 +1,143 @@
 # Community Hub Guide
 
 This is the community and user documentation for 2i2c's Managed JupyterHub Service.
-It is divided into a number of **roles and personas** with relevant topics for each.
 It is the **source of truth for expected behavior and value for 2i2c's service**. If something is documented here, then users and 2i2c team members should plan around it.
 
+:::{admonition} New to 2i2c?
+:class: tip
 See [2i2c's platform description](https://2i2c.org/platform) for an overview of the service.
+:::
 
-## Hub user guide
+::::{grid} 1 1 2 3
+:gutter: 3
 
-For end-users that use a community hub. These are typically most individuals in our member communities - researchers, post-docs, students, etc.
+:::{grid-item-card} 👤 I use a hub
+:link: user/get-started
+:link-type: doc
+
+Researchers, students, post-docs, data analysts
+
+**Common needs:** Access your hub • Work with data • Install packages • Share files
+
+{bdg-primary-line}`User guide →`
+:::
+
+:::{grid-item-card} 👨‍💻 I manage a hub
+:link: admin/get-started
+:link-type: doc
+
+Hub administrators, technical staff, IT support
+
+**Common needs:** Add users • Customize environment • Monitor usage • Configure settings
+
+{bdg-primary-line}`Admin guide →`
+:::
+
+:::{grid-item-card} 👥 I lead a community
+:link: community-lead/get-started
+:link-type: doc
+
+Community leads, PIs, deciders, administrators
+
+**Common needs:** Understand costs • Choose cloud providers • Set policies • Plan service
+
+{bdg-primary-line}`Leadership guide →`
+:::
+
+::::
+
+---
+
+## Quick Access
+
+::::{grid} 2 2 3 3
+:gutter: 2
+
+:::{grid-item-card}
+:link: admin/user-management/authentication-and-access
+:link-type: doc
+
+🔐 **Add a user**
+
+Grant access to your hub
+:::
+
+:::{grid-item-card}
+:link: user/get-started
+:link-type: doc
+
+📦 **Install packages**
+
+Add Python/R libraries
+:::
+
+:::{grid-item-card}
+:link: admin/monitoring/cost-general
+:link-type: doc
+
+💰 **View costs**
+
+Monitor cloud spending
+:::
+
+:::{grid-item-card}
+:link: admin/environment/customize
+:link-type: doc
+
+🛠️ **Customize environment**
+
+Configure hub software
+:::
+
+:::{grid-item-card}
+:link: user/data/object-storage/index
+:link-type: doc
+
+☁️ **Access cloud data**
+
+Work with object storage
+:::
+
+:::{grid-item-card}
+:link: support
+:link-type: doc
+
+💬 **Get support**
+
+Contact 2i2c team
+:::
+
+::::
+
+---
+
+## Full Documentation
 
 ```{toctree}
-:maxdepth: 1
-:caption: Hub users
+:maxdepth: 2
+:hidden:
 
-user/get-started
-user/data/index
-user/environment/index
-user/sharing/index
-user/scalable-computing/index.md
-user/service-lifecycle/index
+user/index
+admin/index
+community-lead/index
+contribute/index
 ```
 
-## Hub administrators
+---
 
-For hub administrators that control a JupyterHub's functionality, approve and onboard users, etc.
+::::{grid} 1
+:gutter: 0
 
-```{toctree}
-:maxdepth: 1
-:caption: Hub administrators
+:::{grid-item-card} 🆘 Need Help?
+:text-align: center
 
-admin/get-started
-support
-admin/environment/index
-admin/user-management/index
-admin/monitoring/index
-admin/reliability/index
-admin/security/index
-admin/service-lifecycle/index
-```
+[Contact 2i2c Support](support.md) • [Check Status Page](admin/reliability/status-page.md)
+:::
 
-## Community leaders and administrators
+::::
 
-For those administering and leading one or more communities.
-They care about the overall collaboration and cost structure of 2i2c's service, and make decisions about triggering services from 2i2c.
+---
 
-```{toctree}
-:caption: Community leaders and administrators
-:maxdepth: 1
+## Contributing
 
-community-lead/get-started
-community-lead/about/index
-community-lead/billing/index
-community-lead/community/events
-community-lead/community/management
-community-lead/user-policy/index
-community-lead/service-lifecycle/index
-```
-
-## Contributing guide
-
-Guides to help you contribute to our documentation. These sections cover the overall documentation structure and strategy, technical set-up, and style guides.
-
-```{toctree}
-:caption: Contributing guide
-./contribute/overview.md
-./contribute/get-started.md
-./contribute/style.md
-./contribute/terminology.md
-```
+Want to improve these docs? See the [Contributing Guide](contribute/index.md).
