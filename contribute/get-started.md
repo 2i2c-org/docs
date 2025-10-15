@@ -27,3 +27,9 @@ To build live documentation that updates when you update local files, run the fo
 ```
 nox -s docs -- live
 ```
+
+## Documentation deployment
+
+This documentation is automatically deployed to [docs.2i2c.org](https://docs.2i2c.org) using [Read the Docs](https://readthedocs.org/).
+
+The build process is configured in [`.readthedocs.yml`](../.readthedocs.yml)
