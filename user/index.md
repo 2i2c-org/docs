@@ -45,6 +45,19 @@ Distribute notebooks and files
 
 ::::
 
+::::{grid} 1
+:gutter: 0
+
+:::{grid-item-card} Need help?
+:text-align: center
+:link: ../support
+:link-type: doc
+
+Contact 2i2c Support for assistance
+:::
+
+::::
+
 ## All User Topics
 
 ```{toctree}

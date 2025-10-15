@@ -121,6 +121,7 @@ user/index
 admin/index
 community-lead/index
 contribute/index
+support
 ```
 
 ---
