@@ -18,7 +18,7 @@ The status page can currently track automatic outages related to three main serv
   this will trigger when a user server can't start because of a system problem we're investigating
 - **the Storage**
 
-Read more about outages at [](outages).
+Read more about outages at [](outages.md).
 
 ## Subscribing
 

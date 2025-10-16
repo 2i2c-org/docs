@@ -1,69 +1,144 @@
 # Community Hub Guide
 
 This is the community and user documentation for 2i2c's Managed JupyterHub Service.
-It is divided into a number of **roles and personas** with relevant topics for each.
+It is the **source of truth for expected behavior and value for 2i2c's service**. If something is documented here, then users and 2i2c team members should plan around it.
 
-This documentation is structured into sections that are meant for various **roles and personas**.
-We describe each below.
+:::{admonition} New to 2i2c?
+:class: tip
+See [2i2c's platform description](https://2i2c.org/platform) for an overview of the service.
+:::
 
-## Hub users
+::::{grid} 1 1 2 3
+:gutter: 3
 
-For end-users that use a community hub. These are typically most individuals in our member communities - researchers, post-docs, students, etc.
+:::{grid-item-card} 👤 I use a hub
+:link: user/get-started
+:link-type: doc
+
+Researchers, students, post-docs, data analysts
+
+**Common needs:** Access your hub • Work with data • Install packages • Share files
+
+{bdg-primary-line}`User guide →`
+:::
+
+:::{grid-item-card} 👨‍💻 I manage a hub
+:link: admin/get-started
+:link-type: doc
+
+Hub administrators, technical staff, IT support
+
+**Common needs:** Add users • Customize environment • Monitor usage • Configure settings
+
+{bdg-primary-line}`Admin guide →`
+:::
+
+:::{grid-item-card} 👥 I lead a community
+:link: community-lead/get-started
+:link-type: doc
+
+Community leads, PIs, deciders, administrators
+
+**Common needs:** Understand costs • Choose cloud providers • Set policies • Plan service
+
+{bdg-primary-line}`Leadership guide →`
+:::
+
+::::
+
+---
+
+## Quick Access
+
+::::{grid} 2 2 3 3
+:gutter: 2
+
+:::{grid-item-card}
+:link: admin/user-management/authentication-and-access
+:link-type: doc
+
+🔐 **Add a user**
+
+Grant access to your hub
+:::
+
+:::{grid-item-card}
+:link: user/get-started
+:link-type: doc
+
+📦 **Install packages**
+
+Add Python/R libraries
+:::
+
+:::{grid-item-card}
+:link: admin/monitoring/cost-general
+:link-type: doc
+
+💰 **View costs**
+
+Monitor cloud spending
+:::
+
+:::{grid-item-card}
+:link: admin/environment/customize
+:link-type: doc
+
+🛠️ **Customize environment**
+
+Configure hub software
+:::
+
+:::{grid-item-card}
+:link: user/data/object-storage/index
+:link-type: doc
+
+☁️ **Access cloud data**
+
+Work with object storage
+:::
+
+:::{grid-item-card}
+:link: support
+:link-type: doc
+
+💬 **Get support**
+
+Contact 2i2c team
+:::
+
+::::
+
+---
+
+## Full Documentation
 
 ```{toctree}
 :maxdepth: 2
-:caption: Hub users
+:hidden:
 
-user/topics/policy/index
-user/topics/getting-started
-user/topics/data/index
-user/environment/index
-community/content
-user/scalable-computing/index.md
-```
-
-## Hub administrators
-
-For hub administrators that control a JupyterHub's functionality, approve and onboard users, etc.
-
-```{toctree}
-:maxdepth: 2
-:caption: Hub administrators
-
-support
-admin/howto/environment/index
-admin/user-management/index
-admin/howto/monitoring/index
-admin/reliability/index
-admin/topics/network
-admin/topics/managing-secrets
-```
-
-## Community administrators and leaders
-
-For those administering and leading one or more communities.
-They care about the overall collaboration and cost structure of 2i2c's service, and make decisions about triggering services from 2i2c.
-
-```{toctree}
-:caption: Community administrators and leaders
-:maxdepth: 2
-
-about/service/index
-admin/howto/new-hub
-admin/billing/index
-admin/howto/replicate
-community/events
-community/management
-```
-
-## Reference material
-
-Lists and programmatically-generated content to serve as a quick reference.
-
-```{toctree}
-:caption: Reference
-:maxdepth: 2
-
-about/terminology
+user/index
+admin/index
+community-lead/index
 contribute/index
+support
 ```
+
+---
+
+::::{grid} 1
+:gutter: 0
+
+:::{grid-item-card} 🆘 Need Help?
+:text-align: center
+
+[Contact 2i2c Support](support.md) • [Check Status Page](admin/reliability/status-page.md)
+:::
+
+::::
+
+---
+
+## Contributing
+
+Want to improve these docs? See the [Contributing Guide](contribute/index.md).

@@ -2,18 +2,15 @@
 # Get support
 
 Send all support requests using the **support widget on the bottom right of the page**.
-Click the "Help" button to expand it.
+The {ref}`2i2c support process <tc:support:process>` describes the process we'll follow when a new ticket is opened.
 
-Requests submitted via this form will be routed to the 2i2c support team, and we will get back to you shortly!
-When you make a support request, please include as much information as possible in order to provide context needed to resolve your issue!
+For example, click the button below to open the support widget (or, click the widget directly).
 
-% Copy the style classes of sphinx-design buttons
-% The JavaScript that this calls is defined in conf.py
 <button onclick="openWidget()">
    Click here to open a support ticket
 </button>
 
-```{caution}
+```{admonition} If you can't see the support widget
 If you cannot see the "Help" widget in the bottom right corner of the screen, or clicking the button above does not open a pop-up contact form, please check your browser's privacy settings.
 Privacy extensions can block the pop-up contact form.
 ```
@@ -22,22 +19,6 @@ Privacy extensions can block the pop-up contact form.
 
 A {role}`Community Representative` of a hub should be the one that surfaces support requests to the 2i2c {role}`Site Reliability Engineer`ing team.
 Before reaching out to 2i2c for support, this person should work with others in their community to understand the problem and to ensure that it is something that requires intervention from a 2i2c Engineer.
-
-## The support process
-
-You can find our {ref}`full support process in our Team Compass <tc:support:process>`. Below is a brief overview.
-
-When you send us a support email, we'll try and resolve your issue via the following process:
-
-- Submitting a request via the contact form will open up a ticket in [the 2i2c FreshDesk account](https://2i2c.freshdesk.com).
-  This is a private space where 2i2c engineers can communicate with you and one another around the issue.
-- We will investigate to understand what kind of issue is at hand.
-  2i2c provides support for major infrastructure problems, outages, or upgrades.
-  It doesn't provide support for daily workflow questions like debugging tracebacks in Python libraries.
-- If needed, we'll open an issue in [our `infrastructure` repository](https://github.com/2i2c-org/infrastructure) in order to track the steps needed to resolve this issue.
-- Throughout this process, we'll communicate with you via the `support@2i2c.org` address.
-  You are also welcome to follow along and discuss in any issues that we may create if you prefer.
-- When the issue is resolved, we'll send you a confirmation via `support@2i2c.org`, and we'll close the support ticket.
 
 (support:encrypt)=
 ## Send us encrypted content

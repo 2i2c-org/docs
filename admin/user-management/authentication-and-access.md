@@ -6,11 +6,11 @@
 - **Authorization** gives users certain permissions depending on their identity (such as "access to your hub", or "administrative privileges").
 
 (admin/configuration/authentication)=
-### Authentication
+## Authentication providers
 
 Users can prove who they are by logging in via an *authentication provider*. Currently, the following providers are supported:
 
-#### [CILogon](https://www.cilogon.org/)
+### [CILogon](https://www.cilogon.org/)
 
 An extremely popular provider for various institutional logins, Google accounts (including @gmail.com accounts), Microsoft accounts, etc. This is our **primary** authentication provider.
 It can support allowing users from multiple institutions to login as well, which is very helpful.
@@ -32,15 +32,15 @@ Some key terms about CILogon authentication worth mentioning:
 `User account`
 : Within an institution, each user is expected to have their own user account (e.g. `myname@berkeley.edu`). This is the account that is used to give somebody an ID on their JupyterHub. This is entered on an Identity Provider's login screen.
 
-#### [GitHub](https://github.com/)
+### [GitHub](https://github.com/)
 Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub admin panel](admin/management/admin-panel), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
 
-#### `<a different provider>`
+### `<a different provider>`
 We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. However, this should be used as a last resort and will come with an increase in management cost, to offset the extra engineering complexity. Please reach out to us if none of those above work for your use-case.
 
 We will ask you what provider you want when we set up the hub. We can change the provider after the fact, but only if absolutely necessary.
 
-### Authorization
+## Add a new user (Authorization)
 
 Not everyone who can authenticate is granted access to the hub - that would mean
 everyone with a `@gmail.com` account can log in if you use Google as your
@@ -74,7 +74,7 @@ Authorizing admin users
 % TODO: Link to SRE docs on how to do this once we have it
 
 (admin/management/admin-panel)=
-#### Manually manage users from the administrator panel
+### Manually manage users from the administrator panel
 
 The **Administrator Panel** can be used to maintain the list of users
 who are authorized to use your hub. You can access this panel by clicking
@@ -82,7 +82,7 @@ the 'Admin' button in the top bar in your hub control panel.
 Alternatively, you can go to this URL in your browser:
 `https://<your-hub-url>/hub/admin`
 
-##### To add users
+#### To add users
 
 1. Click the {guilabel}`Add Users` button. The {guilabel}`Add Users` dialog box will pop up.
 2. Add one or more users, and hit the {guilabel}`Add Users` button to authorize all the users you just added.
@@ -108,7 +108,7 @@ Fill in usernames and optionally make them administrators. You can add multiple 
 ````
 `````
 
-##### Remove users from a hub
+#### Remove users from a hub
 
 You can revoke a user's access to the JupyterHub by removing them from the allowed users list, using the admin panel.
 
@@ -120,11 +120,11 @@ You can revoke a user's access to the JupyterHub by removing them from the allow
 After this, the user would not be able to log in. However, their files will not be deleted -
 if you add them later, their files will still be present.
 
-#### GitHub Organizations and Teams
+### GitHub Organizations and Teams
 
 Hub admins can control access to their hub by adding users to their GitHub Organization and Team. Hub admins require *Owner* permissions for their GitHub Organization in order to {ref}`invite non-members<manage-users:github-org>` to it (team maintainers or regular members do not have the power to invite non-members to GitHub Organizations). Inviting a user to the organization does not automatically grant the user access to a hub. A member of a GitHub Organization must be added to a {ref}`GitHub Team<manage-users:github-team>` associated with the hub in order to log into the hub with their GitHub credentials.
 
-##### First time setup
+#### First time setup
 
 When we setup authentication to use [GitHub orgs or teams](auth:github-orgs), we create an OAuth app in the 2i2c org and ask hub admins to install this app upon first login to the hub.
 
@@ -149,9 +149,9 @@ If this is not done correctly, all users will report a `403 Forbidden` error whe
 The OAuth app will now have the correct permissions to read the org info and hence users should be able to successfully log into their hub.
 
 (manage-users:github-org)=
-##### Manage your GitHub Organization
+#### Manage your GitHub Organization
 
-###### Invite a non-member to the organization
+##### Invite a non-member to the organization
 
 :::{figure} ../../images/manage-users-github.png
 :name: gh-org-people
@@ -173,7 +173,7 @@ Screenshot showing a list of [2i2c-community-showcase](https://github.com/orgs/2
 
 1. Once the user has accepted, they will become visible in the list of Organization members in the *People* menu tab.
 
-###### Remove a member from the organization
+##### Remove a member from the organization
 
 Members can be removed from the organization by going to the *People* menu tab.
 
@@ -186,11 +186,11 @@ Members can be removed from the organization by going to the *People* menu tab.
 1. The user will receive an automatic email from GitHub notifying them that they have been removed from the organization.
 
 (manage-users:github-team)=
-##### Manage your GitHub Team
+#### Manage your GitHub Team
 
 A GitHub Team is defined and specially linked to a hub's configuration when it is initially deployed. This special GitHub Team should be known to hub administrators. If not, please contact your community representative who deployed the hub or open a 2i2c {doc}`support ticket<../../support>`.
 
-###### Add a member to the team
+##### Add a member to the team
 
 Add members to the GitHub Team associated with the hub so that users can log into the hub with their GitHub credentials.
 
@@ -211,7 +211,7 @@ Add members to the GitHub Team associated with the hub so that users can log int
 
 1. The user has authorization to log into the hub using their GitHub credentials 🎉
 
-###### Remove a member from the team
+##### Remove a member from the team
 
 Hub admins can remove user access to a hub by removing their account from the GitHub Team.
 
@@ -229,7 +229,7 @@ Hub admins can remove user access to a hub by removing their account from the Gi
 1. Confirm your choice in the pop up by clicking *Remove members*.
 1. The account will instantly disappear in the list of team members and the user will not be notified.
 
-### Finding usernames
+## Finding usernames
 
 Usernames are assigned depending on the kind
 of [authentication provider](admin/configuration/authentication) your hub is
