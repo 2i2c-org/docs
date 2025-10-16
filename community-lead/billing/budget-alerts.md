@@ -9,7 +9,7 @@ These are _early warning_ notifications designed to prevent run-away cloud bills
 
 ## When will _you_ receive a budget forecast alert?
 
-2i2c will forward these budget forecast alerts to you, the Community Representative, where 2i2c directly pass through cloud costs.
+2i2c will forward these budget forecast alerts to community leaders when 2i2c directly passes through cloud costs.
 
 ## What thresholds are used for budget forecast alerts?
 

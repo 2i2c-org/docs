@@ -6,6 +6,7 @@ Hub administrators are trusted community members who perform common administrati
 
 As a hub administrator, you can:
 
+- Customize your hub environment (software, packages, interfaces) - see {doc}`environment/index`
 - Add and remove users from your hub
 - Start and stop user servers
 - View monitoring dashboards

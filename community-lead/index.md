@@ -66,7 +66,6 @@ Contact 2i2c Support for assistance with your service
 get-started
 about/index
 billing/index
-community/events
 community/management
 user-policy/index
 service-lifecycle/index

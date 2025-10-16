@@ -66,6 +66,7 @@ Contact 2i2c Support for assistance with your hub
 get-started
 environment/index
 user-management/index
+community/index
 monitoring/index
 reliability/index
 security/index

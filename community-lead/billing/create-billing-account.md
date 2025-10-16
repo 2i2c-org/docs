@@ -44,13 +44,12 @@ get invoices, and grant overall access by controlling the billing account.
       'Billing -> Billing Accounts User'. The full administrator role is
       preferred.
       ```
-   5. Enter the following user emails under 'New members': `yuvipanda@2i2c.org`,
-      `choldgraf@2i2c.org`. These are two of the folks at 2i2c who will
-      help manage your project.
-   6. Click 'Save'. This sends 2i2c staff an invitation to your billing account.
+   5. [Contact 2i2c support](../../support.md) to request the email addresses of the
+      2i2c engineering staff who will manage your project.
+   6. Add those email addresses under 'New members'.
+   7. Click 'Save'. This sends 2i2c staff an invitation to your billing account.
 
-   Let 2i2c staff know once you've completed this process, and they should be
-   able to get going!
+   The 2i2c team will confirm once they've accepted the invitation and can proceed with setup.
 
 #### Project-level access
 
@@ -69,11 +68,11 @@ extra access grants.
 3. Select 'Projects -> Owner' as the role. This gives 2i2c full rights to
    everything inside the project.
 
-4. Enter the following user emails under 'New members': `yuvipanda@2i2c.org`,
-    `choldgraf@2i2c.org`. These are two of the folks at 2i2c who will
-    help manage your project.
+4. [Contact 2i2c support](../../support.md) to request the email addresses of the
+   2i2c engineering staff who will manage your project.
 
-5. Click 'Save'. This sends 2i2c staff an invitation to your billing account.
+5. Add those email addresses under 'New members'.
 
-Let 2i2c staff know once you've completed this process, and they should be
-able to get going!
+6. Click 'Save'. This sends 2i2c staff an invitation to your project.
+
+The 2i2c team will confirm once they've accepted the invitation and can proceed with setup.

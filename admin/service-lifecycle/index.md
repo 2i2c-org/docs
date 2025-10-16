@@ -5,5 +5,6 @@ Information for managing your relationship with 2i2c's hub administration servic
 ```{toctree}
 :maxdepth: 1
 
-offboarding
+ending-service
+replicate
 ```

@@ -5,6 +5,10 @@
 We pass through cloud costs directly to our communities in a transparent manner.
 This encourages us to continually reduce the cloud costs for our communities, and helps them understand how their decisions affect their cloud bill.
 
+:::{admonition} This focuses on Google Cloud Platform but the principles are the same
+Much of this content is written with the Google Cloud Platform machine names, concepts, etc. However the basic ideas are generally applicable on whatever [cloud provider](../../community-lead/about/cloud-providers.md).
+:::
+
 ## What components make up my cloud bill
 
 There are a few kinds of infrastructure that make up your cloud bill.
@@ -47,8 +51,8 @@ We now need twice the number of nodes to handle the same number of users.
 In practice, the cost per node depends heavily on the cloud provider, and is constantly in-flux.
 **To estimate your own cloud costs**, follow these steps:
 
-1. **Estimate memory available to each user**. The amount of RAM needed for each user is often the biggest driver of cloud cost. Decide the "maximum" amount of RAM that a user % will generally need, and multiply that by 1.5x.
-2. **Determine how many average simultaneous users you'd like a hub to support**. This isn't necessarily the total size of your community, but how many people you think will be % using the hub *at the same time*.
+1. **Estimate memory available to each user**. The amount of RAM needed for each user is often the biggest driver of cloud cost. Decide the "maximum" amount of RAM that a user will generally need, and multiply that by 1.5x.
+2. **Determine how many average simultaneous users you'd like a hub to support**. This isn't necessarily the total size of your community, but how many people you think will be using the hub *at the same time*.
 3. **Look up the monthly price for an `n1-highmem-4` node**. This is a basic node type that serves most use-cases and can be used as a benchmark for comparison.
    1. [Go to the Google Cloud pricing page](https://cloud.google.com/compute/vm-instance-pricing). This lists prices for many kinds of nodes with Google Cloud Platform.
    2. Go to the `N1 high-memory machine types` section. This contains prices for all `N1` node types with high memory.
