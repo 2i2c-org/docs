@@ -12,4 +12,5 @@ These sections describe this environment and how you can customize your environm
 defaults
 interfaces
 customize
+mount-repositories
 ```

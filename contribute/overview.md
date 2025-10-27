@@ -49,3 +49,7 @@ There are a few special topics we include as top-level guides.
 
 - **Getting starged** (`get-started/`). Meant for a newcomer who needs orientation. Could be any other user persona. They want to learn about the service and triage themselves into a persona.
 - **Contributing guide** (`contribute/`). Could be any persona or a 2i2c team member. They need information for how to contribute to the documentation.
+
+## Writing documentation
+
+When adding new documentation, follow our {ref}`contribute/mvp` guidelines to ensure pages are actionable and value-focused.
