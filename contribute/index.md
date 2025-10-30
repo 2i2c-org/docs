@@ -17,6 +17,15 @@ Structure and approach
 :::
 
 :::{grid-item-card}
+:link: mvp
+:link-type: doc
+
+📝 **Add new documentation**
+
+Minimal viable documentation guidelines
+:::
+
+:::{grid-item-card}
 :link: get-started
 :link-type: doc
 
@@ -51,6 +60,7 @@ Key terms and definitions
 :maxdepth: 2
 
 overview
+mvp
 get-started
 style
 terminology
