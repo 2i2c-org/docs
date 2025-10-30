@@ -1,3 +1,4 @@
+(community-lead:billing:responsiveness)=
 # How to balance cloud responsiveness and cost
 
 There is a tradeoff between how responsive a hub is and its cost. This is primarily determined by the **size of the nodes** that are used for user sessions.

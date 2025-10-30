@@ -58,6 +58,16 @@ Contact 2i2c Support for assistance
 
 ::::
 
+:::{grid-item-card} Frequently Asked Questions?
+:text-align: center
+:link: faq
+:link-type: doc
+
+Contact 2i2c Support for assistance
+:::
+
+::::
+
 ## All User Topics
 
 ```{toctree}
