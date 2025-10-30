@@ -56,6 +56,14 @@ Distribute notebooks and files
 Contact 2i2c Support for assistance
 :::
 
+:::{grid-item-card} Frequently Asked Questions
+:text-align: center
+:link: basics/startup
+:link-type: doc
+
+Common questions about using your hub
+:::
+
 ::::
 
 ## All User Topics
@@ -64,6 +72,7 @@ Contact 2i2c Support for assistance
 :maxdepth: 2
 
 get-started
+basics/index
 data/index
 environment/index
 sharing/index
