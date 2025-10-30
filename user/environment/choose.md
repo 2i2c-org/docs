@@ -51,6 +51,10 @@ We recommend always explicitly specifying a version number in the `TAG` field ra
 jovyan@user:~$ echo $JUPYTER_IMAGE
 ```
 
+```{note}
+If the image isn't already cached on a node, it will need to be pulled from the container registry, which can add several minutes to startup time. Learn more about startup times in [](user:faq:startup-time).
+```
+
 ### The "Dynamic Image Building" option
 
 This allows users to dynamically build an environment image for their Jupyter server, similar to [mybinder.org](https://mybinder.org).

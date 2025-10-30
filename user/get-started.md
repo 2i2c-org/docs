@@ -19,6 +19,10 @@ For other hubs, you will presented with a *Server Options* page where you can se
 
 ![JupyterHub server options](/images/server-options.jpeg)
 
+```{seealso}
+Learn more about typical server startup times in [](user:faq:startup-time).
+```
+
 It is important to use cloud resources responsibly to maximize efficiency and minimize carbon emissions. Selecting a larger server incurs a larger financial cost, as well as an environmental cost!
 
 Best practices for using resources responsibly include

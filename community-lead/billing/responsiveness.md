@@ -36,3 +36,7 @@ Many 2i2c hubs use a **balanced approach**:
 - Allow specific high-memory users to request larger dedicated nodes
 
 This provides reasonable responsiveness while keeping costs manageable. The 2i2c engineering team works with communities to find the right balance for their usage patterns.
+
+```{seealso}
+Users may wonder why their server takes time to start. See [](user:faq:startup-time) for a user-friendly explanation of typical startup times.
+```
