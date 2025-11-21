@@ -1,8 +1,8 @@
-# Explore User and Group Cost Dashboards
+# User and Group Cost Dashboards
 
 ## User cloud costs
 
-![Grafana dashboard with multiple panels showing stacked bar charts of user cloud costs over time.](../images/dashboard_users.png)
+![Grafana dashboard with multiple panels showing stacked bar charts of user cloud costs over time.](https://github.com/2i2c-org/jupyterhub-cost-monitoring/blob/main/images/dashboard_users.png?raw=true)
 
 ### Navigate to the *Cloud costs per user* dashboard
 
@@ -21,7 +21,7 @@ The dashboard is organized into several panels, each providing insights into dif
 
 ## Group cloud costs
 
-![Grafana dashboard with multiple panels showing time series charts of group cloud costs over time.](../images/dashboard_groups.png)
+![Grafana dashboard with multiple panels showing time series charts of group cloud costs over time.](https://github.com/2i2c-org/jupyterhub-cost-monitoring/blob/main/images/dashboard_groups.png?raw=true)
 
 ### Understand the group costs dashboard layout
 
