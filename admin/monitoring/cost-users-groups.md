@@ -53,6 +53,8 @@ You can export the data from any panel by clicking on the panel menu in the top 
 
 Grafana is a powerful open source data visualization tool with many features. For more information on how to use Grafana, refer to the [Grafana documentation](https://grafana.com/docs/grafana/latest/).
 
+For more information about the cost-monitoring system, see [https://jupyterhub-cost-monitoring.readthedocs.io/en/latest/](https://jupyterhub-cost-monitoring.readthedocs.io/en/latest/)
+
 ## Feedback and support
 
 If you have any feedback or suggestions on what works well or how you would like to improve the dashboard design, [let us know](https://github.com/2i2c-org/jupyterhub-cost-monitoring/issues/new)!
