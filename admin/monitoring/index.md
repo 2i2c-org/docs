@@ -8,7 +8,7 @@ This section describes how to access and use these monitoring tools for your hub
 :maxdepth: 1
 grafana-dashboards
 cost-general
-cost-users
+cost-users-groups
 reporting
 prometheus-access
 ```

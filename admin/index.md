@@ -35,7 +35,7 @@ Configure hub software
 :::
 
 :::{grid-item-card}
-:link: monitoring/cost-general
+:link: monitoring/index
 :link-type: doc
 
 💰 **Monitor Costs**
