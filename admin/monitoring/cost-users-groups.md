@@ -1,5 +1,9 @@
 # User and Group Cost Dashboards
 
+:::{note}
+Available for dedicated AWS clusters only (and excluding CloudBank managed accounts). Other deployments on GCP will be supported in the future.
+:::
+
 ## User cloud costs
 
 ![Grafana dashboard with multiple panels showing stacked bar charts of user cloud costs over time.](https://github.com/2i2c-org/jupyterhub-cost-monitoring/blob/main/images/dashboard_users.png?raw=true)
