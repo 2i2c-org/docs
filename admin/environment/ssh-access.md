@@ -1,68 +1,67 @@
-# Enable SSH Access
+# Remote SSH access
 
-For advanced workflows, users often prefer working from their local terminal or connecting local IDEs (like [VS Code Remote](https://code.visualstudio.com/docs/remote/ssh)) directly to their cloud environment. You can enable this by running a lightweight SSH server inside the user's container, accessible via a secure websocket tunnel.
+You can let users connect to their hub session with SSH for terminal work, VS Code Remote, or file transfer with `scp`/`rsync`. This runs an SSH server inside the same user container and exposes it over HTTPS.
 
 ## How it works
 
-The tool [jupyter-sshd-proxy](https://github.com/yuvipanda/jupyter-sshd-proxy) runs an SSH server (sshd) inside the user's session. It uses [jupyter-server-proxy](https://jupyter-server-proxy.readthedocs.io/) to expose this server over the standard JupyterHub web connection.  
-**Benefits:**
+- [`jupyter-sshd-proxy`](https://github.com/yuvipanda/jupyter-sshd-proxy) starts `sshd` inside the user server and publishes it through [`jupyter-server-proxy`](https://jupyter-server-proxy.readthedocs.io/) at `/sshd/` over WebSockets.  
+- Authentication and authorization come from JupyterHub; no extra inbound ports or firewall changes are needed.  
+- The SSH session uses the same CPU, memory, and storage limits as the Jupyter server.
 
-* **No Firewall Changes:** It works entirely over HTTPS/Websockets.  
-* **Secure:** Authentication is handled by JupyterHub; no separate SSH keys are required to *reach* the server (though keys are used for the SSH session itself).  
-* **File Transfer:** Enables scp and rsync for easy data movement.
+## Image requirements (administrators)
 
-## Prerequisites
+Install the following in the [](customize) user image:
 
-### 1\. For Administrators (Hub Configuration)
+- `openssh-server`
+- `jupyter-sshd-proxy`
+- `jupyter-server-proxy`
 
-You must ensure your single-user Docker image includes:
+Example `values.yaml` profile:
 
-* openssh-server (see [OpenSSH](https://www.openssh.com/))  
-* jupyter-sshd-proxy
+```
+jupyterhub:
+  singleuser:
+    profileList:
+      - display_name: "SSH enabled"
+        slug: "ssh"
+        kubespawner_override:
+          image: "quay.io/yuvipanda/pangeo-jupyter-sshd-proxy:latest"  # includes jupyter-sshd-proxy
+```
 
-**Example values.yaml:**  
-jupyterhub:  
-  singleuser:  
-    profileList:  
-      \- display\_name: "SSH Enabled Environment"  
-        description: "Standard environment with SSH support"  
-        kubespawner\_override:  
-          \# Ensure this image has jupyter-sshd-proxy installed  
-          image: "quay.io/yuvipanda/pangeo-jupyter-sshd-proxy:latest" 
+You can also add these packages to your own image instead of using the example image above.
 
-### 2\. For Users (Local Configuration)
+## Local setup (users)
 
-Connecting requires a one-time setup on the user's local machine.  
-Step A: Install a WebSocket Client  
-Your local SSH client needs a helper tool to pipe data to the hub's websocket. We strongly recommend websocat because it handles binary streams natively and supports all major operating systems.
+1. Install a WebSocket helper for your SSH client (recommended: [`websocat`](https://github.com/vi/websocat/releases)).
+   - macOS: `brew install websocat`
+   - Linux: download the release binary and make it executable
+   - Windows: `winget install websocat` or download the release binary
+   - Alternatives such as [`wscat`](https://github.com/websockets/wscat) also work if they support binary stdin/stdout piping.
+2. Create a JupyterHub API token from `/hub/token` on your hub.
+3. Add an SSH config entry in `~/.ssh/config` (replace placeholders):
 
-* **Mac:** brew install websocat  
-* **Linux:** Download the binary from [GitHub releases](https://github.com/vi/websocat/releases).  
-* **Windows:** Use winget install websocat or download the binary.
+```
+Host myhub
+  HostName <your-hub-hostname>        # e.g., myhub.pilot.2i2c.cloud
+  User jovyan
+  ProxyCommand websocat --binary -H="Authorization: token <API_TOKEN>" asyncstdio:wss://%h/user/<JUPYTERHUB_USERNAME>/sshd/
+```
 
-*(Note: Other tools like [wscat](https://github.com/websockets/wscat) or custom Python scripts can be used if they support binary piping to stdin/stdout, but websocat is the standard).*  
-Step B: Configure SSH  
-Add the following block to your local \~/.ssh/config file.  
-Host myhub  
-  User jovyan  
-  \# The %h token is replaced by the hostname (hub.example.com)  
-  \# The %p token is ignored but kept for compatibility  
-  ProxyCommand websocat \--binary \-H="Authorization: token \<YOUR-API-TOKEN\>" asyncstdio:wss://\<HUB-URL\>/user/\<YOUR-USERNAME\>/sshd/
+Then connect with `ssh myhub` or point VS Code Remote - SSH at the `myhub` host. The ProxyCommand is reused by `scp` and `rsync`.
 
-:::{important}  
-Users must generate an API Token from their JupyterHub Control Panel (/hub/token) and paste it into the ProxyCommand.  
+:::{important}
+Keep the API token private and rotate it from `/hub/token` if it is exposed.
 :::
 
-## Community Examples
+## Community examples
 
-[**Openscapes**](https://openscapes.org/) uses this workflow to allow researchers to use VS Code Remote and transfer large datasets efficiently.
-
-* [**Openscapes SSH Documentation**](https://www.google.com/url?sa=E&source=gmail&q=https://openscapes.github.io/series/core-lessons/jupyterhub/ssh.html): A user-facing guide on setting up the connection.  
-* [**Infrastructure Config**](https://github.com/Openscapes/openscapes.cloud/pull/67): See the Pull Request where SSH support was refined.
+* Openscapes (https://openscapes.org/) uses this workflow for VS Code Remote and large data transfers: https://github.com/Openscapes/openscapes.cloud/blob/main/ssh-into-hub.qmd  
+* Configuration pull request: https://github.com/Openscapes/openscapes.cloud/pull/67
 
 :::{seealso}
 
-* [Not Just for Notebooks: JupyterHub in 2025](https://www.youtube.com/watch?v=vsbHMvvsFw8) — Yuvi Panda's talk covering SSH access and other interfaces.  
-* [jupyter-sshd-proxy Repository](https://github.com/yuvipanda/jupyter-sshd-proxy) — Official documentation and troubleshooting.  
-* VS Code Remote \- SSH — Documentation on connecting VS Code to a remote server.  
-  :::
+* [jupyter-sshd-proxy repository](https://github.com/yuvipanda/jupyter-sshd-proxy) — setup and troubleshooting  
+* [VS Code Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) — connect the VS Code client to the SSH host  
+* [Not Just for Notebooks: JupyterHub in 2025](https://www.youtube.com/watch?v=vsbHMvvsFw8) — talk covering SSH access and other interfaces  
+* [Yuvi Panda demo on SSH to JupyterHub (timestamped)](https://youtu.be/-wwia9YzHOE?si=OVDBP0SsrGX3Eiee&t=1106)  
+:::

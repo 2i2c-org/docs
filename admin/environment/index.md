@@ -12,6 +12,7 @@ These sections describe this environment and how you can customize your environm
 defaults
 interfaces
 alternative-interfaces
+ssh-access
 customize
 mount-repositories
 ```
