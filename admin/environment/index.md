@@ -11,6 +11,7 @@ These sections describe this environment and how you can customize your environm
 :maxdepth: 2
 defaults
 interfaces
+alternative-interfaces
 customize
 mount-repositories
 ```
