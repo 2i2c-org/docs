@@ -5,12 +5,12 @@ You can let users connect to their hub session with SSH for terminal work, VS Co
 ## How it works
 
 - [`jupyter-sshd-proxy`](https://github.com/yuvipanda/jupyter-sshd-proxy) starts `sshd` inside the user server and publishes it through [`jupyter-server-proxy`](https://jupyter-server-proxy.readthedocs.io/) at `/sshd/` over WebSockets.  
-- Authentication and authorization come from JupyterHub; no extra inbound ports or firewall changes are needed.  
+- Authentication and authorization come from JupyterHub - no extra inbound ports or firewall changes are needed.  
 - The SSH session uses the same CPU, memory, and storage limits as the Jupyter server.
 
-## Image requirements (administrators)
+## User image requirements
 
-Install the following in the [](customize) user image:
+Install the following in the user image (see [](customize.md)):
 
 - `openssh-server`
 - `jupyter-sshd-proxy`
@@ -49,7 +49,7 @@ Host myhub
 
 Then connect with `ssh myhub` or point VS Code Remote - SSH at the `myhub` host. The ProxyCommand is reused by `scp` and `rsync`.
 
-:::{important}
+:::{admonition} Keep these tokens private!
 Keep the API token private and rotate it from `/hub/token` if it is exposed.
 :::
 
@@ -60,8 +60,11 @@ Keep the API token private and rotate it from `/hub/token` if it is exposed.
 
 :::{seealso}
 
-* [jupyter-sshd-proxy repository](https://github.com/yuvipanda/jupyter-sshd-proxy) — setup and troubleshooting  
-* [VS Code Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) — connect the VS Code client to the SSH host  
-* [Not Just for Notebooks: JupyterHub in 2025](https://www.youtube.com/watch?v=vsbHMvvsFw8) — talk covering SSH access and other interfaces  
-* [Yuvi Panda demo on SSH to JupyterHub (timestamped)](https://youtu.be/-wwia9YzHOE?si=OVDBP0SsrGX3Eiee&t=1106)  
+* [jupyter-sshd-proxy repository](https://github.com/yuvipanda/jupyter-sshd-proxy) - setup and troubleshooting  
+* [VS Code Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) - connect the VS Code client to the SSH host  
+* [Not Just for Notebooks: JupyterHub in 2025](https://www.youtube.com/watch?v=vsbHMvvsFw8) - talk covering SSH access and other interfaces for JupyterHub
 :::
+
+## Acknowledgements
+
+- This guide was originally [written by Andy Teucher for OpenScapes](https://github.com/Openscapes/openscapes.cloud/pull/67) and its content was modified for these docs.
