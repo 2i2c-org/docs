@@ -33,10 +33,6 @@ You can also add these packages to your own image instead of using the example i
 ## Local setup (users)
 
 1. Install a WebSocket helper for your SSH client (recommended: [`websocat`](https://github.com/vi/websocat/releases)).
-   - macOS: `brew install websocat`
-   - Linux: download the release binary and make it executable
-   - Windows: `winget install websocat` or download the release binary
-   - Alternatives such as [`wscat`](https://github.com/websockets/wscat) also work if they support binary stdin/stdout piping.
 2. Create a JupyterHub API token from `/hub/token` on your hub.
 3. Add an SSH config entry in `~/.ssh/config` (replace placeholders):
 
