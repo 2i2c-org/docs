@@ -51,7 +51,7 @@ Keep the API token private and rotate it from `/hub/token` if it is exposed.
 
 ## Community examples
 
-* Openscapes (https://openscapes.org/) uses this workflow for VS Code Remote and large data transfers: https://github.com/Openscapes/openscapes.cloud/blob/main/ssh-into-hub.qmd  
+* Openscapes (https://openscapes.org/) uses this [workflow for VS Code Remote and large data transfers](https://openscapes.cloud/ssh-into-hub.html)
 * Configuration pull request: https://github.com/Openscapes/openscapes.cloud/pull/67
 
 :::{seealso}
