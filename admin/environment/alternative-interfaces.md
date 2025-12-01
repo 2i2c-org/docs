@@ -40,7 +40,10 @@ Expose an interface by pointing a `profileList` entry at an image that contains 
 
 `jupyter-vscode-proxy` lets you proxy `code-server` (VS Code in the browser), allowing users to develop in VS Code without leaving the hub.
 
-Here is an example from NMFS Openscapes for VS Code: https://github.com/2i2c-org/infrastructure/tree/main/config/clusters/nmfs-openscapes (one way to configure VS Code. Any image with `code-server` + `jupyter-vscode-proxy` works).
+Here is an example from the [Strudel](https://strudel.science/) hub that launches VS Code via `code-server`: 
+
+- [JupyterHub configuration](https://github.com/2i2c-org/infrastructure/blob/a042ecc16ed9d7111eece2ff19261446e69cc0e2/config/clusters/strudel/common.values.yaml#L57-L66)
+- [User image configuration repository](https://github.com/strudel-science/strudel-infra)
 
 Pangeo images ship `code-server` with `jupyter-vscode-proxy`. This image is an example of one that already contains the required packages. You can substitute your own image if it includes `code-server` and `jupyter-vscode-proxy`.
 
@@ -64,8 +67,9 @@ Pin to a specific image tag and adjust resource limits if your community needs m
 
 Here are examples for the desktop proxy (any image with `jupyter-remote-desktop-proxy` works):
 
-* Strudel (QGIS desktop profile): https://github.com/2i2c-org/infrastructure/blob/main/config/clusters/strudel/common.values.yaml  
-* University of Toronto: https://github.com/2i2c-org/infrastructure/tree/main/config/clusters/utoronto
+* NASA VEDA (QGIS desktop profile):
+  - [Hub configuration](https://github.com/2i2c-org/infrastructure/blob/a042ecc16ed9d7111eece2ff19261446e69cc0e2/config/clusters/nasa-veda/common.values.yaml#L166-L173)
+  - [User environment image configuration repository](https://github.com/2i2c-org/nasa-qgis-image)
 
 Images with `jupyter-remote-desktop-proxy` expose a lightweight [XFCE](https://www.xfce.org/) desktop for GUI tools such as [QGIS](https://qgis.org/) or [MATLAB](https://www.mathworks.com/products/matlab.html). Use any image that includes `jupyter-remote-desktop-proxy`. The one below is for illustration.
 
