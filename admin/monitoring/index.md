@@ -11,6 +11,7 @@ cost-general
 cost-users-groups
 reporting
 prometheus-access
+alerts
 ```
 
 ## Feedback and support
