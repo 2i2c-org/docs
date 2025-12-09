@@ -9,6 +9,7 @@ This section describes how to access and use these monitoring tools for your hub
 grafana-dashboards
 cost-general
 cost-users-groups
+disk-usage
 reporting
 prometheus-access
 ```
