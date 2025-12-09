@@ -32,7 +32,6 @@ The "Activity" Grafana dashboard.
 
 There is work-in-progress documentation available about what each dashboard or panel represents in the upstream [JupyterHub Grafana Dashboards](https://jupyterhub-grafana.readthedocs.io/en/latest/) project. You can also hover over the {octicon}`info` icon in the top-right corner of each panel for more information.
 
-
 ## Making changes to Grafana dashboards
 
 If you make any changes to the pre-configured dashboards in the *JupyterHub Default Dashboards* and *Cloud Cost Dashboards* folders, then they will not be saved.
