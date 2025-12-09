@@ -32,6 +32,10 @@ $ du -skh ~
 
 If you go over the quota limit, then you may experience degraded performance on your server. Contact your hub administrator if you run into any problems.
 
+:::{seealso}
+**For hub administrators:** You can monitor disk usage across all users on your hub using the [Home Directory Usage Dashboard](#grafana:disk-usage) in Grafana.
+:::
+
 For temporarily storing large datasets, take a look at the {ref}`/tmp directory<filesystem:tmp>` section below.
 
 For storing data in cloud object storage, see the section [Cloud Object Storage](./object-storage/index.md).

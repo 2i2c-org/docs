@@ -32,6 +32,23 @@ The "Activity" Grafana dashboard.
 
 There is work-in-progress documentation available about what each dashboard or panel represents in the upstream [JupyterHub Grafana Dashboards](https://jupyterhub-grafana.readthedocs.io/en/latest/) project. You can also hover over the {octicon}`info` icon in the top-right corner of each panel for more information.
 
+(grafana:disk-usage)=
+## Monitor disk usage
+
+You can monitor home directory disk usage for users on your hub to identify large directories and manage storage resources.
+
+To access the disk usage dashboard:
+
+1. Navigate to your hub's Grafana dashboard
+2. Go to {kbd}`Dashboards` -> {kbd}`JupyterHub Default Dashboards` -> {kbd}`Home Directory Usage Dashboard`
+
+:::{figure} images/home-directory-usage-dashboard.png
+:alt: Screenshot of the Home Directory Usage Dashboard showing a table of directories with their sizes and usage percentages
+The Home Directory Usage Dashboard displays disk usage for user home directories.
+:::
+
+Note that some entries will be for _users_ while others will be _shared by all users_. Above, we've blurred out the users and included the hub-wide directory.
+
 ## Making changes to Grafana dashboards
 
 If you make any changes to the pre-configured dashboards in the *JupyterHub Default Dashboards* and *Cloud Cost Dashboards* folders, then they will not be saved.
