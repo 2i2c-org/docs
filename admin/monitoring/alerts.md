@@ -85,3 +85,66 @@ process. You will only need to do this once.
 6. Paste the webhook URL you copied in the previous section under "Webhook URL".
 7. Press the "Test" button and validate that you are able to see a message in the appropriate slack channel.
 8. Click "Save Contact Point".
+
+## 3. Create a new dashboard folder
+
+The default JupyterHub dashboards, available under the "JupyterHub Default Dashboards" folder
+in your grafana, is managed automatically via the upstream [jupyterhub grafana dashboards](https://github.com/jupyterhub/grafana-dashboards)
+project. So we can't make manual changes or alerts in there, as updates to the
+upstream dashboards may overwrite them.
+
+So we will make a new folder and create new dashboards and alerts inside it.
+Different communities will have different needs, and can maintain their dashboards
+as they wish! We'll provide some guidance for common alerts and dashboards
+in this page, but customize it as you see fit.
+
+1. Select "Dashboards" on the left sidebar
+2. Click "New" on the top right
+3. Select "New folder" in the dropdown
+4. Name the folder "Community Maintained Dashboards" and click the "Create" button.
+   This creates a new folder within which you can create dashboards as you need.
+
+## 4. Create your first dashboard
+
+Let's create our first dashboard! We'll create one with a common visualization
+that people want - showing how close users are to their home directory limits.
+
+1. Select "Dashboards" on the left sidebar
+2. Open the "Community Maintained Dashboards" folder
+3. Click "New" in the top right, and select "New Dashboard"
+4. Click "Add New Visualization" to add your first graph
+5. Grafana will ask you to select the primary data source for this dashboard. Select
+   `prometheus`, as that is the primary data source we will be using.
+6. In `Panel Options` to the right, type "Users Approaching Home Directory Limits (>80%)"
+7. In the bottom, you'll see a prompt to `Enter a PromQL query`. You can play with different promql queries here, but for our use case,
+   use `max(dirsize_total_size_bytes) by (directory) / max(dirsize_hard_limit_bytes) by (directory) > 0.8`.
+
+   This query calculates the % of home directory size for each user of the
+   total limit available to them, as a fraction between 0 and 1. To not fill
+   it up completely, we only show them when they're over 80% (0.8). Adjust this
+   as you see fit!
+
+   ```{note}
+   [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+   is a query language used for looking at time series metrics, performing
+   efficient calculations on them and querying them for visualization with
+   Grafana. You'll need to learn *some* promql to be able to fully use the
+   Grafana features for visualizations, but you can get along far by copy
+   pasting some and tweaking them.
+   ```
+
+8. Press the `Run Queries` button to run the query and display the visualizations.
+   You can adjust the query as you wish and press this button again to test it out.
+9. It's nice for the Y Axis to display actual percentages rather than 0.0-1.0. On
+   the right pane, under "Standard options", choose "Misc -> Percent (0.0-1.0)"
+   under "Unit". This should change the Y axis to be friendlier.
+10. Press the "Save dashboard" button in the top right.
+11. Enter a descriptive name (like "Community Maintained Dashboard") for the Title,
+    and click "Save".
+
+Congratulations, you now have your first dashboard with a
+visualization! You can share this with other admins :)
+
+It can be time consuming to have to manually look at this graph
+to identify heavy users. Next, let's add an alert that will tell
+us when a user is approaching close to their limit.
