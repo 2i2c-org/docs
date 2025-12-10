@@ -12,6 +12,7 @@ cost-users-groups
 disk-usage
 reporting
 prometheus-access
+alerts
 ```
 
 ## Feedback and support
