@@ -66,7 +66,7 @@ process. You will only need to do this once.
 12. Click the "Allow" button.
 13. Copy the webhook URL.
 
-## 2. Connect Grafana to Slack
+### 2. Connect Grafana to Slack
 
 1. Log-in to your community's Grafana instance with an admin account.
 2. In the left panel, select "Alerting" -> "Contact points"
@@ -86,7 +86,7 @@ process. You will only need to do this once.
 7. Press the "Test" button and validate that you are able to see a message in the appropriate slack channel.
 8. Click "Save Contact Point".
 
-## 3. Create a new dashboard folder
+### 3. Create a new dashboard folder
 
 The default JupyterHub dashboards, available under the "JupyterHub Default Dashboards" folder
 in your grafana, is managed automatically via the upstream [jupyterhub grafana dashboards](https://github.com/jupyterhub/grafana-dashboards)
@@ -104,47 +104,69 @@ in this page, but customize it as you see fit.
 4. Name the folder "Community Maintained Dashboards" and click the "Create" button.
    This creates a new folder within which you can create dashboards as you need.
 
-## 4. Create your first dashboard
+### 4. Create your first alert
 
-Let's create our first dashboard! We'll create one with a common visualization
-that people want - showing how close users are to their home directory limits.
+Let's create our first alert! As an example, we'll create an alert
+for when any user is over 80% of their total usage quota.
 
-1. Select "Dashboards" on the left sidebar
-2. Open the "Community Maintained Dashboards" folder
-3. Click "New" in the top right, and select "New Dashboard"
-4. Click "Add New Visualization" to add your first graph
-5. Grafana will ask you to select the primary data source for this dashboard. Select
-   `prometheus`, as that is the primary data source we will be using.
-6. In `Panel Options` to the right, type "Users Approaching Home Directory Limits (>80%)"
-7. In the bottom, you'll see a prompt to `Enter a PromQL query`. You can play with different promql queries here, but for our use case,
-   use `max(dirsize_total_size_bytes) by (directory) / max(dirsize_hard_limit_bytes) by (directory) > 0.8`.
+```{note}
+[PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+is a query language used for looking at time series metrics, performing
+efficient calculations on them and querying them for visualization with
+Grafana. You'll need to learn *some* promql to be able to fully use the
+Grafana features for visualizations, but you can get along far by copy
+pasting some and tweaking them.
+```
+
+1. Select "Alerting -> Alert Rules" in the left sidebar.
+2. Click the "New alert rule" button on the top right
+3. Enter a descriptive name for this rule, like "Users approaching home directory limit"
+4. Under "Define query and alert condition", you'll have a space to
+   enter a PromQl query.
+   You can play with different promql queries here, but for our use case,
+   use `max(dirsize_total_size_bytes) by (directory) / max(dirsize_hard_limit_bytes) by (directory)`.
 
    This query calculates the % of home directory size for each user of the
-   total limit available to them, as a fraction between 0 and 1. To not fill
-   it up completely, we only show them when they're over 80% (0.8). Adjust this
-   as you see fit!
+   total limit available to them, as a fraction between 0 and 1.
 
-   ```{note}
-   [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)
-   is a query language used for looking at time series metrics, performing
-   efficient calculations on them and querying them for visualization with
-   Grafana. You'll need to learn *some* promql to be able to fully use the
-   Grafana features for visualizations, but you can get along far by copy
-   pasting some and tweaking them.
-   ```
+   You can press the "Run Queries" button to preview the data
+   that comes from running this query. You'll see one entry
+   for each user, with the value being the % of their limits they
+   have used so far.
+5. Under "Alert condition", specify "0.8" for the text box so it
+   reads "When query is above 0.8". Press the "Preview alert rule
+   condition" button to see what users this alert would fire for.
+   Adjust the % at which you'd like alerts by changing this value
+   from 0.8 to whatever feels convenient for your community.
+6. Under "Add folder and labels", select the folder we created
+   earlier ("Community Maintained Dashboards") so we can keep
+   our alerts organized.
+7. Under "Set evaluation behavior", select "New evaluation group".
+   Give it the name "default", and hit "Create". You'll only
+   have to do this once - for future alerts, you can simply select
+   this group from the dropdown. This tells grafana to evaluate
+   the rule every minute and alert if it sees issues.
+8. Under "Configure notifications", select the slack contact point
+   you created in the earlier step.
+9. Expand the "Muting, grouping and timings (optional)" section and toggle
+   "Override grouping" to be on. By default, Grafana will generate *one* alert
+   for *all* users that are over the limit. This is unwieldy,
+   and we want one alert per user.
 
-8. Press the `Run Queries` button to run the query and display the visualizations.
-   You can adjust the query as you wish and press this button again to test it out.
-9. It's nice for the Y Axis to display actual percentages rather than 0.0-1.0. On
-   the right pane, under "Standard options", choose "Misc -> Percent (0.0-1.0)"
-   under "Unit". This should change the Y axis to be friendlier.
-10. Press the "Save dashboard" button in the top right.
-11. Enter a descriptive name (like "Community Maintained Dashboard") for the Title,
-    and click "Save".
+   To do so, add `directory` as another item to the dropdown
+   describing various things each alert will be grouped by. We
+   add `directory` because the Prometheus metric uses `directory`
+   to refer to each user's home directory, and you can see
+   it in the preview of the alert if you scroll up.
 
-Congratulations, you now have your first dashboard with a
-visualization! You can share this with other admins :)
+10. Click "Save".
 
-It can be time consuming to have to manually look at this graph
-to identify heavy users. Next, let's add an alert that will tell
-us when a user is approaching close to their limit.
+That's it, you have a new alert set up! It should fire for users
+who are close to their limit in a minute, and post messages
+to the slack channel!
+
+## Further documentation
+
+Grafana's alerting system is fairly powerful and extensive, and
+reasonably [well documented](https://grafana.com/docs/grafana/latest/alerting/)
+upstream.
