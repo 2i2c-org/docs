@@ -20,7 +20,7 @@ The dashboard is organized into several panels, each providing insights into dif
 
 - **Top 5 Users**: a quick at a glance view of the top 5 users by total cost over the selected time range.
 - **Total by Hub**: a breakdown of total costs by hub, allowing you to see which hubs are incurring the most expenses.
-- **Total by Component**: a breakdown of total costs by [component](../topics/components.md), helping you identify which resources are driving costs.
+- **Total by Component**: a breakdown of total costs by component, helping you identify which resources are driving costs.
 - **Hub – Component**: daily user costs. Sums over all hubs and components are shown by default. Try toggling the variable `hub` and `component` at the top of the dashboard to filter between hubs, or home storage and compute components.
 
 ## Group cloud costs

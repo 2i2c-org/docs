@@ -1,4 +1,4 @@
-# Programmatically accessing Prometheus data
+# Programmatically accessing Prometheus data through Grafana
 
 ## Overview
 

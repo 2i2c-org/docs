@@ -11,7 +11,8 @@ cost-general
 cost-users-groups
 disk-usage
 reporting
-prometheus-access
+prometheus-grafana-access
+prometheus-api-access
 alerts
 ```
 
