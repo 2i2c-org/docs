@@ -27,7 +27,7 @@ If you decide to end service, plan ahead:
 - **Timeline**: Provide 2i2c with at least 30 days notice
 - **User communication**: Notify your hub users about the decision, timeline, and actions they need to take
 - **Data export**: Ensure all users export their work, see [](../../user/service-lifecycle/offboarding.md)
-- **Infrastructure replication** (optional): Replicate your hub independently (see [](../../admin/service-lifecycle/offboarding.md))
+- **Infrastructure replication** (optional): Replicate your hub independently (see [](../../admin/service-lifecycle/replicate.md))
 
 ## Next steps
 
