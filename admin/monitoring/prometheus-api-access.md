@@ -10,7 +10,7 @@ Use cases include configuring Prometheus as a datasource for your own monitoring
 
 Sharing credentials to access your Prometheus instance from the outside world needs to be done securely. This is because Personally Identifiable Information (PII) is at risk if the credentials are compromised.
 
-```{tip}
+```{warning}
 Please do not share these credentials through any insecure channels, and notify us immediately if you need to renew them.
 ```
 
@@ -20,7 +20,7 @@ We use `age` to encrypt and decrypt information securely.
 
 1. In a terminal, run the command `age-keygen -o key.txt`.
 
-1. This should create a `key.txt` file containing your private key, and return an output of the form
+1. This will create a `key.txt` file containing your private key, and return an output of the form
 
    ```bash
    Public key: <public_key>
@@ -28,7 +28,7 @@ We use `age` to encrypt and decrypt information securely.
 
    Make a note of this public key for the next step.
 
-   ```{tip}
+   ```{note}
    Never share your private key with anyone. This is used to decrypt data encrypted with the public key. You can share the public key.
    ```
 
