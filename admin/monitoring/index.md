@@ -12,6 +12,7 @@ cost-users-groups
 disk-usage
 reporting
 prometheus-grafana-access
+prometheus-grafana-cost
 prometheus-api-access
 alerts
 ```
