@@ -3,9 +3,9 @@
 Grafana can be used to create *custom alerts* that are specific to your
 community to fit into specific workflows you may have. [Grafana Alerting](https://grafana.com/docs/grafana/latest/alerting/)
 is very powerful, and upstream grafana has reasonably good documentation on
-its various features. This document lists some of the common things you
-can do with it, as well as some popular alerts our communities have found
-helpful.
+its various features. This document lists one of the most common things our
+communities have been using it for (home directory alerts), and eventually
+we hope to add other examples.
 
 ## Why?
 
@@ -32,7 +32,7 @@ existing workflows.
 ```{note}
 The one exception to this is the "Email" contact point. Sending email reliably
 is unfortunately pretty complicated and our grafana installations do not support
-it.
+it, even though it is listed in the UI.
 ```
 
 ## Setting up sample alerts
@@ -93,10 +93,12 @@ in your grafana, is managed automatically via the upstream [jupyterhub grafana d
 project. So we can't make manual changes or alerts in there, as updates to the
 upstream dashboards may overwrite them.
 
-So we will make a new folder and create new dashboards and alerts inside it.
-Different communities will have different needs, and can maintain their dashboards
-as they wish! We'll provide some guidance for common alerts and dashboards
-in this page, but customize it as you see fit.
+So we will make a new folder and create new alerts inside it. You can also put
+custom dashboards into this in the future, and those will not be affected when
+we update the default dashboards.  Different communities will have different
+needs, and can maintain their dashboards / alerts as they wish! We'll provide some
+guidance for common alerts and dashboards in this page, but customize it as you
+see fit.
 
 1. Select "Dashboards" on the left sidebar
 2. Click "New" on the top right
@@ -122,7 +124,8 @@ pasting some and tweaking them.
 2. Click the "New alert rule" button on the top right
 3. Enter a descriptive name for this rule, like "Users approaching home directory limit"
 4. Under "Define query and alert condition", you'll have a space to
-   enter a PromQl query.
+   enter a PromQl query. If you don't see such a space, you may have to toggle the
+   switch on the right from "Builder" to "Code".
    You can play with different promql queries here, but for our use case,
    use `max(dirsize_total_size_bytes) by (directory) / max(dirsize_hard_limit_bytes) by (directory)`.
 
