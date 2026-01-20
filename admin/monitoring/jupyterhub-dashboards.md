@@ -9,7 +9,7 @@ The `JupyterHub Default Dashboards` folder shows dashboards deployed from the up
 
 1. **Activity**
 
-  This dashboard contains information about the number of running servers, daily, weekly and monthly active users.
+   This dashboard contains information about the number of running servers, daily, weekly and monthly active users.
 
 1. **Cluster Information**
 
@@ -33,7 +33,7 @@ The `JupyterHub Default Dashboards` folder shows dashboards deployed from the up
    - server start times
    - hub response latency
 
-  There is also a Panel section about `Anomalous user pods` where pods with high CPU usage or high memory usage are tracked.
+   There is also a Panel section about `Anomalous user pods` where pods with high CPU usage or high memory usage are tracked.
 
 1. **NFS usage, NFS server and Prometheus server diagnostics**
 
