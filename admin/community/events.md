@@ -13,26 +13,25 @@ To do so, email `support@2i2c.org` with at least these pieces of information:
 - End date for the event
 - The active times for the event (e.g., 9am to 5pm US/Pacific)
 - How many people will attend the event
-- Do you need to need hub infrastructure to be [pre-initialized before the event](events:pre-initialized)?
+- Is the event unusually for your hub, where you may need [additional preparation before the event](events:pre-initialized)?
 - Any other information that will help us prepare for the extra usage during the event.
 
 Once you've notified us, a 2i2c team member will create a GitHub issue for your event so that we can track when it is going to happen.
 You should check the information in this issue and ensure that it is correct!
 
 (events:pre-initialized)=
-## Infrastructure preparation for an event
+## Infrastructure testing and preparation for an event
 
-Events provide a different pattern of usage for infrastructure compared with day to day use.
-Instead of a trickle of people coming on and off, events tend to trigger spikes in log-ins and activity.
-If many people start a session at the same time, this may slow down the start times of several users, because the cluster has to "scale up" to accommodate the extra people.
+Events provide a different pattern of usage for infrastructure compared with day to day use. Instead of a trickle of people coming on and off, events tend to trigger spikes in log-ins and activity. If many people start a session at the same time, this may slow down the start times of several users, because the cluster has to "scale up" to accommodate the extra people.
 
-If you wish, it is possible to "pre-initialize" the infrastructure for an event.
-This requests extra cloud resources in anticipation of a spike in user activity.
-It will speed up your user session start times, but will also increase your cloud costs.
+If an event follows a different usage pattern that your norm (many more people, more computing or data intensive work, users from different locations), we can help you plan ahead and test in advance. 
+
+You typically won't need to "pre-initialize" the infrastructure to make start up easier for users at an event, but it can be useful in certain circumstances. This requests extra cloud resources in anticipation of a spike in user activity. It will speed up your user session start times, but will also increase your cloud costs.
+
 It is most-useful if you anticipate large spikes in users all starting sessions at the same time.
 
-If you wish to pre-initialize your infrastructure before an event, make sure to let the 2i2c team know when you notify us about the event (see the list above).
-This will take extra attention from the 2i2c engineering team.
+We can recommend testing approaches and assess whether pre-initializing your infrastructure is necessary. If you need some extra advice, make sure to let the 2i2c team know when you notify us about the event (see the list above).
+This will take additional attention from the 2i2c engineering team so is key to plan ahead by 3 or more weeks. 
 
 ## Before the event
 
