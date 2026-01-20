@@ -32,22 +32,27 @@ The "Activity" Grafana dashboard.
 
 The `JupyterHub Default Dashboards` folder shows dashboard deployed from the upstream [https://github.com/jupyterhub/grafana-dashboards](https://github.com/jupyterhub/grafana-dashboards) project.
 
+1. **Activity**
+
+  This dashboard contains information about the number of running servers, daily, weekly and monthly active users.
+
 1. **Cluster Information**
 
-  Contains panels with different cluster usage statistics about things like:
-    - nodes
-    - memory
-    - cpu
-    - running users per hub in cluster
+   Contains panels with node-level usage such as:
+   - node count
+   - memory
+   - cpu
+   - running users per hub in cluster
+   - pod health
 
-1. **Global Usage Dashboard**
+1. **Home Directory Usage**
 
-  This dashboard contains information about the weekly active users we get on each of the clusters we manage.
+   See the disk space occupied by user home directories, as well as last modified and number of files.
 
 1. **JupyterHub Dashboard**
 
-   This is the place to find information about the hub usage stats and hub diagnostics, like
-   - number of active users
+   Hub usage stats and hub diagnostics, such as
+   - software images pulled by user pods
    - user CPU usage distribution
    - user memory usage distribution
    - server start times
@@ -55,17 +60,21 @@ The `JupyterHub Default Dashboards` folder shows dashboard deployed from the ups
 
   There is also a Panel section about `Anomalous user pods` where pods with high CPU usage or high memory usage are tracked.
 
-1. **NFS and Support Information**
+1. **NFS usage, NFS server and Prometheus server diagnostics**
 
-  This provides info about the NFS usage and monitors things like CPU, memory, disk and network usage of the Prometheus instance.
-
-1. **Usage Dashboard**
-
-  This has information about the number of users using the cluster over various periods of time.
+  This provides info about the NFS usage diagnostics, such as iops, and monitors things like CPU, memory, disk and network usage of the NFS server and Prometheus instance.
 
 1. **Usage Report**
 
   This provides a report about the memory requests, grouped by username, for notebook nodes and dask-gateway nodes. It also provides a graph that monitors GPU requests per user pod.
+
+1. **User Diagnostics**
+
+   This displays cpu and memory usage and requests per user, as well as home directory usage.
+
+1. **User Group Diagnostics**
+
+   This displays cpu and memory usage and requests per user group, as well as home directory usage. Only applies if users are assigned user groups at the authentication layer.
 
 ## Making changes to Grafana dashboards
 
