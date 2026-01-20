@@ -7,6 +7,7 @@ This section describes how to access and use these monitoring tools for your hub
 ```{toctree}
 :maxdepth: 1
 grafana-dashboards
+jupyterhub-dashboards
 cost-general
 cost-users-groups
 disk-usage

@@ -22,25 +22,3 @@ This Grafana account is *separate* from the account used to log into JupyterHub.
 :::{note}
 See these [instructions](https://infrastructure.2i2c.org/sre-guide/support/grafana-account) for how to invite others to join Grafana.
 :::
-
-## Using Grafana for your JupyterHub
-
-:::{figure} images/grafana-dashboard.png
-:alt: Screenshot of JupyterHub Grafana dashboard
-The "Activity" Grafana dashboard.
-:::
-
-There is work-in-progress documentation available about what each dashboard or panel represents in the upstream [JupyterHub Grafana Dashboards](https://jupyterhub-grafana.readthedocs.io/en/latest/) project. You can also hover over the {octicon}`info` icon in the top-right corner of each panel for more information.
-
-## Making changes to Grafana dashboards
-
-If you make any changes to the pre-configured dashboards in the *JupyterHub Default Dashboards* and *Cloud Cost Dashboards* folders, then they will not be saved.
-
-We encourage you to create new dashboards outside of these folders (however the configurations will not be backed up), or even contribute to:
-
-- the upstream [https://github.com/jupyterhub/grafana-dashboards](https://github.com/jupyterhub/grafana-dashboards) project for *JupyterHub Default Dashboards*
-- the [https://github.com/2i2c-org/jupyterhub-cost-monitoring](https://github.com/2i2c-org/jupyterhub-cost-monitoring) project for *Cloud Cost Dashboards*
-
-## Resources
-
-Grafana is a powerful open source data visualization tool with many features. For more information on how to use Grafana, refer to the [Grafana documentation](https://grafana.com/docs/grafana/latest/).
