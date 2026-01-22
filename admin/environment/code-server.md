@@ -8,15 +8,28 @@ This guide requires you to customize your hub image using the process described 
 
 ## Install the necessary packages
 
-The `code-server` package is distributed by several packaging repositories, including `conda-forge` and the Debian/Ubuntu repositories. For most users, we'll recommend adding `code-server` to the Conda/Mamba environment definitions. In addition, we can use `jupyter-server-proxy` and `jupyter-vscode-proxy` to launch and proxy the code-server web service through the Jupyter Server application:
+The `code-server` package is distributed by several packaging repositories, including `conda-forge` and the Debian/Ubuntu repositories. For most users, we'll recommend adding `code-server` to the Conda/Mamba environment definitions. In addition, we can use `jupyter-server-proxy` and `jupyter-vscode-proxy` to launch and proxy the code-server web service through the Jupyter Server application. 
+
+Let's modify the `environment.yml` file that we created in the [advanced image creation guide](hub-user-image-template-guide/how-to):
 
 ```{code} yaml
-:emphasize-lines: 5,6,7
+:emphasize-lines: 16,171,8
 :linenos:
-name: my-environment
+# This is the standard conda configuration file. Use this file to list
+# the conda packages that you need installed in your environment.
 channels:
   - conda-forge
+
 dependencies:
+  - jupyter_contrib_nbextensions==0.5.1
+  # Required until https://github.com/jupyterhub/repo2docker/pull/1196 is merged
+  - jupyterhub-singleuser>=3.0,<4.0
+  # Set default python version to 3.10 - repo2docker sets it to 3.7 instead by default,
+  # which can limit us to older package versions
+  - python=3.10
+  # Everyone wants to use nbgitpuller for everything, so let's do that
+  - nbgitpuller=1.1.*
+  # Add other packages here
   - code-server>=4.0
   - jupyter-vscode-proxy
   - jupyter-server-proxy
