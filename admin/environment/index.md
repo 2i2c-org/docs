@@ -15,4 +15,5 @@ alternative-interfaces
 ssh-access
 customize
 mount-repositories
+code-server
 ```
