@@ -63,3 +63,11 @@ This page describes how you can encrypt information and send it to us!
 
 4. Copy the encrypted version of the message and include it in the message to `support@2i2c.org`.
    All 2i2c engineers will be able to decrypt the message!
+
+## Receiving sensitive content
+
+Sometimes we need to securely share sensitive content with you, such as username and passwords. We generally use [Bitwarden Send](https://bitwarden.com/products/send/) to send a secure link that will expire in 7 days. Click the link to see the sensitive content. Store this securely, using Bitwarden or other similar secure password managers.
+
+```{warning}
+Please do not share sensitive content through any insecure channels. Security is at risk if sensitive content is compromised. If this happens, report this immediately to 2i2c and we will help.
+```
