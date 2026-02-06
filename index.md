@@ -1,11 +1,11 @@
 # Community Hub Guide
 
-This is the community and user documentation for 2i2c's Managed JupyterHub Service.
+This is the community and user documentation for 2i2c's shared, open, community cloud infrastructure service.
 It is the **source of truth for expected behavior and value for 2i2c's service**. If something is documented here, then users and 2i2c team members should plan around it.
 
 :::{admonition} New to 2i2c?
 :class: tip
-See [2i2c's platform description](https://2i2c.org/platform) for an overview of the service.
+See 2i2c's [membership](https://2i2c.org/membership) and [platform](https://2i2c.org/platform) descriptions for an overview.
 :::
 
 ::::{grid} 1 1 2 3

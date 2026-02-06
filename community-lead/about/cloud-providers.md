@@ -1,7 +1,7 @@
 # Cloud providers
 
 2i2c can deploy community hubs on several cloud platforms, giving communities flexibility in where their infrastructure runs.
-Note that some [membership tiers](https://2i2c.org/join) may not allow us to deploy your community's hub wherever you want, depending on the complexity of your needs.
+In practice, cloud provider choices are also shaped by your [membership model](https://2i2c.org/membership), support expectations, and the operational complexity of your hub. See [2i2c's platform](https://2i2c.org/platform) for a service overview.
 
 ## Commercial cloud providers
 
