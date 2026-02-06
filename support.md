@@ -3,6 +3,7 @@
 
 Send all support requests using the **support widget on the bottom right of the page**.
 The {ref}`2i2c support process <tc:support:process>` describes the process we'll follow when a new ticket is opened.
+For our full team process, see 2i2c's [Technical Support Process](https://compass.2i2c.org/services/technical-support/process/).
 
 For example, click the button below to open the support widget (or, click the widget directly).
 

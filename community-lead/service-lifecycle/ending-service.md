@@ -15,7 +15,7 @@ Communities may choose to end their 2i2c service for various reasons:
 Before deciding to end service, consider these alternatives:
 
 - **Ask for community guidance**: Sometimes communities need guidance to encourage hub uptake and use, we can suggest a few ways to make the hub more useful for you
-- **Service adjustments**: Reduce hub capacity, change cloud providers, or modify service tier to lower costs
+- **Service adjustments**: Reduce hub capacity, change cloud providers, or adjust service configuration and support expectations to lower costs
 - **Pause or hibernate**: Temporarily reduce activity while maintaining your configuration
 
 Contact [2i2c support](../../support.md) to discuss options that might better fit your needs.
@@ -34,3 +34,4 @@ If you decide to end service, plan ahead:
 When you're ready to proceed, [contact 2i2c support](../../support.md).
 
 For the technical implementation of ending service, see the [admin guide on ending service](../../admin/service-lifecycle/ending-service.md).
+For internal process detail, see [Compass: Offboard a Community](https://compass.2i2c.org/services/interactive-computing/offboard/).

@@ -1,7 +1,9 @@
 (about-the-project)=
 # Overview of our service model
 
-Here we provide a high-level overview of our Managed JupyterHub Service and the major teams, processes, and expectations for both 2i2c and the partner communities we work with.
+Here we provide a high-level overview of our service and the major teams, processes, and expectations for both 2i2c and the partner communities we work with.
+
+2i2c operates this as a shared service with a [common roadmap](https://2i2c.org/roadmap): we run a standard service model that works for most communities, and make targeted adjustments when needed. This helps us deliver reliable operations, improve shared infrastructure over time, and keep services replicable and transparent. Membership allows us to pool resources on a shared service team (operations, development, and community engagement) while preserving community agency. For broader context, see [2i2c's platform](https://2i2c.org/platform), [membership model](https://2i2c.org/membership), and [service model in our team compass](https://compass.2i2c.org/organization/service-model/).
 
 :::{admonition} Want to partner with us?
 If you're interested in setting up a service for your community, click the button below to send us an email.

@@ -23,7 +23,7 @@ A few sentences describing how to use it, and what it looks like when it works. 
 
 ## Who can access it?
 
-(optional) If this is only available to subsets of communities or users, state which users/tiers/etc can use it.
+(optional) If this is only available to subsets of communities or users, state which users, roles, or membership/service configurations can use it.
 ```
 
 ## Key principles

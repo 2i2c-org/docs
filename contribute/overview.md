@@ -52,4 +52,4 @@ There are a few special topics we include as top-level guides.
 
 ## Writing documentation
 
-When adding new documentation, follow our {ref}`contribute/mvp` guidelines to ensure pages are actionable and value-focused.
+When adding new documentation, follow our {ref}`mvp` guidelines to ensure pages are actionable and value-focused.
