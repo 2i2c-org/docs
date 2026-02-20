@@ -111,6 +111,14 @@ In order to be able to pull the image you need to make sure that your repository
    ```{figure} images/coessing-image-quay.png
    :alt: Tags list example
    ```
+
+   ```{warning}
+   If you intend to use the tag `latest` directly in order to avoid updating the tag every time you update your image, keep in mind that this has its own disadvantages.
+
+   For example, if the image is broken, this means you will not be able to spawn a server. The healthchecks that we run will not be able to catch this problem, _before_ you run into it.
+   So, you will experience disruptions, until the user image is fixed.
+   ```
+
 2. Modify your hub's configuration to use the updated image Put the image tag you constructed in a previous step into the User docker image text box. Note quay web urls look like `quay.io/repository/2i2c/coessing-image`, but the docker image name in configurator **should not** include the repository part of the URL e.g. `quay.io/2i2c/coessing-image:55adca9b2caa`.
 
 
