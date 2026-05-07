@@ -20,6 +20,14 @@ The status page can currently track automatic outages related to three main serv
 
 Read more about outages at [](outages.md).
 
+## What an incident post looks like
+
+When an incident is detected, we'll acknowledge it and post information that you can follow as we investigate.
+Here's an example from an outage on [quay.io](https://quay.io), an upstream service that many communities use for [user environment image management](../environment/hub-user-image-template-guide.md).
+
+```{figure} /images/status-page-incident-example.png
+```
+
 ## Subscribing
 
 You can subscribe to the status page so that you are automatically informed about any outages that happen across _all_ hubs that 2i2c manages and all maintenance work we are planning so that you can plan your work accordingly.
