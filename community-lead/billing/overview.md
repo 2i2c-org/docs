@@ -21,6 +21,11 @@ Here is a short summary:
 
 There are some other components that go into your cloud bill (e.g., "networking costs") but these are the major pieces.
 
+## You pay for what you request, not for what you use
+Cloud resources like memory and CPU are _reserved_ the moment a user session starts, whether or not the user fully uses them.
+A user who picks a large resource profile "just in case" still pays the full cost for that capacity.
+Encourage your users to start with the smallest resource profile that fits their work, and to scale up only when they actually need to.
+
 ## User actions that impact cloud costs
 
 Cloud costs depend on a few key factors that you and your community has control over.
