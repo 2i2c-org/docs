@@ -1,8 +1,8 @@
 # Sub-processors
 
 A **sub-processor** is a third-party service that processes data on behalf of 2i2c while we operate infrastructure for a community.
-This page describes the sub-processors 2i2c uses in a typical hub deployment.
-The specifics will differ based on each community's cluster configuration, but this gives a broad idea.
+This page describes the sub-processors used in a typical hub deployment and the kinds of personal data each one handles.
+The specifics differ per hub (e.g., the cloud region where data is stored, or any add-on services), so the list below is not exhaustive.
 See [](#data-processor:find) below to determine the list for a particular hub.
 
 :::{admonition} This is not a legal document
@@ -17,10 +17,15 @@ The services below are common touchpoints for user data (e.g., their identity, f
 
 ### Cloud or infrastructure provider
 
-An infrastructure provider (like a cloud provider) hosts the core infrastructure that runs the hub, and provides **compute**, **storage**, **logging**, **username database**, etc.
-This includes the files that a user stores when they do their work (e.g. notebooks, data, etc).
-
+An infrastructure provider (like a cloud provider) hosts the core infrastructure that runs the hub. This includes **compute**, **storage**, and **logging**.
+The cloud region is configured per hub and determines where this data is stored.
 2i2c either manages its own cloud provider account, or uses one managed by the community.
+
+Personal data processed by this sub-processor:
+
+- User home directory contents (e.g., notebooks, data files created during use)
+- The JupyterHub username / authentication database
+- System and access logs
 
 Here are a few common cloud providers we use and their sub-processors pages:
 
@@ -30,8 +35,14 @@ Here are a few common cloud providers we use and their sub-processors pages:
 
 ### Identity provider
 
-The service used to authenticate users when they log in. It receives the user identifiers needed to grant access to the hub (e.g., GitHub username or email).
-Generally speaking, the hub _uses_ these providers to authenticate but does not store authentication on the providers, the user or their home institution have a direct relationship with the identity provider.
+The service used to authenticate users when they log in.
+The hub _uses_ these providers to authenticate but does not store authentication credentials on them. The user or their home institution has a direct relationship with the identity provider.
+
+Personal data processed by this sub-processor (exchanged at login only):
+
+- Username
+- Email address (depending on the provider)
+- Membership in a designated organization (where applicable)
 
 Here are a few common ones we use:
 
