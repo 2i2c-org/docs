@@ -7,4 +7,5 @@ These describe the expectations and rules around the service.
 code-of-conduct
 acceptable-use
 privacy
+sub-processors
 ```
