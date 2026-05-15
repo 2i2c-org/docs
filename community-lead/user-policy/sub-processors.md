@@ -17,9 +17,10 @@ The services below are common touchpoints for user data (e.g., their identity, f
 
 ### Cloud or infrastructure provider
 
-An infrastructure provider (like a cloud provider) hosts the core infrastructure that runs the hub, and provides compute, storage, networking, etc.
-2i2c either manages its own account, or uses one managed by the community.
-All user-generated content (notebooks, files, outputs) and the hub's authentication database live within this account.
+An infrastructure provider (like a cloud provider) hosts the core infrastructure that runs the hub, and provides **compute**, **storage**, **logging**, **username database**, etc.
+This includes the files that a user stores when they do their work (e.g. notebooks, data, etc).
+
+2i2c either manages its own cloud provider account, or uses one managed by the community.
 
 Here are a few common cloud providers we use and their sub-processors pages:
 
@@ -30,6 +31,8 @@ Here are a few common cloud providers we use and their sub-processors pages:
 ### Identity provider
 
 The service used to authenticate users when they log in. It receives the user identifiers needed to grant access to the hub (e.g., GitHub username or email).
+Generally speaking, the hub _uses_ these providers to authenticate but does not store authentication on the providers, the user or their home institution have a direct relationship with the identity provider.
+
 Here are a few common ones we use:
 
 - **GitHub**. [Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
