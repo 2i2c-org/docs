@@ -31,7 +31,7 @@ These cloud providers are managed by federal teams and resources. Access to them
 
 [JetStream2](https://jetstream-cloud.org/) adds cloud-based, on-demand computing and data analysis resources to the national cyberinfrastructure. It is managed by the [Pervasive Technology Institute at Indiana University](https://pti.iu.edu/).
 
-To see if your community is eligible for a JetStream2 hub, see [the JetStream2 getting started guide](https://docs.jetstream-cloud.org/general/gettingstarted/).
+To see if your community is eligible for a JetStream2 hub, see [the JetStream2 getting started guide](https://docs.jetstream-cloud.org/getting-started/overview/).
 
 ## How to choose a cloud provider
 

@@ -311,4 +311,4 @@ gcloud auth application-default revoke
 
 ## Acknowledgements
 
-Thank you to the [LEAP-Pangeo community](https://leap-stc.github.io/intro.html) for authoring the original content that inspired this section.
+Thank you to the [LEAP-Pangeo community](https://leap-stc.github.io/introduction/) for authoring the original content that inspired this section.

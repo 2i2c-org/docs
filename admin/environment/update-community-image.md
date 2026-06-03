@@ -107,7 +107,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    
    If you see the following dialog box,
     
-   ```{image} https://github.com/czi-catalystproject/hub-champion-training/blob/main/images/episodes/transfer_data/gh-credentials.png?raw=true
+   ```{image} https://github.com/czi-catalystproject/hub-champion-training/blob/main/media/episodes/transfer_data/gh-credentials.png?raw=true
    :alt: Screenshot of Git credentials required dialog.
    :width: 65%
    :align: center

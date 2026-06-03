@@ -66,8 +66,14 @@ rediraffe_redirects = {}
 # Disable linkcheck for anchors because it throws false errors for any JS anchors
 linkcheck_anchors = False
 linkcheck_ignore = [
+    # These all work in the browser but the link-checker fails for some reason
     "https://openstoragenetwork.org*",  # It incorrectly fails with `Max retries exceeded with url`
-    "https://docs.github.com*",  # Because docs.github.com returns 403 Forbidden errors
+    "https://docs.github.com*",  # Returns 403 Forbidden to automated link checks
+    "https://access.redhat.com*",  # Returns 403 Forbidden to automated link checks
+    "https://www.mathworks.com*",  # Returns 403 Forbidden to automated link checks
+    "https://rstudio.com*",  # Times out for the link checker but loads fine in a browser
+    "https://blog.jupyter.org*",  # Intermittent SSL/certificate errors from the link checker
+    "https://files.frameshiftconsulting.com*",  # PDF returns 415 Unsupported Media Type to the checker
 ]
 
 # Embed a contact form Freshdesk widget to collect support tickets with

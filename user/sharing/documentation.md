@@ -7,7 +7,7 @@ Community documentation is a great way to spread learning and knowledge across y
 Check out [Project Pythia](https://projectpythia-mystmd.github.io/) and the [CryoCloud](https://book.cryointhecloud.com/) for real-world examples of community books.
 :::
 
-2i2c recommends communities use [Jupyter Book 2](https://next.jupyterbook.org), which uses the [MyST Document Engine](https://mystmd.org/guide), a next-generation engine for technical documentation and computational narratives. Both are developed by the [`Jupyter Book` subproject of Jupyter](https://compass.jupyterbook.org). See [the MyST Ecosystem Overview](https://mystmd.org/guide/overview) for more information about MyST and Jupyter Book.
+2i2c recommends communities use [Jupyter Book 2](https://jupyterbook.org), which uses the [MyST Document Engine](https://mystmd.org/guide), a next-generation engine for technical documentation and computational narratives. Both are developed by the [`Jupyter Book` subproject of Jupyter](https://jupyterbook.org/compass). See [the MyST Ecosystem Overview](https://mystmd.org/guide/overview) for more information about MyST and Jupyter Book.
 
 :::{admonition} Jupyter Book integrations with 2i2c infrastructure is experimental
 :class: caution
@@ -63,7 +63,7 @@ To do so, follow these steps:
 1. Configure your book to add launch buttons by following the [mystmd instructions launch buttons](https://mystmd.org/guide/website-launch-buttons).
 2. Instruct your users to paste in the URL of your community hub to the launch button pop-up (e.g., `https://<your-hub>.2i2c.cloud`).
 
-For example, here's what it would look like to use the URL of the [2i2c showcase hub](https://compass.2i2c.org/projects/managed-hubs/showcase-hub/):
+For example, here's what it would look like to use the URL of the [2i2c showcase hub](https://compass.2i2c.org/services/interactive-computing/showcase-hub/):
 
 ```{figure} images/launch-button-menu.png
 :width: 75%
@@ -79,7 +79,7 @@ The [Jupyter Book documentation] and the [MyST Markdown Guide] are useful resour
 The MyST Engine implements powerful sharing and reusing features. One of the most exciting of these is the ability to preview and [embed content from external MyST sites][guide-embed]. This can be used to richly reference and include figures, glossary terms, and even entire documents from useful resources! Amongst communities that share a set of best practices and understanding, this feature may be particular useful for building upon the work of others.
 
 [MyST Markdown Guide]: https://mystmd.org/guide/quickstart
-[Jupyter Book documentation]: https://next.jupyterbook.org/start
+[Jupyter Book documentation]: https://jupyterbook.org/stable/get-started
 [2i2c-org/community-docs-template]: https://github.com/2i2c-org/community-docs-template
 [guide-logo]: https://mystmd.org/guide/website-templates#site-options
 [guide-glossary]: https://mystmd.org/guide/glossaries-and-terms
