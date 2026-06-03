@@ -13,7 +13,8 @@ To do so, email `support@2i2c.org` with at least these pieces of information:
 - End date for the event
 - The active times for the event (e.g., 9am to 5pm US/Pacific)
 - How many people will attend the event
-- Is the event unusually for your hub, where you may need [additional preparation before the event](events:pre-initialized)?
+- If this is a shared password hub, what would you like the password to be for the event? 
+- Is the event unusual for your hub, where you may need [additional preparation before the event](events:pre-initialized)?
 - Any other information that will help us prepare for the extra usage during the event.
 
 Once you've notified us, a 2i2c team member will create a GitHub issue for your event so that we can track when it is going to happen.
