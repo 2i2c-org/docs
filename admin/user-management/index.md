@@ -3,4 +3,5 @@
 ```{toctree}
 authentication-and-access.md
 control-user-server.md
+dask-access.md
 ```
