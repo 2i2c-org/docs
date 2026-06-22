@@ -137,3 +137,6 @@ build_assets
 images/shared_responsibility_diagram.png
 images/collaborative_learning_hub.png
 images/scalable_research_hub.png
+
+# Mac OS
+.DS_Store

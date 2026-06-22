@@ -19,6 +19,7 @@ log out and log back into the JupyterHub.
 The ``/home/jovyan`` space is intended only for notebooks and code. It's **not** an appropriate place to store
 datasets, as it can get really expensive (and slow) when used that way.
 
+(filesystem:storage-quotas)=
 ### Per-User Storage Quotas
 
 All of our hubs have a 10GB storage quota per-user by default, although this may vary depending on the hub.
@@ -31,6 +32,10 @@ $ du -skh ~
 ```
 
 If you go over the quota limit, then you may experience degraded performance on your server. Contact your hub administrator if you run into any problems.
+
+:::{seealso}
+If your hub provides a **Usage** dashboard, you can view your home storage usage and quota there too. See {doc}`/user/usage-quota-dashboard`.
+:::
 
 :::{seealso}
 **For hub administrators:** You can monitor disk usage across all users on your hub using the [Home Directory Usage Dashboard](#monitoring:disk-usage) in Grafana.

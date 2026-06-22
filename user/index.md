@@ -77,6 +77,7 @@ data/index
 environment/index
 sharing/index
 scalable-computing/index
+usage-quota-dashboard
 service-lifecycle/index
 ```
 
