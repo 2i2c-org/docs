@@ -56,7 +56,7 @@ terminal, see {ref}`Per-User Storage Quotas <filesystem:storage-quotas>`.
 ## Compute
 
 This section shows how much of your compute quota you have used over a rolling
-time window (for example, the last 7 days).
+time window (for example, the last 30 days).
 
 ```{figure} /images/usage-quota-dashboard.png
 :alt: The Usage dashboard showing the Home storage and Compute sections, each with usage, quota, amount remaining, and a percentage-used progress bar.
