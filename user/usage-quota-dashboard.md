@@ -88,3 +88,7 @@ to you again. If you need more compute quota, contact your hub administrator.
 If a section shows an error instead of your usage, there may be a temporary
 network issue connecting to the data source. If the problem persists, contact
 your hub administrator.
+
+## References
+
+- Upstream documentation for [jupyterhub-usage-quotas](https://jupyterhub-usage-quotas.readthedocs.io/en/latest/tutorial/quickstart/#users)
