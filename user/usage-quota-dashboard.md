@@ -79,7 +79,7 @@ dropdown icon to expand the section and see the usage and limit for each policy.
 
 If you run out of compute quota, your next server launch will be denied. The
 compute quota uses a **rolling window**, so your usage expires gradually rather
-than resetting all at once (for example, at the start of a month). When a launch
+than resetting all at once. When a launch
 is denied, the hub shows a **retry time** indicating when quota will be available
 to you again. If you need more compute quota, contact your hub administrator.
 
