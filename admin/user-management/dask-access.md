@@ -9,7 +9,7 @@ Starting with [Dask Gateway](https://gateway.dask.org/) version [v2026.3.0](http
 Before requesting this feature:
 
 1. Go to the [JupyterHub admin panel](admin/management/admin-panel) and create or retrieve the relevant groups that should have access to Dask-Gateway.
-1. Add users to these groups is the groups were newly created in the step above.
+1. Add users to these groups if the groups were newly created in the step above.
 
 ## How to request this feature
 
