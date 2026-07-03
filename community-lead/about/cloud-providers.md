@@ -33,6 +33,23 @@ These cloud providers are managed by federal teams and resources. Access to them
 
 To see if your community is eligible for a JetStream2 hub, see [the JetStream2 getting started guide](https://docs.jetstream-cloud.org/getting-started/overview/).
 
+For example, 2i2c deployed a [BinderHub](https://binderhub.readthedocs.io/) instance on JetStream2 for [Project Pythia](https://projectpythia.org/).
+
+### NSF CloudBank
+
+[CloudBank](https://www.cloudbank.org/) is an NSF-supported service that helps researchers and educators access commercial cloud resources.
+2i2c runs hubs on CloudBank in collaboration with UC Berkeley, the University of Washington, and the San Diego Supercomputer Center (SDSC).
+
+### National Research Platform
+
+2i2c does not currently deploy hubs on the [National Research Platform](https://nationalresearchplatform.org/), though it is an item we are exploring on [our roadmap](https://2i2c.org/roadmap).
+[Contact 2i2c support](../../support.md) if this is something you're interested in funding or supporting.
+
+## On-premises deployments
+
+2i2c does not currently operate any on-premises infrastructure, though our team has experience with on-premises deployments and are interested in learning about your use-case.
+If you'd like to discuss an on-premises option, [contact 2i2c support](../../support.md).
+
 ## How to choose a cloud provider
 
 The choice of cloud provider depends on several factors:
