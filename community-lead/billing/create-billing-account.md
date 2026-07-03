@@ -1,8 +1,21 @@
 # Billing and cloud accounts
 
-In the event that you wish to control your own cloud billing access, you'll need to take a few actions to let 2i2c Engineers control infrastructure that is located in cloud accounts that you control.
+There are two ways to set up the cloud account behind your hub:
 
-These sections describe some common actions that need to be taken on cloud providers.
+1. 2i2c can manage the cloud account on your behalf.
+2. You own the cloud account and grant 2i2c the access it needs.
+
+We recommend the **second** model, where you procure cloud infrastructure yourself, you pay the cloud vendor directly, and cloud costs are always visible to you.
+
+If you take this approach, 2i2c needs access to the cloud account to build and operate your infrastructure.
+This page describes how to grant that access.
+
+:::{admonition} 2i2c is not a cloud reseller
+
+2i2c doesn't have a reseller relationship with any cloud provider.
+For example, it does not have negotiated discounted pricing with either vendor.
+
+:::
 
 ## Provision a paid cloud provider account for 2i2c
 
@@ -12,9 +25,6 @@ cloud provider account on [Google Cloud Platform](https://cloud.google.com),
 This page will provide guidance on how to do that.
 
 ### Google Cloud Platform
-
-Currently, Google Cloud Platform (GCP) is 2i2c's preferred cloud provider. 2i2c
-access can be set up in a couple different ways.
 
 #### Full billing account access
 
