@@ -48,6 +48,20 @@ This provides visual dashboards that allow us to identify abnormal behavior on a
 
 See [](../monitoring/index.md) for more information about monitoring tools available to hub administrators.
 
+## Controlling write access to the user environment
+
+If your community manages its own hub image, your community will control who can change it.
+Environments are generally defined via configuration files in a dedicated GitHub repository.
+You control who can modify your user environment by modifying the permissions and access to this repository.
+You can give people edit access directly, or set up a Pull Request workflow so that a hub administrator reviews proposed changes to the configuration files before merging.
+
+A bot account is provisioned to build Docker images, and a GitHub Workflow pushes to an image registry whenever changes are made (typically on [quay.io](https://quay.io)).
+Users generally do not have permissions to push images directly themselves.
+
+See [](../environment/update-community-image.md) for more details.
+
+
+
 ## Additional security configuration
 
 Beyond these baseline protections, hub administrators can configure additional security features:
