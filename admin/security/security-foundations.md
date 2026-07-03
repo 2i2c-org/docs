@@ -60,8 +60,6 @@ Users generally do not have permissions to push images directly themselves.
 
 See [](../environment/update-community-image.md) for more details.
 
-
-
 ## Additional security configuration
 
 Beyond these baseline protections, hub administrators can configure additional security features:
