@@ -35,6 +35,16 @@ Some key terms about CILogon authentication worth mentioning:
 ### [GitHub](https://github.com/)
 Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub admin panel](admin/management/admin-panel), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
 
+### Shared password
+
+A single password that all users share, with each user choosing their own username at login.
+This is the simplest option and is useful for short events and workshops where managing individual accounts is impractical.
+Because anyone with the password can log in, it is less secure and we don't recommend it for long-running hubs.
+A **separate admin password** can be set so that hub admins keep access to the [admin panel](admin/management/admin-panel).
+See [our blog post on shared password hubs](https://2i2c.org/blog/shared-password-admin/) for more background.
+
+To set or change either password, open a {doc}`support ticket <../../support>`.
+
 ### `<a different provider>`
 We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. However, this should be used as a last resort and will come with an increase in management cost, to offset the extra engineering complexity. Please reach out to us if none of those above work for your use-case.
 
