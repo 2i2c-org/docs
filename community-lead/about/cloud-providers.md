@@ -59,4 +59,7 @@ The choice of cloud provider depends on several factors:
 - **Cost and funding**: Different providers have different pricing models, and some communities may have credits or grants for specific providers.
 - **Access and eligibility**: Public cloud providers like JetStream2 may have specific eligibility requirements.
 
+Whichever provider you choose, you can own the cloud account yourself (recommended) or have 2i2c manage it for you.
+See [](#cloud-account:models) for the trade-offs.
+
 If you're unsure which provider is right for your community, contact 2i2c support to discuss your needs.

@@ -4,6 +4,7 @@
 
 We pass through cloud costs directly to our communities in a transparent manner.
 This encourages us to continually reduce the cloud costs for our communities, and helps them understand how their decisions affect their cloud bill.
+See [](#cloud-account:models) for whether you or 2i2c should own the cloud account behind your hub.
 
 :::{admonition} This focuses on Google Cloud Platform but the principles are the same
 Much of this content is written with the Google Cloud Platform machine names, concepts, etc. However the basic ideas are generally applicable on whatever [cloud provider](../../community-lead/about/cloud-providers.md).

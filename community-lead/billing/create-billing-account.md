@@ -1,14 +1,20 @@
-# Billing and cloud accounts
+# Set up your cloud account
+
+(cloud-account:models)=
+## Who owns the cloud account
 
 There are two ways to set up the cloud account behind your hub:
 
-1. 2i2c can manage the cloud account on your behalf.
-2. You own the cloud account and grant 2i2c the access it needs.
+**You own the cloud account (recommended).**
+You establish the billing relationship with your preferred cloud vendor and grant 2i2c the access it needs to build and operate your infrastructure.
+You pay the vendor directly, so your cloud costs are always visible to you.
 
-We recommend the **second** model, where you procure cloud infrastructure yourself, you pay the cloud vendor directly, and cloud costs are always visible to you.
+**2i2c owns the cloud account.**
+We deploy your infrastructure into a 2i2c-owned cloud account and pass the cloud costs through to you on our invoice, with no markup.
+This adds reporting and administrative overhead for both of us, so we recommend bringing your own account when possible.
 
-If you take this approach, 2i2c needs access to the cloud account to build and operate your infrastructure.
-This page describes how to grant that access.
+If you bring your own account, 2i2c needs access to it.
+The rest of this page describes how to grant that access.
 
 :::{admonition} 2i2c is not a cloud reseller
 
@@ -17,12 +23,14 @@ For example, it does not have negotiated discounted pricing with either vendor.
 
 :::
 
-## Provision a paid cloud provider account for 2i2c
+## Grant 2i2c access to your account
 
-For 2i2c to build & manage your JupyterHub, it needs *full* access to a
+To build and manage your JupyterHub, 2i2c needs *full* access to a
 cloud provider account on [Google Cloud Platform](https://cloud.google.com),
 [Amazon Web Services](https://aws.amazon.com), or [Azure](https://azure.microsoft.com).
-This page will provide guidance on how to do that.
+
+The sections below show how to do this for a few major platforms.
+For any of them, we're happy to step you through the process: [contact 2i2c support](../../support.md) if you need help.
 
 ### Google Cloud Platform
 
@@ -86,3 +94,19 @@ extra access grants.
 6. Click 'Save'. This sends 2i2c staff an invitation to your project.
 
 The 2i2c team will confirm once they've accepted the invitation and can proceed with setup.
+
+### Amazon Web Services
+
+We haven't written 2i2c-specific instructions for AWS yet.
+Start with the AWS documentation to [create an account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html) and [grant IAM access](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html), then [contact 2i2c support](../../support.md) for the access our engineers need.
+
+### Microsoft Azure
+
+We haven't written 2i2c-specific instructions for Azure yet.
+Start with the Azure documentation to [create a subscription](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription) and [assign roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal), then [contact 2i2c support](../../support.md) for the access our engineers need.
+
+### JetStream2 and CloudBank
+
+Public providers like [JetStream2](https://docs.jetstream-cloud.org/getting-started/overview/) and [CloudBank](https://www.cloudbank.org/) grant access through allocations and grants rather than a billing account you create yourself.
+They also restrict access to certain kinds of users and communities, so you'll need to double-check if you fit within their target user first.
+Their processes vary, so [contact 2i2c support](../../support.md) and we'll advise on the right setup if you think you might be a good fit.
