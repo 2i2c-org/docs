@@ -1,7 +1,7 @@
 # Grafana dashboards
 
 :::{note}
-Grafana dashboards are only available to communities on **dedicated** AWS clusters (and excludes CloudBank-managed accounts). If a community is on a shared cluster and would like to discuss transitioning, please contact [partnerships@2i2c.org](mailto:partnerships@2i2c.org).
+Grafana dashboards are only available to communities on **dedicated** AWS clusters (and excludes CloudBank-managed accounts).
 :::
 
 To find the URL to the Grafana dashboard for your community, use the [List of Running Hubs](https://infrastructure.2i2c.org/reference/hubs/) table.
