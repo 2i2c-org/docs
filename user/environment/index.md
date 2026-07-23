@@ -7,6 +7,7 @@ There are a few ways that hub administrators can expose custom environments to t
 :maxdepth: 1
 choose.md
 dynamic-imagebuilding.md
+notebook-ci.md
 ```
 
 :::{admonition} Ask a hub administrator if these are not enabled
