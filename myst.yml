@@ -1,0 +1,47 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+extends:
+  - ./_data/toc.yml
+project:
+  id: 2i2c-docs
+  title: Community Hub Guide
+  github: https://github.com/2i2c-org/docs
+  exclude:
+    - README.md
+    - CONTRIBUTING.md
+  references:
+    tc: https://compass.2i2c.org/
+    infra: https://infrastructure.2i2c.org/
+    z2jh: https://z2jh.jupyter.org/en/latest/
+  error_rules:
+    - rule: link-resolves
+      severity: ignore
+      keys:
+        - "https://openstoragenetwork.org**" # It incorrectly fails with `Max retries exceeded with url`
+        - "https://docs.github.com**" # Returns 403 Forbidden to automated link checks
+        - "https://access.redhat.com**" # Returns 403 Forbidden to automated link checks
+        - "https://www.mathworks.com**" # Returns 403 Forbidden to automated link checks
+        - "https://rstudio.com**" # Times out for the link checker but loads fine in a browser
+        - "https://blog.jupyter.org**" # Intermittent SSL/certificate errors from the link checker
+        - "https://files.frameshiftconsulting.com**" # PDF returns 415 Unsupported Media Type to the checker
+site:
+  template: book-theme
+  nav:
+    - title: Team Compass
+      url: https://compass.2i2c.org
+    - title: Infrastructure Guide
+      url: https://infrastructure.2i2c.org
+    - title: 2i2c Blog
+      url: https://2i2c.org/blog
+  actions:
+    - title: Support
+      url: https://docs.2i2c.org/support/
+  parts:
+    footer: parts/footer.md
+  options:
+    folders: true
+    analytics_plausible: docs.2i2c.org
+    logo_text: Community Hub Guide
+    favicon: ./_static/images/favicon.png
+    logo: ./_static/images/logo.webp
+    logo_dark: ./_static/images/logo-dark.webp
