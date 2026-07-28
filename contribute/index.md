@@ -5,11 +5,9 @@ Welcome! This guide is for anyone who wants to **contribute to this documentatio
 ## Quick Start
 
 ::::{grid} 2
-:gutter: 2
 
 :::{grid-item-card}
-:link: overview
-:link-type: doc
+:link: overview.md
 
 📖 **Documentation Strategy**
 
@@ -17,8 +15,7 @@ Structure and approach
 :::
 
 :::{grid-item-card}
-:link: mvp
-:link-type: doc
+:link: mvp.md
 
 📝 **Add new documentation**
 
@@ -26,8 +23,7 @@ Minimal viable documentation guidelines
 :::
 
 :::{grid-item-card}
-:link: get-started
-:link-type: doc
+:link: get-started.md
 
 🚀 **Get Started**
 
@@ -35,8 +31,7 @@ Set up and build locally
 :::
 
 :::{grid-item-card}
-:link: style
-:link-type: doc
+:link: style.md
 
 ✍️ **Style Guide**
 
@@ -44,8 +39,7 @@ Writing conventions
 :::
 
 :::{grid-item-card}
-:link: terminology
-:link-type: doc
+:link: terminology.md
 
 📚 **Terminology**
 

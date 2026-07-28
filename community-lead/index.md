@@ -5,11 +5,9 @@ Welcome! This guide is for **community leaders and administrators**: PIs, decisi
 ## Quick Start
 
 ::::{grid} 2
-:gutter: 2
 
 :::{grid-item-card}
-:link: get-started
-:link-type: doc
+:link: get-started.md
 
 🚀 **Get Started**
 
@@ -17,8 +15,7 @@ Leadership orientation
 :::
 
 :::{grid-item-card}
-:link: about/index
-:link-type: doc
+:link: about/index.md
 
 ℹ️ **About the Service**
 
@@ -26,8 +23,7 @@ Service model and features
 :::
 
 :::{grid-item-card}
-:link: billing/index
-:link-type: doc
+:link: billing/index.md
 
 💰 **Understand Costs**
 
@@ -35,8 +31,7 @@ Billing and cloud spending
 :::
 
 :::{grid-item-card}
-:link: user-policy/index
-:link-type: doc
+:link: user-policy/index.md
 
 📋 **Set Policies**
 
@@ -46,12 +41,9 @@ User policies and governance
 ::::
 
 ::::{grid} 1
-:gutter: 0
 
 :::{grid-item-card} Need help?
-:text-align: center
-:link: ../support
-:link-type: doc
+:link: ../support.md
 
 Contact 2i2c Support for assistance with your service
 :::
@@ -69,18 +61,15 @@ Contact 2i2c Support for assistance with your service
 ## Other Guides
 
 ::::{grid} 2
-:gutter: 2
 
 :::{grid-item-card} 👤 Hub User Guide
-:link: ../user/index
-:link-type: doc
+:link: ../user/index.md
 
 For those using a hub for their research and work
 :::
 
 :::{grid-item-card} 👨‍💻 Hub Administrator Guide
-:link: ../admin/index
-:link-type: doc
+:link: ../admin/index.md
 
 For those who manage hub configuration, users, and settings
 :::
