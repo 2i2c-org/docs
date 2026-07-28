@@ -8,10 +8,7 @@ Here we provide a high-level overview of our service and the major teams, proces
 :::{admonition} Want to partner with us?
 If you're interested in setting up a service for your community, click the button below to send us an email.
 
-```{button-link} mailto:hello@2i2c.org
-:color: primary
-Send us an email.
-```
+{button}`Send us an email.<mailto:hello@2i2c.org>`
 :::
 
 
@@ -20,11 +17,7 @@ Send us an email.
 Our hub service is a collaboration between 2i2c and one or more communities.
 We break down the responsibilities that must be carried out in order to successfully run a service.
 We can then assign or share these responsibilities with partner communities according to their needs and interests.
-
-```{toctree}
-:maxdepth: 2
-shared-responsibility
-```
+See [our shared responsibility model](./shared-responsibility.md) for details.
 
 (overview/right-to-replicate)=
 ## Your Right to Replicate your infrastructure
@@ -59,8 +52,4 @@ To learn more about how the infrastructure works, see the [infrastructure docume
 
 Our Service Level Objectives define our **goals in running the service** for each partner community.
 This includes goals like service uptime and support responsiveness.
-
-```{toctree}
-:maxdepth: 2
-service-objectives.md
-```
+See [our Service Level Objectives](./service-objectives.md) for details.
