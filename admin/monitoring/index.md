@@ -4,18 +4,8 @@
 
 This section describes how to access and use these monitoring tools for your hub. Note that not all features are available for all hubs – please [contact us](/support) if you would like to discuss enabling a feature for your community with us.
 
-```{toctree}
-:maxdepth: 1
-grafana-dashboards
-jupyterhub-dashboards
-cost-general
-cost-users-groups
-disk-usage
-reporting
-prometheus-grafana-access
-prometheus-grafana-cost
-prometheus-api-access
-alerts
+```{tableofcontents}
+:context: children
 ```
 
 ## Feedback and support

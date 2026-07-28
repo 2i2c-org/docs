@@ -60,17 +60,8 @@ Contact 2i2c Support for assistance with your hub
 
 ## All Administrator Topics
 
-```{toctree}
-:maxdepth: 2
-
-get-started
-environment/index
-user-management/index
-community/index
-monitoring/index
-reliability/index
-security/index
-service-lifecycle/index
+```{tableofcontents}
+:context: children
 ```
 
 ---

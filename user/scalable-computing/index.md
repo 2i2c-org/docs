@@ -1,6 +1,5 @@
 # Scalable computing
 
-```{toctree}
-launch-dask-gateway-cluster.md
-gpu-sharing.md
+```{tableofcontents}
+:context: children
 ```

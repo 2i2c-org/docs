@@ -68,17 +68,8 @@ Common questions about using your hub
 
 ## All User Topics
 
-```{toctree}
-:maxdepth: 2
-
-get-started
-basics/index
-data/index
-environment/index
-sharing/index
-scalable-computing/index
-usage-quota-dashboard
-service-lifecycle/index
+```{tableofcontents}
+:context: children
 ```
 
 ---

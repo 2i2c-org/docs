@@ -3,11 +3,8 @@
 JupyterHub can be configured to allow users to select their own environments before launching an interactive session.
 There are a few ways that hub administrators can expose custom environments to their users. Below are a few sections that describe each one.
 
-```{toctree}
-:maxdepth: 1
-choose.md
-dynamic-imagebuilding.md
-notebook-ci.md
+```{tableofcontents}
+:context: children
 ```
 
 :::{admonition} Ask a hub administrator if these are not enabled

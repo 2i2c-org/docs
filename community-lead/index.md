@@ -60,15 +60,8 @@ Contact 2i2c Support for assistance with your service
 
 ## All Leadership Topics
 
-```{toctree}
-:maxdepth: 2
-
-get-started
-about/index
-billing/index
-community/management
-user-policy/index
-service-lifecycle/index
+```{tableofcontents}
+:context: children
 ```
 
 ---

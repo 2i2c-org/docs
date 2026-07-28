@@ -113,24 +113,11 @@ Contact 2i2c team
 
 ## Full Documentation
 
-```{toctree}
-:maxdepth: 2
-:hidden:
-
-user/index
-admin/index
-community-lead/index
-contribute/index
-support
-```
-
 ---
 
 ::::{grid} 1
-:gutter: 0
 
 :::{grid-item-card} 🆘 Need Help?
-:text-align: center
 
 [Contact 2i2c Support](support.md) • [Check Status Page](admin/reliability/status-page.md)
 :::

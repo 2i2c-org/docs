@@ -56,12 +56,6 @@ Key terms and definitions
 
 ## All Contributing Topics
 
-```{toctree}
-:maxdepth: 2
-
-overview
-mvp
-get-started
-style
-terminology
+```{tableofcontents}
+:context: children
 ```
