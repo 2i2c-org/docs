@@ -1,21 +1,20 @@
 # Configuration on how ReadTheDocs (RTD) builds our documentation
 # ref: https://readthedocs.org/projects/2i2c-pilot-documentation/
 # ref: https://docs.readthedocs.io/en/stable/config-file/v2.html
+# ref: https://mystmd.org/guide/deployment-readthedocs
 version: 2
 
 build:
-  os: ubuntu-26.04
+  os: ubuntu-lts-latest
   tools:
-    python: "3.14"
-    nodejs: "24"
-
-sphinx:
-  configuration: conf.py
-  builder: dirhtml
-
-# Explicitly opt out of trying to build additional formats such as PDF and ePub
-formats: []
-
-python:
-  install:
-    - requirements: requirements.txt
+    python: "3.12"
+    nodejs: "20"
+  commands:
+    - pip install mystmd
+    - python scripts/download-images.py
+    - myst build --html
+    # Copy the output to Read the Docs expected location
+    - mkdir -p $READTHEDOCS_OUTPUT/html/
+    - cp -r _build/html/. "$READTHEDOCS_OUTPUT/html"
+    # Clean up build artifacts so RTD doesn't find them
+    - rm -rf _build
