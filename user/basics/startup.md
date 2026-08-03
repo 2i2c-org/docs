@@ -31,5 +31,5 @@ When a user server starts, JupyterHub then finds and loads the **environment ima
 
 
 ```{important}
-Startup time can be reduced through strategies like maintaining minimum node counts or pre-pulling images, but these increase costs. Learn more about balancing responsiveness and cost in [](community-lead:billing:responsiveness).
+Startup time can be reduced through strategies like maintaining minimum node counts or pre-pulling images, but these increase costs. Learn more about balancing responsiveness and cost in [](#community-lead:billing:responsiveness).
 ```

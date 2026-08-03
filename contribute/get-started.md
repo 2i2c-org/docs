@@ -1,6 +1,6 @@
 # Get started contributing
 
-Most of this repository is structured for **Sphinx**, a documentation engine in Python.
+This repository is built with the [MyST Document Engine](https://mystmd.org).
 
 ## Build the documentation locally
 
@@ -25,7 +25,7 @@ This should create a local environment in a `.nox` folder, build the documentati
 To build live documentation that updates when you update local files, run the following command:
 
 ```
-nox -s docs -- live
+nox -s docs-live
 ```
 
 ## Documentation deployment

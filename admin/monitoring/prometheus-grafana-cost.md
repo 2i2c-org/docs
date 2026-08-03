@@ -9,7 +9,7 @@ The cost monitoring API returns data as JSON blobs, unlike standard Prometheus t
 ## Prerequisites
 
 - A Grafana service account token (see [](./prometheus-grafana-access.md) for instructions)
-- A `.env` file to securely store your Grafana token (see {ref}`managing-secrets`)
+- A `.env` file to securely store your Grafana token (see [](#managing-secrets))
 - A virtual environment with the following Python packages installed:
   - `python-dotenv`
   - `requests`

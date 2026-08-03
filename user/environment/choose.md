@@ -52,7 +52,7 @@ jovyan@user:~$ echo $JUPYTER_IMAGE
 ```
 
 ```{note}
-If the image isn't already cached on a node, it will need to be pulled from the container registry, which can add several minutes to startup time. Learn more about startup times in [](user:faq:startup-time).
+If the image isn't already cached on a node, it will need to be pulled from the container registry, which can add several minutes to startup time. Learn more about startup times in [](#user:faq:startup-time).
 ```
 
 ### The "Dynamic Image Building" option

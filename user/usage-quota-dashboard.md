@@ -49,7 +49,7 @@ before you reach your quota. If you are already locked out and cannot start your
 server, contact your hub administrator for help removing stale data.
 
 For more on how home directory storage works and how to check your usage from a
-terminal, see {ref}`Per-User Storage Quotas <filesystem:storage-quotas>`.
+terminal, see [Per-User Storage Quotas](#filesystem:storage-quotas).
 
 (usage-dashboard:compute)=
 

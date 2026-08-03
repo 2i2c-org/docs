@@ -33,17 +33,17 @@ Some key terms about CILogon authentication worth mentioning:
 : Within an institution, each user is expected to have their own user account (e.g. `myname@berkeley.edu`). This is the account that is used to give somebody an ID on their JupyterHub. This is entered on an Identity Provider's login screen.
 
 ### [GitHub](https://github.com/)
-Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub admin panel](admin/management/admin-panel), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
+Extremely popular community of people creating, publishing and collaborating on code. Accounts are free, and many people already have them especially since the target community for most hubs are people who also write some kind of code. We can setup GitHub authentication so you can either manage a list of specific GitHub handles in the [JupyterHub admin panel](#admin/management/admin-panel), or so that members of a specific GitHub organisation or team are automatically authorised to use the hub.
 
 ### Shared password
 
 A single password that all users share, with each user choosing their own username at login.
 This is the simplest option and is useful for short events and workshops where managing individual accounts is impractical.
 Because anyone with the password can log in, it is less secure and we don't recommend it for long-running hubs.
-A **separate admin password** can be set so that hub admins keep access to the [admin panel](admin/management/admin-panel).
+A **separate admin password** can be set so that hub admins keep access to the [admin panel](#admin/management/admin-panel).
 See [our blog post on shared password hubs](https://2i2c.org/blog/shared-password-admin/) for more background.
 
-To set or change either password, open a {doc}`support ticket <../../support>`.
+To set or change either password, open a [support ticket](../../support.md).
 
 ### `<a different provider>`
 We may be able to support other authentication providers, depending on your specific needs and the provider's complexity. However, this should be used as a last resort and will come with an increase in management cost, to offset the extra engineering complexity. Please reach out to us if none of those above work for your use-case.
@@ -60,7 +60,7 @@ specify which users are *authorized* to be on the hub.
 Authorizing regular users
 : Currently, there are only three supported methods for authorizing regular users:
 
-  1. {ref}`Manually add users<admin/management/admin-panel>` via the admin panel in JupyterHub
+  1. [Manually add users](#admin/management/admin-panel) via the admin panel in JupyterHub
   2. (CILogon only) Allow all users who are logged in via a particular domain - so
      you can allow access to anyone who is part of your organization or
      educational institution.
@@ -128,7 +128,7 @@ if you add them later, their files will still be present.
 
 ### GitHub Organizations and Teams
 
-Hub admins can control access to their hub by adding users to their GitHub Organization and Team. Hub admins require *Owner* permissions for their GitHub Organization in order to {ref}`invite non-members<manage-users:github-org>` to it (team maintainers or regular members do not have the power to invite non-members to GitHub Organizations). Inviting a user to the organization does not automatically grant the user access to a hub. A member of a GitHub Organization must be added to a {ref}`GitHub Team<manage-users:github-team>` associated with the hub in order to log into the hub with their GitHub credentials.
+Hub admins can control access to their hub by adding users to their GitHub Organization and Team. Hub admins require *Owner* permissions for their GitHub Organization in order to [invite non-members](#manage-users:github-org) to it (team maintainers or regular members do not have the power to invite non-members to GitHub Organizations). Inviting a user to the organization does not automatically grant the user access to a hub. A member of a GitHub Organization must be added to a [GitHub Team](#manage-users:github-team) associated with the hub in order to log into the hub with their GitHub credentials.
 
 #### First time setup
 
@@ -194,7 +194,7 @@ Members can be removed from the organization by going to the *People* menu tab.
 (manage-users:github-team)=
 #### Manage your GitHub Team
 
-A GitHub Team is defined and specially linked to a hub's configuration when it is initially deployed. This special GitHub Team should be known to hub administrators. If not, please contact your community representative who deployed the hub or open a 2i2c {doc}`support ticket<../../support>`.
+A GitHub Team is defined and specially linked to a hub's configuration when it is initially deployed. This special GitHub Team should be known to hub administrators. If not, please contact your community representative who deployed the hub or open a 2i2c [support ticket](../../support.md).
 
 ##### Add a member to the team
 
@@ -238,7 +238,7 @@ Hub admins can remove user access to a hub by removing their account from the Gi
 ## Finding usernames
 
 Usernames are assigned depending on the kind
-of [authentication provider](admin/configuration/authentication) your hub is
+of [authentication provider](#admin/configuration/authentication) your hub is
 using. In general, it matches whatever the visible 'username' in your
 authentication provider is. The table below lists the available providers, and
 how to determine their username.

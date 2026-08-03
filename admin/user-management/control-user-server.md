@@ -42,7 +42,7 @@ Accessing a user's server is useful when trying to debug or reproduce an issue t
    
 ### Access user logs
 
-For user images that are [built with repo2docker](environment:image) and that do not define a custom `Dockerfile`, the logs of each user's Jupyter server are located in their home directory, at `~/.jupyter-server-log.txt`.
+For user images that are [built with repo2docker](#environment:image) and that do not define a custom `Dockerfile`, the logs of each user's Jupyter server are located in their home directory, at `~/.jupyter-server-log.txt`.
 These contain information about every event that occurred as a part of a user's session, and are useful for debugging unexpected errors and problems.
 
 For example, to print the contents of your own user server log:
@@ -54,7 +54,7 @@ For example, to print the contents of your own user server log:
    $ cat ~/.jupyter-server-log.txt
    ```
 
-To access a **different user's** server logs, you can [access their server](user-server:access) and run the same command above to print their logs.
+To access a **different user's** server logs, you can [access their server](#user-server:access) and run the same command above to print their logs.
 
 (user-server/stopping)=
 ### Stop or start a user's server
@@ -86,7 +86,7 @@ a long running process in the notebook. This timeout can be configured.
 % TODO: Add link to SRE guide on how to configure this, once it exists
 
 "Culling a user server" has the same effect as [stopping a user
-server](user-server/stopping), but should be distinguished from "culling a
+server](#user-server/stopping), but should be distinguished from "culling a
 kernel" inside a user server. [jupyterhub-idle-culler] is only involved in
 culling user servers, not culling kernels.
 
@@ -114,7 +114,7 @@ By default, kernels will be checked for activity **every `5 minutes`**.
 All kernels that haven't shown activity in **in the last hour** will be stopped by the [jupyterhub-idle-culler](https://github.com/jupyterhub/jupyterhub-idle-culler).
 
 This window can be configured if you'd like to change the window of inactivity needed before user kernels will be stopped.
-See the {ref}`Infrastructure guide<infra:configure:culling>` for some documentation on this.
+See the [Infrastructure guide](xref:infra#configure:culling) for some documentation on this.
 
 % TODO: Add link to SRE guide on how to configure this, once it exists
 

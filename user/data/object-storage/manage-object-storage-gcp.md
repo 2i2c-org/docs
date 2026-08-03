@@ -119,6 +119,7 @@ We outline workflows for two scenarios:
 The following workflows assume you have a Unix-like operating system from outside the hub.
 ```
 
+(small-datasets-from-your-local-machine)=
 ### Small datasets from your local machine
 
 For small datasets that can be uploaded from your local machine, e.g. laptop or PC, you can generate a temporary access token on the hub to upload data to the GCP bucket. Keep this token safe and do not expose it publicly on a shared system.
@@ -180,6 +181,7 @@ For small datasets that can be uploaded from your local machine, e.g. laptop or 
    Note the trailing slash `/` after `$SCRATCH_BUCKET`.
    ```
 
+(large-datasets-from-a-remote-server)=
 ### Large datasets from a remote server
 
 ```{note}
@@ -290,19 +292,19 @@ gcloud auth application-default revoke
 
 - *How do I determine if a scratch and/or persistent bucket is already available?*
 
-  Check whether the environment variables for each bucket are set. See {ref}`Scratch buckets<object-storage:env-var-scratch>` and {ref}`Persistent buckets<object-storage:env-var-persistent>`
+  Check whether the environment variables for each bucket are set. See [Scratch buckets](#object-storage:env-var-scratch) and [Persistent buckets](#object-storage:env-var-persistent)
 
 - *If storage buckets are not set up but I want them for my community what should I do?*
 
-  This feature is not enabled by default since there are extra cloud costs associated with providing object storage. Please speak to your Hub Champion, who can then open a {doc}`2i2c support<../../../../support>` ticket with us to request this feature for your hub.
+  This feature is not enabled by default since there are extra cloud costs associated with providing object storage. Please speak to your Hub Champion, who can then open a [2i2c support](../../../../support.md) ticket with us to request this feature for your hub.
 
 - *Will 2i2c create additional, new storage buckets for our community?*
 
-  Please contact contact your Hub Champion to liaise with {doc}`2i2c support<../../../../support>` to discuss this option.
+  Please contact contact your Hub Champion to liaise with [2i2c support](../../../../support.md) to discuss this option.
 
 - *If a our hub is running on AWS or Azure and we have object storage, what are our options?*
 
-  Check out our resources listed in the {doc}`Cloud Object Storage<index>` user topic guide.
+  Check out our resources listed in the [Cloud Object Storage](index.md) user topic guide.
 
 ## Acknowledgements
 

@@ -22,18 +22,15 @@ docs/
           └── customize.md    # Specific topic
 ```
 
-Each archetype is explained on our documentation landing page in a section like the following:
+The site's table of contents lives in [`_data/toc.yml`](https://github.com/2i2c-org/docs/blob/main/_data/toc.yml), with one top-level entry per archetype:
 
-````md
-## [archetype]
-
-[short description of archetype]
-
-```{toctree}
-:caption: [archetype]
-./[archetype]/[topic]/page.md
+```yaml
+- file: [archetype]/index.md
+  children:
+  - file: [archetype]/[topic]/page.md
 ```
-````
+
+Add new pages to `_data/toc.yml` or they won't appear in the site navigation.
 
 ## Reader archetypes / personas
 
@@ -52,4 +49,4 @@ There are a few special topics we include as top-level guides.
 
 ## Writing documentation
 
-When adding new documentation, follow our {ref}`mvp` guidelines to ensure pages are actionable and value-focused.
+When adding new documentation, follow our [](#mvp) guidelines to ensure pages are actionable and value-focused.

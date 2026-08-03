@@ -77,7 +77,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 
 1. Click the ![Git icon](images/git.svg) Git icon in the left sidebar to open the JupyterLab Git extension.
 
-1. Clone the forked repository from {ref}`Set up the GitHub repository and connect it to quay.io<customize-image:set-up-github>` into the hub by the clicking *Clone a Repository* button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
+1. Clone the forked repository from [Set up the GitHub repository and connect it to quay.io](#customize-image:set-up-github) into the hub by the clicking *Clone a Repository* button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
 
 1. Change the working directory by double-clicking *example-inherit-from-community-image* in the file explorer on the left side of the screen.
 
@@ -147,7 +147,7 @@ Once complete, under the section *Repository secrets* you should now see two row
     
 ### Trigger build and test the custom image
     
-1. Stage, commit and push your changes by following the similar steps in Section {ref}`Build base image<customize-image:build-base-image>`.
+1. Stage, commit and push your changes by following the similar steps in Section [Build base image](#customize-image:build-base-image).
 
 1. Visit your GitHub repository at `https://github.com/<username>/example-inherit-from-community-image` and click the *Compare & pull request* button.
     
@@ -159,7 +159,7 @@ Once complete, under the section *Repository secrets* you should now see two row
     
 1. Click *Create pull request* to confirm, which triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build and push your image to the quay.io registry.
 
-1. When the GitHub actions have completed, it is important to test your image is working as expected by following either {ref}`Test the custom image on a 2i2c hub<customize-image:test-hub>` or {ref}`Test the custom image with Binder<customize-image:test-binder>`.
+1. When the GitHub actions have completed, it is important to test your image is working as expected by following either [Test the custom image on a 2i2c hub](#customize-image:test-hub) or [Test the custom image with Binder](#customize-image:test-binder).
 
 (customize-image:test-hub)=
 #### Test the custom image with a 2i2c hub

@@ -1,7 +1,7 @@
 (environment/custom)=
 # Customize your user environment
 
-While all hubs [come with a default environment](environment/default), it is possible to create a custom user environment for the hub. Here are a few ways that you can do this.
+While all hubs [come with a default environment](#environment/default), it is possible to create a custom user environment for the hub. Here are a few ways that you can do this.
 
 (environment:image)=
 ## Create your own image
@@ -13,15 +13,7 @@ There are two ways that you can do this:
 
 1. [Update a community-maintained upstream image](./update-community-image.md) – add required software packages to an existing community-maintained upstream image. This is the recommended approach for most use cases since this reduces the maintenance burden of keeping the image up to date.
 
-   ```{toctree}
-   :hidden:
-   update-community-image.md
-   ```
 1. [Build your own custom image from scratch](./hub-user-image-template-guide.md) – build a new image from scratch that contains all the required software packages. This is an advanced approach if you want full control beyond what is available through community-maintained images.
-   ```{toctree}
-   :hidden:
-   hub-user-image-template-guide.md
-   ```
 (customize-image:link-custom-image)=
 ## Link a custom image to your hub
 
@@ -52,11 +44,11 @@ Follow these steps any time you need to update the environment image that is use
 ## Create multiple environments for users to select
 
 If your hub's community has workflows that differ significantly, it can be useful to create multiple user environments for your hub.
-This uses {ref}`Jupyter Hub User Profiles<z2jh:multiple-profiles>` to create a menu of environment options when a user launches a new session.
+This uses [Jupyter Hub User Profiles](xref:z2jh#multiple-profiles) to create a menu of environment options when a user launches a new session.
 
 To add multiple environments for your hub, take these steps:
 
-1. Follow the steps in [](environment:image) for each environment you wish to offer your hub's users.
+1. Follow the steps in [](#environment:image) for each environment you wish to offer your hub's users.
    You should have one repository per environment, and each one should push to a Docker image registry via the repo2docker action.
 2. [Open a support request](../../support.md) requesting that your hub be set up to serve multiple user environments.
    A 2i2c engineer will assist you in configuring the hub to set up multiple environments.

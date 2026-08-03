@@ -23,7 +23,7 @@ See [Grafana docs – Service Accounts](https://grafana.com/docs/grafana/latest/
 
 ### Configure Grafana Token access
 
-See {ref}`managing-secrets` for a general guide to configuring access to the Grafana Token in a local development environment or while deploying with GitHub actions.
+See [](#managing-secrets) for a general guide to configuring access to the Grafana Token in a local development environment or while deploying with GitHub actions.
 
 (hub-activity:python-packages)=
 ### Python packages
