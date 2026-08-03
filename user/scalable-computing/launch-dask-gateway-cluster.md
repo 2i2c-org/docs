@@ -88,7 +88,7 @@ Manually scale the cluster size to a fixed number of workers.
 
 1. Expand the *Manual scaling* dropdown in the cluster widget.
 1. Select the number of workers.
-1. Click **Scale** to confirm.
+1. Click {gui}`Scale` to confirm.
 
 :::{image} media/dask-scaling-manual.png
 :alt: Screenshot of an interactive cluster widget to configure manual worker scaling.
@@ -101,7 +101,7 @@ Adapt the cluster size dynamically based on current load. This helps to scale up
 
 1. Expand the *Adaptive scaling* dropdown in the cluster widget.
 1. Select the minimum and maximum number of workers.
-1. Click **Adapt** to confirm.
+1. Click {gui}`Adapt` to confirm.
 
 :::{image} media/dask-scaling-adaptive.png
 :alt: Screenshot of an interactive cluster widget to configure adaptive worker scaling.

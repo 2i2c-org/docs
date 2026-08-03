@@ -8,7 +8,7 @@ Available for dedicated AWS clusters only (and excluding CloudBank managed accou
 
 Community Champions can view the cloud cost dashboards from their Grafana instance (please see [Grafana Dashboards](grafana-dashboards.md) for how to gain access).
 
-From the main menu of Grafana, navigate to *Dashboards > Cloud cost dashboards > General cloud costs* to view the dashboard.
+From the main menu of Grafana, navigate to {gui}`Dashboards > Cloud cost dashboards > General cloud costs` to view the dashboard.
 
 ## Understanding the cloud cost dashboard
 

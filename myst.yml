@@ -12,6 +12,7 @@ project:
   plugins:
     - src/support-button.mjs
     - https://github.com/myst-contrib/myst-iconify/releases/latest/download/index.mjs
+    - https://github.com/myst-contrib/myst-gui-text/releases/latest/download/index.mjs
     - https://github.com/jupyter-book/myst-plugins/releases/download/footer-latest/index.mjs
   references:
     tc: https://compass.2i2c.org/

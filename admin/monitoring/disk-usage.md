@@ -12,7 +12,7 @@ See [](./grafana-dashboards.md) for setting up Grafana on your hub.
 To access the disk usage dashboard:
 
 1. Navigate to your hub's [Grafana dashboard](grafana-dashboards.md)
-2. Go to {kbd}`Dashboards` → {kbd}`JupyterHub Default Dashboards` → {kbd}`Home Directory Usage Dashboard`
+2. Go to {gui}`Dashboards > JupyterHub Default Dashboards > Home Directory Usage Dashboard`
 
 :::{figure} images/home-directory-usage-dashboard.png
 :alt: Screenshot of the Home Directory Usage Dashboard showing a table of directories with their sizes and usage percentages

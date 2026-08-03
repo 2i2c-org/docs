@@ -10,7 +10,7 @@ Available for dedicated AWS clusters only (and excluding CloudBank managed accou
 
 ### Navigate to the *Cloud costs per user* dashboard
 
-From the Grafana homepage, navigate to *Home > Dashboards > Cloud cost dashboards* and then click on *Cloud costs per user*.
+From the Grafana homepage, navigate to {gui}`Home > Dashboards > Cloud cost dashboards` and then click on {gui}`Cloud costs per user`.
 
 This will load the dashboard, which may take a few moments to populate with data.
 
@@ -51,7 +51,7 @@ Some interactions may re-trigger additional queries to fetch data, so there may 
 
 ## Export data
 
-You can export the data from any panel by clicking on the panel menu in the top right corner, then selecting *Inspect > Data*. From there, you can view the raw data and export it in various formats, such as CSV or JSON.
+You can export the data from any panel by clicking on the panel menu in the top right corner, then selecting {gui}`Inspect > Data`. From there, you can view the raw data and export it in various formats, such as CSV or JSON.
 
 ## Resources
 

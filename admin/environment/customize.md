@@ -37,9 +37,9 @@ Follow these steps any time you need to update the environment image that is use
    :alt: Screenshot of 2i2c support ticket.
    ```
 
-1. In the *Topic of Request* option, select the *Image Change Request* option and in the *Description* provide a link to the full image tag. Include the image and tag from above.
+1. In the {gui}`Topic of Request` option, select the {gui}`Image Change Request` option and in the {gui}`Description` provide a link to the full image tag. Include the image and tag from above.
     
-1. Click the *Send button* to confirm the support ticket request.
+1. Click the {gui}`Send` button to confirm the support ticket request.
 
 ## Create multiple environments for users to select
 

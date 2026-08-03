@@ -88,20 +88,20 @@ Authorizing admin users
 
 The **Administrator Panel** can be used to maintain the list of users
 who are authorized to use your hub. You can access this panel by clicking
-the 'Admin' button in the top bar in your hub control panel.
+the {gui}`Admin` button in the top bar in your hub control panel.
 Alternatively, you can go to this URL in your browser:
 `https://<your-hub-url>/hub/admin`
 
 #### To add users
 
-1. Click the **Add Users** button. The **Add Users** dialog box will pop up.
-2. Add one or more users, and hit the **Add Users** button to authorize all the users you just added.
+1. Click the {gui}`Add Users` button. The {gui}`Add Users` dialog box will pop up.
+2. Add one or more users, and hit the {gui}`Add Users` button to authorize all the users you just added.
 
 `````{grid}
 
 ````{grid-item-card}
 ```{figure} ../../images/add-users-button.png
-The **Add Users** button in the Administrator Panel.
+The {gui}`Add Users` button in the Administrator Panel.
 ```
 ````
 
@@ -119,8 +119,8 @@ Fill in usernames and optionally make them administrators. You can add multiple 
 You can revoke a user's access to the JupyterHub by removing them from the allowed users list, using the admin panel.
 
 1. Find the name of the user in your admin panel. If they have a running server,
-   click the **Stop server** button to stop their running server.
-2. Click the **Delete user** button for this user. Confirm the deletion in
+   click the {gui}`Stop server` button to stop their running server.
+2. Click the {gui}`Delete user` button for this user. Confirm the deletion in
    the dialog box that pops up.
 
 After this, the user would not be able to log in. However, their files will not be deleted -
@@ -164,16 +164,16 @@ The OAuth app will now have the correct permissions to read the org info and hen
 :width: 100%
 :alt: Screenshot showing a list of members of the 2i2c-community-showcase GitHub Organization.
 
-Screenshot showing a list of [2i2c-community-showcase](https://github.com/orgs/2i2c-community-showcase/people) GitHub Organization members. The *People* tab menu is located at the top; the green *Invite member* button is located in the top right; the *Failed invitations* tab is located in the left sidebar and the *Member settings* icon is located next to each member account.
+Screenshot showing a list of [2i2c-community-showcase](https://github.com/orgs/2i2c-community-showcase/people) GitHub Organization members. The *People* tab menu is located at the top; the green *Invite member* button is located in the top right; the *Failed invitations* tab is located in the left sidebar and the {gui}`Member settings` icon is located next to each member account.
 
 :::
 
 1. Navigate to the GitHub Organization page at `https://github.com/<organization_name>`
-1. Invite a non-member to the organization by clicking the green *Invite member* button and searching by username, full name or email address.
+1. Invite a non-member to the organization by clicking the green {gui}`Invite member` button and searching by username, full name or email address.
 1. The invited user will receive an email and GitHub notification inviting them to join the GitHub Organization.
 
    :::{warning}
-   Invitations to join a GitHub Organization will expire after 7 days, after which you can cancel and then retry the invitation by clicking the *Failed invitations* tab in the left sidebar.
+   Invitations to join a GitHub Organization will expire after 7 days, after which you can cancel and then retry the invitation by clicking the {gui}`Failed invitations` tab in the left sidebar.
   
    :::
 
@@ -185,9 +185,9 @@ Members can be removed from the organization by going to the *People* menu tab.
 
 1. Click the ![member settings button](../../images/manage-users-github-settings.png) icon next to the member account you wish to remove.
 
-1. Select the *Remove from organization...* option.
+1. Select the {gui}`Remove from organization...` option.
 
-1. Confirm removal by clicking the *Remove members* button.
+1. Confirm removal by clicking the {gui}`Remove members` button.
 
 1. The user will receive an automatic email from GitHub notifying them that they have been removed from the organization.
 
@@ -200,7 +200,7 @@ A GitHub Team is defined and specially linked to a hub's configuration when it i
 
 Add members to the GitHub Team associated with the hub so that users can log into the hub with their GitHub credentials.
 
-1. From the GitHub Organization page `https://github.com/<organization_name>`, click on the *Teams* menu tab.
+1. From the GitHub Organization page `https://github.com/<organization_name>`, click on the {gui}`Teams` menu tab.
 1. Click on the GitHub Team that authorizes access to the hub see a list of members.
 
   :::{figure} ../../images/manage-users-github-team.png
@@ -211,9 +211,9 @@ Add members to the GitHub Team associated with the hub so that users can log int
   
   :::
 
-1. Invite an existing member of the organization to join the team by clicking the green *Add a member* button and searching by username, full name or email address.
+1. Invite an existing member of the organization to join the team by clicking the green {gui}`Add a member` button and searching by username, full name or email address.
   
-1. The account will instantly appear in the list of team members and the user does not need to accept an invitation to join. The user may choose to leave the team by clicking the *Leave team* button on the same page.
+1. The account will instantly appear in the list of team members and the user does not need to accept an invitation to join. The user may choose to leave the team by clicking the {gui}`Leave team` button on the same page.
 
 1. The user has authorization to log into the hub using their GitHub credentials 🎉
 
@@ -231,8 +231,8 @@ Hub admins can remove user access to a hub by removing their account from the Gi
 
 1. From the GitHub Team page `https://github.com/orgs/<organization_name>/teams/<team_name>`, check the box next to the member account you wish to remove (in this case, `jmunroe-testuser` in the screenshot above).
 1. Click the tab at the top of the list labelled *1 member selected*.
-1. Select *Remove from team* from the dropdown menu.
-1. Confirm your choice in the pop up by clicking *Remove members*.
+1. Select {gui}`Remove from team` from the dropdown menu.
+1. Confirm your choice in the pop up by clicking {gui}`Remove members`.
 1. The account will instantly disappear in the list of team members and the user will not be notified.
 
 ## Finding usernames

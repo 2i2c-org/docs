@@ -13,23 +13,23 @@ This instructional guide shows you how to add packages to a community-maintained
    
 1. We recommend using [quay.io](https://quay.io) to host your custom image. Navigate to [quay.io](https://quay.io) and log into your account.
 
-1. On quay.io, click {icon}`octicon:plus` *Create a new repository* and name your repository, e.g. `jupyter-scipy-xarray`. Set the repository to *Public* and leave it as an {icon}`fa6-regular:hard-drive` *(Empty repository)*.
+1. On quay.io, click {icon}`octicon:plus` {gui}`Create a new repository` and name your repository, e.g. `jupyter-scipy-xarray`. Set the repository to {gui}`Public` and leave it as an {icon}`fa6-regular:hard-drive` {gui}`(Empty repository)`.
 
 ### Allow robot access to your quay.io repository
 
 The following summarizes [Section 3.2. Allowing robot access to a user repository](https://access.redhat.com/documentation/en-us/red_hat_quay/3.3/html/use_red_hat_quay/use-quay-manage-repo#allow-robot-access-user-repo) of the quay.io documentation.
 
-1. From quay.io, access your user settings by clicking your username in the top-right corner of the screen and selecting *User settings*.
+1. From quay.io, access your user settings by clicking your username in the top-right corner of the screen and selecting {gui}`User settings`.
 
 1. Click the {icon}`fa6-solid:robot` Robot icon from the left column.
 
-1. Click the {icon}`octicon:plus` *Create Robot Account* button.
+1. Click the {icon}`octicon:plus` {gui}`Create Robot Account` button.
 
    ```{note}
-   You can also edit permissions later by clicking {icon}`octicon:gear` *Options* next to the Robot Account name and selecting {icon}`fa6-regular:hard-drive` *Set Repository Permissions*.
+   You can also edit permissions later by clicking {icon}`octicon:gear` {gui}`Options` next to the Robot Account name and selecting {icon}`fa6-regular:hard-drive` {gui}`Set Repository Permissions`.
    ```
 
-1. Name your robot, e.g. `<hub_name>_image_builder` and then check the box next to the repository name that you created in [Set up GitHub repository and connect it to quay.io](#customize-image:set-up-github), e.g. `jupyter-scipy-xarray`. From the dropdown, select the *Write* permission and then confirm by clicking *Add permissions*.
+1. Name your robot, e.g. `<hub_name>_image_builder` and then check the box next to the repository name that you created in [Set up GitHub repository and connect it to quay.io](#customize-image:set-up-github), e.g. `jupyter-scipy-xarray`. From the dropdown, select the {gui}`Write` permission and then confirm by clicking {gui}`Add permissions`.
    
 1. Click the Robot Account name to view its credentials, e.g.
    - *Username:* \<username\>+_<hub_name>_image_builder
@@ -43,13 +43,13 @@ The following summarizes [Section 3.2. Allowing robot access to a user repositor
 
 The following summarizes [Using secrets in GitHub Actions](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) of the GitHub documentation.
 
-1. From the fork of your GitHub repository, click *Settings > Secrets and variables > Actions*
+1. From the fork of your GitHub repository, click {gui}`Settings > Secrets and variables > Actions`
 
-1. Under the section *Repository secrets*, click the *New repository secret* button
+1. Under the section {gui}`Repository secrets`, click the {gui}`New repository secret` button
 
 1. Create two new repository secrets
-   - *Name*: `QUAY_USERNAME` and then paste the Robot account username from above into *Secret*
-   - *Name*: `QUAY_PASSWORD` and then paste the Robot account password from above into *Secret*
+   - {gui}`Name`: `QUAY_USERNAME` and then paste the Robot account username from above into {gui}`Secret`
+   - {gui}`Name`: `QUAY_PASSWORD` and then paste the Robot account password from above into {gui}`Secret`
 
    ```{image} images/github-secret-username.png
    :alt: Screenshot of adding the QUAY_USERNAME as a GitHub secret.
@@ -63,9 +63,9 @@ Once complete, under the section *Repository secrets* you should now see two row
    
 ### Enable GitHub workflows
 
-1. From the fork of your GitHub repository, click {icon}`octicon:play` *Actions*.
+1. From the fork of your GitHub repository, click {icon}`octicon:play` {gui}`Actions`.
 
-1. Enable GitHub workflows by clicking *I understand my workflows, go ahead and enable them*.
+1. Enable GitHub workflows by clicking {gui}`I understand my workflows, go ahead and enable them`.
    
 ## Edit GitHub repository files to customize your image
 
@@ -77,7 +77,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 
 1. Click the ![Git icon](images/git.svg) Git icon in the left sidebar to open the JupyterLab Git extension.
 
-1. Clone the forked repository from [Set up the GitHub repository and connect it to quay.io](#customize-image:set-up-github) into the hub by the clicking *Clone a Repository* button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
+1. Clone the forked repository from [Set up the GitHub repository and connect it to quay.io](#customize-image:set-up-github) into the hub by the clicking {gui}`Clone a Repository` button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
 
 1. Change the working directory by double-clicking *example-inherit-from-community-image* in the file explorer on the left side of the screen.
 
@@ -92,11 +92,11 @@ Once complete, under the section *Repository secrets* you should now see two row
    :alt: Screenshot of updating the IMAGE_NAME in the GitHub workflow test.yaml file.
    ```
    
-1. From the ![Git icon](images/git.svg) JupyterLab Git extension, stage your changes to *.github/workflows/build.yaml* and *.github/workflows/test.yaml* by clicking the {icon}`octicon:plus` plus symbol next to the filenames under the *Changed* section.
+1. From the ![Git icon](images/git.svg) JupyterLab Git extension, stage your changes to *.github/workflows/build.yaml* and *.github/workflows/test.yaml* by clicking the {icon}`octicon:plus` plus symbol next to the filenames under the {gui}`Changed` section.
 
 1. At the bottom of the panel enter a summary message, e.g. *Update IMAGE_NAME to \<username\>/jupyter-scipy-xarray*, then commit your changes
     
-1. Push your changes to the remote repository by clicking the <svg width="16" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" data-icon="git:push"><path xmlns="http://www.w3.org/2000/svg" class="jp-icon3" d="M14.5125 7.53C14.0025 4.9425 11.73 3 9 3C6.8325 3 4.95 4.23 4.0125 6.03C1.755 6.27 0 8.1825 0 10.5C0 12.9825 2.0175 15 4.5 15H14.25C16.32 15 18 13.32 18 11.25C18 9.27 16.4625 7.665 14.5125 7.53ZM14.25 13.5H4.5C2.8425 13.5 1.5 12.1575 1.5 10.5C1.5 8.9625 2.6475 7.68 4.17 7.5225L4.9725 7.44L5.3475 6.7275C6.06 5.355 7.455 4.5 9 4.5C10.965 4.5 12.66 5.895 13.0425 7.8225L13.2675 8.9475L14.415 9.03C15.585 9.105 16.5 10.0875 16.5 11.25C16.5 12.4875 15.4875 13.5 14.25 13.5ZM6 9.75H7.9125V12H10.0875V9.75H12L9 6.75L6 9.75Z" fill="#4F4F4F"></path></svg> Git push icon at the top of the panel.
+1. Push your changes to the remote repository by clicking the {icon}`octicon:cloud-upload` Git push icon at the top of the panel.
 
    ````{dropdown} Move code in and out of the hub with GitHub
    
@@ -108,18 +108,18 @@ Once complete, under the section *Repository secrets* you should now see two row
    :align: center
    ```
 
-   then we recommend you press *Cancel* and securely authenicate using `gh-scoped-creds`. See the [2i2c Docs – Move code in and out of the hub with GitHub](https://2i2c.org/community-showcase/user/topics/data/git.html) for more information.
+   then we recommend you press {gui}`Cancel` and securely authenicate using `gh-scoped-creds`. See the [2i2c Docs – Move code in and out of the hub with GitHub](../../user/data/git.md) for more information.
    ````
 
-1. This triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build the base image and push this to the quay.io repository. The build process can take a few minutes. You can view the status of the build by visiting the {icon}`octicon:play` *Actions* tab at `https://github.com/<username>/example-inherit-from-community-image`.
+1. This triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build the base image and push this to the quay.io repository. The build process can take a few minutes. You can view the status of the build by visiting the {icon}`octicon:play` {gui}`Actions` tab at `https://github.com/<username>/example-inherit-from-community-image`.
     
 1. When the build has finished, you can check your image hosted on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. *https://quay.io/repository/jnywong/jupyter-scipy-xarray*.
     
 ### Update the base image
     
-1. From the ![Git icon](images/git.svg) JupyterLab Git extension, expand the *Current Branch* dropdown and click the *New Branch* button
+1. From the ![Git icon](images/git.svg) JupyterLab Git extension, expand the {gui}`Current Branch` dropdown and click the {gui}`New Branch` button
    - Name your branch, e.g. *add-xarray*
-   - Select *main* for the *Create branch based on...* option.
+   - Select *main* for the {gui}`Create branch based on...` option.
 
    ```{image} images/git-create-branch.png
    :alt: Screenshot of creating a new branch from the main branch using the Git JupyterLab extension.
@@ -149,7 +149,7 @@ Once complete, under the section *Repository secrets* you should now see two row
     
 1. Stage, commit and push your changes by following the similar steps in Section [Build base image](#customize-image:build-base-image).
 
-1. Visit your GitHub repository at `https://github.com/<username>/example-inherit-from-community-image` and click the *Compare & pull request* button.
+1. Visit your GitHub repository at `https://github.com/<username>/example-inherit-from-community-image` and click the {gui}`Compare & pull request` button.
     
 1. Open a pull request and double-check that the target branch is *\<username\>:main* (this usually defaults to the upstream repo).
 
@@ -157,7 +157,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    :alt: Screenshot of the target branch option when opening a GitHub pull request.
    ```
     
-1. Click *Create pull request* to confirm, which triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build and push your image to the quay.io registry.
+1. Click {gui}`Create pull request` to confirm, which triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build and push your image to the quay.io registry.
 
 1. When the GitHub actions have completed, it is important to test your image is working as expected by following either [Test the custom image on a 2i2c hub](#customize-image:test-hub) or [Test the custom image with Binder](#customize-image:test-binder).
 
@@ -172,14 +172,14 @@ Once complete, under the section *Repository secrets* you should now see two row
 
    e.g. `quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1`, which you need to provide in the [](#environment:bring-your-own-image).
 
-1. Navigate to your 2i2c hub and paste the image tag into the *Image > Custom Image > Other...* field (see [](#environment:bring-your-own-image)).
+1. Navigate to your 2i2c hub and paste the image tag into the {gui}`Image > Custom Image > Other...` field (see [](#environment:bring-your-own-image)).
 
 1. Click start to launch the server and test your custom environment. You can continue editing the *DockerFile* and *environment.yml*, then push changes to the pull request as required. 
 
 (customize-image:test-binder)=
 #### Test the custom image with Binder
     
-1. When the GitHub actions have completed, a pull request comment from the *github-actions* bot will appear with a link. Click the *launch binder* button. The build process can take a few minutes.
+1. When the GitHub actions have completed, a pull request comment from the *github-actions* bot will appear with a link. Click the {gui}`launch binder` button. The build process can take a few minutes.
 
 1. Once complete, Binder launches into a preview of your custom container hosted at *mybinder.org*.
 
@@ -191,7 +191,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 
 ## Publish your new image
 
-1. When you are ready to push the repository to quay.io, merge the pull request to *main* on GitHub by clicking *Confirm merge*. The build process can take a few minutes.
+1. When you are ready to push the repository to quay.io, merge the pull request to *main* on GitHub by clicking {gui}`Confirm merge`. The build process can take a few minutes.
 
    ```{note}
    The `git-commit-hash` is useful for matching the image to the changes associated with the corresponding commit in your GitHub repository's history.
