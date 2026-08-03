@@ -300,7 +300,7 @@ gcloud auth application-default revoke
 
 - *Will 2i2c create additional, new storage buckets for our community?*
 
-  Please contact contact your Hub Champion to liaise with [2i2c support](../../../support.md) to discuss this option.
+  Please contact your Hub Champion to liaise with [2i2c support](../../../support.md) to discuss this option.
 
 - *If a our hub is running on AWS or Azure and we have object storage, what are our options?*
 

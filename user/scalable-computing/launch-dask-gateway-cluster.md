@@ -86,7 +86,7 @@ If a new gateway server needs to be started, then this process can take around 5
 
 Manually scale the cluster size to a fixed number of workers.
 
-1. Expand the *Manual scaling* dropdown in the cluster widget.
+1. Expand the {gui}`Manual scaling` dropdown in the cluster widget.
 1. Select the number of workers.
 1. Click {gui}`Scale` to confirm.
 
@@ -99,7 +99,7 @@ Manually scale the cluster size to a fixed number of workers.
 
 Adapt the cluster size dynamically based on current load. This helps to scale up the number of workers when necessary but scale it down and save resources when not actively computing.
 
-1. Expand the *Adaptive scaling* dropdown in the cluster widget.
+1. Expand the {gui}`Adaptive scaling` dropdown in the cluster widget.
 1. Select the minimum and maximum number of workers.
 1. Click {gui}`Adapt` to confirm.
 

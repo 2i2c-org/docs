@@ -48,24 +48,24 @@ get invoices, and grant overall access by controlling the billing account.
 2. Give 2i2c [billing administrator](https://cloud.google.com/billing/docs/how-to/billing-access)
    permissions. You can do this by:
 
-   1. Going to 'Account Management' on the left menu inside your billing account
+   1. Going to {gui}`Account Management` on the left menu inside your billing account
       page.
-   2. Click 'Show Info Panel' on the right. This should show a right sidebar that
+   2. Click {gui}`Show Info Panel` on the right. This should show a right sidebar that
       has list of current people with access to this billing account.
-   3. Click 'Add Member'. This opens another right sidebar that lets you add /
+   3. Click {gui}`Add Member`. This opens another right sidebar that lets you add /
       remove billing administrators.
-   4. Select 'Billing -> Billing account administrator' as the role.
+   4. Select {gui}`Billing > Billing account administrator` as the role.
 
       ```{note}
       If you want 2i2c to not see anything about your payment method, select
-      the following roles instead: 'Billing -> Billing Accounts Costs Manager',
-      'Billing -> Billing Accounts User'. The full administrator role is
+      the following roles instead: {gui}`Billing > Billing Accounts Costs Manager`,
+      {gui}`Billing > Billing Accounts User`. The full administrator role is
       preferred.
       ```
    5. [Contact 2i2c support](../../support.md) to request the email addresses of the
       2i2c engineering staff who will manage your project.
-   6. Add those email addresses under 'New members'.
-   7. Click 'Save'. This sends 2i2c staff an invitation to your billing account.
+   6. Add those email addresses under {gui}`New members`.
+   7. Click {gui}`Save`. This sends 2i2c staff an invitation to your billing account.
 
    The 2i2c team will confirm once they've accepted the invitation and can proceed with setup.
 
@@ -81,17 +81,17 @@ extra access grants.
    project. You can manage access to your project, as well as to specific resources,
    here.
 
-2. Click 'Add' in the top toolbar. A right side panel should open up
+2. Click {gui}`Add` in the top toolbar. A right side panel should open up
 
-3. Select 'Projects -> Owner' as the role. This gives 2i2c full rights to
+3. Select {gui}`Projects > Owner` as the role. This gives 2i2c full rights to
    everything inside the project.
 
 4. [Contact 2i2c support](../../support.md) to request the email addresses of the
    2i2c engineering staff who will manage your project.
 
-5. Add those email addresses under 'New members'.
+5. Add those email addresses under {gui}`New members`.
 
-6. Click 'Save'. This sends 2i2c staff an invitation to your project.
+6. Click {gui}`Save`. This sends 2i2c staff an invitation to your project.
 
 The 2i2c team will confirm once they've accepted the invitation and can proceed with setup.
 

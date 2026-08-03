@@ -61,7 +61,7 @@ time window (for example, the last 30 days).
 ```{figure} /images/usage-quota-dashboard.png
 :alt: The Usage dashboard showing the Home storage and Compute sections, each with usage, quota, amount remaining, and a percentage-used progress bar.
 
-The Usage dashboard. The **Compute** section is shown on the right; your hub may
+The Usage dashboard. The {gui}`Compute` section is shown on the right; your hub may
 show one or both sections.
 ```
 

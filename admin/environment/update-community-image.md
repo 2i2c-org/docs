@@ -59,7 +59,7 @@ The following summarizes [Using secrets in GitHub Actions](https://docs.github.c
    :alt: Screenshot of adding the QUAY_PASSWORD as a GitHub secret.
    ```
 
-Once complete, under the section *Repository secrets* you should now see two rows for `QUAY_USERNAME` and `QUAY_PASSWORD`.
+Once complete, under the section {gui}`Repository secrets` you should now see two rows for `QUAY_USERNAME` and `QUAY_PASSWORD`.
    
 ### Enable GitHub workflows
 
@@ -77,7 +77,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 
 1. Click the ![Git icon](images/git.svg) Git icon in the left sidebar to open the JupyterLab Git extension.
 
-1. Clone the forked repository from [Set up the GitHub repository and connect it to quay.io](#customize-image:set-up-github) into the hub by the clicking {gui}`Clone a Repository` button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
+1. Clone the forked repository from [Set up the GitHub repository and connect it to quay.io](#customize-image:set-up-github) into the hub by clicking the {gui}`Clone a Repository` button followed by entering the URL of the remote Git repository, e.g. `https://github.com/<username>/example-inherit-from-community-image.git`.
 
 1. Change the working directory by double-clicking *example-inherit-from-community-image* in the file explorer on the left side of the screen.
 
@@ -164,7 +164,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 (customize-image:test-hub)=
 #### Test the custom image with a 2i2c hub
 
-1. When the GitHub actions have completed, you can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the {icon}`fa6-solid:tags` Tags sub-menu to view a list of image versions. The full image tag is of the form
+1. When the GitHub actions have completed, you can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the {icon}`fa6-solid:tags` {gui}`Tags` sub-menu to view a list of image versions. The full image tag is of the form
 
    ```
    <registry>/<username>/<repo_name>:<git-commit-hash>
@@ -174,7 +174,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 
 1. Navigate to your 2i2c hub and paste the image tag into the {gui}`Image > Custom Image > Other...` field (see [](#environment:bring-your-own-image)).
 
-1. Click start to launch the server and test your custom environment. You can continue editing the *DockerFile* and *environment.yml*, then push changes to the pull request as required. 
+1. Click {gui}`Start` to launch the server and test your custom environment. You can continue editing the *DockerFile* and *environment.yml*, then push changes to the pull request as required. 
 
 (customize-image:test-binder)=
 #### Test the custom image with Binder
@@ -197,7 +197,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    The `git-commit-hash` is useful for matching the image to the changes associated with the corresponding commit in your GitHub repository's history.
    ```
 
-1. You can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the {icon}`fa6-solid:tags` Tags sub-menu to view a list of image versions. The full image tag is of the form
+1. You can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the {icon}`fa6-solid:tags` {gui}`Tags` sub-menu to view a list of image versions. The full image tag is of the form
 
    ```
    <registry>/<username>/<repo_name>:<git-commit-hash>

@@ -140,7 +140,7 @@ See our [Infrastructure Guide](https://infrastructure.2i2c.org/hub-deployment-gu
 
 You will be presented with a list of all the GitHub orgs related to your account.
 Some will already be authorised and have a green tick next to them, others where you are a member will have a "Request" button next to them.
-Orgs where you are an admin will have a "Grant" button next to them. Click the "Grant" button next to the _target_ org associated with your hub before clicking the green "Authorize" button.
+Orgs where you are an admin will have a {gui}`Grant` button next to them. Click the {gui}`Grant` button next to the _target_ org associated with your hub before clicking the green {gui}`Authorize` button.
 
 For example, see the below screenshot where we wish to grant the `nasa-cryo-staging` OAuth app access to the `binderhub-test-org` org.
 
@@ -164,7 +164,7 @@ The OAuth app will now have the correct permissions to read the org info and hen
 :width: 100%
 :alt: Screenshot showing a list of members of the 2i2c-community-showcase GitHub Organization.
 
-Screenshot showing a list of [2i2c-community-showcase](https://github.com/orgs/2i2c-community-showcase/people) GitHub Organization members. The *People* tab menu is located at the top; the green *Invite member* button is located in the top right; the *Failed invitations* tab is located in the left sidebar and the {gui}`Member settings` icon is located next to each member account.
+Screenshot showing a list of [2i2c-community-showcase](https://github.com/orgs/2i2c-community-showcase/people) GitHub Organization members. The {gui}`People` tab menu is located at the top; the green {gui}`Invite member` button is located in the top right; the {gui}`Failed invitations` tab is located in the left sidebar and the {gui}`Member settings` icon is located next to each member account.
 
 :::
 
@@ -177,11 +177,11 @@ Screenshot showing a list of [2i2c-community-showcase](https://github.com/orgs/2
   
    :::
 
-1. Once the user has accepted, they will become visible in the list of Organization members in the *People* menu tab.
+1. Once the user has accepted, they will become visible in the list of Organization members in the {gui}`People` menu tab.
 
 ##### Remove a member from the organization
 
-Members can be removed from the organization by going to the *People* menu tab.
+Members can be removed from the organization by going to the {gui}`People` menu tab.
 
 1. Click the ![member settings button](../../images/manage-users-github-settings.png) icon next to the member account you wish to remove.
 

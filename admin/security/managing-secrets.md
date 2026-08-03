@@ -38,9 +38,9 @@ To create a secret for the GitHub organization for multiple users, see the [GitH
 :::
 
 1. Navigate to the GitHub organization.
-1. In the {icon}`octicon:gear` {gui}`Settings` menu, click on {icon}`octicon:key-asterisk-16` {gui}`Secrets and Tokens > Actions` in the left-side menu. 
-1. Under the *Organization Secrets* section, click on the {gui}`New organization secret` button.
-1. Enter the name of your secret in the *Name* field and paste in the value of your secret in the *Secret* field.
+1. In the {icon}`octicon:gear` {gui}`Settings` menu, click on {icon}`octicon:key-asterisk-16` {gui}`Secrets and variables > Actions` in the left-side menu. 
+1. Under the {gui}`Organization secrets` section, click on the {gui}`New organization secret` button.
+1. Enter the name of your secret in the {gui}`Name` field and paste in the value of your secret in the {gui}`Secret` field.
 1. Scope the secret to the relevant select repositories under the {gui}`Repository access` dropdown.
 1. Click {gui}`Add secret` to confirm.
 

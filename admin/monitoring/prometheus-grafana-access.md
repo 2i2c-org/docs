@@ -16,7 +16,7 @@ See [Grafana docs – Service Accounts](https://grafana.com/docs/grafana/latest/
 1. Choose a descriptive {gui}`Display name`, e.g. `username-local-prometheus-access` and leave the role as {gui}`Viewer`. Click the {gui}`Create` button to confirm.
 1. You will see a new page with the details of the service account you have created. In the section {gui}`Tokens`, click the {gui}`Add service account token` button to generate a token to authenticate with the Grafana API.
 1. Choose a descriptive name for the token and then set a token expiry date. We recommend 1 month from now.[^token]
-1. Click the {gui}`Generate token button` to confirm.
+1. Click the {gui}`Generate token` button to confirm.
 1. **Important:** Copy the token and keep a copy somewhere safe. You will not be able to see it again. Losing a token requires creating a new one.
 
 [^token]: After the token expires, you will need to regenerate a new token and update its value in the local `.env` file and/or GitHub action secret.

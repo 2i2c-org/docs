@@ -13,7 +13,7 @@ Hubs managed by 2i2c make this easy.
    URL path to `/tree`. e.g.,
    `<your-hub>.pilot.2i2c.cloud/user/<your-username>/tree`
 
-2. Click on **`Download Directory`**.
+2. Click on {gui}`Download Directory`.
 
    ```{figure} ../../images/download-directory.png
    :alt: The download directory button

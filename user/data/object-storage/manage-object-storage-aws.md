@@ -222,7 +222,7 @@ The following workflow assumes you have a Unix-like operating system from outsid
 
 - *Will 2i2c create additional, new S3 buckets for our community?*
 
-  Please contact contact your hub champion to liaise with [2i2c support](../../../support.md) to discuss this option.
+  Please contact your hub champion to liaise with [2i2c support](../../../support.md) to discuss this option.
 
 - *If a our hub is running on GCP or Azure and we have object storage, what are our options?*
 

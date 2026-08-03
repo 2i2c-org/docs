@@ -25,7 +25,7 @@ You can choose from different pre-configured _"profiles"_ and for each profile y
 
 The image above represents a `Server Options` page example, where you can choose:
 
-- an image **profile** that defined the software environment and is curated by your hub administrator, with options such as _Python_, _R_, or even _Bring your own image_
+- an image **profile** that defined the software environment and is curated by your hub administrator, with options such as {gui}`Python`, {gui}`R`, or even {gui}`Bring your own image`
 - for each profile, you can select from a list of pre-configured **options** for the `Node share`, which represents the hardware resources such as CPU and RAM available on the server.
 
 (environment:bring-your-own-image)=
@@ -43,7 +43,7 @@ The general format for specifying an image is
 OWNER/IMAGE_NAME:TAG
 ```
 
-For example, if a user wanted to pull the [Jupyter PyTorch notebook](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-pytorch-notebook) container, then they would enter `quay.io/jupyter/pytorch-notebook:x86_64-pytorch-2.2.0` into the *Custom image* field.
+For example, if a user wanted to pull the [Jupyter PyTorch notebook](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-pytorch-notebook) container, then they would enter `quay.io/jupyter/pytorch-notebook:x86_64-pytorch-2.2.0` into the {gui}`Custom image` field.
 
 We recommend always explicitly specifying a version number in the `TAG` field rather than using the generic `latest` tag. Providing the version number in the tag is useful for producing informative server logs for debugging purposes and allows you to check whether the correct version of the image is loaded into the hub by running the following command in a terminal in your hub
 

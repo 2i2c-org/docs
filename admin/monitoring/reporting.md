@@ -8,7 +8,7 @@ Grafana dashboards can be shared with other community members and stakeholders s
 
 ## Generate a CSV file
 
-1. Click on the three dots {icon}`material-symbols:more-vert`, in the top-right corner of the panel you wish to generate a CSV file for.
+1. Click on the three dots {icon}`material-symbols:more-vert` in the top-right corner of the panel you wish to generate a CSV file for.
 1. From the dropdown menu select {icon}`octicon:info` {gui}`Inspect > Data`.
 1. Click on the {gui}`Download CSV` button to download the data as a CSV file.
 
@@ -17,7 +17,7 @@ Grafana dashboards can be shared with other community members and stakeholders s
 This function is available to Grafana admins only. A snapshot is a frozen view of data that can with others without the need to login with a Grafana account. You can set the snapshot to expire after a certain time period, or even delete them by going to the `/dashboard/snapshots` page.
 
 1. If you wish to share the *entire dashboard*, click on the {gui}`Share` button to the left of the time-range selector.
-1. If you wish to share a *single panel*, click on the three dots {icon}`material-symbols:more-vert`, in the top-right corner of a panel. From the dropdown menu select {gui}`Share`.
+1. If you wish to share a *single panel*, click on the three dots {icon}`material-symbols:more-vert` in the top-right corner of a panel. From the dropdown menu select {gui}`Share`.
 1. From the pop-up {gui}`Share Panel` dialog, select the {gui}`Snapshot` tab and fill out the details.
 1. Click the {gui}`Publish Snapshot` button to generate a public link that you can share with others.
 
