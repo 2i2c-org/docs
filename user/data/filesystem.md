@@ -53,7 +53,7 @@ For example, if you change your shell such that it can no longer launch a Jupyte
 This may happen if you **change your default shell** to something like [zsh](https://ohmyz.sh/).
 
 If you change your `~/.bash_profile` and something suddenly breaks, try reverting the change to this file.
-If your session can no longer start, [email support](#support:email) as this file may need to be manually edited or deleted.
+If your session can no longer start, [email support](#support) as this file may need to be manually edited or deleted.
 
 ## The `shared` Directory
 

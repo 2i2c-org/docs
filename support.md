@@ -1,4 +1,4 @@
-(support:email)=
+(support)=
 # Get support
 
 Send all support requests using the **support widget on the bottom right of the page**.
@@ -21,7 +21,6 @@ Privacy extensions can block the pop-up contact form.
 A [Community Representative](#role:community-representative) of a hub should be the one that surfaces support requests to the 2i2c [Site Reliability Engineering](#role:site-reliability-engineer) team.
 Before reaching out to 2i2c for support, this person should work with others in their community to understand the problem and to ensure that it is something that requires intervention from a 2i2c Engineer.
 
-(support:encrypt)=
 ## Send us encrypted content
 
 Sometimes community representatives need to send us *encrypted* information -

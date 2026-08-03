@@ -10,7 +10,7 @@ Note that monitoring data is retained for up to 3 years on 2i2c hubs.
 
 ## Getting a Grafana account
 
-During the hub deployment process, 2i2c engineering will send authorized Hub Champions an email with an invitation link to Grafana to create an account. **This invite link expires after seven days;** and is unique to the recipient's email address. If a new invite link is required please contact [support](#support:email).
+During the hub deployment process, 2i2c engineering will send authorized Hub Champions an email with an invitation link to Grafana to create an account. **This invite link expires after seven days;** and is unique to the recipient's email address. If a new invite link is required please contact [support](#support).
 
 :::{figure} images/grafana-invite.png
 :alt: Screenshot of a form containing fields for email, name, username and password.
