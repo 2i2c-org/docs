@@ -13,11 +13,6 @@ Some community hubs running on AWS infrastructure have scratch and/or persistent
 Transferring large amounts of data to the cloud can incur expensive storage costs. Please think carefully about your data requirements and use this feature responsibly. See [](/community-lead/billing/overview) for further guidance.
 ```
 
-```{contents}
-:depth: 2
-:local:
-```
-
 ## Basic AWS CLI commands in the Terminal
 
 In the Terminal, check that the AWS CLI commands are available in your image with

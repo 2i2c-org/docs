@@ -12,7 +12,7 @@ Users can prove who they are by logging in via an *authentication provider*. Cur
 
 ### [CILogon](https://www.cilogon.org/)
 
-An extremely popular provider for various institutional logins, Google accounts (including @gmail.com accounts), Microsoft accounts, etc. This is our **primary** authentication provider.
+An extremely popular provider for various institutional logins, Google accounts (including `@gmail.com` accounts), Microsoft accounts, etc. This is our **primary** authentication provider.
 It can support allowing users from multiple institutions to login as well, which is very helpful.
 2i2c can manage CILogon using the JupyterHub CILogonOAuthenticator.
 
@@ -94,22 +94,18 @@ Alternatively, you can go to this URL in your browser:
 
 #### To add users
 
-1. Click the {guilabel}`Add Users` button. The {guilabel}`Add Users` dialog box will pop up.
-2. Add one or more users, and hit the {guilabel}`Add Users` button to authorize all the users you just added.
+1. Click the **Add Users** button. The **Add Users** dialog box will pop up.
+2. Add one or more users, and hit the **Add Users** button to authorize all the users you just added.
 
 `````{grid}
-:class-container: full-width
-:padding: 0 0 0 5
 
 ````{grid-item-card}
-:class-item: border-1
 ```{figure} ../../images/add-users-button.png
-The {guilabel}`Add Users` button in the Administrator Panel.
+The **Add Users** button in the Administrator Panel.
 ```
 ````
 
 ````{grid-item-card}
-:class-item: border-1
 
 ```{figure} ../../images/add-users-form.png
 Fill in usernames and optionally make them administrators. You can add multiple users at once by putting a username on each line.
@@ -123,8 +119,8 @@ Fill in usernames and optionally make them administrators. You can add multiple 
 You can revoke a user's access to the JupyterHub by removing them from the allowed users list, using the admin panel.
 
 1. Find the name of the user in your admin panel. If they have a running server,
-   click the {guilabel}`Stop server` button to stop their running server.
-2. Click the {guilabel}`Delete user` button for this user. Confirm the deletion in
+   click the **Stop server** button to stop their running server.
+2. Click the **Delete user** button for this user. Confirm the deletion in
    the dialog box that pops up.
 
 After this, the user would not be able to log in. However, their files will not be deleted -
@@ -168,7 +164,7 @@ The OAuth app will now have the correct permissions to read the org info and hen
 :width: 100%
 :alt: Screenshot showing a list of members of the 2i2c-community-showcase GitHub Organization.
 
-Screenshot showing a list of [2i2c-community-showcase](https://github.com/orgs/2i2c-community-showcase/people) GitHub Organization members. The *People* tab menu is located at the top; the green *Invite member* button is located in the top right; the *Failed invitations* tab is located in the left sidebar and the *Member settings* ![member settings button](../../images/manage-users-github-settings.png) icon is located next to each member account.
+Screenshot showing a list of [2i2c-community-showcase](https://github.com/orgs/2i2c-community-showcase/people) GitHub Organization members. The *People* tab menu is located at the top; the green *Invite member* button is located in the top right; the *Failed invitations* tab is located in the left sidebar and the *Member settings* icon is located next to each member account.
 
 :::
 

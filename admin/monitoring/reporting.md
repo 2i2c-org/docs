@@ -8,18 +8,18 @@ Grafana dashboards can be shared with other community members and stakeholders s
 
 ## Generate a CSV file
 
-1. Click on the three dots {material-regular}`more_vert`, in the top-right corner of the panel you wish to generate a CSV file for.
-1. From the dropdown menu select *{octicon}`info` Inspect > Data*.
-1. Click on the {bdg-primary}`Download CSV` button to download the data as a CSV file.
+1. Click on the three dots {icon}`material-symbols:more-vert`, in the top-right corner of the panel you wish to generate a CSV file for.
+1. From the dropdown menu select *Inspect > Data*.
+1. Click on the **Download CSV** button to download the data as a CSV file.
 
 ## Share a snapshot of the dashboard or panel
 
 This function is available to Grafana admins only. A snapshot is a frozen view of data that can with others without the need to login with a Grafana account. You can set the snapshot to expire after a certain time period, or even delete them by going to the `/dashboard/snapshots` page.
 
-1. If you wish to share the *entire dashboard*, click on the {bdg-primary}`Share` button to the left of the time-range selector.
-1. If you wish to share a *single panel*, click on the three dots {material-regular}`more_vert`, in the top-right corner of a panel. From the dropdown menu select *Share*.
+1. If you wish to share the *entire dashboard*, click on the **Share** button to the left of the time-range selector.
+1. If you wish to share a *single panel*, click on the three dots {icon}`material-symbols:more-vert`, in the top-right corner of a panel. From the dropdown menu select *Share*.
 1. From the pop-up *Share Panel* dialog, select the *Snapshot* tab and fill out the details.
-1. Click the {bdg-primary}`Publish Snapshot` button to generate a public link that you can share with others.
+1. Click the **Publish Snapshot** button to generate a public link that you can share with others.
 
 :::{tip}
 Remember that the public link is accessible to anyone without authentication. Only share this link with those you trust and consider the sensitive nature of data, e.g. personally identifying information and usernames.

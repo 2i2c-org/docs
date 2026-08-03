@@ -6,7 +6,7 @@ Hub admins can unilaterally perform actions on a user's server via the
 **Administrator's Panel**. These are primarily used to debug a user's session
 easily.
 
-You can access the admin panel by clicking the {guilabel}`Admin` button in the top bar
+You can access the admin panel by clicking the **Admin** button in the top bar
 in your hub control panel.  Alternatively, you can go to this URL in your
 browser: `https://<your-hub-url>/hub/admin`.
 
@@ -15,8 +15,8 @@ browser: `https://<your-hub-url>/hub/admin`.
 
 Accessing a user's server is useful when trying to debug or reproduce an issue they might have. This facility is available to admins via the admin panel.
 
-1. In the admin panel, you can click {guilabel}`access server` to gain control of a user's
-   currently running server. If it isn't running, you can click {guilabel}`start server`
+1. In the admin panel, you can click **access server** to gain control of a user's
+   currently running server. If it isn't running, you can click **start server**
    first and wait for it to start.
 
    ```{figure} ../../images/access-server.png
@@ -47,7 +47,7 @@ These contain information about every event that occurred as a part of a user's 
 
 For example, to print the contents of your own user server log:
 
-1. Open a terminal (e.g., choosing {guilabel}`Terminal` from Launcher in JupyterLab)
+1. Open a terminal (e.g., choosing **Terminal** from Launcher in JupyterLab)
 2. Run the command:
 
    ```console
@@ -60,8 +60,8 @@ To access a **different user's** server logs, you can [access their server](user
 ### Stop or start a user's server
 
 Sometimes, you need to just turn a user's server on and off. You can
-also do this from the admin interface, by hitting the {guilabel}`Stop server`
-button, waiting for the server to stop, and the {guilabel}`Start server` button
+also do this from the admin interface, by hitting the **Stop server**
+button, waiting for the server to stop, and the **Start server** button
 again.
 
 This is particularly useful when their session might have gotten
@@ -127,6 +127,6 @@ For example, if you are concerned that users on your hub are taking inappropriat
 
 In the meantime, you can **stop all user sessions** from your Administrator panel:
 
-1. Go to `{{ your hub URL }}/hub/admin` and click {guilabel}`Stop All`.
+1. Go to `{{ your hub URL }}/hub/admin` and click **Stop All**.
 
    This will stop all currently running user sessions.

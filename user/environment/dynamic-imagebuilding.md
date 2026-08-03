@@ -11,12 +11,11 @@ It integrates the capabilities of [BinderHub](https://binderhub.readthedocs.io/e
 To enable dynamic image building, hub administrators should see [](#image-building-setup).
 :::
 
-In the demo below, a user selects the {guilabel}`Build your own image` option from the launch dropdown, provides the URL of a GitHub repository containing [repo2docker configuration files](https://repo2docker.readthedocs.io/en/latest/configuration/), builds an environment image from this repository, and launches an interactive session with it.
+In the demo below, a user selects the **Build your own image** option from the launch dropdown, provides the URL of a GitHub repository containing [repo2docker configuration files](https://repo2docker.readthedocs.io/en/latest/configuration/), builds an environment image from this repository, and launches an interactive session with it.
 
-<video width="100%" autoplay loop>
-  <source src="/_static/videos/demo-dynamic-image-building.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+:::{figure} /_static/videos/demo-dynamic-image-building.mp4
+A user builds and launches their own environment image from the JupyterHub launcher.
+:::
 
 :::{warning}
 Currently, user-built environments support only **GitHub** as a repository provider.
@@ -57,12 +56,12 @@ This is a quick guide to getting started with dynamic image building.
 
 ### Step 2: Configure the JupyterHub “Build your own image” Option
 
-1. In JupyterHub, choose {bdg-primary}`Build your own image` from the {bdg-primary}`Image` dropdown in the launcher.
+1. In JupyterHub, choose **Build your own image** from the **Image** dropdown in the launcher.
 2. Enter your GitHub repo name (e.g. [binder-examples/requirements](https://github.com/binder-examples/requirements))
 3. Optionally include a branch, tag or commit to use. By default, the `HEAD` will use the default branch.
-4. Click the {bdg-primary}`Build` button to start the build process. You can view the build logs to monitor progress.
-5. Once the build is complete, choose the {bdg-primary}`Resource Allocation` (CPU, RAM) for the server launch.
-6. Click {bdg-primary}`Start` to launch your server.
+4. Click the **Build** button to start the build process. You can view the build logs to monitor progress.
+5. Once the build is complete, choose the **Resource Allocation** (CPU, RAM) for the server launch.
+6. Click **Start** to launch your server.
 
 ### Step 3: Use and Share Your Environment
 

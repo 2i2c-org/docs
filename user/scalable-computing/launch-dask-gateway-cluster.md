@@ -2,11 +2,6 @@
 
 This guide shows you how to launch a Dask gateway cluster for parallel and distributed computing.
 
-:::{contents}
-:depth: 2
-:local:
-:::
-
 ## What is Dask Gateway?
 
 Dask Gateway allows users to launch clusters for scaling computations efficiently with more CPU and memory on cloud resources, without requiring direct access to the underlying Kubernetes backend of the 2i2c hub. Configuration, such as efficient cluster resourcing, authentication and security settings, is automatically handled for users to provide a consistent user experience across the hub.
@@ -93,7 +88,7 @@ Manually scale the cluster size to a fixed number of workers.
 
 1. Expand the *Manual scaling* dropdown in the cluster widget.
 1. Select the number of workers.
-1. Click {guilabel}`Scale` to confirm.
+1. Click **Scale** to confirm.
 
 :::{image} media/dask-scaling-manual.png
 :alt: Screenshot of an interactive cluster widget to configure manual worker scaling.
@@ -106,7 +101,7 @@ Adapt the cluster size dynamically based on current load. This helps to scale up
 
 1. Expand the *Adaptive scaling* dropdown in the cluster widget.
 1. Select the minimum and maximum number of workers.
-1. Click {guilabel}`Adapt` to confirm.
+1. Click **Adapt** to confirm.
 
 :::{image} media/dask-scaling-adaptive.png
 :alt: Screenshot of an interactive cluster widget to configure adaptive worker scaling.
@@ -165,12 +160,9 @@ km = dask_ml.cluster.KMeans(n_clusters=3, init_max_iter=2, oversampling_factor=1
 km.fit(X)
 ```
 
-<video width="100%" autoplay loop muted>
-  <source src="../../../_static/videos/dask-compute-kmeans.mp4" type="video/mp4" />
-  <p>Video showing dask dashboard while computing k-means clustering.</p>
-</video>
-
-<br>
+:::{figure} /_static/videos/dask-compute-kmeans.mp4
+Video showing dask dashboard while computing k-means clustering.
+:::
 
 Plot the results.
 

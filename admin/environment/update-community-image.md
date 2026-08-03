@@ -2,15 +2,10 @@
 
 This instructional guide shows you how to add packages to a community-maintained upstream image. In this example, we add the [Python package `xarray`](https://docs.xarray.dev/en/stable/) to the [`jupyter/scipy-notebook` image](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) maintained by the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) community.
 
-```{contents}
-:depth: 2
-:local:
-```
-
 (customize-image:set-up-github)=
 ## Set up the GitHub repository and connect it to quay.io
 
-1. Fork {octicon}`repo-forked;1em;sd-text-info` the GitHub repository [example-inherit-from-community-image](https://github.com/2i2c-org/example-inherit-from-community-image) into your GitHub account.
+1. Fork {icon}`octicon:repo-forked` the GitHub repository [example-inherit-from-community-image](https://github.com/2i2c-org/example-inherit-from-community-image) into your GitHub account.
 
    ```{note}
    If you do not have a quay.io account, then can register for one at [https://sso.redhat.com](https://sso.redhat.com). Note that if you need to join your organization's account then you should register using an invitation from the organization's admin.
@@ -18,7 +13,7 @@ This instructional guide shows you how to add packages to a community-maintained
    
 1. We recommend using [quay.io](https://quay.io) to host your custom image. Navigate to [quay.io](https://quay.io) and log into your account.
 
-1. On quay.io, click {octicon}`plus;1em;sd-text-info` *Create a new repository* and name your repository, e.g. `jupyter-scipy-xarray`. Set the repository to *Public* and leave it as an <i class="fa-regular fa-hard-drive sd-text-info"></i> *(Empty repository)*.
+1. On quay.io, click {icon}`octicon:plus` *Create a new repository* and name your repository, e.g. `jupyter-scipy-xarray`. Set the repository to *Public* and leave it as an {icon}`fa6-regular:hard-drive` *(Empty repository)*.
 
 ### Allow robot access to your quay.io repository
 
@@ -26,15 +21,15 @@ The following summarizes [Section 3.2. Allowing robot access to a user repositor
 
 1. From quay.io, access your user settings by clicking your username in the top-right corner of the screen and selecting *User settings*.
 
-1. Click the <i class="fa fa-robot sd-text-info"></i> Robot icon from the left column.
+1. Click the {icon}`fa6-solid:robot` Robot icon from the left column.
 
-1. Click the {octicon}`plus;1em;sd-text-info` *Create Robot Account* button.
+1. Click the {icon}`octicon:plus` *Create Robot Account* button.
 
    ```{note}
-   You can also edit permissions later by clicking {octicon}`gear;1em;sd-text-info` *Options* next to the Robot Account name and selecting <i class="fa-regular fa-hard-drive sd-text-info"></i> *Set Repository Permissions*.
+   You can also edit permissions later by clicking {icon}`octicon:gear` *Options* next to the Robot Account name and selecting {icon}`fa6-regular:hard-drive` *Set Repository Permissions*.
    ```
 
-1. Name your robot, e.g. `<hub_name>_image_builder` and then check the box next to the repository name that you created in {ref}`Set up GitHub repository and connect it to quay.io<customize-image:set-up-github>`, e.g. `jupyter-scipy-xarray`. From the dropdown, select the *Write* permission and then confirm by clicking *Add permissions*.
+1. Name your robot, e.g. `<hub_name>_image_builder` and then check the box next to the repository name that you created in [Set up GitHub repository and connect it to quay.io](#customize-image:set-up-github), e.g. `jupyter-scipy-xarray`. From the dropdown, select the *Write* permission and then confirm by clicking *Add permissions*.
    
 1. Click the Robot Account name to view its credentials, e.g.
    - *Username:* \<username\>+_<hub_name>_image_builder
@@ -68,7 +63,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    
 ### Enable GitHub workflows
 
-1. From the fork of your GitHub repository, click {octicon}`play;1em;sd-text-info` *Actions*.
+1. From the fork of your GitHub repository, click {icon}`octicon:play` *Actions*.
 
 1. Enable GitHub workflows by clicking *I understand my workflows, go ahead and enable them*.
    
@@ -97,7 +92,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    :alt: Screenshot of updating the IMAGE_NAME in the GitHub workflow test.yaml file.
    ```
    
-1. From the ![Git icon](images/git.svg) JupyterLab Git extension, stage your changes to *.github/workflows/build.yaml* and *.github/workflows/test.yaml* by clicking the {octicon}`plus;1em;sd-text-info` plus symbol next to the filenames under the *Changed* section.
+1. From the ![Git icon](images/git.svg) JupyterLab Git extension, stage your changes to *.github/workflows/build.yaml* and *.github/workflows/test.yaml* by clicking the {icon}`octicon:plus` plus symbol next to the filenames under the *Changed* section.
 
 1. At the bottom of the panel enter a summary message, e.g. *Update IMAGE_NAME to \<username\>/jupyter-scipy-xarray*, then commit your changes
     
@@ -116,7 +111,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    then we recommend you press *Cancel* and securely authenicate using `gh-scoped-creds`. See the [2i2c Docs – Move code in and out of the hub with GitHub](https://2i2c.org/community-showcase/user/topics/data/git.html) for more information.
    ````
 
-1. This triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build the base image and push this to the quay.io repository. The build process can take a few minutes. You can view the status of the build by visiting the {octicon}`play;1em;sd-text-info` *Actions* tab at `https://github.com/<username>/example-inherit-from-community-image`.
+1. This triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build the base image and push this to the quay.io repository. The build process can take a few minutes. You can view the status of the build by visiting the {icon}`octicon:play` *Actions* tab at `https://github.com/<username>/example-inherit-from-community-image`.
     
 1. When the build has finished, you can check your image hosted on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. *https://quay.io/repository/jnywong/jupyter-scipy-xarray*.
     
@@ -169,7 +164,7 @@ Once complete, under the section *Repository secrets* you should now see two row
 (customize-image:test-hub)=
 #### Test the custom image with a 2i2c hub
 
-1. When the GitHub actions have completed, you can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the <i class="fa fa-tags sd-text-info"></i> Tags sub-menu to view a list of image versions. The full image tag is of the form
+1. When the GitHub actions have completed, you can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the {icon}`fa6-solid:tags` Tags sub-menu to view a list of image versions. The full image tag is of the form
 
    ```
    <registry>/<username>/<repo_name>:<git-commit-hash>
@@ -202,7 +197,7 @@ Once complete, under the section *Repository secrets* you should now see two row
    The `git-commit-hash` is useful for matching the image to the changes associated with the corresponding commit in your GitHub repository's history.
    ```
 
-1. You can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the <i class="fa fa-tags sd-text-info"></i> Tags sub-menu to view a list of image versions. The full image tag is of the form
+1. You can check your image is updated on quay.io by navigating to a URL of the form `https://quay.io/repository/<username>/<quay-repo-name>`, e.g. https://quay.io/repository/jnywong/jupyter-scipy-xarray, and then clicking on the {icon}`fa6-solid:tags` Tags sub-menu to view a list of image versions. The full image tag is of the form
 
    ```
    <registry>/<username>/<repo_name>:<git-commit-hash>

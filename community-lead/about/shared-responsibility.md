@@ -13,16 +13,11 @@ Below is a high-level summary of the major areas of responsibility in this servi
 % This figure is not stored with the repository, it is downloaded at build time
 % Diagram here: https://drive.google.com/uc?export=download&id=16r5xE7SguunLfMh5LhSynSUfjb7IXs_n
 ```{figure} /images/shared_responsibility_diagram.png
-:figwidth: 80%
+:width: 80%
 An overview of the major teams that collaborate around the cloud service in order to serve a community of users.
 ```
 
 Below we describe these areas in more detail, and define the roles that 2i2c and our partner communities take on in the service.
-
-:::{contents}
-:local:
-:depth: 1
-:::
 
 ## Site Reliability Engineering
 
