@@ -14,5 +14,5 @@ links:
 icons:
   github: https://github.com/2i2c-org/docs
 
-copyright: © 2i2c
+copyright: © 2i2c · Icons from Font Awesome Free (CC BY 4.0), GitHub Octicons (MIT), and Material Symbols (Apache 2.0)
 ```
