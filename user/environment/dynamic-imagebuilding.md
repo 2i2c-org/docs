@@ -107,6 +107,11 @@ This is an important difference from [mybinder.org](https://mybinder.org). While
 
 Yes! That's often the simplest choice. See [this repo2docker guide on choosing an environment](https://repo2docker.readthedocs.io/en/latest/use/pathways/) for guidance.
 
+### Can I use this to verify my published notebooks still run correctly over time?
+
+Not directly, dynamic image building is for interactive sessions on the hub.
+See [](#user:notebook-ci) for running notebooks in CI on Binder instead.
+
 ### Where can I learn more about environment configuration and building?
 
 The [repo2docker user guide is the best place to learn more in general](https://repo2docker.readthedocs.io/en/latest/use/).
