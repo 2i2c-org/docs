@@ -296,11 +296,11 @@ gcloud auth application-default revoke
 
 - *If storage buckets are not set up but I want them for my community what should I do?*
 
-  This feature is not enabled by default since there are extra cloud costs associated with providing object storage. Please speak to your Hub Champion, who can then open a [2i2c support](../../../../support.md) ticket with us to request this feature for your hub.
+  This feature is not enabled by default since there are extra cloud costs associated with providing object storage. Please speak to your Hub Champion, who can then open a [2i2c support](../../../support.md) ticket with us to request this feature for your hub.
 
 - *Will 2i2c create additional, new storage buckets for our community?*
 
-  Please contact contact your Hub Champion to liaise with [2i2c support](../../../../support.md) to discuss this option.
+  Please contact contact your Hub Champion to liaise with [2i2c support](../../../support.md) to discuss this option.
 
 - *If a our hub is running on AWS or Azure and we have object storage, what are our options?*
 

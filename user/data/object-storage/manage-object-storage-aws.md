@@ -214,15 +214,15 @@ The following workflow assumes you have a Unix-like operating system from outsid
   An error occurred (AccessDenied) when calling the AssumeRoleWithWebIdentity operation: Not authorized to perform sts:AssumeRoleWithWebIdentity.
   ```
 
-  Please contact your hub champion so that they can open a [2i2c support](../../../../support.md) ticket with us to resolve this issue on your behalf.
+  Please contact your hub champion so that they can open a [2i2c support](../../../support.md) ticket with us to resolve this issue on your behalf.
 
 - *If S3 buckets are not set up but I want them for my community what should the I do?*
 
-  This feature is not enabled by default since there are extra cloud costs associated with providing S3 object storage. Please speak to your hub champion, who can then open a [2i2c support](../../../../support.md) ticket with us to request this feature for your hub.
+  This feature is not enabled by default since there are extra cloud costs associated with providing S3 object storage. Please speak to your hub champion, who can then open a [2i2c support](../../../support.md) ticket with us to request this feature for your hub.
 
 - *Will 2i2c create additional, new S3 buckets for our community?*
 
-  Please contact contact your hub champion to liaise with [2i2c support](../../../../support.md) to discuss this option.
+  Please contact contact your hub champion to liaise with [2i2c support](../../../support.md) to discuss this option.
 
 - *If a our hub is running on GCP or Azure and we have object storage, what are our options?*
 

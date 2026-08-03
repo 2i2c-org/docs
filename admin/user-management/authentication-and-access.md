@@ -132,7 +132,7 @@ Hub admins can control access to their hub by adding users to their GitHub Organ
 
 #### First time setup
 
-When we setup authentication to use [GitHub orgs or teams](auth:github-orgs), we create an OAuth app in the 2i2c org and ask hub admins to install this app upon first login to the hub.
+When we setup authentication to use GitHub orgs or teams, we create an OAuth app in the 2i2c org and ask hub admins to install this app upon first login to the hub.
 
 ```{seealso}
 See our [Infrastructure Guide](https://infrastructure.2i2c.org/hub-deployment-guide/configure-auth/github-orgs/#how-to-setup-github-auth) on how 2i2c sets up GitHub OAuth apps.

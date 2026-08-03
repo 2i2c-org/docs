@@ -72,4 +72,4 @@ A common set of credentials is used for accessing storage buckets.
 Hub users can access each others' objects stored in scratch or persistent bucket storage and accidentally modify or delete them.
 ```
 
-It is possible to configure read-only access for objects stored in cloud storage on your hub, though this is not a standard feature of our hubs. Please consult [2i2c support](../../../../support.md) to discuss enabling this feature.
+It is possible to configure read-only access for objects stored in cloud storage on your hub, though this is not a standard feature of our hubs. Please consult [2i2c support](../../../support.md) to discuss enabling this feature.
