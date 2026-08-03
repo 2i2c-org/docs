@@ -22,7 +22,7 @@ docs/
           └── choose.md       # Specific topic
 ```
 
-The site's table of contents lives in [`_data/toc.yml`](https://github.com/2i2c-org/docs/blob/main/_data/toc.yml), with one top-level entry per archetype:
+The site's table of contents lives in [`_data/toc.yml`](../_data/toc.yml), with one top-level entry per archetype:
 
 ```yaml
 - file: [archetype]/index.md
