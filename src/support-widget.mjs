@@ -1,7 +1,8 @@
 // Loads the Freshdesk support widget and renders a button that opens it.
 // Use via the {support-button} directive (defined in src/support-button.mjs),
 // whose options become the model values that prefill the ticket form.
-// The instance in parts/footer.md loads the floating widget on every page.
+// A transform in src/support-button.mjs also appends a hidden instance to
+// every page, so the floating "Help" launcher loads site-wide.
 // ref: https://support.freshdesk.com/en/support/solutions/articles/239273-setting-up-your-help-widget
 // ref: https://support.freshdesk.com/en/support/solutions/articles/50000001015-launching-the-widget-when-a-button-is-clicked
 
@@ -25,6 +26,8 @@ function loadFreshworks() {
 export default {
   render({ model, el }) {
     loadFreshworks();
+    // Hidden instances only load the floating widget, no button.
+    if (model.get("hidden")) return;
     const button = document.createElement("button");
     button.textContent = model.get("label") || "Open a support ticket";
     // The widget renders in a shadow DOM, so style the element inline.
@@ -32,7 +35,9 @@ export default {
       "border-radius: .5em; padding: 1em; background: rgb(29, 78, 245); color: white; font-weight: bold; border: none; cursor: pointer;";
     button.addEventListener("click", () => {
       const prefill = {};
-      // Map model keys to Freshdesk ticket form fields
+      // Map model keys to Freshdesk ticket form fields. Always send every
+      // field (empty by default): the form state is global, so a partial
+      // prefill would leak values from a previously clicked button.
       for (const [key, field] of [
         ["name", "name"],
         ["email", "email"],
@@ -41,12 +46,9 @@ export default {
         ["type", "type"],
         ["hub_url", "cf_hub_url"],
       ]) {
-        const value = model.get(key);
-        if (value) prefill[field] = value;
+        prefill[field] = model.get(key) || "";
       }
-      if (Object.keys(prefill).length) {
-        window.FreshworksWidget("prefill", "ticketForm", prefill);
-      }
+      window.FreshworksWidget("prefill", "ticketForm", prefill);
       window.FreshworksWidget("open");
     });
     el.appendChild(button);

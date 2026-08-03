@@ -34,5 +34,23 @@ const supportButton = {
   },
 };
 
-const plugin = { name: '2i2c support button', directives: [supportButton] };
+const plugin = {
+  name: '2i2c support button',
+  directives: [supportButton],
+  transforms: [
+    {
+      name: 'support-widget-loader',
+      doc: 'Append a hidden support widget to every page so the floating "Help" launcher loads site-wide.',
+      stage: 'document',
+      plugin: () => (tree) => {
+        tree.children.push({
+          type: 'anywidget',
+          esm: '/src/support-widget.mjs',
+          model: { hidden: true },
+          id: `support-loader-${count++}`,
+        });
+      },
+    },
+  ],
+};
 export default plugin;
