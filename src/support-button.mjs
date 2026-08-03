@@ -42,7 +42,10 @@ const plugin = {
       name: 'support-widget-loader',
       doc: 'Append a hidden support widget to every page so the floating "Help" launcher loads site-wide.',
       stage: 'document',
-      plugin: () => (tree) => {
+      plugin: () => (tree, vfile) => {
+        // Parts (e.g., site footer) are embedded in every page, which
+        // would duplicate the loader which is itself on every page, so skip those.
+        if (vfile?.path?.includes('parts/')) return;
         tree.children.push({
           type: 'anywidget',
           esm: '/src/support-widget.mjs',
