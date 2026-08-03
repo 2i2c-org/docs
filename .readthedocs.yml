@@ -12,7 +12,7 @@ build:
   commands:
     - pip install mystmd
     - python scripts/download-images.py
-    - myst build --html
+    - myst build --html --strict
     # Copy the output to Read the Docs expected location
     - mkdir -p $READTHEDOCS_OUTPUT/html/
     - cp -r _build/html/. "$READTHEDOCS_OUTPUT/html"
