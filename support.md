@@ -7,9 +7,9 @@ For our full team process, see 2i2c's [Technical Support Process](https://compas
 
 For example, click the button below to open the support widget (or, click the widget directly).
 
-<button onclick="openWidget()">
-   Click here to open a support ticket
-</button>
+:::{support-button}
+:label: Click here to open a support ticket
+:::
 
 ```{admonition} If you can't see the support widget
 If you cannot see the "Help" widget in the bottom right corner of the screen, or clicking the button above does not open a pop-up contact form, please check your browser's privacy settings.

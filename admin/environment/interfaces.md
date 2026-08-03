@@ -59,9 +59,11 @@ For detailed information about the default environment and user interfaces avail
 
 Hubs can be configured to allow users to [dynamically build environment images from the JupyterHub](#user:environment-building). This provides a lightweight UI allowing users to point the hub to a GitHub repository containing the definition of the environment they wish to build.
 
-<button onclick="openWidget({subject:'Request dynamic image building for hub', type:'Feature Request'})">
-   Click here to request dynamic image building
-</button>
+:::{support-button}
+:label: Click here to request dynamic image building
+:subject: Request dynamic image building for hub
+:type: Feature Request
+:::
 
 ## Accessing user interfaces
 

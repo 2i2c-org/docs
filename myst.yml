@@ -9,6 +9,8 @@ project:
   exclude:
     - README.md
     - CONTRIBUTING.md
+  plugins:
+    - src/support-button.mjs
   references:
     tc: https://compass.2i2c.org/
     infra: https://infrastructure.2i2c.org/
