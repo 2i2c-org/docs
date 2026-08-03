@@ -31,7 +31,7 @@ Follow these steps any time you need to update the environment image that is use
    quay.io/jnywong/jupyter-scipy-xarray:739fec9705b1
    ```
 
-1. Open a [2i2c support ticket](https://docs.2i2c.org/support/) to request an update to your hub with the new custom image.
+1. Open a [2i2c support ticket](../../support.md) to request an update to your hub with the new custom image.
 
    ```{image} images/open-support-ticket.png
    :alt: Screenshot of 2i2c support ticket.

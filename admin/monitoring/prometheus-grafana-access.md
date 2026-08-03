@@ -147,7 +147,7 @@ Fetch all available data sources from Prometheus.
 
 <!-- #region -->
 ```python
-datasources = get_prometheus_datasources("https://grafana.pilot.2i2c.cloud", GRAFANA_TOKEN)
+datasources = get_prometheus_datasources("https://grafana.<cluster-name>.2i2c.cloud", GRAFANA_TOKEN)
 ```
 <!-- #endregion -->
 
@@ -184,7 +184,7 @@ for prometheus_uid in datasources['uid']:
         print(f"{datasources.loc[datasources['uid']==prometheus_uid, 'name'].values[0]}: Error {err}")
         continue
     # Query Prometheus server
-    prometheus = get_pandas_prometheus("https://grafana.pilot.2i2c.cloud", GRAFANA_TOKEN, prometheus_uid)
+    prometheus = get_pandas_prometheus("https://grafana.<cluster-name>.2i2c.cloud", GRAFANA_TOKEN, prometheus_uid)
     try:
         df = prometheus.query_range(
             query,

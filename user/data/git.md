@@ -60,7 +60,7 @@ There are some extra steps for Hub Administrators to enable `gh-scoped-creds` fo
    ```
    
    If this returns nothing, then follow the next step. If this returns a client ID of the form `Iv1.xxxxxxxxxxxxxxxx`, then go to Step 3.
-1. Send a ticket to the [2i2c support desk](https://docs.2i2c.org/support/) and log a feature request for `gh-scoped-creds`. 2i2c will create a GitHub App and update the hub configuration to make the `GH_SCOPED_CREDS_CLIENT_ID` and `GH_SCOPED_CREDS_APP_URL` environment variables available in your hub.
+1. Send a ticket to the [2i2c support desk](../../support.md) and log a feature request for `gh-scoped-creds`. 2i2c will create a GitHub App and update the hub configuration to make the `GH_SCOPED_CREDS_CLIENT_ID` and `GH_SCOPED_CREDS_APP_URL` environment variables available in your hub.
 1. [Install the GitHub App](https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-a-third-party) to your GitHub organisation (requires GitHub organisation owner permissions).
    - Navigate to the GitHub App URL provided by 2i2c, which looks like `https://github.com/apps/<gh-app-name>`.
    - Click on the grey {gui}`Configure` button to install the GitHub app.

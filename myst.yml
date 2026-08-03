@@ -29,6 +29,7 @@ project:
         - "https://rstudio.com**" # Times out for the link checker but loads fine in a browser
         - "https://blog.jupyter.org**" # Intermittent SSL/certificate errors from the link checker
         - "https://files.frameshiftconsulting.com**" # PDF returns 415 Unsupported Media Type to the checker
+        - "https://azure.microsoft.com**" # Returns 503 to automated link checks
 site:
   template: book-theme
   nav:

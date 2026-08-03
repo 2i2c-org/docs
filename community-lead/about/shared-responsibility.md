@@ -28,14 +28,14 @@ Below we describe these areas in more detail, and define the roles that 2i2c and
 % NOTE: Goal is to have max 5 responsibilities per category, to avoid overwhelming people.
 1. **Monitor infrastructure for errors**. Continuously monitor cloud infrastructure to identify usability problems before they affect users.
 2. **Respond to incidents**. When incidents are identified or reported, carry out an incident response process to diagnose and resolve the incident.
-3. **Deploy and configure the cloud environment**. Make the necessary service connections and technical changes to set up the community's environment (e.g., authenetication, connecting with a database or defining RAM per user, etc).
+3. **Deploy and configure the cloud environment**. Make the necessary service connections and technical changes to set up the community's environment (e.g., authentication, connecting with a database or defining RAM per user, etc).
 4. **Enhance and develop cloud infrastructure**. Continuously develop and deploy software improvements with the goal of boosting service reliability and scalability.
 5. **Operate a Kubernetes cluster**. This is the cloud platform that manages all of a community's infrastructure, and may be shared between many communities.
 
 (role:site-reliability-engineer)=
 
 ```{admonition} Role: Site Reliability Engineer
-A team of engineers with expertise in cloud infrastructure and open source tools that we use as part of our services. This group of people oversees the cloud infrastructure that a community uses. They perform new development and upgrades, make changes per the request of [Community Representatives](#role:community-representative), and coordinate with the Community Support Team during incidents and outages.
+A team of engineers with expertise in cloud infrastructure and open source tools that we use as part of our services. This group of people oversees the cloud infrastructure that a community uses. They perform new development and upgrades, make changes per the request of [Community Representatives](#role:community-representative), and coordinate with [Community Guides](#role:community-guide) during incidents and outages.
 This is roughly equivalent to a [Site Reliability Engineering Team](https://en.wikipedia.org/wiki/Site_reliability_engineering).
 
 See [our Infrastructure documentation](https://infrastructure.2i2c.org/en/latest/) for more information.
@@ -82,10 +82,10 @@ However, our base service model does not allow us to spend extensive time managi
 
 ### Responsibilities
 
-A team of leaders *within the community that we work with* who act as [Community Representatives](#role:community-representative) on behalf of their community. This team coordinates more closely with our Community Support Team, facilitates the transfer of knowledge between 2i2c teams and communities of users, and helps manage the structure and dynamics of these communities. They also define the strategic mission and goals of each user community, and help us define the definition of "success" for the hub service.
+A team of leaders *within the community that we work with* who act as [Community Representatives](#role:community-representative) on behalf of their community. This team coordinates more closely with our [Community Guides](#role:community-guide), facilitates the transfer of knowledge between 2i2c teams and communities of users, and helps manage the structure and dynamics of these communities. They also define the strategic mission and goals of each user community, and help us define the definition of "success" for the hub service.
 
 1. **Define success for the hub's community**. Community leaders understand the goals of a community's users, and define whether the hub is meeting their needs.
-2. **Oversee user access policy**. Decide who has access to the hub, and what permissions they have. Generally done via the JupterHub admin panel.
+2. **Oversee user access policy**. Decide who has access to the hub, and what permissions they have. Generally done via the JupyterHub admin panel.
 3. **Manage and cultivate a community around the hub.** Define the community events, processes, structure, and communication channels that are best for a hub's community.
 4. **Represent community in decisions and feedback**. Serve as a point of contact for [Site Reliability Engineers](#role:site-reliability-engineer), make requests for changes to the hub, and surface incidents or problems if they arise.
 5. **Make financial decisions about the hub**. Have decision authority for changes that have a financial impact on the infrastructure, and serve as a point of contact for billing matters.
@@ -93,7 +93,7 @@ A team of leaders *within the community that we work with* who act as [Community
 (role:hub-administrator)=
 ```{admonition} Role: Hub Administrator
 
-Trusted community members that perform common administrative operations on a hub that do not require intervention from a Hub Engineer.
+Trusted community members that perform common administrative operations on a hub that do not require intervention from a [Site Reliability Engineer](#role:site-reliability-engineer).
 [Community Representatives](#role:community-representative) are the first Hub Administrators, and they may add new Hub Administrators via the JupyterHub interface.
 They are able to add users, start/stop servers, and generally have more control over operations on the hub.
 

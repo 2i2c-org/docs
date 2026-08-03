@@ -11,7 +11,7 @@ Hubs managed by 2i2c make this easy.
 1. **Open the classic Jupyter Notebook file browser.** If you are
    using another interface, navigate to the classic interface by changing your
    URL path to `/tree`. e.g.,
-   `<your-hub>.pilot.2i2c.cloud/user/<your-username>/tree`
+   `<your-hub>.2i2c.cloud/user/<your-username>/tree`
 
 2. Click on {gui}`Download Directory`.
 

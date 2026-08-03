@@ -76,7 +76,7 @@ You may switch between user interfaces interactively by altering the URL of your
 For example, here is the general structure of a URL for your personal 2i2c JupyterHub session:
 
 ```
-https://<your-hub>.pilot.2i2c.cloud/user/<your-username>/<your-interface>
+https://<your-hub>.2i2c.cloud/user/<your-username>/<your-interface>
 ```
 
 You can replace the contents of `<your-interface>` to be one of the following:

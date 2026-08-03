@@ -97,10 +97,6 @@ Contact 2i2c team
 
 ---
 
-## Full Documentation
-
----
-
 ::::{grid} 1
 
 :::{grid-item-card} 🆘 Need Help?

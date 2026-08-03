@@ -13,7 +13,7 @@ Before requesting this feature:
 
 ## How to request this feature
 
-To request this feature, please reach out to [2i2c support](https://docs.2i2c.org/support/) and provide the following information:
+To request this feature, please reach out to [2i2c support](../../support.md) and provide the following information:
 
 1. The name of the hub you want this feature enabled on
 2. The list of users or groups that should have access to Dask-Gateway

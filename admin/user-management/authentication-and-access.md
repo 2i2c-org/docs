@@ -139,7 +139,7 @@ See our [Infrastructure Guide](https://infrastructure.2i2c.org/hub-deployment-gu
 ```
 
 You will be presented with a list of all the GitHub orgs related to your account.
-Some will already be authorised and have a green tick next to them, others where you are a member will have a "Request" button next to them.
+Some will already be authorised and have a green tick next to them, others where you are a member will have a {gui}`Request` button next to them.
 Orgs where you are an admin will have a {gui}`Grant` button next to them. Click the {gui}`Grant` button next to the _target_ org associated with your hub before clicking the green {gui}`Authorize` button.
 
 For example, see the below screenshot where we wish to grant the `nasa-cryo-staging` OAuth app access to the `binderhub-test-org` org.

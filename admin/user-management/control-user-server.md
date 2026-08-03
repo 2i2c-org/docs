@@ -15,12 +15,12 @@ browser: `https://<your-hub-url>/hub/admin`.
 
 Accessing a user's server is useful when trying to debug or reproduce an issue they might have. This facility is available to admins via the admin panel.
 
-1. In the admin panel, you can click {gui}`Access server` to gain control of a user's
-   currently running server. If it isn't running, you can click {gui}`Start server`
+1. In the admin panel, you can click {gui}`Access Server` to gain control of a user's
+   currently running server. If it isn't running, you can click {gui}`Start Server`
    first and wait for it to start.
 
    ```{figure} ../../images/access-server.png
-   Clicking {gui}`Access server` will allow you to control the user's session.
+   Clicking {gui}`Access Server` will allow you to control the user's session.
    ```
 
 2. This will bring you to the default interface that the user would have seen if they had just logged into the hub. From here, you can navigate to the notebook the user has reported issues with, and help them debug.
@@ -60,8 +60,8 @@ To access a **different user's** server logs, you can [access their server](#use
 ### Stop or start a user's server
 
 Sometimes, you need to just turn a user's server on and off. You can
-also do this from the admin interface, by hitting the {gui}`Stop server`
-button, waiting for the server to stop, and the {gui}`Start server` button
+also do this from the admin interface, by hitting the {gui}`Stop Server`
+button, waiting for the server to stop, and the {gui}`Start Server` button
 again.
 
 This is particularly useful when their session might have gotten

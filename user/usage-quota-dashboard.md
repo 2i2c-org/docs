@@ -91,4 +91,4 @@ your hub administrator.
 
 ## References
 
-- Upstream documentation for [jupyterhub-usage-quotas](https://jupyterhub-usage-quotas.readthedocs.io/en/latest/tutorial/quickstart/#users)
+- Upstream documentation for [jupyterhub-usage-quotas](https://jupyterhub-usage-quotas.readthedocs.io/en/latest/howto/quickstart/#users)

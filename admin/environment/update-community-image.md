@@ -8,7 +8,7 @@ This instructional guide shows you how to add packages to a community-maintained
 1. Fork {icon}`octicon:repo-forked` the GitHub repository [example-inherit-from-community-image](https://github.com/2i2c-org/example-inherit-from-community-image) into your GitHub account.
 
    ```{note}
-   If you do not have a quay.io account, then can register for one at [https://sso.redhat.com](https://sso.redhat.com). Note that if you need to join your organization's account then you should register using an invitation from the organization's admin.
+   If you do not have a quay.io account, then you can register for one at [https://sso.redhat.com](https://sso.redhat.com). Note that if you need to join your organization's account then you should register using an invitation from the organization's admin.
    ```
    
 1. We recommend using [quay.io](https://quay.io) to host your custom image. Navigate to [quay.io](https://quay.io) and log into your account.
@@ -108,7 +108,7 @@ Once complete, under the section {gui}`Repository secrets` you should now see tw
    :align: center
    ```
 
-   then we recommend you press {gui}`Cancel` and securely authenicate using `gh-scoped-creds`. See the [2i2c Docs – Move code in and out of the hub with GitHub](../../user/data/git.md) for more information.
+   then we recommend you press {gui}`Cancel` and securely authenticate using `gh-scoped-creds`. See the [2i2c Docs – Move code in and out of the hub with GitHub](../../user/data/git.md) for more information.
    ````
 
 1. This triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build the base image and push this to the quay.io repository. The build process can take a few minutes. You can view the status of the build by visiting the {icon}`octicon:play` {gui}`Actions` tab at `https://github.com/<username>/example-inherit-from-community-image`.
@@ -130,7 +130,7 @@ Once complete, under the section {gui}`Repository secrets` you should now see tw
    - For now, remove the tests by deleting the `COPY` instruction and deleting the `image-tests` folder in the file explorer.
 
    ```{image} images/edit-dockerfile.png
-   :alt: Screenshot of updating the DockerFile.
+   :alt: Screenshot of updating the Dockerfile.
    ```
 
 ### Add packages to the Conda environment
@@ -159,7 +159,7 @@ Once complete, under the section {gui}`Repository secrets` you should now see tw
     
 1. Click {gui}`Create pull request` to confirm, which triggers the [repo2docker-action](https://github.com/jupyterhub/repo2docker-action) to build and push your image to the quay.io registry.
 
-1. When the GitHub actions have completed, it is important to test your image is working as expected by following either [Test the custom image on a 2i2c hub](#customize-image:test-hub) or [Test the custom image with Binder](#customize-image:test-binder).
+1. When the GitHub actions have completed, it is important to test your image is working as expected by following either [Test the custom image with a 2i2c hub](#customize-image:test-hub) or [Test the custom image with Binder](#customize-image:test-binder).
 
 (customize-image:test-hub)=
 #### Test the custom image with a 2i2c hub
@@ -174,7 +174,7 @@ Once complete, under the section {gui}`Repository secrets` you should now see tw
 
 1. Navigate to your 2i2c hub and paste the image tag into the {gui}`Image > Custom Image > Other...` field (see [](#environment:bring-your-own-image)).
 
-1. Click {gui}`Start` to launch the server and test your custom environment. You can continue editing the *DockerFile* and *environment.yml*, then push changes to the pull request as required. 
+1. Click {gui}`Start` to launch the server and test your custom environment. You can continue editing the *Dockerfile* and *environment.yml*, then push changes to the pull request as required. 
 
 (customize-image:test-binder)=
 #### Test the custom image with Binder
@@ -187,7 +187,7 @@ Once complete, under the section {gui}`Repository secrets` you should now see tw
    :alt: Screenshot of the Binder launcher.
    ```
     
-   Test the preview of your custom environment. You can continue editing the *DockerFile* and *environment.yml*, then push changes to the pull request as required.
+   Test the preview of your custom environment. You can continue editing the *Dockerfile* and *environment.yml*, then push changes to the pull request as required.
 
 ## Publish your new image
 
@@ -207,4 +207,4 @@ Once complete, under the section {gui}`Repository secrets` you should now see tw
 
 ## Link custom image to your hub
 
-Now that your image is published, follow these instructions: [](./customize.md).
+Now that your image is published, follow these instructions: [](./customize.md#customize-image:link-custom-image).

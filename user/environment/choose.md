@@ -25,7 +25,7 @@ You can choose from different pre-configured _"profiles"_ and for each profile y
 
 The image above represents a `Server Options` page example, where you can choose:
 
-- an image **profile** that defined the software environment and is curated by your hub administrator, with options such as {gui}`Python`, {gui}`R`, or even {gui}`Bring your own image`
+- an image **profile** that defines the software environment and is curated by your hub administrator, with options such as {gui}`Python`, {gui}`R`, or even {gui}`Bring your own image`
 - for each profile, you can select from a list of pre-configured **options** for the `Node share`, which represents the hardware resources such as CPU and RAM available on the server.
 
 (environment:bring-your-own-image)=

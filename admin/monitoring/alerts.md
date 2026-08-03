@@ -60,7 +60,7 @@ process. You will only need to do this once.
 6. Select the slack workspace that should get notifications.
 7. Click the {gui}`Create App` button. This creates a new slack app and redirects you to the configuration page for the new app.
 8. On the left sidebar, select {gui}`Incoming Webhooks` under {gui}`Features`. This opens a page that allows you to create a new webhook URL.
-9. Toggle the switch from {gui}`Off` to {gui}`On` on the top right.
+9. Toggle the switch on the top right from {gui}`Off` to {gui}`On`.
 10. Click the {gui}`Add New Webhook` button.
 11. Select the workspace and channel (created in step 2) where alerts should be posted to.
 12. Click the {gui}`Allow` button.

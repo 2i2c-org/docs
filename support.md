@@ -35,7 +35,7 @@ This page describes how you can encrypt information and send it to us!
 
 1. [Install age](https://github.com/FiloSottile/age#installation) on your computer.
    On a Mac, if you are using `homebrew`, you can simply `brew install age`. On Linux,
-   your package emanager should have `age`, and on Windows you can find binaries to download
+   your package manager should have `age`, and on Windows you can find binaries to download
    [from the releases page](https://github.com/FiloSottile/age/releases). See
    [all installation options](https://github.com/FiloSottile/age#installation)
 2. Run `age -e -r age1mmx8hfzalmn3tmpryrfvcud5vyfakxdfqe683r40qkr6pjd2ag6s72cat5 -a` on
@@ -43,7 +43,7 @@ This page describes how you can encrypt information and send it to us!
    then `Ctrl-D`. Make sure to copy this exactly!
    
    ```{note}
-   The parameter passed to `-r` (ag1mmx....) is the public key used to *encrypt* the message,
+   The parameter passed to `-r` (age1mmx....) is the public key used to *encrypt* the message,
    which we can decrypt with our private key. Providing it as part of the command makes it
    easier to distribute the public key, as otherwise users would have to download and manage
    a public key file.
