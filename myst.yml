@@ -1,6 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 extends:
+  - https://raw.githubusercontent.com/2i2c-org/team-compass/refs/heads/main/shared.yml
   - ./_data/toc.yml
 project:
   id: 2i2c-docs
@@ -31,23 +32,9 @@ project:
         - "https://files.frameshiftconsulting.com/**" # PDF returns 415 Unsupported Media Type to the checker
         - "https://azure.microsoft.com/**" # Returns 503 to automated link checks
 site:
-  template: book-theme
-  nav:
-    - title: Team Compass
-      url: https://compass.2i2c.org
-    - title: Infrastructure Guide
-      url: https://infrastructure.2i2c.org
-    - title: 2i2c Blog
-      url: https://2i2c.org/blog
-  actions:
-    - title: Support
-      url: https://docs.2i2c.org/support/
   parts:
     footer: parts/footer.md
   options:
     folders: true
     analytics_plausible: docs.2i2c.org
     logo_text: Community Hub Guide
-    favicon: ./_static/images/favicon.png
-    logo: ./_static/images/logo.webp
-    logo_dark: ./_static/images/logo-dark.webp
