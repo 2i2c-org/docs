@@ -79,14 +79,14 @@ Below are our objectives broken down by the type of support they relate to.
 
 :::{seealso}
 - See [](/support.md) for more information about contacting support.
-- See our team's {ref}`support process<tc:support:process>`.
+- See our team's [support process](xref:tc#support:process).
 :::
 
 ### General support objectives
 
 - We have a dedicated communications channel for support (see [](/support.md)).
 - At least one team member is always tasked with monitoring this channel.
-- Our support team is communicative, helpful, and {ref}`abides by our Code of Conduct<tc:code-of-conduct>`.
+- Our support team is communicative, helpful, and [abides by our Code of Conduct](xref:tc#code-of-conduct).
 
 ### Incident support objectives
 
@@ -102,7 +102,7 @@ Our ability to meet these objectives will depend on the times they are reported 
 ### Change and Guidance Request support objectives
 
 - We will triage Change and Guidance requests and respond to them within one working day.
-- We will prioritize resolving Change and Guidance Requests by balancing them against our other development priorities as described in {ref}`our Support Team Process documentation <tc:support:process>`.
+- We will prioritize resolving Change and Guidance Requests by balancing them against our other development priorities as described in [our Support Team Process documentation](xref:tc#support:process).
 
 
 (objectives:cost)=

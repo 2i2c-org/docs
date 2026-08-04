@@ -8,7 +8,7 @@ This advanced guide describes how you can create a custom user image for your co
 Create a new repository for your user image from the [`hub-user-image-template`](https://github.com/2i2c-org/hub-user-image-template) repository.
 
 1. Go to the [`hub-user-image-template`](https://github.com/2i2c-org/hub-user-image-template) repository.
-2. Click the {guilabel}`Use this template` button located at the top of this repository's GitHub page.
+2. Click the {gui}`Use this template` button located at the top of this repository's GitHub page.
 
    ```{figure} images/use-template.png
    :alt: Use this template

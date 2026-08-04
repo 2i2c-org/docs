@@ -114,7 +114,7 @@ to `S3FileSystem`.
 :::
 :::{tab-item} GCP
 :sync: GCP
-Generate Application Default Credentials (ADC) following the instructions in [Upload files to a GCP bucket from outside the hub](manage-object-storage-gcp.md/#large-datasets-from-a-remote-server) and make a note of where the `application_default_credentials.json` file is located.
+Generate Application Default Credentials (ADC) following the instructions in [Upload files to a GCP bucket from outside the hub](manage-object-storage-gcp.md#large-datasets-from-a-remote-server) and make a note of where the `application_default_credentials.json` file is located.
 
 ```python
 import json

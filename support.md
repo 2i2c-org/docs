@@ -1,15 +1,15 @@
-(support:email)=
+(support)=
 # Get support
 
 Send all support requests using the **support widget on the bottom right of the page**.
-The {ref}`2i2c support process <tc:support:process>` describes the process we'll follow when a new ticket is opened.
+The [2i2c support process](xref:tc#support:process) describes the process we'll follow when a new ticket is opened.
 For our full team process, see 2i2c's [Technical Support Process](https://compass.2i2c.org/services/technical-support/process/).
 
 For example, click the button below to open the support widget (or, click the widget directly).
 
-<button onclick="openWidget()">
-   Click here to open a support ticket
-</button>
+:::{support-button}
+:label: Click here to open a support ticket
+:::
 
 ```{admonition} If you can't see the support widget
 If you cannot see the "Help" widget in the bottom right corner of the screen, or clicking the button above does not open a pop-up contact form, please check your browser's privacy settings.
@@ -18,10 +18,9 @@ Privacy extensions can block the pop-up contact form.
 
 ## Who can ask for support?
 
-A {role}`Community Representative` of a hub should be the one that surfaces support requests to the 2i2c {role}`Site Reliability Engineer`ing team.
+A [Community Representative](#role:community-representative) of a hub should be the one that surfaces support requests to the 2i2c [Site Reliability Engineering](#role:site-reliability-engineer) team.
 Before reaching out to 2i2c for support, this person should work with others in their community to understand the problem and to ensure that it is something that requires intervention from a 2i2c Engineer.
 
-(support:encrypt)=
 ## Send us encrypted content
 
 Sometimes community representatives need to send us *encrypted* information -
@@ -35,7 +34,7 @@ This page describes how you can encrypt information and send it to us!
 
 1. [Install age](https://github.com/FiloSottile/age#installation) on your computer.
    On a Mac, if you are using `homebrew`, you can simply `brew install age`. On Linux,
-   your package emanager should have `age`, and on Windows you can find binaries to download
+   your package manager should have `age`, and on Windows you can find binaries to download
    [from the releases page](https://github.com/FiloSottile/age/releases). See
    [all installation options](https://github.com/FiloSottile/age#installation)
 2. Run `age -e -r age1mmx8hfzalmn3tmpryrfvcud5vyfakxdfqe683r40qkr6pjd2ag6s72cat5 -a` on
@@ -43,7 +42,7 @@ This page describes how you can encrypt information and send it to us!
    then `Ctrl-D`. Make sure to copy this exactly!
    
    ```{note}
-   The parameter passed to `-r` (ag1mmx....) is the public key used to *encrypt* the message,
+   The parameter passed to `-r` (age1mmx....) is the public key used to *encrypt* the message,
    which we can decrypt with our private key. Providing it as part of the command makes it
    easier to distribute the public key, as otherwise users would have to download and manage
    a public key file.

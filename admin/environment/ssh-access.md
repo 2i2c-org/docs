@@ -38,7 +38,7 @@ You can also add these packages to your own image instead of using the example i
 
 ```
 Host myhub
-  HostName <your-hub-hostname>        # e.g., myhub.pilot.2i2c.cloud
+  HostName <your-hub-hostname>        # e.g., myhub.2i2c.cloud
   User jovyan
   ProxyCommand websocat --binary -H="Authorization: token <API_TOKEN>" asyncstdio:wss://%h/user/<JUPYTERHUB_USERNAME>/sshd/
 ```

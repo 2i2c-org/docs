@@ -7,12 +7,24 @@ on:
   - cron: '0 1 * * *'
 
 jobs:
-  # ref: https://github.com/2i2c-org/.github/blob/main/.github/workflows/documentation-link-check.yaml
   linkcheck:
     # don't run cron job on forks
     # ref: https://github.com/orgs/community/discussions/26684
     if: github.repository == '2i2c-org/docs'
-    uses: 2i2c-org/.github/.github/workflows/documentation-link-check.yaml@main
-    with:
-      docs_path: .
-      requirements_path: requirements.txt
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install mystmd
+        run: pip install mystmd
+
+      - name: Download figures
+        run: python scripts/download-images.py
+
+      - name: Build the site and check links
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: myst build --html --check-links --strict

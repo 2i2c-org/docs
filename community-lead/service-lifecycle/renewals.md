@@ -20,16 +20,16 @@ We are still working out the process for renewals as part of our [new membership
 
 Here are a few resources to review as you think about renewals:
 
-- **{doc}`../../admin/monitoring/grafana-dashboards`**: See your hub's usage dashboards to understand activity
-- **{doc}`../../admin/monitoring/cost-general`**: Review your hub's cost trends and usage patterns
-- **{doc}`../billing/overview`**: Understand how cloud costs work and what drives spending
+- **[](../../admin/monitoring/grafana-dashboards.md)**: See your hub's usage dashboards to understand activity
+- **[](../../admin/monitoring/cost-general.md)**: Review your hub's cost trends and usage patterns
+- **[](../billing/overview.md)**: Understand how cloud costs work and what drives spending
 
 ## If you'd like to end service
 
 If you're considering not renewing, you have a few options:
 
-- **{doc}`ending-service`**: Guidance on exporting your data and transitioning away from 2i2c
-- **{doc}`../../admin/service-lifecycle/replicate`**: Learn how to replicate your own JupyterHub independently using 2i2c's open infrastructure (part of our [Right to Replicate](https://2i2c.org/right-to-replicate))
+- **[](ending-service.md)**: Guidance on exporting your data and transitioning away from 2i2c
+- **[](../../admin/service-lifecycle/replicate.md)**: Learn how to replicate your own JupyterHub independently using 2i2c's open infrastructure (part of our [Right to Replicate](https://2i2c.org/right-to-replicate))
 
 [Contact 2i2c support](../../support.md) to discuss your timeline and transition plan.
 

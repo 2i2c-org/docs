@@ -1,0 +1,119 @@
+version: 1
+project:
+  toc:
+  - file: index.md
+  - file: user/index.md
+    children:
+    - file: user/get-started.md
+    - file: user/basics/index.md
+      children:
+      - file: user/basics/startup.md
+    - file: user/data/index.md
+      children:
+      - file: user/data/filesystem.md
+      - file: user/data/git.md
+      - file: user/data/sharing.md
+      - file: user/data/object-storage/index.md
+        children:
+        - file: user/data/object-storage/working-with-object-storage.md
+        - file: user/data/object-storage/manage-object-storage-aws.md
+        - file: user/data/object-storage/manage-object-storage-gcp.md
+    - file: user/environment/index.md
+      children:
+      - file: user/environment/choose.md
+      - file: user/environment/dynamic-imagebuilding.md
+      - file: user/environment/notebook-ci.md
+    - file: user/sharing/index.md
+      children:
+      - file: user/sharing/documentation.md
+      - file: user/sharing/files.md
+    - file: user/scalable-computing/index.md
+      children:
+      - file: user/scalable-computing/launch-dask-gateway-cluster.md
+      - file: user/scalable-computing/gpu-sharing.md
+    - file: user/usage-quota-dashboard.md
+    - file: user/service-lifecycle/index.md
+      children:
+      - file: user/service-lifecycle/offboarding.md
+  - file: admin/index.md
+    children:
+    - file: admin/get-started.md
+    - file: admin/environment/index.md
+      children:
+      - file: admin/environment/defaults.md
+      - file: admin/environment/interfaces.md
+      - file: admin/environment/alternative-interfaces.md
+      - file: admin/environment/ssh-access.md
+      - file: admin/environment/customize.md
+        children:
+        - file: admin/environment/update-community-image.md
+        - file: admin/environment/hub-user-image-template-guide.md
+      - file: admin/environment/mount-repositories.md
+      - file: admin/environment/code-server.md
+    - file: admin/user-management/index.md
+      children:
+      - file: admin/user-management/authentication-and-access.md
+      - file: admin/user-management/control-user-server.md
+      - file: admin/user-management/dask-access.md
+    - file: admin/community/index.md
+      children:
+      - file: admin/community/events.md
+    - file: admin/monitoring/index.md
+      children:
+      - file: admin/monitoring/grafana-dashboards.md
+      - file: admin/monitoring/jupyterhub-dashboards.md
+      - file: admin/monitoring/cost-general.md
+      - file: admin/monitoring/cost-users-groups.md
+      - file: admin/monitoring/disk-usage.md
+      - file: admin/monitoring/reporting.md
+      - file: admin/monitoring/prometheus-grafana-access.md
+      - file: admin/monitoring/prometheus-grafana-cost.md
+      - file: admin/monitoring/prometheus-api-access.md
+      - file: admin/monitoring/alerts.md
+    - file: admin/reliability/index.md
+      children:
+      - file: admin/reliability/status-page.md
+      - file: admin/reliability/outages.md
+    - file: admin/security/index.md
+      children:
+      - file: admin/security/security-foundations.md
+      - file: admin/security/internet-access.md
+      - file: admin/security/managing-secrets.md
+    - file: admin/service-lifecycle/index.md
+      children:
+      - file: admin/service-lifecycle/ending-service.md
+      - file: admin/service-lifecycle/replicate.md
+  - file: community-lead/index.md
+    children:
+    - file: community-lead/get-started.md
+    - file: community-lead/about/index.md
+      children:
+      - file: community-lead/about/service-model.md
+      - file: community-lead/about/cloud-providers.md
+      - file: community-lead/about/service-objectives.md
+      - file: community-lead/about/shared-responsibility.md
+    - file: community-lead/billing/index.md
+      children:
+      - file: community-lead/billing/overview.md
+      - file: community-lead/billing/create-billing-account.md
+      - file: community-lead/billing/budget-alerts.md
+      - file: community-lead/billing/responsiveness.md
+    - file: community-lead/community/management.md
+    - file: community-lead/user-policy/index.md
+      children:
+      - file: community-lead/user-policy/code-of-conduct.md
+      - file: community-lead/user-policy/acceptable-use.md
+      - file: community-lead/user-policy/privacy.md
+      - file: community-lead/user-policy/sub-processors.md
+    - file: community-lead/service-lifecycle/index.md
+      children:
+      - file: community-lead/service-lifecycle/renewals.md
+      - file: community-lead/service-lifecycle/ending-service.md
+  - file: contribute/index.md
+    children:
+    - file: contribute/overview.md
+    - file: contribute/mvp.md
+    - file: contribute/get-started.md
+    - file: contribute/style.md
+    - file: contribute/terminology.md
+  - file: support.md

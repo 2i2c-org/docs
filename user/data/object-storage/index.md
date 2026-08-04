@@ -2,11 +2,8 @@
 
 This section gives an overview of storing data in the cloud, as well as links to how-to guides for using specific tools to manage your cloud data:
 
-```{toctree}
-:maxdepth: 1
-working-with-object-storage
-manage-object-storage-aws
-manage-object-storage-gcp
+```{tableofcontents}
+:context: children
 ```
 
 ## Overview
@@ -75,4 +72,4 @@ A common set of credentials is used for accessing storage buckets.
 Hub users can access each others' objects stored in scratch or persistent bucket storage and accidentally modify or delete them.
 ```
 
-It is possible to configure read-only access for objects stored in cloud storage on your hub, though this is not a standard feature of our hubs. Please consult {doc}`2i2c support<../../../../support>` to discuss enabling this feature.
+It is possible to configure read-only access for objects stored in cloud storage on your hub, though this is not a standard feature of our hubs. Please consult [2i2c support](../../../support.md) to discuss enabling this feature.

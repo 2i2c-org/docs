@@ -19,21 +19,18 @@ docs/
   └── user/                   # Reader archetype
       ├── index.md            # Archetype landing page
       └── environment/        # High-level topic
-          └── customize.md    # Specific topic
+          └── choose.md       # Specific topic
 ```
 
-Each archetype is explained on our documentation landing page in a section like the following:
+The site's table of contents lives in [`_data/toc.yml`](../_data/toc.yml), with one top-level entry per archetype:
 
-````md
-## [archetype]
-
-[short description of archetype]
-
-```{toctree}
-:caption: [archetype]
-./[archetype]/[topic]/page.md
+```yaml
+- file: [archetype]/index.md
+  children:
+  - file: [archetype]/[topic]/page.md
 ```
-````
+
+Add new pages to `_data/toc.yml` or they won't appear in the site navigation.
 
 ## Reader archetypes / personas
 
@@ -41,15 +38,15 @@ Each archetype is explained on our documentation landing page in a section like 
 - A hub administrator (`admin/`). They carry out technical actions with the hub on behalf of a community.
 - A community leader (`community-lead/`). They make decisions about the community's service, care about cost and billing, etc.
 
-❌ Not included: A general researcher data scientist who wants to learn about cloud workfows. We imagine either linking to other community documentation for this, or having a dedicated resource in the future.
+❌ Not included: A general researcher data scientist who wants to learn about cloud workflows. We imagine either linking to other community documentation for this, or having a dedicated resource in the future.
 
 ## Top-level guides
 
 There are a few special topics we include as top-level guides.
 
-- **Getting starged** (`get-started/`). Meant for a newcomer who needs orientation. Could be any other user persona. They want to learn about the service and triage themselves into a persona.
+- **Getting started** (`<archetype>/get-started.md`). Meant for a newcomer who needs orientation. Could be any other user persona. They want to learn about the service and triage themselves into a persona.
 - **Contributing guide** (`contribute/`). Could be any persona or a 2i2c team member. They need information for how to contribute to the documentation.
 
 ## Writing documentation
 
-When adding new documentation, follow our {ref}`mvp` guidelines to ensure pages are actionable and value-focused.
+When adding new documentation, follow our [](#mvp) guidelines to ensure pages are actionable and value-focused.

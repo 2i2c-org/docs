@@ -36,7 +36,7 @@ Authorisation to pull and push to GitHub is handled with [`gh-scoped-creds`](htt
    Waiting....
    ```
    Copy the code from the prompt and paste into [https://github.com/login/device](https://github.com/login/device) as instructed.
-1. Authorise the hub to access GitHub by clicking the green button with the label *Authorize <name of hub>*.
+1. Authorise the hub to access GitHub by clicking the green {gui}`Authorize <name of hub>` button.
    ```{note}
    You only need to do this once per JupyterHub, and can revoke access any time. You can always provide access to your own personal repositories, but might need approval from admins of GitHub organizations if you want to push to repos in that organization.
      ```     
@@ -60,10 +60,10 @@ There are some extra steps for Hub Administrators to enable `gh-scoped-creds` fo
    ```
    
    If this returns nothing, then follow the next step. If this returns a client ID of the form `Iv1.xxxxxxxxxxxxxxxx`, then go to Step 3.
-1. Send a ticket to the [2i2c support desk](https://docs.2i2c.org/support/) and log a feature request for `gh-scoped-creds`. 2i2c will create a GitHub App and update the hub configuration to make the `GH_SCOPED_CREDS_CLIENT_ID` and `GH_SCOPED_CREDS_APP_URL` environment variables available in your hub.
+1. Send a ticket to the [2i2c support desk](../../support.md) and log a feature request for `gh-scoped-creds`. 2i2c will create a GitHub App and update the hub configuration to make the `GH_SCOPED_CREDS_CLIENT_ID` and `GH_SCOPED_CREDS_APP_URL` environment variables available in your hub.
 1. [Install the GitHub App](https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-a-third-party) to your GitHub organisation (requires GitHub organisation owner permissions).
    - Navigate to the GitHub App URL provided by 2i2c, which looks like `https://github.com/apps/<gh-app-name>`.
-   - Click on the grey *Configure* button to install the GitHub app.
+   - Click on the grey {gui}`Configure` button to install the GitHub app.
    - Select the GitHub organisation that you would like to enable `gh-scoped-creds` for
      ```{image} media/git-install-app-1.png
      :width: 50%
@@ -79,7 +79,7 @@ There are some extra steps for Hub Administrators to enable `gh-scoped-creds` fo
      :align: center
      :alt: Screenshot of the page to install a GitHub App showing where to select the repositories you want to install `gh-scoped-creds` for and check for which read-write permissions there are.
      ```
-   - Click the green button labelled *Install*.
+   - Click the green {gui}`Install` button.
 1. `gh-scoped-creds` is now enabled for your hub.
 
 ```{note}

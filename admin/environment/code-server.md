@@ -3,14 +3,14 @@
 VS Code is a popular code editor used by scientists and software developers alike. Whilst 2i2c cannot host VS Code Server as a service [due to the terms of the VS Code Server license][license], there are alternatives such as code-server that are not subject to these restrictions. As such, 2i2c recommends deploying code-server for communities that wish to run VS Code on their Hubs.
 
 ```{note}
-This guide requires you to customize your hub image using the process described in out [advanced image creation guide](hub-user-image-template-guide/how-to).
+This guide requires you to customize your hub image using the process described in out [advanced image creation guide](#hub-user-image-template-guide/how-to).
 ```
 
 ## Install the necessary packages
 
 The `code-server` package is distributed by several packaging repositories, including `conda-forge` and the Debian/Ubuntu repositories. For most users, we'll recommend adding `code-server` to the Conda/Mamba environment definitions. In addition, we can use `jupyter-server-proxy` and `jupyter-vscode-proxy` to launch and proxy the code-server web service through the Jupyter Server application.
 
-Let's modify the `environment.yml` file that we created in the [advanced image creation guide](hub-user-image-template-guide/how-to):
+Let's modify the `environment.yml` file that we created in the [advanced image creation guide](#hub-user-image-template-guide/how-to):
 
 ```{code-block} yaml
 :emphasize-lines: 16,17,18
@@ -78,7 +78,7 @@ exec "$@"
 
 ## Test the image
 
-Once you have the tag of the newly built image (repositories created from the [advanced hub image guide](hub-user-image-template-guide/how-to) automatically build images when the `main` branch is updated), you can test it out on your hub. You should see a `VS Code` entry in the JupyterLab interface:
+Once you have the tag of the newly built image (repositories created from the [advanced hub image guide](#hub-user-image-template-guide/how-to) automatically build images when the `main` branch is updated), you can test it out on your hub. You should see a `VS Code` entry in the JupyterLab interface:
 
 :::{figure} ./images/code-server-launch.png
 

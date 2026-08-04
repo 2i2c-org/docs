@@ -6,7 +6,7 @@ Hub administrators are trusted community members who perform common administrati
 
 As a hub administrator, you can:
 
-- Customize your hub environment (software, packages, interfaces) - see {doc}`environment/index`
+- Customize your hub environment (software, packages, interfaces) - see [](environment/index.md)
 - Add and remove users from your hub
 - Start and stop user servers
 - View monitoring dashboards
@@ -15,6 +15,6 @@ See the other sections in this guide for more information about each of these ta
 
 ## Getting help
 
-For infrastructure changes or configuration that requires 2i2c support, see {doc}`../support`.
+For infrastructure changes or configuration that requires 2i2c support, see [](../support.md).
 
-For more about the hub administrator role, see {doc}`../community-lead/about/shared-responsibility`.
+For more about the hub administrator role, see [](../community-lead/about/shared-responsibility.md).

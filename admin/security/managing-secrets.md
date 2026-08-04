@@ -38,11 +38,11 @@ To create a secret for the GitHub organization for multiple users, see the [GitH
 :::
 
 1. Navigate to the GitHub organization.
-1. In the *{octicon}`gear` Settings* menu, click on *{octicon}`key-asterisk` Secrets and Tokens > Actions* in the left-side menu. 
-1. Under the *Organization Secrets* section, click on the {guilabel}`New organization secret` button.
-1. Enter the name of your secret in the *Name* field and paste in the value of your secret in the *Secret* field.
-1. Scope the secret to the relevant select repositories under the *Repository access* dropdown.
-1. Click {guilabel}`Add secret` to confirm.
+1. In the {icon}`octicon:gear` {gui}`Settings` menu, click on {icon}`octicon:key-asterisk-16` {gui}`Secrets and variables > Actions` in the left-side menu. 
+1. Under the {gui}`Organization secrets` section, click on the {gui}`New organization secret` button.
+1. Enter the name of your secret in the {gui}`Name` field and paste in the value of your secret in the {gui}`Secret` field.
+1. Scope the secret to the relevant select repositories under the {gui}`Repository access` dropdown.
+1. Click {gui}`Add secret` to confirm.
 
 Following this, adjust your GitHub action workflow file to make the secret available to your job with the `env` key value. See the [GitHub Docs – Using secrets in GitHub actions](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#using-secrets-in-a-workflow) for a full guide. Here is an example snippet of a GitHub secret configuration below:
 
@@ -67,11 +67,11 @@ If you deploy documentation using Read the Docs, ensure that the secret is avail
 
 1. Navigate to [Read the Docs](https://readthedocs.org) and log into your account.
 1. Click on the name of the project you wish to enable the secret for.
-1. Click the *{octicon}`gear` Admin* button.
-1. Click the *Environment Variables* section in the left sidebar and then click on {guilabel}`Add Environment Variable`.
-1. Enter the secret name into the *Name* field and paste in your secret value into the *Value* field.
+1. Click the {icon}`octicon:gear` {gui}`Admin` button.
+1. Click the {gui}`Environment Variables` section in the left sidebar and then click on {gui}`Add Environment Variable`.
+1. Enter the secret name into the {gui}`Name` field and paste in your secret value into the {gui}`Value` field.
 1. **Important:** leave the box *Expose this environment variable in PR builds?* unchecked to keep your token secret.
-1. Confirm by clicking {guilabel}`Save`.
+1. Confirm by clicking {gui}`Save`.
 
 :::{caution}
 Custom environment variables not marked as public are not available in pull request builds. See the [readthedocs docs – Environment variables and build process](https://docs.readthedocs.io/en/stable/environment-variables.html).

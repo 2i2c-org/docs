@@ -7,7 +7,7 @@ without having to install packages themselves.
 
 ## Customize your user environment
 
-While all hubs [come with a default environment](environment/default), it is possible to create a custom user environment for the hub. Here are a few ways that you can do this.
+While all hubs [come with a default environment](#environment/default), it is possible to create a custom user environment for the hub. Here are a few ways that you can do this.
 
 ### Create your own image
 
@@ -42,11 +42,11 @@ unable to start, due to conflicting packages. [See this blog post on using pip i
 ## Create multiple environments for users to select
 
 If your hub's community has workflows that differ significantly, it can be useful to create multiple user environments for your hub.
-This uses {ref}`Jupyter Hub User Profiles<z2jh:multiple-profiles>` to create a menu of environment options when a user launches a new session.
+This uses [Jupyter Hub User Profiles](xref:z2jh#multiple-profiles) to create a menu of environment options when a user launches a new session.
 
 To add multiple environments for your hub, take these steps:
 
-1. Follow the steps in [](environment:image) for each environment you wish to offer your hub's users.
+1. Follow the steps in [](#environment:image) for each environment you wish to offer your hub's users.
    You should have one repository per environment, and each one should push to a Docker image registry via the repo2docker action.
 2. [Open a support request](../../support.md) requesting that your hub be set up to serve multiple user environments.
    A 2i2c engineer will assist you in configuring the hub to set up multiple environments.
@@ -59,9 +59,11 @@ For detailed information about the default environment and user interfaces avail
 
 Hubs can be configured to allow users to [dynamically build environment images from the JupyterHub](#user:environment-building). This provides a lightweight UI allowing users to point the hub to a GitHub repository containing the definition of the environment they wish to build.
 
-<button onclick="openWidget({subject:'Request dynamic image building for hub', type:'Feature Request'})">
-   Click here to request dynamic image building
-</button>
+:::{support-button}
+:label: Click here to request dynamic image building
+:subject: Request dynamic image building for hub
+:type: Feature Request
+:::
 
 ## Accessing user interfaces
 
@@ -74,7 +76,7 @@ You may switch between user interfaces interactively by altering the URL of your
 For example, here is the general structure of a URL for your personal 2i2c JupyterHub session:
 
 ```
-https://<your-hub>.pilot.2i2c.cloud/user/<your-username>/<your-interface>
+https://<your-hub>.2i2c.cloud/user/<your-username>/<your-interface>
 ```
 
 You can replace the contents of `<your-interface>` to be one of the following:
@@ -90,4 +92,4 @@ To do so, [contact 2i2c support](../../support.md) with your request.
 
 ### by using `nbgitpuller` links
 
-In addition, you can configure the interface that **nbgitpuller links** point to, see [](content:nbgitpuller) for information about nbgitpuller links.
+In addition, you can configure the interface that **nbgitpuller links** point to, see [](#content:nbgitpuller) for information about nbgitpuller links.

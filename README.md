@@ -24,5 +24,5 @@ nox -s docs
 To build the documentation with a server that **watches for changes and auto-builds the documentation with a preview**, run the following:
 
 ```
-nox -s docs -- live
+nox -s docs-live
 ```

@@ -11,19 +11,19 @@ Grafana is an open-source analytics and interactive visualization web applicatio
 See [Grafana docs – Service Accounts](https://grafana.com/docs/grafana/latest/administration/service-accounts/) for more details.
 
 1. Navigate to your Grafana instance (see the [List of Running Hubs](https://infrastructure.2i2c.org/reference/hubs/) table).
-1. Open the *{octicon}`three-bars` Menu* and click on *{octicon}`gear` Administration > Users and access > Service accounts*.
-1. Click on the {guilabel}`Add service account` button on the top-right.
-1. Choose a descriptive *Display name*, e.g. `username-local-prometheus-access` and leave the role as *Viewer*. Click the {guilabel}`Create` button to confirm.
-1. You will see a new page with the details of the service account you have created. In the section *Tokens*, click the {guilabel}`Add service account token` button to generate a token to authenticate with the Grafana API.
+1. Open the {icon}`octicon:three-bars` {gui}`Menu` and click on {icon}`octicon:gear` {gui}`Administration > Users and access > Service accounts`.
+1. Click on the {gui}`Add service account` button on the top-right.
+1. Choose a descriptive {gui}`Display name`, e.g. `username-local-prometheus-access` and leave the role as {gui}`Viewer`. Click the {gui}`Create` button to confirm.
+1. You will see a new page with the details of the service account you have created. In the section {gui}`Tokens`, click the {gui}`Add service account token` button to generate a token to authenticate with the Grafana API.
 1. Choose a descriptive name for the token and then set a token expiry date. We recommend 1 month from now.[^token]
-1. Click the {guilabel}`Generate token button` to confirm.
+1. Click the {gui}`Generate token` button to confirm.
 1. **Important:** Copy the token and keep a copy somewhere safe. You will not be able to see it again. Losing a token requires creating a new one.
 
 [^token]: After the token expires, you will need to regenerate a new token and update its value in the local `.env` file and/or GitHub action secret.
 
 ### Configure Grafana Token access
 
-See {ref}`managing-secrets` for a general guide to configuring access to the Grafana Token in a local development environment or while deploying with GitHub actions.
+See [](#managing-secrets) for a general guide to configuring access to the Grafana Token in a local development environment or while deploying with GitHub actions.
 
 (hub-activity:python-packages)=
 ### Python packages
@@ -147,7 +147,7 @@ Fetch all available data sources from Prometheus.
 
 <!-- #region -->
 ```python
-datasources = get_prometheus_datasources("https://grafana.pilot.2i2c.cloud", GRAFANA_TOKEN)
+datasources = get_prometheus_datasources("https://grafana.<cluster-name>.2i2c.cloud", GRAFANA_TOKEN)
 ```
 <!-- #endregion -->
 
@@ -184,7 +184,7 @@ for prometheus_uid in datasources['uid']:
         print(f"{datasources.loc[datasources['uid']==prometheus_uid, 'name'].values[0]}: Error {err}")
         continue
     # Query Prometheus server
-    prometheus = get_pandas_prometheus("https://grafana.pilot.2i2c.cloud", GRAFANA_TOKEN, prometheus_uid)
+    prometheus = get_pandas_prometheus("https://grafana.<cluster-name>.2i2c.cloud", GRAFANA_TOKEN, prometheus_uid)
     try:
         df = prometheus.query_range(
             query,

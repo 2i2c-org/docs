@@ -67,7 +67,7 @@ For example, here's what it would look like to use the URL of the [2i2c showcase
 
 ```{figure} images/launch-button-menu.png
 :width: 75%
-The launch button pop-up with the 2i2c showcase hub URL pasted. Clicking the {kbd}`Launch` button will ask your user to log-in, and then launch an interactive Jupyter server with the source file of the current page loaded for editing.
+The launch button pop-up with the 2i2c showcase hub URL pasted. Clicking the {gui}`Launch` button will ask your user to log-in, and then launch an interactive Jupyter server with the source file of the current page loaded for editing.
 ```
 
 (learn-authoring)=

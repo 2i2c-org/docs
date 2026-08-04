@@ -14,12 +14,8 @@ Some quick recommendations for how to handle data:
 
 For more information, see the sections below.
 
-```{toctree}
-:maxdepth: 2
-filesystem
-git
-sharing
-object-storage/index
+```{tableofcontents}
+:context: children
 ```
 
 ## References and attribution

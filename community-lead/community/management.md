@@ -36,7 +36,7 @@ Many of the resources below have excellent suggestions for how to set up a syste
 
 - CSCCE Contributing Guidelines: https://www.cscce.org/cscce-community-participation-guidelines/ / blog post about the release of these guidelines (community strategy and design group)
 - The Turing Way Code of Conduct: https://the-turing-way.netlify.app/community-handbook/coc.html (distributed community)
-- The 2i2c Code of Conduct: https://team-compass.2i2c.org/en/latest/code-of-conduct/index.html (cloud services / infrastructure)
+- The 2i2c Code of Conduct: https://compass.2i2c.org/code-of-conduct/ (cloud services / infrastructure)
 - The Recurse Center Code of Conduct: https://www.recurse.com/code-of-conduct (technology and software organization)
 - The INCF community participation guidelines: https://www.incf.org/community-guidelines (research community)
 

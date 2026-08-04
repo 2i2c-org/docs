@@ -34,14 +34,14 @@ $ du -skh ~
 If you go over the quota limit, then you may experience degraded performance on your server. Contact your hub administrator if you run into any problems.
 
 :::{seealso}
-If your hub provides a **Usage** dashboard, you can view your home storage usage and quota there too. See {doc}`/user/usage-quota-dashboard`.
+If your hub provides a **Usage** dashboard, you can view your home storage usage and quota there too. See [](/user/usage-quota-dashboard.md).
 :::
 
 :::{seealso}
 **For hub administrators:** You can monitor disk usage across all users on your hub using the [Home Directory Usage Dashboard](#monitoring:disk-usage) in Grafana.
 :::
 
-For temporarily storing large datasets, take a look at the {ref}`/tmp directory<filesystem:tmp>` section below.
+For temporarily storing large datasets, take a look at the [/tmp directory](#filesystem:tmp) section below.
 
 For storing data in cloud object storage, see the section [Cloud Object Storage](./object-storage/index.md).
 
@@ -53,7 +53,7 @@ For example, if you change your shell such that it can no longer launch a Jupyte
 This may happen if you **change your default shell** to something like [zsh](https://ohmyz.sh/).
 
 If you change your `~/.bash_profile` and something suddenly breaks, try reverting the change to this file.
-If your session can no longer start, [email support](support:email) as this file may need to be manually edited or deleted.
+If your session can no longer start, [email support](#support) as this file may need to be manually edited or deleted.
 
 ## The `shared` Directory
 

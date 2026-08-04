@@ -6,7 +6,7 @@ resource usage against the quota limits applied to your account.
 ## Where to find the dashboard
 
 From the JupyterHub homepage (e.g. `https://<your-hub-url>/hub/home`), open the
-**Services** menu in the top navigation bar and click **usage-quota**.
+{gui}`Services` menu in the top navigation bar and click {gui}`usage-quota`.
 
 ```{note}
 Which sections you see on this dashboard is configured per hub. Depending on how
@@ -25,8 +25,8 @@ currently using.
 ```{figure} /images/usage-quota-dashboard-storage.png
 :alt: The Usage dashboard opened from the Services menu, showing the Home storage section with usage, quota, amount remaining, and a percentage-used progress bar.
 
-The Usage dashboard, opened from the **Services** menu. This hub shows the
-**Home storage** section only.
+The Usage dashboard, opened from the {gui}`Services` menu. This hub shows the
+{gui}`Home storage` section only.
 ```
 
 It displays:
@@ -49,7 +49,7 @@ before you reach your quota. If you are already locked out and cannot start your
 server, contact your hub administrator for help removing stale data.
 
 For more on how home directory storage works and how to check your usage from a
-terminal, see {ref}`Per-User Storage Quotas <filesystem:storage-quotas>`.
+terminal, see [Per-User Storage Quotas](#filesystem:storage-quotas).
 
 (usage-dashboard:compute)=
 
@@ -61,7 +61,7 @@ time window (for example, the last 30 days).
 ```{figure} /images/usage-quota-dashboard.png
 :alt: The Usage dashboard showing the Home storage and Compute sections, each with usage, quota, amount remaining, and a percentage-used progress bar.
 
-The Usage dashboard. The **Compute** section is shown on the right; your hub may
+The Usage dashboard. The {gui}`Compute` section is shown on the right; your hub may
 show one or both sections.
 ```
 
@@ -91,4 +91,4 @@ your hub administrator.
 
 ## References
 
-- Upstream documentation for [jupyterhub-usage-quotas](https://jupyterhub-usage-quotas.readthedocs.io/en/latest/tutorial/quickstart/#users)
+- Upstream documentation for [jupyterhub-usage-quotas](https://jupyterhub-usage-quotas.readthedocs.io/en/latest/howto/quickstart/#users)

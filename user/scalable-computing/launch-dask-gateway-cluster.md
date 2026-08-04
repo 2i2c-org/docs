@@ -2,11 +2,6 @@
 
 This guide shows you how to launch a Dask gateway cluster for parallel and distributed computing.
 
-:::{contents}
-:depth: 2
-:local:
-:::
-
 ## What is Dask Gateway?
 
 Dask Gateway allows users to launch clusters for scaling computations efficiently with more CPU and memory on cloud resources, without requiring direct access to the underlying Kubernetes backend of the 2i2c hub. Configuration, such as efficient cluster resourcing, authentication and security settings, is automatically handled for users to provide a consistent user experience across the hub.
@@ -91,9 +86,9 @@ If a new gateway server needs to be started, then this process can take around 5
 
 Manually scale the cluster size to a fixed number of workers.
 
-1. Expand the *Manual scaling* dropdown in the cluster widget.
+1. Expand the {gui}`Manual scaling` dropdown in the cluster widget.
 1. Select the number of workers.
-1. Click {guilabel}`Scale` to confirm.
+1. Click {gui}`Scale` to confirm.
 
 :::{image} media/dask-scaling-manual.png
 :alt: Screenshot of an interactive cluster widget to configure manual worker scaling.
@@ -104,9 +99,9 @@ Manually scale the cluster size to a fixed number of workers.
 
 Adapt the cluster size dynamically based on current load. This helps to scale up the number of workers when necessary but scale it down and save resources when not actively computing.
 
-1. Expand the *Adaptive scaling* dropdown in the cluster widget.
+1. Expand the {gui}`Adaptive scaling` dropdown in the cluster widget.
 1. Select the minimum and maximum number of workers.
-1. Click {guilabel}`Adapt` to confirm.
+1. Click {gui}`Adapt` to confirm.
 
 :::{image} media/dask-scaling-adaptive.png
 :alt: Screenshot of an interactive cluster widget to configure adaptive worker scaling.
@@ -129,7 +124,7 @@ Note the dashboard address of the form `/services/dask-gateway/clusters/...` to 
 
 Connect to a [Dask dashboard](https://docs.dask.org/en/latest/dashboard.html) to monitor computations with the JupyterLab extension.
 
-1. Copy the dashboard address from {ref}`Connect to the gateway cluster<dask:connect-gateway>` or from running the command `client.dashboard_link`
+1. Copy the dashboard address from [Connect to the gateway cluster](#dask:connect-gateway) or from running the command `client.dashboard_link`
 1. Click the ![Dask icon](media/dask-icon.png) Dask icon in the left sidebar.
 1. In the search box at the top of the panel, paste in the full dashboard URL of the form
    ```bash
@@ -165,12 +160,9 @@ km = dask_ml.cluster.KMeans(n_clusters=3, init_max_iter=2, oversampling_factor=1
 km.fit(X)
 ```
 
-<video width="100%" autoplay loop muted>
-  <source src="../../../_static/videos/dask-compute-kmeans.mp4" type="video/mp4" />
-  <p>Video showing dask dashboard while computing k-means clustering.</p>
-</video>
-
-<br>
+:::{figure} /_static/videos/dask-compute-kmeans.mp4
+Video showing dask dashboard while computing k-means clustering.
+:::
 
 Plot the results.
 
@@ -218,7 +210,7 @@ cluster.close()
   
 - *Why did my kernel die?*
 
-  There can be many reasons for this, but the most common one when it comes to Dask is an out-of-memory error caused by committing data into memory that exceeds the available RAM limit. Try using Dask to scale computations on smaller datasets and write the intermediate results to disk in the {ref}`/tmp folder<filesystem:tmp>`.
+  There can be many reasons for this, but the most common one when it comes to Dask is an out-of-memory error caused by committing data into memory that exceeds the available RAM limit. Try using Dask to scale computations on smaller datasets and write the intermediate results to disk in the [/tmp folder](#filesystem:tmp).
 
 - *Which image should I use for the software environment?*
 

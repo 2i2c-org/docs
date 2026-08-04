@@ -15,7 +15,7 @@ we recommend for this. The workflow goes something like this:
 ## Ensure that `nbgitpuller` is installed in your user environment
 
 The default environment for 2i2c JupyterHubs has `nbgitpuller` pre-installed.
-However, if you [define a custom environment for your hub's users](environment:image), you'll need to ensure that `nbgitpuller` is installed in order for users to use it!
+However, if you [define a custom environment for your hub's users](#environment:image), you'll need to ensure that `nbgitpuller` is installed in order for users to use it!
 
 ## Put your content in a public GitHub repository
 

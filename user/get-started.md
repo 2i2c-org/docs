@@ -15,12 +15,12 @@ If you are having trouble logging in, please contact your hub administrator.
 
 Depending on the configuration of your hub, a new server may start automatically when you log in that drops you into JupyterLab/RStudio.
 
-For other hubs, you will presented with a *Server Options* page where you can select the memory and CPU resources for your server. You can also select the software environment that you would like to use.
+For other hubs, you will be presented with a *Server Options* page where you can select the memory and CPU resources for your server. You can also select the software environment that you would like to use.
 
 ![JupyterHub server options](/images/server-options.jpeg)
 
 ```{seealso}
-Learn more about typical server startup times in [](user:faq:startup-time).
+Learn more about typical server startup times in [](#user:faq:startup-time).
 ```
 
 It is important to use cloud resources responsibly to maximize efficiency and minimize carbon emissions. Selecting a larger server incurs a larger financial cost, as well as an environmental cost!
