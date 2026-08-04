@@ -2,7 +2,7 @@
 version: 1
 extends:
   - https://raw.githubusercontent.com/2i2c-org/team-compass/refs/heads/main/shared.yml
-  - ./_data/toc.yml
+  - ./toc.yml
 project:
   id: 2i2c-docs
   title: Community Hub Guide
