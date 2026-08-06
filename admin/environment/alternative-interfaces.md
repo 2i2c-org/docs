@@ -1,6 +1,6 @@
 # Alternative user interfaces
 
-2i2c hubs can run other web applications (for example VS Code, RStudio, or a desktop) inside the same user server. These rely on [`jupyter-server-proxy`](https://jupyter-server-proxy.readthedocs.io/) packages shipped in the user image (see [](./customize.md) to add the proxy packages to your own image).
+2i2c hubs can run other web applications (for example VS Code, RStudio, Positron, or a desktop) inside the same user server. These rely on [`jupyter-server-proxy`](https://jupyter-server-proxy.readthedocs.io/) packages shipped in the user image (see [](./customize.md) to add the proxy packages to your own image).
 
 ## How it works
 
@@ -71,7 +71,7 @@ Here are examples for the desktop proxy (any image with `jupyter-remote-desktop-
   - [Hub configuration](https://github.com/2i2c-org/infrastructure/blob/a042ecc16ed9d7111eece2ff19261446e69cc0e2/config/clusters/nasa-veda/common.values.yaml#L166-L173)
   - [User environment image configuration repository](https://github.com/2i2c-org/nasa-qgis-image)
 
-Images with `jupyter-remote-desktop-proxy` expose a lightweight [XFCE](https://www.xfce.org/) desktop for GUI tools such as [QGIS](https://qgis.org/) or [MATLAB](https://www.mathworks.com/products/matlab.html). Use any image that includes `jupyter-remote-desktop-proxy`. The one below is for illustration.
+Images with `jupyter-remote-desktop-proxy` expose a lightweight [XFCE](https://www.xfce.org/) desktop for GUI tools such as [QGIS](https://qgis.org/). Use any image that includes `jupyter-remote-desktop-proxy`. The one below is for illustration.
 
 ```
 jupyterhub:
@@ -90,6 +90,33 @@ jupyterhub:
 
 Example remote desktop session running [ArcGIS Pro](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview) through the desktop profile.
 ```
+
+### Licensed software (Positron, MATLAB, etc)
+
+Some applications proxied this way require a license tied to your institution. 2i2c can mount a license file into user pods as an encrypted secret via KubeSpawner's `extraFiles`, so the license never needs to live in your image. This requires [opening a support request](../../support.md), since it involves handling secrets on the 2i2c side. Securing the license itself with the vendor is the community's responsibility.
+
+#### Positron
+
+[Positron](https://positron.posit.co/) is Posit's data science IDE. It's licensed under the [Elastic License 2.0](https://positron.posit.co/licensing.html), which doesn't permit hosting it as a service to third parties except under Posit's **Education Exception**: access restricted to enrolled students or course participants, with any fees tied to instruction rather than software access.
+
+There are two ways to run it on a 2i2c hub:
+
+- **License file inside the Linux Desktop**: mount your institution's Positron license as an `extraFiles` secret, and run Positron as an app inside the [Linux Desktop interface](#interfaces:desktop).
+- **`jupyter-positron-server`**: a `jupyter-server-proxy` extension that Posit maintains specifically for this use case. It enforces the Education Exception itself, issuing signed, per-session licenses via a hub-side verifier service instead of a static file. See the [Jupyter blog post announcing it](https://blog.jupyter.org/positron-server-available-for-academic-use-via-jupyterhub-ae4e406f9444) and [Berkeley DataHub's docs](https://docs.datahub.berkeley.edu/tasks/positron.html) for a working example.
+
+Either way, **confirm with Posit** that your license covers your planned deployment.
+
+#### MATLAB
+
+[MATLAB](https://www.mathworks.com/products/matlab.html) uses the same pattern: your institution's MATLAB license is mounted into the pod as an `extraFiles` secret, and MATLAB runs as an app inside the Linux Desktop interface.
+
+:::{support-button}
+:label: Click here to request licensed software (Positron, MATLAB, etc.) for your hub
+:subject: Request licensed software on hub
+:type: Feature Request
+:::
+
+---
 
 :::{seealso}
 
