@@ -1,6 +1,13 @@
 (hub-user-image-template-guide/how-to)=
 # Create an environment image for your hub (advanced)
 
+```{warning}
+This workflow is no longer recommended, as the repository this guide is based on (https://github.com/2i2c-org/hub-user-image-template) is no longer maintained!
+
+Instead, we suggest following the guide at [](reuse-and-modify-community-image) that's based on https://github.com/2i2c-org/example-inherit-from-community-image/, or
+https://github.com/2i2c-org/example-image-stack, described in the project's README.
+```
+
 This advanced guide describes how you can create a custom user image for your community's hub. We recommend [updating a community-maintained upstream image](./update-community-image.md) in the first instance, since this reduces the overall maintenance burden over time. This guide is for advanced users who want complete control over a hub's user image from scratch. It uses [this `hub-user-image-template` repository](https://github.com/2i2c-org/hub-user-image-template) to help you get started.
 
 ## 1. Use the template repository
