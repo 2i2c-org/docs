@@ -3,7 +3,7 @@
 
 ## Total storage space
 
-Hubs have a disk that stores _all_ persistent user data (user home directories, but also other directories meant for [sharing data amongst users](#sharing-files)). This disk starts from a conservative small size and then later increases based on needs.
+Hubs have a disk that stores _all_ persistent user data (user home directories, but also other directories meant for [sharing data amongst users](#data:sharing-files)). This disk starts from a conservative small size and then later increases based on needs.
 
 We have alerts that notify us when the hub has less than 10% of space remaining. At this point we'll increase the size of the disk to avoid any issues.
 We might also be reaching out to you, in case you want to take action and instruct your users to cleanup some space.
@@ -23,7 +23,7 @@ If you intend to store more than this in these folders, please contact 2i2c supp
 But keep in mind that the ``/home/jovyan`` space is intended only for notebooks and code and is **not** an appropriate place to store datasets, as it can get really expensive (and slow) when used that way.
 
 :::{seealso}
-- For storing small datasets, take a look at [](#sharing-files).
+- For storing small datasets, take a look at [](#data:sharing-files).
 - For temporarily storing large datasets, take a look at the [/tmp directory](#filesystem:tmp).
 - For storing data in cloud object storage, see the section [Cloud Object Storage](./object-storage/index.md).
 :::
