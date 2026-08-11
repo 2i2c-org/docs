@@ -4,7 +4,7 @@
 ```{warning}
 This workflow is no longer recommended, as the repository this guide is based on (https://github.com/2i2c-org/hub-user-image-template) is no longer maintained!
 
-Instead, we suggest following the guide at [](reuse-and-modify-community-image) that's based on https://github.com/2i2c-org/example-inherit-from-community-image/, or
+Instead, we suggest following the guide at [](#reuse-and-modify-community-image) that's based on https://github.com/2i2c-org/example-inherit-from-community-image/, or
 https://github.com/2i2c-org/example-image-stack, described in the project's README.
 ```
 

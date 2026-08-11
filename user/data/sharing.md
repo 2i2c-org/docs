@@ -1,3 +1,4 @@
+(data:sharing-files)=
 # Share data files with your users
 
 Sometimes Hub Admins might need to distribute a set of files to all users, rather than each user re-downloading the same dataset. This is particularly useful for educational use cases, where you might be teaching a course that reads a common dataset.

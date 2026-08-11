@@ -19,6 +19,10 @@ log out and log back into the JupyterHub.
 The ``/home/jovyan`` space is intended only for notebooks and code. It's **not** an appropriate place to store
 datasets, as it can get really expensive (and slow) when used that way.
 
+For temporarily storing large datasets, take a look at the [/tmp directory](#filesystem:tmp) section below.
+
+For storing data in cloud object storage, see the section [Cloud Object Storage](./object-storage/index.md).
+
 (filesystem:storage-quotas)=
 ### Per-User Storage Quotas
 
@@ -33,6 +37,11 @@ $ du -skh ~
 
 If you go over the quota limit, then you may experience degraded performance on your server. Contact your hub administrator if you run into any problems.
 
+```{warning}
+**For hub administrators:** The `shared`, and `shared-public` directories also abide the same default 10GB storage quota.
+If you intend to store more than this, please contact 2i2c support.
+```
+
 :::{seealso}
 If your hub provides a **Usage** dashboard, you can view your home storage usage and quota there too. See [](/user/usage-quota-dashboard.md).
 :::
@@ -40,10 +49,6 @@ If your hub provides a **Usage** dashboard, you can view your home storage usage
 :::{seealso}
 **For hub administrators:** You can monitor disk usage across all users on your hub using the [Home Directory Usage Dashboard](#monitoring:disk-usage) in Grafana.
 :::
-
-For temporarily storing large datasets, take a look at the [/tmp directory](#filesystem:tmp) section below.
-
-For storing data in cloud object storage, see the section [Cloud Object Storage](./object-storage/index.md).
 
 ### Modify your bash profile
 
@@ -70,5 +75,5 @@ add data or scripts under a writeable directory like `/tmp/myfile.txt` *it will 
 log out and log back in*.
 
 Nevertheless, `/tmp` is a convenient location for storing data temporarily 
-because it is a fast SSD drive. The space available depends on your server but will generally be much 
-larger than ``/home/jovyan`` (50-100s of GB).
+because it is a fast SSD drive. The space available is 80GB by default, but it can be grown if paying 
+the additional cloud costs is not a problem.
