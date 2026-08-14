@@ -55,6 +55,7 @@ project:
       - file: admin/user-management/authentication-and-access.md
       - file: admin/user-management/control-user-server.md
       - file: admin/user-management/dask-access.md
+      - file: admin/user-management/compute-quotas.md
     - file: admin/community/index.md
       children:
       - file: admin/community/events.md
