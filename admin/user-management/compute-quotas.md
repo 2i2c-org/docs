@@ -16,7 +16,9 @@ If you would like to apply a compute usage policy for your hub, then please get 
 
 ## Usage dashboards
 
-To accompany this feature, there is a [user-facing dashboard](../../user/usage-quota-dashboard.md) available to end-users to keep track of usage. The home storage component is enabled by default, which shows the used versus available disk usage in a user's home directory. The compute component is enabled if a compute quota policy is applied to the hub.
+To accompany this feature, there is a [user-facing dashboard](../../user/usage-quota-dashboard.md) available to end-users to keep track of usage.
+The home storage component is enabled by default, which shows the "used versus available" disk usage in a user's home directory.
+The compute component is enabled if a compute quota policy is applied to the hub.
 
 ## Learn more
 
