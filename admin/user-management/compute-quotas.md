@@ -7,7 +7,7 @@ This opt-in feature allows hub admins to cap the amount of compute resource a us
 Suppose you are running a workshop and would like to cap usage to a `4GiB RAM` server for each user per day.
 With compute quotas you can apply a usage cap of `4GiB x 24 hours` = `96 GiB-hours` over a rolling 1 day window for every member of a particular [JupyterHub group](https://jupyterhub-usage-quotas.readthedocs.io/en/latest/howto/user-group-management/).
 
-Alternatively, can also apply a blanket compute usage policy to all users irrespective of JupyterHub group memberships.
+Alternatively, you can also apply a blanket compute usage policy to all users irrespective of JupyterHub group memberships.
 
 For more details on compute policy configuration, see the [`jupyterhub-usage-quotas` documentation](https://jupyterhub-usage-quotas.readthedocs.io/en/latest/explanation/technical/#policy-configuration).
 
