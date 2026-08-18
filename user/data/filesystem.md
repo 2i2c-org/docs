@@ -28,7 +28,8 @@ For storing data in cloud object storage, see the section [Cloud Object Storage]
 
 All of our hubs have a 10GB storage quota per-user by default, although this may vary depending on the hub.
 
-You can check how much storage you are using by running the `du` command in a terminal, but since many hubs link a ``~/shared`` folder we exclude that from our file size tally:
+You can check how much storage you are using by running the `du` command in a terminal.
+Since many hubs link a `~/shared` folder, we exclude that from our file size tally:
 
 ```bash
 $ du -sh --exclude='shared*' $HOME
