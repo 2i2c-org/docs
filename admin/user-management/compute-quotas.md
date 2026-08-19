@@ -21,6 +21,10 @@ To accompany this feature, there is a [user-facing dashboard](../../user/usage-q
 The home storage component is enabled by default, which shows the "used versus available" disk usage in a user's home directory.
 The compute component is enabled if a compute quota policy is applied to the hub.
 
+## Grafana dashboards
+
+If there is a compute policy applied to your hub, then you will find a *Usage Quotas* dashboard in the *2i2c Dashboards* folder of your Grafana instance that will help you monitor user's compute usage. For more information on Grafana, see [Usage and cost monitoring](../monitoring/compute-quotas.md)
+
 ## Learn more
 
 - [`jupyterhub-usage-quotas` documentation](https://jupyterhub-usage-quotas.readthedocs.io/en/latest)

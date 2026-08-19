@@ -66,6 +66,7 @@ project:
       - file: admin/monitoring/cost-general.md
       - file: admin/monitoring/cost-users-groups.md
       - file: admin/monitoring/disk-usage.md
+      - file: admin/monitoring/compute-quotas.md
       - file: admin/monitoring/reporting.md
       - file: admin/monitoring/prometheus-grafana-access.md
       - file: admin/monitoring/prometheus-grafana-cost.md
