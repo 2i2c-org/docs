@@ -3,10 +3,19 @@
 Your notebook server is a linux "virtual machine" with its own filesystem.
 You are not on a shared server; you are on your own private server.
 
-The easiest way to move files in and out of your home directory is via the JupyterLab web interface.
-Drag a file into the file browser to upload, and right-click to download back out.
-You can also open a terminal via the JupyterLab launcher and use this to ssh / scp / ftp to remote systems.
-However, you can’t ssh in!
+The easiest way to move files in and out of your home directory is via the web interface. Drag a file into the file browser to upload, and right-click to download back out.
+
+```{note}
+With JupyterLab, there is a maximum file size transfer limit of 250MB. This is because the entire file is read into memory and cannot be streamed.
+```
+
+You can also open a terminal via the UI and use this to ssh / scp / ftp to remote systems.
+
+You can ssh into the hub if your hub admin has enabled [Remote SSH access](/admin/environment/ssh-access.md). This can be used for large file transfers.
+
+```{warning}
+Downloading files out of the hub incurs cloud costs, known as a [data egress fee](https://infrastructure.2i2c.org/topic/billing/chargeable-resources/#ingress-and-egress-fees).
+```
 
 ## Your Home Directory
 
