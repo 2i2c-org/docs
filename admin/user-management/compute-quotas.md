@@ -9,7 +9,7 @@ With compute quotas you can apply a usage cap of `4GiB x 24 hours` = `96 GiB-hou
 
 Alternatively, you can also apply a blanket compute usage policy to all users irrespective of JupyterHub group memberships.
 
-For more details on compute policy configuration, see the [`jupyterhub-usage-quotas` documentation](https://jupyterhub-usage-quotas.readthedocs.io/en/latest/explanation/technical/#policy-configuration).
+For more details on compute policy configuration, see the [`jupyterhub-usage-quotas` documentation](https://jupyterhub-usage-quotas.readthedocs.io/en/latest/howto/quota-limits).
 
 :::{tip} Opt-in
 If you would like to apply a compute usage policy for your hub, then please get in touch with our [support desk](https://docs.2i2c.org/support/).
