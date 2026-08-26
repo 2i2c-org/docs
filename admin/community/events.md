@@ -4,13 +4,15 @@ It is common to use your infrastructure as part of running a synchronous event. 
 
 Here are some common best practices and policies to ensure that the event goes smoothly.
 
-## Make sure you are familiar with the hub admin and user guides
+## Before the event
+
+### 1. Make sure you are familiar with the hub admin and user guides
 
 Make sure you are familiar with the [Hub Admin guide](https://docs.2i2c.org/admin/) and potentially the [Hub User guide](https://docs.2i2c.org/user/), as they contain important information about how to use the hub, common best practices as well as the features available.
 
 Reading the admin guide is also particularly useful for answering the questions in the next section. 
 
-### Notify the 2i2c team about the event at least 3 weeks before an event
+### 2. Notify the 2i2c team about the event at least 3 weeks before an event
 
 ```{important}
 As a general rule, please **notify the 2i2c team at least 3 weeks before an event** so that we can prepare accordingly.
@@ -43,7 +45,7 @@ Once you've notified us, a 2i2c team member will create a GitHub issue for your 
 You should check the information in this issue and ensure that it is correct!
 ```
 
-## Have the event content 'ready' at least one week before the event
+### 3. Have the event content 'ready' at least one week before the event
 
 1. **Get your event content 'ready'**
    It doesn't need to be final, but make sure the large scale structural pieces are in place. This is particularly important if this an atypical event for your hub.
@@ -97,4 +99,4 @@ You typically won't need to "pre-initialize" the infrastructure to make start up
 It is most-useful if you anticipate large spikes in users all starting sessions at the same time.
 
 We can recommend testing approaches and assess whether pre-initializing your infrastructure is necessary. If you need some extra advice, make sure to let the 2i2c team know when you notify us about the event (see the list above).
-This will take additional attention from the 2i2c engineering team so is key to plan ahead by 3 or more weeks. 
+This will take additional attention from the 2i2c engineering team so is key to plan ahead by 3 or more weeks.
