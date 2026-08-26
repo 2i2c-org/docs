@@ -76,7 +76,17 @@ You should check the information in this issue and ensure that it is correct!
 This enables us to understand the total usage via a Grafana dashboard that's been designed for event prep, and figure out if we need to make any tweaks.
 ```
 
-##  Infrastructure testing and preparation for an event
+## During the event
+
+- **Use `nbgitpuller` to distribute content to attendees**. The [nbgitpuller tool](#content:nbgitpuller) to generate links that your hub's users can click, and automatically pull in content into their user session. Go to [nbgitpuller.readthedocs.io/en/latest/link.html](https://nbgitpuller.readthedocs.io/en/latest/link.html) to generate your own links.
+- **Ask your users to log-in at the start of the day**. It can take a few moments for the JupyterHub to scale up when many users log in at once. For this reason, we recommend asking users to log into the hub **before they need to start running code**, in case it takes some time for the hub to begin.
+
+## After the event
+
+- **Send your attendees links to your source materials**. Because you've defined your user environment and content in a public repository, your attendees can see what software is needed to run the code on their own if they wish.
+  In addition, your event repository is likely [a Binder-ready repository](https://mybinder.org) and attendees can build on top of your work and share via mybinder.org.
+
+## General info about events
 
 Events provide a different pattern of usage for infrastructure compared with day to day use. Instead of a trickle of people coming on and off, events tend to trigger spikes in log-ins and activity. If many people start a session at the same time, this may slow down the start times of several users, because the cluster has to "scale up" to accommodate the extra people.
 
@@ -88,13 +98,3 @@ It is most-useful if you anticipate large spikes in users all starting sessions 
 
 We can recommend testing approaches and assess whether pre-initializing your infrastructure is necessary. If you need some extra advice, make sure to let the 2i2c team know when you notify us about the event (see the list above).
 This will take additional attention from the 2i2c engineering team so is key to plan ahead by 3 or more weeks. 
-
-## During the event
-
-- **Use `nbgitpuller` to distribute content to attendees**. The [nbgitpuller tool](#content:nbgitpuller) to generate links that your hub's users can click, and automatically pull in content into their user session. Go to [nbgitpuller.readthedocs.io/en/latest/link.html](https://nbgitpuller.readthedocs.io/en/latest/link.html) to generate your own links.
-- **Ask your users to log-in at the start of the day**. It can take a few moments for the JupyterHub to scale up when many users log in at once. For this reason, we recommend asking users to log into the hub **before they need to start running code**, in case it takes some time for the hub to begin.
-
-## After the event
-
-- **Send your attendees links to your source materials**. Because you've defined your user environment and content in a public repository, your attendees can see what software is needed to run the code on their own if they wish.
-  In addition, your event repository is likely [a Binder-ready repository](https://mybinder.org) and attendees can build on top of your work and share via mybinder.org.
