@@ -1,27 +1,69 @@
-# Events and workshops
+# Events
 
-It is common to use your infrastructure as part of running a synchronous event.
-For example, with a hackathon or as part of a conference workshop.
-Here are some best practices and policies to follow in order to ensure that the event goes smoothly.
+It is common to use your infrastructure as part of running a synchronous event. Based on experience, we've learned that there are multiple event patterns, which need different kinds of preparation & support, eg. workshops, courses/exams and conferences.
 
-## Notify the 2i2c team about the event
+Here are some common best practices and policies to ensure that the event goes smoothly.
 
+## Make sure you are familiar with the hub admin and user guides
+
+Make sure you are familiar with the [Hub Admin guide](https://docs.2i2c.org/admin/) and potentially the [Hub User guide](https://docs.2i2c.org/user/), as they contain important information about how to use the hub, common best practices as well as the features available.
+
+Reading the admin guide is also particularly useful to answering the questions in the next section. 
+
+### Notify the 2i2c team about the event at least 3 weeks before an event
+
+```{important}
 As a general rule, please **notify the 2i2c team at least 3 weeks before an event** so that we can prepare accordingly.
-To do so, email `support@2i2c.org` with at least these pieces of information:
+```
 
-- Start date for the event
-- End date for the event
-- The active times for the event (e.g., 9am to 5pm US/Pacific)
-- How many people will attend the event
-- If this is a shared password hub, what would you like the password to be for the event? 
-- Is the event unusual for your hub, where you may need [additional preparation before the event](#events:pre-initialized)?
-- Any other information that will help us prepare for the extra usage during the event.
+To notify us, email `support@2i2c.org` with at least these pieces of information:
 
+1. General info:
+- Event type (workshop/course/exam/conference):
+- Event start and end date:
+- The active times for the event (e.g., 9am to 5pm US/Pacific):
+- How many people will attend the event:
+- Has a similar event (number of users and pattern) happened on the hub before (yes/no)?
+
+2. Quotas:
+- Should the current per-user usage quotas be increased for the event (if not explicitly requested, they default to 10GB)?
+- Should the `shared` and `shared-public` quotas be increased?
+- How much data you expect the users to be storing in their home directories (if known)?
+
+3. If this is a shared password hub:
+- What would you like the password to be for the event?
+- When should we change the password?
+- When should we change the password back?
+- How long should user home directories be kept after the event?
+
+4. Any other information that will help us prepare for the extra usage during the event:
+
+```{note}
 Once you've notified us, a 2i2c team member will create a GitHub issue for your event so that we can track when it is going to happen.
 You should check the information in this issue and ensure that it is correct!
+```
 
-(events:pre-initialized)=
-## Infrastructure testing and preparation for an event
+## Have the event content 'ready' at least one week before the event
+
+Get your event content 'ready'. It doesn't need to be final, but make sure the large scale structural pieces are in place. Pay particular attention to:
+
+1. Filesystem access (reading or writing data)
+2. Size of the datasets you are reading (this affects memory usage and potentially disk usage)
+3. Multiprocessing / CPU intensive work
+
+Run through the workshop material on the hub, and make sure it works for the one user. Try to do this at a specific time when other users aren't on the hub, so we can more easily isolate what the effects of the test run is for metrics that are harder to isolate (such as disk throughput).
+
+Communicate to 2i2c support the following information:
+
+    The start time of the workshop material test run
+    The end time of the workshop material test run
+    The name of the user who did the test run
+    How many total users you expect to be at your workshop
+
+This lets us look at this dashboard, understand the total usage, and figure out if we need to make any tweaks.
+
+
+##  Infrastructure testing and preparation for an event
 
 Events provide a different pattern of usage for infrastructure compared with day to day use. Instead of a trickle of people coming on and off, events tend to trigger spikes in log-ins and activity. If many people start a session at the same time, this may slow down the start times of several users, because the cluster has to "scale up" to accommodate the extra people.
 
