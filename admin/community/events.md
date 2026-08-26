@@ -28,9 +28,9 @@ To notify us, email `support@2i2c.org` with at least these pieces of information
    - Has a similar event (number of users and pattern) happened on the hub before (yes/no/don't know)?
 
 2. Quotas:
-   - Should the current per-user usage quotas be increased for the event (if not explicitly requested, they default to 10GB)?
+   - Should the current per-user storage quotas be increased for the event (if not explicitly requested, they default to 10 GB)?
    - Should the `shared` and `shared-public` quotas be increased?
-   - How much data you expect the users to be storing in their home directories (if known)?
+   - How much data do you expect users to be storing in their home directories (if known)?
 
 3. If this is a shared password hub:
    - What would you like the password to be for the event?
@@ -50,16 +50,16 @@ You should check the information in this issue and ensure that it is correct!
 1. **Get your event content 'ready'**
    It doesn't need to be final, but make sure the large scale structural pieces are in place. This is particularly important if this an atypical event for your hub.
 
-   - **Define your hub's environment in a repository**
+   - **Define your hub's environment in a repository**  
      Follow the steps in [](#environment:image) to build a user image from that repository, and connect it with your hub.
      This ensures that your user environment is human-readable and reproducible.
 
-   - **Put content in a repository**
+   - **Put content in a repository**  
      All of the materials for your workshop (e.g., Jupyter Notebooks, markdown files, etc) can be placed in a public repository.
 
    - If you are using [nbgitpuller](#content:nbgitpuller), **generate a link and click it yourself** to make sure that it resolves properly.
 
-   - **Pay particular attention to:**
+   - **Pay particular attention to:**  
       - Filesystem access (reading or writing data)
       - Size of the datasets you are reading (this affects memory usage and potentially disk usage)
       - Multiprocessing / CPU intensive work
@@ -99,4 +99,4 @@ You typically won't need to "pre-initialize" the infrastructure to make start up
 It is most-useful if you anticipate large spikes in users all starting sessions at the same time.
 
 We can recommend testing approaches and assess whether pre-initializing your infrastructure is necessary. If you need some extra advice, make sure to let the 2i2c team know when you notify us about the event (see the list above).
-This will take additional attention from the 2i2c engineering team so is key to plan ahead by 3 or more weeks.
+This will take additional attention from the 2i2c engineering team so is key to plan ahead by three or more weeks.
