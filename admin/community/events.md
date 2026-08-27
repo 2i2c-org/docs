@@ -28,7 +28,7 @@ To notify us, email `support@2i2c.org` with at least these pieces of information
    - Has a similar event (number of users and pattern) happened on the hub before (yes/no/don't know)?
 
 2. Quotas:
-   - Should the current per-user storage quotas be increased for the event (if not explicitly requested, they default to 10 GB)?
+   - Should the current per-user home storage quotas be increased for the event (if not explicitly requested, they default to 10 GB)?
    - Should the `shared` and `shared-public` quotas be increased?
    - How much data do you expect users to be storing in their home directories (if known)?
 
@@ -65,7 +65,7 @@ You should check the information in this issue and ensure that it is correct!
       - Multiprocessing / CPU intensive work
 
 2. **Run through the workshop material on the hub, and make sure it works for the one user.**
-   Try to do this at a specific time when other users aren't on the hub, so we can more easily isolate what the effects of the test run is for metrics that are harder to isolate (such as disk throughput).
+   Try to do this at a specific time when other users aren't on the hub, so we can isolate the effects of the test run in order for us to performance tune your hub.
 
 3. **Communicate to 2i2c support the following information:**
 
@@ -75,7 +75,7 @@ You should check the information in this issue and ensure that it is correct!
    - How many total users you expect to be at your workshop
 
 ```{important}
-This enables us to understand the total usage via a Grafana dashboard that's been designed for event prep, and figure out if we need to make any tweaks.
+This enables us to understand the total usage via a Grafana dashboard that's been designed for event prep, and is particularly important for us to scale performance for many users.
 ```
 
 ## During the event
@@ -92,11 +92,11 @@ This enables us to understand the total usage via a Grafana dashboard that's bee
 
 Events provide a different pattern of usage for infrastructure compared with day to day use. Instead of a trickle of people coming on and off, events tend to trigger spikes in log-ins and activity. If many people start a session at the same time, this may slow down the start times of several users, because the cluster has to "scale up" to accommodate the extra people.
 
-If an event follows a different usage pattern that your norm (many more people, more computing or data intensive work, users from different locations), we can help you plan ahead and test in advance. 
+If an event follows a different usage pattern than the norm (many more people, more computing or data intensive work, users from different locations), we can help you plan ahead and test in advance. 
 
 You typically won't need to "pre-initialize" the infrastructure to make start up easier for users at an event, but it can be useful in certain circumstances. This requests extra cloud resources in anticipation of a spike in user activity. It will speed up your user session start times, but will also increase your cloud costs.
 
-It is most-useful if you anticipate large spikes in users all starting sessions at the same time.
+It is most useful if you anticipate large spikes in users all starting sessions at the same time and need to minimize the time waiting for a server.
 
 We can recommend testing approaches and assess whether pre-initializing your infrastructure is necessary. If you need some extra advice, make sure to let the 2i2c team know when you notify us about the event (see the list above).
-This will take additional attention from the 2i2c engineering team so is key to plan ahead by three or more weeks.
+This will take additional attention from the 2i2c engineering team so this is key to plan ahead by three or more weeks. If the event preparation described above is not followed, then we cannot guarantee that the hub experience will be optimized for your event.
