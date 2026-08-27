@@ -1,50 +1,82 @@
-# Events and workshops
+# Events
 
-It is common to use your infrastructure as part of running a synchronous event.
-For example, with a hackathon or as part of a conference workshop.
-Here are some best practices and policies to follow in order to ensure that the event goes smoothly.
+It is common to use your infrastructure as part of running a synchronous event. Based on experience, we've learned that there are multiple event patterns, which need different kinds of preparation & support, eg. workshops, courses/exams and conferences.
 
-## Notify the 2i2c team about the event
-
-As a general rule, please **notify the 2i2c team at least 3 weeks before an event** so that we can prepare accordingly.
-To do so, email `support@2i2c.org` with at least these pieces of information:
-
-- Start date for the event
-- End date for the event
-- The active times for the event (e.g., 9am to 5pm US/Pacific)
-- How many people will attend the event
-- If this is a shared password hub, what would you like the password to be for the event? 
-- Is the event unusual for your hub, where you may need [additional preparation before the event](#events:pre-initialized)?
-- Any other information that will help us prepare for the extra usage during the event.
-
-Once you've notified us, a 2i2c team member will create a GitHub issue for your event so that we can track when it is going to happen.
-You should check the information in this issue and ensure that it is correct!
-
-(events:pre-initialized)=
-## Infrastructure testing and preparation for an event
-
-Events provide a different pattern of usage for infrastructure compared with day to day use. Instead of a trickle of people coming on and off, events tend to trigger spikes in log-ins and activity. If many people start a session at the same time, this may slow down the start times of several users, because the cluster has to "scale up" to accommodate the extra people.
-
-If an event follows a different usage pattern that your norm (many more people, more computing or data intensive work, users from different locations), we can help you plan ahead and test in advance. 
-
-You typically won't need to "pre-initialize" the infrastructure to make start up easier for users at an event, but it can be useful in certain circumstances. This requests extra cloud resources in anticipation of a spike in user activity. It will speed up your user session start times, but will also increase your cloud costs.
-
-It is most-useful if you anticipate large spikes in users all starting sessions at the same time.
-
-We can recommend testing approaches and assess whether pre-initializing your infrastructure is necessary. If you need some extra advice, make sure to let the 2i2c team know when you notify us about the event (see the list above).
-This will take additional attention from the 2i2c engineering team so is key to plan ahead by 3 or more weeks. 
+Here are some common best practices and policies to ensure that the event goes smoothly.
 
 ## Before the event
 
-Once a JupyterHub is set up for the community, try the following:
+### 1. Make sure you are familiar with the hub admin and user guides
 
-- **Define your hub's environment in a repository**. Follow the steps in [](#environment:image) to build a user image from that repository, and connect it with your hub.
-   This ensures that your user environment is human-readable and reproducible.
-- **Put content in a repository**. All of the materials for your workshop (e.g., Jupyter Notebooks, markdown files, etc) can be placed in a public repository.
-- **Test your content and environment ahead of time**. You should run your content from top to bottom on your JupyterHub, or on a service like mybinder.org, to ensure that it works as expected.
-   If you are using [nbgitpuller](#content:nbgitpuller), generate a link and click it yourself to make sure that it resolves properly.
-- **Let the 2i2c team know that you're about to have an event**. We are likely already keeping track of when the event begins, but it is always a good idea to give a heads up so that the engineering team knows to expect an influx of users. Send an email to `support@2i2c.org` letting them know what to expect.
-- **(optionally) Triage event participants with a sample workflow**. Many event organizers find it useful to ask potential participants to complete some basic exercises to make sure they have the right background. Create [a Binder link](https://mybinder.org) for your event's content (or for a subset of content you want people to try out) and ask them to complete it before the event begins.
+Make sure you are familiar with the [Hub Admin guide](https://docs.2i2c.org/admin/) and potentially the [Hub User guide](https://docs.2i2c.org/user/), as they contain important information about how to use the hub, common best practices as well as the features available.
+
+Reading the admin guide is also particularly useful for answering the questions in the next section. 
+
+### 2. Notify the 2i2c team about the event at least 3 weeks before an event
+
+```{important}
+As a general rule, please **notify the 2i2c team at least 3 weeks before an event** so that we can prepare accordingly.
+```
+
+To notify us, email `support@2i2c.org` with at least these pieces of information. If you don't know how to answer a question just write _"don't know"_ and we can provide additional guidance.
+
+1. General info:
+   - Event type (workshop/course/exam/conference):
+   - Event start and end date:
+   - The active times for the event (e.g., 9am to 5pm US/Pacific):
+   - How many people will attend the event:
+   - Has a similar event (number of users and pattern) happened on the hub before (yes/no/don't know)?
+
+2. Quotas:
+   - Should the current per-user home storage quotas be increased for the event (if not explicitly requested, they default to 10 GB)?
+   - Should the `shared` and `shared-public` quotas be increased?
+   - How much data do you expect users to be storing in their home directories (if known)?
+
+3. If this is a shared password hub:
+   - What would you like the password to be for the event?
+   - When should we change the password?
+   - When should we change the password back?
+   - How long should user home directories be kept after the event?
+
+4. Any other information that will help us prepare for the extra usage during the event:
+
+```{note}
+Once you've notified us, a 2i2c team member will create a GitHub issue for your event so that we can track when it is going to happen.
+You should check the information in this issue and ensure that it is correct!
+```
+
+### 3. Have the event content 'ready' at least one week before the event
+
+1. **Get your event content 'ready'**
+   It doesn't need to be final, but make sure the large scale structural pieces are in place. This is particularly important if this an atypical event for your hub.
+
+   - **Define your hub's environment in a repository**  
+     Follow the steps in [](#environment:image) to build a user image from that repository, and connect it with your hub.
+     This ensures that your user environment is human-readable and reproducible.
+
+   - **Put content in a repository**  
+     All of the materials for your workshop (e.g., Jupyter Notebooks, markdown files, etc) can be placed in a public repository.
+
+   - If you are using [nbgitpuller](#content:nbgitpuller), **generate a link and click it yourself** to make sure that it resolves properly.
+
+   - **Pay particular attention to:**  
+      - Filesystem access (reading or writing data)
+      - Size of the datasets you are reading (this affects memory usage and potentially disk usage)
+      - Multiprocessing / CPU intensive work
+
+2. **Run through the workshop material on the hub, and make sure it works for the one user.**
+   Try to do this at a specific time when other users aren't on the hub, so we can isolate the effects of the test run in order for us to performance tune your hub.
+
+3. **Communicate to 2i2c support the following information:**
+
+   - The start time of the workshop material test run
+   - The end time of the workshop material test run
+   - The name of the user who did the test run
+   - How many total users you expect to be at your workshop
+
+```{important}
+This enables us to understand the total usage via a Grafana dashboard that's been designed for event prep, and is particularly important for us to scale performance for many users.
+```
 
 ## During the event
 
@@ -55,3 +87,16 @@ Once a JupyterHub is set up for the community, try the following:
 
 - **Send your attendees links to your source materials**. Because you've defined your user environment and content in a public repository, your attendees can see what software is needed to run the code on their own if they wish.
   In addition, your event repository is likely [a Binder-ready repository](https://mybinder.org) and attendees can build on top of your work and share via mybinder.org.
+
+## General info about events
+
+Events provide a different pattern of usage for infrastructure compared with day to day use. Instead of a trickle of people coming on and off, events tend to trigger spikes in log-ins and activity. If many people start a session at the same time, this may slow down the start times of several users, because the cluster has to "scale up" to accommodate the extra people.
+
+If an event follows a different usage pattern than the norm (many more people, more computing or data intensive work, users from different locations), we can help you plan ahead and test in advance. 
+
+You typically won't need to "pre-initialize" the infrastructure to make start up easier for users at an event, but it can be useful in certain circumstances. This requests extra cloud resources in anticipation of a spike in user activity. It will speed up your user session start times, but will also increase your cloud costs.
+
+It is most useful if you anticipate large spikes in users all starting sessions at the same time and need to minimize the time waiting for a server.
+
+We can recommend testing approaches and assess whether pre-initializing your infrastructure is necessary. If you need some extra advice, make sure to let the 2i2c team know when you notify us about the event (see the list above).
+This will take additional attention from the 2i2c engineering team so this is key to plan ahead by three or more weeks. If the event preparation described above is not followed, then we cannot guarantee that the hub experience will be optimized for your event.
