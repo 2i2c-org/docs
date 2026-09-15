@@ -1,7 +1,22 @@
 (managing-secrets)=
 # Secrets, passwords and access tokens
 
-You may require access to secrets, passwords and access tokens for managing your hub in a local development environment, or during deployment using GitHub actions or Read the Docs. This section documents the recommended workflows for each of these cases.
+This page documents recommended workflows for secrets, passwords and access tokens.
+This includes working on your hub, in a local development environment, and in GitHub actions or Read the Docs.
+
+## Add a secret to your hub
+
+If your community needs a shared token (for example an API key for an external service) available to everyone on the hub, 2i2c can set it as an environment variable in every user's server.
+We store it encrypted in our [infrastructure repository](xref:infra), though [users can see the token on your hub](#token-visibility).
+
+1. Encrypt the token by following [](#support:encrypt).
+1. Email `support@2i2c.org` with the encrypted token, the name of your hub, and the environment variable name you want (for example `API_SERVICE_KEY`).
+1. Once we confirm it is deployed, restart your server and access it with `os.environ["MY_SERVICE_TOKEN"]`.
+
+:::{caution} Every user on the hub can read this variable.
+:label: token-visibility
+Only use this for tokens you are comfortable sharing with your whole community.
+:::
 
 ## Access a secret locally in a .env file
 
