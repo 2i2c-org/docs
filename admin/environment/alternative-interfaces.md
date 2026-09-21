@@ -95,6 +95,10 @@ Example remote desktop session running [ArcGIS Pro](https://www.esri.com/en-us/a
 
 Some applications proxied this way require a license tied to your institution. 2i2c can mount a license file into user pods as an encrypted secret via KubeSpawner's `extraFiles`, so the license never needs to live in your image. This requires [opening a support request](../../support.md), since it involves handling secrets on the 2i2c side. Securing the license itself with the vendor is the community's responsibility.
 
+:::{note}
+License files mounted into user-servers are visible to the user. The risks associated with this should be considered.
+:::
+
 #### Positron
 
 [Positron](https://positron.posit.co/) is Posit's data science IDE. It's licensed under the [Elastic License 2.0](https://positron.posit.co/licensing.html), which doesn't permit hosting it as a service to third parties except under Posit's **Education Exception**: access restricted to enrolled students or course participants, with any fees tied to instruction rather than software access.
