@@ -10,5 +10,6 @@ It covers the configuration used by the [CryoCloud](https://book.cryointhecloud.
 A few things to keep in mind:
 
 - Install AI tools in your [community image](customize.md), like any other package.
+- Try AI tools in a separate image and test it out before you do anything on your main "production" image. Jupyter AI can still be a bit unstable (there's some upstream work happening around this, see: https://github.com/jupyter-ai-contrib/jupyter-server-documents/issues/289 for example).
 - Model providers need an API key. 2i2c can [add a shared key to your hub](#managing-secrets), but every user can read it.
 - Reach out to [support](#support) if you'd like to set up something similar.
