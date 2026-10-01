@@ -50,6 +50,7 @@ project:
         - file: admin/environment/hub-user-image-template-guide.md
       - file: admin/environment/mount-repositories.md
       - file: admin/environment/code-server.md
+      - file: admin/environment/llm-workflows.md
     - file: admin/user-management/index.md
       children:
       - file: admin/user-management/authentication-and-access.md

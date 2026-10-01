@@ -16,6 +16,7 @@ We store it encrypted in our [infrastructure repository](xref:infra), though [us
 :::{caution} Every user on the hub can read this variable.
 :label: token-visibility
 Only use this for tokens you are comfortable sharing with your whole community.
+For LLM API keys, see [](../environment/llm-workflows.md).
 :::
 
 ## Access a secret locally in a .env file
