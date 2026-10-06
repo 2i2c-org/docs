@@ -19,13 +19,13 @@ Downloading files out of the hub incurs cloud costs, known as a [data egress fee
 
 ## Your Home Directory
 
-Your username is ``jovyan``, and your home directory is ``/home/jovyan``.
+Your username is `jovyan`, and your home directory is `/home/jovyan`.
 This is the same for all users, but no one else can see or access the files in *your* home directory.
 
-``/home/jovyan`` is a persistent network-attached drive. Any files you put there will be there when you
+`/home/jovyan` is a persistent network-attached drive. Any files you put there will be there when you
 log out and log back into the JupyterHub.
 
-The ``/home/jovyan`` space is intended only for notebooks and code. It's **not** an appropriate place to store
+The `/home/jovyan` space is intended only for notebooks and code. It's **not** an appropriate place to store
 datasets, as it can get really expensive (and slow) when used that way.
 
 For temporarily storing large datasets, take a look at the [/tmp directory](#filesystem:tmp) section below.
@@ -84,7 +84,7 @@ The `shared` directory is not intended as a way for hub users to share data with
 (filesystem:tmp)=
 ## The `/tmp` Directory
 
-Any directory outside of ``/home/jovyan`` is ephemeral on cloud-hosted JupyterHubs. This means if you
+Any directory outside of `/home/jovyan` is ephemeral on cloud-hosted JupyterHubs. This means if you
 add data or scripts under a writeable directory like `/tmp/myfile.txt` *it will not be there when your
 server stops*.
 

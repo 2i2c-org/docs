@@ -20,7 +20,7 @@ Also, the `shared`, and `shared-public` directories also **abide the same defaul
 If you intend to store more than this in these folders, please contact 2i2c support.
 ```
 
-But keep in mind that the ``/home/jovyan`` space is intended only for notebooks and code and is **not** an appropriate place to store datasets, as it can get really expensive (and slow) when used that way.
+But keep in mind that the `/home/jovyan` space is intended only for notebooks and code and is **not** an appropriate place to store datasets, as it can get really expensive (and slow) when used that way.
 
 :::{seealso}
 - For storing small datasets, take a look at [](#data:sharing-files).
