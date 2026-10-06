@@ -84,14 +84,12 @@ The `shared` directory is not intended as a way for hub users to share data with
 (filesystem:tmp)=
 ## The `/tmp` Directory
 
-Any directory outside of `/home/jovyan` is ephemeral on cloud-hosted JupyterHubs. This means if you
-add data or scripts under a writeable directory like `/tmp/myfile.txt` *it will not be there when your
-server stops*.
+`/tmp` is fast, temporary storage for files that will be deleted when your server stops.
+It is useful for things like generating intermediate data as part of a pipeline, storing temporary large files, etc.
 
-Nevertheless, `/tmp` is a convenient location for storing data temporarily
-because it is a fast SSD drive. The space available varies by community, but usually is roughly
-in the 20-30GB range per user - if you exceed the limit, your server may
-restart. If you need more, let us know and we can either increase the size for
-all users, or allow some subset of users to get a temporary dedicated large
-`/tmp` just for
-themselves.
+By default, `/tmp` is on a disk on the same machine where your server runs.
+The space available varies by community, but is usually around `20-30GB` per user.
+If you hit your limit in `/tmp`, your server may restart and you'll lose what's in `/tmp`.
+
+If you need more space in `/tmp`, [contact support](#support).
+
