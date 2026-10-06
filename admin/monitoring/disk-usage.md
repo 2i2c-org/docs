@@ -47,11 +47,6 @@ For example:
 
 To set this up, [contact support](#support) with the disk size you want and which groups should see it.
 
-:::{note} Only available on AWS
-Currently this is only available on clusters and hubs running on AWS.
-If you'd like this functionality on a non-AWS hub, reach out to use and we can explore how to enable it in another cloud provider.
-:::
-
 ## Monitoring disk usage
 You can monitor home directory disk usage for users on your hub to identify large directories and manage storage resources.
 
