@@ -3,13 +3,15 @@
 
 ## Total storage space
 
-Hubs have a disk that stores _all_ persistent user data (user home directories, but also other directories meant for [sharing data amongst users](#data:sharing-files)). This disk starts from a conservative small size and then later increases based on needs.
+Each hub has one disk that stores _all_ persistent user data: home directories and directories for [sharing data between users](#data:sharing-files).
+This disk starts small and grows as needed.
 
-We have alerts that notify us when the hub has less than 10% of space remaining. At this point we'll increase the size of the disk to avoid any issues.
-We might also be reaching out to you, in case you want to take action and instruct your users to cleanup some space.
+When the disk has less than 10% of its space left, 2i2c's team gets an alert and increases its size.
+We may also contact you, in case you want to ask your users to clean up some space.[^1]
 
-However, bear in mind that increasing the size of a storage disk comes with cost implications and resizing it down later, is a complicated process that we want to avoid as much as possible.
-This is because it requires the creation of a new, smaller disk, where existing data will be moved to, before the original big disk can be decommissioned. 
+[^1]: A bigger disk costs more, and shrinking it later is hard.
+  Shrinking means creating a new, smaller disk, moving the data over, and then deleting the old one.
+  So we try to grow the disk only when we need to.
 
 ## Usage quotas
 
@@ -25,7 +27,7 @@ But keep in mind that the `/home/jovyan` space is intended only for notebooks an
 :::{seealso}
 - For storing small datasets, take a look at [](#data:sharing-files).
 - For temporarily storing large datasets, take a look at the [/tmp directory](#filesystem:tmp).
-- For storing data in cloud object storage, see the section [Cloud Object Storage](./object-storage/index.md).
+- For storing data in cloud object storage, see the section [Cloud Object Storage](../../user/data/object-storage/index.md).
 :::
 
 ## Monitoring disk usage
@@ -48,7 +50,3 @@ The Home Directory Usage Dashboard displays disk usage for user home directories
 :::
 
 Note that some entries will be for _users_ while others will be _shared by all users_. Above, we've blurred out the users and included the hub-wide directory.
-
-## Resources
-
-For more information about user storage quotas and filesystem structure, see the [user documentation on filesystem and storage](../../user/data/filesystem.md).

@@ -1,7 +1,7 @@
 # Filesystem and user directory
 
 Your notebook server is a linux "virtual machine" with its own filesystem.
-You are not on a shared server; you are on your own private server.
+Other users can't see your files or what you're running in your session.
 
 The easiest way to move files in and out of your home directory is via the web interface. Drag a file into the file browser to upload, and right-click to download back out.
 
@@ -11,7 +11,7 @@ With JupyterLab, there is a maximum file size transfer limit of 250MB. This is b
 
 You can also open a terminal via the UI and use this to ssh / scp / ftp to remote systems.
 
-You can ssh into the hub if your hub admin has enabled [Remote SSH access](/admin/environment/ssh-access.md). This can be used for large file transfers.
+You can ssh into the hub if your hub admin has enabled [Remote SSH access](../../admin/environment/ssh-access.md). This can be used for large file transfers.
 
 ```{warning}
 Downloading files out of the hub incurs cloud costs, known as a [data egress fee](https://infrastructure.2i2c.org/topic/billing/chargeable-resources/#ingress-and-egress-fees).
@@ -22,15 +22,12 @@ Downloading files out of the hub incurs cloud costs, known as a [data egress fee
 Your username is `jovyan`, and your home directory is `/home/jovyan`.
 This is the same for all users, but no one else can see or access the files in *your* home directory.
 
-`/home/jovyan` is a persistent network-attached drive. Any files you put there will be there when you
-log out and log back into the JupyterHub.
+`/home/jovyan` is a persistent network-attached drive.
+The files you put there will persist after you log out and log back in.
+Use your home directory for notebooks and code, but we **discourage storing data in your home drive**.
+Storing data in your home drive can become expensive and slow.
 
-The `/home/jovyan` space is intended only for notebooks and code. It's **not** an appropriate place to store
-datasets, as it can get really expensive (and slow) when used that way.
-
-For temporarily storing large datasets, take a look at the [/tmp directory](#filesystem:tmp) section below.
-
-For storing data in cloud object storage, see the section [Cloud Object Storage](./object-storage/index.md).
+For storing temporary data, use [the `/tmp` folder](#filesystem:tmp). For data you want to keep, use [cloud object storage](./object-storage/index.md).
 
 (filesystem:storage-quotas)=
 ### Per-User Storage Quotas
@@ -47,21 +44,13 @@ $ du -sh --exclude='shared*' $HOME
 
 If you go over the quota limit, then you may experience degraded performance on your server. Contact your hub administrator if you run into any problems.
 
-```{warning}
-**For hub users:** The common `df -h` command reports the *total size* of mounted disks and therefore does not reflect the home directory quota.
-```
-
-```{warning}
-**For hub administrators:** The `shared`, and `shared-public` directories also abide the same default 10GB storage quota.
-If you intend to store more than this, please contact 2i2c support.
+```{note}
+`df -h` shows the *total size* of each disk, not your home directory quota.
 ```
 
 :::{seealso}
-If your hub provides a **Usage** dashboard, you can view your home storage usage and quota there too. See [](/user/usage-quota-dashboard.md).
-:::
-
-:::{seealso}
-**For hub administrators:** You can monitor disk usage across all users on your hub using the [Home Directory Usage Dashboard](#monitoring:disk-usage) in Grafana.
+- If your hub has a **Usage** dashboard, it shows your home storage usage and quota. See [](../usage-quota-dashboard.md).
+- **For hub administrators:** see [](#monitoring:disk-usage) for quotas on shared directories and usage across all users.
 :::
 
 ### Modify your bash profile
