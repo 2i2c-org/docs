@@ -82,3 +82,15 @@ If you hit your limit in `/tmp`, your server may restart and you'll lose what's 
 
 If you need more space in `/tmp`, [contact support](#support).
 
+(filesystem:tmp-dedicated)=
+### Dedicated `/tmp` disk
+
+Some hubs let you pick a dedicated `/tmp` disk when you start your server.
+When your server starts, the hub will create a new cloud disk that is *just for you*, and mounts it at `/tmp`. 
+This is useful when your work needs more temporary space than the standard `/tmp` provides.
+
+For example, the uw-escience hub has a {gui}`Scratch Disk on /tmp` option with a {gui}`Dedicated 500GB` choice ([see its configuration](https://github.com/2i2c-org/infrastructure/blob/3278bfdb5258c806feeac5a7c7eb4e6ea8fc9f2c/config/clusters/uw-escience/common.values.yaml#L97-L131)).
+
+:::{seealso}
+**For hub administrators:** see [](#admin:tmp-dedicated) to offer dedicated `/tmp` disks on your hub.
+:::

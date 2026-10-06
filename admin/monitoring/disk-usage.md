@@ -30,6 +30,23 @@ But keep in mind that the `/home/jovyan` space is intended only for notebooks an
 - For storing data in cloud object storage, see the section [Cloud Object Storage](../../user/data/object-storage/index.md).
 :::
 
+(admin:tmp-dedicated)=
+## Dedicated `/tmp` disks
+
+By default, each user's [`/tmp` directory](#filesystem:tmp) shares a disk with other users on the same machine (usually around `20-30GB` per user).
+If some of your users need more temporary space, you can offer them a [dedicated `/tmp` disk](#filesystem:tmp-dedicated) that they pick when they start their server.
+
+Consider this when a few users run workflows that download or generate large intermediate files.
+Giving those users a dedicated disk is much cheaper than giving every user a bigger machine or a bigger shared disk, because the dedicated disk only costs money while the user's server is running.
+
+You can offer dedicated disks to all users, or only to some user groups.
+For example:
+
+- [uw-escience offers a 500GB disk to everyone](https://github.com/2i2c-org/infrastructure/blob/3278bfdb5258c806feeac5a7c7eb4e6ea8fc9f2c/config/clusters/uw-escience/common.values.yaml#L97-L131).
+- [MAAP staging offers a 500GB disk only to users in its larger-machine groups](https://github.com/2i2c-org/infrastructure/blob/3278bfdb5258c806feeac5a7c7eb4e6ea8fc9f2c/config/clusters/maap/staging.values.yaml#L87-L126).
+
+To set this up, [contact support](#support) with the disk size you want and which groups should see it.
+
 ## Monitoring disk usage
 You can monitor home directory disk usage for users on your hub to identify large directories and manage storage resources.
 
