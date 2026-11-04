@@ -108,6 +108,7 @@ project:
       - file: community-lead/user-policy/acceptable-use.md
       - file: community-lead/user-policy/privacy.md
       - file: community-lead/user-policy/sub-processors.md
+      - file: community-lead/user-policy/security.md
     - file: community-lead/service-lifecycle/index.md
       children:
       - file: community-lead/service-lifecycle/renewals.md
