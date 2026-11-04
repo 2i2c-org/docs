@@ -8,7 +8,7 @@ build:
   os: ubuntu-lts-latest
   tools:
     python: "3.12"
-    nodejs: "20"
+    nodejs: "22"
   commands:
     - pip install mystmd
     - python scripts/download-images.py
