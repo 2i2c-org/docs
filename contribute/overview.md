@@ -22,7 +22,7 @@ docs/
           └── choose.md       # Specific topic
 ```
 
-The site's table of contents lives in [`_data/toc.yml`](../_data/toc.yml), with one top-level entry per archetype:
+The site's table of contents lives in `toc.yml`, with one top-level entry per archetype:
 
 ```yaml
 - file: [archetype]/index.md
@@ -30,7 +30,7 @@ The site's table of contents lives in [`_data/toc.yml`](../_data/toc.yml), with 
   - file: [archetype]/[topic]/page.md
 ```
 
-Add new pages to `_data/toc.yml` or they won't appear in the site navigation.
+Add new pages to `toc.yml` or they won't appear in the site navigation.
 
 ## Reader archetypes / personas
 
